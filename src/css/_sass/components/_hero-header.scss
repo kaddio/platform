@@ -1,0 +1,44 @@
+.hero-header {
+    background-position: top;
+    position: relative;
+
+    @include media-query($on-mobile) {
+        & {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }    
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        background: black;
+        opacity: 0.5;
+    }
+}
+
+.hero-header__content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-header__title {
+    &--end {
+        color: pink;
+    }
+}
+
+.hero-header__tagline {
+    &--end {
+        color: pink;
+    }
+}

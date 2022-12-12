@@ -1,0 +1,13 @@
+.opening-divider:last-of-type {
+    display: none;
+}
+
+.opening-listing-title {
+    font-size: 16px;
+    margin-bottom: $spacing-unit / 2;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        margin-bottom: $spacing-unit;
+        font-size: 20px;
+    }      
+}
