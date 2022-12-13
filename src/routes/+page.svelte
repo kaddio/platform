@@ -1,12 +1,13 @@
 <script lang="ts">
 
-	import ModulePresentation from '../components/b2b/modulePresentation.svelte';
-	import Price from '../components/b2b/price.svelte';
-	import Typed from '../components/b2b/typed.svelte';
-	import Header from '../components/b2b/header.svelte';
+	import ModulePresentation from './hp/components/modulePresentation.svelte';
+	import Price from './hp/components/price.svelte';
+	import Typed from './hp/components/typed.svelte';
+	import Header from './hp/components/header.svelte';
 	import Card from '../card.svelte';
-	import QuoteCarousel from '../components/b2b/quoteCarousel.svelte';
-	import Quote from '../components/b2b/quote.svelte';
+	import QuoteCarousel from './hp/components/quoteCarousel.svelte';
+	import Quote from './hp/components/quote.svelte';
+	import Footer from './hp/components/footer.svelte';
 	
 	
 
@@ -28,21 +29,21 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 <Header></Header>
-<section>
+<section id="features">
 <ModulePresentation iconClass="mbri-file" href="/invoicing">
 	<span slot="title">Journal</span>
 	<span slot="body">Journal</span>
 </ModulePresentation>
-<Typed>
-	<p>För dig som hjälper andra</p>
-	<p>För dig som stjälfper andra</p>
-</Typed>
-<Card> wehfjkl</Card>
+</section>
 
+
+<section id="price">
 	<Price currency="SEK" modules={modules}>
 
 	</Price>
+</section>
 
+<section id="testimonials">
 	<QuoteCarousel>
 		<Quote>
 			GHJKLÖ
@@ -59,6 +60,7 @@
 	</QuoteCarousel>
 </section>
 
+<Footer></Footer>
 
 <style>
 	section {

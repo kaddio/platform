@@ -1,5 +1,5 @@
 <script>
-	import Header from "../../../components/b2b/header.svelte";
+	import Header from "../components/header.svelte";
 
 </script>
 <Header></Header>
