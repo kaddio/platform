@@ -12,7 +12,7 @@
 })
 </script>
 
-<div class="banner" bind:this={unslider} id="testimonials">
+<div class="banner" bind:this={unslider} >
     <ul>
         <slot>
 
