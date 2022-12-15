@@ -3,7 +3,7 @@
     type Module = {
         price: number,
         name: string,
-        selected: boolean
+        selected?: boolean
     }
 
     export let modules : Module[];
@@ -12,27 +12,39 @@
     $: total = modules.filter(m => m.selected).map(m=> m.price).reduce((a,b) => a+b, 0);
 </script>
 
-<table>
-    {#each modules as module}
+
+<table class="table">
+    <tbody>
+        <tr><th>Modul</th><th>Pris</th><th></th></tr>
         <tr>
-            <td>{module.name}</td>
-            <td>{module.price}</td>
-            <td><input type="checkbox" bind:checked={module.selected} on:change={()=>modules = modules}></td>
+            <td>Core</td>
+            <td>119</td>
+            <td><input type="checkbox" checked={true} disabled={true} ></td>
         </tr>
-    {/each}
+        {#each modules as module}
+            <tr>
+                <td><label for={module.name}>{module.name}</label></td>
+                <td>{module.price}</td>
+                <td><input type="checkbox" bind:checked={module.selected} on:change={()=>modules = modules} id={module.name}></td>
+            </tr>
+        {/each}
+    </tbody>
     <tfoot>
         <tr>
-            <td colspan="2">
-                
-            </td>
-            <td>
+            <th>
+                Månadspris / behandlare
+            </th>
+            <th>
                 {total} {currency}
-            </td>
+            </th>
+            <th></th>
         </tr>
     </tfoot>
 </table>
 
 
-<slot name="MånadsprisLabel">
-    Månadspris / behandlare
-</slot>
+<style>
+    label {
+        font-weight: normal;
+    }
+</style>

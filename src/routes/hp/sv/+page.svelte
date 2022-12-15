@@ -7,14 +7,11 @@
 	import ModulesSv from './modulesSv.svelte';
 	import QuotesSv from './quotesSv.svelte';
 	import CreateAccountSv from './createAccountSv.svelte';
+	import PricesSv from './pricesSv.svelte';
 	
 	
 
-	const modules = [{
-		name: "Journal",
-		price: 10,
-		selected: true
-	}]
+	
 
 	const strings = [
 		"",
@@ -33,15 +30,11 @@
 	<ModulesSv></ModulesSv>
 </section>
 
-
-<section id="price">
-	<Price currency="SEK" modules={modules}>
-
-	</Price>
-</section>
-
-
 <QuotesSv></QuotesSv>
+
+<PricesSv></PricesSv>
+
+
 
 <CreateAccountSv></CreateAccountSv>
 <Footer></Footer>

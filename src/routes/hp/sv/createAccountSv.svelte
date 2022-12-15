@@ -1,8 +1,21 @@
 <script lang="ts">
-    const submit = function(e) {
-        const formData = new FormData(e);
+    const submit = async function(e: SubmitEvent) {
+        const formData = new FormData(e.target);
 
-        fetch("https://api.kaddio.com")
+        try {
+            const response = await fetch("https://api.kaddio.com/api/org", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(Object.fromEntries(formData.entries()))
+            });
+            orgCreated = true;
+            url = formData.get('url');
+            email = formData.get('email');
+        } catch(e) {
+            
+        }
     }
 
     let showCoupon = false;
