@@ -2,29 +2,30 @@
     const submit = function(e) {
         const formData = new FormData(e);
 
-        fetch("https://api.kaddio.com   ")
+        fetch("https://api.kaddio.com")
     }
 
+    let showCoupon = false;
+    let orgCreated = false
+    let url ="";
+    let email ="";
 </script>
 
 <div id="signup">
 
-
-<div class="row tight" >
-    <div class="col-sm-6">
-        <p>
-            </p><h3>Enkelt</h3>
-            <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
-        <p></p>
-
-        <p>
-            </p><h3>Modulärt</h3>
-            <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
-        <p></p>
-        </div>
-
-    <div class="col-sm-6">
-        <div id="create-organization-outer" style="max-width: 360px">
+<div class="container">
+<div class="row" >
+    <div class="col-sm-4 col-sm-offset-1">
+        <h3>Enkelt</h3>
+        <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
+        <br>
+        <h3>Modulärt</h3>
+        <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
+    </div>
+    
+    <div class="col-sm-4 col-sm-offset-1">
+        {#if !orgCreated}
+        <div id="create-organization-outer">
             <h3 class="text-center" style="color: #c38f9c">Skapa konto</h3>
             <form id="create-organization" class="gap-5-vertical" on:submit|preventDefault={submit} name="create">
                 <div class="form-group"><input id="firstname" required type="text" class="form-control" name="firstname" placeholder="Förnamn"></div>
@@ -53,9 +54,15 @@
 
 
                 
-                <input type="text" class="form-control" name="coupon" placeholder="Eventuell rabattkod">
+                {#if showCoupon }
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="coupon" placeholder="Eventuell rabattkod">
+                    </div>
+                {/if}
                 <p id="result" class="text-center" style="color: #A00; display: none"></p>
-                <button type="submit" style="width: 100%" class="btn btn-primary">OK <span id="loading" style="display: none;"><i class="fa fa-spinner fa-pulse"></i></span></button>
+                <div class="form-group">
+                    <button type="submit" style="width: 100%" class="btn btn-primary">OK <span id="loading" style="display: none;"><i class="fa fa-spinner fa-pulse"></i></span></button>
+                </div>
 
 
                 <div class="text">             
@@ -65,29 +72,37 @@
                 </div>       
 
                 <br>
-
-                <div class="text-center">
-                    <a href="" id="coupon">Jag har en rabattkod</a>
-                </div>
+                {#if !showCoupon }
+                    <div class="text-center">
+                        <a href="" on:click|preventDefault={()=>showCoupon=true}>Jag har en rabattkod</a>
+                    </div>
+                {/if}
 
             </form>
-
-            <span id="success" style="display: none">
+        </div>
+        {/if}
+        {#if orgCreated}
+            <span>
                 <h3 class="text-center" style="color: #0A0">Konto skapat <i class="fa fa-check-circle"></i></h3>
 
                 <p>Du har skapat en ny organisation i Kaddio.</p>
 
                 <p>
-                    URL <strong id="url"></strong><br>
-                    E-post <strong id="email"></strong>
+                    URL {url}<br>
+                    E-post {email}
                 </p>
 
                 <p>Vi har skickat ett mail till dig med instruktioner om hur du kommer igång.</p>
 
             </span>
-
-        </div>
-
+        {/if}
     </div>
 </div>
 </div>
+
+</div>
+<style>
+    #signup {
+        padding: 5em 0;
+    }
+</style>

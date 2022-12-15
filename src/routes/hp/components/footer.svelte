@@ -1,5 +1,5 @@
 <footer class="site-footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <nav class="col-xs-12 col-sm-3">
                 <h5>Produkter</h5>

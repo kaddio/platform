@@ -21,7 +21,14 @@
 <style>
 
 .media {
-    width: 28%;
+    width: 30%;
     margin-bottom: 3rem;
+    margin-top: 0;
 }
+
+.media-left {
+    padding-right: 2rem;
+    padding-top: .2rem;
+}
+
 </style>

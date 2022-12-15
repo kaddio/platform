@@ -488,9 +488,9 @@ nav a, .site-footer a{
 	min-height: 100%;
 	margin: 0 auto -600px; /* the bottom margin is the negative value of the footer's height */
 }
-.site-footer, .push {
-	height: 600px; /* '.push' must be the same height as 'footer' */
-}
+// .site-footer, .push {
+// 	height: 600px; /* '.push' must be the same height as 'footer' */
+// }
 
 .site-footer .btn{
 	background-color: $grey;

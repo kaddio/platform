@@ -12,16 +12,26 @@
 })
 </script>
 
-<div class="banner" bind:this={unslider} >
-    <ul>
-        <slot>
+<section id="testimonials">
+    <div>
+        <div class="banner" bind:this={unslider} >
+            <ul>
+                <slot>
 
-        </slot>
-    </ul>    
-</div>
+                </slot>
+            </ul>    
+        </div>
+    </div>
+</section>
 
 <style>
+    #testimonials {
+        padding-top: 5em;
+        padding-bottom: 3rem;
+    }
+
     .banner {
+        margin: 0 auto;
         max-width: 700px;
     }
 </style>

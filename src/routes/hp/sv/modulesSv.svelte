@@ -31,11 +31,6 @@
     </ModulePresentation>
 
     <ModulePresentation iconClass="mbri-edit" href="/booking">
-        <span slot="title">Enkäter</span>
-        <span slot="body">Skicka digitala enkäter till dina klienter.</span>
-    </ModulePresentation>
-        
-    <ModulePresentation iconClass="mbri-edit" href="/booking">
         <span slot="title">Formulär</span>
         <span slot="body">Skicka formulär och hälsodeklarationer till dina kunder, automatiskt och manuellt.</span>
     </ModulePresentation>

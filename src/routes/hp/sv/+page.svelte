@@ -40,9 +40,8 @@
 	</Price>
 </section>
 
-<section id="testimonials">
+
 <QuotesSv></QuotesSv>
-</section>
 
 <CreateAccountSv></CreateAccountSv>
 <Footer></Footer>
