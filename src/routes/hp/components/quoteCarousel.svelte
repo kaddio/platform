@@ -19,3 +19,9 @@
         </slot>
     </ul>    
 </div>
+
+<style>
+    .banner {
+        max-width: 700px;
+    }
+</style>
