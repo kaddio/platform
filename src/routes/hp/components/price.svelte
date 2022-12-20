@@ -3,7 +3,8 @@
     type Module = {
         price: number,
         name: string,
-        selected?: boolean
+        selected?: boolean,
+        disabled?: boolean,
     }
 
     export let modules : Module[];
@@ -16,16 +17,11 @@
 <table class="table">
     <tbody>
         <tr><th>Modul</th><th>Pris</th><th></th></tr>
-        <tr>
-            <td>Core</td>
-            <td>119</td>
-            <td><input type="checkbox" checked={true} disabled={true} ></td>
-        </tr>
         {#each modules as module}
             <tr>
                 <td><label for={module.name}>{module.name}</label></td>
                 <td>{module.price}</td>
-                <td><input type="checkbox" bind:checked={module.selected} on:change={()=>modules = modules} id={module.name}></td>
+                <td><input type="checkbox" bind:checked={module.selected} on:change={()=>modules = modules} id={module.name} disabled={module.disabled}></td>
             </tr>
         {/each}
     </tbody>

@@ -2,6 +2,12 @@
 	import Price from "../components/price.svelte";
 
     const modules = [{
+        name: "Core",
+		price: 119,
+		selected: true,
+        disabled: true
+    },
+    {
 		name: "Journal",
 		price: 119,
 		selected: true

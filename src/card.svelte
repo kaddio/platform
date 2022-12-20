@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let g = 1;
+    
 </script>
 
 <div class="kd-card">
@@ -7,8 +7,14 @@
 </div>
 
 <style lang="less">
-    @white: white;
+
     .kd-card {
-        background: @white;
+        background: white;
+        // box-shadow-md();
+        padding: 1rem;
+        border-radius: 4px;
+        transition: all .2s ease;
+        box-shadow: 0 4px 10px -4px rgba(0,0,0,.2);
+        border: 1px solid var(--gray-800);
     }
 </style>

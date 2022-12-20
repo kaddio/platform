@@ -8,6 +8,7 @@
 	import QuotesSv from './quotesSv.svelte';
 	import CreateAccountSv from './createAccountSv.svelte';
 	import PricesSv from './pricesSv.svelte';
+	import ReferencesSv from './referencesSv.svelte';
 	
 	
 
@@ -21,7 +22,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Kaddio - framtidens journalsystem</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -29,13 +30,9 @@
 <section id="features">
 	<ModulesSv></ModulesSv>
 </section>
-
 <QuotesSv></QuotesSv>
-
 <PricesSv></PricesSv>
-
-
-
+<ReferencesSv></ReferencesSv>
 <CreateAccountSv></CreateAccountSv>
 <Footer></Footer>
 
