@@ -9,10 +9,9 @@
 	import CreateAccountSv from './createAccountSv.svelte';
 	import PricesSv from './pricesSv.svelte';
 	import ReferencesSv from './referencesSv.svelte';
+	import { setContext } from 'svelte';
 	
-	
-
-	
+	setContext('lang', 'sv');
 
 	const strings = [
 		"",

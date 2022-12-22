@@ -1,4 +1,7 @@
 <script lang="ts">
+
+	import Trans from "../../../components/trans.svelte";
+    
     const submit = async function(e: SubmitEvent) {
         const formData = new FormData(e.target);
 
@@ -29,17 +32,30 @@
 <div class="container">
 <div class="row" >
     <div class="col-sm-4 col-sm-offset-1">
-        <h3>Enkelt</h3>
-        <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
-        <br>
-        <h3>Modulärt</h3>
-        <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
+        <Trans lang="sv">
+            <h3>Enkelt</h3>
+            <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
+            <br>
+            <h3>Modulärt</h3>
+            <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
+        </Trans>
+        <Trans lang="es">
+            <h3>Facil</h3>
+            <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
+            <br>
+            <h3>Modulärt</h3>
+            <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
+        </Trans>
+        
     </div>
     
     <div class="col-sm-4 col-sm-offset-1">
         {#if !orgCreated}
         <div id="create-organization-outer">
-            <h3 class="text-center" style="color: #c38f9c">Skapa konto</h3>
+            <h3 class="text-center" style="color: #c38f9c">
+                <Trans lang="sv">Skapa konto</Trans>
+                <Trans lang="sv">Skapa konto</Trans>
+            </h3>
             <form id="create-organization" class="gap-5-vertical" on:submit|preventDefault={submit} name="create">
                 <div class="form-group"><input id="firstname" required type="text" class="form-control" name="firstname" placeholder="Förnamn"></div>
                 <div class="form-group"><input required type="text" class="form-control" name="lastname" placeholder="Efternamn"></div>
@@ -59,8 +75,13 @@
                     <span class="input-group-addon">.kaddio.com</span>
                 </div>
                 <div class="text-center">
-                    <i><small>        
-                        URL är webbadressen där du loggar in i Kaddio.
+                    <i><small>
+                        <Trans lang="sv">
+                            URL är webbadressen där du loggar in i Kaddio.
+                        </Trans>
+                        <Trans lang="es">
+                            URL är webbadressen där du loggar in i Kaddio.
+                        </Trans>
                     </small></i>
                 </div> 
                 <br>
@@ -78,7 +99,8 @@
                 </div>
 
 
-                <div class="text">             
+                <div class="text">
+                    
                     Genom att klicka på “OK“ godkänner du våra <a target="_blank" href="/tos">användarvillkor</a> och <a target="_blank" href="/privacy">sekretesspolicy</a>.
                     
                     Vi skickar Kaddio-relaterad information via e-post.
