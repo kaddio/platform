@@ -1,4 +1,5 @@
 <script context="module">
-    export let metadata = "allmänt2"
+    export let title = "Logga in";
+    export let category = "Allmänt";
 </script>
 ### hej hej

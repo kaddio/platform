@@ -1,0 +1,58 @@
+<script context="module">
+    export let title = "Logga in";
+    export let category = "Allmänt";
+</script>
+
+# Samlingsräkning
+Med samlingsräkning rapporterar du enkelt till regioner.
+Kaddio har idag stöd för export till följande regioner: 
+
+* Region Gävleborg
+* Region Jönköpings län
+* Region Sörmland (fd Södermanlands läns landsting)
+* Region Uppsala
+* Västra Götalandsregionen
+* Region Östergötland
+* Region Jämtland Härjedalen
+* Region Örebro
+* Region Värmland
+* Region Västernorrland
+ 
+Kom igång
+
+Aktivera modulen Samlingsräkning under Inställningar > Moduler. (Du behöver också aktivera modulen Journal)
+Gör sedan dina förberedande inställningar under Inställningar för samlingsräkning och på behandlarnas profiler.
+Inställningar för samlingsräkning
+Här ställer du in vilken region du arbetar inom, samt vilket format på exportfil som ska användas. Du kan också ställa in vissa förvalda uppgifter.
+Under Inställningar för samlingsräkning > Åtgärder lägger du upp de olika åtgärderna som är aktuella för din verksamhet. 
+Behandlarens profil
+De behandlare som ska rapportera till regionen behöver fylla i aktuella uppgifter under sina respektive profiler under rubriken Samlingsräkning.
+Vilka fält som ska fyllas i beror på region och verksamhet, så kontakta regionen du arbetar mot ifall du är osäker på vad du ska fylla i här. 
+
+
+Under Standardåtgärd kan du om du vill, ange en av dina Åtgärder som ska vara förvald på de journalanteckningar du skapar.
+ 
+Rapportera besök
+
+För varje klient som ska kopplas till samlingsräkningen behöver du under Personuppgifter fylla i personnummer och stad. I samlingsräkningen omvandlas staden sedan till en kommunkod. Du kan också fylla i frikortsnummer om så önskas.
+I varje journalanteckning väljer du om den ska synas i exporten genom att aktivera "Samlingsräkning" under "Mer > Fakturering".
+Längst ner i anteckningen dyker då kompletterande uppgifter upp för just det specifika besöket upp som du behöver fylla i.
+
+
+Under Inställningar för Journal > Kontakttyper kan du för vardera kontakttyp ställa in Samlingsräkning som förval, under knappen "Fakturering".
+
+
+ 
+Exportera samlingsräkning
+
+När det är dags att skicka filen till regionen går du till Rapporter > Samlingsräkning. 
+ 
+Välj datumintervall samt om du vill välja ut en viss behandlare
+
+
+Kontrollera att tabellen stämmer.
+
+
+Varningstrianglar visas framför den rad och de uppgifter som inte stämmer. Klicka på klientens namn för att komma till aktuell journalanteckning för att fylla i de uppgifter som saknas. Triangel under personnummer kan bero på att personnummer saknas eller att personnumret är fel. 
+ 
+Klicka på "Exportera fil" när allt ser bra ut och du är redo att ladda ner filen till din dator. Sedan är det bara att ladda upp filen till regionen.
