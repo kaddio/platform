@@ -3,6 +3,7 @@
 	import Header from '../components/header.svelte';
 	import QuoteCarousel from '../components/quoteCarousel.svelte';
 	import Quote from '../components/quote.svelte';
+	import Song from '../components/song.svelte';
 	import Footer from '../components/footer.svelte';
 	import ModulesSv from './modulesSv.svelte';
 	import QuotesSv from './quotesSv.svelte';
@@ -33,6 +34,7 @@
 <PricesSv></PricesSv>
 <ReferencesSv></ReferencesSv>
 <CreateAccountSv></CreateAccountSv>
+<Song></Song>
 <Footer></Footer>
 
 <style>
