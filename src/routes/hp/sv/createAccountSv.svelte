@@ -6,25 +6,42 @@
         const formData = new FormData(e.target);
 
         try {
-            const response = await fetch("https://api.kaddio.com/api/org", {
+            // 'https://api.kaddio.com/api/org';
+            const response = await fetch('http://localhost:3000/api/org', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(Object.fromEntries(formData.entries()))
             });
+
             orgCreated = true;
-            url = formData.get('url');
-            email = formData.get('email');
         } catch(e) {
             
         }
     }
 
-    let showCoupon = false;
-    let orgCreated = false
-    let url ="";
-    let email ="";
+    let showCoupon: boolean = false;
+    let orgCreated: boolean = false
+    let url: string = '';
+
+    export let orgName: string;
+    export let email: string;
+
+    const slugify = function(str: string){
+        return str.toLowerCase()
+            .replace(/ /g, '') // Remove whitespace
+            .replace(/-*$/, '') // Cannot end with -
+            .replace(/^-*/, '') // Cannot begin with -
+            .replace(/Ã¥/g, 'a') // Ã¥ -> a
+            .replace(/Ã¤/g, 'a') // Ã¤ -> a
+            .replace(/Ã¶/g, 'o') // Ã¶ -> o
+            .replace(/http(s)?/g, '') // Ã¶ -> o
+            .replace(/[^\w-]+/g, ''); // Remove non alphanumeric characters            
+    }
+
+    $: url = slugify(orgName || '');
+
 </script>
 
 <div id="signup">
@@ -54,24 +71,35 @@
         <div id="create-organization-outer">
             <h3 class="text-center" style="color: #c38f9c">
                 <Trans lang="sv">Skapa konto</Trans>
-                <Trans lang="sv">Skapa konto</Trans>
             </h3>
             <form id="create-organization" class="gap-5-vertical" on:submit|preventDefault={submit} name="create">
                 <div class="form-group"><input id="firstname" required type="text" class="form-control" name="firstname" placeholder="Förnamn"></div>
                 <div class="form-group"><input required type="text" class="form-control" name="lastname" placeholder="Efternamn"></div>
-                <div class="form-group"><input required type="email" class="form-control" name="email" placeholder="E-post"></div>
-                <div class="form-group"><input id="orgnamefield" required type="text" class="form-control" name="orgname" placeholder="Företagsnamn"></div>
-                <div class="form-group"><input style="display: none;" type="text" class="form-control" name="create" placeholder="Detta fältet ska vara tomt"></div>
+                <div class="form-group"><input bind:value={email} required type="email" class="form-control" name="email" placeholder="E-post"></div>
+                <div class="form-group"><input bind:value={orgName} required type="text" class="form-control" name="orgname" placeholder="Företagsnamn"></div>
+
+                <div class="form-group">
+                    <select name="countrycode" required class="form-control">
+                        <option value="SE">Sverige</option>
+                        <option value="FI">Finland</option>
+                        <option value="NO">Norge</option>
+                        <option value="DK">Danmark</option>
+                        <option value="ES">Spanien</option>
+                    </select>
+                </div>
+
+                <input style="display: none;" type="text" class="form-control" name="create" placeholder="Detta fältet ska vara tomt">
                 
-                <div class="form-group"><input name="manniska" value="1" checked type="hidden"></div>
-                <div class="form-group"><input type="hidden" name="referrer" id="referrer" value="https://kaddio.com/es/, https://kaddio.com/, https://kaddio.com/"></div>
-                <div class="form-group"><input type="hidden" name="ref" id="ref" value=""></div>
-                <div class="form-group"><input type="hidden" name="gclid" id="gclid" value=""></div>
-                <div class="form-group"><input type="hidden" name="i_agree" value="1"></div>
+                <input name="manniska" value="1" checked type="hidden">
+
+                <input type="hidden" name="referrer" id="referrer">
+                <input type="hidden" name="ref" id="ref" value="">
+                <input type="hidden" name="gclid" id="gclid" value="">
+                <input type="hidden" name="i_agree" value="1">
 
                 
                 <div class="input-group">
-                    <input id="urlfield" required type="text" class="form-control" name="orgurl" placeholder="URL">
+                    <input bind:value={url} required type="text" class="form-control" name="orgurl" placeholder="URL">
                     <span class="input-group-addon">.kaddio.com</span>
                 </div>
                 <div class="text-center">
@@ -85,8 +113,6 @@
                     </small></i>
                 </div> 
                 <br>
-
-
                 
                 {#if showCoupon }
                     <div class="form-group">
