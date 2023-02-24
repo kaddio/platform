@@ -44,7 +44,7 @@
   
               <li><a href="/support">Kontakta oss</a></li>              
               <li><a href="#price" class="smooth">Pris</a></li>
-              <li><a href="/#signup" class="smooth" data-to-focus="firstname">Skapa konto</a></li>
+              <li><a href="#signup" class="smooth" data-to-focus="firstname">Skapa konto</a></li>
           </ul>
   
           <ul class="nav navbar-nav navbar-right">
