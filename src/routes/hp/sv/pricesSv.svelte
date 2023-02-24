@@ -42,22 +42,23 @@
 	}
 ]
 </script>
-<section id="price">
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-1">
-            <p>
-                </p><h3>Pris</h3>
-                <p>Klicka i för att se vad Kaddio kostar.</p>
-            <p></p>
-        </div>
-        <div class="col-md-6 col-sm-offset-1">
-            <Price currency="SEK" modules="{modules}">
 
-            </Price>
-        </div>
-    </div>
-</div>
+<section id="price">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-1">
+				<p>
+					</p><h3>Pris</h3>
+					<p>Klicka i för att se vad Kaddio kostar.</p>
+				<p></p>
+			</div>
+			<div class="col-md-6 col-sm-offset-1">
+				<Price currency="SEK" modules="{modules}">
+
+				</Price>
+			</div>
+		</div>
+	</div>
 
 </section>
 <style>
