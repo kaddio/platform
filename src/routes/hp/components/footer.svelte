@@ -6,7 +6,7 @@
                 <ul>
                     <li><a href="/" class="">Kaddio</a></li>
                     <li><a href="/enterprise" class="">Kaddio Enterprise</a></li>
-                    <li><a href="/edu" class="">Kaddio Education (LMS)</a></li>
+                    <!-- <li><a href="/edu" class="">Kaddio Education (LMS)</a></li> -->
                 </ul>
             </nav>
             <nav class="col-xs-12 col-sm-3">
@@ -29,7 +29,7 @@
                 <h5>Företaget</h5>
                 <ul>
                     <li><a href="/about-us" class="">Om oss</a></li>
-                    <li><a style="color: green" href="/environment">Environmental Policy</a></li>
+                    <!-- <li><a style="color: green" href="/environment">Environmental Policy</a></li> -->
                     <li><a href="/career" class="">Lediga tjänster</a></li>
                     
                 </ul>
@@ -41,9 +41,9 @@
                     © <strong>Kaddio AB</strong> &nbsp; &nbsp;                   
                     
 
-                    <a href="/" class="active-dark">Svenska</a> &nbsp; 
-                    <a href="/en">English</a> &nbsp;
-                    <a href="/es">Español</a> &nbsp;
+                    <a href="/hp" class="active-dark">Svenska</a> &nbsp; 
+                    <!-- <a href="/hp/en">English</a> &nbsp; -->
+                    <a href="/hp/es">Español</a> &nbsp;
             </div>            
         </div>
     </div>
