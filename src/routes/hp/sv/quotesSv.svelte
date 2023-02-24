@@ -10,12 +10,6 @@
             Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank">Din Psykolog</a></cite>
         </span>
     </Quote>
-    <Quote>
-        Det finns många journalsystem att välja bland, men det som gjorde att valet föll på Kaddio var det intuitiva gränssnittet, den alerta supporten och de smidiga rapport- och exportverktygen. Vi är mycket nöjda och kommer ha ett långt och gott samarbete.
-        <span slot="quoted">
-            Eric Andrén <cite>CTO <a href="https://mendly.se" target="_blank">Mendly Sweden AB</a></cite>
-        </span>
-    </Quote>
 
     <Quote>
         Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
