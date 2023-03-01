@@ -4,10 +4,10 @@
     import Typed from 'typed.js';
 
     let stringsEl: HTMLElement;
-    let span: HTMLSpanElement;
+    let p: HTMLParagraphElement;
 
     onMount(function() {
-        new Typed(span, {
+        new Typed(p, {
             stringsElement: stringsEl,
             showCursor: false,
             fadeOut: false,
@@ -21,7 +21,7 @@
     })
 
 </script>
-<span bind:this={span}></span>
+<p bind:this={p} style="height: 2em; margin: 0"></p>
 <div bind:this={stringsEl} style="display:none">
 <slot>
 </slot>
