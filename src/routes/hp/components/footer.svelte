@@ -1,3 +1,10 @@
+
+<script lang="ts">
+    import Song from './song.svelte';
+</script>
+
+<Song></Song>
+
 <footer class="site-footer">
     <div class="container">
         <div class="row">
@@ -29,7 +36,7 @@
                 <h5>Företaget</h5>
                 <ul>
                     <li><a href="/about-us" class="">Om oss</a></li>
-                    <!-- <li><a style="color: green" href="/environment">Environmental Policy</a></li> -->
+                    <li><a style="color: green" href="/environment">Environmental Policy</a></li>
                     <li><a href="/career" class="">Lediga tjänster</a></li>
                     
                 </ul>
