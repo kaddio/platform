@@ -152,7 +152,6 @@
 
 .next-section div p{
 	margin-bottom: -30px;
-	margin-padding: -30px;
 }
 
 hr {
@@ -161,10 +160,6 @@ hr {
     background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.09) 10%, rgba(0, 0, 0, 0.09) 90%, transparent);
 	margin: 0;
 	margin-bottom: 20px;
-
-	&.lectures-divider {
-		margin-bottom: $lectures-section-spacing;
-	}
 }
 
 @media screen and (max-width: 800px){
@@ -646,12 +641,6 @@ blockquote{
 	line-height: 4em;
 	color: #666;
 	background-color: #f0f0f0;
-}
-
-#anthem{
-	padding-top: 2.5em;
-	padding-bottom: 2em;
-	background: #9BF linear-gradient(to top left, #9BF, #FFDBF3);
 }
 
 

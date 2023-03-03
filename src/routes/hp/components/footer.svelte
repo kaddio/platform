@@ -19,7 +19,7 @@
             <nav class="col-xs-12 col-sm-3">
                 <h5>Support</h5>
                 <ul>
-                    <li><a target="_blank" href="https://help.kaddio.com/help" class="">Hjälpcenter</a></li>
+                    <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help" class="">Hjälpcenter</a></li>
                     <li><a href="/support" class="">Kontakta oss</a></li>
                     <li><a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API">Developer API</a></li>
                 </ul>
