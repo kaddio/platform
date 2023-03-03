@@ -3,7 +3,7 @@
     export let color: string;
 </script>
 
-<nav id="navigation" class="navbar" role="navigation">
+<nav id="navigation" class="navbar">
   
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
