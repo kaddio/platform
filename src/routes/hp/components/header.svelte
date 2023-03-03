@@ -30,7 +30,7 @@
         </Typed>
   
         <div class="cta">
-            <a class="btn btn-primary" target="_blank" href="https://demo.kaddio.com/login-demo" id="demo-click">Prova demo</a>
+            <a class="btn btn-primary" target="_blank" rel="noreferrer" href="https://demo.kaddio.com/login-demo" id="demo-click">Prova demo</a>
         </div>
         
     </div>

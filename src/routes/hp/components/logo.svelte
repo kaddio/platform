@@ -3,12 +3,12 @@
 </script>
 
 {#if color == "black"}
-    <a class="navbar-brand" id="heading" href="/" alt="">            
-        <img src="/img/kaddio-svart.png" width="25">
+    <a class="navbar-brand" id="heading" href="/">            
+        <img src="/img/kaddio-svart.png" alt="Kaddio Logotype in black" width="25">
     </a>
 {:else}
 
-<a class="navbar-brand" id="heading" href="/" alt="">            
-    <img src="/img/kaddio-logo.png" width="25">
-</a>
+    <a class="navbar-brand" id="heading" href="/">            
+        <img src="/img/kaddio-logo.png"  alt="Kaddio Logotype in white" width="25">
+    </a>
 {/if}

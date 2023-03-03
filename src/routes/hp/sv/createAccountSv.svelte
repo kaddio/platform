@@ -135,7 +135,7 @@
                 <br>
                 {#if !showCoupon }
                     <div class="text-center">
-                        <a href="" on:click|preventDefault={()=>showCoupon=true}>Jag har en rabattkod</a>
+                        <a on:click|preventDefault={()=>showCoupon=true}>Jag har en rabattkod</a>
                     </div>
                 {/if}
 
