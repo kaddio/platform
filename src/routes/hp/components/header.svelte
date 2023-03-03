@@ -4,7 +4,7 @@
 
 </script>
 
-<header class="top-section hidden-print" style="background-image: url(/img/man.jpg);">
+<header class="top-section hidden-print">
     <Nav></Nav>
   
     <div class="jumbotron tight container-fluid">
@@ -35,5 +35,7 @@
 </header>
 
 <style>
-    
+    header{
+        background-image: url(/img/man.jpg);        
+    }
 </style>

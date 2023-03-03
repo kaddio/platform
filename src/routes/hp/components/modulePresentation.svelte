@@ -18,17 +18,16 @@
     </div>
 
 </a>
+
 <style>
+    .media {
+        width: 30%;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
 
-.media {
-    width: 30%;
-    margin-bottom: 3rem;
-    margin-top: 0;
-}
-
-.media-left {
-    padding-right: 2rem;
-    padding-top: .2rem;
-}
-
+    .media-left {
+        padding-right: 2rem;
+        padding-top: .2rem;
+    }
 </style>

@@ -13,11 +13,6 @@
 	
 	setContext('lang', 'sv');
 
-	const strings = [
-		"",
-		"För dig som stjälper andra"
-	]
-
 </script>
 
 <svelte:head>
