@@ -7,7 +7,7 @@
 	// import "../css/_sass/main.scss"
 </script>
 
-<HeaderWhite></HeaderWhite>
+<HeaderWhite color="black"></HeaderWhite>
 <div class="app">
 	<main>
 		<slot />

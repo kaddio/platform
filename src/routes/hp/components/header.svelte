@@ -1,11 +1,13 @@
-<script>
+<script lang="ts">
 	import Typed from "./typed.svelte";
     import Nav from "./nav.svelte";
+
+    export let color: string;
 
 </script>
 
 <header class="top-section hidden-print">
-    <Nav></Nav>
+    <Nav color={color}></Nav>
   
     <div class="jumbotron tight container-fluid">
         <h2>Kaddio</h2>

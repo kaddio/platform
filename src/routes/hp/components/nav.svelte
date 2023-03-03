@@ -1,19 +1,19 @@
+<script lang="ts">
+    import Logo from "./logo.svelte";
+    export let color: string;
+</script>
+
 <nav id="navigation" class="navbar" role="navigation">
   
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" id="heading" href="/" alt="">
-            
-                <img src="/img/kaddio-logo.png" width="25">
-            
-        </a>
+        <Logo color={color}></Logo>
         
-
     </div>
 
     <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1">
