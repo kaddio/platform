@@ -36,8 +36,8 @@
                 <h5>Företaget</h5>
                 <ul>
                     <li><a href="/about-us" class="">Om oss</a></li>
-                    <li><a style="color: green" href="/environment">Environmental Policy</a></li>
-                    <li><a href="/career" class="">Lediga tjänster</a></li>
+                    <li><a style="color: green" href="page/environment">Environmental Policy</a></li>
+                    <li><a href="page/career">Lediga tjänster</a></li>
                     
                 </ul>
             </nav>

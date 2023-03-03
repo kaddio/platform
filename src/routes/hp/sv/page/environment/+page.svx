@@ -1,6 +1,0 @@
-<svelte:head>
-	<title>Kaddio - Environmental policy</title>
-</svelte:head>
-
-
-### Environmental policy
