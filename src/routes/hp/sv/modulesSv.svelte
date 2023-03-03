@@ -6,11 +6,11 @@
 
 <Modules>
 	
-    <ModulePresentation iconClass="mbri-hearth" href="/log">
+    <ModulePresentation iconClass="mbri-hearth" href="module/log">
         <span slot="title">Journalsystem online</span>
         <span slot="body">Flexibelt webbaserat journalprogram som du själv anpassar efter din verksamhets behov.</span>
     </ModulePresentation>
-    <ModulePresentation iconClass="mbri-calendar" href="/booking">
+    <ModulePresentation iconClass="mbri-calendar" href="booking">
         <span slot="title">Bokningssystem</span>
         <span slot="body">Bokningstjänst online för både klienter och behandlare.</span>
     </ModulePresentation>
