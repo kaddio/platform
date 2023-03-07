@@ -1,14 +1,19 @@
 <script>
     import Nav from "./nav.svelte";
-    import Hero from "./hero.svelte";
+    import HeroBox from "./heroBox.svelte";
+	import HeroTitle from "./heroTitle.svelte";
 </script>
 
 <header class="top-section hidden-print">
-    <Nav></Nav>
+    <Nav />
 
-    <Hero>
-        <slot></slot>
-    </Hero>
+    <HeroTitle>
+        <slot name="title" />
+    </HeroTitle>
+
+    <HeroBox>
+        <slot name="box" />
+    </HeroBox>
 </header>
 
 <style>

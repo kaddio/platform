@@ -1,6 +1,6 @@
 <script lang="ts">
     import Logo from "./logo.svelte";
-    export let color: string;
+    export let color: string = 'white';
 </script>
 
 <nav id="navigation" class="navbar">
