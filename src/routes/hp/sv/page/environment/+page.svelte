@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import HeaderHero from '../../../components/header-hero.svelte';
 </script>
 
