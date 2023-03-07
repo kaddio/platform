@@ -4,14 +4,10 @@
 
 <HeaderHero>
     <span slot="title">Environmental policy</span>
-    <span slot="box">We are climate positive...</span>
+    <span slot="box">
+        We are climate positive. As a profitable and well functioning IT-business we have both expectations and abilities to engage and affect our environment, community, staff and customers in many positive ways. We want our impact to be as big as possible and we are comitted to making good.
+    </span>
 </HeaderHero>
-
-<div class="app">
-	<main>
-		<slot />
-	</main>
-</div>
 
 <section>
     <div class="jumbotron">		

@@ -6,6 +6,7 @@
 
 <style>
     div{
-        background-color: green;
+        background: #81E481 linear-gradient(to top right,#81E481,#FCFC83);
+        color: #008A7E;
     }
 </style>
