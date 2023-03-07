@@ -4,17 +4,19 @@
 	import HeroTitle from "./heroTitle.svelte";
 </script>
 
-<header class="top-section hidden-print">
-    <Nav />
+<header class="hero-header top-section hidden-print">
+    <div class="hero-header__content">
+        <Nav />
 
-    <HeroTitle>
-        <slot name="title" />
-    </HeroTitle>
+        <HeroTitle>
+            <slot name="title" />
+        </HeroTitle>
 
-    <HeroBox>
-        <slot name="box" />
-    </HeroBox>
+    </div>
 </header>
+<HeroBox>
+    <slot name="box" />
+</HeroBox>
 
 <style>
     header{
