@@ -24,7 +24,7 @@
                 <h4>Consumables etc.</h4>
                 <ul>
                     <li>100% of all consumables are certified with at least <i>Svanen</i> or equivalent certification</li>
-                    <li>100% of all office food and beverages is ecologic/organic and <a href="https://www.newscientist.com/article/dn25795-going-vegetarian-halves-co2-emissions-from-your-food/" target="_blank">vegetarian</a></li>
+                    <li>100% of all office food and beverages is ecologic/organic and vegetarian</li>
                 </ul>
 
                 <br>
