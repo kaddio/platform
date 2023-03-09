@@ -2,7 +2,7 @@
 	import Typed from "./typed.svelte";
     import Nav from "./nav.svelte";
 
-    export let color: string;
+    export let color: string = 'white';
 
 </script>
 
