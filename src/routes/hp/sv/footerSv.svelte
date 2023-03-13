@@ -29,7 +29,7 @@
             <nav class="col-xs-12 col-sm-3">
                 <h5>Företaget</h5>
                 <ul>
-                    <li><a href="/hp/sv/page/about-us" class="">Om oss</a></li>
+                    <li><a href="/hp/en/page/about-us" class="">About us</a></li>
                     <li><a style="color: green" href="/hp/en/page/environment">Environmental Policy</a></li>
                     <li><a href="/hp/en/page/career">Lediga tjänster</a></li>
                     

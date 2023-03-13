@@ -3,35 +3,35 @@
     <div class="container">
         <div class="row">
             <nav class="col-xs-12 col-sm-3">
-                <h5>Produkter</h5>
+                <h5>Productas</h5>
                 <ul>
-                    <li><a href="/" class="">Kaddio</a></li>
-                    <li><a href="/enterprise" class="">Kaddio Enterprise</a></li>
+                    <li><a href="/hp/es" class="">Kaddio</a></li>
+                    <li><a href="/hp/en/page/enterprise" class="">Kaddio Enterprise</a></li>
                     <!-- <li><a href="/edu" class="">Kaddio Education (LMS)</a></li> -->
                 </ul>
             </nav>
             <nav class="col-xs-12 col-sm-3">
-                <h5>Support</h5>
+                <h5>Ayuda</h5>
                 <ul>
                     <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help" class="">Hjälpcenter</a></li>
-                    <li><a href="/support" class="">Kontakta oss</a></li>
+                    <li><a href="hp/es/page/support" class="">Kontakta oss</a></li>
                     <li><a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API">Developer API</a></li>
                 </ul>
             </nav>
             <nav class="col-xs-12 col-sm-3">
                 <h5>Avtal</h5>
                 <ul>
-                    <li><a href="/tos">Användarvillkor</a></li>
-                    <li><a href="/privacy">Sekretesspolicy</a></li>
+                    <li><a href="hp/sv/page/tos">Användarvillkor</a></li>
+                    <li><a href="hp/sv/page/privacy">Sekretesspolicy</a></li>
                 </ul>
             </nav>
 
             <nav class="col-xs-12 col-sm-3">
                 <h5>Företaget</h5>
                 <ul>
-                    <li><a href="/about-us" class="">Om oss</a></li>
-                    <li><a style="color: green" href="page/environment">Environmental Policy</a></li>
-                    <li><a href="page/career">Lediga tjänster</a></li>
+                    <li><a href="/hp/en/page/about-us" class="">About us</a></li>
+                    <li><a style="color: green" href="/hp/en/page/environment">Environmental Policy</a></li>
+                    <li><a href="/hp/en/page/career">Lediga tjänster</a></li>
                     
                 </ul>
             </nav>
