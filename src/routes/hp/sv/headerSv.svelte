@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Typed from "./typed.svelte";
-    import Nav from "./nav.svelte";
+	import Typed from "../components/typed.svelte";
+    import Nav from "./navSv.svelte";
 
     export let color: string = 'white';
 

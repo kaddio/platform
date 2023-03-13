@@ -1,5 +1,5 @@
 <script lang="ts">	
-	import Header from '../components/header.svelte';
+	import Header from './headerSv.svelte';
 	import ModulesSv from './modulesSv.svelte';
 	import QuotesSv from './quotesSv.svelte';
 	import CreateAccountSv from './createAccountSv.svelte';
