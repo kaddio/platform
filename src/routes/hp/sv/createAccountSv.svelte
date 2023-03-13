@@ -25,8 +25,8 @@
     let orgCreated: boolean = false
     let url: string = '';
 
-    export let orgName: string;
-    export let email: string;
+    let orgName: string;
+    let email: string;
 
     const slugify = function(str: string){
         return str.toLowerCase()
