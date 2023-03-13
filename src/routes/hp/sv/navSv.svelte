@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Logo from "./logo.svelte";
+    import Logo from "../components/logo.svelte";
     export let color: string = 'white';
 </script>
 

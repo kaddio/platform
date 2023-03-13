@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Nav from "./nav.svelte";
+    import Nav from "../sv/navSv.svelte";
     export let color: string;
 </script>
 

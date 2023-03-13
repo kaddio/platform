@@ -1,7 +1,7 @@
 <script lang="ts">
 	import HeaderWhite from '../../components/header-white.svelte';
 	import ModulesSv from '../modulesSv.svelte';
-	import FooterSv from '../footerSv.svelte';
+	import Footer from '../footerSv.svelte';
 </script>
 
 <HeaderWhite color="black"></HeaderWhite>
@@ -22,7 +22,7 @@
 </section>
 
 
-<FooterSv />
+<Footer />
 <style>
 
 </style>

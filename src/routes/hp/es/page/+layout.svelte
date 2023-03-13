@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FooterEs from "../footerEs.svelte";
+	import Footer from "../footerEs.svelte";
 
 </script>
 
@@ -8,7 +8,7 @@
 		<slot />
 	</main>
 </div>
-<FooterEs />
+<Footer />
 
 <style>
 

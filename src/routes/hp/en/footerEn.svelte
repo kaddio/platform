@@ -13,16 +13,16 @@
             <nav class="col-xs-12 col-sm-3">
                 <h5>Support</h5>
                 <ul>
-                    <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help" class="">Hjälpcenter</a></li>
-                    <li><a href="hp/sv/page/support" class="">Kontakta oss</a></li>
+                    <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help" class="">Help center</a></li>
+                    <li><a href="hp/sv/page/support" class="">Contact us</a></li>
                     <li><a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API">Developer API</a></li>
                 </ul>
             </nav>
             <nav class="col-xs-12 col-sm-3">
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href="hp/sv/page/tos">Användarvillkor</a></li>
-                    <li><a href="hp/sv/page/privacy">Sekretesspolicy</a></li>
+                    <li><a href="hp/sv/page/tos">Terms of Service</a></li>
+                    <li><a href="hp/sv/page/privacy">Privacy</a></li>
                 </ul>
             </nav>
 
@@ -31,7 +31,7 @@
                 <ul>
                     <li><a href="/hp/en/page/about-us" class="">About us</a></li>
                     <li><a style="color: green" href="/hp/en/page/environment">Environmental Policy</a></li>
-                    <li><a href="/hp/en/page/career">Lediga tjänster</a></li>
+                    <li><a href="/hp/en/page/career">Career</a></li>
                     
                 </ul>
             </nav>
@@ -40,7 +40,6 @@
         <div class="row" style="margin-top: 40px">
             <div class="col-sm-6">
                     © <strong>Kaddio AB</strong> &nbsp; &nbsp;                   
-                    
 
                     <a href="/hp" class="active-dark">Svenska</a> &nbsp; 
                     <!-- <a href="/hp/en">English</a> &nbsp; -->

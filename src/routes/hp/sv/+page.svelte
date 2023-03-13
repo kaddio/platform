@@ -7,7 +7,7 @@
 	import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
 	import Song from '../components/song.svelte';
-	import FooterSv from './footerSv.svelte';
+	import Footer from './footerSv.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -27,7 +27,7 @@
 <ReferencesSv />
 <CreateAccountSv />
 <Song />
-<FooterSv />
+<Footer />
 
 <style>
 	section {
