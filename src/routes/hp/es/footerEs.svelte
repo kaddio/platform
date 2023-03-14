@@ -1,3 +1,8 @@
+<script>
+	import Song from "../components/song.svelte";
+
+</script>
+<Song />
 
 <footer class="site-footer">
     <div class="container">

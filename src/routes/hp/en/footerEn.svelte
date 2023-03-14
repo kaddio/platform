@@ -1,3 +1,8 @@
+<script>
+	import Song from "../components/song.svelte";
+
+</script>
+<Song />
 
 <footer class="site-footer">
     <div class="container">
@@ -5,16 +10,16 @@
             <nav class="col-xs-12 col-sm-3">
                 <h5>Products</h5>
                 <ul>
-                    <li><a href="/" class="">Kaddio</a></li>
-                    <li><a href="/hp/en/page/enterprise" class="">Kaddio Enterprise</a></li>
-                    <!-- <li><a href="/edu" class="">Kaddio Education (LMS)</a></li> -->
+                    <li><a href="/">Kaddio</a></li>
+                    <li><a href="/hp/en/page/enterprise">Kaddio Enterprise</a></li>
+                    <!-- <li><a href="/edu">Kaddio Education (LMS)</a></li> -->
                 </ul>
             </nav>
             <nav class="col-xs-12 col-sm-3">
                 <h5>Support</h5>
                 <ul>
-                    <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help" class="">Help center</a></li>
-                    <li><a href="hp/sv/page/support" class="">Contact us</a></li>
+                    <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help">Help center</a></li>
+                    <li><a href="hp/sv/page/support">Contact us</a></li>
                     <li><a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API">Developer API</a></li>
                 </ul>
             </nav>
@@ -29,7 +34,7 @@
             <nav class="col-xs-12 col-sm-3">
                 <h5>Company</h5>
                 <ul>
-                    <li><a href="/hp/en/page/about-us" class="">About us</a></li>
+                    <li><a href="/hp/en/page/about-us">About us</a></li>
                     <li><a style="color: green" href="/hp/en/page/environment">Environmental Policy</a></li>
                     <li><a href="/hp/en/page/career">Career</a></li>
                     

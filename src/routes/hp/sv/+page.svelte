@@ -6,7 +6,6 @@
 	import PricesSv from './pricesSv.svelte';
 	import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
-	import Song from '../components/song.svelte';
 	import Footer from './footerSv.svelte';
 	
 	setContext('lang', 'sv');
@@ -26,7 +25,6 @@
 <PricesSv />
 <ReferencesSv />
 <CreateAccountSv />
-<Song />
 <Footer />
 
 <style>

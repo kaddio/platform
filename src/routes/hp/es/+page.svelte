@@ -5,7 +5,6 @@
 	// import PricesSv from './pricesSv.svelte';
 	// import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
-	import Song from '../components/song.svelte';
 	import Header from './headerEs.svelte';
 	import Footer from './footerEs.svelte';
 	
@@ -26,7 +25,6 @@
 <PricesSv />
 <ReferencesSv />
 <CreateAccountSv /> -->
-<Song />
 <Footer />
 
 <style>

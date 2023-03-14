@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from "$app/stores";
     import Logo from "../components/logo.svelte";
     export let color: string = 'white';
 </script>
@@ -36,7 +37,8 @@
                 </ul>
             </li>
 
-            <li><a href="/support">Contactar</a></li>              
+
+            <li><a href="/hp/es/support" class:active-dark={$page.url.pathname.endsWith('support')} >Contactar</a></li>              
             <li><a href="#price" class="smooth">Precio</a></li>
             <li><a href="#signup" class="smooth" data-to-focus="firstname">Crear una cuenta</a></li>
         </ul>
