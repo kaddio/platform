@@ -38,12 +38,12 @@
             </li>
 
             <li><a href="/hp/sv/support" class:active-dark={$page.url.pathname.endsWith('support')} >Kontakta oss</a></li>              
-            <li><a href="#price" class="smooth">Pris</a></li>
-            <li><a href="#signup" class="smooth" data-to-focus="firstname">Skapa konto</a></li>
+            <li><a href="/hp/sv#price" class="smooth">Pris</a></li>
+            <li><a href="/hp/sv#signup" class="smooth" data-to-focus="firstname">Skapa konto</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#find-organization" class="smooth" data-to-focus="team-url">Logga in</a></li>
+            <li><a href="/hp/sv#find-organization" class="smooth" data-to-focus="team-url">Logga in</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 

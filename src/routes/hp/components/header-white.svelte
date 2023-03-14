@@ -1,10 +1,6 @@
-<script lang="ts">
-    import Nav from "../sv/navSv.svelte";
-    export let color: string;
-</script>
-
 <header class="hidden-print">
-    <Nav color={color}></Nav>
+    <slot></slot>
+
 </header>
 
 <style>
