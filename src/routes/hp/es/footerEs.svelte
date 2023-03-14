@@ -47,9 +47,9 @@
                     © <strong>Kaddio AB</strong> &nbsp; &nbsp;                   
                     
 
-                    <a href="/hp" class="active-dark">Svenska</a> &nbsp; 
+                    <a href="/hp" >Svenska</a> &nbsp; 
                     <!-- <a href="/hp/en">English</a> &nbsp; -->
-                    <a href="/hp/es">Español</a> &nbsp;
+                    <a href="/hp/es" class="active-dark">Español</a> &nbsp;
             </div>            
         </div>
     </div>

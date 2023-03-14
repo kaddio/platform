@@ -4,7 +4,7 @@
 </script>
 
 <header class="top-section hidden-print">
-    <Nav color="black"></Nav>
+    <Nav color="white"></Nav>
   
     <div class="jumbotron tight container-fluid">
         <h2>Kaddio</h2>

@@ -1,5 +1,5 @@
 <div class="text-center hidden-print">
-    <audio loop="loop" controls="controls">
+    <audio loop controls>
         <source src="/audio/Kaddio (Give Better).mp3" type="audio/mpeg">
     </audio>
 </div>
@@ -8,6 +8,9 @@
     div {
         padding-top: 2.5em;
         padding-bottom: 2em;
-        background: #9BF linear-gradient(to top left, #9BF, #FFDBF3)
+        background-color: #f0f0f0;
+    }
+    audio{
+        width: 320px;
     }
 </style>

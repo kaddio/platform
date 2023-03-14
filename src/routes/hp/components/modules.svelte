@@ -1,19 +1,19 @@
 <div class="container">
-    <div class="presentation-grid">
+    <section>
         <slot>
 
         </slot>
-    </div>
+    </section>
 </div>
 
 <style lang="scss">
-    .presentation-grid {
+    section {
         display: flex;
         align-items:flex-start;
         flex-direction: row;
         gap: 5%;
         flex-wrap: wrap;
-        width: 100%;
+        justify-content: center;
         padding: 7rem 0;
     }
 

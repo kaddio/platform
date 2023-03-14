@@ -58,10 +58,10 @@
         </Trans>
         <Trans lang="es">
             <h3>Facil</h3>
-            <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
+            <p>...</p>
             <br>
-            <h3>Modulärt</h3>
-            <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
+            <h3>Modular</h3>
+            <p>...</p>
         </Trans>
         
     </div>

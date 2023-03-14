@@ -5,9 +5,6 @@
 
 
 <a class="media" href="{href}">
-    <div class="media-left">
-        <span class="media-object {iconClass}"></span>
-    </div>
     <div class="media-body">
         <h4 class="media-heading">
             <slot name="title"></slot>
@@ -21,9 +18,12 @@
 
 <style>
     .media {
-        width: 30%;
         margin-bottom: 3rem;
         margin-top: 0;
+    }
+
+    .media-body{
+        width: 320px;
     }
 
     .media-left {

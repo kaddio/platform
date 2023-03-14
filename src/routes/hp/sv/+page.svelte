@@ -2,7 +2,7 @@
 	import Header from './headerSv.svelte';
 	import ModulesSv from './modulesSv.svelte';
 	import QuotesSv from './quotesSv.svelte';
-	import CreateAccountSv from './createAccountSv.svelte';
+	import CreateAccount from '../components/createAccount.svelte';
 	import PricesSv from './pricesSv.svelte';
 	import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
@@ -24,7 +24,7 @@
 <QuotesSv />
 <PricesSv />
 <ReferencesSv />
-<CreateAccountSv />
+<CreateAccount />
 <Footer />
 
 <style>

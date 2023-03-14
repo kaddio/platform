@@ -1,10 +1,9 @@
 <script lang="ts">
-	// import { getContext } from "svelte/types/runtime/internal/lifecycle";
+	import { getContext } from "svelte";
 
     type Lang = 'sv' | 'es' | 'en';
     export let lang: Lang;
-    // const selectedLang = getContext('lang');
-    const selectedLang = 'sv'
+    const selectedLang = getContext('lang');
 </script>
 
 {#if lang==selectedLang}
