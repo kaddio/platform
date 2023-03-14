@@ -80,7 +80,10 @@
 
                 <div class="form-group">
                     <select name="countrycode" required class="form-control">
-                        <option value="SE">Sverige</option>
+                        <option value="SE">
+                            <Trans lang="sv">Sverige</Trans>
+                            <Trans lang="es">España</Trans>
+                        </option>
                         <option value="FI">Finland</option>
                         <option value="NO">Norge</option>
                         <option value="DK">Danmark</option>
@@ -102,16 +105,6 @@
                     <input bind:value={url} required type="text" class="form-control" name="orgurl" placeholder="URL">
                     <span class="input-group-addon">.kaddio.com</span>
                 </div>
-                <div class="text-center">
-                    <i><small>
-                        <Trans lang="sv">
-                            URL är webbadressen där du loggar in i Kaddio.
-                        </Trans>
-                        <Trans lang="es">
-                            URL är webbadressen där du loggar in i Kaddio.
-                        </Trans>
-                    </small></i>
-                </div> 
                 <br>
                 
                 {#if showCoupon }

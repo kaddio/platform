@@ -17,9 +17,15 @@
 </HeaderWhite>
 
 <div class="jumbotron">
-	<h1>Kontakta oss</h1>
+	<h1>Contactar</h1>
 	<h3 class="punch">Vi finns här för att hjälpa till</h3>
 </div>
+
+<section>
+	<article>
+		<h2>Bli kund</h2>
+	</article>
+</section>
 
 <Footer />
 

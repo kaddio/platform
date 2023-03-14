@@ -6,31 +6,31 @@
 
 <Modules>
 	
-    <ModulePresentation iconClass="mbri-hearth" href="module/log">
+    <ModulePresentation iconClass="mbri-hearth" href="sv/module/log">
         <span slot="title">Journal</span>
         <span slot="body">Flexibelt webbaserat journalprogram som du själv anpassar efter din verksamhets behov.</span>
     </ModulePresentation>
-    <ModulePresentation iconClass="mbri-calendar" href="booking">
+    <ModulePresentation iconClass="mbri-calendar" href="sv/module/booking">
         <span slot="title">Bokning</span>
         <span slot="body">Bokningstjänst online för både klienter och behandlare.</span>
     </ModulePresentation>
 
-    <ModulePresentation iconClass="mbri-credit-card" href="/booking">
+    <ModulePresentation iconClass="mbri-credit-card" href="sv/module/payment">
         <span slot="title">Kortbetalning</span>
         <span slot="body">Ta betalt med kort i samband med bokning.</span>
     </ModulePresentation>
 
-    <ModulePresentation iconClass="mbri-file" href="/booking">
+    <ModulePresentation iconClass="mbri-file" href="sv/module/invoicing">
         <span slot="title">Fakturering</span>
         <span slot="body">Fakturera klienter och företag utifrån bokade tider eller journalanteckningar</span>
     </ModulePresentation>
         
-    <ModulePresentation iconClass="mbri-chat" href="/booking">
+    <ModulePresentation iconClass="mbri-chat" href="sv/module/chat">
         <span slot="title">Video och chat</span>
         <span slot="body">Säker video för upp till 300 deltagare.</span>
     </ModulePresentation>
 
-    <ModulePresentation iconClass="mbri-edit" href="/booking">
+    <ModulePresentation iconClass="mbri-edit" href="sv/module/forms">
         <span slot="title">Formulär</span>
         <span slot="body">Skicka formulär och hälsodeklarationer till dina kunder, automatiskt och manuellt.</span>
     </ModulePresentation>
