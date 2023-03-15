@@ -1,5 +1,0 @@
-<svelte:head>
-	<title>Kaddio - Journalsystem</title>
-</svelte:head>
-
-### Modul log

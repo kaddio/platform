@@ -4,30 +4,13 @@
 </script>
 
 
-<a class="media" href="{href}">
-    <div class="media-body">
-        <h4 class="media-heading">
+<a href="{href}">
+    <aside>
+        <h4>
             <slot name="title"></slot>
         </h4>
-        <p><slot name="body">
-            
-        </slot></p>
-    </div>
-
+        <p>
+            <slot name="body"></slot>
+        </p>
+    </aside>
 </a>
-
-<style>
-    .media {
-        margin-bottom: 3rem;
-        margin-top: 0;
-    }
-
-    .media-body{
-        width: 320px;
-    }
-
-    .media-left {
-        padding-right: 2rem;
-        padding-top: .2rem;
-    }
-</style>
