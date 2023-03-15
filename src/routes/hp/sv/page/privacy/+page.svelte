@@ -80,7 +80,7 @@
         
         <h4>Personuppgifter som behandlas</h4>
         
-        <div>
+        <div class="table-responsive">
             <table class="table">
                 <caption>
                     <strong>x</strong> behandlare, student, administratör (hur Kaddio behandlar våra kunders
