@@ -1,15 +1,17 @@
 <script>
-	import HeaderHero from '../../../components/header-hero.svelte';
+	import HeroBox from '../../../components/heroBox.svelte';
+    import HeaderHero from '../../../components/header-hero.svelte';
 </script>
 
 <HeaderHero>
-    <span slot="title">Environmental policy</span>
-    <span slot="box">
-        Do you want to work in a small team with lots of freedom and great variety?
-        Are you driven to manage your work yourself?
-        Are you a team player that want to evolve?        
-    </span>
+    <span slot="title">Give better help</span>
 </HeaderHero>
+
+<HeroBox variant="pink">
+    Do you want to work in a small team with lots of freedom and great variety?
+    Are you driven to manage your work yourself?
+    Are you a team player that want to evolve?        
+</HeroBox>
 
 <main>
     <article>

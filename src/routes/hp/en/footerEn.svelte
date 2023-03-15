@@ -19,15 +19,15 @@
                 <h5>Support</h5>
                 <ul>
                     <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help">Help center</a></li>
-                    <li><a href="hp/sv/page/support">Contact us</a></li>
+                    <li><a href="/hp/sv/support">Contact us</a></li>
                     <li><a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API">Developer API</a></li>
                 </ul>
             </nav>
             <nav class="col-xs-12 col-sm-3">
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href="hp/sv/page/tos">Terms of Service</a></li>
-                    <li><a href="hp/sv/page/privacy">Privacy</a></li>
+                    <li><a href="/hp/sv/page/tos">Terms of Service</a></li>
+                    <li><a href="/hp/sv/page/privacy">Privacy</a></li>
                 </ul>
             </nav>
 

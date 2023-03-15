@@ -1,15 +1,16 @@
 <script>
 	import Subprocessors from '../../../components/subprocessors.svelte';
     import HeaderHero from '../../../components/header-hero.svelte';
+	import HeroBox from '../../../components/heroBox.svelte';
 </script>
 
 <HeaderHero>
     <span slot="title">Sekretesspolicy</span>
-    <span slot="box">
-        När du använder Kaddio ger du oss förtroendet att hantera dina uppgifter. Vi förklarar här vilka uppgifter vi samlar in, varför och hur vi använder dem.
-    </span>
 </HeaderHero>
 
+<HeroBox variant="pink">
+    När du använder Kaddio ger du oss förtroendet att hantera dina uppgifter. Vi förklarar här vilka uppgifter vi samlar in, varför och hur vi använder dem.
+</HeroBox>
 <main>
     <article>
         <p>

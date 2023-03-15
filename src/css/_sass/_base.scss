@@ -261,25 +261,6 @@ body{
 }
 
 
-h1{
-	margin-top: 0;
-	font-size: 36px !important;
-}
-
-
-h2, h3{
-    font-weight: 100;
-	margin-top: 0;
-}
-
-h4{
-    font-size: 1.5em;
-    line-height: 1.5;
-    font-weight: 700;
-	margin-bottom: 0;
-	margin-top: 25px;
-}
-
 
 input, textarea{
 	color: #000 !important;
@@ -376,12 +357,6 @@ a:hover{
 	max-width: 300px;
 }
  
-@media screen and (min-width: 769px) {
-	h2 {
-		font-size: 3em;
-	}
-}
-
 .kaddio-for-schools{
 	color: $turquoise !important;
 }
