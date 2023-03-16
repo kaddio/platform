@@ -39,7 +39,7 @@
 		</div>
 		<div class="col-sm-9">
 			<p>
-				I Kaddios Hjälpcenter <a target="_blank" href="https://help.kaddio.com/help">help.kaddio.com</a> fyller vi kontinuerligt på med artiklar och svar på vanliga frågor.
+				I Kaddios Hjälpcenter <a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help">help.kaddio.com</a> fyller vi kontinuerligt på med artiklar och svar på vanliga frågor.
 			</p>
 		</div>
 	</section>

@@ -3,14 +3,12 @@
 
 // Our variables
 $base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-$lectures-font-family: 'Mrs Saint Delafield', cursive;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
-$lectures-section-spacing: 6rem;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -68,13 +66,8 @@ $shadow-card:  0 7px 30px -10px rgba($shadow-color, .5);
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "../_sass/base",
-        "../_sass/_utils",
-        "../_sass/pages/_about",
-        "../_sass/pages/_career",
-        "../_sass/components/_grid",
         "../_sass/components/_hero-header",
         "../_sass/components/_menu",
         "../_sass/components/_feature-highlight-card",
-        "../_sass/components/_icon-list",
         "../_sass/components/_card"
 ;

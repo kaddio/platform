@@ -189,12 +189,6 @@ hr {
 	background-color: rgb(240, 236, 235);
 }
 
-.tooltip-inner{
-	font-family: $base-font-family;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 1.6;
-}
 
 html{
 	overflow-y: scroll;
@@ -253,7 +247,7 @@ body{
 
 	color: #666;
 
-	font-family: $base-font-family !important;
+	font-family: var(--font-family);
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
 
