@@ -1,3 +1,5 @@
+<hr />
+
 <div class="container jumbotron">
     <div>
         <a href="https://www.mau.se" target="_blank" rel="noreferrer"><img src="/customer-logos/malmo.png" width="100" alt="Logo Malmö Universitet"></a>

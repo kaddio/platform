@@ -24,9 +24,9 @@
 </section>
 <QuotesSv />
 <PricesSv />
-<ReferencesSv />
 <CreateAccount />
 <GotoOrg />
+<ReferencesSv />
 <Footer />
 
 <style>
