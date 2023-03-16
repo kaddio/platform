@@ -7,6 +7,7 @@
 	import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
 	import Footer from './footerSv.svelte';
+	import GotoOrg from './gotoOrgSv.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -25,6 +26,7 @@
 <PricesSv />
 <ReferencesSv />
 <CreateAccount />
+<GotoOrg />
 <Footer />
 
 <style>
