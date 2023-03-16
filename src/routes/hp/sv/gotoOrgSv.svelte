@@ -1,9 +1,8 @@
 <script lang="ts">
+    let cannotFind: boolean = false;
 
-const submit = async function(e: SubmitEvent) {
+    const submit = async function(e: SubmitEvent) {
         const formData = new FormData(e.target);
-
-        const url = Object.fromEntries(formData.entries()).url;
 
         try {
             // 'https://api.kaddio.com/api/org';
@@ -16,10 +15,12 @@ const submit = async function(e: SubmitEvent) {
             });
 
              const data = await response.json();
-             console.log(data)
 
              if(data.status == 'success'){
                 window.location.href = data.data.url + '/login';
+             }
+             else{
+                cannotFind = true;
              }
         } catch(e) {
             console.error('err')
@@ -27,15 +28,15 @@ const submit = async function(e: SubmitEvent) {
     }    
 </script>
 
-<section class="container" id="find-organization">
-    <div id="login" class="jumbotron">
+<section class="container" >
+    <div id="find-organization" class="jumbotron">
         <div class="row">
             <div class="col-sm-3">
                 <h3>Logga in</h3>
             </div>
 
             <div class="col-sm-9">
-                <p>Du loggar in på din organisations hemsida, hitta den här:</p>
+                <p>Du loggar in på din organisations startsida, hitta den här:</p>
 
                 <form on:submit|preventDefault={submit} style="max-width: 400px">
 
@@ -46,9 +47,9 @@ const submit = async function(e: SubmitEvent) {
                         </div>
                     </div>
                     
-                    <p id="find-organization-result" style="color: #A00; display: none">
-                        <span>Vi kan inte hitta den organisationen i Kaddio</span>
-                    </p>
+                    {#if cannotFind }
+                        <p>Vi kan inte hitta den organisationen</p>
+                    {/if}
 
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Gå dit <i class="fa fa-arrow-right"></i></button>
