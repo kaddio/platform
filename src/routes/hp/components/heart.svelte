@@ -1,2 +1,1 @@
-<span class="mbri-hearth"></span>
-<i class="fa fa-heart"></i>
+<i class="fa-duotone fa-heart"></i>

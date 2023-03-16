@@ -23,38 +23,6 @@
 	color: #AAA !important;
 }
 
-.mbri-large {
-	font-size: 90px;
-}
-
-@keyframes pulse_animation {
-  0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  10% {
-    transform: scale(1);
-  }
-  15% {
-    transform: scale(1);
-  }
-  20% {
-    transform: scale(1.1);
-  }
-  25% {
-    transform: scale(1);
-  }
-}
-
-.mbri-hearth {
-	animation-name: pulse_animation;
-	animation-duration: 2200ms;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-
 .more-features{
 	margin-top: 48px;
 	margin-bottom: 26px;
@@ -351,10 +319,6 @@ a:hover{
 	max-width: 300px;
 }
  
-.kaddio-for-schools{
-	color: $turquoise !important;
-}
-
 .post-title{
 	font-weight: 100;
 	color: $pink;
@@ -445,28 +409,17 @@ nav a, .site-footer a{
 // 	height: 600px; /* '.push' must be the same height as 'footer' */
 // }
 
-.site-footer .btn{
-	background-color: $grey;
-}
 
 .site-footer ul{
 	list-style: none;
 	padding-left: 0;
 }	
 
-@media screen and (max-width: 767px){
-    .site-footer nav{
-        text-align: center
-    }
-}
-
-
 .site-footer a.active-dark{
 	padding: 10px;
 	color: #FFF;
 	background-color: #444 !important;	
 }
-
 
 
 .rss-subscribe{
@@ -513,82 +466,6 @@ blockquote{
 	left: 45%;
 }
 
-
-
-
-
-.dash-brick.dash-brick-pay .dash-brick-header{
-	background-image: -webkit-linear-gradient(bottom right, $purple, lighten($purple, 20%));
-	background-image: linear-gradient(to top left, $purple, lighten($purple, 20%));
-	background-color: #79589F;
-	color: white;
-}
-
-.dash-brick.dash-brick-pay .dash-brick-header h3{
-	font-weight: 600;
-}
-
-.dash-brick.dash-brick-pay .dash-brick-body{
-	background-color: #f3f3f3;
-}
-
-.dash-brick{
-
-	text-align: left;
-	margin-bottom: 60px;
-}
-
-.dash-brick-header{
-	background-color: #eaeaea;
-	padding: 20px;
-}
-
-
-.dash-brick-header h1,
-.dash-brick-header h2,
-.dash-brick-header h3,
-.dash-brick-header h4,
-.dash-brick-header h5,
-.dash-brick-header h6{
-	margin: 0;
-}
-
-.dash-brick-body{
-	background-color: #f3f3f3;
-	padding: 20px;
-}
-
-
-
-.dash-brick-body table tr td{
-	border-top: none;
-	border-bottom: 1px solid #ddd;
-}
-
-.dash-brick-body table tr td:nth-child(1){
-	padding-left: 0;
-}
-
-.dash-brick-body table.future-sessions tr:nth-child(1){
-	font-weight: bold;
-}
-
-
-.dash-brick-body button{
-	width: 100%;
-}
-
-#price_modules tbody tr:hover{
-	cursor: pointer;
-	background-color: #fcf8e3;
-}
-
-#price_modules tfoot tr:first-child{
-	background-color: #fcf8e3;
-}
-#price_modules td:last-child, #price_modules th:last-child{
-	text-align: right
-}	
 
 #premium-table tbody tr td:first-child{
 	white-space: nowrap;	

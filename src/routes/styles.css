@@ -12,7 +12,6 @@
     --color-text: #000;
     --color-text-secondary: #999;
     --font-family: "Open Sans";
-    --hover-brightness: 1.2;
     --justify-important: center;
     --justify-normal: left;
     --line-height: 1.5;
@@ -20,6 +19,7 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
+    --gap: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +61,7 @@ section aside:hover {
 main{
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 3rem 2rem;
+    padding: var(--gap);
 
 }
 
