@@ -6,7 +6,9 @@
 
 <a href="{href}">
     <aside>
-        <span class={iconClass}></span>
+        <div>
+            <i class={iconClass}></i>
+        </div>
         <article>
             <h4><slot name="title" /></h4>
             <p>
@@ -25,12 +27,18 @@
 
     h4{
         font-weight: bold;
+        line-height: var(--line-height)
     }
 
-    span{
+    aside div{
+        width: 40px;
+        padding-top: 9px;
+    }
+
+    aside i{
+        
         color: #c38f9c;
-        font-size: 32px;
-        font-weight: bold;
+        /* font-size: 32px; */
     }
 
 </style>

@@ -34,9 +34,9 @@
             <nav class="col-xs-12 col-sm-3">
                 <h5>Company</h5>
                 <ul>
-                    <li><a href="/hp/en/page/about-us">About us</a></li>
-                    <li><a style="color: green" href="/hp/en/page/environment">Environmental Policy</a></li>
-                    <li><a href="/hp/en/page/career">Career</a></li>
+                    <li><a href="/hp/en/page/about-us" class=""><i class="fa-fw fa-duotone fa-smile"></i> About us</a></li>
+                    <li><a href="/hp/en/page/environment"><i style="color: green" class="fa-fw fa-duotone fa-tree"></i> Environmental Policy</a></li>
+                    <li><a href="/hp/en/page/career"><i class="fa-fw fa-duotone fa-person-digging"></i> Lediga tjänster</a></li>
                     
                 </ul>
             </nav>
