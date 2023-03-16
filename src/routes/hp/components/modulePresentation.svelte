@@ -20,6 +20,9 @@
 </a>
 
 <style>
+    a{
+        color: inherit !important;
+    }
     aside{
         display: flex;
         gap: 10px;
