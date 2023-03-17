@@ -1,12 +1,6 @@
 <script>
-	import './styles.css';
-	import './justify.css';
-	import "../css/_sass/main.scss"
-	
+	import '/src/app.css';
 </script>
 
-<div class="app">
+<slot />
 
-	<slot />
-
-</div>

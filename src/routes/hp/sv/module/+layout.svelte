@@ -9,11 +9,13 @@
 	<Nav color="black" />
 </HeaderWhite>
 
-<slot />
+<main>
+	<slot />
 
-<section class="container-fluid text-center">
-    <h3 class="more-features">Fler funktioner i Kaddio</h3>
-</section>
+	<section class="container-fluid text-center">
+		<h3 class="more-features">Fler funktioner i Kaddio</h3>
+	</section>
+</main>
 
 <hr>
 

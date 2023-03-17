@@ -1,78 +1,53 @@
 <script>
-	import HeaderHero from '../../../components/header-hero.svelte';
+	import Person from '../../../../hp/components/person.svelte';
+    import Header from '../../../sv/headerSv.svelte';
 </script>
 
-<HeaderHero>
-    <span slot="title">About us</span>
-</HeaderHero>
+<Header />
 
-<main>
-    <section>
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Vi som är Kaddio</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+      </div>
+      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
-        <aside>
-            <h4>Arvid</h4>
-            <p><small>Chief Technology Officer</small></p>
-            <p>Arvid works with development and UX. Cofounder</p>
-        </aside>
+        <Person>
+            <span slot="name">Arvid</span>
+            <span slot="title">Co-Founder / CTO</span>
+        </Person>
 
-        <aside>
-            <h4>Camilla</h4>
-            <p><small>Chief Customer Officer</small></p>
-            <p>Cognitive scientist working with test, design, support and sales. Passionate about the user perspective. At Kaddio since 2019.</p>
-        </aside>
+        <Person>
+            <span slot="name">Karolina</span>
+            <span slot="title">CFO</span>
+        </Person>
 
-        <aside>
-            <h4>Karolina</h4>
-            <p><small>Chief Financial Officer</small></p>
-            <p>Plan architect working with finance, project management, UX and customer support. Responsible for our finances. Project manager for Kaddio Enterprise. At Kaddio since 2020</p>
-        </aside>
-        
-        <aside>
-            <h4>David</h4>
-            <p><small>Chief Executive Officer</small></p>
-            <p>Intolerant to bad user interfaces, likes the concept of Tapas. Cofounder.</p>
-        </aside>
+        <Person>
+            <span slot="name">Daniel</span>
+            <span slot="title">HR / Market</span>
+        </Person>
 
-        <aside>
-            <h4>Jesper</h4>
-            <p><small>Web developer</small></p>
-            <p>Jesper works with development and automatic testing, responsible for security. At Kaddio since 2020</p>
-        </aside>
+        <Person>
+            <span slot="name">Lena</span>
+            <span slot="title">ISO</span>
+        </Person>
 
-        <aside>
-            <h4>Daniel</h4>
-            <p><small>HR & Market</small></p>
-            <p>Health care practitioner since 1999. Daniel has had leading roles in the educational field since 2014</p>
-        </aside>
+        <Person>
+            <span slot="name">Jesper</span>
+            <span slot="title">Dev</span>
+        </Person>
 
-        <aside>
-            <h4>Marina</h4>
-            <p><small>Customer support</small></p>
-            <p>Public health scientist with long experience of customer relations. At Kaddio since 2022.</p>
-        </aside>
+        <Person>
+            <span slot="name">Marina</span>
+            <span slot="title">Support</span>
+        </Person>
 
-        <aside>
-            <h4>Lena</h4>
-            <p><small>Compliance</small></p>
-            <p>Chemistry customer support</p>
-        </aside>
-
-        <aside>
-            <h4>Agustin</h4>
-            <p><small>Customer support</small></p>
-            <p>Architect and our newest Kaddioka</p>
-        </aside>
-
-        <aside>
-            <h4>Carl</h4>
-            <p><small>Kaddio Lectures</small></p>
-            <p>Rocks and throws Kaddio Lectures, project management and coaching of all fantastic speakers.</p>
-        </aside>
-
-        <aside>
-            <h4>Claes</h4>
-            <p><small>General counsel</small></p>
-            <p>Claes brings more to the table than just legal expertise. Responsible for legal matters and contracts. In the Legal field since 1981.</p>
-        </aside>
-    </section>
-</main>
+        <Person>
+            <span slot="name">Agustin</span>
+            <span slot="title">Technical Support</span>
+        </Person>
+      </ul>
+    </div>
+  </div>
+   
