@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let iconClass: string;
+    // export let iconClass: string = 'todo';
     export let href: string;
 </script>
 

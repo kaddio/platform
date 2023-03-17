@@ -1,6 +1,8 @@
 <script lang="ts">
 
 	import Trans from "../../../components/trans.svelte";
+	import Toggle from "./toggle.svelte";
+    let state: boolean;
     
     const submit = async function(e: SubmitEvent) {
         const formData = new FormData(e.target);
@@ -44,119 +46,88 @@
 
 </script>
 
-<div id="signup">
-
-<div class="container">
-<div class="row" >
-    <div class="col-sm-4 col-sm-offset-1">
-        <Trans lang="sv">
-            <h3>Enkelt</h3>
-            <p>Kostnadsfritt i 10 dagar och det tar bara några minuter att komma igång.</p>
-            <br>
-            <h3>Modulärt</h3>
-            <p>Betala bara för vad du använder. Du kan när som helst lägga till eller ta bort moduler.</p>
-        </Trans>
-        <Trans lang="es">
-            <h3>Facil</h3>
-            <p>...</p>
-            <br>
-            <h3>Modular</h3>
-            <p>...</p>
-        </Trans>
-        
-    </div>
-    
-    <div class="col-sm-4 col-sm-offset-1">
-        {#if !orgCreated}
-        <div id="create-organization-outer">
-            <h3 class="text-center" style="color: #c38f9c">
-                <Trans lang="sv">Skapa konto</Trans>
-            </h3>
-            <form id="create-organization" class="gap-5-vertical" on:submit|preventDefault={submit} name="create">
-                <div class="form-group"><input id="firstname" required type="text" class="form-control" name="firstname" placeholder="Förnamn"></div>
-                <div class="form-group"><input required type="text" class="form-control" name="lastname" placeholder="Efternamn"></div>
-                <div class="form-group"><input bind:value={email} required type="email" class="form-control" name="email" placeholder="E-post"></div>
-                <div class="form-group"><input bind:value={orgName} required type="text" class="form-control" name="orgname" placeholder="Företagsnamn"></div>
-
-                <div class="form-group">
-                    <select name="countrycode" required class="form-control">
-                        <option value="SE">
-                            <Trans lang="sv">Sverige</Trans>
-                            <Trans lang="es">España</Trans>
-                        </option>
-                        <option value="FI">Finland</option>
-                        <option value="NO">Norge</option>
-                        <option value="DK">Danmark</option>
-                        <option value="ES">Spanien</option>
-                    </select>
-                </div>
-
-                <input style="display: none;" type="text" class="form-control" name="create" placeholder="Detta fältet ska vara tomt">
-                
-                <input name="manniska" value="1" checked type="hidden">
-
-                <input type="hidden" name="referrer" id="referrer">
-                <input type="hidden" name="ref" id="ref" value="">
-                <input type="hidden" name="gclid" id="gclid" value="">
-                <input type="hidden" name="i_agree" value="1">
-
-                
-                <div class="input-group">
-                    <input bind:value={url} required type="text" class="form-control" name="orgurl" placeholder="URL">
-                    <span class="input-group-addon">.kaddio.com</span>
-                </div>
-                <br>
-                
-                {#if showCoupon }
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="coupon" placeholder="Eventuell rabattkod">
-                    </div>
-                {/if}
-                <p id="result" class="text-center" style="color: #A00; display: none"></p>
-                <div class="form-group">
-                    <button type="submit" style="width: 100%" class="btn btn-primary">OK <span id="loading" style="display: none;"><i class="fa fa-spinner fa-pulse"></i></span></button>
-                </div>
 
 
-                <div class="text">
-                    
-                    Genom att klicka på “OK“ godkänner du våra <a target="_blank" href="/tos">användarvillkor</a> och <a target="_blank" href="/privacy">sekretesspolicy</a>.
-                    
-                    Vi skickar Kaddio-relaterad information via e-post.
-                </div>       
+{#if !orgCreated}
 
-                <br>
-                {#if !showCoupon }
-                    <div class="text-center">
-                        <a on:click|preventDefault={()=>showCoupon=true}>Jag har en rabattkod</a>
-                    </div>
-                {/if}
 
-            </form>
+
+    <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <svg class="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
+            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+            <defs>
+            <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9089FC" />
+                <stop offset="1" stop-color="#FF80B5" />
+            </linearGradient>
+            </defs>
+        </svg>
         </div>
-        {/if}
-        {#if orgCreated}
-            <span>
-                <h3 class="text-center" style="color: #0A0">Konto skapat <i class="fa fa-check-circle"></i></h3>
+        <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skapa konto</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">Det tar bara några minuter att komma igång och du betalar bara för vad du använder</p>
+        </div>
+        <form on:submit|preventDefault={submit}  method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+            <div>
+            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Förnamn</label>
+            <div class="mt-2.5">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+            </div>
+            <div>
+            <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Efternamn</label>
+            <div class="mt-2.5">
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+            </div>
+            <div class="sm:col-span-2">
+            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Företag</label>
+            <div class="mt-2.5">
+                <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+            </div>
+            <div class="sm:col-span-2">
+            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">E-post</label>
+            <div class="mt-2.5">
+                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+            </div>
+            <div class="sm:col-span-2">
+            <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Land</label>
+            <div class="relative mt-2.5">
+                <div class="absolute inset-y-0 left-0 flex items-center">
+                <label for="country" class="sr-only">Country</label>
+                <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                    <option>SE</option>
+                    <option>ES</option>
+                    <option>EU</option>
+                </select>
+                <svg class="pointer-events-none absolute top-0 right-3 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+                </div>
+                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 py-2 px-3.5 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+            </div>
 
-                <p>Du har skapat en ny organisation i Kaddio.</p>
+            <Toggle bind:state>
+                <span slot="label">
+                    Jag godkänner 
+                    <a href="/hp/sv/page/tos" class="font-semibold text-indigo-600">Användarvillkor</a> och <a href="/hp/sv/page/privacy" class="font-semibold text-indigo-600">Sekretesspolicy</a>.          
+                </span>
+            </Toggle>
 
-                <p>
-                    URL {url}<br>
-                    E-post {email}
-                </p>
+            {state}
 
-                <p>Vi har skickat ett mail till dig med instruktioner om hur du kommer igång.</p>
-
-            </span>
-        {/if}
+        </div>
+        <div class="mt-10">
+            <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</button>
+        </div>
+        </form>
     </div>
-</div>
-</div>
+{:else}
 
-</div>
-<style>
-    #signup {
-        padding: 5em 0;
-    }
-</style>
+
+{/if}

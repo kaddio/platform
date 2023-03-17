@@ -1,6 +1,5 @@
 <script lang="ts">
     export let state: boolean = false;
-
 </script>
 
 <div class="flex gap-x-4 sm:col-span-2">

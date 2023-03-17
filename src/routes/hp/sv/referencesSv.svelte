@@ -1,37 +1,25 @@
-<hr />
+<script>
+	import Customer from "../components/customer.svelte";
+</script>
 
-<div class="container jumbotron">
-    <div>
-        <a href="https://www.mau.se" target="_blank" rel="noreferrer"><img src="/customer-logos/malmo.png" width="100" alt="Logo Malmö Universitet"></a>
-    </div>
-    <div>
-        <a href="https://www.rfsl.se" target="_blank" rel="noreferrer"><img src="/customer-logos/rfsl.png" width="100" alt="Logo RFSL"></a>
-    </div>
-    <div>
-        <a href="https://twitchhealth.se/" target="_blank" rel="noreferrer"><img src="/customer-logos/Twitch.png" width="100" alt="Logo Twitch"></a>
-    </div>
-    <div>
-        <a href="https://www.foreningenstorasyster.se/wordpress/" target="_blank" rel="noreferrer"><img src="/customer-logos/storasyster_ny.png" alt="Logo Storasyster" width="100"></a>
-    </div>
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <Customer src="/customer-logos/malmo.png" alt="Malmö Universitet"></Customer>
+        <Customer src="/customer-logos/rfsl.png" alt="RFSL"></Customer>
+        <Customer src="/customer-logos/Twitch.png" alt="Twitch"></Customer>
+        <Customer src="/customer-logos/storasyster_ny.png" alt="Storasyster"></Customer>
+        <Customer src="/customer-logos/sveakbt.png" alt="Svea KBT"></Customer>
+        <Customer src="/customer-logos/dinpsykolog.png" alt="Din Psykolog"></Customer>
+        <Customer src="/customer-logos/IKSU Orange 2019 (kopia).png" alt="IKSU"></Customer>
 
-    <div>
-        <a href="https://www.sveakbt.se" target="_blank" rel="noreferrer"><img src="/customer-logos/sveakbt.png" alt="Logo Svea KBT" width="100"></a>
+      </div>
+      <div class="mt-16 flex justify-center">
+        <p class="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm leading-6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
+          <span class="hidden md:inline">Över 1500 företag använder Kaddio</span>
+          <a href="/hp/sv#signup" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span> Skapa konto <span aria-hidden="true">&rarr;</span></a>
+        </p>
+      </div>
     </div>
-    
-    <div>
-        <a href="https://www.dinpsykolog.se" target="_blank" rel="noreferrer"><img src="/customer-logos/dinpsykolog.png" alt="Logo Din Psykolog" width="100"></a>
-    </div>
-
-    <div>
-        <a href="https://www.iksu.se/" target="_blank" rel="noreferrer"><img src="/customer-logos/IKSU Orange 2019 (kopia).png" alt="Logo IKSU" width="100"></a>
-    </div>
-</div>
-
-<style>
-    .container{
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-</style>
+  </div>
+  

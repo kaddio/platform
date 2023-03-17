@@ -45,37 +45,22 @@
                 <li>
                   <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-300 hover:text-white">Om oss</a>
                 </li>
-  
-                <!-- <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Environmental policy</a>
-                </li> -->
-  
+    
                 <li>
                   <a href="/hp/en/career" class="text-sm leading-6 text-gray-300 hover:text-white">Lediga tjänster</a>
                 </li>
-  
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
-                </li>
+    
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+              <h3 class="text-sm font-semibold leading-6 text-white">Avtal</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
+                  <a href="/hp/sv/page/tos" class="text-sm leading-6 text-gray-300 hover:text-white">Användarvillkor</a>
                 </li>
   
                 <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
-                </li>
-  
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                  <a href="/hp/sv/page/privacy" class="text-sm leading-6 text-gray-300 hover:text-white">Sekretesspolicy</a>
                 </li>
               </ul>
             </div>
