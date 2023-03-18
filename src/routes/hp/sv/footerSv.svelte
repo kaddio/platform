@@ -47,7 +47,7 @@
                 </li>
     
                 <li>
-                  <a href="/hp/en/career" class="text-sm leading-6 text-gray-300 hover:text-white">Lediga tjänster</a>
+                  <a href="/hp/en/page/career" class="text-sm leading-6 text-gray-300 hover:text-white">Lediga tjänster</a>
                 </li>
     
               </ul>

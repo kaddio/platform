@@ -3,9 +3,3 @@
 </script>
 
 <Nav />
-
-<style>
-    header{
-        /* background-image: url(/img/man.jpg);         */
-    }
-</style>

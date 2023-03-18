@@ -28,35 +28,20 @@
     }    
 </script>
 
-<section class="container" >
-    <div id="find-organization" class="jumbotron">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3>Logga in</h3>
-            </div>
 
-            <div class="col-sm-9">
-                <p>Du loggar in på din organisations startsida, hitta den här:</p>
-
-                <form on:submit|preventDefault={submit} style="max-width: 400px">
-
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input id="team-url" required type="text" class="form-control" name="url" placeholder="URL">
-                            <span class="input-group-addon">.kaddio.com</span>
-                        </div>
-                    </div>
-                    
-                    {#if cannotFind }
-                        <p>Vi kan inte hitta den organisationen</p>
-                    {/if}
-
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Gå dit <i class="fa fa-arrow-right"></i></button>
-                    </div>
-                </form>
-
-            </div>
+<div class="bg-white py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+      <div class="max-w-xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:col-span-7">
+        <h2 class="inline sm:block lg:inline xl:block">Du loggar in på din organisations sida, hitta den här.</h2>
+      </div>
+      <form class="w-full max-w-md lg:col-span-5 lg:pt-2">
+        <div class="flex gap-x-4">
+          <label for="url" class="sr-only">Email address</label>
+          <input id="url" name="url" type="url" required class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
+          <button type="submit" class="flex-none rounded-md bg-indigo-600 py-2.5 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Hitta</button>
         </div>
+        <p class="mt-4 text-sm leading-6 text-gray-900">Du vidarebefordras till ditt företags sida.</p>
+      </form>
     </div>
-</section>
+  </div>
+  

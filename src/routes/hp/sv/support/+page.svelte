@@ -1,8 +1,6 @@
 <script lang="ts">	
 	import { setContext } from 'svelte';
 	import Footer from '../footerSv.svelte';
-	import HeaderWhite from '../../components/header-white.svelte';
-	import Nav from '../navSv.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -12,10 +10,6 @@
 	<title>Kaddio - framtidens journalsystem</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-
-<HeaderWhite>
-	<Nav color="black" />
-</HeaderWhite>
 
 <div class="bg-white">
 	<div class="relative isolate px-6 pt-14 lg:px-8">

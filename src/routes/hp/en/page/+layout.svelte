@@ -2,8 +2,8 @@
 	import Footer from "../footerEn.svelte";
 </script>
 
-<slot />
+<div class="bg-white">
+	<slot />
+</div>
 
 <Footer />
-
-<style></style>

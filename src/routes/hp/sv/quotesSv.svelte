@@ -55,12 +55,6 @@
                     Kim Olausson <cite>Leg Fysioterapeut <a href="http://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
                 </span>
             </Quote>
-            <Quote>
-                Snyggt och lätthanterligt journalsystem som är tillgängligt vart man än befinner sig då det är onlinebaserat. Dessutom är det smidigt och enkelt att upprätta fakturor
-                <span slot="quoted">
-                    Petter K Jormin <cite>Osteopat D.O, BSc. <a href="https://majornasosteopati.se" target="_blank" rel="noreferrer">Majornas Osteopati</a></cite>
-                </span>
-            </Quote>
         </div>
       </div>
     </div>

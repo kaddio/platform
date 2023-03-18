@@ -19,28 +19,10 @@
 </svelte:head>
 
 <Header />
-<section id="features">
-	<ModulesSv />
-</section>
+<ModulesSv />
 <QuotesSv />
 <PricesSv />
 <CreateAccount />
 <GotoOrg />
 <ReferencesSv />
 <Footer />
-
-
-<h1 class="text-3xl font-bold underline">
-	Hello world!
-  </h1>
-  
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-</style>

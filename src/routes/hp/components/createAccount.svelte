@@ -49,9 +49,6 @@
 
 
 {#if !orgCreated}
-
-
-
     <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
         <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg class="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
@@ -127,7 +124,4 @@
         </div>
         </form>
     </div>
-{:else}
-
-
 {/if}

@@ -1,8 +1,18 @@
-<script lang="ts">
-	import ModuleMenuSv from "./moduleMenuSv.svelte";
+<script>
+  let show = false;
 
-  let state: boolean = false;
+  function clickOutside(node){
+    const handleClick = (event) => {
+      if(!node.contains(event.target)){
+        node.dispatchEvent(new CustomEvent('outclick'));
+      }
+    }
+
+    document.addEventListener("click", handleClick, true);
+  }
+
 </script>
+
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
@@ -13,18 +23,20 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
 
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
+        Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
+      </a>
 
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Kontakta oss</a>
+      <a href="/hp/sv/support" class="text-sm font-semibold leading-6 text-gray-900">Kontakta oss</a>
 
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Pris</a>
+      <a href="#price" class="text-sm font-semibold leading-6 text-gray-900">Pris</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-      <a href="#" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
-      <a href="#" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</a>
+      <a href="#find-organization" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
+      <a href="#signup" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</a>
     </div>
     <div class="flex lg:hidden">
-      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+      <button on:click={() => {show = true}} type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
         <span class="sr-only">Open main menu</span>
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -33,7 +45,7 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
+  <div use:clickOutside on:outclick={() => (show = false)} class="lg:hidden" class:hidden={!show} role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-10"></div>
     <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -43,7 +55,7 @@
           <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
         </a>
         <a href="#" class="ml-auto rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+        <button type="button" on:click={() => (show = false)} class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
