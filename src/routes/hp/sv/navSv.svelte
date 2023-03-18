@@ -16,7 +16,7 @@
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
+      <a href="/hp/sv" class="-m-1.5 p-1.5">
         <span class="sr-only">Kaddio</span>
         <img class="h-8 w-auto" src="/img/kaddio-svart.png" alt="">
       </a>
@@ -30,7 +30,7 @@
 
       <a href="/hp/sv/support" class="text-sm font-semibold leading-6 text-gray-900">Kontakta oss</a>
 
-      <a href="#price" class="text-sm font-semibold leading-6 text-gray-900">Pris</a>
+      <a href="/hp/sv/#price" class="text-sm font-semibold leading-6 text-gray-900">Pris</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
       <a href="/hp/sv/sign-in" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
