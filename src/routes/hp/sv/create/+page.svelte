@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - framtidens journalsystem</title>
+	<title>Kaddio - skapa konto</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
