@@ -33,7 +33,7 @@
       <a href="#price" class="text-sm font-semibold leading-6 text-gray-900">Pris</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-      <a href="#find-organization" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
+      <a href="/hp/sv/sign-in" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
       <a href="/hp/sv/create" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</a>
     </div>
     <div class="flex lg:hidden">
