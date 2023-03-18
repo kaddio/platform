@@ -17,7 +17,7 @@
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Your Company</span>
+        <span class="sr-only">Kaddio</span>
         <img class="h-8 w-auto" src="/img/kaddio-svart.png" alt="">
       </a>
     </div>
@@ -25,7 +25,8 @@
 
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
         Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
-      </a>
+      </a>     
+
 
       <a href="/hp/sv/support" class="text-sm font-semibold leading-6 text-gray-900">Kontakta oss</a>
 
@@ -33,7 +34,7 @@
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
       <a href="#find-organization" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
-      <a href="#signup" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</a>
+      <a href="/hp/sv/create" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</a>
     </div>
     <div class="flex lg:hidden">
       <button on:click={() => {show = true}} type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">

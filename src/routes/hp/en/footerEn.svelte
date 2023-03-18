@@ -1,55 +1,72 @@
-<script>
-	import Song from "../components/song.svelte";
 
-</script>
-<Song />
 
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <nav class="col-xs-12 col-sm-3">
-                <h5>Products</h5>
-                <ul>
-                    <li><a href="/">Kaddio</a></li>
-                    <li><a href="/hp/en/page/enterprise">Kaddio Enterprise</a></li>
-                    <!-- <li><a href="/edu">Kaddio Education (LMS)</a></li> -->
-                </ul>
-            </nav>
-            <nav class="col-xs-12 col-sm-3">
-                <h5>Support</h5>
-                <ul>
-                    <li><a target="_blank" rel="noreferrer" href="https://help.kaddio.com/help">Help center</a></li>
-                    <li><a href="/hp/sv/support">Contact us</a></li>
-                    <li><a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API">Developer API</a></li>
-                </ul>
-            </nav>
-            <nav class="col-xs-12 col-sm-3">
-                <h5>Legal</h5>
-                <ul>
-                    <li><a href="/hp/sv/page/tos">Terms of Service</a></li>
-                    <li><a href="/hp/sv/page/privacy">Privacy</a></li>
-                </ul>
-            </nav>
-
-            <nav class="col-xs-12 col-sm-3">
-                <h5>Company</h5>
-                <ul>
-                    <li><a href="/hp/en/page/about-us" class=""><i class="fa-fw fa-duotone fa-smile"></i> About us</a></li>
-                    <li><a href="/hp/en/page/environment"><i style="color: green" class="fa-fw fa-duotone fa-tree"></i> Environmental Policy</a></li>
-                    <li><a href="/hp/en/page/career"><i class="fa-fw fa-duotone fa-person-digging"></i> Lediga tjänster</a></li>
-                    
-                </ul>
-            </nav>
+<footer class="bg-gray-900" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <img class="h-7" src="/img/kaddio-logo.png" alt="Company name">
+        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-white">Products</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio</a>
+                </li>
+  
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio Enterprise</a>
+                </li>
+  
+              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
+              <ul role="list" class="mt-6 space-y-4">
+  
+                <li>
+                  <a href="https://help.kaddio.com/help" class="text-sm leading-6 text-gray-300 hover:text-white">Hjälpcenter</a>
+                </li>
+  
+                <li>
+                  <a href="/hp/sv/support" class="text-sm leading-6 text-gray-300 hover:text-white">Kontakta oss</a>
+                </li>
+  
+                <li>
+                  <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" class="text-sm leading-6 text-gray-300 hover:text-white">Developer API</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-300 hover:text-white">Om oss</a>
+                </li>
+    
+                <li>
+                  <a href="/hp/en/page/career" class="text-sm leading-6 text-gray-300 hover:text-white">Lediga tjänster</a>
+                </li>
+    
+              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="/hp/sv/page/tos" class="text-sm leading-6 text-gray-300 hover:text-white">Användarvillkor</a>
+                </li>
+  
+                <li>
+                  <a href="/hp/sv/page/privacy" class="text-sm leading-6 text-gray-300 hover:text-white">Sekretesspolicy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div class="row" style="margin-top: 40px">
-            <div class="col-sm-6">
-                    © <strong>Kaddio AB</strong> &nbsp; &nbsp;                   
-
-                    <a href="/hp" class="active-dark">Svenska</a> &nbsp; 
-                    <!-- <a href="/hp/en">English</a> &nbsp; -->
-                    <a href="/hp/es">Español</a> &nbsp;
-            </div>            
-        </div>
+      </div>
     </div>
-</footer>
+  </footer>
+  
