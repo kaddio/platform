@@ -111,8 +111,6 @@
         <span slot="title">Physical backup locations</span>
         <span slot="body">2</span>
     </StatPiece>
-
-    
 </Stat>
 
   
@@ -122,7 +120,7 @@
     <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">We are a happy team of 9 players, loving what we do -  most of time anyways..</p>
       </div>
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
@@ -170,7 +168,17 @@
             <span slot="name">Agustin</span>
             <span slot="title">Technical Support</span>
         </Person>
-      </ul>
+
+        <Person>
+            <span slot="name">Carl T</span>
+            <span slot="title">Kaddio Lectures</span>
+        </Person>
+
+        <Person>
+            <span slot="name">Claes</span>
+            <span slot="title">General counsel</span>
+        </Person>
+    </ul>
     </div>
   </div>
 
