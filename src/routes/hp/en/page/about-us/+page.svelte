@@ -1,6 +1,18 @@
 <script>
-	import Person from '../../../../hp/components/person.svelte';
+    import Person from '../../../../hp/components/person.svelte';
     import Header from '../../../sv/headerSv.svelte';
+
+    const quotes = [
+        ['I sometimes have cream in my coffee', 'David', 'C3(P)O at Kaddio'],
+    ];
+
+    const show = quotes[Math.floor(Math.random() * quotes.length)];
+
+    const what = {
+        quote: show[0],
+        name: show[1],
+        title: show[2]
+    };
 </script>
 
 <Header />
@@ -29,9 +41,9 @@
               </svg>
               <img src="/img/kaddio-logo.png" alt="" class="h-12 w-auto">
               <blockquote class="mt-6 text-xl font-semibold leading-8 text-white">
-                <p>“I sometimes have cream in my coffee”</p>
+                <p>“{what.quote}”</p>
               </blockquote>
-              <figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong class="font-semibold text-white">David,</strong> C3(P)O at Kaddio</figcaption>
+              <figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong class="font-semibold text-white">{what.name},</strong> {what.title}</figcaption>
             </figure>
           </div>
         </div>
