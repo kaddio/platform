@@ -90,7 +90,7 @@
 <Stat>
     <span slot="pre">Our track record</span>
     <span slot="title">Trusted by thousands of users worldwide</span>
-    <span slot="body">Since 2016 users have trusted Kaddio to be the heart of their digital operations, storing their most valuable assets.</span>
+    <span slot="body">Since 2016, users have trusted Kaddio to be The Heart of their digital operations, storing their most valuable assets.</span>
 
     <StatPiece>
         <span slot="title">Users on the platform</span>
@@ -120,7 +120,7 @@
     <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">We are a happy team of 9 players, loving what we do -  most of time anyways..</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">We are a happy team, loving what we do -  most of time anyways..</p>
       </div>
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
@@ -170,7 +170,7 @@
         </Person>
 
         <Person>
-            <span slot="name">Carl T</span>
+            <span slot="name">Carl</span>
             <span slot="title">Kaddio Lectures</span>
         </Person>
 
@@ -194,7 +194,7 @@
           <img class="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm" src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="">
           <div class="w-full flex-auto">
             <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join our team</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-300">We always have a chair available</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">We're always looking for interesting people.</p>
             <ul role="list" class="mt-10 grid grid-cols-1 gap-y-3 gap-x-8 text-base leading-7 text-white sm:grid-cols-2">
               <li class="flex gap-x-3">
                 <svg class="h-7 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -228,7 +228,7 @@
                 <svg class="h-7 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
                 </svg>
-                Benefits for ya
+                All kinds of benefits for ya'
               </li>
   
               <li class="flex gap-x-3">
@@ -239,7 +239,7 @@
               </li>
             </ul>
             <div class="mt-10 flex">
-              <a href="/hp/en/career" class="text-sm font-semibold leading-6 text-indigo-400">See our job postings <span aria-hidden="true">&rarr;</span></a>
+              <a href="/hp/en/page/career" class="text-sm font-semibold leading-6 text-indigo-400">See our job postings <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
         </div>

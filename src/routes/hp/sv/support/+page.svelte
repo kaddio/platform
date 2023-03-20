@@ -53,6 +53,19 @@
 		</span>
 	</SimpleCenteredPiece>		
 
+	<SimpleCenteredPiece icon="signal">
+		<span slot="title">
+			Status <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
+		</span>
+		<span slot="body">
+			Undrar du hur det går för Kaddio just nu? Verkar det som att Kaddio har problem? Kolla vår status-sida :)
+		</span>
+		<!-- <span slot="link">
+			<a href="https://status.kaddio.com" class="text-sm font-semibold leading-6 text-indigo-600">status.kaddio.com <span aria-hidden="true">&rarr;</span></a>
+		</span> -->
+	</SimpleCenteredPiece>		
+
+
 </SimpleCentered>
 
   
