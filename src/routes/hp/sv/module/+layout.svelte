@@ -3,24 +3,12 @@
 	import ModulesSv from '../modulesSv.svelte';
 	import Footer from '../footerSv.svelte';
 	import Nav from '../navSv.svelte';
+	import HeaderSv from '../headerSv.svelte';
 </script>
 
-<HeaderWhite>
-	<Nav color="black" />
-</HeaderWhite>
+<HeaderSv />
 
-<main>
-	<slot />
+<slot />
 
-	<section class="container-fluid text-center">
-		<h3 class="more-features">Fler funktioner i Kaddio</h3>
-	</section>
-</main>
-
-<hr>
-
-<section id="features">
-	<ModulesSv></ModulesSv>
-</section>
 
 <Footer />
