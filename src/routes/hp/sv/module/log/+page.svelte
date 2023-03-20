@@ -1,62 +1,57 @@
 <script>
 	import Qa from "../../../components/qa.svelte";
 	import ModuleFeature from "../../../components/moduleFeature.svelte";
+	import ModuleSection from "../../../components/moduleSection.svelte";
 	import FaqSection from "../../../../hp/components/faqSection.svelte";
 </script>
 
-<div class="bg-white py-24 sm:py-32">
-	<div class="mx-auto max-w-7xl px-6 lg:px-8">
-	  <div class="mx-auto max-w-2xl lg:mx-0">
-		<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Kaddio Dokumentation</h2>
-		<p class="mt-6 text-lg leading-8 text-gray-600">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</p>
-	  </div>
-	  <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+<ModuleSection>
+	<span slot="title">Kaddio Dokumentation</span>
+	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
 
-		<ModuleFeature>
-			<span slot="title">Journal</span>
-			<span slot="body">
-				Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-			</span>
-		</ModuleFeature>
+	<ModuleFeature>
+		<span slot="title">Journal</span>
+		<span slot="body">
+			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+		</span>
+	</ModuleFeature>
 
-		<ModuleFeature>
-			<span slot="title">Journalformulär</span>
-			<span slot="body">
-				Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-			</span>
-		</ModuleFeature>
+	<ModuleFeature>
+		<span slot="title">Journalformulär</span>
+		<span slot="body">
+			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+		</span>
+	</ModuleFeature>
 
-		<ModuleFeature>
-			<span slot="title">ICD-10</span>
-			<span slot="body">
-				Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-			</span>
-		</ModuleFeature>
+	<ModuleFeature>
+		<span slot="title">ICD-10</span>
+		<span slot="body">
+			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+		</span>
+	</ModuleFeature>
 
-		<ModuleFeature>
-			<span slot="title">Advanced security.</span>
-			<span slot="body">
-				Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-			</span>
-		</ModuleFeature>
+	<ModuleFeature>
+		<span slot="title">Advanced security.</span>
+		<span slot="body">
+			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+		</span>
+	</ModuleFeature>
 
-		<ModuleFeature>
-			<span slot="title">Kraftfullt API.</span>
-			<span slot="body">
-				Automatisera era flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomlig för API
-			</span>
-		</ModuleFeature>
+	<ModuleFeature>
+		<span slot="title">Kraftfullt API.</span>
+		<span slot="body">
+			Automatisera era flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomlig för API
+		</span>
+	</ModuleFeature>
 
-		<ModuleFeature>
-			<span slot="title">Database backups.</span>
-			<span slot="body">
-				Kaddio tar kontinuerlig backup av allting i Kaddio, flera gånger per dygn. Säkerhetskopior lagras krypterat på geografiskt skiljda platser.
-			</span>
-		</ModuleFeature>
-    
-	  </dl>
-	</div>
-  </div>
+	<ModuleFeature>
+		<span slot="title">Database backups.</span>
+		<span slot="body">
+			Kaddio tar kontinuerlig backup av allting i Kaddio, flera gånger per dygn. Säkerhetskopior lagras krypterat på geografiskt skiljda platser.
+		</span>
+	</ModuleFeature>
+	
+</ModuleSection>
   
 
 <FaqSection>
