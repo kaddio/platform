@@ -13,9 +13,9 @@
                   <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio</a>
                 </li>
   
-                <li>
+                <!-- <li>
                   <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio Enterprise</a>
-                </li>
+                </li> -->
   
               </ul>
             </div>
