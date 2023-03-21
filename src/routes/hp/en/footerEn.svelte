@@ -7,19 +7,17 @@
         <img class="h-7" src="/img/kaddio-logo.png" alt="Company name">
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
+
             <div>
               <h3 class="text-sm font-semibold leading-6 text-white">Products</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
                   <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio</a>
                 </li>
-  
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio Enterprise</a>
-                </li>
-  
+    
               </ul>
             </div>
+
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
               <ul role="list" class="mt-6 space-y-4">
@@ -38,6 +36,7 @@
               </ul>
             </div>
           </div>
+
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
@@ -52,6 +51,7 @@
     
               </ul>
             </div>
+            
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
               <ul role="list" class="mt-6 space-y-4">
