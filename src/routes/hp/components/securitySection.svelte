@@ -17,7 +17,7 @@
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Kaddio är säkert.</p>
         <p class="mt-6 text-base leading-7 text-gray-300">Kaddio byggs enligt principen "Secure by Design". Under 2023 genomgår vi certifiering enligt ISO 27001 Informationssäkerhet</p>
         <div class="mt-8">
-          <a href="#" class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Visit the help center</a>
+          <a href="#" class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kaddio Hjälpcenter</a>
         </div>
       </div>
     </div>

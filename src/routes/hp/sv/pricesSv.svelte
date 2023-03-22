@@ -3,7 +3,7 @@
 
     const modules = [{
         name: "Core",
-		price: 119,
+		price: 149,
 		selected: true,
         disabled: true
     },
@@ -14,7 +14,8 @@
 	},
     {
 		name: "Tidsbokning & Kalender",
-		price: 79
+		price: 79,
+		selected: true
 	},
     {
 		name: "Dokument",
@@ -38,31 +39,12 @@
 	},
     {
 		name: "Samlingsräkning Region",
-		price: 119
+		price: 29
 	}
 ]
 </script>
 
-<section id="price">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3 col-sm-offset-1">
-				<p>
-					</p><h3>Pris</h3>
-					<p>Klicka i för att se vad Kaddio kostar.</p>
-				<p></p>
-			</div>
-			<div class="col-md-6 col-sm-offset-1">
-				<Price currency="SEK" modules="{modules}">
 
-				</Price>
-			</div>
-		</div>
-	</div>
+<Price currency="SEK" modules="{modules}">
 
-</section>
-<style>
-    #price {
-        padding: 10rem 0;
-    }
-</style>
+</Price>
