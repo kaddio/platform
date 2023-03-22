@@ -1,8 +1,8 @@
 <script>
     import Stat from '../../../../hp/components/stat.svelte';
     import Person from '../../../../hp/components/person.svelte';
-    import Header from '../../../sv/headerSv.svelte';
-	import StatPiece from '../../../../hp/components/statPiece.svelte';
+    import Nav from '../../../sv/navSv.svelte';
+    import StatPiece from '../../../../hp/components/statPiece.svelte';
 
     const quotes = [
         ['I sometimes have cream in my coffee', 'David', 'C3(P)O at Kaddio'],
@@ -17,7 +17,7 @@
     };
 </script>
 
-<Header />
+<Nav />
 
 
 <div class="bg-white py-24 sm:py-32">
