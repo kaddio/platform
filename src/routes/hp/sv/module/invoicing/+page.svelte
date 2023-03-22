@@ -7,10 +7,10 @@
 
 <ModuleSection>
 	<span slot="title">Kaddio Fakturering</span>
-	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram, i och med att det finns integrerat i Kaddio hjälper det dig att fakturera direkt från bokningar och journalanteckningar</span>
 
 	<ModuleFeature>
-		<span slot="title">Journal</span>
+		<span slot="title">Artiklar</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
@@ -30,26 +30,6 @@
 		</span>
 	</ModuleFeature>
 
-	<ModuleFeature>
-		<span slot="title">Advanced security.</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Kraftfullt API.</span>
-		<span slot="body">
-			Automatisera era flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomlig för API
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Database backups.</span>
-		<span slot="body">
-			Kaddio tar kontinuerlig backup av allting i Kaddio, flera gånger per dygn. Säkerhetskopior lagras krypterat på geografiskt skiljda platser.
-		</span>
-	</ModuleFeature>
 	
 </ModuleSection>
   
@@ -58,65 +38,59 @@
 	<span slot="title">Funktioner</span>
 
 	<Qa>
-		<span slot="q">Anteckningsmallar</span>
+		<span slot="q">Fakturaunderlag</span>
 		<span slot="a">
-			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj din egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
+			Kaddio skapar automatiskt fakturaunderlag utifrån kalender och journal.
 		</span>
 	</Qa>
-	
 	<Qa>
-		<span slot="q">Journalformulär</span>
+		<span slot="q">Skicka fakturor</span>
 		<span slot="a">
-			Skapa dina egna formulär eller använd vanligt förekommande standardformulär direkt från Kaddio. Skicka skattningsformulär och hälsodeklarationer via e-post och sms. Journalformulär kan skickas automatiskt i samband med bokning eller manuellt vid behov. Svaren sparas i journalen.
+			Skicka fakturor med post, e-post, via Kaddios säkra kommunikation och e-faktura.
 		</span>
 	</Qa>
-
 	<Qa>
-		<span slot="q">Brev och remisser</span>
+		<span slot="q">Påminnelsefaktura</span>
 		<span slot="a">
-			Skapa brev, remisser, remissvar och intyg. Skicka med post, via Kaddios chat eller ladda ner som PDF.
+			Skicka påminnelsefakturor automatiskt och manuellt.
 		</span>
 	</Qa>
-
 	<Qa>
-		<span slot="q">ICD-10</span>
+		<span slot="q">Automatisk avprickning</span>
 		<span slot="a">
-			Sök med kod eller fritext och lägg till diagnoser i varje journalanteckning.
+			Kaddio prickar av fakturor automatiskt när kunden betalar via bankgiro.
 		</span>
 	</Qa>
-
 	<Qa>
-		<span slot="q">Behörigheter</span>
+		<span slot="q">E-faktura</span>
 		<span slot="a">
-			Välj om alla i verksamheten ska kunna läsa klienters journal eller om behörigheten ska begränsas till vissa behandlare.
+			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
 		</span>
 	</Qa>
-
 	<Qa>
-		<span slot="q">Bild</span>
+		<span slot="q">Samfakturering</span>
 		<span slot="a">
-			Rita på fram- och baksida av en människokropp för att dokumentera till exempel var klienten upplever smärta.
+			Fakturera för flera klienter till ett företag, till exempel ett gruppboende eller försäkringsbolag.
 		</span>
 	</Qa>
-
 	<Qa>
-		<span slot="q">Lista osignerade anteckningar</span>
+		<span slot="q">Inkassoexport</span>
 		<span slot="a">
-			Håll koll på anteckningar som väntar på att bli signerade.
+			Exportera ej betalda fakturor som sedan kan importeras till ett inkassoföretag.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Exportera/skriv ut</span>
+		<span slot="q">Export</span>
 		<span slot="a">
-			Exportera och skriv ut enskild journalanteckning eller hela journalen till PDF.
+			Exportera fakturor som SIE-fil eller CSV-fil för uppladdning i ett bokföringsprogram.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Loggning</span>
+		<span slot="q">Valutor</span>
 		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
+			Skicka fakturor i världens 33 vanligaste valutor, med automatiska växelkurser som uppdateras varje dag från ECB. Kaddio bokför automatiskt valutakursvinster och valutakursförluster i SIE-exporten.
 		</span>
 	</Qa>
 

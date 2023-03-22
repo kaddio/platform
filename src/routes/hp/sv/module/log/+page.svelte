@@ -10,42 +10,41 @@
 	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
 
 	<ModuleFeature>
-		<span slot="title">Journal</span>
+		<span slot="title">Användarvänligt.</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Journalformulär</span>
+		<span slot="title">Flexibelt.</span>
+		<span slot="body">
+			Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">Säkert.</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">ICD-10</span>
+		<span slot="title">Behörighetsstyrning.</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Advanced security.</span>
+		<span slot="title">API.</span>
 		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Automatisera flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomligt via API.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Kraftfullt API.</span>
-		<span slot="body">
-			Automatisera era flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomlig för API
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Database backups.</span>
+		<span slot="title">Backup.</span>
 		<span slot="body">
 			Kaddio tar kontinuerlig backup av allting i Kaddio, flera gånger per dygn. Säkerhetskopior lagras krypterat på geografiskt skiljda platser.
 		</span>
@@ -115,6 +114,13 @@
 
 	<Qa>
 		<span slot="q">Loggning</span>
+		<span slot="a">
+			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">API</span>
 		<span slot="a">
 			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
 		</span>

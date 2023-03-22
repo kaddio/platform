@@ -7,6 +7,7 @@
 	import { setContext } from 'svelte';
 	import Footer from './footerSv.svelte';
 	import NavSv from './navSv.svelte';
+	import SecuritySectionSv from './securitySectionSv.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -112,5 +113,7 @@
 
 <QuotesSv />
 <PricesSv />
+<SecuritySectionSv />
+
 <ReferencesSv />
 <Footer />

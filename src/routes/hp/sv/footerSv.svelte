@@ -7,16 +7,28 @@
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">Produkter</h3>
+              <h3 class="text-sm font-semibold leading-6 text-white">Tjänster</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio</a>
+                  <a href="/hp/sv/module/log" class="text-sm leading-6 text-gray-300 hover:text-white">Journal</a>
                 </li>
-  
-                <!-- <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Kaddio Enterprise</a>
-                </li> -->
-  
+
+                <li>
+                  <a href="/hp/sv/module/cal" class="text-sm leading-6 text-gray-300 hover:text-white">Tidsbokning</a>
+                </li>
+
+                <li>
+                  <a href="/hp/sv/module/invoicing" class="text-sm leading-6 text-gray-300 hover:text-white">Fakturering</a>
+                </li>
+
+                <li>
+                  <a href="/hp/sv/module/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Chat</a>
+                </li>
+
+                <li>
+                  <a href="/hp/sv/module/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Video</a>
+                </li>
+                
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
