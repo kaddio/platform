@@ -6,6 +6,7 @@
 	import SimpleCenteredPiece from '../../components/simpleCenteredPiece.svelte';
 	import FooterSv from '../footerSv.svelte';
 	import HeaderSv from '../headerSv.svelte';
+	import NavSv from '../navSv.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -16,8 +17,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<HeaderSv />
-
+<NavSv />
 
 <SimpleCentered>
 	<span slot="title">Kontakta oss</span>

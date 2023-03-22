@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let show = false;
 
   function clickOutside(node){
@@ -11,29 +11,31 @@
     document.addEventListener("click", handleClick, true);
   }
 
+  export let darkHeader: boolean = false;
+
 </script>
 
-<header class="bg-white">
+<header class="absolute inset-x-0 top-0 z-50">
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="/hp/sv" class="-m-1.5 p-1.5">
         <span class="sr-only">Kaddio</span>
-        <img class="h-8 w-auto" src="/img/kaddio-svart.png" alt="">
+        <img class="h-8 w-auto" src={darkHeader ? '/img/kaddio-logo.png' : '/img/kaddio-svart.png'} alt="">
       </a>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
 
-      <a class="text-sm font-semibold leading-6 text-gray-900">
+      <a class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">
         Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
       </a>     
 
 
-      <a href="/hp/sv/support" class="text-sm font-semibold leading-6 text-gray-900">Kontakta oss</a>
+      <a href="/hp/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kontakta oss</a>
 
-      <a href="/hp/sv/#price" class="text-sm font-semibold leading-6 text-gray-900">Pris</a>
+      <a href="/hp/sv/#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">Pris</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-      <a href="/hp/sv/sign-in" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">Logga in</a>
+      <a href="/hp/sv/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">Logga in</a>
       <a href="/hp/sv/create" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Skapa konto</a>
     </div>
     <div class="flex lg:hidden">
@@ -53,9 +55,9 @@
       <div class="flex items-center gap-x-6">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          <img class="h-8 w-auto" src="/img/kaddio-svart.png" alt="">
         </a>
-        <a href="#" class="ml-auto rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</a>
+        <a href="/hp/sv/create" class="ml-auto rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Bli kund</a>
         <button type="button" on:click={() => (show = false)} class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -73,11 +75,9 @@
             </a>
 
             <a href="/hp/sv/#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pris</a>
-
-            <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
           </div>
           <div class="py-6">
-            <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+            <a href="/hp/sv/sign-in" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Logga in</a>
           </div>
         </div>
       </div>
