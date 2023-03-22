@@ -1,7 +1,4 @@
 <script lang="ts">
-	import PriceModule from "./priceModule.svelte";
-	import Toggle from "./toggle.svelte";
-
 
     type Module = {
         price: number,
@@ -15,9 +12,6 @@
 
     $: total = modules.filter(m => m.selected).map(m=> m.price).reduce((a,b) => a+b, 0);
 </script>
-
-
-
 
 
 <div class="bg-white py-24 sm:py-32">
