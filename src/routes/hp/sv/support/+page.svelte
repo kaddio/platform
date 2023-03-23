@@ -68,7 +68,7 @@
 
 </SimpleCentered>
 
-  
+<!--   
  <FaqSection>
 	<span slot="title">Några vanliga frågor</span>
 	
@@ -88,5 +88,5 @@
 
 
  </FaqSection> 
-  
+   -->
   <FooterSv />
