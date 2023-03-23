@@ -1,12 +1,20 @@
 <script lang="ts">
-
 	import Cloud from "./cloud.svelte";
-import Toggle from "./toggle.svelte";
+    import Toggle from "./toggle.svelte";
+	import { getContext } from "svelte";
+
     let submitIsEnabled: boolean = false;
 
     let state: boolean;
 
-    $: submitIsEnabled = state;
+    let defaultCountry;
+    const selectedLang = getContext('lang');
+
+
+    console.log(selectedLang)
+
+
+    $: submitIsEnabled = state && !!email;
     
     const submit = async function(e: SubmitEvent) {
         const formData = new FormData(e.target);
@@ -48,6 +56,15 @@ import Toggle from "./toggle.svelte";
 
     $: url = slugify(orgName || '');
 
+    const countries = [
+        ['Sverige', 'se'],
+        ['Finland', 'fi'],
+        ['Norge', 'no'],
+        ['Danmark', 'dk'],
+        ['Spanien', 'es'],
+        ['Elsewhere', 'se'],
+    ].map(c => ({label: c[0], name: c[1]}))
+
 </script>
 
 
@@ -77,7 +94,7 @@ import Toggle from "./toggle.svelte";
             <div class="sm:col-span-2">
                 <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Företag</label>
                 <div class="mt-2.5">
-                    <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <input bind:value={orgName} type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
 
@@ -91,7 +108,7 @@ import Toggle from "./toggle.svelte";
             <div class="sm:col-span-2">
             <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">E-post</label>
             <div class="mt-2.5">
-                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input bind:value={email} type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
             </div>
 
@@ -100,11 +117,10 @@ import Toggle from "./toggle.svelte";
                 <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Land</label>
 
                 <select id="country" name="country" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option value="se">Sverige</option>
-                    <option>United States</option>
-                    <option selected>Canada</option>
-                    <option>Mexico</option>
-                  </select>
+                    {#each countries as country}
+                        <option value={country.name}>{country.label}</option>
+                    {/each}
+                </select>
             </div>
 
             <Toggle bind:state>
