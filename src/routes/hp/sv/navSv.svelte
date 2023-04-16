@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Referral from "../components/referral.svelte";
+
   let show = false;
 
   function clickOutside(node){
@@ -16,6 +18,9 @@
 </script>
 
 <header class="absolute inset-x-0 top-0 z-50">
+
+  <Referral />
+
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="/hp/sv" class="-m-1.5 p-1.5">
