@@ -47,6 +47,6 @@
 
 <Price currency="SEK" modules="{modules}">
 	<span slot="title">Betala bara för vad du använder.</span>
-	<span slot="sub">Ingen startkostnad. 14 dagar kostnadsfritt.</span>
+	<span slot="sub">Ingen startkostnad. 1 månad kostnadsfritt.</span>
 
 </Price>
