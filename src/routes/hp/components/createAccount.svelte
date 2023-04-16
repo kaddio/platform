@@ -74,7 +74,7 @@
         <Cloud />
         <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skapa konto</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Det tar bara några minuter att komma igång och du betalar bara för vad du använder. Kostnadsfritt i 14 dagar.</p>
+        <p class="mt-2 text-lg leading-8 text-gray-600">Det tar bara några minuter att komma igång och du betalar bara för vad du använder. Kostnadsfritt i 1 månad.</p>
         </div>
         <form on:submit|preventDefault={submit}  method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
         <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
