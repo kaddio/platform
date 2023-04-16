@@ -1,17 +1,12 @@
 <script lang="ts">
-
-    // import {page} from '$app/stores';
-    // const token = $page.url.searchParams.has('token');
-
-    let show: boolean = true;
-
+	import { token } from "../../../stores";
 
 </script>
-  
-{#if show}
+
+{#if $token}
     <div class="flex items-center gap-x-6 bg-indigo-600 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
         <p class="text-sm leading-6 text-white">
-        <a href="/hp/en/referral"><strong class="font-semibold">Rekommendationslänk</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Du surfar med Claras rekommendationslänk&nbsp;<span aria-hidden="true">&rarr;</span></a>
+        <a href="/hp/en/referral"><strong class="font-semibold">Rekommendationslänk från {$token.firstname}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Läs mer&nbsp;<span aria-hidden="true">&rarr;</span></a>
         </p>
         <div class="flex flex-1 justify-end">
         <!-- <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
