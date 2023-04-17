@@ -29,7 +29,7 @@
           <rect width="100%" height="100%" stroke-width="0" fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)" />
         </svg>
         <figure class="border-l border-indigo-600 pl-8">
-          {#if $token.testimonial}
+          {#if $token?.testimonial}
             <blockquote class="text-xl font-semibold leading-8 tracking-tight text-gray-900">
               <p>“{$token.testimonial}”</p>
             </blockquote>

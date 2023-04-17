@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Referral from "../components/referral.svelte";
+	import Referral from "../components/referral-banner.svelte";
 
   let show = false;
 
