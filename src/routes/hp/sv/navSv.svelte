@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from "../../../stores";
 	import Referral from "../components/referral-banner.svelte";
 
   let show = false;
@@ -37,7 +38,7 @@
 
       <a href="/hp/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kontakta oss</a>
 
-      <a href="/hp/sv/#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">Pris</a>
+      <a href="/hp/sv/#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
       <a href="/hp/sv/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">Logga in</a>
