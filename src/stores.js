@@ -1,5 +1,6 @@
 import { browser } from "$app/environment";
-import { writable } from "svelte/store";
+import { getContext } from "svelte";
+import { readable, writable } from "svelte/store";
 
 export let token = writable();
 
@@ -18,3 +19,25 @@ if(browser){
         }
     });
 }
+
+const translations = {
+    "Pris": {
+        en: 'Price',
+        es: 'Precio'
+    },
+    "Du får inte gå över": {
+        en: "You shall not pass",
+        es: "No hay passadena"
+    }
+}
+
+export let _ = writable(function(phrase){
+    console.log(getContext('lang'))
+    const lang = 'es';
+
+    if(lang == 'sv'){
+        return phrase;
+    }
+
+    return translations[phrase][lang];
+});
