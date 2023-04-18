@@ -10,7 +10,7 @@
 	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
 
 	<ModuleFeature>
-		<span slot="title">Användarvänligt.</span>
+		<span slot="title">Nej det är inte användarvänligt.</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
