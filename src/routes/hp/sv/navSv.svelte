@@ -31,9 +31,9 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
 
-      <a class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">
+      <!-- <a class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">
         Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
-      </a>     
+      </a>      -->
 
 
       <a href="/hp/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kontakta oss</a>
@@ -76,9 +76,9 @@
           <div class="space-y-2 py-6">
             <a href="/hp/sv/support" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakta oss</a>
 
-            <a class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+            <!-- <a class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
               Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
-            </a>
+            </a> -->
 
             <a href="/hp/sv/#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pris</a>
           </div>
