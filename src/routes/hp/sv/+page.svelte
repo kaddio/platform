@@ -16,7 +16,7 @@
 
 <svelte:head>
 	<title>Kaddio - framtidens journalsystem</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Kaddio - Webbaserat allt-i-allo-system för dig som hjälper andra" />
 </svelte:head>
 
 <div class="bg-white">

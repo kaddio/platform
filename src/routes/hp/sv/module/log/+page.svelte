@@ -5,6 +5,11 @@
 	import FaqSection from "../../../../hp/components/faqSection.svelte";
 </script>
 
+<svelte:head>
+	<title>Kaddio - Dokumentation</title>
+	<meta name="description" content="Kaddio Dokumentation har allt du behöver för att dokumentera din verksamhet" />
+</svelte:head>
+
 <ModuleSection>
 	<span slot="title">Kaddio Dokumentation</span>
 	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>

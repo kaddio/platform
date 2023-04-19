@@ -10,7 +10,7 @@
 
 <svelte:head>
 	<title>Kaddio - skapa konto</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Skapa konto" />
 </svelte:head>
 
 <Header />

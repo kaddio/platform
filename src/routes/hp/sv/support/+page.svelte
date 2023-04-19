@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - framtidens journalsystem</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Kaddio - Support</title>
+	<meta name="description" content="Kontakta Kaddio support" />
 </svelte:head>
 
 <NavSv />

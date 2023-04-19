@@ -5,6 +5,11 @@
 	import FaqSection from "../../../../hp/components/faqSection.svelte";
 </script>
 
+<svelte:head>
+	<title>Kaddio - Kalender och Tidsbokning</title>
+	<meta name="description" content="Kaddio Kalender och Tidsbokning" />
+</svelte:head>
+
 <ModuleSection>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
 	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
