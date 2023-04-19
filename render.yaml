@@ -4,3 +4,6 @@ services:
      env: node
      buildCommand: npm install && npm run build
      startCommand: node build/index.js
+     plan: standard
+     branch: tailwind
+     region: frankfurt
