@@ -1,5 +1,4 @@
 <script>
-	import Footer from "../../hp/components/footer.svelte";
 
 </script>
 <div style="background-image: url(/img/man.jpg);">
