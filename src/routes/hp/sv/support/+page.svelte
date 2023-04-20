@@ -26,10 +26,10 @@
 	<SimpleCenteredPiece icon="messages-question">
 		<span slot="title">Bli kund</span>
 		<span slot="body">
-			Du kan själv bli kund genom att <a href="/hp/sv/create" class="font-semibold text-indigo-600">Skapa konto</a>. Behöver du hjälp kan du även boka in en tid så ringer vi upp dig			
+			Du kan själv bli kund genom att <a href="/hp/sv/create" class="font-semibold text-purple-600">Skapa konto</a>. Behöver du hjälp kan du även boka in en tid så ringer vi upp dig			
 		</span>
 		<span slot="link">
-			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-indigo-600">Boka tid <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-purple-600">Boka tid <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>
 
@@ -39,7 +39,7 @@
 			I Kaddios Hjälpcenter help.kaddio.com fyller vi kontinuerligt på med artiklar och svar på vanliga frågor.
 		</span>
 		<span slot="link">
-			<a href="https://help.kaddio.com/help" class="text-sm font-semibold leading-6 text-indigo-600">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://help.kaddio.com/help" class="text-sm font-semibold leading-6 text-purple-600">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>	
 
@@ -49,7 +49,7 @@
 			Det går även bra att maila oss för frågor och support. Under vardagar 9-15 gör vi vårt bästa för att svara dig inom några timmar.
 		</span>
 		<span slot="link">
-			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-indigo-600">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
+			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-purple-600">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>		
 
@@ -61,7 +61,7 @@
 			Undrar du hur det går för Kaddio just nu? Verkar det som att Kaddio har problem? Kolla vår status-sida :)
 		</span>
 		<!-- <span slot="link">
-			<a href="https://status.kaddio.com" class="text-sm font-semibold leading-6 text-indigo-600">status.kaddio.com <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://status.kaddio.com" class="text-sm font-semibold leading-6 text-purple-600">status.kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span> -->
 	</SimpleCenteredPiece>		
 

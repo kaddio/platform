@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex gap-x-6">
-    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600">
+    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-purple-600">
         <i class="fa fa-{icon} text-white"></i>
     </div>
     <div>

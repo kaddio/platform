@@ -6,6 +6,8 @@
 
     const quotes = [
         ['I sometimes have cream in my coffee', 'David', 'C3(P)O at Kaddio'],
+        ['I sometimes have potato in my coffee', 'Arvid', 'Obi Wan CTObi at Kaddio'],
+        ['I sometimes have nothing in my coffee', 'Lena', 'Darth CISO at Kaddio'],
     ];
 
     const show = quotes[Math.floor(Math.random() * quotes.length)];
@@ -51,7 +53,7 @@
         </div>
         <div>
           <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
-            <p class="text-base font-semibold leading-7 text-indigo-600">Company values</p>
+            <p class="text-base font-semibold leading-7 text-purple-600">Company values</p>
             <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We like to do things our way</h1>
             <div class="max-w-xl">
               <p class="mt-6">... and we believe that's ultimately a good thing for us and our users. We have backgrounds from Architechture, Ostheopathy, Physics, City planning, Chemistry, Music and IT, we unite in that we all love Kaddio and share the same vision of what Kaddio is and what we are creating. The love of crafting scalable systems that create true value for it's users is a powerful driving force for us. We believe our backgrounds provides us with the broad perspectives that help us in our day-to-day decisions and being true to our vision, and perspetive is what it's all about. </p>
@@ -80,7 +82,7 @@
             </div>
           </dl>
           <!-- <div class="mt-10 flex">
-            <a href="#" class="text-base font-semibold leading-7 text-indigo-600">Learn more about our company <span aria-hidden="true">&rarr;</span></a>
+            <a href="#" class="text-base font-semibold leading-7 text-purple-600">Learn more about our company <span aria-hidden="true">&rarr;</span></a>
           </div> -->
         </div>
       </div>
@@ -239,7 +241,7 @@
               </li>
             </ul>
             <div class="mt-10 flex">
-              <a href="/hp/en/page/career" class="text-sm font-semibold leading-6 text-indigo-400">See our job postings <span aria-hidden="true">&rarr;</span></a>
+              <a href="/hp/en/page/career" class="text-sm font-semibold leading-6 text-purple-400">See our job postings <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
         </div>
