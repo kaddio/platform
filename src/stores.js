@@ -32,10 +32,10 @@ const translations = {
 }
 
 export let _ = writable(function(phrase){
-    console.log(getContext('lang'))
-    const lang = 'es';
+    const lang = getContext('lang');
+    console.log("Lang: ", lang)
 
-    if(lang == 'sv'){
+    if(lang == 'sv' || lang == undefined){
         return phrase;
     }
 
