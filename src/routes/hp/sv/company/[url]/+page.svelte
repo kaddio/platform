@@ -4,5 +4,6 @@
     // if(data.org){
     // }
 
-
 </script>
+
+{JSON.stringify(data.orgData)}
