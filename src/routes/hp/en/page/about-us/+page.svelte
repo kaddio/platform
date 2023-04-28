@@ -156,7 +156,7 @@
             <span slot="title">Support</span>
         </Person>
 
-        <Person>
+        <Person src="/img/david.png">
             <span slot="name">David</span>
             <span slot="title">Co-Founder / CEO</span>
         </Person>
@@ -171,7 +171,7 @@
             <span slot="title">Technical Support</span>
         </Person>
 
-        <Person>
+        <Person src="/img/carl.png">
             <span slot="name">Carl</span>
             <span slot="title">Kaddio Lectures</span>
         </Person>
@@ -230,7 +230,7 @@
                 <svg class="h-7 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
                 </svg>
-                All kinds of benefits for ya'
+                Generous benefits
               </li>
   
               <li class="flex gap-x-3">
@@ -240,9 +240,9 @@
                 Wonderful office with music room
               </li>
             </ul>
-            <div class="mt-10 flex">
+            <!-- <div class="mt-10 flex">
               <a href="/hp/en/page/career" class="text-sm font-semibold leading-6 text-purple-400">See our job postings <span aria-hidden="true">&rarr;</span></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
