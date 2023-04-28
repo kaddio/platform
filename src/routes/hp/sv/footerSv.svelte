@@ -74,12 +74,12 @@
             <h3 class="text-sm font-semibold leading-6 text-white">Företaget</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-300 hover:text-white">Om oss</a>
+                <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-300 hover:text-white">About us</a>
               </li>
   
-              <li>
+              <!-- <li>
                 <a href="/hp/en/page/career" class="text-sm leading-6 text-gray-300 hover:text-white">Lediga tjänster</a>
-              </li>
+              </li> -->
 
               <!-- <li>
                 <a href="/hp/en/page/partners" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
