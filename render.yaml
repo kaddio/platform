@@ -45,4 +45,3 @@ services:
      plan: free
      branch: tailwind
      rootDir: jitsi
-     region: frankfurt
