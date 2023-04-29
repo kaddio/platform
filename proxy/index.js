@@ -26,10 +26,12 @@ var server = http.createServer(function(req, res) {
 
   console.log('Req')
 
+  const port = process.env.PORT || 5050;
+
   proxy.web(req, res, {
     target: 'http://127.0.0.1:5050'
   });
 });
  
-console.log("listening on port 5050")
-server.listen(5050);
+console.log(`listening on port ${port}`)
+server.listen(port);
