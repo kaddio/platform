@@ -29,7 +29,7 @@ services:
      name: proxy
      env: node
      buildCommand: npm install
-     startCommand: node index.js
+     startCommand: npm run start
      plan: free
      branch: tailwind
      rootDir: proxy
