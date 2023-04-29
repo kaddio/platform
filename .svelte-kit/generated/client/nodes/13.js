@@ -1,1 +1,0 @@
-export { default as component } from "../../../../src/routes/hp/en/page/about-us/+page.svelte";

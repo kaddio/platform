@@ -1,1 +1,0 @@
-export { default as component } from "../../../../src/routes/help/sv/allmänt/logga-in/+page.svx";
