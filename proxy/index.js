@@ -18,6 +18,8 @@ proxy.on('proxyReq', function(proxyReq, req, res, options) {
   proxyReq.setHeader('X-Server', 'Kaddio Proxy');
 });
  
+const port = process.env.PORT || 5050;
+
 var server = http.createServer(function(req, res) {
   // You can define here your custom logic to handle the request
   // and then proxy the request.
@@ -25,8 +27,6 @@ var server = http.createServer(function(req, res) {
   // Perhaps log here...
 
   console.log('Req')
-
-  const port = process.env.PORT || 5050;
 
   proxy.web(req, res, {
     target: 'http://127.0.0.1:5050'
