@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src='https://8x8.vc/external_api.js' async></script>
+    <style>html, body, #jaas-container { height: 100%; }</style>
+    <script type="text/javascript">
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+
+            location.search.substr(1).split("&").forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName){
+                    result = decodeURIComponent(tmp[1]);
+                }
+            });
+            
+            return result;
+        }
+
+        const defaultconfigOverwrite = {
+            prejoinPageEnabled: false,
+            readOnlyName: true,
+            subject: 'Kaddio',
+            disablePolls: true,
+            disableReactions: true,
+            recordingService: {
+                enabled: false,
+                sharingEnabled: false,
+                hideStorageWarning: false
+            },
+            liveStreamingEnabled: false,
+            transcribeWithAppLanguage: false,
+            toolbarButtons: [
+                'camera',
+                'hangup',
+                'toggle-camera',
+                'tileview',
+                'select-background',
+                'raisehand',
+                'participants-pane',
+                'microphone',
+                'fullscreen',
+                'invite'
+            ]
+        }            
+
+        const config = findGetParameter('config');
+        const configOverwrite = (config) ? JSON.parse(config) : defaultconfigOverwrite;
+
+        console.log(JSON.parse(config));
+        console.log(configOverwrite);
+
+        window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+                roomName: findGetParameter('room'),
+                parentNode: document.querySelector('#jaas-container'),
+                width: '100%',
+                height: '100%',
+                jwt: findGetParameter('jwt'),
+                configOverwrite: {
+                    ...configOverwrite
+                }
+            });
+
+            api.addListener('readyToClose', () => window.close());
+        }
+    </script>
+    </head>
+    <body><div id="jaas-container" /></body>
+</html>

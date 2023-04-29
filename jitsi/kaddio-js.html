@@ -1,0 +1,89 @@
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <!-- 
+        Kaddio.js (Kaddio Client library)
+        Copyright Kaddio AB, https://kaddio.com
+
+        Welcome to the Ultra simple Kaddio Client Library!
+
+        Pick your level of difficulty to get started
+
+        ## Level 1 - Piece of Cake
+        Don't use this, use Kaddio Booking Iframe solution instead: https://kaddio.com/iframe
+
+
+        ## Level 2 - Let's rock
+        1. Include the Kaddio Client library on your site.
+        2. Instruct kaddio.js where to fetch your data from by providing your full URL in the "data-url" attribute on the script tag     
+        3. Markup your HTML with data-attributes to enrich your site with free times for specific search queries
+
+
+        ## Level 3 - Come get some
+        1. Set data-disable-autostart="true" on the script tag.
+        2. Use the Kaddio.js API directly to fetch suggestions, book and more.
+
+
+        ## Level 4 - Damn I'm good
+        Use Kaddio GraphQL API for server-to-server communication instead of this bs.
+
+        
+
+        ## Gotchas
+        🤮 CORS, Kaddio servers sends the header "Access-Control-Allow-Origin" with the Allow Iframe Settings in Kaddio. You might need to adjust that.
+        🤩 Dates are UTC if not otherwise stated.
+        🤓 Charset is UTF-8.
+    -->
+
+    <script src="kaddio-v2.js" data-url="https://support.kaddio.com" data-locale-options='{ "weekday":"long", "year":"numeric", "month":"short", "day":"numeric", "hour": "numeric", "minute": "numeric"}' defer></script>
+    
+    <style>
+        .host{
+            background-color: #eee;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+
+    <body>
+        <h1>👩‍💻 This page shows how to use the Kaddio Client library (kaddio.js)</h1>
+        <small>Below are free times for support.kaddio.com. Inspect site to explore ...</small>
+
+        <div class="host">
+            <strong>All bookable times</strong>
+            <div data-kaddio data-kaddio-book="tue"></div>
+        </div>
+
+        <div class="host">
+            <strong>Bookable time for type "telephone"</strong>
+            <div data-kaddio="telefonsupport"></div>
+        </div>
+
+        <div class="host">
+            <strong>Bookable time for session of type "Yinyoga" 🧘🏾 (Don't exist on support)</strong>
+            <div data-kaddio="yinyoga"></div>
+        </div>
+
+        <div class="host">
+            <strong>Bookable times of type Internetterapi for host Amanda 😀</strong>
+            <div data-kaddio="amanda_andersson/internetterapi">
+                <a data-kaddio-book="true"></a>
+            </div>
+        </div>
+
+        <div class="host">
+            <strong>Next free time for host Karolina 😀</strong>
+            <div data-kaddio="karolina_orneblad">
+                <a data-kaddio-book="true"></a>
+            </div>
+        </div>
+
+        <div class="host">
+            <strong>Next free time for host Camilla 😎</strong>
+            <div data-kaddio="camilla_niklasson">
+            </div>
+        </div>
+    </body>
+</html>
