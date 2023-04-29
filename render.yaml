@@ -24,3 +24,16 @@ services:
      envVars:
       - key: NODE_VERSION
         value: 16.14
+
+   - type: web
+     name: proxy
+     env: node
+     buildCommand: npm install
+     startCommand: node index.js
+     plan: free
+     branch: tailwind
+     rootDir: proxy
+     region: frankfurt
+     envVars:
+      - key: NODE_VERSION
+        value: 16.14
