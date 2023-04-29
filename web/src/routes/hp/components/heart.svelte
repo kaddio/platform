@@ -1,0 +1,1 @@
+<i class="fa-duotone fa-heart"></i>

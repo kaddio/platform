@@ -1,0 +1,5 @@
+<footer>
+    <slot>
+        
+    </slot>
+</footer>

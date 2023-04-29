@@ -1,0 +1,5 @@
+<script context="module">
+    export let title = "hej";
+    export let category = "Hej";
+</script>
+hej hej

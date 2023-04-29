@@ -1,11 +1,25 @@
 services:
    - type: web
-     name: platform
+     name: web
      env: node
      buildCommand: npm install && npm run build
      startCommand: node build/index.js
      plan: standard
      branch: tailwind
+     rootDir: web
+     region: frankfurt
+     envVars:
+      - key: NODE_VERSION
+        value: 16.14
+
+   - type: web
+     name: changelog
+     env: node
+     buildCommand: npm install && npm run build
+     startCommand: npm run start
+     plan: standard
+     branch: tailwind
+     rootDir: changelog
      region: frankfurt
      envVars:
       - key: NODE_VERSION
