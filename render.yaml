@@ -37,3 +37,12 @@ services:
      envVars:
       - key: NODE_VERSION
         value: 16.14
+
+   - type: web
+     name: jitsi
+     env: static
+     staticPublishPath: ./
+     plan: free
+     branch: tailwind
+     rootDir: jitsi
+     region: frankfurt
