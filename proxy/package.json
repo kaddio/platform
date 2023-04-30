@@ -1,25 +1,13 @@
 {
   "dependencies": {
-    "http": "^0.0.1-security",
     "http-proxy": "^1.18.1"
   },
   "name": "proxy",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaddio/proxy.git"
+    "start": "node index.js"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kaddio/proxy/issues"
-  },
-  "homepage": "https://github.com/kaddio/proxy#readme",
   "description": ""
 }
