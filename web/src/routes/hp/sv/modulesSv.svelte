@@ -8,7 +8,7 @@
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base font-semibold leading-7 text-purple-600">Kaddio</h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Gör som du vill / Do(es) what you want</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Kaddio är så enkelt att använda att du knappt behöver tänka när du använder det, den energi kan du lägga på t.ex. dina kunder. Genom att alla funktioner finns i samma enkla system slipper du trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Kaddio anpassar sig efter dina behov. Du betalar bara för det du använder, välj de moduler du vill. Kaddio är så enkelt att använda att du knappt behöver tänka när du använder det, den energi kan du lägga på t.ex. dina kunder. Genom att alla funktioner finns i samma enkla system slipper du trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
