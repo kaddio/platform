@@ -8,7 +8,7 @@
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-base font-semibold leading-7 text-purple-600">Kaddio</h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Ge(r) bättre hjälp</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Kaddio är så enkelt att använda att du knappt behöver tänka när du använder det, den energi kan du lägga på t.ex. dina kunder. Genom att alla funktioner finns i samma enkla system slipper du trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Gör som du vill med Kaddio. Kaddio är så enkelt att använda att du knappt behöver tänka när du använder det, den energi kan du lägga på t.ex. dina kunder. Genom att alla funktioner finns i samma enkla system slipper du trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -25,7 +25,7 @@
             <i class="text-white fa-regular fa-stopwatch"></i>
         </span>
           <span slot="title">Tidsbokning och kalender</span>
-          <span slot="body">Kalender för verksamhetens alla behov samt flexibel tidsbokning med kortbetalning. Gruppass och enkelpass.</span>
+          <span slot="body">Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut.</span>
       </ModulePresentation>
   
       <ModulePresentation href="sv/module/invoicing">
