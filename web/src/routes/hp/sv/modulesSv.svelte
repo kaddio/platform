@@ -73,7 +73,7 @@
             <i class="text-white fa-regular fa-chart-line"></i>
         </span>
           <span slot="title">Rapporter</span>
-          <span slot="body">Enkel tillgång och snabb insikt i din data</span>
+          <span slot="body">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys. </span>
       </ModulePresentation>
       </dl>
     </div>
