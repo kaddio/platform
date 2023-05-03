@@ -33,7 +33,7 @@
                 <i class="text-white fa-regular fa-file-lines"></i>
             </span>
             <span slot="title">Fakturering</span>
-            <span slot="body">Fakturera klienter och företag utifrån bokade tider eller journalanteckningar</span>
+            <span slot="body">Spara tid med integrerad fakturering. Fakturera från tidsbokning, journal och fakturera manuellt om du vill.</span>
       </ModulePresentation>
           
       <ModulePresentation href="sv/module/chat">
