@@ -111,7 +111,7 @@
 		</svg>
 		<div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
 		  <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Kaddio boostar inte ditt immunförsvar</h2>
-		  <p class="mt-6 text-lg leading-8 text-gray-300">Men vi hjälper dig med dina långsiktiga mål med din verksamhet. Du kan bjuda in dina kunder till Kaddio (om du vill) för att t.ex. dela dokument, chatta med dem, ha videosamtal med dem osv. Kaddio är som ett säkert bankvalv där ni kan dela allt. Dina kunder kommer att älska det.</p>
+		  <p class="mt-6 text-lg leading-8 text-gray-300">Men vi hjälper dig i din klientrelation. Du kan bjuda in dina kunder till Kaddio (om du vill) för att dela dokument, chatta, ha videosamtal med dem osv. Kaddio är som ett säkert bankvalv där ni kan dela allt. Dina kunder kommer att älska det.</p>
 		  <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
 			<a href="/hp/sv/create" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Bli kund</a>
 			<a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-white">Live demo <span aria-hidden="true">→</span></a>
