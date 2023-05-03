@@ -48,7 +48,7 @@
 			</div>
 			<div class="text-center">
 			<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver.</h1>
-			<p class="mt-6 text-lg leading-8 text-gray-300">Kaddio är ett webbaserat allt-i-allo-system för dig som hjälper andra. Kaddio är så enkelt att du kan slipper du trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
+			<p class="mt-6 text-lg leading-8 text-gray-300">Kaddio är ett webbaserat allt-i-allo-system för dig som hjälper andra. Du hjälper andra - Kaddio hjälper dig. Kaddio är så enkelt att du kan slipper du trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
 			<div class="mt-10 flex items-center justify-center gap-x-6">
 				<a href="/hp/sv/create" class="rounded-md bg-purple-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Skapa konto</a>
 				<a href="https://demo.kaddio.com/login" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-white">Live demo <span aria-hidden="true">→</span></a>
