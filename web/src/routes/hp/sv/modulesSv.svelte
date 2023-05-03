@@ -49,7 +49,7 @@
             <i class="text-white fa-regular fa-clipboard-list-check"></i>
         </span>
       <span slot="title">Formulär</span>
-          <span slot="body">Skicka formulär och hälsodeklarationer till dina kunder, automatiskt och manuellt.</span>
+          <span slot="body">Automatisera utskick av formulär och hälsodeklarationer.</span>
       </ModulePresentation>
           
       <ModulePresentation href="/booking">
