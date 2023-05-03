@@ -41,7 +41,7 @@
             <i class="text-white fa-regular fa-comments"></i>
         </span>
       <span slot="title">Kommunikation</span>
-          <span slot="body">Kommunicera krypterat via chat eller video med två eller 500 deltagare, inom organisationen och med klienter. I Kaddio är allt krypterat, alltid.</span>
+          <span slot="body">Kommunicera krypterat via chat eller video inom och utom organisationen. Med två eller 500 deltagare.</span>
       </ModulePresentation>
   
       <ModulePresentation href="sv/module/forms">
