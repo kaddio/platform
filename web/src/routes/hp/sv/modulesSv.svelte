@@ -40,8 +40,8 @@
         <span slot="icon">
             <i class="text-white fa-regular fa-comments"></i>
         </span>
-      <span slot="title">Video och chat</span>
-          <span slot="body">Säker video för upp till 500 deltagare med skärmdelning, inspelning mm.</span>
+      <span slot="title">Kommunikation</span>
+          <span slot="body">Kommunicera krypterat via chat eller video med två eller 500 deltagare, inom organisationen och med klienter. I Kaddio är allt krypterat, alltid.</span>
       </ModulePresentation>
   
       <ModulePresentation href="sv/module/forms">
