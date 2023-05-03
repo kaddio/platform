@@ -17,8 +17,8 @@
           <span slot="icon">
             <i class="text-white fa-regular fa-heart"></i>
           </span>
-          <span slot="title">Dokumentation</span>
-          <span slot="body">Flexibelt journalprogram som du själv anpassar efter din verksamhets behov.</span>
+          <span slot="title">Journal</span>
+          <span slot="body">Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.</span>
       </ModulePresentation>
       <ModulePresentation href="sv/module/cal">
           <span slot="icon">
