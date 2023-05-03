@@ -57,7 +57,7 @@
             <i class="text-white fa-regular fa-list-ul"></i>
         </span>
           <span slot="title">Uppgifter</span>
-          <span slot="body">Skapa din egen ”Att göra-lista”. Delegera uppgifter till andra och få överblick över vad som ska göras.</span>
+          <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
       </ModulePresentation>
                   
       <ModulePresentation href="/county-export">
