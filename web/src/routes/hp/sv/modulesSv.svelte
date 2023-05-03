@@ -65,7 +65,7 @@
             <i class="text-white fa-regular fa-folder-tree"></i>
         </span>
           <span slot="title">Dokument</span>
-          <span slot="body">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning.</span>
+          <span slot="body">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span>
       </ModulePresentation>
 
       <ModulePresentation href="/county-export">
