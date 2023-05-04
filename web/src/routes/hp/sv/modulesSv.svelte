@@ -25,7 +25,7 @@
             <i class="text-white fa-regular fa-stopwatch"></i>
         </span>
           <span slot="title">Tidsbokning och kalender</span>
-          <span slot="body">Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut.</span>
+          <span slot="body">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig</span>
       </ModulePresentation>
   
       <ModulePresentation href="sv/module/invoicing">

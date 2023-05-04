@@ -7,66 +7,38 @@
 
 <svelte:head>
 	<title>Kaddio - Kalender och Tidsbokning</title>
-	<meta name="description" content="Kaddio Kalender och Tidsbokning" />
+	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig" />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig</span>
 
 	<ModuleFeature>
-		<span slot="title">Användarvänligt.</span>
+		<span slot="title">Automatisera</span>
 		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Flexibelt.</span>
+		<span slot="title">Samarbeta</span>
 		<span slot="body">
-			Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Säkert.</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Använd kalendern för att boka möten. I Kaddio är kalendern även din publika bokning.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Behörighetsstyrning.</span>
+		<span slot="title">Effektivisera</span>
 		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Har du återkommande händelser i kalendern? Skapa mallar och spara tid
 		</span>
 	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">API.</span>
-		<span slot="body">
-			Automatisera flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomligt via API.
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Backup.</span>
-		<span slot="body">
-			Kaddio tar kontinuerlig backup av allting i Kaddio, flera gånger per dygn. Säkerhetskopior lagras krypterat på geografiskt skiljda platser.
-		</span>
-	</ModuleFeature>
-	
 </ModuleSection>
   
 
 <FaqSection>
 	<span slot="title">Funktioner</span>
-
-	<Qa>
-		<span slot="q">Anteckningsmallar</span>
-		<span slot="a">
-			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj din egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
-		</span>
-	</Qa>
 
 	<Qa>
 		<span slot="q">Personalliggare</span>
