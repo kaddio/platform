@@ -7,12 +7,12 @@
 
 <svelte:head>
 	<title>Kaddio - Kalender och Tidsbokning</title>
-	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig" />
+	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning." />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig</span>
+	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
 
 	<ModuleFeature>
 		<span slot="title">Automatisera</span>
@@ -24,7 +24,7 @@
 	<ModuleFeature>
 		<span slot="title">Samarbeta</span>
 		<span slot="body">
-			Använd kalendern för att boka möten. I Kaddio är kalendern även din publika bokning.
+			Använd kalendern för att boka möten.
 		</span>
 	</ModuleFeature>
 
