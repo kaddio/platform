@@ -7,7 +7,7 @@
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
       <!-- <h2 class="text-base font-semibold leading-7 text-purple-600">Gör som du vill</h2> -->
-      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Funktioner i Kaddio</p>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Välj de funktioner du vill</p>
       <p class="mt-6 text-lg leading-8 text-gray-600">Kaddio anpassar sig efter dina behov. Välj de funktioner du behöver och ändra när du vill. Du betalar bara för det du använder. Du kommer att älska det.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
