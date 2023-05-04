@@ -18,7 +18,7 @@
             <i class="text-white fa-regular fa-heart"></i>
           </span>
           <span slot="title">Journal</span>
-          <span slot="body">Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.</span>
+          <span slot="body">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
       </ModulePresentation>
       <ModulePresentation href="sv/module/cal">
           <span slot="icon">

@@ -6,16 +6,16 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Dokumentation</title>
-	<meta name="description" content="Kaddio Dokumentation har allt du behöver för att dokumentera din verksamhet" />
+	<title>Kaddio - Journal</title>
+	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Dokumentation</span>
-	<span slot="sub">Kaddios Dokumentation / Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+	<span slot="title">Kaddio Journal</span>
+	<span slot="sub">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
 
 	<ModuleFeature>
-		<span slot="title">Nej det är inte användarvänligt.</span>
+		<span slot="title">Användarvänligt.</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
@@ -24,36 +24,19 @@
 	<ModuleFeature>
 		<span slot="title">Flexibelt.</span>
 		<span slot="body">
-			Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
+			Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.
+Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Säkert.</span>
 		<span slot="body">
+			Behörighetsstyrning
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
 	</ModuleFeature>
 
-	<ModuleFeature>
-		<span slot="title">Behörighetsstyrning.</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-		</span>
-	</ModuleFeature>
 
-	<ModuleFeature>
-		<span slot="title">API.</span>
-		<span slot="body">
-			Automatisera flöden med Kaddio GraphQL API. Kaddio Journal finns åtkomligt via API.
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Backup.</span>
-		<span slot="body">
-			Kaddio tar kontinuerlig backup av allting i Kaddio, flera gånger per dygn. Säkerhetskopior lagras krypterat på geografiskt skiljda platser.
-		</span>
-	</ModuleFeature>
 	
 </ModuleSection>
   
