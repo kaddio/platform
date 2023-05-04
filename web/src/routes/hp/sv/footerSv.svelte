@@ -64,6 +64,10 @@
               </li>
 
               <li>
+                <a href="https://changelog-uyz9.onrender.com" class="text-sm leading-6 text-gray-300 hover:text-white">Changelog</a>
+              </li>
+
+              <li>
                 <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" class="text-sm leading-6 text-gray-300 hover:text-white">Developer API</a>
               </li>
           </ul>
