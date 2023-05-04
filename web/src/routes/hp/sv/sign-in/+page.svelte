@@ -9,7 +9,7 @@
 
         try {
             // 'https://api.kaddio.com/api/org';
-            const response = await fetch('http://localhost:3000/api/find-organization', {
+            const response = await fetch('https://api.kaddio.com/api/find-organization', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
