@@ -5,37 +5,34 @@
 	import FaqSection from "../../../components/faqSection.svelte";
 </script>
 
+<svelte:head>
+	<title>Kaddio - Fakturering</title>
+	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
+</svelte:head>
+
 <ModuleSection>
 	<span slot="title">Kaddio Fakturering</span>
-	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram, i och med att det finns integrerat i Kaddio hjälper det dig att fakturera direkt från bokningar och journalanteckningar</span>
+	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
 
 	<ModuleFeature>
-		<span slot="title">Artiklar</span>
+		<span slot="title">Spara tid</span>
 		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar så att du skicka en fakturera med tre klick.
 		</span>
 	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Journalformulär</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">ICD-10</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-		</span>
-	</ModuleFeature>
-
 	
 </ModuleSection>
   
 
 <FaqSection>
-	<span slot="title">Funktioner</span>
+	<span slot="title">Detaljer</span>
+
+	<Qa>
+		<span slot="q">Artiklar</span>
+		<span slot="a">
+			Duschtvål, handukar etc. Kaddio haz it got
+		</span>
+	</Qa>
 
 	<Qa>
 		<span slot="q">Fakturaunderlag</span>

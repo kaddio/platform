@@ -38,7 +38,7 @@
   
 
 <FaqSection>
-	<span slot="title">Funktioner</span>
+	<span slot="title">Detaljer</span>
 
 	<Qa>
 		<span slot="q">Personalliggare</span>

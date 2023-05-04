@@ -33,7 +33,7 @@
                 <i class="text-white fa-regular fa-file-lines"></i>
             </span>
             <span slot="title">Fakturering</span>
-            <span slot="body">Spara tid med integrerad fakturering. Fakturera från tidsbokning, journal och fakturera manuellt om du vill.</span>
+            <span slot="body">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
       </ModulePresentation>
           
       <ModulePresentation href="sv/module/chat">
