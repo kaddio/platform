@@ -8,8 +8,8 @@
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
       <div class="mx-auto w-full max-w-xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Kaddio används av fler än 1500 företag</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Från den lilla mottagningen med 1 person som använder Kaddio Journal, till multinationella företag där Kaddio är hjärtat i deras verksamhet med API-integration för automatisering av flöden.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Välj ett system som skalar med din verksamhet</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Kaddio används av fler än 1500 företag, från den lilla mottagningen till multinationella aktörer. Vi bryr oss om dina behov, oavsett verksamhetens storlek. </p>
         <div class="mt-8 flex items-center gap-x-6">
           <a href="/hp/sv/create" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">OK jag är helt såld, nu kör vi!</a>
           <a href="/hp/sv/support" class="text-sm font-semibold text-gray-900">Jag har något jag vill fråga <span aria-hidden="true">&rarr;</span></a>
