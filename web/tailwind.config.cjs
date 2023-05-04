@@ -25,8 +25,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        sans: ['Open Sans'],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        // sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
       }
     },
   },
