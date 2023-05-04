@@ -11,6 +11,7 @@ module.exports = {
       current: 'currentColor',
       white: colors.white,
       gray: colors.gray,
+      // purple: colors.indigo
       'purple': {
         100: 'hsl(306, 60%, 5%)',
         200: 'hsl(306, 25%, 12%)',
