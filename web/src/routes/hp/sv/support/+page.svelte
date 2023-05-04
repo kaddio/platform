@@ -23,10 +23,10 @@
 	<span slot="title">Kontakta oss</span>
 	<span slot="sub">Vi finns här för att hjälpa till</span>
 
-	<SimpleCenteredPiece icon="messages-question">
+	<SimpleCenteredPiece icon="sparkles">
 		<span slot="title">Bli kund</span>
 		<span slot="body">
-			Du kan själv bli kund genom att <a href="/hp/sv/create" class="font-semibold text-purple-600">Skapa konto</a>. Behöver du hjälp kan du även boka in en tid så ringer vi upp dig			
+			Du blir kund genom att <a href="/hp/sv/create" class="font-semibold text-purple-600">Skapa konto</a>. Behöver du hjälp kan du även boka in en tid så ringer vi upp dig.
 		</span>
 		<span slot="link">
 			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-purple-600">Boka tid <span aria-hidden="true">&rarr;</span></a>
