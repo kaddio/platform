@@ -32,10 +32,17 @@ function FeedIcon(props) {
   )
 }
 
-function TwitterIcon(props) {
+function SparkleIcon(props) {
   return (
-    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M5.526 13.502c5.032 0 7.784-4.168 7.784-7.783 0-.119 0-.237-.008-.353a5.566 5.566 0 0 0 1.364-1.418 5.46 5.46 0 0 1-1.571.431c.571-.342.998-.88 1.203-1.513a5.483 5.483 0 0 1-1.737.664 2.738 2.738 0 0 0-4.662 2.495 7.767 7.767 0 0 1-5.638-2.858 2.737 2.737 0 0 0 .847 3.651 2.715 2.715 0 0 1-1.242-.341v.035a2.737 2.737 0 0 0 2.195 2.681 2.73 2.73 0 0 1-1.235.047 2.739 2.739 0 0 0 2.556 1.9 5.49 5.49 0 0 1-4.049 1.133A7.744 7.744 0 0 0 5.526 13.5" />
+    <svg viewBox="0 0 16 16" aria-hidden="true" {...props}>
+      <path
+        fill="#38BDF8"
+        d="M5.338 9.805c.11.418.439.747.857.857C7.282 10.948 8 11.44 8 12s-.718 1.052-1.805 1.338c-.418.11-.747.439-.857.857C5.052 15.281 4.56 16 4 16s-1.052-.718-1.338-1.805a1.205 1.205 0 0 0-.856-.857C.718 13.052 0 12.56 0 12s.718-1.052 1.806-1.338c.417-.11.746-.439.856-.857C2.948 8.718 3.441 8 4 8c.56 0 1.052.718 1.338 1.805Z"
+      />
+      <path
+        fill="#7DD3FC"
+        d="M12.717 2.432c.1.42.43.75.85.852C15.026 3.633 16 4.27 16 5s-.975 1.367-2.432 1.716c-.42.101-.75.432-.851.852C12.367 9.025 11.729 10 11 10c-.729 0-1.367-.975-1.716-2.432-.101-.42-.431-.75-.851-.852C6.975 6.367 6 5.73 6 5c0-.73.975-1.367 2.433-1.717.42-.1.75-.43.85-.85C9.634.974 10.272 0 11 0c.73 0 1.367.975 1.717 2.432Z"
+      />
     </svg>
   )
 }
@@ -54,14 +61,14 @@ export function Intro() {
         <span className="text-sky-300">is everything we build for you</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Kaddio is a lightweight platform for health specialists. Medical Record, Booking, Video, Invoicing etc. Kaddio is fast and very easy to use.
+        Kaddio is an all-in-one platform for health specialists. Medical Record, Booking, Video+Chat, Invoicing etc. Kaddio is fast and very easy to use.
       </p>
-      <SignUpForm />
+      {/* <SignUpForm /> */}
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
+        <IconLink href="https://help.kaddio.com" icon={BookIcon} className="flex-none">
           Help Center
         </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
+        <IconLink href="https://github.com/kaddio" icon={GitHubIcon} className="flex-none">
           GitHub
         </IconLink>
         <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
@@ -76,7 +83,7 @@ export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       Brought to you by{' '}
-      <IconLink href="#" icon={TwitterIcon} compact large>
+      <IconLink href="https://kaddio.com" icon={SparkleIcon} compact large>
         Kaddio AB
       </IconLink>
     </p>
