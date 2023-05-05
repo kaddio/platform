@@ -52,7 +52,7 @@
           <span slot="body">Automatisera utskick av formulär och hälsodeklarationer.</span>
       </ModulePresentation>
           
-      <ModulePresentation href="/booking">
+      <ModulePresentation href="sv/module/todos">
         <span slot="icon">
             <i class="text-white fa-regular fa-list-ul"></i>
         </span>
