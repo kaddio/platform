@@ -1,29 +1,31 @@
 services:
-   - type: web
-     name: web
-     env: node
-     buildCommand: npm install && npm run build
-     startCommand: node build/index.js
-     plan: free
-     branch: tailwind
-     rootDir: web
-     region: frankfurt
-     envVars:
-      - key: NODE_VERSION
-        value: 16.14
+  - type: web
+    name: web
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node build/index.js
+    plan: free
+    branch: tailwind
+    rootDir: web
+    region: frankfurt
+    envVars:
+    - key: NODE_VERSION
+      value: 16.14
 
-   - type: web
-     name: changelog
-     env: node
-     buildCommand: npm install && npm run build
-     startCommand: npm run start
-     plan: free
-     branch: tailwind
-     rootDir: changelog
-     region: frankfurt
-     envVars:
-      - key: NODE_VERSION
-        value: 16.14
+  - type: web
+    name: changelog
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    plan: free
+    branch: tailwind
+    rootDir: changelog
+    region: frankfurt
+    envVars:
+    - key: NODE_VERSION
+      value: 16.14
+    domains:
+      - changelog.kaddio.com
 
    - type: web
      name: proxy
