@@ -1,7 +1,7 @@
 # Kaddio changelog
 A simple changelog to communicate all public changes we do. Inspiration can come from: https://github.blog/changelog/
 
-Deployed here for now: https://changelog-a8hx.onrender.com
+Deployed here for now: https://changelog.kaddio.com
 
 # Commit
 
