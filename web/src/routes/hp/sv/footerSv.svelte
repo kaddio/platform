@@ -31,23 +31,27 @@
             <h3 class="text-sm font-semibold leading-6 text-white">Tjänster</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/sv/module/log" class="text-sm leading-6 text-gray-300 hover:text-white">Journal</a>
+                <a href="/hp/sv/feature/log" class="text-sm leading-6 text-gray-300 hover:text-white">Journal</a>
               </li>
 
               <li>
-                <a href="/hp/sv/module/cal" class="text-sm leading-6 text-gray-300 hover:text-white">Tidsbokning</a>
+                <a href="/hp/sv/feature/cal" class="text-sm leading-6 text-gray-300 hover:text-white">Tidsbokning</a>
               </li>
 
               <li>
-                <a href="/hp/sv/module/invoicing" class="text-sm leading-6 text-gray-300 hover:text-white">Fakturering</a>
+                <a href="/hp/sv/feature/invoicing" class="text-sm leading-6 text-gray-300 hover:text-white">Fakturering</a>
               </li>
 
               <li>
-                <a href="/hp/sv/module/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Chat</a>
+                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Chat</a>
               </li>
 
               <li>
-                <a href="/hp/sv/module/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Video</a>
+                <a href="/hp/sv/feature/documents" class="text-sm leading-6 text-gray-300 hover:text-white">Dokument</a>
+              </li>
+
+              <li>
+                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Video</a>
               </li>
 
             </ul>
