@@ -60,7 +60,7 @@
           <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
       </ModulePresentation>
                   
-      <ModulePresentation href="/county-export">
+      <ModulePresentation href="sv/module/documents">
         <span slot="icon">
             <i class="text-white fa-regular fa-folder-tree"></i>
         </span>
@@ -68,7 +68,7 @@
           <span slot="body">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span>
       </ModulePresentation>
 
-      <ModulePresentation href="/county-export">
+      <ModulePresentation href="sv/module/reports">
         <span slot="icon">
             <i class="text-white fa-regular fa-chart-line"></i>
         </span>
