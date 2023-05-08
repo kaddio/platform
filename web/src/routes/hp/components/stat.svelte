@@ -12,7 +12,7 @@
         </defs>
       </svg>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-        <h2 class="text-base font-semibold leading-8 text-purple-400"><slot name="pre" /></h2>
+        <!-- <h2 class="text-base font-semibold leading-8 text-purple-400"><slot name="pre" /></h2> -->
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"><slot name="title" /></p>
         <p class="mt-6 text-lg leading-8 text-gray-300"><slot name="body" /></p>
       </div>
