@@ -28,7 +28,7 @@
                   <li><a href="/booking">Bokningssystem</a></li>
                   <li><a href="/payment">Kortbetalning</a></li>
                   <li><a href="/invoicing">Faktureringssystem</a></li>
-                  <li><a href="/chat">Krypterad video och chat</a></li>
+                  <li><a href="/communication">Krypterad video och chat</a></li>
                   <li><a href="/survey">Enkäter</a></li>
                   <li><a href="/forms">Formulär</a></li>
                   <li><a href="/tasks">Uppgifter</a></li>

@@ -36,7 +36,7 @@
             <span slot="body">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
       </ModulePresentation>
           
-      <ModulePresentation href="sv/feature/chat">
+      <ModulePresentation href="sv/feature/communication">
         <span slot="icon">
             <i class="text-white fa-regular fa-comments"></i>
         </span>
