@@ -79,7 +79,7 @@
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-600">Företaget</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">Company</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
                 <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-600 hover:text-gray-600">About us</a>
