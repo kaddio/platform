@@ -20,7 +20,7 @@
 </script>
 
 
-<footer class="bg-gray-900" aria-labelledby="footer-heading">
+<footer class="bg-gray-100" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -28,82 +28,82 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Tjänster</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">Tjänster</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/sv/feature/log" class="text-sm leading-6 text-gray-300 hover:text-white">Journal</a>
+                <a href="/hp/sv/feature/log" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Journal</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/cal" class="text-sm leading-6 text-gray-300 hover:text-white">Tidsbokning</a>
+                <a href="/hp/sv/feature/cal" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Tidsbokning</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/invoicing" class="text-sm leading-6 text-gray-300 hover:text-white">Fakturering</a>
+                <a href="/hp/sv/feature/invoicing" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Fakturering</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Chat</a>
+                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Chat</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/documents" class="text-sm leading-6 text-gray-300 hover:text-white">Dokument</a>
+                <a href="/hp/sv/feature/documents" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Dokument</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-300 hover:text-white">Video</a>
+                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Video</a>
               </li>
 
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">Support</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="https://help.kaddio.com/help" class="text-sm leading-6 text-gray-300 hover:text-white">Hjälpcenter</a>
+                <a href="https://help.kaddio.com/help" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Hjälpcenter</a>
               </li>
 
               <li>
-                <a href="/hp/sv/support" class="text-sm leading-6 text-gray-300 hover:text-white">Kontakta oss</a>
+                <a href="/hp/sv/support" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Kontakta oss</a>
               </li>
 
               <li>
-                <a href="https://changelog.kaddio.com" class="text-sm leading-6 text-gray-300 hover:text-white">Changelog</a>
+                <a href="https://changelog.kaddio.com" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Changelog</a>
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" class="text-sm leading-6 text-gray-300 hover:text-white">Developer API</a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Developer API</a>
               </li>
           </ul>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Företaget</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">Företaget</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-300 hover:text-white">About us</a>
+                <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-400 hover:text-gray-600">About us</a>
               </li>
   
               <!-- <li>
-                <a href="/hp/en/page/career" class="text-sm leading-6 text-gray-300 hover:text-white">Lediga tjänster</a>
+                <a href="/hp/en/page/career" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Lediga tjänster</a>
               </li> -->
 
               <!-- <li>
-                <a href="/hp/en/page/partners" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
+                <a href="/hp/en/page/partners" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Partners</a>
               </li> -->
 
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">Legal</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/sv/page/tos" class="text-sm leading-6 text-gray-300 hover:text-white">Användarvillkor</a>
+                <a href="/hp/sv/page/tos" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Användarvillkor</a>
               </li>
 
               <li>
-                <a href="/hp/sv/page/privacy" class="text-sm leading-6 text-gray-300 hover:text-white">Sekretesspolicy</a>
+                <a href="/hp/sv/page/privacy" class="text-sm leading-6 text-gray-400 hover:text-gray-600">Sekretesspolicy</a>
               </li>
             </ul>
           </div>
@@ -111,10 +111,10 @@
       </div>
     </div>
 
-    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
+    <div class="mt-16 border-t border-gray/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
       <div>
-        <h3 class="text-sm font-semibold leading-6 text-white">Språk och region</h3>
-        <p class="mt-2 text-sm leading-6 text-gray-300">Kaddio finns anpassat för flera länder och regioner. Välj Region och språk här.</p>
+        <h3 class="text-sm font-semibold leading-6 text-gray-600">Språk och region</h3>
+        <p class="mt-2 text-sm leading-6 text-gray-400">Kaddio finns anpassat för flera länder och regioner. Välj Region och språk här.</p>
       </div>
       <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
         <label for="location" class="sr-only">Region</label>
@@ -127,7 +127,7 @@
     </div>
 
 
-    <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
+    <div class="mt-8 border-t border-gray/10 pt-8 md:flex md:items-center md:justify-between">
       <!-- <div class="flex space-x-6 md:order-2">
 
         <a href="https://www.instagram.com/kaddioapp/" target="_blank" rel="noreferrer" class="text-gray-500 hover:text-gray-400">
