@@ -47,7 +47,7 @@
 			
 			</div>
 			<div class="text-center">
-			<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver</h1>
+			<h1 class="text-4xl font-normal tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver</h1>
 			<p class="mt-6 text-lg leading-8 text-gray-300">Kaddio är ett webbaserat allt-i-allo-system för dig som hjälper andra. Kaddio är så enkelt att du slipper trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
 			<div class="mt-10 flex items-center justify-center gap-x-6">
 				<a href="https://demo.kaddio.com/login" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
@@ -98,7 +98,7 @@
 
 <ModulesSv />
 
-	<div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+	<!-- <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
 	  <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
 		<svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2" aria-hidden="true">
 		  <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
@@ -121,13 +121,13 @@
 		  <img class="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="/img/screenshot.png" alt="App screenshot" width="1824" height="1080">
 		</div>
 	  </div>
-	</div>
+	</div> -->
   </div>
   
 
 <QuotesSv />
 <PricesSv />
-<SecuritySectionSv />
+<!-- <SecuritySectionSv /> -->
 
 <ReferencesSv />
 <Footer />
