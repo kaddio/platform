@@ -22,12 +22,13 @@ module.exports = {
         700: 'hsl(306, 8%, 79%)',
         800: 'hsl(306, 10%, 91%)',
         900: 'hsl(306, 12%, 96%)'
-      }
+      },
+      oldpink: '#c38f9c'
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        // sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
       }
     },
   },

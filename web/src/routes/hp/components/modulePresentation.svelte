@@ -5,7 +5,7 @@
 
 <div class="relative pl-16">
   <dt class="text-base font-semibold leading-7 text-gray-900">
-    <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
+    <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-oldpink">
 
       <slot name="icon" />
 
