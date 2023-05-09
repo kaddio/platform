@@ -127,7 +127,7 @@
 
 <QuotesSv />
 <PricesSv />
-<!-- <SecuritySectionSv /> -->
+<SecuritySectionSv />
 
 <ReferencesSv />
 <Footer />

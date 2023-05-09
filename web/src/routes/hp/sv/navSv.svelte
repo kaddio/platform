@@ -42,7 +42,7 @@
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
       <a href="/hp/sv/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">Logga in</a>
-      <a href="/hp/sv/create" class="rounded-md bg-purple-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</a>
+      <a href="/hp/sv/create" class="rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</a>
     </div>
     <div class="flex lg:hidden">
       <button on:click={() => {show = true}} type="button" class="{darkHeader ? 'text-white' : 'text-gray-900'} -m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
@@ -63,7 +63,7 @@
           <span class="sr-only">Your Company</span>
           <img class="h-8 w-auto" src="/img/kaddio-svart.png" alt="">
         </a>
-        <a href="/hp/sv/create" class="ml-auto rounded-md bg-purple-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Bli kund</a>
+        <a href="/hp/sv/create" class="ml-auto rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Bli kund</a>
         <button type="button" on:click={() => (show = false)} class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">

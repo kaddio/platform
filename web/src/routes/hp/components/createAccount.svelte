@@ -126,13 +126,13 @@
             <Toggle bind:state>
                 <span slot="label">
                     Jag godkänner 
-                    <a href="/hp/sv/page/tos" class="font-semibold text-purple-600">Användarvillkor</a> och <a href="/hp/sv/page/privacy" class="font-semibold text-purple-600">Sekretesspolicy</a>.          
+                    <a href="/hp/sv/page/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/hp/sv/page/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
                 </span>
             </Toggle>
 
         </div>
         <div class="mt-10">
-            <button disabled={!submitIsEnabled} type="submit" class="disabled:opacity-75 block w-full rounded-md bg-purple-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</button>
+            <button disabled={!submitIsEnabled} type="submit" class="disabled:opacity-75 block w-full rounded-md bg-oldpink px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</button>
         </div>
         </form>
     </div>

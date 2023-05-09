@@ -21,7 +21,7 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900"><slot name="title" /></h2>
         <p class="mt-6 text-lg leading-8 text-gray-600"><slot name="sub" /></p>
         <div class="mt-8 flex items-center gap-x-6">
-          <a href="/hp/sv/create" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Bli kund</a>
+          <a href="/hp/sv/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Bli kund</a>
           <a href="/hp/sv/support" class="text-sm font-semibold text-gray-900">Kontakta oss <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
@@ -39,7 +39,7 @@
                 {#each modules as module}
                     <tr class="border-b border-gray-200">
                       <td class="py-4 pl-4 pr-3 text-sm sm:pl-0">
-                        <input type="checkbox" bind:checked={module.selected} class="h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-600" id={module.name} disabled={module.disabled}>
+                        <input type="checkbox" bind:checked={module.selected} class="h-4 w-4 rounded border-gray-300 text-oldpink focus:ring-oldpink" id={module.name} disabled={module.disabled}>
                       </td>
                         
                         <td class="py-4 pl-4 pr-3 text-sm sm:pl-0">
