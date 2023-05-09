@@ -50,8 +50,8 @@
 			<h1 class="text-4xl font-normal tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver</h1>
 			<p class="mt-6 text-lg leading-8 text-gray-300">Kaddio är ett webbaserat allt-i-allo-system för dig som hjälper andra. Kaddio är så enkelt att du slipper trötta ut frontalloben i onödan. Din hjärna kommer att älska det.</p>
 			<div class="mt-10 flex items-center justify-center gap-x-6">
-				<a href="https://demo.kaddio.com/login" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
-				<a href="/hp/sv/create" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-white">Skapa konto <span aria-hidden="true">→</span></a>
+				<a href="https://demo.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
+				<a href="/hp/sv/create" class="text-sm font-semibold leading-6 text-white">Skapa konto <span aria-hidden="true">→</span></a>
 			</div>
 			</div>
 
