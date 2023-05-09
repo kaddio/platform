@@ -6,10 +6,14 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    // letterSpacing: {
+    //   tight: defaultTheme.letterSpacing.wide
+    // },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
       white: colors.white,
+      fluffypink: '#EFEAF7',
       gray: colors.gray,
       // purple: colors.indigo
       'purple': {
@@ -23,7 +27,8 @@ module.exports = {
         800: 'hsl(306, 10%, 91%)',
         900: 'hsl(306, 12%, 96%)'
       },
-      oldpink: '#c38f9c'
+      oldpink:  '#c38f9c',
+      oldpinkdarker:  '#b16e7f',
     },
     extend: {
       fontFamily: {
