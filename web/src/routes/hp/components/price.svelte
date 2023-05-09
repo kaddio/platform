@@ -56,7 +56,7 @@
               <tr>
                 <th scope="row" colspan="2" class="hidden pl-4 pr-3 pt-4 text-right text-sm font-semibold text-gray-900 sm:table-cell sm:pl-0">Månadspris / användare</th>
                 <th scope="row" class="pl-6 pr-3 pt-4 text-left text-sm font-semibold text-gray-900 sm:hidden">Månadspris / användare</th>
-                <td class="pl-3 pr-4 pt-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">{total} {currency}</td>
+                <td class="pl-3 pr-4 pt-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">{total} {currency} (ex moms)</td>
               </tr>
             </tfoot>
           </table>
