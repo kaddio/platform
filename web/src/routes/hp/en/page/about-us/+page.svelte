@@ -76,7 +76,7 @@
             <span slot="title">Technical Support</span>
         </Person>
 
-        <Person src="/img/carl.png">
+        <Person>
             <span slot="name">Carl</span>
             <span slot="title">Kaddio Lectures</span>
         </Person>
