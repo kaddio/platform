@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
         <title>Kaddio Changelog</title>
         <meta
           name="description"
-          content="Kaddio is the complete health platform. With Booking, Medical Records, Video, Invoicing and much more - Control is at your fingertips. This is the Changelog that describes all our updates."
+          content="This is the Changelog that describes all of our updates. Kaddio is a complete all-in-one platform for health professionals with booking, medical records, video, invoicing and everything else you would expect"
         />
       </Head>
       <ThemeProvider attribute="class" disableTransitionOnChange>
