@@ -51,6 +51,10 @@
               </li>
 
               <li>
+                <a href="/hp/sv/feature/forms" class="text-sm leading-6 text-gray-600">Formulär</a>
+              </li>
+
+              <li>
                 <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-600">Video</a>
               </li>
 
