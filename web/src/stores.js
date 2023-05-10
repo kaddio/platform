@@ -1,12 +1,12 @@
 import { browser } from "$app/environment";
 import { getContext } from "svelte";
-import { readable, writable } from "svelte/store";
+import { readable } from "svelte/store";
 
-export let token = writable();
+export let token = readable();
 
 if(browser){
     if(sessionStorage.getItem('token')){
-        token = writable(JSON.parse(sessionStorage.getItem('token')));
+        token = readable(JSON.parse(sessionStorage.getItem('token')));
     }
 
     token.subscribe(function(val){
@@ -21,21 +21,31 @@ if(browser){
 }
 
 const translations = {
+    "Kontakta oss": {
+        en: 'Contact us',
+        es: 'Contactar'
+    },
+    "Skapa konto": {
+        en: 'Create account',
+        es: 'Crear una cuenta'
+    },
     "Pris": {
         en: 'Price',
         es: 'Precio'
-    },
-    "Du får inte gå över": {
-        en: "You shall not pass",
-        es: "No hay passadena"
     }
 }
 
-export let _ = writable(function(phrase){
+export let _ = readable(function(phrase){
+    const fallbackLang = 'sv';
     const lang = getContext('lang');
+
+    function phraseExist(phrase, lang){
+        return !!(translations[phrase] && translations[phrase][lang]);
+    }
+
     console.log("Lang: ", lang)
 
-    if(lang == 'sv' || lang == undefined){
+    if(lang == fallbackLang || lang == undefined || !phraseExist(phrase, lang)){
         return phrase;
     }
 
