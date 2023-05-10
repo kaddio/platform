@@ -47,4 +47,38 @@
 		</span>
 	</Qa>
 
+	<Qa>
+		<span slot="q">Skapa enkäter</span>
+		<span slot="a">
+			Utforma enkäter så som du vill. Använd olika svarstyper, som fritext, skala, numeriskt värde och flerval. Välj hur Kaddio ska räkna ut resultatet, till exempel som summa eller medelvärde. Sätt och benämn gränser för att få en snabb översikt av resultatet.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Utskick</span>
+		<span slot="a">
+			Skicka länk till enkäten via sms eller mail.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Skicka enkät utifrån bokningar</span>
+		<span slot="a">
+			Skicka enkäten till de klienter som haft en bokning inom ett visst tidsintervall.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Skicka enkät utifrån grupp</span>
+		<span slot="a">
+			Skicka enkäten till klienter eller behandlare baserat på vilken grupp de tillhör.
+		</span>
+	</Qa>
+	<Qa>
+		<span slot="q">Enkäter ger anonyma svar</span>
+		<span slot="a">
+			Alla svar som samlas in via enkäter är anonyma och kan inte kan inte kopplas till någon specifik klient eller behandlare.
+		</span>
+	</Qa>
+
 </FaqSection>
