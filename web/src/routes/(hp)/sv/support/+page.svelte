@@ -5,7 +5,7 @@
 	import SimpleCentered from '../../components/simpleCentered.svelte';
 	import SimpleCenteredPiece from '../../components/simpleCenteredPiece.svelte';
 	import Footer from '../../components/footer.svelte';
-	import NavSv from '../navSv.svelte';
+	import Nav from '../../components/nav.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -16,7 +16,7 @@
 	<meta name="description" content="Kontakta Kaddio support" />
 </svelte:head>
 
-<NavSv />
+<Nav />
 
 <SimpleCentered>
 	<span slot="title">Kontakta oss</span>
