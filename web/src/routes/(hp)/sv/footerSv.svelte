@@ -15,7 +15,7 @@
 
 <script>
   function changeRegion(event){
-    window.location.href = `/hp/${event.target.value}/`;
+    window.location.href = `/${event.target.value}/`;
   }
 </script>
 
@@ -31,31 +31,31 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">Tjänster</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/sv/feature/log" class="text-sm leading-6 text-gray-600">Journal</a>
+                <a href="/sv/feature/log" class="text-sm leading-6 text-gray-600">Journal</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/cal" class="text-sm leading-6 text-gray-600">Tidsbokning</a>
+                <a href="/sv/feature/cal" class="text-sm leading-6 text-gray-600">Tidsbokning</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/invoicing" class="text-sm leading-6 text-gray-600">Fakturering</a>
+                <a href="/sv/feature/invoicing" class="text-sm leading-6 text-gray-600">Fakturering</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-600">Chat</a>
+                <a href="/sv/feature/communication" class="text-sm leading-6 text-gray-600">Chat</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/documents" class="text-sm leading-6 text-gray-600">Dokument</a>
+                <a href="/sv/feature/documents" class="text-sm leading-6 text-gray-600">Dokument</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/forms" class="text-sm leading-6 text-gray-600">Formulär</a>
+                <a href="/sv/feature/forms" class="text-sm leading-6 text-gray-600">Formulär</a>
               </li>
 
               <li>
-                <a href="/hp/sv/feature/communication" class="text-sm leading-6 text-gray-600">Video</a>
+                <a href="/sv/feature/communication" class="text-sm leading-6 text-gray-600">Video</a>
               </li>
 
             </ul>
@@ -68,7 +68,7 @@
               </li>
 
               <li>
-                <a href="/hp/sv/support" class="text-sm leading-6 text-gray-600">Kontakta oss</a>
+                <a href="/sv/support" class="text-sm leading-6 text-gray-600">Kontakta oss</a>
               </li>
 
               <li>
@@ -86,19 +86,19 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">Company</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/en/page/about-us" class="text-sm leading-6 text-gray-600">About us</a>
+                <a href="/en/page/about-us" class="text-sm leading-6 text-gray-600">About us</a>
               </li>
   
               <!-- <li>
-                <a href="/hp/en/page/career" class="text-sm leading-6 text-gray-600">Lediga tjänster</a>
+                <a href="/en/page/career" class="text-sm leading-6 text-gray-600">Lediga tjänster</a>
               </li> -->
 
               <!-- <li>
-                <a href="/hp/en/page/partners" class="text-sm leading-6 text-gray-600">Partners</a>
+                <a href="/en/page/partners" class="text-sm leading-6 text-gray-600">Partners</a>
               </li> -->
 
               <!-- <li>
-                <a href="/hp/en/page/press" class="text-sm leading-6 text-gray-600">Press</a>
+                <a href="/en/page/press" class="text-sm leading-6 text-gray-600">Press</a>
               </li> -->
 
             </ul>
@@ -107,11 +107,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">Avtal</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/hp/sv/page/tos" class="text-sm leading-6 text-gray-600">Användarvillkor</a>
+                <a href="/sv/page/tos" class="text-sm leading-6 text-gray-600">Användarvillkor</a>
               </li>
 
               <li>
-                <a href="/hp/sv/page/privacy" class="text-sm leading-6 text-gray-600">Sekretesspolicy</a>
+                <a href="/sv/page/privacy" class="text-sm leading-6 text-gray-600">Sekretesspolicy</a>
               </li>
             </ul>
           </div>

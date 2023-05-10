@@ -51,7 +51,7 @@
 			<p class="mt-6 text-lg leading-8 font-light text-white">Webbaserat allt-i-allo-system för dig som hjälper andra.</p>
 			<div class="mt-10 flex items-center justify-center gap-x-6">
 				<a href="https://demo.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
-				<a href="/hp/sv/create" class="text-sm font-semibold leading-6 text-white">Skapa konto <span aria-hidden="true">→</span></a>
+				<a href="/sv/create" class="text-sm font-semibold leading-6 text-white">Skapa konto <span aria-hidden="true">→</span></a>
 			</div>
 			</div>
 
@@ -113,7 +113,7 @@
 		  <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Förenkla kundkommunikationen</h2>
 		  <p class="mt-6 text-lg leading-8 text-gray-300">Bjud in dina kunder till Kaddio för att dela dokument, chatta eller ha videosamtal. Kaddio är som ett säkert bankvalv där ni kan dela allt. Dina kunder kommer att älska det.</p>
 		  <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-			<a href="/hp/sv/create" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Bli kund</a>
+			<a href="/sv/create" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Bli kund</a>
 			<a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-white">Live demo <span aria-hidden="true">→</span></a>
 		  </div>
 		</div>

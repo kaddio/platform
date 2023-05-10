@@ -45,7 +45,7 @@
 
         <p class="mt-2 text-center text-sm text-gray-600">
           Eller
-          <a href="/hp/sv/create" class="font-medium text-oldpink hover:text-oldpinkdarker">skapa konto</a>
+          <a href="/sv/create" class="font-medium text-oldpink hover:text-oldpinkdarker">skapa konto</a>
         </p>
       </div>
       <form on:submit|preventDefault={submit} class="mt-8 space-y-6" action="#" method="POST">

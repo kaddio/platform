@@ -1,8 +1,8 @@
 <script>
-    import Stat from '../../../../hp/components/stat.svelte';
-    import Person from '../../../../hp/components/person.svelte';
+    import Stat from '../../../components/stat.svelte';
+    import Person from '../../../components/person.svelte';
     import Nav from '../../../sv/navSv.svelte';
-    import StatPiece from '../../../../hp/components/statPiece.svelte';
+    import StatPiece from '../../../components/statPiece.svelte';
 
     const quotes = [
         ['I sometimes have cream in my coffee', 'David', 'C3(P)O at Kaddio'],

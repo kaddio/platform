@@ -26,7 +26,7 @@ export async function load({ params }) {
 
     // export const referrerData = writable();
 
-    // throw redirect(307, '/hp/sv');
+    // throw redirect(307, '/sv');
 
     return {
         referrerData: {

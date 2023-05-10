@@ -38,13 +38,13 @@
             </li>
 
 
-            <li><a href="/hp/es/support" class:active-dark={$page.url.pathname.endsWith('support')} >Contactar</a></li>              
-            <li><a href="/hp/es#price" class="smooth">Precio</a></li>
-            <li><a href="/hp/es#signup" class="smooth" data-to-focus="firstname">Crear una cuenta</a></li>
+            <li><a href="/es/support" class:active-dark={$page.url.pathname.endsWith('support')} >Contactar</a></li>              
+            <li><a href="/es#price" class="smooth">Precio</a></li>
+            <li><a href="/es#signup" class="smooth" data-to-focus="firstname">Crear una cuenta</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/hp/es#find-organization" class="smooth" data-to-focus="team-url">Logga in</a></li>
+            <li><a href="/es#find-organization" class="smooth" data-to-focus="team-url">Logga in</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 

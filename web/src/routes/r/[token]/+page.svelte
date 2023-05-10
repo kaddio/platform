@@ -10,7 +10,7 @@
     }
 
     if(browser){
-        goto('/hp/sv')
+        goto('/sv')
     }
 
 </script>

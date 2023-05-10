@@ -2,7 +2,7 @@
 	import Qa from "../../../components/qa.svelte";
 	import ModuleFeature from "../../../components/moduleFeature.svelte";
 	import ModuleSection from "../../../components/moduleSection.svelte";
-	import FaqSection from "../../../../hp/components/faqSection.svelte";
+	import FaqSection from "../../../components/faqSection.svelte";
 </script>
 
 <svelte:head>

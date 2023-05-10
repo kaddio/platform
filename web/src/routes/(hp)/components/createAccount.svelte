@@ -126,7 +126,7 @@
             <Toggle bind:state>
                 <span slot="label">
                     Jag godkänner 
-                    <a href="/hp/sv/page/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/hp/sv/page/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
+                    <a href="/sv/page/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/page/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
                 </span>
             </Toggle>
 
