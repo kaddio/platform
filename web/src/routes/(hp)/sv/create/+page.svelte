@@ -1,7 +1,7 @@
 <script lang="ts">	
 	import Header from '../headerSv.svelte';
 	import { setContext } from 'svelte';
-	import Footer from '../footerSv.svelte';
+	import Footer from '../../components/footer.svelte';
 	import CreateAccount from '../../components/createAccount.svelte';
 	
 	setContext('lang', 'sv');

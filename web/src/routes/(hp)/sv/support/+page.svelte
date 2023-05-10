@@ -4,8 +4,7 @@
 	import Qa from '../../components/qa.svelte';
 	import SimpleCentered from '../../components/simpleCentered.svelte';
 	import SimpleCenteredPiece from '../../components/simpleCenteredPiece.svelte';
-	import FooterSv from '../footerSv.svelte';
-	import HeaderSv from '../headerSv.svelte';
+	import Footer from '../../components/footer.svelte';
 	import NavSv from '../navSv.svelte';
 	
 	setContext('lang', 'sv');
@@ -101,4 +100,4 @@
 
  </FaqSection> 
    -->
-  <FooterSv />
+  <Footer />

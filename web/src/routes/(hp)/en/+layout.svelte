@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FooterSv from "../sv/footerSv.svelte";
+	import Footer from "../components/footer.svelte";
 
 
 </script>
@@ -8,4 +8,4 @@
 	<slot />
 </div>
 
-<FooterSv />
+<Footer />

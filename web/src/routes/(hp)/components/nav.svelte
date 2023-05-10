@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from "../../../stores";
-	import Referral from "../components/referral-banner.svelte";
+	import Referral from "./referral-banner.svelte";
 
   let show = false;
 
@@ -36,7 +36,7 @@
       </a>      -->
 
 
-      <a href="/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kontakta oss</a>
+      <a href="/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{ $_('Kontakta oss')}</a>
 
       <a href="/sv/#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
     </div>
