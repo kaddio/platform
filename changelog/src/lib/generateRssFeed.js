@@ -10,13 +10,13 @@ import Content from '@/pages/index.mdx'
 export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'David Jørgensen',
+    name: 'Kaddio',
     email: 'hello@kaddio.com',
   }
 
   let feed = new Feed({
     title: 'Kaddio',
-    description: 'Open-source Git client for macOS minimalists',
+    description: 'This is the Changelog that describes all of our updates. Kaddio is a complete all-in-one platform for health professionals with booking, medical records, video, invoicing and everything else you would expect',
     author,
     id: siteUrl,
     link: siteUrl,
