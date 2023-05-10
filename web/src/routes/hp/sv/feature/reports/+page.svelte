@@ -7,12 +7,12 @@
 
 <svelte:head>
 	<title>Kaddio - Rapporter</title>
-	<meta name="description" content="Genom Kaddio kan du få ut rapporter och statistik över bokningar, fakturering och mer. Du kan också utforma och skicka enkäter där svaren anonymiseras." />
+	<meta name="description" content="Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys." />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Kaddio Rapporter</span>
-	<span slot="sub">Genom Kaddio kan du få ut rapporter och statistik över bokningar, fakturering och mer. Du kan också utforma och skicka enkäter där svaren anonymiseras.</span>
+	<span slot="sub">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
