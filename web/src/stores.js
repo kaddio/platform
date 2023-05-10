@@ -32,6 +32,14 @@ const translations = {
     "Pris": {
         en: 'Price',
         es: 'Precio'
+    },
+    "Avtal": {
+        en: 'Legal',
+        es: 'La empreza'
+    },
+    "Support": {
+        en: 'Support',
+        es: 'Soporte'
     }
 }
 

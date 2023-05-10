@@ -14,6 +14,8 @@
 -->
 
 <script>
+	import { _ } from "../../../stores";
+
   function changeRegion(event){
     window.location.href = `/${event.target.value}/`;
   }
@@ -61,14 +63,14 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-gray-600">Support</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Support')}</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Hjälpcenter</a>
+                <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
               </li>
 
               <li>
-                <a href="/sv/support" class="text-sm leading-6 text-gray-600">Kontakta oss</a>
+                <a href="/sv/support" class="text-sm leading-6 text-gray-600">{ $_('Kontakta oss')}</a>
               </li>
 
               <li>
@@ -104,7 +106,7 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-gray-600">Avtal</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Avtal') }</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
                 <a href="/sv/page/tos" class="text-sm leading-6 text-gray-600">Användarvillkor</a>
@@ -129,7 +131,7 @@
         <select on:change={(v) => changeRegion(v)} id="location" name="location" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
           <option value="se" lang="sv">Sverige</option>
           <option value="es" lang="es">España</option>
-          <option value="en" lang="en">Global</option>
+          <!-- <option value="en" lang="en">Global</option> -->
         </select>
       </form>
     </div>
