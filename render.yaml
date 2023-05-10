@@ -14,7 +14,7 @@ services:
 
   
    - type: web
-     name: changelogstatic
+     name: changelog
      env: static
      buildCommand: npm install && npm run build
      staticPublishPath: ./out
@@ -22,23 +22,9 @@ services:
     #  plan: free
      branch: tailwind
      rootDir: changelog
- 
-
-   - type: web
-     name: changelog
-     env: node
-     buildCommand: npm install && npm run build
-     startCommand: npm run start
-     plan: free
-     branch: tailwind
-     rootDir: changelog
-     region: frankfurt
-     envVars:
-      - key: NODE_VERSION
-        value: 16.14
      domains:
       - changelog.kaddio.com
-
+ 
    - type: web
      name: proxy
      env: docker
