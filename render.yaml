@@ -24,9 +24,9 @@ services:
      rootDir: changelog
      domains:
       - changelog.kaddio.com
-    envVars:
-     - key: NEXT_PUBLIC_SITE_URL
-       value: changelog.kaddio.com
+     envVars:
+      - key: NEXT_PUBLIC_SITE_URL
+        value: changelog.kaddio.com
  
    - type: web
      name: proxy
