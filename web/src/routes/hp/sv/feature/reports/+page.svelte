@@ -7,14 +7,14 @@
 
 <svelte:head>
 	<title>Kaddio - Rapporter</title>
-	<meta name="description" content="..." />
+	<meta name="description" content="Genom Kaddio kan du få ut rapporter och statistik över bokningar, fakturering och mer. Du kan också utforma och skicka enkäter där svaren anonymiseras." />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Kaddio Rapporter</span>
-	<span slot="sub">...</span>
+	<span slot="sub">Genom Kaddio kan du få ut rapporter och statistik över bokningar, fakturering och mer. Du kan också utforma och skicka enkäter där svaren anonymiseras.</span>
 
-	<ModuleFeature>
+	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
 		<span slot="body">
 			... Kaddio kan automatiskt skicka de formulär eller hälsodeklarationen du vill ha ifyllda innan besöket.
@@ -33,7 +33,7 @@
 		<span slot="body">
 			...
 		</span>
-	</ModuleFeature>
+	</ModuleFeature> -->
 </ModuleSection>
   
 
@@ -41,9 +41,9 @@
 	<span slot="title">Detaljer</span>
 
 	<Qa>
-		<span slot="q">Fråga</span>
+		<span slot="q">Skapa rapporter</span>
 		<span slot="a">
-			Svar
+			Använd rapportverktyget för att skapa rapporter över bokningar, fakturering, enkätsvar och mer. Visualisera resultatet grafiskt och exportera data som .csv.
 		</span>
 	</Qa>
 
