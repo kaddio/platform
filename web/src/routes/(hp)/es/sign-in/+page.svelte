@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { setContext } from "svelte";
-	setContext('lang', 'sv');
+	setContext('lang', 'es');
 
 	import LoginSection from "../../components/loginSection.svelte";
 

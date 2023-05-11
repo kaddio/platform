@@ -40,6 +40,10 @@ const translations = {
     "Support": {
         en: 'Support',
         es: 'Soporte'
+    },
+    "Logga in": {
+        en: 'Login',
+        es: 'Iniciar seción'
     }
 }
 

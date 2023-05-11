@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { getContext } from "svelte";
 	import { _ } from "../../../stores";
 	import Referral from "./referral-banner.svelte";
+  const lang = getContext('lang');
 
   let show = false;
 
@@ -38,10 +40,10 @@
 
       <a href="/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{ $_('Kontakta oss')}</a>
 
-      <a href="/sv/#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
+      <a href="#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-      <a href="/sv/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">Logga in</a>
+      <a href="{lang}/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">Logga in</a>
       <a href="/sv/create" class="rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</a>
     </div>
     <div class="flex lg:hidden">
@@ -83,7 +85,7 @@
             <a href="/sv/#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pris</a>
           </div>
           <div class="py-6">
-            <a href="/sv/sign-in" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Logga in</a>
+            <a href="./sign-in" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Logga in</a>
           </div>
         </div>
       </div>
