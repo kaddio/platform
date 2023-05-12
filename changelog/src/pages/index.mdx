@@ -1,0 +1,61 @@
+import { SparkleIcon } from '@/components/SparkleIcon'
+import { generateRssFeed } from '@/lib/generateRssFeed'
+
+export async function getStaticProps() {
+  if (process.env.NODE_ENV === 'production') {
+    await generateRssFeed()
+  }
+  return { props: {} }
+}
+
+---
+
+
+## Star your conversations {{ date: '2023-05-07T00:00Z' }}
+
+A conversation in Kaddio Communication can now be ⭐️ to stick them to the top of your conversations
+
+
+---
+
+## More drawable images {{ date: '2023-05-06T00:00Z' }}
+
+In Kaddio Documentation, you can now upload your own images to draw on, plus you can have multiple drawable images in one journal entry
+
+
+---
+
+
+## Waiting lists visibility {{ date: '2023-05-05T00:00Z' }}
+
+Waiting lists in Kaddio now have basic privileges settings under Settings > Secrecy.
+
+### <SparkleIcon /> More improvements
+- Selectable invoice rows
+- Better default VAT values for more countries
+- Kaddio Hibernate accepts more values
+- Calendar hook check to avoid bad formatted events
+- Translations for Español
+
+---
+
+## Kaddio On-premise End Of Life {{ date: '2023-05-01T00:00Z' }}
+
+Kaddio is sunsetting the On-premise version of Kaddio during 2024, no new customers will be joining this product. This means we will put much more energy and focus on Kaddio Cloud!
+
+All existing customers are informed and we will be providing a LTS version of Kaddio for the remainder of the time.
+
+### <SparkleIcon /> What do I need to do?
+- There is nothing you need to do.
+
+
+---
+
+## Kaddio Changelog birthday {{ date: '2023-04-28T00:00Z' }}
+
+Today is the first day of this brand new site where we will communicate releases in Kaddio.
+
+### <SparkleIcon /> More improvements
+- Better card payment tests
+- Reduce logging to improve secrecy
+- demo.kaddio.com test user fixes

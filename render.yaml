@@ -1,0 +1,44 @@
+services:
+   - type: web
+     name: web
+     env: node
+     buildCommand: npm install && npm run build
+     startCommand: node build/index.js
+     plan: starter
+     branch: tailwind
+     rootDir: web
+     region: frankfurt
+     envVars:
+      - key: NODE_VERSION
+        value: 16.14
+
+  
+   - type: web
+     name: changelog
+     env: static
+     buildCommand: npm install && npm run build
+     staticPublishPath: ./out
+    #  startCommand: npm run start
+    #  plan: free
+     branch: tailwind
+     rootDir: changelog
+     domains:
+      - changelog.kaddio.com
+     envVars:
+      - key: NEXT_PUBLIC_SITE_URL
+        value: changelog.kaddio.com
+ 
+   - type: web
+     name: proxy
+     env: docker
+     plan: free
+     branch: tailwind
+     rootDir: proxy
+     region: frankfurt
+
+   - type: web
+     name: jitsi
+     env: static
+     staticPublishPath: ./
+     branch: tailwind
+     rootDir: jitsi
