@@ -96,11 +96,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Avtal') }</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/sv/page/tos" class="text-sm leading-6 text-gray-600">Användarvillkor</a>
+                <a href="/sv/page/tos" class="text-sm leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
               </li>
 
               <li>
-                <a href="/sv/page/privacy" class="text-sm leading-6 text-gray-600">Sekretesspolicy</a>
+                <a href="/sv/page/privacy" class="text-sm leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
               </li>
             </ul>
           </div>
@@ -114,7 +114,7 @@
         <p class="mt-2 text-sm leading-6 text-gray-600">Kaddio finns anpassat för flera länder och regioner. Välj Region och språk här.</p>
       </div>
       <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
-        <label for="location" class="sr-only">Region</label>
+        <label for="location" class="sr-only">{ $_('Region')}</label>
         <select value={lang} on:change={(v) => changeRegion(v)} id="location" name="location" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
           <option value="sv" lang="sv">Sverige</option>
           <option value="es" lang="es">España</option>

@@ -80,6 +80,14 @@ const translations = {
     "Video": {
         en: 'Video',
         es: 'Vídeo'
+    },
+    "Användarvillkor": {
+        en: 'Terms of service',
+        es: 'Conditiones de uso'
+    },
+    "Sekretesspolicy": {
+        en: 'Privacy policy',
+        es: 'Política de privacidad'
     }
 }
 
