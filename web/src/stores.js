@@ -95,7 +95,7 @@ const translations = {
     },
     "Språk och region": {
         en: 'Language and region',
-        es: 'Política de privacidad'
+        es: 'Idioma y región'
     },
     "Kaddio finns anpassat för flera länder och regioner, välj region och språk här": {
         en: 'Kaddio is customized for several countries and regions, choose region and language here',
@@ -134,7 +134,7 @@ const translations = {
         es: 'Suecia'
     },
     "Finland": {
-        en: 'Findland',
+        en: 'Finland',
         es: 'Finlandia'
     },
     "Norge": {

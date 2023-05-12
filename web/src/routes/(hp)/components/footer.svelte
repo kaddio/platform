@@ -1,10 +1,11 @@
 <script>
 	import { getContext } from "svelte";
 	import { _ } from "../../../stores";
+	import { goto } from "$app/navigation";
   const lang = getContext('lang');
 
   function changeRegion(event){
-    window.location.href = `/${event.target.value}/`;
+    goto(`/${event.target.value}/`)
   }
 </script>
 
@@ -122,7 +123,7 @@
         <select value={lang} on:change={(v) => changeRegion(v)} id="location" name="location" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
           <option value="sv" lang="sv">Sverige</option>
           <option value="es" lang="es">España</option>
-          <option value="en" lang="en">Global</option>
+          <option value="en" lang="en">Global - English</option>
         </select>
       </form>
     </div>
