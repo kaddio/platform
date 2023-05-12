@@ -9,8 +9,8 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - skapa konto</title>
-	<meta name="description" content="Skapa konto" />
+	<title>Kaddio - Crear una cuenta</title>
+	<meta name="description" content="Crear una cuenta" />
 </svelte:head>
 
 <Nav />

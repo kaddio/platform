@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from "../../../stores";
 	import Cloud from "./cloud.svelte";
     import Toggle from "./toggle.svelte";
 	import { getContext } from "svelte";
@@ -9,9 +10,6 @@
 
     let defaultCountry;
     const selectedLang = getContext('lang');
-
-
-    console.log(selectedLang)
 
 
     $: submitIsEnabled = state && !!email;
@@ -62,7 +60,7 @@
         ['Norge', 'no'],
         ['Danmark', 'dk'],
         ['Spanien', 'es'],
-        ['Elsewhere', 'se'],
+        ['Någon annanstans', 'se'],
     ].map(c => ({label: c[0], name: c[1]}))
 
 </script>
@@ -73,26 +71,26 @@
     <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
         <Cloud />
         <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skapa konto</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Det tar bara några minuter att komma igång och du betalar bara för vad du använder. Kostnadsfritt i 1 månad.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{ $_('Skapa konto')}</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">{ $_('Det tar bara några minuter att komma igång och du betalar bara för vad du använder.')} { $_('Kostnadsfritt i 1 månad.')}</p>
         </div>
         <form on:submit|preventDefault={submit}  method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
         <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
             <div>
-            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Förnamn</label>
+            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Förnamn')}</label>
             <div class="mt-2.5">
                 <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
             </div>
             </div>
             <div>
-            <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Efternamn</label>
+            <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Efternamn')}</label>
             <div class="mt-2.5">
                 <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
             </div>
             </div>
 
             <div class="sm:col-span-2">
-                <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Företag</label>
+                <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Företagsnamn')}</label>
                 <div class="mt-2.5">
                     <input bind:value={orgName} type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
                 </div>
@@ -106,7 +104,7 @@
             </div>
 
             <div class="sm:col-span-2">
-            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">E-post</label>
+            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('E-post')}</label>
             <div class="mt-2.5">
                 <input bind:value={email} type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
             </div>
@@ -114,11 +112,11 @@
 
             <div class="sm:col-span-2">
 
-                <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Land</label>
+                <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Land')}</label>
 
                 <select id="country" name="country" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
                     {#each countries as country}
-                        <option value={country.name}>{country.label}</option>
+                        <option value={country.name}>{$_(country.label)}</option>
                     {/each}
                 </select>
             </div>
@@ -126,13 +124,13 @@
             <Toggle bind:state>
                 <span slot="label">
                     Jag godkänner 
-                    <a href="/sv/page/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/page/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
+                    <a href="/sv/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
                 </span>
             </Toggle>
 
         </div>
         <div class="mt-10">
-            <button disabled={!submitIsEnabled} type="submit" class="disabled:opacity-75 block w-full rounded-md bg-oldpink px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</button>
+            <button disabled={!submitIsEnabled} type="submit" class="disabled:opacity-75 block w-full rounded-md bg-oldpink px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{ $_('Skapa konto')}</button>
         </div>
         </form>
     </div>

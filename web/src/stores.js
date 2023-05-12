@@ -100,6 +100,58 @@ const translations = {
     "Kaddio finns anpassat för flera länder och regioner, välj region och språk här": {
         en: 'Kaddio is customized for several countries and regions, choose region and language here',
         es: 'Kaddio is customized for several countries and regions, choose region and language here',
+    },
+    "Det tar bara några minuter att komma igång och du betalar bara för vad du använder.": {
+        en: 'Getting started only takes a few minutes och you only pay for what you use.',
+        es: 'Comenzar solo toma unos minutos y solo paga por lo que usa.',
+    },
+    "Kostnadsfritt i 1 månad.": {
+        en: 'Free of charge for one month',
+        es: 'Gratis por un mes',
+    },
+    "Förnamn": {
+        en: 'Firstname',
+        es: 'Nombre'
+    },
+    "Efternamn": {
+        en: 'Lastname',
+        es: 'Apellidos'
+    },
+    "E-post": {
+        en: 'Email',
+        es: 'Correo-e'
+    },
+    "Företagsnamn": {
+        en: 'Business name',
+        es: 'Nombre de la organización'
+    },
+    "Land": {
+        en: 'Country',
+        es: 'País'
+    },
+    "Sverige": {
+        en: 'Sweden',
+        es: 'Suecia'
+    },
+    "Finland": {
+        en: 'Findland',
+        es: 'Finlandia'
+    },
+    "Norge": {
+        en: 'Norway',
+        es: 'Noruega'
+    },
+    "Danmark": {
+        en: 'Denmark',
+        es: 'Dinamarca'
+    },
+    "Spanien": {
+        en: 'Spain',
+        es: 'España'
+    },
+    "Någon annanstans": {
+        en: 'Somewhere else',
+        es: 'En algún otro lugar'
     }
 }
 

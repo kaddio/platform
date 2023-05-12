@@ -30,7 +30,7 @@
 	<Qa>
 		<span slot="q">Artiklar</span>
 		<span slot="a">
-			Duschtvål, handukar etc. Kaddio haz it got
+			Kaddio har stöd för artiklar
 		</span>
 	</Qa>
 

@@ -6,21 +6,21 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Fakturering</title>
-	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
+	<title>Kaddio - Sistema de facturación</title>
+	<meta name="description" content="Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Fakturering</span>
-	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
-
+	<span slot="title">Sistema de facturación</span>
+	<span slot="sub">Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio.</span>
+<!-- 
 	<ModuleFeature>
 		<span slot="title">Spara tid</span>
 		<span slot="body">
 			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar så att du skicka en fakturera med tre klick.
 		</span>
 	</ModuleFeature>
-	
+	 -->
 </ModuleSection>
   
 
@@ -28,67 +28,67 @@
 	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Artiklar</span>
+		<span slot="q">Facturas</span>
 		<span slot="a">
-			Duschtvål, handukar etc. Kaddio haz it got
+			Basándose en las reservas, Kaddio crea automáticamente las facturas.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Fakturaunderlag</span>
+		<span slot="q">Envío de facturas</span>
 		<span slot="a">
-			Kaddio skapar automatiskt fakturaunderlag utifrån kalender och journal.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Skicka fakturor</span>
-		<span slot="a">
-			Skicka fakturor med post, e-post, via Kaddios säkra kommunikation och e-faktura.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Påminnelsefaktura</span>
-		<span slot="a">
-			Skicka påminnelsefakturor automatiskt och manuellt.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Automatisk avprickning</span>
-		<span slot="a">
-			Kaddio prickar av fakturor automatiskt när kunden betalar via bankgiro.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">E-faktura</span>
-		<span slot="a">
-			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Samfakturering</span>
-		<span slot="a">
-			Fakturera för flera klienter till ett företag, till exempel ett gruppboende eller försäkringsbolag.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Inkassoexport</span>
-		<span slot="a">
-			Exportera ej betalda fakturor som sedan kan importeras till ett inkassoföretag.
+			Envía tus facturas por correo, e-mail, a través del chat de Kaddio o como e-factura.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Export</span>
+		<span slot="q">Recordatorios</span>
 		<span slot="a">
-			Exportera fakturor som SIE-fil eller CSV-fil för uppladdning i ett bokföringsprogram.
+			Envía recordatorios de forma automática o manual.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Valutor</span>
+		<span slot="q">Marcado automático</span>
 		<span slot="a">
-			Skicka fakturor i världens 33 vanligaste valutor, med automatiska växelkurser som uppdateras varje dag från ECB. Kaddio bokför automatiskt valutakursvinster och valutakursförluster i SIE-exporten.
+			Kaddio marca las facturas automáticamente cuando el cliente paga mediante transferencia bancaria.
 		</span>
 	</Qa>
+
+	<Qa>
+		<span slot="q">Factura Electrónica</span>
+		<span slot="a">
+			Envía facturas electrónicas con Kaddio según el estándar de la UE PEPPOL.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Co-facturación</span>
+		<span slot="a">
+			Factura varios clientes a una misma empresa, como una grupo o una compañía de seguros.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Exportación de datos para empresa de cobros</span>
+		<span slot="a">
+			Exporta facturas impagadas que luego podrán ser importadas a una empresa de cobros.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Contabilidad</span>
+		<span slot="a">
+			Exporta facturas como archivo SIE o archivo CSV para cargar en un programa de contabilidad.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Monedas</span>
+		<span slot="a">
+			Envía facturas en las 33 monedas más comunes del mundo, con tipos de cambio automáticos actualizados diariamente por el BCE. Kaddio publica automáticamente las ganancias y pérdidas de tipo de cambio en la exportación SIE.
+		</span>
+	</Qa>
+
 
 </FaqSection>

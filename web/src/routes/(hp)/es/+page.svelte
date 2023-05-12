@@ -10,8 +10,8 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - framtidens journalsystem</title>
-	<meta name="description" content="Kaddio - Webbaserat allt-i-allo-system för dig som hjälper andra" />
+	<title>Kaddio</title>
+	<meta name="description" content="Kaddio - Sistema todo en uno basado en la web para usted que ayuda a otros" />
 </svelte:head>
 
 <div class="bg-white">
@@ -22,11 +22,11 @@
 		<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 			<div class="text-center">
-				<h1 class="text-4xl font-normal tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver</h1>
-				<p class="mt-6 text-lg leading-8 font-light text-white">Webbaserat allt-i-allo-system för dig som hjälper andra.</p>
+				<h1 class="text-4xl font-normal tracking-tight text-white sm:text-6xl">Kaddio es todo lo que necesitas</h1>
+				<p class="mt-6 text-lg leading-8 font-light text-white">Sistema todo en uno basado en la web para usted que ayuda a otros.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a href="https://demo-es.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Probar demo</a>
-					<a href="/sv/create" class="text-sm font-semibold leading-6 text-white">Crear una cuenta <span aria-hidden="true">→</span></a>
+					<a href="/es/create" class="text-sm font-semibold leading-6 text-white">Crear una cuenta <span aria-hidden="true">→</span></a>
 				</div>
 			</div>
 

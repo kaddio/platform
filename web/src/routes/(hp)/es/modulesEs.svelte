@@ -4,8 +4,8 @@
 </script>
 
 <ModulesSection>
-  <span slot="title">Tengo de funciones du vill</span> 
-  <span slot="subtitle">Kaddio anpassar sig efter dina behov. Välj de funktioner du behöver och ändra när du vill. Du betalar bara för det du använder.</span> 
+  <span slot="title">Seleccione las características que desea</span> 
+  <span slot="subtitle">Kaddio se adapta a tus necesidades. Elige las funciones que necesites y cambia cuando quieras. solo paga por lo que usas.</span> 
 
     <ModulePresentation href="es/feature/log">
         <span slot="icon">
@@ -26,8 +26,8 @@
           <span slot="icon">
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
-          <span slot="title">Fakturering</span>
-          <span slot="body">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
+          <span slot="title">Sistema de facturación</span>
+          <span slot="body">Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio.</span>
     </ModulePresentation>
         
     <ModulePresentation href="es/feature/communication">
