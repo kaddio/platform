@@ -8,6 +8,7 @@
 	// import SecuritySectionSv from './securitySectionSv.svelte';
 	import Nav from '../components/nav.svelte';
 	import SecuritySectionEn from './securitySectionEn.svelte';
+	import ModulesEn from './modulesEn.svelte';
 	// import CrmSv from './crmSv.svelte';
 	// import Testimonial from './testimonial.svelte';
 
@@ -56,7 +57,7 @@
 </div>
 
 
-<!-- <ModulesSv /> -->
+<ModulesEn />
 <!-- <CrmSv /> -->
 <!-- <QuotesSv /> -->
 <!-- <PricesSv /> -->

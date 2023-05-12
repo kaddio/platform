@@ -42,7 +42,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Funciones</span>
 
 	<Qa>
 		<span slot="q">Plantillas de notas</span>

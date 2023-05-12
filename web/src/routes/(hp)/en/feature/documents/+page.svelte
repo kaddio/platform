@@ -6,16 +6,16 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Dokument</title>
-	<meta name="description" content="Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt." />
+	<title>Kaddio - Documents</title>
+	<meta name="description" content="Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes automatically." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Dokument</span>
-	<span slot="sub">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span>
+	<span slot="title">Kaddio Documents</span>
+	<span slot="sub">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes automatically.</span>
 
 	<!-- <ModuleFeature>
-		<span slot="title">Förbered</span>
+		<span slot="title">Collaborate</span>
 		<span slot="body">
 			...
 		</span>
@@ -38,47 +38,40 @@
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Details</span>
 
 	<Qa>
-		<span slot="q">Skapa textdokument</span>
+		<span slot="q">Rich text</span>
 		<span slot="a">
-			Skapa och skriv textdokument direkt i Kaddio.
+			Create and collaborate on rich text documents directly in Kaddio.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Versionshantering</span>
+		<span slot="q">Versioning</span>
 		<span slot="a">
-			Spara versioner av dokument för att få spårbarhet i ändringar
+			Save versions of documents for traceability
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Ladda upp filer</span>
+		<span slot="q">Upload</span>
 		<span slot="a">
-			Ladda upp alla typer av filer i Kaddio.
+			Upload almost any kind of files in Kaddio
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Mappar</span>
+		<span slot="q">Folders</span>
 		<span slot="a">
-			Sortera dina dokument och filer i mappar.
+			Structure your documents
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Behörighetsstyrning</span>
+		<span slot="q">Privileges</span>
 		<span slot="a">
-			Bestäm vilka som har tillgång till vilka mappar med läs- och skrivrättighet.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Samarbeta med kollegor</span>
-		<span slot="a">
-			Tillåt flera personer att skriva och redigera i samma dokument.
+			Control access to files and folders with read and write rules.
 		</span>
 	</Qa>
 
