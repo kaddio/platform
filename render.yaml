@@ -5,7 +5,7 @@ services:
      buildCommand: npm install && npm run build
      startCommand: node build/index.js
      plan: starter
-     branch: tailwind
+     branch: master
      rootDir: web
      region: frankfurt
      envVars:
@@ -20,7 +20,7 @@ services:
      staticPublishPath: ./out
     #  startCommand: npm run start
     #  plan: free
-     branch: tailwind
+     branch: master
      rootDir: changelog
      domains:
       - changelog.kaddio.com
@@ -32,7 +32,7 @@ services:
      name: proxy
      env: docker
      plan: free
-     branch: tailwind
+     branch: master
      rootDir: proxy
      region: frankfurt
 
@@ -40,5 +40,5 @@ services:
      name: jitsi
      env: static
      staticPublishPath: ./
-     branch: tailwind
+     branch: master
      rootDir: jitsi
