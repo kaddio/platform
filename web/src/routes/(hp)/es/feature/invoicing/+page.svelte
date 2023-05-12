@@ -25,7 +25,7 @@
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Funciones</span>
 
 	<Qa>
 		<span slot="q">Artiklar</span>

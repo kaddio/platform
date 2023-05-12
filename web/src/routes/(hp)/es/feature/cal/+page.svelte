@@ -6,14 +6,14 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Kalender och Tidsbokning</title>
-	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning." />
+	<title>Kaddio - Sistema de reservas</title>
+	<meta name="description" content="Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
-
+	<span slot="title">Sistema de reservas</span>
+	<span slot="sub">Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio.</span>
+<!-- 
 	<ModuleFeature>
 		<span slot="title">Automatisera</span>
 		<span slot="body">
@@ -33,121 +33,104 @@
 		<span slot="body">
 			Har du återkommande händelser i kalendern? Skapa mallar och spara tid
 		</span>
-	</ModuleFeature>
+	</ModuleFeature> -->
 </ModuleSection>
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Kalender</span>
+		<span slot="q">Calendario</span>
 		<span slot="a">
-			Administrera bokningar i kalendern, till exempel ändra eller avboka tid. I kalendern ser du bokningar sida vid sida med möten och andra aktiviteter.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Öppen klientbokning</span>
-		<span slot="a">
-			Klienten bokar tid själv på en publik websida.
+			Administra las reservas en el calendario. Por ejemplo, cambia o cancela una cita. En el calendario, verás las reservas junto con las reuniones y otras actividades.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Bokning med Mobilt BankID</span>
+		<span slot="q">Sistema de reservas accesible</span>
 		<span slot="a">
-			Klienten loggar in i Kaddio med Mobilt BankID för att kunna boka tid. Passar dig som vill säkerställa identiteten på den som bokar.
+			El cliente puede hacer reservas él mismo a través de un sitio web accesible al público
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">SMS-påminnelser</span>
+		<span slot="q">Reserva con Mobilt BankID</span>
 		<span slot="a">
-			Välj om och när SMS-påminnelser skickas inför och efter bokade tid.
+			El cliente inicia sesión en Kaddio con Mobil BankID para poder reservar una cita. Adecuado para aquellos que quieren asegurar la identidad de la persona que reserva.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Formulär</span>
+		<span slot="q">Recordatorios SMS</span>
 		<span slot="a">
-			Skicka formulär automatiskt i samband med bokning, till exempel skattningsformulär och hälsodeklaration.
+			Elija si y cuándo se envían recordatorios por SMS antes de una cita reservada.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Behandlingsformer</span>
+		<span slot="q">Formularios</span>
 		<span slot="a">
-			Erbjud olika typer av behandlingsformer. Koppla behandlingsformer till olika behandlare. Anpassa sms och mailutskick beroende på behandling.
+			Envía formularios automáticamente cuando se realiza una reserva. Por ejemplo, formularios de evaluación y declaraciones de salud.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Gruppbokning</span>
+		<span slot="q">Formas de tratamiento</span>
 		<span slot="a">
-			Lägg upp tider som är bokningsbara för fler än en deltagare.
+			Ofrece tipos de tratamientos diferentes. Vincula formas de tratamiento a diferentes terapeutas. Personaliza los mensajes de texto y correos electrónicos según el tratamiento.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Tidsoptimering</span>
+		<span slot="q">Reserva de grupo</span>
 		<span slot="a">
-			Undvik onödiga hål i schemat. Kaddio optimerar bokningsbara tider utifrån behandlingformernas längd.
+			Publica horarios que se puedan reservar para más de un paciente.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Väntelistor</span>
+		<span slot="q">Optimización del tiempo</span>
 		<span slot="a">
-			Skapa väntelistor med datum, anteckningar och delegeringsfunktion.
+			Evite huecos innecesarios en el calendario. Kaddio optimiza los tiempos de reserva en función de la duración del tratamiento.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Kortbetalning vid bokning</span>
+		<span slot="q">Pago con tarjeta al reservar</span>
 		<span slot="a">
-			Låt klienten betala med kort direkt vid bokning online.
+			El cliente puede pagar directamente con tarjeta al reservar online.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Fakturering</span>
+		<span slot="q">Facturación</span>
 		<span slot="a">
-			Automatiska faktureringsunderlag skapas utifrån bokningar.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Visa bokning på din hemsida</span>
-		<span slot="a">
-			Integrera bokning direkt på din hemsida.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Platser</span>
-		<span slot="a">
-			Kaddio har stöd för om du har mottagningar på flera platser. Information i mail och sms-påminnelser anpassas beroende på plats.
+			Se crean documentos de facturación de forma automática en función de las reservas.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Rumsbokning</span>
+		<span slot="q">Sistema de reservas en tu página web</span>
 		<span slot="a">
-			Schemaläggning för dina rum. Kaddio ser till att behandlingar bara bokas in när det finns tillgängliga rum.
+			Integra el sistema de reservas directamente en tu página web
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Personalliggare</span>
+		<span slot="q">Múltiples localizaciones</span>
 		<span slot="a">
-			Kaddio kan användas som digital personalliggare genom Arbetstid i Kalendern, med hjälp av Loggning uppfylls även Skatteverkets regler kring kontroll.
+			Kaddio soporta múltiples localizaciones. La información de los recordatorios por correo electrónico y SMS se adapta según la ubicación.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Loggning</span>
+		<span slot="q">Reserva inteligente de consultorios</span>
 		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
+			Programación planificada. Kaddio asegura que los tratamientos solo se reservan cuando hay consultorios disponibles.
 		</span>
 	</Qa>
+
+
 
 </FaqSection>
