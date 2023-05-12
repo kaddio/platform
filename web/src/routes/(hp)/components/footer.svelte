@@ -57,7 +57,7 @@
               </li>
 
               <li>
-                <a href="/sv/support" class="text-sm leading-6 text-gray-600">{ $_('Kontakta oss')}</a>
+                <a href="/{lang}/support" class="text-sm leading-6 text-gray-600">{ $_('Kontakta oss')}</a>
               </li>
 
               <li>
@@ -75,19 +75,19 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">Company</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/en/page/about-us" class="text-sm leading-6 text-gray-600">About us</a>
+                <a href="/en/about-us" class="text-sm leading-6 text-gray-600">About us</a>
               </li>
   
               <!-- <li>
-                <a href="/en/page/career" class="text-sm leading-6 text-gray-600">Lediga tjänster</a>
+                <a href="/en/career" class="text-sm leading-6 text-gray-600">Lediga tjänster</a>
               </li> -->
 
               <!-- <li>
-                <a href="/en/page/partners" class="text-sm leading-6 text-gray-600">Partners</a>
+                <a href="/en/partners" class="text-sm leading-6 text-gray-600">Partners</a>
               </li> -->
 
               <!-- <li>
-                <a href="/en/page/press" class="text-sm leading-6 text-gray-600">Press</a>
+                <a href="/en/press" class="text-sm leading-6 text-gray-600">Press</a>
               </li> -->
 
             </ul>
@@ -96,11 +96,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Avtal') }</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/sv/page/tos" class="text-sm leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
+                <a href="/sv/legal/tos" class="text-sm leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
               </li>
 
               <li>
-                <a href="/sv/page/privacy" class="text-sm leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
+                <a href="/sv/legal/privacy" class="text-sm leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
               </li>
             </ul>
           </div>
@@ -110,15 +110,15 @@
 
     <div class="mt-16 border-t border-gray/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
       <div>
-        <h3 class="text-sm font-semibold leading-6 text-gray-600">Språk och region</h3>
-        <p class="mt-2 text-sm leading-6 text-gray-600">Kaddio finns anpassat för flera länder och regioner. Välj Region och språk här.</p>
+        <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Språk och region')}</h3>
+        <p class="mt-2 text-sm leading-6 text-gray-600">{ $_('Kaddio finns anpassat för flera länder och regioner, välj region och språk här')}</p>
       </div>
       <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
         <label for="location" class="sr-only">{ $_('Region')}</label>
         <select value={lang} on:change={(v) => changeRegion(v)} id="location" name="location" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
           <option value="sv" lang="sv">Sverige</option>
           <option value="es" lang="es">España</option>
-          <!-- <option value="en" lang="en">Global</option> -->
+          <option value="en" lang="en">Global</option>
         </select>
       </form>
     </div>

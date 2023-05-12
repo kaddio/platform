@@ -92,6 +92,14 @@ const translations = {
     "Sekretesspolicy": {
         en: 'Privacy policy',
         es: 'Política de privacidad'
+    },
+    "Språk och region": {
+        en: 'Language and region',
+        es: 'Política de privacidad'
+    },
+    "Kaddio finns anpassat för flera länder och regioner, välj region och språk här": {
+        en: 'Kaddio is customized for several countries and regions, choose region and language here',
+        es: 'Kaddio is customized for several countries and regions, choose region and language here',
     }
 }
 

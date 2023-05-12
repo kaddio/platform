@@ -7,6 +7,7 @@
 	import Footer from '../components/footer.svelte';
 	// import SecuritySectionSv from './securitySectionSv.svelte';
 	import Nav from '../components/nav.svelte';
+	import SecuritySectionEn from './securitySectionEn.svelte';
 	// import CrmSv from './crmSv.svelte';
 	// import Testimonial from './testimonial.svelte';
 
@@ -59,7 +60,6 @@
 <!-- <CrmSv /> -->
 <!-- <QuotesSv /> -->
 <!-- <PricesSv /> -->
-<!-- <SecuritySectionSv /> -->
-
+<SecuritySectionEn />
 <!-- <ReferencesSv /> -->
 <Footer />

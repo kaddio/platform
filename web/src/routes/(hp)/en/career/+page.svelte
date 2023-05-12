@@ -1,6 +1,7 @@
 <script>
 	import { setContext } from 'svelte';
     import Nav from '../../components/nav.svelte';
+	import Footer from '../../components/footer.svelte';
     setContext('lang', 'en');
 </script>
 
@@ -69,3 +70,5 @@
         </div>
       </div>
     </div>
+
+<Footer />
