@@ -1,8 +1,5 @@
 <script>
-    import Header from '../../../sv/headerSv.svelte';
 </script>
-
-<Header />
 
     <div class="relative isolate">
       <svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">

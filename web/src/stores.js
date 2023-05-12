@@ -22,7 +22,7 @@ if(browser){
 
 const translations = {
     "Kontakta oss": {
-        en: 'Contact us',
+        en: 'Contact',
         es: 'Contactar'
     },
     "Skapa konto": {
@@ -44,6 +44,10 @@ const translations = {
     "Support": {
         en: 'Support',
         es: 'Soporte'
+    },
+    "Hjälpcenter": {
+        en: 'Help center',
+        es: 'Centro de ayuda'
     },
     "Logga in": {
         en: 'Login',
