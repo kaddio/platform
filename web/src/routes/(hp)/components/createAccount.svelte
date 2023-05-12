@@ -19,8 +19,7 @@
         const formData = new FormData(e.target);
 
         try {
-            // 'https://api.kaddio.com/api/org';
-            const response = await fetch('http://localhost:3000/api/org', {
+            const response = await fetch('https://api.kaddio.com/api/org', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
