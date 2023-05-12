@@ -53,7 +53,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Support')}</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
+                {#if lang == 'es'}
+                  <a href="https://ayuda.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
+                {:else}
+                  <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
+                {/if}
               </li>
 
               <li>
