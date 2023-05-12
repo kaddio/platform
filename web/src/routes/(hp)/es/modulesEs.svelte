@@ -4,25 +4,25 @@
 </script>
 
 <ModulesSection>
-  <span slot="title">Välj de funktioner du vill</span> 
+  <span slot="title">Tengo de funciones du vill</span> 
   <span slot="subtitle">Kaddio anpassar sig efter dina behov. Välj de funktioner du behöver och ändra när du vill. Du betalar bara för det du använder.</span> 
 
-    <ModulePresentation href="sv/feature/log">
+    <ModulePresentation href="es/feature/log">
         <span slot="icon">
           <i class="text-white fa-regular fa-heart"></i>
         </span>
-        <span slot="title">Journal</span>
+        <span slot="title">Historia clínica</span>
         <span slot="body">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
     </ModulePresentation>
-    <ModulePresentation href="sv/feature/cal">
+    <ModulePresentation href="es/feature/cal">
         <span slot="icon">
           <i class="text-white fa-regular fa-stopwatch"></i>
       </span>
-        <span slot="title">Tidsbokning och kalender</span>
-        <span slot="body">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
+        <span slot="title">Sistema de reservas</span>
+        <span slot="body">Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="sv/feature/invoicing">
+    <ModulePresentation href="es/feature/invoicing">
           <span slot="icon">
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
@@ -30,7 +30,7 @@
           <span slot="body">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
     </ModulePresentation>
         
-    <ModulePresentation href="sv/feature/communication">
+    <ModulePresentation href="es/feature/communication">
       <span slot="icon">
           <i class="text-white fa-regular fa-comments"></i>
       </span>
@@ -38,7 +38,7 @@
         <span slot="body">Kommunicera krypterat via chat eller video inom och utom organisationen. Med två eller 500 deltagare.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="sv/feature/forms">
+    <ModulePresentation href="es/feature/forms">
       <span slot="icon">
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
@@ -46,7 +46,7 @@
         <span slot="body">Automatisera utskick av formulär och hälsodeklarationer.</span>
     </ModulePresentation>
         
-    <ModulePresentation href="sv/feature/todos">
+    <ModulePresentation href="es/feature/todos">
       <span slot="icon">
           <i class="text-white fa-regular fa-list-ul"></i>
       </span>
@@ -54,7 +54,7 @@
         <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
     </ModulePresentation>
                 
-    <ModulePresentation href="sv/feature/documents">
+    <ModulePresentation href="es/feature/documents">
       <span slot="icon">
           <i class="text-white fa-regular fa-folder-tree"></i>
       </span>
@@ -62,7 +62,7 @@
         <span slot="body">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="sv/feature/reports">
+    <ModulePresentation href="es/feature/reports">
       <span slot="icon">
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>

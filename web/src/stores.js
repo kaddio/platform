@@ -53,9 +53,33 @@ const translations = {
         en: 'Or',
         es: 'Y'
     },
+    "Tjänster": {
+        en: 'Services',
+        es: 'Funciones'
+    },
     "Journal": {
         en: 'Medical record',
         es: 'Historia clínica'
+    },
+    "Tidsbokning": {
+        en: 'Booking',
+        es: 'Sistema de reservas'
+    },
+    "Fakturering": {
+        en: 'Invoicing',
+        es: 'Sistema de facturación'
+    },
+    "Dokument": {
+        en: 'Documents',
+        es: 'Documentos'
+    },
+    "Formulär": {
+        en: 'Forms',
+        es: 'Formularios'
+    },
+    "Video": {
+        en: 'Video',
+        es: 'Vídeo'
     }
 }
 

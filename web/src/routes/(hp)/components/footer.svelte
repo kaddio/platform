@@ -1,18 +1,3 @@
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-
 <script>
 	import { getContext } from "svelte";
 	import { _ } from "../../../stores";
@@ -32,34 +17,34 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-600">Tjänster</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-600">{ $_('Tjänster')}</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
                 <a href="/{lang}/feature/log" class="text-sm leading-6 text-gray-600">{ $_('Journal')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/cal" class="text-sm leading-6 text-gray-600">Tidsbokning</a>
+                <a href="/{lang}/feature/cal" class="text-sm leading-6 text-gray-600">{ $_('Tidsbokning')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/invoicing" class="text-sm leading-6 text-gray-600">Fakturering</a>
+                <a href="/{lang}/feature/invoicing" class="text-sm leading-6 text-gray-600">{ $_('Fakturering')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">Chat</a>
+                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">{ $_('Chat')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/documents" class="text-sm leading-6 text-gray-600">Dokument</a>
+                <a href="/{lang}/feature/documents" class="text-sm leading-6 text-gray-600">{ $_('Dokument')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/forms" class="text-sm leading-6 text-gray-600">Formulär</a>
+                <a href="/{lang}/feature/forms" class="text-sm leading-6 text-gray-600">{ $_('Formulär')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">Video</a>
+                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">{ $_('Video')}</a>
               </li>
 
             </ul>
@@ -130,8 +115,8 @@
       </div>
       <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
         <label for="location" class="sr-only">Region</label>
-        <select on:change={(v) => changeRegion(v)} id="location" name="location" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
-          <option value="se" lang="sv">Sverige</option>
+        <select value={lang} on:change={(v) => changeRegion(v)} id="location" name="location" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
+          <option value="sv" lang="sv">Sverige</option>
           <option value="es" lang="es">España</option>
           <!-- <option value="en" lang="en">Global</option> -->
         </select>
