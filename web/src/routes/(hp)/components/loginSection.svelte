@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { getContext } from "svelte";
 	import { _ } from "../../../stores";
+    const lang = getContext('lang');
 
     let cannotFind: boolean = false;
     let url: string;
@@ -39,8 +41,8 @@
         <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">{ $_('Logga in')}</h2>
 
         <p class="mt-2 text-center text-sm text-gray-600">
-          Eller
-          <a href="/sv/create" class="font-medium text-oldpink hover:text-oldpinkdarker">skapa konto</a>
+          { $_('Eller')}
+          <a href="/{lang}/create" class="font-medium text-oldpink hover:text-oldpinkdarker">{ $_('skapa konto')}</a>
         </p>
       </div>
       <form on:submit|preventDefault={submit} class="mt-8 space-y-6" action="#" method="POST">

@@ -26,7 +26,7 @@
 
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="/sv" class="-m-1.5 p-1.5">
+      <a href="/{lang}" class="-m-1.5 p-1.5">
         <span class="sr-only">Kaddio</span>
         <img class="h-8 w-auto" src={darkHeader ? '/img/kaddio-logo.png' : '/img/kaddio-svart.png'} alt="">
       </a>
@@ -38,13 +38,13 @@
       </a>      -->
 
 
-      <a href="/sv/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{ $_('Kontakta oss')}</a>
+      <a href="/{lang}/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{ $_('Kontakta oss')}</a>
 
       <a href="#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-      <a href="{lang}/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">Logga in</a>
-      <a href="/sv/create" class="rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Skapa konto</a>
+      <a href="/{lang}/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">{ $_('Logga in')}</a>
+      <a href="/{lang}/create" class="rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{ $_('Skapa konto')}</a>
     </div>
     <div class="flex lg:hidden">
       <button on:click={() => {show = true}} type="button" class="{darkHeader ? 'text-white' : 'text-gray-900'} -m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
@@ -76,16 +76,16 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
-            <a href="/sv/support" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakta oss</a>
+            <a href="/{lang}/support" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Kontakta oss')}</a>
 
             <!-- <a class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
               Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
             </a> -->
 
-            <a href="/sv/#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pris</a>
+            <a href="#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Pris')}</a>
           </div>
           <div class="py-6">
-            <a href="./sign-in" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Logga in</a>
+            <a href="/{lang}/sign-in" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Logga in')}</a>
           </div>
         </div>
       </div>

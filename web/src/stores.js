@@ -29,6 +29,10 @@ const translations = {
         en: 'Create account',
         es: 'Crear una cuenta'
     },
+    "skapa konto": {
+        en: 'create account',
+        es: 'crear una cuenta'
+    },
     "Pris": {
         en: 'Price',
         es: 'Precio'
@@ -44,6 +48,14 @@ const translations = {
     "Logga in": {
         en: 'Login',
         es: 'Iniciar seción'
+    },
+    "Eller": {
+        en: 'Or',
+        es: 'Y'
+    },
+    "Journal": {
+        en: 'Medical record',
+        es: 'Historia clínica'
     }
 }
 

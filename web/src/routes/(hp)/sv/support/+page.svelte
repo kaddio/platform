@@ -79,25 +79,4 @@
 
 </SimpleCentered>
 
-<!--   
- <FaqSection>
-	<span slot="title">Några vanliga frågor</span>
-	
-	<Qa>
-		<span slot="q">Vilken typ av support ingår</span>
-		<span slot="a">
-			Jadu, den som det visste.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Vilken typ av support ingår</span>
-		<span slot="a">
-			Jadu, den som det visste.
-		</span>
-	</Qa>
-
-
- </FaqSection> 
-   -->
-  <Footer />
+<Footer />

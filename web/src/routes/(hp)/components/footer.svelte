@@ -14,7 +14,9 @@
 -->
 
 <script>
+	import { getContext } from "svelte";
 	import { _ } from "../../../stores";
+  const lang = getContext('lang');
 
   function changeRegion(event){
     window.location.href = `/${event.target.value}/`;
@@ -33,31 +35,31 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-600">Tjänster</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/sv/feature/log" class="text-sm leading-6 text-gray-600">Journal</a>
+                <a href="/{lang}/feature/log" class="text-sm leading-6 text-gray-600">{ $_('Journal')}</a>
               </li>
 
               <li>
-                <a href="/sv/feature/cal" class="text-sm leading-6 text-gray-600">Tidsbokning</a>
+                <a href="/{lang}/feature/cal" class="text-sm leading-6 text-gray-600">Tidsbokning</a>
               </li>
 
               <li>
-                <a href="/sv/feature/invoicing" class="text-sm leading-6 text-gray-600">Fakturering</a>
+                <a href="/{lang}/feature/invoicing" class="text-sm leading-6 text-gray-600">Fakturering</a>
               </li>
 
               <li>
-                <a href="/sv/feature/communication" class="text-sm leading-6 text-gray-600">Chat</a>
+                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">Chat</a>
               </li>
 
               <li>
-                <a href="/sv/feature/documents" class="text-sm leading-6 text-gray-600">Dokument</a>
+                <a href="/{lang}/feature/documents" class="text-sm leading-6 text-gray-600">Dokument</a>
               </li>
 
               <li>
-                <a href="/sv/feature/forms" class="text-sm leading-6 text-gray-600">Formulär</a>
+                <a href="/{lang}/feature/forms" class="text-sm leading-6 text-gray-600">Formulär</a>
               </li>
 
               <li>
-                <a href="/sv/feature/communication" class="text-sm leading-6 text-gray-600">Video</a>
+                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">Video</a>
               </li>
 
             </ul>
