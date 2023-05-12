@@ -6,13 +6,13 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Journal</title>
-	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
+	<title>Kaddio - Historia clínica</title>
+	<meta name="description" content="Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a las necesidades de tu negocio." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Journal</span>
-	<span slot="sub">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+	<span slot="title">Historia clínica</span>
+	<span slot="sub">Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a las necesidades de tu negocio.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Användarvänligt.</span>
@@ -20,13 +20,13 @@
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
 	</ModuleFeature> -->
-
+<!-- 
 	<ModuleFeature>
 		<span slot="title">Flexibelt.</span>
 		<span slot="body">
 			Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.
 Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
-	</ModuleFeature>
+	</ModuleFeature> -->
 
 	<!-- <ModuleFeature>
 		<span slot="title">Säkert.</span>
@@ -45,73 +45,67 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<span slot="title">Detaljer</span>
 
 	<Qa>
-		<span slot="q">Anteckningsmallar</span>
+		<span slot="q">Plantillas de notas</span>
 		<span slot="a">
-			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj din egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
+			Crea tus propias plantillas para que las historias clínicas se adapten a tu negocio. Elije tus propias palabras clave/títulos. Use plantillas de texto, frases, carga de archivos y más.
 		</span>
 	</Qa>
 	
 	<Qa>
-		<span slot="q">Journalformulär</span>
+		<span slot="q">Formularios</span>
 		<span slot="a">
-			Skapa dina egna formulär eller använd vanligt förekommande standardformulär direkt från Kaddio. Skicka skattningsformulär och hälsodeklarationer via e-post och sms. Journalformulär kan skickas automatiskt i samband med bokning eller manuellt vid behov. Svaren sparas i journalen.
+			Crea tus propios formularios o utiliza formularios estándar de uso común directamente desde Kaddio. Envío de formularios de valoración y declaraciones de salud por e-mail y SMS. Los formularios se pueden enviar automáticamente en relación con la reserva o manualmente si es necesario. Las respuestas se guardan en la historia clínica.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Brev och remisser</span>
+		<span slot="q">Cartas y remisiones</span>
 		<span slot="a">
-			Skapa brev, remisser, remissvar och intyg. Skicka med post, via Kaddios chat eller ladda ner som PDF.
+			Crea cartas, remisiones y certificados. Envía por correo postal, a través del chat de Kaddio o como PDF.
 		</span>
 	</Qa>
 
 	<Qa>
 		<span slot="q">ICD-10</span>
 		<span slot="a">
-			Sök med kod eller fritext och lägg till diagnoser i varje journalanteckning.
+			Busca por código o texto libre y agrega diagnósticos a cada historia clínica.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Behörigheter</span>
+		<span slot="q">Controla la seguridad de las historias clínicas</span>
 		<span slot="a">
-			Välj om alla i verksamheten ska kunna läsa klienters journal eller om behörigheten ska begränsas till vissa behandlare.
+			Elije quiénes pueden leer el historial médico del paciente.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Bild</span>
+		<span slot="q">Gráficas del cuerpo humano.</span>
 		<span slot="a">
-			Rita på fram- och baksida av en människokropp för att dokumentera till exempel var klienten upplever smärta.
+			Haz dibujos en las gráficas corporales para documentar, por ejemplo, dónde experimenta dolor el paciente.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Lista osignerade anteckningar</span>
+		<span slot="q">Mantenimiento de registros</span>
 		<span slot="a">
-			Håll koll på anteckningar som väntar på att bli signerade.
+			Mantén un registro de las notas que esperan ser firmadas.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Exportera/skriv ut</span>
+		<span slot="q">Exportación de historias clínicas</span>
 		<span slot="a">
-			Exportera och skriv ut enskild journalanteckning eller hela journalen till PDF.
+			Exporta partes individuales o una historia clínica completa a PDF.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Loggning</span>
+		<span slot="q">Registro de eventos</span>
 		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
+			Se registran la lectura, escritura y edición de las historias clínicas. El registro muestra lo que se hizo con una historia clínica en particular y por quién, cuándo y desde qué dirección IP.
 		</span>
 	</Qa>
 
-	<Qa>
-		<span slot="q">API</span>
-		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
-		</span>
-	</Qa>
 
 </FaqSection>
