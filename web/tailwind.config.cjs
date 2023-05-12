@@ -15,6 +15,17 @@ module.exports = {
       white: colors.white,
       fluffypink: '#EFEAF7',
       gray: colors.gray,
+      green: {
+        100: "hsl(137, 60%, 7%)",
+        200: "hsl(137, 45%, 15%)",
+        300: "hsl(137, 35%, 27%)",
+        400: "hsl(137, 31%, 42%)",
+        500: "hsl(137, 31%, 57%)",
+        600: "hsl(137, 31%, 69%)",
+        700: "hsl(137, 31%, 79%)",
+        800: "hsl(137, 31%, 88%)",
+        900: "hsl(137, 31%, 95%)",
+      },
       // purple: colors.indigo
       'purple': {
         100: 'hsl(306, 60%, 5%)',

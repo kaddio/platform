@@ -44,6 +44,7 @@
 	"type": "module",
 	"dependencies": {
 		"@types/lodash": "^4.14.191",
+		"dayjs": "^1.11.7",
 		"fast-glob": "^3.2.12",
 		"find-in-files": "^0.5.0",
 		"lodash": "^4.17.21",
