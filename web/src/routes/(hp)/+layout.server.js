@@ -5,6 +5,6 @@ export function load({request, setHeaders, cookies}){
         console.log('Got cookie!')
         const geo = request.headers.get('cf-ipcountry');
 
-        cookies.set('geo', geo);
+        cookies.set('geo', geo, {path: '/'});
     }
 }
