@@ -2,10 +2,11 @@
 	import { getContext } from "svelte";
 	import { _, regionBannerDismiss } from "../../../stores";
 
-    export let data;
+    import { page } from '$app/stores';
 
+    $: console.log($page);
     const lang = getContext('lang');
-    const geo: string = data.geo;
+    const geo: string = $page.data.geo;
 
     function country(region: string): string {
         const regions = {
@@ -19,12 +20,12 @@
 
     const geoSite = {
         'SE': 'sv'
-    }[geo] || geo.toLowerCase();
+    }[geo] || (geo || '').toLowerCase();
 
-    $: console.log('rb: ', $regionBannerDismiss);
+    $: console.log('rb: ', geo, $regionBannerDismiss);
 
     // let regionBannerDismiss: boolean = false; // Move this to be a cookie / session storage
-    $: showBannerComputed = $regionBannerDismiss !== undefined && !$regionBannerDismiss && geoSite !== lang;
+    $: showBannerComputed = $regionBannerDismiss !== undefined && !$regionBannerDismiss && geo && geoSite !== lang;
 </script>
 
 {#if showBannerComputed}
