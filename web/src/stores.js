@@ -1,8 +1,10 @@
 import { browser } from "$app/environment";
 import { getContext } from "svelte";
-import { readable } from "svelte/store";
+import { readable, writable } from "svelte/store";
 
 export let token = readable();
+
+export let regionBannerDismiss;
 
 if(browser){
     if(sessionStorage.getItem('token')){
@@ -18,6 +20,9 @@ if(browser){
             sessionStorage.removeItem('token');
         }
     });
+
+    regionBannerDismiss = writable(localStorage.regionBannerDismiss === 'true');
+    regionBannerDismiss.subscribe((value) => localStorage.regionBannerDismiss = JSON.stringify(value))
 }
 
 const translations = {
@@ -152,18 +157,27 @@ const translations = {
     "Någon annanstans": {
         en: 'Somewhere else',
         es: 'En algún otro lugar'
+    },
+    "Välj annat": {
+        en: 'Choose other',
+        es: 'Elige otro'
+    },
+    "Region": {
+        en: 'Region',
+        es: 'Región'
+    },
+    "Välj annat land eller region för att se innehåll som finns där du är.": {
+        en: 'Choose another country or region to see content specific to your location',
+        es: 'Elija otro país o región para ver contenido específico de su ubicación'
     }
 }
 
-export let _ = readable(function(phrase){
+export let _ = readable(function(phrase, lang = getContext('lang')){
     const fallbackLang = 'sv';
-    const lang = getContext('lang');
 
     function phraseExist(phrase, lang){
         return !!(translations[phrase] && translations[phrase][lang]);
     }
-
-    console.log("Lang: ", lang)
 
     if(lang == fallbackLang || lang == undefined || !phraseExist(phrase, lang)){
         return phrase;
