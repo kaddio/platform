@@ -6,5 +6,10 @@ export function load({request, setHeaders, cookies}){
         const geo = request.headers.get('cf-ipcountry');
 
         cookies.set('geo', geo, {path: '/'});
+
+        return {
+            geo
+        }
     }
+    
 }

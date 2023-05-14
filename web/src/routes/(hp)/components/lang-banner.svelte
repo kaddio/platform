@@ -2,8 +2,10 @@
 	import { getContext } from "svelte";
 	import { _, regionBannerDismiss } from "../../../stores";
 
+    export let data;
+
     const lang = getContext('lang');
-    const geo: string = 'ES';
+    const geo: string = data.geo;
 
     function country(region: string): string {
         const regions = {
