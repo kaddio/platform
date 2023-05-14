@@ -2,6 +2,7 @@
 	import { getContext } from "svelte";
 	import { _ } from "../../../stores";
 	import Referral from "./referral-banner.svelte";
+	import LangBanner from "./lang-banner.svelte";
   const lang = getContext('lang');
 
   let show = false;
@@ -22,6 +23,7 @@
 
 <header class="absolute inset-x-0 top-0 z-50">
 
+  <LangBanner />
   <Referral />
 
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
