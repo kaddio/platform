@@ -6,17 +6,6 @@ function getLang(event){
 }
 
 export async function handle({ event, resolve }) {
-
-    console.log(event.request.headers)
-
-    // if (event.url.pathname.startsWith('/custom')) {
-    //     return new Response('custom response');
-    // }
-
-    // const response = await resolve(event);
-
-    // return response;
-
     return resolve(event, {
         transformPageChunk: ({ html }) => html.replace('%lang%', getLang(event))
     });
