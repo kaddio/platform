@@ -1,17 +1,11 @@
-export function load({request, setHeaders, cookies}){
-    // console.log(request.headers);
+export function load({request}){
 
-    let geo;
+    // Cloudflare should set this header
+    let geo = request.headers.get('cf-ipcountry');
 
-    if(request.headers.get('cf-ipcountry')){
-        console.log('Got cookie!')
-        geo = request.headers.get('cf-ipcountry');
-
-        cookies.set('geo', geo, {path: '/'});
-    }
+    // geo = 'CR';
 
     return {
-        geo
+        geo 
     }
-
 }

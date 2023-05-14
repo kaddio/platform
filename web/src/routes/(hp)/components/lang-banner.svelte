@@ -7,22 +7,55 @@
     const lang = getContext('lang');
     const geo: string = $page.data.geo;
 
-    function country(region: string): string {
-        const regions = {
-            sv: 'Sverige',
-            en: 'Global',
-            es: 'Spanien'
-        };
-
-        return regions[region];
+    const regions = {
+        SE: {
+            lang: 'sv',
+            label: 'Sverige',
+            href: '/sv'
+        },
+        ES: {
+            lang: 'es',
+            label: 'Spanien',
+            href: '/es'
+        },
+        EN: {
+            lang: 'en',
+            label: 'Global',
+            href: '/en'
+        }
     }
 
-    const geoSite = {
-        'SE': 'sv'
-    }[geo] || (geo || '').toLowerCase();
+    const matchers = {
+        SE: 'SE',
+        FI: 'SE',
+        DK: 'SE',
+        NO: 'SE',
 
-    $: console.log('rb: ', geo, $regionBannerDismiss);
-    $: showBannerComputed = $regionBannerDismiss !== undefined && !$regionBannerDismiss && geo && geoSite !== lang;
+        ES: 'ES',
+        CR: 'ES',
+        MX: 'ES',
+        CO: 'ES',
+        AR: 'ES',
+        PE: 'ES',
+        VE: 'ES',
+        CL: 'ES',
+        GT: 'ES',
+        EC: 'ES',
+        BO: 'ES',
+        CU: 'ES',
+        DO: 'ES',
+
+
+        EN: 'EN',
+        US: 'EN',
+        AU: 'EN'
+    }
+
+    const region = (function(geo){
+        return regions[matchers[geo]] || regions['EN'];
+    })($page.data.geo);
+
+    $: showBannerComputed = ($regionBannerDismiss !== undefined && !$regionBannerDismiss) && geo && (region.lang !== lang);
 </script>
 
 {#if showBannerComputed}
@@ -35,11 +68,11 @@
         </div>
         <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
             <p class="text-sm leading-6 text-gray-900">
-                <strong class="font-semibold">{$_('Region', geoSite)}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>{$_('Välj annat land eller region för att se innehåll som finns där du är.', geoSite)}
+                <strong class="font-semibold">{$_('Region', region.lang)}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>{$_('Välj annat land eller region för att se innehåll som finns där du är.', region.lang)}
             </p>
-            <a href="/{geoSite}" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">{$_(country(geoSite), geoSite)}</a>
+            <a href="{region.href}" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">{$_(region.label, region.lang)}</a>
 
-            <a href="/choose-country-region" class="whitespace-nowrap text-sm">{$_('Välj annat', geoSite)}&nbsp;<span aria-hidden="true">&rarr;</span></a>            
+            <a href="/choose-country-region" class="whitespace-nowrap text-sm">{$_('Välj annat', region.lang)}&nbsp;<span aria-hidden="true">&rarr;</span></a>            
         </div>
         <div class="flex flex-1 justify-end">
         <button on:click={() => {$regionBannerDismiss = true}} type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
