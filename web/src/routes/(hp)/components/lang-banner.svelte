@@ -4,7 +4,6 @@
 
     import { page } from '$app/stores';
 
-    $: console.log($page);
     const lang = getContext('lang');
     const geo: string = $page.data.geo;
 
@@ -23,8 +22,6 @@
     }[geo] || (geo || '').toLowerCase();
 
     $: console.log('rb: ', geo, $regionBannerDismiss);
-
-    // let regionBannerDismiss: boolean = false; // Move this to be a cookie / session storage
     $: showBannerComputed = $regionBannerDismiss !== undefined && !$regionBannerDismiss && geo && geoSite !== lang;
 </script>
 
