@@ -22,10 +22,10 @@
 	</ModuleFeature> -->
 
 	<ModuleFeature>
-		<span slot="title">Flexibelt.</span>
+		<span slot="title">Flexible.</span>
 		<span slot="body">
-			Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.
-Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
+			Browse through our medical record templates or tailor everything based on your needs
+		</span>
 	</ModuleFeature>
 
 	<!-- <ModuleFeature>
@@ -42,40 +42,38 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Details</span>
 
 	<Qa>
-		<span slot="q">Anteckningsmallar</span>
+		<span slot="q">Templates</span>
 		<span slot="a">
-			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj din egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
+			Create medical record templates tailored to your needs. Choose your own search phrases and titles.
 		</span>
 	</Qa>
 	
 	<Qa>
-		<span slot="q">Journalformulär</span>
+		<span slot="q">Medical record forms</span>
 		<span slot="a">
-			Skapa dina egna formulär eller använd vanligt förekommande standardformulär direkt från Kaddio. Skicka skattningsformulär och hälsodeklarationer via e-post och sms. Journalformulär kan skickas automatiskt i samband med bokning eller manuellt vid behov. Svaren sparas i journalen.
-		</span>
+			Create your own forms or use commonly used standard forms directly from Kaddio. Send assessment forms and health declarations via e-mail and SMS. Journal forms can be sent automatically when you get a new booking, or manually if necessary. The answers are saved in the journal.		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Brev och remisser</span>
+		<span slot="q">Letters and referrals</span>
 		<span slot="a">
-			Skapa brev, remisser, remissvar och intyg. Skicka med post, via Kaddios chat eller ladda ner som PDF.
-		</span>
+			Create letters, referrals, referral responses and certificates. Send by post, via Kaddio Communication or download as PDF.		</span>
 	</Qa>
 
 	<Qa>
 		<span slot="q">ICD-10</span>
 		<span slot="a">
-			Sök med kod eller fritext och lägg till diagnoser i varje journalanteckning.
+			Search by code or free text and add diagnoses to each journal entry.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Behörigheter</span>
+		<span slot="q">Privileges</span>
 		<span slot="a">
-			Välj om alla i verksamheten ska kunna läsa klienters journal eller om behörigheten ska begränsas till vissa behandlare.
+			Choose if everyone within your organization should be able to read a client's medical record or limit access to certain processors.
 		</span>
 	</Qa>
 

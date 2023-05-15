@@ -6,39 +6,38 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Kalender och Tidsbokning</title>
-	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning." />
+	<title>Kaddio - Time booking and calendar</title>
+	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
+	<span slot="title">Time booking and calendar</span>
+	<span slot="sub">Easy-to-use time booking and online payment that does everything you expect.</span>
 
 	<ModuleFeature>
-		<span slot="title">Automatisera</span>
+		<span slot="title">Automate</span>
 		<span slot="body">
-			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
+			Automate you schedule and let your clients book and pay, or take meticulous control. Booking types can be configured in detail.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Samarbeta</span>
+		<span slot="title">Collaborate</span>
 		<span slot="body">
-			Använd kalendern för att boka möten.
+			Use the calendar to book meetings
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Streamline</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid
-		</span>
+			Streamline recurring events can be streamlined with templates.
 	</ModuleFeature>
 </ModuleSection>
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Details</span>
 
 	<Qa>
 		<span slot="q">Kalender</span>

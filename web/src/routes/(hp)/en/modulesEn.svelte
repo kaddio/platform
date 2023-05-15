@@ -19,7 +19,7 @@
           <i class="text-white fa-regular fa-stopwatch"></i>
       </span>
         <span slot="title">Time booking and calendar</span>
-        <span slot="body">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
+        <span slot="body">Easy-to-use time booking and online payment that does everything you expect.</span>
     </ModulePresentation>
 
     <ModulePresentation href="en/feature/invoicing">
