@@ -6,13 +6,13 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Uppgifter</title>
-	<meta name="description" content="Gör din egen att-göra-lista eller delegera till någon annan." />
+	<title>Kaddio - Tareas</title>
+	<meta name="description" content="Crea tu propia -lista de tareas pendientes-. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo" />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Uppgifter</span>
-	<span slot="sub">Gör din egen att-göra-lista eller delegera till någon annan.</span>
+	<span slot="title">Tareas</span>
+	<span slot="sub">Crea tu propia -lista de tareas pendientes-. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
@@ -38,47 +38,47 @@
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Skapa uppgifter</span>
+		<span slot="q">Crear tareas</span>
 		<span slot="a">
-			Skapa en checklista för saker som ska göras.
+			Crea una lista de verificación de las cosas que hacer.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Deadline</span>
+		<span slot="q">Plazo</span>
 		<span slot="a">
-			Sätt en sista dag och tid som uppgiften ska vara gjord.
+			Establezce una fecha límite para completar la tarea.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Delegering</span>
+		<span slot="q">Delegación de tareas</span>
 		<span slot="a">
-			Delegering
+			Delega tareas a colegas o clientes
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Påminnelse</span>
+		<span slot="q">Recordatorios</span>
 		<span slot="a">
-			Kaddio notifierar när du får en uppgift delegerad till dig eller om din uppgift är nära deadline.
+			Kaddio notifica cuando se delega una tarea o si una tarea está cerca de la fecha límite
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Prioritet</span>
+		<span slot="q">Prioridad</span>
 		<span slot="a">
-			Markera vilka uppgifter som är prioriterade.
+			Marca qué tareas se priorizan.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Historik</span>
+		<span slot="q">Historial</span>
 		<span slot="a">
-			Se uppgifter som är avklarade.
+			Revisa qué tareas se han completado
 		</span>
 	</Qa>
 

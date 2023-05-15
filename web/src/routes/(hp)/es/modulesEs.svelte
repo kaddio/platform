@@ -50,8 +50,8 @@
       <span slot="icon">
           <i class="text-white fa-regular fa-list-ul"></i>
       </span>
-        <span slot="title">Uppgifter</span>
-        <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
+        <span slot="title">Tareas</span>
+        <span slot="body">Crea tu propia "Lista de tareas pendientes". Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo.</span>
     </ModulePresentation>
                 
     <ModulePresentation href="es/feature/documents">
