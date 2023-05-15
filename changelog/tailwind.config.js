@@ -6,6 +6,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        oldpink:  '#c38f9c',
+        oldpinkdarker:  '#b16e7f',
+      },
       fontSize: {
         '2xs': '.6875rem',
       },

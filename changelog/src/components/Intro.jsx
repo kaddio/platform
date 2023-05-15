@@ -58,7 +58,7 @@ export function Intro() {
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
         Kaddio Changelog{' '}
-        <span className="text-sky-300">is everything we build for you</span>
+        <span className="text-oldpink">is everything we build for you</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         Kaddio is an all-in-one platform for health specialists. Medical Record, Booking, Video+Chat, Invoicing etc. Kaddio is fast and very easy to use.
