@@ -5,14 +5,14 @@
 
 <ModulesSection>
   <span slot="title">Choose the functions you want</span> 
-  <span slot="subtitle">Kaddio anpassar sig efter dina behov. Välj de funktioner du behöver och ändra när du vill. Du betalar bara för det du använder.</span> 
+  <span slot="subtitle">Kaddio follows your need. Choose the functions you need and change when you want. Pay for what you use.</span> 
 
     <ModulePresentation href="en/feature/log">
         <span slot="icon">
           <i class="text-white fa-regular fa-heart"></i>
         </span>
         <span slot="title">Medical record</span>
-        <span slot="body">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+        <span slot="body">Kaddio Medical Record is a complete module for documentation of your clients.</span>
     </ModulePresentation>
     <ModulePresentation href="en/feature/cal">
         <span slot="icon">
