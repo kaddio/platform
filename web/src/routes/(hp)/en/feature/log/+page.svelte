@@ -6,13 +6,13 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Journal</title>
-	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
+	<title>Kaddio - Medical Record</title>
+	<meta name="description" content="Kaddio Medical Record is a complete module for documentation of your clients." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Journal</span>
-	<span slot="sub">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+	<span slot="title">Kaddio Medical Record</span>
+	<span slot="sub">Kaddio Medical Record is a complete module for documentation of your clients.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Användarvänligt.</span>
