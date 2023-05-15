@@ -34,8 +34,8 @@
       <span slot="icon">
           <i class="text-white fa-regular fa-comments"></i>
       </span>
-    <span slot="title">Kommunikation</span>
-        <span slot="body">Kommunicera krypterat via chat eller video inom och utom organisationen. Med två eller 500 deltagare.</span>
+    <span slot="title">Vídeo y chat encriptados</span>
+        <span slot="body">Vídeo seguro hasta 100 participantes.</span>
     </ModulePresentation>
 
     <ModulePresentation href="es/feature/forms">

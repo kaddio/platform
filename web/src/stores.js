@@ -169,6 +169,10 @@ const translations = {
     "Välj annat land eller region för att se innehåll som finns där du är.": {
         en: 'Choose another country or region to see content specific to your location',
         es: 'Elija otro país o región para ver contenido específico de su ubicación'
+    },
+    "Läs mer": {
+        en: 'Learn more',
+        es: 'Aprende más'
     }
 }
 
