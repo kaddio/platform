@@ -6,13 +6,13 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Formulär</title>
-	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." />
+	<title>Kaddio - Formularios</title>
+	<meta name="description" content="En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y reciba las respuestas directamente en el." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Formulär</span>
-	<span slot="sub">Automatisera utskick av formulär och hälsodeklarationer. I Kaddio kan du både använda standardformulär och skapa dina egna. Skicka journalformulär automatiskt vid bokning och få svaren direkt till journalen.</span>
+	<span slot="title">Formularios</span>
+	<span slot="sub">En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y reciba las respuestas directamente en el.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
@@ -41,37 +41,32 @@
 	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Standardformulär</span>
+		<span slot="q">Formulario estándar</span>
 		<span slot="a">
-			Ladda ner, editera och skicka de vanligaste standardformulären direkt från Kaddio.
+			Descarga, edita y envía los formularios estándar más comunes directamente desde Kaddio.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skapa formulär</span>
+		<span slot="q">Crea formularios</span>
 		<span slot="a">
-			Utforma formulär så som du vill. Använd olika svarstyper, som fritext, skala, numeriskt värde och flerval. Välj hur Kaddio ska räkna ut resultatet, till exempel som summa eller medelvärde. Sätt och benämn gränser för att få en snabb översikt av resultatet.
+			Diseña formularios a tu manera. Usa diferentes tipos de respuesta como, texto libre, escala, valor numérico y opción múltiple. Tu eliges cómo Kaddio debe calcular el resultado, por ejemplo, como una suma o un valor promedio. Tu estableces los límites para obtener una vista rápida del resultado.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skicka journalformulär</span>
+		<span slot="q">Envía formularios clínicos</span>
 		<span slot="a">
-			Skicka journalformulär automatiskt i samband med bokning eller manuellt vid behov. Svaren sparas i journalen.
+			Envía un formulario clínico de forma automática con la reserva en línea o, de preferirlo, de forma manual. Las respuestas se guardan en la historia clínica.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skicka skattningsformulär</span>
+		<span slot="q">Envía formulario de presupuesto</span>
 		<span slot="a">
-			Skicka skattningsformulär och hälsodeklarationer via e-post och sms.
+			Envío de formularios de valoración y declaraciones de salud por e-mail y SMS.
 		</span>
 	</Qa>
 
-	<Qa>
-		<span slot="q">Dela mallar</span>
-		<span slot="a">
-			Dela mallar för formulär och brev med andra organisationer som använder Kaddio.
-		</span>
-	</Qa>
+
 </FaqSection>

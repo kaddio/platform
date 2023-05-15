@@ -42,8 +42,8 @@
       <span slot="icon">
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
-    <span slot="title">Formulär</span>
-        <span slot="body">Automatisera utskick av formulär och hälsodeklarationer.</span>
+    <span slot="title">Formularios</span>
+        <span slot="body">Envía formularios y la declatión de salud a tus clientes, de forma automática y manual.</span>
     </ModulePresentation>
         
     <ModulePresentation href="es/feature/todos">
