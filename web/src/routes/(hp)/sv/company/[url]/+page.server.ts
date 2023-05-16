@@ -1,3 +1,5 @@
+export const prerender = false;
+
 async function orgData(url: string){
     try {
         // 'https://api.kaddio.com/api/referrer';
