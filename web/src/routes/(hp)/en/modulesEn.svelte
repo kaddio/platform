@@ -27,7 +27,7 @@
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
           <span slot="title">Invoicing</span>
-          <span slot="body">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
+          <span slot="body">Complete invoicing system for small and medium sized businesses.</span>
     </ModulePresentation>
         
     <ModulePresentation href="en/feature/communication">
@@ -35,7 +35,7 @@
           <i class="text-white fa-regular fa-comments"></i>
       </span>
     <span slot="title">Communication</span>
-        <span slot="body">Kommunicera krypterat via chat eller video inom och utom organisationen. Med två eller 500 deltagare.</span>
+        <span slot="body">Communicate securely and encrypted via chat or video. With two or 500 participants.</span>
     </ModulePresentation>
 
     <ModulePresentation href="en/feature/forms">
@@ -43,7 +43,7 @@
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
     <span slot="title">Forms</span>
-        <span slot="body">Automatisera utskick av formulär och hälsodeklarationer.</span>
+        <span slot="body">Automate delivery of forms and health assessments.</span>
     </ModulePresentation>
         
     <ModulePresentation href="en/feature/todos">
@@ -51,7 +51,7 @@
           <i class="text-white fa-regular fa-list-ul"></i>
       </span>
         <span slot="title">Todos</span>
-        <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
+        <span slot="body">Do your own todo-list or delegate it to someone.</span>
     </ModulePresentation>
                 
     <ModulePresentation href="en/feature/documents">
@@ -67,7 +67,7 @@
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>
         <span slot="title">Reports</span>
-        <span slot="body">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys. </span>
+        <span slot="body">Get an overview of the business with Kaddio's statistics tool. Visualize data in Kaddio or export for your own analysis.</span>
     </ModulePresentation>
 
 </ModulesSection>   
