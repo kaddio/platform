@@ -42,7 +42,7 @@
 
       <a href="/{lang}/support" class="{darkHeader ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{ $_('Kontakta oss')}</a>
 
-      <a href="#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
+      <a href="/{lang}#price" class="{darkHeader ? 'text-white' : 'text-gray-900'}  text-sm font-semibold leading-6">{ $_('Pris')}</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
       <a href="/{lang}/sign-in" class="{darkHeader ? 'lg:text-white' : 'lg:text-gray-900'} hidden lg:block lg:text-sm lg:font-semibold lg:leading-6">{ $_('Logga in')}</a>
@@ -84,7 +84,7 @@
               Marketplace <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
             </a> -->
 
-            <a href="#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Pris')}</a>
+            <a href="/{lang}#price" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Pris')}</a>
           </div>
           <div class="py-6">
             <a href="/{lang}/sign-in" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Logga in')}</a>
