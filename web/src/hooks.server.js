@@ -1,7 +1,6 @@
 function getLang(event){
-    console.log(event.url.pathname)
     const sv = event.url.pathname.includes('/sv') && 'sv';
-    const es = event.url.pathname.includes('/es') && 'es';
+    const es = event.url.pathname.includes('/sv') && 'es';
 
     return sv || es || 'en';
 }
