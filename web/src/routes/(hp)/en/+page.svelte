@@ -1,16 +1,10 @@
 <script lang="ts">	
-	// import ModulesSv from './modulesSv.svelte';
-	// import QuotesSv from './quotesSv.svelte';
-	// import PricesSv from './pricesSv.svelte';
-	// import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
 	import Footer from '../components/footer.svelte';
-	// import SecuritySectionSv from './securitySectionSv.svelte';
 	import Nav from '../components/nav.svelte';
 	import SecuritySectionEn from './securitySectionEn.svelte';
 	import ModulesEn from './modulesEn.svelte';
-	// import CrmSv from './crmSv.svelte';
-	// import Testimonial from './testimonial.svelte';
+	import PricesEn from './pricesEn.svelte';
 
 	setContext('lang', 'en');
 </script>
@@ -60,7 +54,7 @@
 <ModulesEn />
 <!-- <CrmSv /> -->
 <!-- <QuotesSv /> -->
-<!-- <PricesSv /> -->
+<PricesEn />
 <SecuritySectionEn />
 <!-- <ReferencesSv /> -->
 <Footer />

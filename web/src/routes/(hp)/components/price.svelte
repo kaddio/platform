@@ -1,4 +1,8 @@
 <script lang="ts">
+	import { getContext } from "svelte";
+	import { _ } from "../../../stores";
+
+  const lang = getContext('lang');
 
     type Module = {
         price: number,
@@ -10,7 +14,7 @@
     export let modules : Module[];
     export let currency: string;
 
-    $: total = modules.filter(m => m.selected).map(m=> m.price).reduce((a,b) => a+b, 0);
+    $: total = Math.floor(modules.filter(m => m.selected).map(m=> m.price).reduce((a,b) => a+b, 0));
 </script>
 
 
@@ -21,8 +25,8 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900"><slot name="title" /></h2>
         <p class="mt-6 text-lg leading-8 text-gray-600"><slot name="sub" /></p>
         <div class="mt-8 flex items-center gap-x-6">
-          <a href="/sv/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Bli kund</a>
-          <a href="/sv/support" class="text-sm font-semibold text-gray-900">Kontakta oss <span aria-hidden="true">&rarr;</span></a>
+          <a href="/{lang}/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{$_('Skapa konto')}</a>
+          <a href="/{lang}/support" class="text-sm font-semibold text-gray-900">{$_('Kontakta oss')} <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="mx-auto grid w-full max-w-xl items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
@@ -31,8 +35,8 @@
             <thead>
               <tr>
                 <th></th>
-                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Modul</th>
-                <th scope="col" class="py-3.5 pl-3 pr-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">Pris</th>
+                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">{$_('Modul')}</th>
+                <th scope="col" class="py-3.5 pl-3 pr-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">{$_('Pris')}</th>
               </tr>
             </thead>
             <tbody>
@@ -54,9 +58,9 @@
             </tbody>
             <tfoot>
               <tr>
-                <th scope="row" colspan="2" class="hidden pl-4 pr-3 pt-4 text-right text-sm font-semibold text-gray-900 sm:table-cell sm:pl-0">Månadspris / användare</th>
-                <th scope="row" class="pl-6 pr-3 pt-4 text-left text-sm font-semibold text-gray-900 sm:hidden">Månadspris / användare</th>
-                <td class="pl-3 pr-4 pt-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">{total} {currency} (ex moms)</td>
+                <th scope="row" colspan="2" class="hidden pl-4 pr-3 pt-4 text-right text-sm font-semibold text-gray-900 sm:table-cell sm:pl-0">{$_('Månadspris / användare')}</th>
+                <th scope="row" class="pl-6 pr-3 pt-4 text-left text-sm font-semibold text-gray-900 sm:hidden">{$_('Månadspris / användare')}</th>
+                <td class="pl-3 pr-4 pt-4 text-right text-sm font-semibold text-gray-900 sm:pr-0">{total} {currency} {$_('(ex moms)')}</td>
               </tr>
             </tfoot>
           </table>

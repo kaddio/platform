@@ -3,8 +3,7 @@
 	import Footer from '../components/footer.svelte';
 	import Nav from '../components/nav.svelte';
 	import ModulesEs from './modulesEs.svelte';
-	// import CrmSv from './crmSv.svelte';
-	// import Testimonial from './testimonial.svelte';
+	import PricesEs from './pricesEs.svelte';
 
 	setContext('lang', 'es');
 </script>
@@ -55,7 +54,7 @@
 
 <!-- <CrmSv /> -->
 <!-- <QuotesSv /> -->
-<!-- <PricesSv /> -->
+<PricesEs />
 <!-- <SecuritySectionSv /> -->
 
 <!-- <ReferencesSv /> -->

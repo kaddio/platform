@@ -173,6 +173,18 @@ const translations = {
     "Läs mer": {
         en: 'Learn more',
         es: 'Aprende más'
+    },
+    "Modul": {
+        en: 'Module',
+        es: 'Funcion'
+    },
+    "Månadspris / användare": {
+        en: 'Monthly price / user',
+        es: 'Precio mensual / usuario'
+    },
+    "(ex moms)": {
+        en: '(excl. VAT)',
+        es: '(excl. IVA)'
     }
 }
 
