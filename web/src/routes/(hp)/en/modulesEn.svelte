@@ -22,13 +22,13 @@
         <span slot="body">Easy-to-use time booking and online payment that does everything you expect.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="en/feature/invoicing">
+    <!-- <ModulePresentation href="en/feature/invoicing">
           <span slot="icon">
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
           <span slot="title">Invoicing</span>
           <span slot="body">Complete invoicing system for small and medium sized businesses.</span>
-    </ModulePresentation>
+    </ModulePresentation> -->
         
     <ModulePresentation href="en/feature/communication">
       <span slot="icon">
@@ -38,7 +38,7 @@
         <span slot="body">Communicate securely and encrypted via chat or video. With two or 500 participants.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="en/feature/forms">
+    <!-- <ModulePresentation href="en/feature/forms">
       <span slot="icon">
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
@@ -53,7 +53,7 @@
         <span slot="title">Todos</span>
         <span slot="body">Do your own todo-list or delegate it to someone.</span>
     </ModulePresentation>
-                
+                 -->
     <ModulePresentation href="en/feature/documents">
       <span slot="icon">
           <i class="text-white fa-regular fa-folder-tree"></i>
