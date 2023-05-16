@@ -6,13 +6,13 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Rapporter</title>
-	<meta name="description" content="Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys." />
+	<title>Kaddio - Reports</title>
+	<meta name="description" content="Get an overview of your business with Kaddio's statistics tool. Visualize data in Kaddio or export for your own analysis." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Rapporter</span>
-	<span slot="sub">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys.</span>
+	<span slot="title">Kaddio Reports</span>
+	<span slot="sub">Get an overview of your business with Kaddio's statistics tool. Visualize data in Kaddio or export for your own analysis.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
@@ -38,46 +38,45 @@
   
 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Details</span>
 
 	<Qa>
-		<span slot="q">Skapa rapporter</span>
+		<span slot="q">Create reports</span>
 		<span slot="a">
-			Använd rapportverktyget för att skapa rapporter över bokningar, fakturering, enkätsvar och mer. Visualisera resultatet grafiskt och exportera data som .csv.
+			Use Kaddio's statistics tool to create reports on bookings, invoicing, survey responses and more. Visualize the result graphically and export data as .csv.		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Create surveys</span>
+		<span slot="a">
+			Design surveys the way you want. Use different response types, such as free text, scale, numeric value, and multiple choice. Choose how Kaddio should calculate the result, for example as a sum or average value. Set and name limits to get a quick overview of the result.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skapa enkäter</span>
+		<span slot="q">Dispatch</span>
 		<span slot="a">
-			Utforma enkäter så som du vill. Använd olika svarstyper, som fritext, skala, numeriskt värde och flerval. Välj hur Kaddio ska räkna ut resultatet, till exempel som summa eller medelvärde. Sätt och benämn gränser för att få en snabb översikt av resultatet.
+			Send a link to the survey via SMS or email.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Utskick</span>
+		<span slot="q">Send surveys based on bookings</span>
 		<span slot="a">
-			Skicka länk till enkäten via sms eller mail.
+			Send surveys to the clients who had a booking within a certain time interval.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skicka enkät utifrån bokningar</span>
+		<span slot="q">Send surveys based on group</span>
 		<span slot="a">
-			Skicka enkäten till de klienter som haft en bokning inom ett visst tidsintervall.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Skicka enkät utifrån grupp</span>
-		<span slot="a">
-			Skicka enkäten till klienter eller behandlare baserat på vilken grupp de tillhör.
+			Send surveys to clients or therapists based on which group they belong to.
 		</span>
 	</Qa>
 	<Qa>
-		<span slot="q">Enkäter ger anonyma svar</span>
+		<span slot="q">Surveys provide anonymous responses</span>
 		<span slot="a">
-			Alla svar som samlas in via enkäter är anonyma och kan inte kan inte kopplas till någon specifik klient eller behandlare.
+			Collected responses that are anonymous and cannot be linked to any specific client or processor.
 		</span>
 	</Qa>
 
