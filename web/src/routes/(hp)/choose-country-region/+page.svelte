@@ -18,7 +18,7 @@
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 	  <div class="mx-auto max-w-2xl lg:text-center">
 		<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Choose Your Country or Region</p>
-		<!-- <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p> -->
+		<p class="mt-6 text-lg leading-8 text-gray-600">Kaddio comes preconfigured for many countries and regions, choose country or region to see content specific to your location.</p>
 	  </div>
 	  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
 		<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -27,7 +27,7 @@
 			  Sverige
 			</dt>
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-			  <p class="flex-auto">Vår svenska sida för svenska och nordiska marknaden. Välj denna site om du är baserad i något av de nordiska länderna.</p>
+			  <p class="flex-auto" lang="sv">Vår svenska sida för svenska och nordiska marknaden. Välj denna site om du är baserad i något av de nordiska länderna.</p>
 			  <p class="mt-6">
 				<a href="/sv" hreflang="sv" lang="sv" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/sv <span aria-hidden="true">→</span></a>
 			  </p>
@@ -38,7 +38,7 @@
 			  España
 			</dt>
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-			  <p class="flex-auto">During 2023 Kaddio is establishing in Spain. Use this site if you are based in Spain or another Spanish speaking region.</p>
+			  <p class="flex-auto" lang="es">Durante 2023 Kaddio se establece en España. Utilice este sitio si reside en España o en otra región de habla hispana.</p>
 			  <p class="mt-6">
 				<a href="/es" hreflang="es" lang="es" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/es <span aria-hidden="true">→</span></a>
 			  </p>
@@ -49,7 +49,7 @@
 			  Global (English)
 			</dt>
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-			  <p class="flex-auto">Our global site is not bound to a region. If you want to start from a region which is "new to us", contact us and we'll set up currency, VAT, timezone etc. specific to your region</p>
+			  <p class="flex-auto" lang="en">Our global site is not bound to a region. If you want to start from a region which is "new to us", contact us and we'll set up currency, VAT, timezone etc. specific to your region</p>
 			  <p class="mt-6">
 				<a href="/en" hreflang="en" lang="en" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/en <span aria-hidden="true">→</span></a>
 			  </p>
