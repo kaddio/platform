@@ -14,7 +14,7 @@
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Tjänster')}</h3>
-            <ul role="list" class="mt-6 space-y-4">
+            <ul class="mt-6 space-y-4">
               <li>
                 <a href="/{lang}/feature/log" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Journal')}</a>
               </li>
@@ -47,7 +47,7 @@
           </div>
           <div class="mt-10 md:mt-0">
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
-            <ul role="list" class="mt-6 space-y-4">
+            <ul class="mt-6 space-y-4">
               <li>
                 {#if lang == 'es'}
                   <a href="https://ayuda.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Hjälpcenter')}</a>
@@ -73,7 +73,7 @@
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
             <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
-            <ul role="list" class="mt-6 space-y-4">
+            <ul class="mt-6 space-y-4">
               <li>
                 <a href="/about-us" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About us</a>
               </li>
@@ -94,7 +94,7 @@
           </div>
           <div class="mt-10 md:mt-0">
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
-            <ul role="list" class="mt-6 space-y-4">
+            <ul class="mt-6 space-y-4">
               <li>
                 <a href="/sv/legal/tos" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Användarvillkor')}</a>
               </li>

@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { _ } from "../../../stores";
-
-  export let icon: string = "puzzle";
   export let href: string;
 </script>
 
