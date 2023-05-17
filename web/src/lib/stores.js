@@ -176,7 +176,7 @@ const translations = {
     },
     "Modul": {
         en: 'Module',
-        es: 'Funcion'
+        es: 'Función'
     },
     "Månadspris / användare": {
         en: 'Monthly price / user',
