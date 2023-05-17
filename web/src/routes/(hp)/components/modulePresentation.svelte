@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { _ } from "../../../stores";
+	import { _ } from "$lib/stores";
   export let href: string;
 </script>
 

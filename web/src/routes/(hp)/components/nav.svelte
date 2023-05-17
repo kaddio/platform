@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getContext } from "svelte";
-	import { _ } from "../../../stores";
+	import { _ } from "$lib/stores";
 	import Referral from "./referral-banner.svelte";
 	import LangBanner from "./lang-banner.svelte";
   const lang = getContext('lang');

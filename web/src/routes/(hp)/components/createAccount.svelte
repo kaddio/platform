@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
 	import { getContext } from "svelte";
-	import { countryCodeFromLang, getRegion } from "../../../lib/regions";
-	import { _ } from "../../../stores";
+	import { countryCodeFromLang, getRegion } from "$lib/regions";
+	import { _ } from "$lib/stores";
     import Toggle from "./toggle.svelte";
 
     let submitIsEnabled: boolean = false;

@@ -1,6 +1,7 @@
 <script>
 	import { getContext } from "svelte";
-	import { _ } from "../../../stores";
+	import { _ } from "$lib/stores";
+	import { countryCodeFromLang, getRegion } from "$lib/regions";
   const lang = getContext('lang');
 </script>
 
@@ -49,11 +50,7 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                {#if lang == 'es'}
-                  <a href="https://ayuda.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Hjälpcenter')}</a>
-                {:else}
-                  <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Hjälpcenter')}</a>
-                {/if}
+                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Hjälpcenter')}</a>
               </li>
 
               <li>

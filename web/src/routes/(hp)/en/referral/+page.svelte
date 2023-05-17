@@ -1,6 +1,9 @@
 <script lang="ts">
-	import { token } from '../../../../stores';
+	import { setContext } from 'svelte';
+	import { token } from '$lib/stores';
+	import Footer from '../../components/footer.svelte';
 	import Nav from '../../components/nav.svelte';
+  setContext('lang', 'en');
 </script>
 
 <Nav />
@@ -12,10 +15,10 @@
   </div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <p class="text-lg font-semibold leading-8 tracking-tight text-oldpink">{$token.firstname} rekommenderar</p>
+      <p class="text-lg font-semibold leading-8 tracking-tight text-oldpink">{$token.firstname} recommends</p>
       <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Kaddio</h1>
       <p class="mt-6 text-xl leading-8 text-gray-700">
-        {$token.firstname} rekommenderar dig att börja använda Kaddio. Kaddio är ett webbaserat allt-i-allo-system för dig som hjälper andra. Enkelt att använda. Du kommer att älska det. 
+        {$token.firstname} recommends you start using Kaddio. Kaddio is a web-based all-in-one system for you who help others. Simple to use. You're going to love it.
       </p>
     </div>
     <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
@@ -62,12 +65,16 @@
         </ul>
         <!-- <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p> -->
 
-        <div class="mt-8">
-          <a href="/sv" class="inline-flex rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Läs mer</a>
+        <div class="mt-8 flex items-center gap-x-6">
+          <a href="/en/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Create account</a>
+          <a href="/en" class="text-sm font-semibold text-gray-900">Learn more about Kaddio <span aria-hidden="true">&rarr;</span></a>
         </div>
+
       </div>
       
     </div>
   </div>
 </div>
 
+
+<Footer />

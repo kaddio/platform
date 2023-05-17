@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { token } from '../../../stores';
+	import { token } from '$lib/stores';
 </script>
 
 {#if $token?.testimonial}

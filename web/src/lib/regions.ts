@@ -2,7 +2,8 @@ export type Region = {
     lang: string,
     label: string,
     href: string,
-    defaultCountryCode: string
+    defaultCountryCode: string,
+    helpCenterLink: string
 }
 
 export const regions = {
@@ -10,19 +11,22 @@ export const regions = {
         lang: 'sv',
         label: 'Sverige',
         href: '/sv',
-        defaultCountryCode: 'se'
+        defaultCountryCode: 'se',
+        helpCenterLink: 'https://help.kaddio.com/help'
     },
     ES: {
         lang: 'es',
         label: 'Spanien',
         href: '/es',
-        defaultCountryCode: 'es'
+        defaultCountryCode: 'es',
+        helpCenterLink: 'https://ayuda.kaddio.com/help'
     },
     EN: {
         lang: 'en',
         label: 'Global',
         href: '/en',
-        defaultCountryCode: 'se'
+        defaultCountryCode: 'se',
+        helpCenterLink: 'https://help.kaddio.com/help'
     }
 }
 

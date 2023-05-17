@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { getContext } from "svelte";
-	import { _, regionBannerDismiss } from "../../../stores";
+	import { _, regionBannerDismiss } from "$lib/stores";
 
     import { page } from '$app/stores';
-	import { getRegion } from "../../../lib/regions";
+	import { getRegion } from "$lib/regions";
 
     const lang = getContext('lang');
     const geo: string = $page.data.geo;

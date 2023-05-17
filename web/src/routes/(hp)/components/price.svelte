@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getContext } from "svelte";
-	import { _ } from "../../../stores";
+	import { _ } from "$lib/stores";
 
   const lang = getContext('lang');
 
