@@ -8,7 +8,7 @@
         disabled: true
     },
     {
-		name: "Historia clinica",
+		name: "Historia clínica",
 		price: 9,
 		selected: true
 	},
