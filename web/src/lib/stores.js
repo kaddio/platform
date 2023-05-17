@@ -44,7 +44,7 @@ const translations = {
     },
     "Avtal": {
         en: 'Legal',
-        es: 'La empresa'
+        es: 'Legal'
     },
     "Support": {
         en: 'Support',
