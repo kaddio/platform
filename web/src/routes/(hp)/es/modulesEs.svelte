@@ -4,7 +4,7 @@
 </script>
 
 <ModulesSection>
-  <span slot="title">Seleccione las características que desea</span> 
+  <span slot="title">Selecciona las características que deseas</span> 
   <span slot="subtitle">Kaddio se adapta a tus necesidades. Elige las funciones que necesites y cambia cuando quieras. solo paga por lo que usas.</span> 
 
     <ModulePresentation href="es/feature/log">
@@ -43,7 +43,7 @@
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
     <span slot="title">Formularios</span>
-        <span slot="body">Envía formularios y la declatión de salud a tus clientes, de forma automática y manual.</span>
+        <span slot="body">Envía formularios y la declaración de salud a tus clientes, de forma automática o manual.</span>
     </ModulePresentation>
         
     <ModulePresentation href="es/feature/todos">
@@ -58,16 +58,16 @@
       <span slot="icon">
           <i class="text-white fa-regular fa-folder-tree"></i>
       </span>
-        <span slot="title">Dokument</span>
-        <span slot="body">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span>
+        <span slot="title">Documentos</span>
+        <span slot="body">Colabora en la nube con tus colegas. Limita el acceso en el sistema de gestión de archivos con un avanzado control de permisos. El control de versiones y las copias de seguridad se realizan automáticamente.</span>
     </ModulePresentation>
 
     <ModulePresentation href="es/feature/reports">
       <span slot="icon">
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>
-        <span slot="title">Rapporter</span>
-        <span slot="body">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys. </span>
+        <span slot="title">Informes</span>
+        <span slot="body">Mantén el control de tu negocio con las herramientas de estadísticas de Kaddio. Visualiza o exporta los datos para realizar tu propio análisis.</span>
     </ModulePresentation>
 
 </ModulesSection>   
