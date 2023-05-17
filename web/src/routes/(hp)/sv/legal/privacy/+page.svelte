@@ -1,7 +1,14 @@
+<script>
+	import LegalLi from "../../../components/legalLi.svelte";
+import LegalParagraph from "../../../components/legalParagraph.svelte";
+	import LegalTitle from "../../../components/legalTitle.svelte";
+	import LegalUl from "../../../components/legalUl.svelte";
+
+</script>
 
 <div class="bg-white py-32 px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-      <p class="text-base font-semibold leading-7 text-oldpink">Policy</p>
+      <p class="text-base font-semibold leading-7 text-oldpink">Kaddio Policy</p>
       <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sekretesspolicy</h1>
 
       <p class="mt-6 text-xl leading-8">
@@ -18,113 +25,88 @@
         </p>
     
 
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Behandling av dina klienters personuppgifter</h2>
-        <p class="mt-6">
-            Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt "Personuppgiftsbiträdesavtal" (som finns att ladda ner när ditt konto har skapats).
-        </p>
+        <LegalTitle>Behandling av dina klienters personuppgifter</LegalTitle>
 
-        <p class="mt-6">
+        <LegalParagraph>
+          Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt "Personuppgiftsbiträdesavtal" (som finns att ladda ner när ditt konto har skapats).
+        </LegalParagraph>
+
+        <LegalParagraph>
             Du som kund ska själv vidta lämpliga organisatoriska åtgärder för att uppfylla GDPR såvitt avser
             behandlingen av personuppgifter. Varje enskild kund har att bestämma var i organisationen som ansvaret för
             dataskyddsfrågor skall ligga. Läs mer hos Datainspektionen om när man måste eller bör ha ett dataskyddsombud och vad ett
             sådant ombud gör.            
-        </p>
+        </LegalParagraph>
 
-        <p class="mt-6">
-            Kaddio ger dig som kund tekniska förutsättningar att uppfylla kraven i GDPR.
-        </p>
+        <LegalParagraph>
+          Kaddio ger dig som kund tekniska förutsättningar att uppfylla kraven i GDPR.
+        </LegalParagraph>
 
 
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+        <LegalTitle>
             Information vi samlar in
-        </h2>
+        </LegalTitle>
 
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Ny kund.</strong> När du skapar en ny organisation ber vi dig om personuppgifter, bl.a. förnamn, efternamn och e-post.</span>
-            </li>
+        <LegalUl>
+          <LegalLi><strong class="font-semibold text-gray-900">Ny kund.</strong> När du skapar en ny organisation ber vi dig om personuppgifter, bl.a. förnamn, efternamn och e-post.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar..</LegalLi>
+        </LegalUl>
 
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar..</span>
-            </li>
-          </ul>
-  
-
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Så här används informationen
-        </h2>
+        <LegalTitle>
+          Så här används informationen
+        </LegalTitle>
 
 
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Förbättring.</strong> Den information vi samlar in används för att tillhandahålla, förbättra och skydda våra tjänster.</span>
-            </li>
 
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Cookies.</strong> Kaddio använder cookies för lastbalansering och säkerhet. Inget annat.</span>
-            </li>
-        </ul>
+        <LegalUl>
+          <LegalLi><strong class="font-semibold text-gray-900">Förbättring.</strong> Den information vi samlar in används för att tillhandahålla, förbättra och skydda våra tjänster.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> Kaddio använder cookies för lastbalansering och säkerhet. Inget annat.</LegalLi>
+        </LegalUl>
 
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Valmöjlighet
-        </h2>
 
-        <p class="mt-6">
-            Det är du som kund till Kaddio som väljer vilken information du vill dela med oss. De enda personuppgifter
+        <LegalTitle>
+          Valmöjlighet
+        </LegalTitle>
+
+        <LegalParagraph>
+          Det är du som kund till Kaddio som väljer vilken information du vill dela med oss. De enda personuppgifter
             du måste dela med oss för att starta en organisation är för- och efternamn, e-post samt namnet på din
             organisation.
-        </p>
+        </LegalParagraph>
 
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Var personuppgifter hanteras
-        </h2>
 
-        <p class="mt-6">
-            Dataskyddsförordningen (GDPR) gäller i hela EU/ESS och innebär att alla EU:s medlemsstater har ett
+        <LegalTitle>
+          Var personuppgifter hanteras
+        </LegalTitle>
+
+        <LegalParagraph>
+          Dataskyddsförordningen (GDPR) gäller i hela EU/ESS och innebär att alla EU:s medlemsstater har ett
             likvärdigt skydd för personuppgifter och personlig integritet.
-        </p>
+        </LegalParagraph>
 
 
 
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span>Personuppgifter kan enligt GDPR behandlas fritt inom EU/EES utan begränsningar.</span>
-            </li>
 
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span>Utanför EU/ESS får personuppgifter hanteras förutsatt att databehandlaren följer nödvändiga
-                bestämmelser och har vidtagit lämpliga skyddsåtgärder.</span>
-            </li>
-        </ul>
 
-        <p class="mt-6">
+        <LegalUl>
+          <LegalLi>Personuppgifter kan enligt GDPR behandlas fritt inom EU/EES utan begränsningar.</LegalLi>
+          <LegalLi>
+            Utanför EU/ESS får personuppgifter hanteras förutsatt att databehandlaren följer nödvändiga
+            bestämmelser och har vidtagit lämpliga skyddsåtgärder.
+          </LegalLi>
+        </LegalUl>
+
+
+        <LegalParagraph>
             Samtliga företag som hanterar personuppgifter för Kaddios räkning utanför EU/ESS har vi avtal med som
     innehåller standardavtalsklausuler som EU-kommissionen har beslutat om, vilket uppfyller skyddsnivå
     enligt GDPR.
-        </p>
+      </LegalParagraph>
 
         
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+        <LegalTitle>
             Data för följande ändamål hanteras utanför EU/ESS
-        </h2>
+        </LegalTitle>
 
 
         <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
@@ -152,12 +134,12 @@
           </ul>
 
 
-        <p class="mt-6">
+          <LegalParagraph>
             Övrig data som innehåller personuppgifter hanteras inom EU/ESS. All lagring av data från Journal och Kommunikation sker inom EU/ESS.
-        </p>
+          </LegalParagraph>
 
 
-        <figure class="mt-10 border-l border-oldpink pl-9">
+        <!-- <figure class="mt-10 border-l border-oldpink pl-9">
           <blockquote class="font-semibold text-gray-900">
             <p>“Våra kunder investerar i oss med tid, engagemang, pengar och information och anförtror oss med ett stort ansvar. Vi engagerar oss i dessa investeringar och det förklarar varför vi strävar efter att arbeta balanserat, hålla våra kostnader låga, hur vi hanterar riskfaktorer och varför vi strävar efter att växa organiskt och stabilt.”</p>
           </blockquote>
@@ -165,7 +147,7 @@
             <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
             <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Lena Nyberg</strong> - Chief Information Officer</div>
           </figcaption>
-        </figure>
+        </figure> -->
         
       </div>
     </div>

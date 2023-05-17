@@ -1,171 +1,209 @@
+<script>
+	import LegalLi from "../../../components/legalLi.svelte";
+  import LegalParagraph from "../../../components/legalParagraph.svelte";
+  import LegalTitle from "../../../components/legalTitle.svelte";
+	import LegalUl from "../../../components/legalUl.svelte";
+
+</script>
 
 <div class="bg-white py-32 px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-      <p class="text-base font-semibold leading-7 text-purple-600">Policy</p>
-      <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sekretesspolicy</h1>
+      <p class="text-base font-semibold leading-7 text-oldpink">Kaddio Policy</p>
+      <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Användarvillkor</h1>
 
       <p class="mt-6 text-xl leading-8">
-        Kaddio AB är ansvarigt för behandlingen av personuppgifter som samlas in i Kaddio. Vid behandling av personuppgifter
-        följer vi dataskyddsförordningen (GDPR).
-    </p>
+        Välkommen till Kaddio! I samband med att du skapar ett konto hos oss godkänner du dessa användarvillkor och vår behandling av personuppgifter enligt vad som framgår av vår hemsida kaddio.com.
+      </p>
 
       <div class="mt-10 max-w-2xl">
         <p>
-            Samtliga personuppgifter vi behandlar är nödvändiga i avtalsförhållandet mellan Kaddio och kunden, alternativt sker
-            med kundens samtycke för att tillhandahålla en så bra tjänst som möjligt. Vi sparar personuppgifterna så länge de
-            behövs i vår affärsrelation med kunden och raderas därefter. Har du frågor eller är missnöjd är du välkommen att
-            höra av dig till oss eller till vårt dataskyddsombud <a class="font-semibold text-purple-600" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>            
-        </p>
-    
-
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Behandling av dina klienters personuppgifter</h2>
-        <p class="mt-6">
-            Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt "Personuppgiftsbiträdesavtal" (som finns att ladda ner när ditt konto har skapats).
-        </p>
-
-        <p class="mt-6">
-            Du som kund ska själv vidta lämpliga organisatoriska åtgärder för att uppfylla GDPR såvitt avser
-            behandlingen av personuppgifter. Varje enskild kund har att bestämma var i organisationen som ansvaret för
-            dataskyddsfrågor skall ligga. Läs mer hos Datainspektionen om när man måste eller bör ha ett dataskyddsombud och vad ett
-            sådant ombud gör.            
-        </p>
-
-        <p class="mt-6">
-            Kaddio ger dig som kund tekniska förutsättningar att uppfylla kraven i GDPR.
+          Genom att skapa konto hos Kaddio godkänner du dessa användarvillkor, inklusive eventuella bilagor eller annat material vartill hänvisas ("Villkoren"). I och med att du skapat kontot har du också godkänt vår behandling av dina personuppgifter.         
         </p>
 
 
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Information vi samlar in
-        </h2>
+        <LegalTitle>Betalning</LegalTitle>
 
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Ny kund.</strong> När du skapar en ny organisation ber vi dig om personuppgifter, bl.a. förnamn, efternamn och e-post.</span>
-            </li>
+        <LegalParagraph>
+          All debitering sker retroaktivt per månad via automatisk kortdebitering. Kaddio accepterar de vanligaste betal- och kreditkorten.
+        </LegalParagraph>
 
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar..</span>
-            </li>
-          </ul>
+
+
+
+        <LegalTitle>Licensens omfattning</LegalTitle>
+        <LegalParagraph>
+          Kaddio AB är innehavare av samtliga rättigheter till Kaddio. Som användare får du bara använda tjänsten på avtalat sätt i enlighet med gällande Villkor.
+        </LegalParagraph>
+
+
+        <LegalParagraph>
+          Som köpare av våra produkter får du en icke-exklusiv licens att använda programvaran för en användning i den verksamhet du anger. Du har inte rätt att använda programvaran för annan verksamhet eller rätt att låta annan än de registrerade personer använda programvaran.        
+        </LegalParagraph>
+
+        <LegalParagraph>
+          Antalet användare av licensen och omfattningen av den programvara som omfattas av licensen ändrar du själv genom registrering löpande under avtalstiden.
+        </LegalParagraph>
+
+        <LegalParagraph>
+          Kopiering av programvaran får inte ske utan vårt skriftliga samtycke.          
+        </LegalParagraph>
+
+
+
+        <LegalTitle>Ändringar i programvaran</LegalTitle>
+        <LegalParagraph>
+          Du har inte rätt att ändra programvaran. Upphovsrätt och alla andra rättigheter avseende ändringar i programvaran tillkommer Kaddio AB.
+        </LegalParagraph>
+
+
+
+        <LegalTitle>Intrång i annans rätt</LegalTitle>
+        <LegalParagraph>
+          Kaddio garanterar att programvaran inte gör intrång i annan tillkommande rätt. För det fall någon kontaktar dej och gör gällande intrång åtager du dej att omgående meddela oss.
+        </LegalParagraph>
+
+
+       <LegalTitle>Operativsystemskrav</LegalTitle>
+        <LegalParagraph>
+          Du behöver något av följande operativsystem, med angiven eller senare version
+        </LegalParagraph>
+        
+
+        <LegalUl>
+          <LegalLi><strong class="font-semibold text-gray-900">macOS </strong> Sierra.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">iOS </strong> 11.0.2.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Android </strong> 8.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Windows </strong> 8.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Linux </strong> (Ubuntu 16.04, Debian 7).</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">ChromeOS </strong> 60.</LegalLi>
+        </LegalUl>
+
+
+
+        <LegalTitle>Webbläsarkrav</LegalTitle>
+        <LegalParagraph>
+          Du behöver någon av följande webbläsare, med angiven eller senare version
+        </LegalParagraph>
+
+
+
+        <LegalUl>
+          <LegalLi><strong class="font-semibold text-gray-900">Safari </strong> 11.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Firefox </strong> 30.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Chrome </strong> 60.</LegalLi>
+          <LegalLi><strong class="font-semibold text-gray-900">Opera </strong> 45.</LegalLi>
+        </LegalUl>
+
+
+
+        <LegalTitle>Försäkran</LegalTitle>
+        <LegalParagraph>
+          Du försäkrar att de uppgifter du lämnar oss är korrekta.
+        </LegalParagraph>
+
+        <LegalParagraph>
+          Om du använder tjänsten för en juridisk persons räkning, garanterar du även att du har behörighet att ingå avtal om tjänsten med oss och accepterar Villkoren för den juridiska personens räkning. Genom att uppge personuppgifter om andra personer bekräftar du även att du har medgivande att uppge dessa uppgifter och att uppgifterna får användas för de ändamål och på de sätt som beskrivs i dessa Villkor.
+        </LegalParagraph>
+
+
+        <LegalTitle>Missbruk</LegalTitle>
+        <LegalParagraph>
+          Användning av uppgifter som inte är dina eller som du av annan anledning inte har rätt att använda, samt användning av Kaddio i övrigt på sätt som inte är avsett, kommer att bedömas av Kaddio som missbruk. All information relaterad till misstanke om eller missbruk av Kaddio, exempelvis genom angivande av felaktiga eller vilseledande uppgifter, sparas och används för framtida riskbedömningar och för att skydda inblandade parter. Användaren kan komma att spärras från vidare möjlighet att använda Kaddio. Din efterlevnad av Villkoren och enskilda betalningsvillkor för Kaddios tjänster påverkar också riskbedömningen vid användning av Kaddio och därmed din möjlighet att använda dig av alla betalningsalternativen.
+        </LegalParagraph>
+
+
+
+        <LegalTitle>
+            Personuppgifter
+        </LegalTitle>
+
+        <LegalParagraph>
+            Kaddio behandlar personuppgifter i syfte att säkerställa identitet, administrera kundförhållandet, förhindra missbruk eller felaktigt utnyttjande av tjänst, utföra kundanalyser och affärsutveckling samt för att uppfylla tillämpliga lagkrav i övrigt. Följande är exempel på personuppgifter som Kaddio behandlar
+        </LegalParagraph>
+
+
+
+        <LegalUl>
+          <LegalLi>Kontaktinformation - namn, adress, e-postadress, telefonnummer m m</LegalLi>
+          <LegalLi>Personnummer</LegalLi>
+          <LegalLi>Betalningsinformation - fakturainformation m m</LegalLi>
+          <LegalLi>Historisk information – uppgift om tidigare köp, hur du tidigare har efterlevt betalningsvillkoren, eventuella avslag m.m.</LegalLi>
+          <LegalLi>Information om din dator/enhet - IP-adress, språkinställningar, webbläsarinställningar m m</LegalLi>
+          <LegalLi>Personnummer används för identifiering och som kundnummer i kundhanteringssyfte i Kaddios system. Om du tidigare har använt Kaddio kan det finnas sparade uppgifter om dig för exempelvis kundhantering, dokumentationskrav eller liknande godkända ändamål. Kaddio kommer att använda eventuell sådan information för att säkerställa din identitet och förenkla din användning av Kaddio. Kaddio kan även komma att använda elektronisk kommunikation (kommunikation via t ex SMS och e-post) i kontakterna med dig. Kaddio värnar om skyddet för personuppgifter och kommer att införa lämpliga skyddsåtgärder för att skydda uppgifterna. Du har rätt att få tillgång till de uppgifter som rör dej. Vi återkommer till dej i normalfallet inom 30 dagar efter begäran därom.</LegalLi>
+        </LegalUl>
+
+        <LegalParagraph>
+          Du har också rätt att korrigera felaktiga uppgifter samt att välja bort att ta emot ytterligare marknadskommunikation. Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt Personuppgiftsbiträdesavtal. Genom att använda Kaddio godkänner du som kund vår användning av personuppgifter på sätt som har beskrivits här.
+        </LegalParagraph>
+
+
+        <LegalTitle>Cookies</LegalTitle>
+
+        <LegalParagraph>
+          Kaddio använder sessioncookies för lastbalansering och säkerhet. Inget annat.
+        </LegalParagraph>
+
   
 
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Så här används informationen
-        </h2>
+        <LegalTitle>Ändringar, tillägg och övriga tjänster</LegalTitle>
 
-
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Förbättring.</strong> Den information vi samlar in används för att tillhandahålla, förbättra och skydda våra tjänster.</span>
-            </li>
-
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Cookies.</strong> Kaddio använder cookies för lastbalansering och säkerhet. Inget annat.</span>
-            </li>
-        </ul>
-
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Valmöjlighet
-        </h2>
-
-        <p class="mt-6">
-            Det är du som kund till Kaddio som väljer vilken information du vill dela med oss. De enda personuppgifter
-            du måste dela med oss för att starta en organisation är för- och efternamn, e-post samt namnet på din
-            organisation.
-        </p>
-
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Var personuppgifter hanteras
-        </h2>
-
-        <p class="mt-6">
-            Dataskyddsförordningen (GDPR) gäller i hela EU/ESS och innebär att alla EU:s medlemsstater har ett
-            likvärdigt skydd för personuppgifter och personlig integritet.
-        </p>
+        <LegalParagraph>
+          Kaddio ändrar och förbättrar hela tiden tjänsterna och förbehåller sig rätten att ändra Villkoren för den vidare användningen av Kaddio. För de tjänster som Kaddio tillhandahåller gäller Kaddios vid var tid gällande villkor och prislista. Villkor och prislista finns tillgängliga på Kaddio.com. Läs alltid igenom Villkoren mm. på hemsidan inför varje nytt köp.
+        </LegalParagraph>
 
 
 
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span>Personuppgifter kan enligt GDPR behandlas fritt inom EU/EES utan begränsningar.</span>
-            </li>
+        <LegalTitle>Länkar till eller från andra webbplatser</LegalTitle>
 
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span>Utanför EU/ESS får personuppgifter hanteras förutsatt att databehandlaren följer nödvändiga
-                bestämmelser och har vidtagit lämpliga skyddsåtgärder.</span>
-            </li>
-        </ul>
-
-        <p class="mt-6">
-            Samtliga företag som hanterar personuppgifter för Kaddios räkning utanför EU/ESS har vi avtal med som
-    innehåller standardavtalsklausuler som EU-kommissionen har beslutat om, vilket uppfyller skyddsnivå
-    enligt GDPR.
-        </p>
-
-        
-        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-            Data för följande ändamål hanteras utanför EU/ESS
-        </h2>
+        <LegalParagraph>
+          Kaddio godkänner eller kontrollerar inte någon tredjeparts webbplats eller applikation och vi ansvarar inte och är inte skyldiga på något sätt för deras innehåll. Till den del du använder sådan webbplats eller applikation från tredje part gäller villkoren för den platsen/applikationen.          
+        </LegalParagraph>
 
 
-        <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">Nyhetsbrev.</strong> System för att skicka nyhetsbrev från Kaddio till våra kunder</span>
-            </li>
-
-            <li class="flex gap-x-3">
-              <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-              </svg>
-              <span><strong class="font-semibold text-gray-900">SMS.</strong> System för att leverera SMS till patienter som har en bokning i kalendern. (SMS-påminnelser).</span>
-            </li>
-
-            <li class="flex gap-x-3">
-                <svg class="mt-1 h-5 w-5 flex-none text-purple-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                <span><strong class="font-semibold text-gray-900">E-post.</strong> System för automatiska utskick av e-post för: fakturering, inbjudan av behandlare och patienter,
-                    kvitto vid bokning samt bokning- och avbokningsbekräftelse.</span>
-              </li>
-          </ul>
+  
 
 
-        <p class="mt-6">
-            Övrig data som innehåller personuppgifter hanteras inom EU/ESS. All lagring av data från Journal och Kommunikation sker inom EU/ESS.
-        </p>
+        <LegalTitle>Ansvarsbegränsning, tillämplig lag och tvister</LegalTitle>
+
+        <LegalParagraph>
+          Utöver vad som följer av Villkoren eller tvingande lagstiftning ansvarar Kaddio inte i något fall för skada som direkt eller indirekt orsakats av användningen av Kaddio. Svensk rätt tillämpas och eventuella tvister ska hanteras av allmän domstol.
+        </LegalParagraph>
+
+        <LegalParagraph>
+          Det är den som ansvarar för verksamheten, vårdgivaren respektive verksamhetschefen inom hälso- och sjukvård som ansvarar för att en verksamhet är av god kvalitet och att de beslut som fattas och tillämpas i verksamheten har stöd i gällande författningar. Vårdgivaren ansvarar själv för att systemen uppfyller kraven som ställs på journalföringen i lag och föreskrifter.
+        </LegalParagraph>
 
 
-        <figure class="mt-10 border-l border-purple-600 pl-9">
-          <blockquote class="font-semibold text-gray-900">
-            <p>“Våra kunder investerar i oss med tid, engagemang, pengar och information och anförtror oss med ett stort ansvar. Vi engagerar oss i dessa investeringar och det förklarar varför vi strävar efter att arbeta balanserat, hålla våra kostnader låga, hur vi hanterar riskfaktorer och varför vi strävar efter att växa organiskt och stabilt.”</p>
-          </blockquote>
-          <figcaption class="mt-6 flex gap-x-4">
-            <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-            <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Lena Nyberg</strong> - Chief Information Officer</div>
-          </figcaption>
-        </figure>
+
+        <LegalTitle>Support</LegalTitle>
+
+        <LegalParagraph>
+          Kaddio erbjuder support via e-post, där svarar vi helgfria vardagar mellan 9-15. Felsökning av akuta ärenden som misstänks påverka drift, tillgänglighet eller säkerhet påbörjas inom 2 timmar under supportens öppettider och inom 8 timmar övrig tid.
+        </LegalParagraph>
+
+
+
+        <LegalTitle>Felanmälan</LegalTitle>
+
+        <LegalParagraph>
+          Felanmälan görs till support@kaddio.com. Felsökning av akuta ärenden som misstänks påverka drift, tillgänglighet eller säkerhet påbörjas inom 2 timmar under supportens öppettider och inom 8 timmar övrig tid.          
+        </LegalParagraph>
+
+
+
+        <LegalTitle>Avtalstid</LegalTitle>
+
+        <LegalParagraph>
+          Så snart användaren har beställt tjänsten börjar avtalet att löpa. Avtalstiden är samma period som vald betalningsperiod. Avtalet förlängs automatiskt med samma period om tjänsten inte skriftligen har sagts upp senast en månad före avtalstidens utgång. Om användaren inte skriftligen sagt upp avtalet senast en månad före avtalstidens utgång är användaren skyldig att betala för nästa betalningsperiod.
+        </LegalParagraph>
+
+
+
+        <LegalTitle>Uppsägning</LegalTitle>
+
+        <LegalParagraph>
+          Rätten för dig att använda Kaddio kvarstår tills dess att någon av parterna säger upp den. Sådan uppsägning har omedelbar verkan men påverkar inte villkor och skyldigheter för genomförda köp (obetalda fakturor, avgifter m m) eller rätten att behandla personuppgifter på det sätt som framgår ovan.
+        </LegalParagraph>
         
       </div>
     </div>
