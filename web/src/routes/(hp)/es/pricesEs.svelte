@@ -13,7 +13,7 @@
 		selected: true
 	},
     {
-		name: "Time booking and calendar",
+		name: "Reservas & Calendario",
 		price: 6,
 		selected: true
 	},
