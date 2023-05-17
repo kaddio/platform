@@ -3,57 +3,12 @@
 	import { _, regionBannerDismiss } from "../../../stores";
 
     import { page } from '$app/stores';
+	import { getRegion } from "../../../lib/regions";
 
     const lang = getContext('lang');
     const geo: string = $page.data.geo;
 
-    const regions = {
-        SE: {
-            lang: 'sv',
-            label: 'Sverige',
-            href: '/sv'
-        },
-        ES: {
-            lang: 'es',
-            label: 'Spanien',
-            href: '/es'
-        },
-        EN: {
-            lang: 'en',
-            label: 'Global',
-            href: '/en'
-        }
-    }
-
-    const matchers = {
-        SE: 'SE',
-        FI: 'SE',
-        DK: 'SE',
-        NO: 'SE',
-
-        ES: 'ES',
-        CR: 'ES',
-        MX: 'ES',
-        CO: 'ES',
-        AR: 'ES',
-        PE: 'ES',
-        VE: 'ES',
-        CL: 'ES',
-        GT: 'ES',
-        EC: 'ES',
-        BO: 'ES',
-        CU: 'ES',
-        DO: 'ES',
-
-
-        EN: 'EN',
-        US: 'EN',
-        AU: 'EN'
-    }
-
-    const region = (function(geo){
-        return regions[matchers[geo]] || regions['EN'];
-    })($page.data.geo);
+    const region = getRegion($page.data.geo)
 
     $: console.log($regionBannerDismiss, geo, region, lang)
     $: showBannerComputed = ($regionBannerDismiss !== undefined && !$regionBannerDismiss) && geo && (region.lang !== lang);

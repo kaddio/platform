@@ -1,17 +1,13 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
-	import { _ } from "../../../stores";
-	import Cloud from "./cloud.svelte";
-    import Toggle from "./toggle.svelte";
 	import { getContext } from "svelte";
+	import { countryCodeFromLang, getRegion } from "../../../lib/regions";
+	import { _ } from "../../../stores";
+    import Toggle from "./toggle.svelte";
 
     let submitIsEnabled: boolean = false;
 
     let state: boolean;
-
-    let defaultCountry;
-    const selectedLang = getContext('lang');
-
 
     $: submitIsEnabled = state && !!email;
 
@@ -79,6 +75,7 @@
         ['Någon annanstans', 'se'],
     ].map(c => ({label: c[0], name: c[1]}))
 
+    let country = getRegion(countryCodeFromLang(getContext('lang'))).defaultCountryCode;
 </script>
 
 
@@ -140,7 +137,7 @@
 
                     <label for="countrycode" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Land')}</label>
 
-                    <select id="countrycode" name="countrycode" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
+                    <select bind:value={country} id="countrycode" name="countrycode" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-purple-600 sm:text-sm sm:leading-6">
                         {#each countries as country}
                             <option value={country.name}>{$_(country.label)}</option>
                         {/each}

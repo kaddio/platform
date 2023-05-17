@@ -2,7 +2,7 @@ import { browser } from "$app/environment";
 import { getContext } from "svelte";
 import { readable, writable } from "svelte/store";
 
-export let token = readable();
+export let token = writable();
 
 export let regionBannerDismiss;
 
