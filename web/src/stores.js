@@ -2,7 +2,7 @@ import { browser } from "$app/environment";
 import { getContext } from "svelte";
 import { readable, writable } from "svelte/store";
 
-export let token = writable();
+export let token = readable();
 
 export let regionBannerDismiss;
 
@@ -106,12 +106,12 @@ const translations = {
         en: 'Kaddio is customized for several countries and regions, choose region and language here',
         es: 'Kaddio is customized for several countries and regions, choose region and language here',
     },
-    "Det tar bara några minuter att komma igång.": {
-        en: 'Getting started only takes a few minutes.',
-        es: 'Comenzar solo toma unos minutos.',
+    "Det tar bara några minuter att komma igång och du betalar bara för vad du använder.": {
+        en: 'Getting started only takes a few minutes och you only pay for what you use.',
+        es: 'Comenzar solo toma unos minutos y solo paga por lo que usa.',
     },
     "Kostnadsfritt i 1 månad.": {
-        en: 'Free for one month.',
+        en: 'Free of charge for one month',
         es: 'Gratis por un mes',
     },
     "Förnamn": {
@@ -173,18 +173,6 @@ const translations = {
     "Läs mer": {
         en: 'Learn more',
         es: 'Aprende más'
-    },
-    "Modul": {
-        en: 'Module',
-        es: 'Funcion'
-    },
-    "Månadspris / användare": {
-        en: 'Monthly price / user',
-        es: 'Precio mensual / usuario'
-    },
-    "(ex moms)": {
-        en: '(excl. VAT)',
-        es: '(excl. IVA)'
     }
 }
 
