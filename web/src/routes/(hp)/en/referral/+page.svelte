@@ -12,7 +12,7 @@
   </div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <p class="text-lg font-semibold leading-8 tracking-tight text-purple-600">{$token.firstname} rekommenderar</p>
+      <p class="text-lg font-semibold leading-8 tracking-tight text-oldpink">{$token.firstname} rekommenderar</p>
       <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Kaddio</h1>
       <p class="mt-6 text-xl leading-8 text-gray-700">
         {$token.firstname} rekommenderar dig att börja använda Kaddio. Kaddio är ett webbaserat allt-i-allo-system för dig som hjälper andra. Enkelt att använda. Du kommer att älska det. 
@@ -28,7 +28,7 @@
           </defs>
           <rect width="100%" height="100%" stroke-width="0" fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)" />
         </svg>
-        <figure class="border-l border-purple-600 pl-8">
+        <figure class="border-l border-oldpink pl-8">
           {#if $token?.testimonial}
             <blockquote class="text-xl font-semibold leading-8 tracking-tight text-gray-900">
               <p>“{$token.testimonial}”</p>
@@ -63,7 +63,7 @@
         <!-- <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p> -->
 
         <div class="mt-8">
-          <a href="/sv" class="inline-flex rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Läs mer</a>
+          <a href="/sv" class="inline-flex rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Läs mer</a>
         </div>
       </div>
       
