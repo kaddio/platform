@@ -30,7 +30,7 @@
 		price: 9
 	},
     {
-		name: "Pagina web",
+		name: "Página web",
 		price: 2
 	},
     {
