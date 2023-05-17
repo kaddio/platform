@@ -89,11 +89,11 @@
             <span slot="name">Claes</span>
             <span slot="title">General counsel</span>
         </Person>
-
+<!-- 
         <Person src="/img/billy.png">
             <span slot="name">Billy</span>
             <span slot="title">Dog</span>
-        </Person>
+        </Person> -->
 
     </ul>
     </div>
