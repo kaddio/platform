@@ -5,8 +5,6 @@
 
     export let data;
 
-    console.log(data.referrerData)
-
     if(Object.keys(data.referrerData).length > 0){
         let token = $token;
         token = data.referrerData;
