@@ -42,6 +42,6 @@
 
 
 <Price currency="EUR" modules="{modules}">
-	<span slot="title">Only pay for what you use</span>
-	<span slot="sub">No startup fee. 1 month free.</span>
+	<span slot="title">Solo paga por lo que usas</span>
+	<span slot="sub">Sin cargo de inicio. 1 mes gratis.</span>
 </Price>
