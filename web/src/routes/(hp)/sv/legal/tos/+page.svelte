@@ -6,6 +6,12 @@
     import LegalUl from "../../../components/legalUl.svelte";
 </script>
 
+<svelte:head>
+	<title>Kaddio - Användarvillkor</title>
+	<meta name="description" content="Användarvillkor" />
+</svelte:head>
+
+
 <Legal>
     <span slot="pretitle">Kaddio Policy</span>
     <span slot="title">Användarvillkor</span>
