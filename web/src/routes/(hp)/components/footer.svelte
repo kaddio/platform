@@ -14,7 +14,7 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">{ $_('Tjänster')}</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Tjänster')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
                 <a href="/{lang}/feature/log" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Journal')}</a>
@@ -47,7 +47,7 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
                   <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
@@ -69,7 +69,7 @@
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">Company</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
             <ul class="mt-6 space-y-4">
               <li>
                 <a href="/about-us" class="text-sm hover:underline leading-6 text-gray-600">About us</a>
@@ -90,7 +90,7 @@
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
             <ul class="mt-6 space-y-4">
               <li>
                 <a href="/{lang}/legal/tos" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
@@ -109,14 +109,14 @@
 <!--     
     <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
       <div>
-        <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">Subscribe to our newsletter</h3>
+        <h3 class="text-sm font-semibold leading-6 text-gray-900">Subscribe to our newsletter</h3>
         <p class="mt-2 text-sm hover:underline leading-6 text-gray-900">The latest news, articles, and resources, sent to your inbox weekly.</p>
       </div>
       <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
         <label for="email-address" class="sr-only">Email address</label>
         <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:w-56 sm:text-sm hover:underline sm:leading-6" placeholder="Enter your email">
         <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-          <button type="submit" class="flex w-full items-center justify-center rounded-md bg-oldpink px-3 py-2 text-sm hover:underline font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
+          <button type="submit" class="flex w-full items-center justify-center rounded-md bg-oldpink px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
         </div>
       </form>
     </div>     -->
