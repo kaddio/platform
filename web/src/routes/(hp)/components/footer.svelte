@@ -14,90 +14,90 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Tjänster')}</h3>
+            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">{ $_('Tjänster')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/{lang}/feature/log" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Journal')}</a>
+                <a href="/{lang}/feature/log" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Journal')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/cal" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Tidsbokning')}</a>
+                <a href="/{lang}/feature/cal" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Tidsbokning')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/invoicing" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Fakturering')}</a>
+                <a href="/{lang}/feature/invoicing" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Fakturering')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Chat')}</a>
+                <a href="/{lang}/feature/communication" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Chat')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/documents" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Dokument')}</a>
+                <a href="/{lang}/feature/documents" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Dokument')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/forms" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Formulär')}</a>
+                <a href="/{lang}/feature/forms" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Formulär')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Video')}</a>
+                <a href="/{lang}/feature/communication" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Video')}</a>
               </li>
 
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
+            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Hjälpcenter')}</a>
+                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/support" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Kontakta oss')}</a>
+                <a href="/{lang}/support" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta oss')}</a>
               </li>
 
               <li>
-                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Changelog</a>
+                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Changelog</a>
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Developer API</a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Developer API</a>
               </li>
           </ul>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
+            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">Company</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/about-us" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About us</a>
+                <a href="/about-us" class="text-sm hover:underline leading-6 text-gray-600">About us</a>
               </li>
   
               <!-- <li>
-                <a href="/career" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Lediga tjänster</a>
+                <a href="/career" class="text-sm hover:underline leading-6 text-gray-600">Lediga tjänster</a>
               </li> -->
 
               <!-- <li>
-                <a href="/partners" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+                <a href="/partners" class="text-sm hover:underline leading-6 text-gray-600">Partners</a>
               </li> -->
 
               <!-- <li>
-                <a href="/press" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
+                <a href="/press" class="text-sm hover:underline leading-6 text-gray-600">Press</a>
               </li> -->
 
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
+            <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/{lang}/legal/tos" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Användarvillkor')}</a>
+                <a href="/{lang}/legal/tos" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
               </li>
 
               <li>
-                <a href="/sv/legal/privacy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{ $_('Sekretesspolicy')}</a>
+                <a href="/sv/legal/privacy" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
               </li>
             </ul>
           </div>
@@ -109,14 +109,14 @@
 <!--     
     <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
       <div>
-        <h3 class="text-sm font-semibold leading-6 text-gray-900">Subscribe to our newsletter</h3>
-        <p class="mt-2 text-sm leading-6 text-gray-900">The latest news, articles, and resources, sent to your inbox weekly.</p>
+        <h3 class="text-sm hover:underline font-semibold leading-6 text-gray-900">Subscribe to our newsletter</h3>
+        <p class="mt-2 text-sm hover:underline leading-6 text-gray-900">The latest news, articles, and resources, sent to your inbox weekly.</p>
       </div>
       <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
         <label for="email-address" class="sr-only">Email address</label>
-        <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:w-56 sm:text-sm sm:leading-6" placeholder="Enter your email">
+        <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:w-56 sm:text-sm hover:underline sm:leading-6" placeholder="Enter your email">
         <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-          <button type="submit" class="flex w-full items-center justify-center rounded-md bg-oldpink px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
+          <button type="submit" class="flex w-full items-center justify-center rounded-md bg-oldpink px-3 py-2 text-sm hover:underline font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
         </div>
       </form>
     </div>     -->
@@ -125,7 +125,7 @@
     <div class="mt-8 border-t border-gray/10 pt-8 md:flex md:items-center md:justify-between">
       <div class="flex space-x-6 md:order-2">
 
-      <a href="/choose-country-region" class="text-gray-600 hover:text-gray-900 text-sm">
+      <a href="/choose-country-region" class="text-gray-600 text-sm hover:underline">
         Choose country or region
       </a>
 
