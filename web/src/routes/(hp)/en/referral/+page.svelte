@@ -3,8 +3,12 @@
 	import { token } from '$lib/stores';
 	import Footer from '../../components/footer.svelte';
 	import Nav from '../../components/nav.svelte';
-  setContext('lang', 'en');
+    setContext('lang', 'en');
 </script>
+
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
 
 <Nav />
 
@@ -41,7 +45,7 @@
             <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50">
             <div class="text-sm leading-6">
               <div class="font-semibold text-gray-900">{$token.fullname}</div>
-              <div class="text-gray-600">{$token.title || 'Kaddio user'}</div>
+              <div class="text-gray-600">{$token.title || 'Kaddio user'}, {$token.orgName}</div>
             </div>
           </figcaption>
         </figure>
@@ -60,7 +64,7 @@
           </li>
           <li class="flex gap-x-3">
             3
-            <span><strong class="font-semibold text-gray-900">Get awards.</strong> Redeem your credits for awards in the Kaddio Referral Shop.</span>
+            <span><strong class="font-semibold text-gray-900">Get awards.</strong> Redeem your credits for awards<!--- in the Kaddio Referral Shop-->.</span>
           </li>
         </ul>
         <!-- <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p> -->

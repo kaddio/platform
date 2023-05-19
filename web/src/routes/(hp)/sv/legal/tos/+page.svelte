@@ -9,6 +9,8 @@
 <svelte:head>
 	<title>Kaddio - Användarvillkor</title>
 	<meta name="description" content="Användarvillkor" />
+
+    <meta name="robots" content="noindex">
 </svelte:head>
 
 

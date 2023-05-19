@@ -4,8 +4,15 @@
     import LegalParagraph from "../../../components/legalParagraph.svelte";
 	import LegalTitle from "../../../components/legalTitle.svelte";
 	import LegalUl from "../../../components/legalUl.svelte";
-
 </script>
+
+<svelte:head>
+	<title>Kaddio - Sekretesspolicy</title>
+	<meta name="description" content="Sekretesspolicy" />
+
+    <meta name="robots" content="noindex">
+</svelte:head>
+
 
 <Legal>
     <span slot="pretitle">Kaddio Policy</span>
