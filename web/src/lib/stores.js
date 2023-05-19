@@ -8,10 +8,11 @@ export let regionBannerDismiss;
 
 if(browser){
     if(sessionStorage.getItem('token')){
-        token = readable(JSON.parse(sessionStorage.getItem('token')));
+        token = writable(JSON.parse(sessionStorage.getItem('token')));
     }
 
     token.subscribe(function(val){
+        console.log(val);
         if(val){
             sessionStorage.setItem('token', JSON.stringify(val));
         }
