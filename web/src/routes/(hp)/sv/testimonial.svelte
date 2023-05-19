@@ -9,12 +9,19 @@
             <p>“{$token.testimonial}”</p>
         </blockquote>
         <figcaption class="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-            {#if true}
-                <img class="h-10 w-10 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt="">
+            {#if $token.img}
+                <img class="h-10 w-10 flex-none rounded-full bg-gray-50" src={$token.img} alt="">
             {/if}
             <div class="flex-auto">
-            <div class="font-semibold">{$token.fullname}</div>
-            <div class="text-gray-600">{$token.title}, {$token.orgName}</div>
+                <div class="font-semibold">{$token.fullname}</div>
+
+                <div class="text-gray-600">
+                    {#if $token.title}
+                        {$token.title}, 
+                    {/if}
+                    
+                    {$token.orgName}
+                </div>
             </div>
         </figcaption>
         </figure>
