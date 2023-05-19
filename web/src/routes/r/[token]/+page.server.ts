@@ -1,6 +1,6 @@
 
 async function referrerData(token: string){
-    const url = 'http://localhost:3000/api/referrer?' + new URLSearchParams({token});
+    const url = 'http://127.0.0.1:3000/api/referrer?' + new URLSearchParams({token});
 
     console.log(token)
 
@@ -12,7 +12,7 @@ async function referrerData(token: string){
         return data;
 
     } catch(e) {
-        console.error('json...')
+        console.error(e)
     }
 }
 
@@ -23,6 +23,8 @@ export async function load({ params }) {
     }
 
     const data = await referrerData(params.token);
+
+    // console.log(data)
 
     // export const referrerData = writable();
 

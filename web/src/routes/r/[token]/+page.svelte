@@ -6,8 +6,7 @@
     export let data;
 
     if(Object.keys(data.referrerData).length > 0){
-        let token = $token;
-        token = data.referrerData;
+        $token = data.referrerData;
     }
 
     if(browser){
