@@ -1,9 +1,13 @@
 <script>
-	import { setContext } from 'svelte';
+    import { setContext } from 'svelte';
     import Nav from '$components/nav.svelte';
-	import Footer from '$components/footer.svelte';
+    import Footer from '$components/footer.svelte';
+	import LdTag from '$lib/components/LDTag.svelte';
+	import { jobPostingSchema } from '$lib/json-ld';
     setContext('lang', 'en');
 </script>
+
+<LdTag schema={jobPostingSchema} />
 
 <Nav />
 
@@ -51,7 +55,7 @@
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
                 <div class="relative">
-                  <img src="/img/koa.png" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
               </div>
