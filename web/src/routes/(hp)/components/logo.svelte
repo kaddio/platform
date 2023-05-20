@@ -4,7 +4,7 @@
 
 {#if color == "black"}
     <a class="navbar-brand" id="heading" href="/">            
-        <img src="/img/kaddio-svart.png" alt="Kaddio Logotype in black" width="25">
+        <img src="/img/kaddio-black.png" alt="Kaddio Logotype in black" width="25">
     </a>
 {:else}
 

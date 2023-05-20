@@ -30,7 +30,7 @@
     <div class="flex lg:flex-1">
       <a href="/{lang}" class="-m-1.5 p-1.5">
         <span class="sr-only">Kaddio</span>
-        <img class="h-8 w-auto" src={darkHeader ? '/img/kaddio-logo.png' : '/img/kaddio-svart.png'} alt="">
+        <img class="h-8 w-auto" src={darkHeader ? '/img/kaddio-logo.png' : '/img/kaddio-black.png'} alt="">
       </a>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
@@ -65,7 +65,7 @@
       <div class="flex items-center gap-x-6">
         <a href="/{lang}" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="/img/kaddio-svart.png" alt="">
+          <img class="h-8 w-auto" src="/img/kaddio-black.png" alt="">
         </a>
         <a href="/sv/create" class="ml-auto rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{ $_('Skapa konto')}</a>
         <button type="button" on:click={() => (show = false)} class="-m-2.5 rounded-md p-2.5 text-gray-700">
