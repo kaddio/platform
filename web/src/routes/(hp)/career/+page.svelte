@@ -2,12 +2,17 @@
     import { setContext } from 'svelte';
     import Nav from '$components/nav.svelte';
     import Footer from '$components/footer.svelte';
-	import LdTag from '$lib/components/LDTag.svelte';
-	import { jobPostingSchema } from '$lib/json-ld';
+    import LdTag from '$lib/components/LDTag.svelte';
+    import { jobPostingSchema } from '$lib/json-ld';
     setContext('lang', 'en');
 </script>
 
 <LdTag schema={jobPostingSchema} />
+
+<svelte:head>
+	<title>Work at Kaddio</title>
+	<meta name="description" content="See all job openings at Kaddio" />
+</svelte:head>
 
 <Nav />
 
@@ -38,9 +43,9 @@
         <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
           <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Jobs</h1>
-              <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Working at Kaddio is like a dream coming true, everything is silk smooth and you always know what do do. Just kidding. </p>
-              <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">The reality is... Well, come work here instead and shape the reality. Right now we're looking for a senior developer.</p>
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Work @ Kaddio</h1>
+              <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Kaddio strives to be a self reflecting organization that mirrors the people that our products serve. We have a globel audience while we're mostly physically placed in Göteborg, Sweden. </p>
+              <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Come work with us and shape the reality and future. Right now we're looking for a senior developer.</p>
             </div>
             <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
