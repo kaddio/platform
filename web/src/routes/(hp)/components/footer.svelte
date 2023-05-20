@@ -93,7 +93,7 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/{lang}/legal/tos" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
+                <a href="/sv/legal/tos" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
               </li>
 
               <li>
