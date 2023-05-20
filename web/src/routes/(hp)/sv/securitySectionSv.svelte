@@ -1,5 +1,5 @@
 <script>
-	import SecuritySection from "../components/securitySection.svelte";
+	import SecuritySection from "$components/securitySection.svelte";
 
 </script>
 <SecuritySection>

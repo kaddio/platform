@@ -1,6 +1,6 @@
 
 <script>
-	import Quote from "../components/quote.svelte";
+	import Quote from "$components/quote.svelte";
 </script>
 
 <div class="bg-white py-24 sm:py-32">

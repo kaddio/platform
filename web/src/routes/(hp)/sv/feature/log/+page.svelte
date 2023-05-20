@@ -1,8 +1,8 @@
 <script>
-	import Qa from "../../../components/qa.svelte";
-	import ModuleFeature from "../../../components/moduleFeature.svelte";
-	import ModuleSection from "../../../components/moduleSection.svelte";
-	import FaqSection from "../../../components/faqSection.svelte";
+	import Qa from "$components/qa.svelte";
+	import ModuleFeature from "$components/moduleFeature.svelte";
+	import ModuleSection from "$components/moduleSection.svelte";
+	import FaqSection from "$components/faqSection.svelte";
 </script>
 
 <svelte:head>

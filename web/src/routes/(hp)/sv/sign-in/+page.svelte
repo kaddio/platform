@@ -2,7 +2,7 @@
 	import { setContext } from "svelte";
 	setContext('lang', 'sv');
 
-	import LoginSection from "../../components/loginSection.svelte";
+	import LoginSection from "$components/loginSection.svelte";
 
 </script>
 

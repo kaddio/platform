@@ -4,9 +4,9 @@
 	import PricesSv from './pricesSv.svelte';
 	import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
-	import Footer from '../components/footer.svelte';
+	import Footer from '$components/footer.svelte';
 	import SecuritySectionSv from './securitySectionSv.svelte';
-	import Nav from '../components/nav.svelte';
+	import Nav from '$components/nav.svelte';
 	import CrmSv from './crmSv.svelte';
 	import Testimonial from './testimonial.svelte';
 

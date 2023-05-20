@@ -1,5 +1,5 @@
 <script>
-	import Price from "../components/price.svelte";
+	import Price from "$components/price.svelte";
 
     const modules = [{
         name: "Core",

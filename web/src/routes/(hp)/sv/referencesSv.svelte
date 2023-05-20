@@ -1,5 +1,5 @@
 <script>
-	import Customer from "../components/customer.svelte";
+	import Customer from "$components/customer.svelte";
 </script>
 
 

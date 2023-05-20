@@ -1,10 +1,10 @@
 <script>
 	import { setContext } from "svelte";
-    import Legal from "../../../components/legal.svelte";
-    import LegalLi from "../../../components/legalLi.svelte";
-    import LegalParagraph from "../../../components/legalParagraph.svelte";
-    import LegalTitle from "../../../components/legalTitle.svelte";
-    import LegalUl from "../../../components/legalUl.svelte";
+    import Legal from "$components/legal.svelte";
+    import LegalLi from "$components/legalLi.svelte";
+    import LegalParagraph from "$components/legalParagraph.svelte";
+    import LegalTitle from "$components/legalTitle.svelte";
+    import LegalUl from "$components/legalUl.svelte";
     setContext('lang', 'es');
 
 </script>

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
 	import { token } from '$lib/stores';
-	import Footer from '../../components/footer.svelte';
-	import Nav from '../../components/nav.svelte';
+	import Footer from '$components/footer.svelte';
+	import Nav from '$components/nav.svelte';
     setContext('lang', 'en');
 </script>
 

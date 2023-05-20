@@ -1,6 +1,6 @@
 <script>
-  import ModulePresentation from "../components/modulePresentation.svelte";
-	import ModulesSection from "../components/modulesSection.svelte";
+  import ModulePresentation from "$components/modulePresentation.svelte";
+	import ModulesSection from "$components/modulesSection.svelte";
 </script>
 
 <ModulesSection>
