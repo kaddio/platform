@@ -1,7 +1,7 @@
 <script lang="ts">	
 	import { setContext } from 'svelte';
-	import Footer from '../components/footer.svelte';
-	import Nav from '../components/nav.svelte';
+	import Footer from '$components/footer.svelte';
+	import Nav from '$components/nav.svelte';
 	import SecuritySectionEn from './securitySectionEn.svelte';
 	import ModulesEn from './modulesEn.svelte';
 	import PricesEn from './pricesEn.svelte';

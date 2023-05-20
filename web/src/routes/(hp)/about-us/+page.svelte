@@ -1,9 +1,9 @@
 <script>
-    import Stat from '../components/stat.svelte';
-    import Person from '../components/person.svelte';
-    import StatPiece from '../components/statPiece.svelte';
-	import Nav from '../components/nav.svelte';
-	import Footer from '../components/footer.svelte';
+    import Stat from '$components/stat.svelte';
+    import Person from '$components/person.svelte';
+    import StatPiece from '$components/statPiece.svelte';
+	import Nav from '$components/nav.svelte';
+	import Footer from '$components/footer.svelte';
 	import { setContext } from 'svelte';
 
     setContext('lang', 'en');
