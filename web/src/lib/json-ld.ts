@@ -1,4 +1,4 @@
-import type { Brand, FAQPage, JobPosting, Organization, Product, Thing, WithContext, Event} from 'schema-dts';
+import type { Brand, FAQPage, JobPosting, Organization, Product, Thing, WithContext, Event, WebApplication} from 'schema-dts';
 
 export type Schema = Thing | WithContext<Thing>;
 
@@ -92,7 +92,7 @@ export const jobPostingSchema: WithContext<JobPosting> = {
 export const eventSchema: WithContext<Event> = {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "Kaddio Lectures",
+    name: "Kaddio Lectures",
     "startDate": "2023-07-21T19:00-05:00",
     "endDate": "2023-07-21T23:00-05:00",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -108,4 +108,11 @@ export const eventSchema: WithContext<Event> = {
             "addressCountry": "SE"
         }
     }
+}
+
+export const softwareSchema: WithContext<WebApplication> = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Kaddio",
+    applicationCategory: "HealthApplication"
 }
