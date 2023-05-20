@@ -16,7 +16,7 @@
 
 </script>
 
-<LdTag schema={busine}>
+<!-- <LdTag schema={busine}> -->
 
 <svelte:head>
 	<title>Kaddio - {data.orgData}</title>
