@@ -63,6 +63,7 @@ export const jobPostingSchema: WithContext<JobPosting> = {
     description : "<p>Kaddio strive to be a reflective organization...</p>",
     datePosted: "2023-05-20",
     validThrough: "2025-05-20",
+    employmentType: "full-time",
     hiringOrganization: {
         "@type": "Organization",
         "name": "Kaddio AB",
