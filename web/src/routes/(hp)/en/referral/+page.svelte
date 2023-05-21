@@ -58,7 +58,7 @@
 
         <div class="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
             <p>Earn with {$token.firstname}'s referral. Genom att använda dig av denna länk från {$token.firstname} när du skapar konto så får du automatiskt krediter som du kan använda i Kaddio rekommendationsbutik.</p>
-            <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
+            <ul class="mt-8 max-w-xl space-y-8 text-gray-600">
             <li class="flex gap-x-3">
                 1
                 <span><strong class="font-semibold text-gray-900">Create account.</strong> Create account through {$token.firstname}'s referral link.</span>

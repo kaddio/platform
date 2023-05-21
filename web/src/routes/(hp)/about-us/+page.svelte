@@ -33,7 +33,7 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
         <p class="mt-6 text-lg leading-8 text-gray-600">We're a tight group of people, passionate and dedicated to delivering the best possible experience to our customers.</p>
       </div>
-      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+      <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
         <Person>
             <span slot="name">Arvid</span>

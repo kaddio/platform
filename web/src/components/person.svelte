@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let src: string;
+  export let src: string = '';
   export let alt: string = 'A great image of an employee';
 </script>
 
