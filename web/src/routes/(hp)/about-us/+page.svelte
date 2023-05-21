@@ -37,27 +37,27 @@
 
         <Person>
             <span slot="name">Arvid</span>
-            <span slot="title">Co-Founder / CTO</span>
+            <span slot="title">Co-Founder + CTO</span>
         </Person>
 
         <Person>
             <span slot="name">Karolina</span>
-            <span slot="title">CFO</span>
+            <span slot="title">Project Management + Finance</span>
         </Person>
 
         <Person>
             <span slot="name">Daniel</span>
-            <span slot="title">HR / Market</span>
+            <span slot="title">People + Market</span>
         </Person>
 
         <Person>
             <span slot="name">Lena</span>
-            <span slot="title">Security and Incident Manager</span>
+            <span slot="title">Security</span>
         </Person>
 
         <Person>
             <span slot="name">Jesper</span>
-            <span slot="title">Dev</span>
+            <span slot="title">Development</span>
         </Person>
 
         <Person>
@@ -67,7 +67,7 @@
 
         <Person src="/img/david.png">
             <span slot="name">David</span>
-            <span slot="title">Co-Founder / CEO</span>
+            <span slot="title">Development + CEO</span>
         </Person>
 
         <Person>
@@ -77,7 +77,7 @@
 
         <Person>
             <span slot="name">Agustin</span>
-            <span slot="title">Technical Support</span>
+            <span slot="title">Technical support</span>
         </Person>
 
         <Person src="/img/carl.png">
