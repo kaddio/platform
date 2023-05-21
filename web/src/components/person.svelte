@@ -9,8 +9,8 @@
       <img class="h-16 w-16 rounded-full bg-gray-300" src={src} alt={alt}>
 
       <div>
-        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900"><slot name="name"></slot></h3>
-        <p class="text-sm font-semibold leading-6 text-oldpink"><slot name="title"></slot></p>
+        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900"><slot name="name" /></h3>
+        <p class="text-sm font-semibold leading-6 text-oldpink"><slot name="title" /></p>
       </div>
     </div>
   </li>
