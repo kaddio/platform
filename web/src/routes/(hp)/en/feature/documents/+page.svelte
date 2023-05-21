@@ -7,12 +7,12 @@
 
 <svelte:head>
 	<title>Kaddio - Documents</title>
-	<meta name="description" content="Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes automatically." />
+	<meta name="description" content="Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes by default." />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Kaddio Documents</span>
-	<span slot="sub">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes automatically.</span>
+	<span slot="sub">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes by default.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Collaborate</span>

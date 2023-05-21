@@ -59,7 +59,7 @@
           <i class="text-white fa-regular fa-folder-tree"></i>
       </span>
         <span slot="title">Documents</span>
-        <span slot="body">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes automatically.</span>
+        <span slot="body">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes by default.</span>
     </ModulePresentation>
 
     <ModulePresentation href="en/feature/reports">

@@ -13,7 +13,7 @@ const config = {
 
 	kit: {
 		alias: {
-			"$components": "src/routes/(hp)/components"
+			"$components": "src/components"
 		},
 		adapter: adapter()
 	}

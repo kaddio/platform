@@ -1,4 +1,4 @@
-import type { Brand, FAQPage, JobPosting, Organization, Product, Thing, WithContext, Event, WebApplication} from 'schema-dts';
+import type { Brand, FAQPage, JobPosting, Organization, Product, Thing, WithContext, Event, WebApplication, LocalBusiness} from 'schema-dts';
 
 export type Schema = Thing | WithContext<Thing>;
 
@@ -17,10 +17,18 @@ export const websiteSchema = {
     // ],
 }
 
+// Kan användas på kaddio.com/company/afobia etc.
+export const localBusinessSchema: WithContext<LocalBusiness> = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness"    
+}
+
 export const organizationSchema: WithContext<Organization> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://kaddio.com#organization"
+    name: "Kaddio AB",
+    url: "https://kaddio.com",
+    logo: "https://kaddio.com/img/kaddio-black.png"
 }
 
 export const productSchema: WithContext<Product> = {
