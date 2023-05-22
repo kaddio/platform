@@ -11,8 +11,8 @@
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Rapporter</span>
-	<span slot="sub">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys.</span>
+	<span slot="title">Kaddio Informes</span>
+	<span slot="sub">Mantén el control de tu negocio con las herramientas de estadísticas de Kaddio. Visualiza los datos en Kaddio o exporta para realizar tu propio análisis.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
