@@ -105,7 +105,7 @@ const translations = {
     },
     "Kaddio finns anpassat för flera länder och regioner, välj region och språk här": {
         en: 'Kaddio is customized for several countries and regions, choose region and language here',
-        es: 'Kaddio is customized for several countries and regions, choose region and language here',
+        es: 'Kaddio está personalizado para varios países y regiones. Elige la región y el idioma aquí',
     },
     "Det tar bara några minuter att komma igång.": {
         en: 'Getting started only takes a few minutes.',
