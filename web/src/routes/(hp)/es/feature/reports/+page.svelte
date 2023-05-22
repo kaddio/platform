@@ -41,43 +41,43 @@
 	<span slot="title">Detaljer</span>
 
 	<Qa>
-		<span slot="q">Skapa rapporter</span>
+		<span slot="q">Crea informes</span>
 		<span slot="a">
-			Använd rapportverktyget för att skapa rapporter över bokningar, fakturering, enkätsvar och mer. Visualisera resultatet grafiskt och exportera data som .csv.
+			Utiliza la herramienta de informes para crear informes sobre reservas, facturación, respuestas de encuestas y más. Visualiza los resultados de forma gráfica y exporta los datos como archivos .csv.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skapa enkäter</span>
+		<span slot="q">Crea encuestas</span>
 		<span slot="a">
-			Utforma enkäter så som du vill. Använd olika svarstyper, som fritext, skala, numeriskt värde och flerval. Välj hur Kaddio ska räkna ut resultatet, till exempel som summa eller medelvärde. Sätt och benämn gränser för att få en snabb översikt av resultatet.
+			Diseña encuestas a tu gusto. Utiliza diferentes tipos de respuestas, como texto libre, escala, valor numérico y selección múltiple. Elige cómo Kaddio calculará los resultados, ya sea mediante suma o promedio. Establece límites y etiquetas para obtener una visión general rápida de los resultados.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Utskick</span>
+		<span slot="q">Envío</span>
 		<span slot="a">
-			Skicka länk till enkäten via sms eller mail.
+			Envía el enlace de la encuesta a través de mensaje de texto (SMS) o correo electrónico.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skicka enkät utifrån bokningar</span>
+		<span slot="q">Envía encuestas basadas en las reservas.</span>
 		<span slot="a">
-			Skicka enkäten till de klienter som haft en bokning inom ett visst tidsintervall.
+			Envía la encuesta a los clientes que hayan realizado una reserva dentro de un determinado intervalo de tiempo.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Skicka enkät utifrån grupp</span>
+		<span slot="q">Envía la encuesta basada en grupos específicos.</span>
 		<span slot="a">
-			Skicka enkäten till klienter eller behandlare baserat på vilken grupp de tillhör.
+			Envía la encuesta a los clientes o terapeutas basándote en el grupo al que pertenecen.
 		</span>
 	</Qa>
 	<Qa>
-		<span slot="q">Enkäter ger anonyma svar</span>
+		<span slot="q">Las encuestas proporcionan respuestas anónimas.</span>
 		<span slot="a">
-			Alla svar som samlas in via enkäter är anonyma och kan inte kan inte kopplas till någon specifik klient eller behandlare.
+			Todas las respuestas recopiladas a través de las encuestas son anónimas y no pueden ser vinculadas a ningún cliente o terapeuta específico.
 		</span>
 	</Qa>
 
