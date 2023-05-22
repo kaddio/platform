@@ -69,16 +69,16 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Behörighetsstyrning</span>
+		<span slot="q">Gestión de permisos</span>
 		<span slot="a">
-			Bestäm vilka som har tillgång till vilka mappar med läs- och skrivrättighet.
+			Determina quiénes tienen acceso a qué carpetas con permisos de lectura y escritura.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Samarbeta med kollegor</span>
+		<span slot="q">Colabora con tus colegas.</span>
 		<span slot="a">
-			Tillåt flera personer att skriva och redigera i samma dokument.
+			Permite que varias personas escriban y editen en el mismo documento.
 		</span>
 	</Qa>
 
