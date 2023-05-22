@@ -11,8 +11,8 @@
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Dokument</span>
-	<span slot="sub">Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span>
+	<span slot="title">Kaddio Documentos</span>
+	<span slot="sub">Colabora en la nube con tus colegas. Limita el acceso en el sistema de gestión de archivos con un avanzado control de permisos. El control de versiones y las copias de seguridad se realizan automáticamente.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
