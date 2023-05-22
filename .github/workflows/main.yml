@@ -13,10 +13,6 @@ on:
     paths:
       - 'image-resizer/**'
       
-defaults:
-  run:
-    working-directory: "image-resizer"
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
