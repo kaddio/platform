@@ -13,6 +13,10 @@ on:
     paths:
       - 'image-resizer/**'
       
+defaults:
+  run:
+    working-directory: "image-resizer"
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,4 +27,3 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          path: "image-resizer"
