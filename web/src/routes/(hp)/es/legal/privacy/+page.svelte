@@ -18,73 +18,67 @@
     <span slot="pretitle">Política de privacidad de Kaddio</span>
     <span slot="title">Política de privacidad</span>
     <span slot="subtitle">
-        Kaddio AB är ansvarigt för behandlingen av personuppgifter som samlas in i Kaddio. Vid behandling av personuppgifter
-        följer vi dataskyddsförordningen (GDPR).
+      Kaddio AB es responsable del procesamiento de los datos personales recopilados en Kaddio. Al procesar datos personales, cumplimos con el Reglamento General de Protección de Datos (RGPD).
     </span>
 
     <span slot="intro">
-        Samtliga personuppgifter vi behandlar är nödvändiga i avtalsförhållandet mellan Kaddio och kunden, alternativt sker
-        med kundens samtycke för att tillhandahålla en så bra tjänst som möjligt. Vi sparar personuppgifterna så länge de
-        behövs i vår affärsrelation med kunden och raderas därefter. Har du frågor eller är missnöjd är du välkommen att
-        höra av dig till oss eller till vårt dataskyddsombud <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>        
+      Todos los datos personales que procesamos son necesarios en la relación contractual entre Kaddio y el cliente, o se realizan con el consentimiento del cliente para proporcionar el mejor servicio posible. 
+      Conservamos los datos personales durante el tiempo que sea necesario para nuestra relación comercial con el cliente y se eliminan al finalizarla. 
+      Si tienes alguna pregunta o no estás satisfecho, ponte en contacto con nosotros o con nuestro responsable de protección de datos <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>        
     </span>
 
-    <LegalTitle>Behandling av dina klienters personuppgifter</LegalTitle>
+    <LegalTitle>Procesamiento de los datos personales de tus clientes</LegalTitle>
 
     <LegalParagraph>
-      Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt "Personuppgiftsbiträdesavtal" (som finns att ladda ner när ditt konto har skapats).
+      Kaddio es responsable de los datos personales relacionados con los clientes que Kaddio confía al sistema de acuerdo con el "Acuerdo de procesamiento de datos personales" (que se puede descargar una vez que se hayas creado tu cuenta).
     </LegalParagraph>
 
     <LegalParagraph>
-        Du som kund ska själv vidta lämpliga organisatoriska åtgärder för att uppfylla GDPR såvitt avser
-        behandlingen av personuppgifter. Varje enskild kund har att bestämma var i organisationen som ansvaret för
-        dataskyddsfrågor skall ligga. Läs mer hos Datainspektionen om när man måste eller bör ha ett dataskyddsombud och vad ett
-        sådant ombud gör.            
+      Como cliente, debes tomar las medidas organizativas adecuadas para cumplir con el RGPD en lo que respecta al tratamiento de datos personales. 
+      Cada cliente individual tiene que decidir en qué parte de la organización debe recaer la responsabilidad de las cuestiones de protección de datos. 
+      Lee más en la Autoridad Sueca de Protección de Datos sobre cuándo uno está obligado o debería tener un gerente de protección de datos y qué hace dicho gerente.            
     </LegalParagraph>
 
     <LegalParagraph>
-      Kaddio ger dig som kund tekniska förutsättningar att uppfylla kraven i GDPR.
+      Kaddio te ofrece, como cliente, los requisitos técnicos previos para cumplir con los requisitos del RGPD.
     </LegalParagraph>
 
 
     <LegalTitle>
-        Information vi samlar in
+      Información que recopilamos
     </LegalTitle>
 
     <LegalUl>
-      <LegalLi><strong class="font-semibold text-gray-900">Ny kund.</strong> När du skapar en ny organisation ber vi dig om personuppgifter, bl.a. förnamn, efternamn och e-post.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar..</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Nuevo cliente.</strong> Cuando creas una nueva organización, te pedimos información personal, como nombre, apellidos y correo electrónico.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Uso.</strong> Cuando utilizas Kaddio, almacenamos información sobre las funciones que has activado, así como registros de tus accesos en nuestros servidores.</LegalLi>
     </LegalUl>
 
     <LegalTitle>
-      Så här används informationen
+      La información se utiliza de la siguiente manera
     </LegalTitle>
 
 
     <LegalUl>
-      <LegalLi><strong class="font-semibold text-gray-900">Förbättring.</strong> Den information vi samlar in används för att tillhandahålla, förbättra och skydda våra tjänster.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> Kaddio använder cookies för lastbalansering och säkerhet. Inget annat.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Mejora.</strong> La información que recopilamos se utiliza para proporcionar, mejorar y proteger nuestros servicios.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> Kaddio utiliza cookies únicamente para fines de equilibrio de carga y seguridad. No se utiliza para ningún otro propósito.</LegalLi>
     </LegalUl>
 
 
     <LegalTitle>
-      Valmöjlighet
+      Elección
     </LegalTitle>
 
     <LegalParagraph>
-      Det är du som kund till Kaddio som väljer vilken information du vill dela med oss. De enda personuppgifter
-        du måste dela med oss för att starta en organisation är för- och efternamn, e-post samt namnet på din
-        organisation.
+      Como cliente de Kaddio, eres tú quien decide qué información deseas compartir con nosotros. Los únicos datos personales que debes compartir con nosotros para crear una organización son tu nombre, apellidos, dirección de correo electrónico y el nombre de tu organización.
     </LegalParagraph>
 
 
     <LegalTitle>
-      Var personuppgifter hanteras
+      Dónde se procesan los datos personales
     </LegalTitle>
 
     <LegalParagraph>
-      Dataskyddsförordningen (GDPR) gäller i hela EU/ESS och innebär att alla EU:s medlemsstater har ett
-        likvärdigt skydd för personuppgifter och personlig integritet.
+      El Reglamento General de Protección de Datos (RGPD) se aplica en toda la UE/EEE y significa que todos los Estados miembros de la UE tienen un nivel igual de protección de los datos personales y la privacidad.
     </LegalParagraph>
 
 
@@ -92,44 +86,42 @@
 
 
     <LegalUl>
-      <LegalLi>Personuppgifter kan enligt GDPR behandlas fritt inom EU/EES utan begränsningar.</LegalLi>
+      <LegalLi>De acuerdo con el RGPD, los datos personales pueden procesarse libremente dentro de la UE/EEE sin restricciones.</LegalLi>
       <LegalLi>
-        Utanför EU/ESS får personuppgifter hanteras förutsatt att databehandlaren följer nödvändiga
-        bestämmelser och har vidtagit lämpliga skyddsåtgärder.
+        Fuera de la UE/EEE, los datos personales podrán procesarse siempre que el encargado del tratamiento cumpla las disposiciones necesarias y haya adoptado las medidas de protección adecuadas.
       </LegalLi>
     </LegalUl>
 
 
     <LegalParagraph>
-        Samtliga företag som hanterar personuppgifter för Kaddios räkning utanför EU/ESS har vi avtal med som
-innehåller standardavtalsklausuler som EU-kommissionen har beslutat om, vilket uppfyller skyddsnivå
-enligt GDPR.
+      Con todas las empresas que procesan datos personales en nombre de Kaddio fuera de la UE/EEE tenemos acuerdos que contienen cláusulas contractuales estándar que la Comisión Europea ha decidido, 
+      que cumplen con el nivel de protección de acuerdo con el RGPD.
   </LegalParagraph>
 
     
     <LegalTitle>
-        Data för följande ändamål hanteras utanför EU/ESS
+      Los datos para los siguientes fines se manejan fuera de la UE/ESS (en los EE. UU.)
     </LegalTitle>
 
 
 
     <LegalUl>
       <LegalLi>
-            <strong class="font-semibold text-gray-900">Nyhetsbrev.</strong> System för att skicka nyhetsbrev från Kaddio till våra kunder
+            <strong class="font-semibold text-gray-900">Newsletter.</strong> Sistema de envío de newsletters desde Kaddio a nuestros clientes.
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">SMS.</strong> System för att leverera SMS till patienter som har en bokning i kalendern. (SMS-påminnelser).
+            <strong class="font-semibold text-gray-900">SMS.</strong> Sistema para la entrega de mensajes SMS a pacientes que tienen una reserva en el calendario. (Recordatorios por SMS).
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">E-post.</strong> System för automatiska utskick av e-post för: fakturering, inbjudan av behandlare och patienter,
-            kvitto vid bokning samt bokning- och avbokningsbekräftelse.            
+            <strong class="font-semibold text-gray-900">E-mail.</strong> Sistemas para el envío automático de e-mails para: facturación, invitación de facultativos y pacientes, recepción de reserva y confirmación de reserva y cancelación. 
+            Otros datos que contienen datos personales se manejan dentro de la UE/EEE. Todo el almacenamiento de datos de la historia clínica y la Comunicación tiene lugar dentro de la UE/EEE.            
       </LegalLi>
     </LegalUl>        
 
       <LegalParagraph>
-        Övrig data som innehåller personuppgifter hanteras inom EU/ESS. All lagring av data från Journal och Kommunikation sker inom EU/ESS.
+        Otros datos que contienen datos personales se manejan dentro de la UE/EEE. Todo el almacenamiento de datos de la historia clínica y la Comunicación tiene lugar dentro de la UE/EEE.
       </LegalParagraph>
 
 
