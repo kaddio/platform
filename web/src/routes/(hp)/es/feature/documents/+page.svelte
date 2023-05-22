@@ -48,16 +48,16 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Versionshantering</span>
+		<span slot="q">Gestión de versiones</span>
 		<span slot="a">
-			Spara versioner av dokument för att få spårbarhet i ändringar
+			Guardar versiones de documentos para tener un seguimiento de los cambios.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Ladda upp filer</span>
+		<span slot="q">Cargar archivos</span>
 		<span slot="a">
-			Ladda upp alla typer av filer i Kaddio.
+			Sube todo tipo de archivos a Kaddio.
 		</span>
 	</Qa>
 
