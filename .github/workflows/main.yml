@@ -1,6 +1,12 @@
 name: Deploy to Cloudflare
 
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: string
+        default: DEV
+        required: true
   push:
     branches:
       - master      
