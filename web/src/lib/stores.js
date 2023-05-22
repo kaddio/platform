@@ -93,7 +93,7 @@ const translations = {
     },
     "Användarvillkor": {
         en: 'Terms of service',
-        es: 'Conditiones de uso'
+        es: 'Condiciones de uso'
     },
     "Sekretesspolicy": {
         en: 'Privacy policy',
