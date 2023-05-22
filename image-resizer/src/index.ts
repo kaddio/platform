@@ -45,9 +45,9 @@ addEventListener("fetch", event => {
       }
   
       // Demo: Only accept "example.com" images
-    //   if (hostname !== 'example.com') {
-    //     return new Response('Must use "example.com" source images', { status: 403 })
-    //   }
+      if (!hostname.endsWith('kaddio.com')) {
+        return new Response('Must use "kaddio.com" source images', { status: 403 })
+      }
     } catch (err) {
       return new Response('Invalid "image" value', { status: 400 })
     }
