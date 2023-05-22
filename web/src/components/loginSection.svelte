@@ -47,12 +47,12 @@
       </div>
       <form on:submit|preventDefault={submit} class="mt-8 space-y-6" action="#" method="POST">
         <div class="flex max-w-lg rounded-md shadow-sm">
-            <input placeholder="url" type="text" bind:value={url} on:input={() => cannotFind = false} name="url" autocomplete="url" class="block w-full min-w-0 flex-1 rounded-none rounded-l-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6">
+            <input placeholder="url" type="text" bind:value={url} on:input={() => cannotFind = false} name="url" autocomplete="url" class="block w-full min-w-0 flex-1 rounded-none rounded-l-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:text-sm sm:leading-6">
             <span class="inline-flex items-center rounded-r-md border border-l-0 border-gray-300 px-3 text-gray-500 sm:text-sm">.kaddio.com</span>
         </div>
 
         <div>
-            <button type="submit" disabled={!submitIsEnabled} class="disabled:opacity-75 group relative flex w-full justify-center rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+            <button type="submit" disabled={!submitIsEnabled} class="disabled:opacity-75 group relative flex w-full justify-center rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink">
                 Gå dit
             </button>
         </div>
