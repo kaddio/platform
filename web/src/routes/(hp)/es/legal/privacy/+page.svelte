@@ -115,7 +115,7 @@
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">E-mail.</strong> Sistemas para el envío automático de e-mails para: facturación, invitación de facultativos y pacientes, recepción de reserva y confirmación de reserva y cancelación. 
+            <strong class="font-semibold text-gray-900">Correo-e.</strong> Sistemas para el envío automático de e-mails para: facturación, invitación de facultativos y pacientes, recepción de reserva y confirmación de reserva y cancelación. 
             Otros datos que contienen datos personales se manejan dentro de la UE/EEE. Todo el almacenamiento de datos de la historia clínica y la Comunicación tiene lugar dentro de la UE/EEE.            
       </LegalLi>
     </LegalUl>        
