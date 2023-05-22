@@ -41,9 +41,9 @@
 	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Skapa textdokument</span>
+		<span slot="q">Crear un documento de texto</span>
 		<span slot="a">
-			Skapa och skriv textdokument direkt i Kaddio.
+			Crea y escribe documentos de texto directamente en Kaddio.
 		</span>
 	</Qa>
 
