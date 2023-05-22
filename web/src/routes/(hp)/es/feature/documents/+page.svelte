@@ -62,9 +62,9 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Mappar</span>
+		<span slot="q">Carpetas</span>
 		<span slot="a">
-			Sortera dina dokument och filer i mappar.
+			Organiza tus documentos y archivos en carpetas.
 		</span>
 	</Qa>
 
