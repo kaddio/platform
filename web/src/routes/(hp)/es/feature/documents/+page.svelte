@@ -41,7 +41,7 @@
 	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Crear un documento de texto</span>
+		<span slot="q">Crea un documento de texto</span>
 		<span slot="a">
 			Crea y escribe documentos de texto directamente en Kaddio.
 		</span>
