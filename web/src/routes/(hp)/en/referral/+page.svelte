@@ -3,6 +3,7 @@
 	import { token } from '$lib/stores';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
+	import { imageHandler } from '$lib/img';
     setContext('lang', 'en');
 </script>
 
@@ -44,7 +45,7 @@
 
             <figcaption class="mt-8 flex gap-x-4">
                 {#if $token.img}
-                <img src={$token.img} alt="An image of {$token.fullname}" class="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50">
+                    <img src="{imageHandler($token.img, {format: 'auto'})}" alt="An image of {$token.fullname}" class="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50">
                 {/if}
 
                 <div class="text-sm leading-6">
@@ -75,8 +76,8 @@
             <!-- <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p> -->
 
             <div class="mt-8 flex items-center gap-x-6">
-            <a href="/en/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Create account</a>
-            <a href="/en" class="text-sm font-semibold text-gray-900">Learn more about Kaddio <span aria-hidden="true">&rarr;</span></a>
+                <a href="/en/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Create account</a>
+                <a href="/en" class="text-sm font-semibold text-gray-900">Learn more about Kaddio <span aria-hidden="true">&rarr;</span></a>
             </div>
 
         </div>
