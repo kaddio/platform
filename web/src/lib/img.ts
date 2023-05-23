@@ -1,6 +1,7 @@
 type Options = {
     format?: string,
     width?: number,
+    fit?: string
 }
 
 export const imageHandler = function(src: string, options: Options): string{

@@ -3,7 +3,9 @@
 	import { token } from '$lib/stores';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
+	import { imageHandler } from '$lib/img';
     setContext('lang', 'en');
+
 </script>
 
 <svelte:head>
@@ -25,9 +27,12 @@
             <a href="/en" class="text-sm font-semibold text-gray-900">Learn more about Kaddio <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
-        <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-          <img class="max-h-12 w-full object-contain object-left" src="https://kaddio.com/cdn-cgi/image/format=auto,fit=scale-down,width=320/{$token.img}" alt="{$token.name} logo" width="105">
-        </div>
+
+        {#if $token.img}            
+            <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+                <img class="max-h-12 w-full object-contain object-left" src="{imageHandler($token.img, {format: 'auto', fit:'scale-down', width: 320})}" alt="{$token.name} logo" width="105">
+            </div>
+        {/if}
       </div>
     </div>
   </div>
