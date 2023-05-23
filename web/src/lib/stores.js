@@ -190,6 +190,14 @@ const translations = {
     "Gå dit": {
         en: 'Log in',
         es: 'Ir allí'
+    },
+    "Organisationen kunde inte hittas": {
+        en: 'The organization could not be found',
+        es: 'Organización no encontrada'
+    },
+    "Kontrollera vilken URL du skrivit in. Du kan hitta din URL i det första mail du fick ifrån Kaddio när du skapat konto": {
+        en: 'Check the URL you have entered. You can find your URL in the first email you received from Kaddio when you created your account.',
+        es: 'Verifica la URL que has ingresado. Puedes encontrar tu URL en el primer correo electrónico que recibiste de Kaddio cuando creaste tu cuenta.'
     }
 }
 

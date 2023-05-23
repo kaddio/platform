@@ -67,7 +67,7 @@
                 </svg>
                 </div>
                 <div class="ml-3">
-                <h3 class="text-sm font-medium text-indigo-400">Organisationen kunde inte hittas</h3>
+                <h3 class="text-sm font-medium text-indigo-400">{ $_('Organisationen kunde inte hittas')}</h3>
                 <div class="mt-2 text-sm text-yellow-700">
                     <p>Kontrollera vilken URL du skrivit in. Du kan hitta din URL i det första mail du fick ifrån Kaddio när du skapat konto</p>
                 </div>
