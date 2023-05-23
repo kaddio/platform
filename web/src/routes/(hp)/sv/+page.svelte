@@ -9,13 +9,9 @@
 	import Nav from '$components/nav.svelte';
 	import CrmSv from './crmSv.svelte';
 	import Testimonial from './testimonial.svelte';
+	import { scroll } from '$lib/scroll';
 
 	setContext('lang', 'sv');
-
-	const scroll = function(id: string){
-		const element = document.getElementById(id);
-		element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-	}
 
 
 	/*** Idea...

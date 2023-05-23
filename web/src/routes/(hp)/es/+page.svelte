@@ -4,6 +4,7 @@
 	import Nav from '$components/nav.svelte';
 	import ModulesEs from './modulesEs.svelte';
 	import PricesEs from './pricesEs.svelte';
+	import { scroll } from '$lib/scroll';
 
 	setContext('lang', 'es');
 </script>
@@ -25,7 +26,7 @@
 				<p class="mt-6 text-lg leading-8 font-light text-white">Un sistema integral basado en la web diseñado para ti, que ayudas a otros.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a href="https://demo-es.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Probar demo</a>
-					<a href="/es/create" class="text-sm font-semibold leading-6 text-white">Crear una cuenta <span aria-hidden="true">→</span></a>
+					<button on:click={() => (scroll('functions'))} class="text-sm font-semibold leading-6 text-white">Aprende más <span aria-hidden="true">→</span></button>
 				</div>
 			</div>
 
