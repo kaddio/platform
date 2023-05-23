@@ -64,7 +64,7 @@
 	<Qa>
 		<span slot="q">Envía formulario de presupuesto</span>
 		<span slot="a">
-			Envío de formularios de valoración y declaraciones de salud por e-mail y SMS.
+			Envía formularios de valoración y declaraciones de salud por e-mail y SMS.
 		</span>
 	</Qa>
 
