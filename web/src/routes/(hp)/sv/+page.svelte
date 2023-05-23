@@ -12,6 +12,12 @@
 
 	setContext('lang', 'sv');
 
+	const scroll = function(id: string){
+		const element = document.getElementById(id);
+		element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+	}
+
+
 	/*** Idea...
 
 
@@ -45,7 +51,7 @@ srcset="
 				<p class="mt-6 text-lg leading-8 font-light text-white">Webbaserat allt-i-allo-system för dig som hjälper andra.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a href="https://demo.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
-					<a href="/sv/create" class="text-sm font-semibold leading-6 text-white">Skapa konto <span aria-hidden="true">→</span></a>
+					<button on:click={() => (scroll('functions'))} class="text-sm font-semibold leading-6 text-white">Läs mer <span aria-hidden="true">→</span></button>
 				</div>
 			</div>
 
