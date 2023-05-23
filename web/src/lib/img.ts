@@ -4,6 +4,7 @@ type Options = {
 }
 
 export const imageHandler = function(src: string, options: Options): string{
+    if(!src || src.length == 0) return src;
 
     // localhost
     if(false){
