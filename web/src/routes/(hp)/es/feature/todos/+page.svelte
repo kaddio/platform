@@ -50,7 +50,7 @@
 	<Qa>
 		<span slot="q">Plazo</span>
 		<span slot="a">
-			Establezce una fecha límite para completar la tarea.
+			Establece una fecha límite para completar la tarea.
 		</span>
 	</Qa>
 
