@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Card from "../../../../../components/card.svelte";
-	import Kdbutton from "../../../../../components/kdbutton.svelte";
+	import Kdbutton from "../../../../../components/kdButton.svelte";
 	import type { Organization } from "../types";
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
@@ -10,24 +10,24 @@
     const nextTime = dayjs(organization.nextFreeTime).fromNow()
 </script>
 
-<Card>
-    <div class="h-80 w-64">
-        <div class="w-full h-2/5" style="background-image: url({organization.homepage?.headerImg}); background-size: cover">
+<Card >
+    <div class="w-72 h-80">
+        <div class="w-full h-1/2" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center">
             
         </div>
         
-        <div class="h-3/5 p-4 flex  flex-col justify-between">
-            <div class="uppercase text-xs text-gray-400 font-semibold">Psykolog · Osteopat</div>
+        <div class="h-1/2 p-4 flex  flex-col justify-between">
+            <div class="uppercase text-xs text-gray-400 font-semibold line-clamp-1">{organization.keywords?.join(" · ") || ""}</div>
             <h3 class="font-semibold">{organization.name}</h3>
-            <small class="text-gray-400">{organization.address} {organization.city}</small>
+            <small class="text-gray-400 line-clamp-1">{organization.address || ""}, {organization.city || ""}</small>
             <div class="flex-grow"></div>
-            <div class="flex gap-5 justify-between align-baseline">
+            <div class="flex gap-5 justify-between items-center text-sm">
                 {#if organization.nextFreeTime }
-                    <span class="text-green-400 font-semibold">Tid {nextTime}</span>
+                    <a class="text-green-400 font-semibold" href="https://{organization.url}.kaddio.com/booking">Tid {nextTime}</a>
                 {:else}
-                    <span class="text-gray-400 font-semibold">Fullbokat</span>
+                    <a class="text-gray-400 font-semibold" href="https://{organization.url}.kaddio.com/booking">Bokning</a>
                 {/if}
-                <Kdbutton>Besök</Kdbutton>
+                <a href="https://{organization.url}.kaddio.com"><Kdbutton>Besök</Kdbutton></a>
             </div>
         
         </div>

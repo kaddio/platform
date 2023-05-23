@@ -1,12 +1,18 @@
 import type { Organization } from './types.js';
 
-export async function load() : Promise<{organizations: Organization[]}>{
+export async function load({params, url, fetch}) : Promise<{organizations: Organization[], keyword: string}>{
+  
+    const {keyword = "", place} = params;
+
+
     const query = `
     query {
-        findOrganizations(limit: 10) {
+        findOrganizations(keyword: "${keyword || ''}", geoQuery: "${place || ''}", limit: 10) {
           name,
           address,
           city,
+          url,
+          keywords,
           bookingTypes {
             name,
             nextFreeTime
@@ -18,6 +24,7 @@ export async function load() : Promise<{organizations: Organization[]}>{
         }
       }
     `;
+    
     const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
         method: 'POST',
         body: JSON.stringify({query}),
@@ -26,10 +33,17 @@ export async function load() : Promise<{organizations: Organization[]}>{
         },
     })
     
-    const orgs = await result.json();
+    if(!result.ok) {
+      console.log(result);
+      throw result;
+    }
 
+    const orgs = await result.json();
+console.log(orgs);
     return {
-        organizations: orgs.data.findOrganizations
+        organizations: orgs.data.findOrganizations,
+        place,
+        keyword,
     };
 
 }
