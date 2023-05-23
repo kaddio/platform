@@ -24,10 +24,10 @@
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Centro de ayuda</span>
 		<span slot="body">
-			En el Centro de ayuda de Kaddio help.kaddio.com, estamos reabasteciendo continuamente los artículos y respuestas a preguntas comunes.
+			En el Centro de ayuda de Kaddio ayuda.kaddio.com, estamos reabasteciendo continuamente los artículos y respuestas a preguntas comunes.
 		</span>
 		<span slot="link">
-			<a href="https://help.kaddio.com/help" class="text-sm font-semibold leading-6 text-oldpink">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://ayuda.kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">ayuda.kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>	
 
