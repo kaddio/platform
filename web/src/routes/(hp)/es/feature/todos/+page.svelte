@@ -7,12 +7,12 @@
 
 <svelte:head>
 	<title>Kaddio - Tareas</title>
-	<meta name="description" content="Crea tu propia - lista de tareas pendientes -. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo" />
+	<meta name="description" content="Crea tu propia — lista de tareas pendientes —. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo" />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Tareas</span>
-	<span slot="sub">Crea tu propia - lista de tareas pendientes -. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo</span>
+	<span slot="sub">Crea tu propia — lista de tareas pendientes —. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
