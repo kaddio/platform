@@ -53,7 +53,7 @@
 
         <div>
             <button type="submit" disabled={!submitIsEnabled} class="disabled:opacity-75 group relative flex w-full justify-center rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink">
-                Gå dit
+                { $_('Gå dit')}
             </button>
         </div>
       </form>
