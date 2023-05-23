@@ -187,7 +187,7 @@ const translations = {
         en: '(excl. VAT)',
         es: '(excl. IVA)'
     },
-    "(gå dit)": {
+    "(Gå dit)": {
         en: 'Log in',
         es: 'Ir allí'
     }
