@@ -12,7 +12,7 @@
           <i class="text-white fa-regular fa-heart"></i>
         </span>
         <span slot="title">Historia clínica</span>
-        <span slot="body">Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a las necesidades de tu negocio.</span>
+        <span slot="body">Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinarias de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a las necesidades de tu negocio.</span>
     </ModulePresentation>
     <ModulePresentation href="es/feature/cal">
         <span slot="icon">
