@@ -47,7 +47,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<Qa>
 		<span slot="q">Plantillas de notas</span>
 		<span slot="a">
-			Crea tus propias plantillas para que las historias clínicas se adapten a tu negocio. Elije tus propias palabras clave/títulos. Use plantillas de texto, frases, carga de archivos y más.
+			Crea tus propias plantillas para que las historias clínicas se adapten a tu negocio. Elije tus propias palabras clave/títulos. Usa plantillas de texto, frases, carga de archivos y más.
 		</span>
 	</Qa>
 	
