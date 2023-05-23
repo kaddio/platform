@@ -43,7 +43,7 @@
 	<Qa>
 		<span slot="q">Vídeo</span>
 		<span slot="a">
-			Realiza videollamadas de hasta 100 participantes de forma simultánea. Permite compartir pantalla, levantar la mano, reacciones, fondos virtuales y más.
+			Realiza videollamadas de hasta 500 participantes de forma simultánea. Permite compartir pantalla, levantar la mano, reacciones, fondos virtuales y más.
 		</span>
 	</Qa>
 

@@ -35,7 +35,7 @@
           <i class="text-white fa-regular fa-comments"></i>
       </span>
     <span slot="title">Vídeo y chat encriptados</span>
-        <span slot="body">Vídeo seguro hasta 100 participantes.</span>
+        <span slot="body">Vídeo seguro hasta 500 participantes.</span>
     </ModulePresentation>
 
     <ModulePresentation href="es/feature/forms">
