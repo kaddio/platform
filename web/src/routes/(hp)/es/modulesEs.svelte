@@ -67,7 +67,7 @@
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>
         <span slot="title">Informes</span>
-        <span slot="body">Mantén el control de tu negocio con las herramientas de estadísticas de Kaddio. Visualiza o exporta los datos para realizar tu propio análisis.</span>
+        <span slot="body">Mantén el control con las herramientas de estadísticas de Kaddio. Visualiza o exporta los datos para realizar tu propio análisis.</span>
     </ModulePresentation>
 
 </ModulesSection>   
