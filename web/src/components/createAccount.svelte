@@ -155,8 +155,11 @@
                             Jag godkänner 
                             <a href="/sv/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
                         {:else if lang == 'es'}
+                            Acepto los 
+                            <a href="/es/legal/tos" class="font-semibold text-oldpink"> Términos de Uso</a> y la <a href="/es/legal/privacy" class="font-semibold text-oldpink">Política de Privacidad</a>.          
+                        {:else if lang == 'es'}
                             Jag godkänner 
-                            <a href="/sv/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
+                            <a href="/en/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/en/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.
                         {/if}
                     </span>
                 </Toggle>
