@@ -92,7 +92,7 @@
 	<Qa>
 		<span slot="q">Optimización del tiempo</span>
 		<span slot="a">
-			Evite huecos innecesarios en el calendario. Kaddio optimiza los tiempos de reserva en función de la duración del tratamiento.
+			Evita huecos innecesarios en el calendario. Kaddio optimiza los tiempos de reserva en función de la duración del tratamiento.
 		</span>
 	</Qa>
 
