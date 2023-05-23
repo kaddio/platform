@@ -5,6 +5,8 @@
 	import { _ } from "$lib/stores";
     import Toggle from "./toggle.svelte";
 
+    const lang = getContext('lang');
+
     let submitIsEnabled: boolean = false;
 
     let state: boolean;
@@ -149,8 +151,13 @@
 
                 <Toggle bind:state>
                     <span slot="label">
-                        Jag godkänner 
-                        <a href="/sv/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
+                        {#if lang == 'sv'}
+                            Jag godkänner 
+                            <a href="/sv/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
+                        {:else if lang == 'es'}
+                            Jag godkänner 
+                            <a href="/sv/legal/tos" class="font-semibold text-oldpink">Användarvillkor</a> och <a href="/sv/legal/privacy" class="font-semibold text-oldpink">Sekretesspolicy</a>.          
+                        {/if}
                     </span>
                 </Toggle>
 
