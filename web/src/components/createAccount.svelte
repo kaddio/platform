@@ -157,7 +157,7 @@
                         {:else if lang == 'es'}
                             Acepto los 
                             <a href="/es/legal/tos" class="font-semibold text-oldpink"> Términos de Uso</a> y la <a href="/es/legal/privacy" class="font-semibold text-oldpink">Política de Privacidad</a>.          
-                        {:else if lang == 'es'}
+                        {:else if lang == 'en'}
                             I accept the  
                             <a href="/en/legal/tos" class="font-semibold text-oldpink">Terms of Use</a> and <a href="/en/legal/privacy" class="font-semibold text-oldpink">Privacy Policy</a>.
                         {/if}
