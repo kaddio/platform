@@ -8,6 +8,7 @@
     <div class="flex items-center gap-x-6 bg-oldpink px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
         <p class="text-sm leading-6 text-white">
         <a href="/en/referral"><strong class="font-semibold">Recommended by {$token.firstname}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Learn more&nbsp;<span aria-hidden="true">&rarr;</span></a>
+        <!-- <a href="/en/referral"><strong class="font-semibold">You are surfing on a special link from {$token.name} "Massörernas yrkesförbund"</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Learn more&nbsp;<span aria-hidden="true">&rarr;</span></a> -->
         </p>
         <div class="flex flex-1 justify-end">
         <!-- <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
