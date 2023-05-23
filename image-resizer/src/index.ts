@@ -56,7 +56,14 @@ addEventListener("fetch", event => {
     const imageRequest = new Request(imageURL, {
       headers: request.headers
     })
-  
+
+    const json = JSON.stringify(options, null, 2);
+
+    return new Response(json, {
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+      },
+    });  
     // Returning fetch() with resizing options will pass through response with the resized image.
     return fetch(imageRequest, options)
   }
