@@ -38,7 +38,7 @@
 			  España
 			</dt>
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-			  <p class="flex-auto" lang="es">Durante 2023 Kaddio se establece en España. Utilice este sitio si reside en España o en otra región de habla hispana.</p>
+			  <p class="flex-auto" lang="es">Durante 2023 Kaddio se establece en España. Utiliza este sitio si resides en España o en otra región de habla hispana.</p>
 			  <p class="mt-6">
 				<a href="/es" hreflang="es" lang="es" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/es <span aria-hidden="true">→</span></a>
 			  </p>
