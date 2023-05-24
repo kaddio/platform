@@ -19,7 +19,7 @@
 
 <SimpleCentered>
 	<span slot="title">Contáctanos</span>
-	<span slot="sub">Estamos aquí para ayudar</span>
+	<span slot="sub">Estamos aquí para ayudarte</span>
 
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Centro de ayuda</span>
