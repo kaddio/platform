@@ -19,7 +19,7 @@
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
-	</ModuleFeature> -->
+	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Flexibelt.</span>
@@ -28,7 +28,7 @@
 Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
 	</ModuleFeature>
 
-	<!-- <ModuleFeature>
+	<ModuleFeature>
 		<span slot="title">Säkert.</span>
 		<span slot="body">
 			Behörighetsstyrning
@@ -37,9 +37,9 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</ModuleFeature> -->
 
 
-	
+
 </ModuleSection>
-  
+
 
 <FaqSection>
 	<span slot="title">Detaljer</span>
@@ -50,7 +50,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj dina egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
 		</span>
 	</Qa>
-	
+
 	<Qa>
 		<span slot="q">Journalformulär</span>
 		<span slot="a">
