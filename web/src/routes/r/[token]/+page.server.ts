@@ -1,18 +1,23 @@
 
 async function referrerData(token: string){
-    const url = 'http://127.0.0.1:3000/api/referrer?' + new URLSearchParams({token});
+    const url = 'https://api.kaddio.com/api/referrer?' + new URLSearchParams({token});
 
-    console.log(token)
+    console.log(`token: ${token}`)
 
     try {
-        // 'https://api.kaddio.com/api/referrer';
+        // 'http://127.0.0.1:3000/api/referrer';
         const response = await fetch(url);
         const data = await response.json();
 
         return data;
 
     } catch(e) {
+        console.log('Could not fetch referrer data')
         console.error(e)
+
+        return {
+            type: 'referrerLegacyVersion'
+        }
     }
 }
 
@@ -24,15 +29,10 @@ export async function load({ params }) {
 
     const data = await referrerData(params.token);
 
-    // console.log(data)
-
-    // export const referrerData = writable();
-
-    // throw redirect(307, '/sv');
-
     return {
         referrerData: {
-            ...data
+            ...data,
+            token: params.token
         }
     };
 }
