@@ -2,6 +2,8 @@
 
 	import { _ } from "$lib/stores";
 
+  export let src = 'https://help.kaddio.com/help';
+
 </script>
 <div class="relative bg-gray-100">
     <div class="relative h-80 overflow-hidden bg-purple-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
@@ -22,7 +24,7 @@
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray sm:text-4xl"><slot name="title" /></p>
         <p class="mt-6 text-base leading-7 text-gray-500"><slot name="subtitle" /></p>
         <div class="mt-8">
-          <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="inline-flex rounded-md bg-oldpink/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">{$_('Kaddio Hjälpcenter')}</a>
+          <a href={src} target="_blank" rel="noreferrer" class="inline-flex rounded-md bg-oldpink/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">{$_('Kaddio Hjälpcenter')}</a>
         </div>
       </div>
     </div>
