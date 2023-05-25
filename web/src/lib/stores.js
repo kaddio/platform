@@ -199,9 +199,9 @@ const translations = {
         en: 'Check the URL you have entered. You can find your URL in the first email you received from Kaddio when you created your account.',
         es: 'Verifica la URL que has ingresado. Puedes encontrar tu URL en el primer correo electrónico que recibiste de Kaddio cuando creaste tu cuenta.'
     },
-    "Kaddio Helpcenter": {
-        en: 'Kaddio Help Center',
-        es: 'Centro de ayuda Kaddio'
+    "Kaddio Hjälpcenter": {
+        en: "Kaddio's Help Center",
+        es: 'Centro de ayuda de Kaddio'
     }
 }
 
