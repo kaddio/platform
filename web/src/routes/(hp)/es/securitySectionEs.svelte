@@ -3,6 +3,6 @@
 
 </script>
 <SecuritySection>
-	<span slot="title"></span>
-	<span slot="subtitle"></span>
+	<span slot="title">Gestionar datos sensibles de manera segura.</span>
+	<span slot="subtitle">Todo en Kaddio está encriptado. Kaddio cuenta con soporte para autenticación de múltiples factores a través de Mobilt BankID y contraseñas de un solo uso a través de SMS.</span>
 </SecuritySection>
