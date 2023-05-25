@@ -7,6 +7,9 @@ services:
      plan: starter
      branch: master
      rootDir: web
+     domains:
+      - next.kaddio.com
+      - kaddio.com
      region: frankfurt
      envVars:
       - key: NODE_VERSION
