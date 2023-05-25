@@ -67,7 +67,7 @@
 
         <Person src="/img/david.png">
             <span slot="name">David</span>
-            <span slot="title">Development + CEO</span>
+            <span slot="title">Co-Founder + CEO</span>
         </Person>
 
         <Person>
