@@ -13,7 +13,7 @@
 <ModuleSection>
 	<span slot="title">Kaddio Kommunikation</span>
 	<span slot="sub">Chat och video för upp till 500 samtidiga deltagare</span>
-
+<!-- 
 	<ModuleFeature>
 		<span slot="title">Automatisera</span>
 		<span slot="body">
@@ -33,7 +33,7 @@
 		<span slot="body">
 			Kaddio Video har stöd för minst 500 deltagare samtidigt.
 		</span>
-	</ModuleFeature>
+	</ModuleFeature> -->
 </ModuleSection>
   
 
