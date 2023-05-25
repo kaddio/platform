@@ -24,14 +24,14 @@
 	<ModuleFeature>
 		<span slot="title">Samarbeta</span>
 		<span slot="body">
-			Använd kalendern för att boka möten.
+			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Effektivisera</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid
+			Har du återkommande händelser i kalendern? Skapa mallar enkelt och spara tid. Bestäm själv vilka kollegor som ska se vad.
 		</span>
 	</ModuleFeature>
 </ModuleSection>
@@ -64,7 +64,7 @@
 	<Qa>
 		<span slot="q">SMS-påminnelser</span>
 		<span slot="a">
-			Välj om och när SMS-påminnelser skickas inför och efter bokade tid.
+			Välj om och när SMS-påminnelser skickas inför och efter bokade tider.
 		</span>
 	</Qa>
 
