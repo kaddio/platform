@@ -43,7 +43,7 @@
 	<Qa>
 		<span slot="q">Skärmdelning</span>
 		<span slot="a">
-			Dela vad du ser
+			Dela skärm
 		</span>
 	</Qa>
 
@@ -53,14 +53,6 @@
 			Videosamtal är inspelningsbara, videon laddas upp i konversationen och är synlig för behandlare i 24 timmar.
 		</span>
 	</Qa>
-
-	<Qa>
-		<span slot="q">Emojis och reaktioner</span>
-		<span slot="a">
-			Kanske inte det mest meningsfulla, men alla andra stora videoleverantörer har ju det så atte..
-		</span>
-	</Qa>
-
 
 
 </FaqSection>
