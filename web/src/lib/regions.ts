@@ -11,21 +11,21 @@ export const regions = {
         lang: 'sv',
         label: 'Sverige',
         href: '/sv',
-        defaultCountryCode: 'se',
+        defaultCountryCode: 'SE',
         helpCenterLink: 'https://help.kaddio.com/help'
     },
     ES: {
         lang: 'es',
         label: 'Spanien',
         href: '/es',
-        defaultCountryCode: 'es',
+        defaultCountryCode: 'ES',
         helpCenterLink: 'https://ayuda.kaddio.com/help'
     },
     EN: {
         lang: 'en',
         label: 'Global',
         href: '/en',
-        defaultCountryCode: 'se',
+        defaultCountryCode: 'SE',
         helpCenterLink: 'https://help.kaddio.com/help'
     }
 }
