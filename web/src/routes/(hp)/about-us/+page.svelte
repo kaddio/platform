@@ -52,7 +52,7 @@
 
         <Person>
             <span slot="name">Lena</span>
-            <span slot="title">Security</span>
+            <span slot="title">Customer support</span>
         </Person>
 
         <Person>
@@ -77,7 +77,7 @@
 
         <Person>
             <span slot="name">Agustin</span>
-            <span slot="title">Technical support</span>
+            <span slot="title">Customer support</span>
         </Person>
 
         <Person src="/img/carl.png">
