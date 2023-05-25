@@ -17,7 +17,7 @@
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray sm:text-4xl"><slot name="title" /></p>
         <p class="mt-6 text-base leading-7 text-gray-500"><slot name="subtitle" /></p>
         <div class="mt-8">
-          <a href="https://help.kaddio.com/help" class="inline-flex rounded-md bg-oldpink/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kaddio Hjälpcenter</a>
+          <a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="inline-flex rounded-md bg-oldpink/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kaddio Hjälpcenter</a>
         </div>
       </div>
     </div>
