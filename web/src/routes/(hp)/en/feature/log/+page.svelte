@@ -77,39 +77,4 @@
 		</span>
 	</Qa>
 
-	<Qa>
-		<span slot="q">Bild</span>
-		<span slot="a">
-			Rita på fram- och baksida av en människokropp för att dokumentera till exempel var klienten upplever smärta.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Lista osignerade anteckningar</span>
-		<span slot="a">
-			Håll koll på anteckningar som väntar på att bli signerade.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Exportera/skriv ut</span>
-		<span slot="a">
-			Exportera och skriv ut enskild journalanteckning eller hela journalen till PDF.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Loggning</span>
-		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">API</span>
-		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
-		</span>
-	</Qa>
-
 </FaqSection>

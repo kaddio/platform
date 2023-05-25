@@ -80,9 +80,16 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</Qa>
 
 	<Qa>
-		<span slot="q">Bild</span>
+		<span slot="q">Rita på standardbilder</span>
 		<span slot="a">
-			Rita på fram- och baksida av en människokropp för att dokumentera till exempel var klienten upplever smärta.
+			Rita på Kaddios standardbilder för att dokumentera till exempel var klienten upplever smärta.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Rita på egna bilder</span>
+		<span slot="a">
+			Ladda upp egna bilder att rita på så att det passar din verksamhet.
 		</span>
 	</Qa>
 
