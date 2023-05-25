@@ -28,13 +28,6 @@
 	<span slot="title">Detaljer</span>
 
 	<Qa>
-		<span slot="q">Artiklar</span>
-		<span slot="a">
-			Duschtvål, handukar etc. Kaddio haz it got
-		</span>
-	</Qa>
-
-	<Qa>
 		<span slot="q">Fakturaunderlag</span>
 		<span slot="a">
 			Kaddio skapar automatiskt fakturaunderlag utifrån kalender och journal.
