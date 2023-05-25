@@ -200,7 +200,7 @@ const translations = {
         es: 'Verifica la URL que has ingresado. Puedes encontrar tu URL en el primer correo electrónico que recibiste de Kaddio cuando creaste tu cuenta.'
     },
     "Kaddio Hjälpcenter": {
-        en: "Kaddio's Help Center",
+        en: "Visit Help Center",
         es: 'Centro de ayuda de Kaddio'
     }
 }
