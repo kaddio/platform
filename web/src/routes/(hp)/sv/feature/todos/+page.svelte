@@ -57,7 +57,7 @@
 	<Qa>
 		<span slot="q">Delegering</span>
 		<span slot="a">
-			Delegering
+			Delegera uppgifter till kollegor
 		</span>
 	</Qa>
 
