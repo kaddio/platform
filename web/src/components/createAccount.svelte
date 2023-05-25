@@ -69,12 +69,12 @@
     $: url = slugify(orgName || '');
 
     const countries = [
-        ['Sverige', 'se'],
-        ['Finland', 'fi'],
-        ['Norge', 'no'],
-        ['Danmark', 'dk'],
-        ['Spanien', 'es'],
-        ['Någon annanstans', 'se'],
+        ['Sverige', 'SE'],
+        ['Finland', 'FI'],
+        ['Norge', 'NO'],
+        ['Danmark', 'DK'],
+        ['Spanien', 'ES'],
+        ['Någon annanstans', 'SE'],
     ].map(c => ({label: c[0], name: c[1]}))
 
     let country = getRegion(countryCodeFromLang(getContext('lang'))).defaultCountryCode;
