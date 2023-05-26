@@ -23,10 +23,10 @@
             .replace(/ /g, '') // Remove whitespace
             .replace(/-*$/, '') // Cannot end with -
             .replace(/^-*/, '') // Cannot begin with -
-            .replace(/Ã¥/g, 'a') // Ã¥ -> a
-            .replace(/Ã¤/g, 'a') // Ã¤ -> a
-            .replace(/Ã¶/g, 'o') // Ã¶ -> o
-            .replace(/http(s)?/g, '') // Ã¶ -> o
+            .replace(/å/g, 'a') // å -> a
+            .replace(/ä/g, 'a') // ä -> a
+            .replace(/ö/g, 'o') // ö -> o
+            .replace(/http(s)?/g, '') // Remove prefix
             .replace(/[^\w-]+/g, ''); // Remove non alphanumeric characters            
     }
 
