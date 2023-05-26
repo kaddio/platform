@@ -2,14 +2,16 @@ import type { Organization } from './types.js';
 
 export async function load({params, url, fetch}) : Promise<{organizations: Organization[], keyword: string}>{
   
-    const {keyword = "", place} = params;
-
-
+    const {keyword = "", place, page="0"} = params;
+    
+    const parsedPage = parseInt(page);
+    const ORGS_PER_PAGE = 12;
     const query = `
     query {
-        findOrganizations(keyword: "${keyword || ''}", geoQuery: "${place || ''}", limit: 10) {
+        findOrganizations(keyword: "${keyword || ''}", geoQuery: "${place || 'Sverige'}", skip: ${parsedPage*ORGS_PER_PAGE}, limit: ${ORGS_PER_PAGE}) {
           name,
           address,
+          addressString(geoQuery: "${place || ''}"),
           city,
           url,
           keywords,
@@ -34,16 +36,17 @@ export async function load({params, url, fetch}) : Promise<{organizations: Organ
     })
     
     if(!result.ok) {
-      console.log(result);
+      
       throw result;
     }
 
     const orgs = await result.json();
-console.log(orgs);
+
     return {
         organizations: orgs.data.findOrganizations,
         place,
         keyword,
+        page: parsedPage
     };
 
 }

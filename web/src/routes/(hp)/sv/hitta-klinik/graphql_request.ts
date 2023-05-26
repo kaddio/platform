@@ -30,6 +30,7 @@ export class KaddioMarketplaceApi {
                 findOrganizations(keyword: "${keyword}", limit: ${limit}) {
                 name,
                 address,
+                addressString,
                 city,
                 url,
                 keywords,
