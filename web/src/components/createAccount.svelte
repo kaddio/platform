@@ -30,7 +30,7 @@
         ['Någon annanstans', 'SE'],
     ].map(c => ({label: c[0], name: c[1]}))
 
-    let country = getRegion(countryCodeFromLang(getContext('lang'))).defaultCountryCode;
+    const defaultCountryCode = getRegion(countryCodeFromLang(getContext('lang'))).defaultCountryCode;
 </script>
 
 
@@ -95,7 +95,7 @@
 
                     <label for="countrycode" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Land')}</label>
 
-                    <select bind:value={country} id="countrycode" name="countrycode" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-oldpink sm:text-sm sm:leading-6">
+                    <select value={defaultCountryCode} id="countrycode" name="countrycode" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-oldpink sm:text-sm sm:leading-6">
                         {#each countries as country}
                             <option value={country.name}>{$_(country.label)}</option>
                         {/each}
