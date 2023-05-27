@@ -1,14 +1,15 @@
+import { dev } from "$app/environment";
+
 type Options = {
     format?: string,
     width?: number,
     fit?: string
 }
 
-export const imageHandler = function(src: string, options: Options): string{
+export const imageHandler = function(src: string, options: Options, isDevelopment: boolean = dev): string{
     if(!src || src.length == 0) return src;
 
-    // localhost
-    if(false){
+    if(isDevelopment){
         return src;
     }
 
