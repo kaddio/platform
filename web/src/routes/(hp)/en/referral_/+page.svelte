@@ -26,7 +26,7 @@
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
 
         <div class="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
-            <p>Earn with the referral link. By using this link when you create an account you'll automatically earn credits. It works like this:</p>
+            <p>Earn with the referral link. By using this link when you create an account you'll automatically earn credits.</p>
             <ul class="mt-8 max-w-xl space-y-8 text-gray-600">
             <li class="flex gap-x-3">
                 1
@@ -36,10 +36,10 @@
                 2
                 <span><strong class="font-semibold text-gray-900">Pay.</strong> Earn credits upon the first payment of your account.</span>
             </li>
-            <li class="flex gap-x-3">
+            <!-- <li class="flex gap-x-3">
                 3
-                <span><strong class="font-semibold text-gray-900">Get awards.</strong> Redeem your credits for awards<!--- in the Kaddio Referral Shop-->.</span>
-            </li>
+                <span><strong class="font-semibold text-gray-900">Get awards.</strong> Redeem your credits for awards in the Kaddio Referral Shop.</span>
+            </li> -->
             </ul>
             <!-- <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p> -->
 
