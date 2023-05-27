@@ -20,6 +20,8 @@
     let verifyState = false;
     let smsIsSent: boolean = false;
     let emailIsSent: boolean = false;
+
+    const preferredMethod; // Save this in localStorage
     
     $: verifyState = $page.form?.verified?.email && $page.form?.verified?.password && $page.form?.mustVerifyWithOneOf;
 
