@@ -46,7 +46,7 @@ srcset="
 				<h1 class="text-4xl font-normal tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver</h1>
 				<p class="mt-6 text-lg leading-8 font-light text-white">Webbaserat helhetssystem för dig som hjälper andra.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
-					<a href="https://demo.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
+					<a href="https://demo.kaddio.com/login-demo" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
 					<button on:click={() => (scroll('functions'))} class="text-sm font-semibold leading-6 text-white">Läs mer <span aria-hidden="true">→</span></button>
 				</div>
 			</div>
