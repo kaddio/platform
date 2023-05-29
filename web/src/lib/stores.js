@@ -12,7 +12,6 @@ if(browser){
     }
 
     token.subscribe(function(val){
-        console.log(val);
         if(val){
             sessionStorage.setItem('token', JSON.stringify(val));
         }
@@ -124,7 +123,7 @@ const translations = {
         es: 'Apellidos'
     },
     "E-post": {
-        en: 'Email',
+        en: 'Email address',
         es: 'Correo-e'
     },
     "Företagsnamn": {
