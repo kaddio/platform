@@ -5,7 +5,7 @@ export let signInStates = {};
 
 const f = async function(data){
     try{
-        const response = await fetch('https://ed33cb4da6f6.ngrok.app/api/token', {
+        const response = await fetch('https://0e8476be2a2f.ngrok.app/api/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,6 +36,7 @@ export const createOrUpdateState = function(stateToken, credentials){
 }
 
 const handleTokenResponse = function(credentials, {url}, redirect){
+    console.log(credentials)
     if(credentials?.token?.token){
         // throw redirect(301, `https://ed33cb4da6f6.ngrok.app/loginWithToken/${json.token.token}`);
 
@@ -76,10 +77,16 @@ export const verify = async function({request, url}){
         }
     }
 
-    // If has verification state too ...
-    let {credentials} = await f(jsonData);
+    if(signInStates[stateToken].smsVerificationCodes.includes(jsonData['verify-sms'])){
+        signInStates[stateToken].credentials.sms = true;
 
-    console.log(credentials)
+    }
+
+    console.log("Verify:")
+    console.log(signInStates[stateToken])
+
+    // If has verification state too ...
+    let {credentials} = await f(signInStates[stateToken]);
 
     handleTokenResponse(credentials, {url}, redirect);
 
@@ -96,7 +103,9 @@ export const signIn = async function({request, url}){
     const data = await request.formData();
     const jsonData = Object.fromEntries(data.entries());
 
-    let {credentials} = await f(jsonData);
+    let {credentials} = await f({
+        credentials: jsonData
+    });
 
     // console.log(jsonData)
 

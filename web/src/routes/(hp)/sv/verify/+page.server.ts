@@ -12,7 +12,7 @@ export const actions = {
 const safeCredentialsFromStateToken = function(stateToken: string){
     const credentials = signInStates[stateToken] || {};
 
-    console.log(credentials)
+    // console.log(credentials)
 
     return {
         verified: credentials.verified,
