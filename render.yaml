@@ -8,7 +8,6 @@ services:
      branch: master
      rootDir: web
      domains:
-      - next.kaddio.com
       - kaddio.com
      region: frankfurt
      envVars:
