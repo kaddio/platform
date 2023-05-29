@@ -10,7 +10,6 @@
 
     const region = getRegion($page.data.geo)
 
-    // $: console.log($regionBannerDismiss, geo, region, lang)
     $: showBannerComputed = ($regionBannerDismiss !== undefined && !$regionBannerDismiss) && geo && (region.lang !== lang);
 </script>
 
