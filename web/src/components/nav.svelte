@@ -3,6 +3,7 @@
 	import { _ } from "$lib/stores";
 	import Referral from "./referral-banner.svelte";
 	import LangBanner from "./lang-banner.svelte";
+	import StatusBanner from "./status-banner.svelte";
   const lang = getContext('lang');
 
   let show = false;
@@ -24,6 +25,7 @@
 <header class="relative inset-x-0 top-0 z-50">
 
   <LangBanner />
+  <StatusBanner />
   <Referral />
 
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
