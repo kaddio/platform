@@ -49,11 +49,27 @@ const handleTokenResponse = function(stateToken, {url}, redirect){
     }    
 }
 
-const sendSms = async function(stateToken){
+const addVerificationCode = function(stateToken: string, code: string): void{
+    if(!signInStates[stateToken].verificationCodes){
+        signInStates[stateToken].verificationCodes = [];
+    }
+
+    signInStates[stateToken].verificationCodes.push(code);
+}
+
+const sendSms = async function(stateToken: string){
     console.log('Emulate send sms... Code is 1234')
     const code = "1234";
 
-    signInStates[stateToken].smsVerificationCodes = [code];
+    addVerificationCode(stateToken, code)
+}
+
+
+const sendEmail = async function(stateToken: string){
+    console.log('Emulate send email... Code is 1234')
+    const code = "1234";
+
+    addVerificationCode(stateToken, code)
 }
 
 export const verify = async function({request, url}){
@@ -76,7 +92,7 @@ export const verify = async function({request, url}){
         }
     }
 
-    if(signInStates[stateToken].smsVerificationCodes.includes(jsonData['verify-sms'])){
+    if(signInStates[stateToken].verificationCodes.includes(jsonData['verify-sms'])){
         signInStates[stateToken].credentials.sms = true;
 
     }
@@ -110,18 +126,16 @@ export const signIn = async function({request, url}){
     const data = await request.formData();
     const jsonData = Object.fromEntries(data.entries());
 
-    console.log(jsonData)
-
     let {credentials, orgs} = await f({
         credentials: jsonData
     });
-
-    // console.log(jsonData)
 
     credentials = {
         ...credentials,
         credentials: jsonData
     }
+
+    console.log(credentials)
 
     // const stateToken = await url.searchParams.get("stateToken");
 
@@ -131,24 +145,25 @@ export const signIn = async function({request, url}){
 
     // handleTokenResponse(stateToken, {url}, redirect);
     
-    // Authenticated, redirect...
-    if(credentials?.token?.token){
+    // // Authenticated, redirect...
+    // if(credentials?.token?.token){
 
-        signInStates[credentials.stateToken].orgs = credentials.orgs;
-        // throw redirect(301, `https://ed33cb4da6f6.ngrok.app/loginWithToken/${json.token.token}`);
+    //     signInStates[credentials.stateToken].orgs = credentials.orgs;
+    //     // throw redirect(301, `https://ed33cb4da6f6.ngrok.app/loginWithToken/${json.token.token}`);
 
-        let destination = `/orgChooser?stateToken=${stateToken}`;
+    //     let destination = `/orgChooser?stateToken=${stateToken}`;
 
-        if (url.searchParams.has('redirectTo')) {
-            destination = `${url.searchParams.get('redirectTo')}/loginWithToken/${credentials.token.token}`;
-        }
+    //     if (url.searchParams.has('redirectTo')) {
+    //         destination = `${url.searchParams.get('redirectTo')}/loginWithToken/${credentials.token.token}`;
+    //     }
 
-        throw redirect(307, destination);
-    }
+    //     throw redirect(307, destination);
+    // }
 
     // Authenticated, must verify...
-    else if(credentials?.verified && credentials?.mustVerifyWithOneOf){
-        // console.log("User must now verify it's identity")
+    // if(credentials?.verified && credentials?.mustVerifyWithOneOf){
+    if(credentials?.token || credentials?.mustVerifyWithOneOf){
+            // console.log("User must now verify it's identity")
 
         // signInStates[stateToken].secret = "1234";
 

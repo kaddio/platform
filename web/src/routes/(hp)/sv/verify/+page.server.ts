@@ -15,6 +15,12 @@ export const actions = {
 export const load = async function({url}){
     const stateToken = url.searchParams.get('stateToken');
 
+    if(stateToken && signInStates[stateToken]?.token){
+        const destination = `/orgChooser?stateToken=${stateToken}`;
+
+        throw redirect(307, destination)       
+    }
+
     if(stateToken && signInStates[stateToken]){
         return safeCredentialsFromStateToken(stateToken, signIn);
     }
