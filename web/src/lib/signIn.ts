@@ -1,7 +1,5 @@
 import { fail, redirect } from '@sveltejs/kit';
-
-// Should reside in a database with expiration date etc. etc.
-export let signInStates = {};
+import { signInStates } from './sign-in-states';
 
 const f = async function(data){
     try{
@@ -35,12 +33,13 @@ export const createOrUpdateState = function(stateToken, credentials){
     signInStates[stateToken] = credentials;
 }
 
-const handleTokenResponse = function(credentials, {url}, redirect){
-    console.log(credentials)
+const handleTokenResponse = function(stateToken, {url}, redirect){
+    const credentials = signInStates[stateToken];
+    
     if(credentials?.token?.token){
         // throw redirect(301, `https://ed33cb4da6f6.ngrok.app/loginWithToken/${json.token.token}`);
 
-        let destination = `/orgChooser?stateToken=${credentials.token.token}`;
+        let destination = `/orgChooser?stateToken=${stateToken}`;
 
         if (url.searchParams.has('redirectTo')) {
             destination = `${url.searchParams.get('redirectTo')}/loginWithToken/${credentials.token.token}`;
@@ -88,7 +87,15 @@ export const verify = async function({request, url}){
     // If has verification state too ...
     let {credentials} = await f(signInStates[stateToken]);
 
-    handleTokenResponse(credentials, {url}, redirect);
+    if(credentials.token){
+        signInStates[stateToken] = {
+            ...signInStates[stateToken],
+            ...credentials
+        }
+    }
+
+
+    handleTokenResponse(stateToken, {url}, redirect);
 
     // else if(jsonData['verify-sms'] == signInStates[stateToken].secret){
     //     return {
@@ -103,7 +110,9 @@ export const signIn = async function({request, url}){
     const data = await request.formData();
     const jsonData = Object.fromEntries(data.entries());
 
-    let {credentials} = await f({
+    console.log(jsonData)
+
+    let {credentials, orgs} = await f({
         credentials: jsonData
     });
 
@@ -114,16 +123,21 @@ export const signIn = async function({request, url}){
         credentials: jsonData
     }
 
-    if(!credentials?.stateToken){
-        credentials.stateToken = crypto.randomUUID();
-        createOrUpdateState(credentials.stateToken, credentials)
-    }
+    // const stateToken = await url.searchParams.get("stateToken");
 
+    const stateToken = crypto.randomUUID();
+    signInStates[stateToken] = credentials;
+
+
+    // handleTokenResponse(stateToken, {url}, redirect);
+    
     // Authenticated, redirect...
     if(credentials?.token?.token){
+
+        signInStates[credentials.stateToken].orgs = credentials.orgs;
         // throw redirect(301, `https://ed33cb4da6f6.ngrok.app/loginWithToken/${json.token.token}`);
 
-        let destination = `/orgChooser?stateToken=${credentials.token.token}`;
+        let destination = `/orgChooser?stateToken=${stateToken}`;
 
         if (url.searchParams.has('redirectTo')) {
             destination = `${url.searchParams.get('redirectTo')}/loginWithToken/${credentials.token.token}`;
@@ -135,8 +149,6 @@ export const signIn = async function({request, url}){
     // Authenticated, must verify...
     else if(credentials?.verified && credentials?.mustVerifyWithOneOf){
         // console.log("User must now verify it's identity")
-
-        const stateToken = url.searchParams.get('stateToken') || crypto.randomUUID();
 
         // signInStates[stateToken].secret = "1234";
 

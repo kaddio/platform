@@ -1,5 +1,8 @@
-import { signInStates, verify } from '$lib/signIn.js'
-import { error, redirect } from '@sveltejs/kit';
+import { safeCredentialsFromStateToken } from '$lib/safe-credentials.js';
+import { signInStates } from '$lib/sign-in-states';
+import { signIn, verify } from '$lib/signIn.js';
+
+import { redirect } from '@sveltejs/kit';
 
 
 export const actions = {
@@ -9,21 +12,11 @@ export const actions = {
 }
 
 
-const safeCredentialsFromStateToken = function(stateToken: string){
-    const credentials = signInStates[stateToken] || {};
-
-    // console.log(credentials)
-
-    return {
-        verified: credentials.verified,
-        mustVerifyWithOneOf: credentials.mustVerifyWithOneOf
-    }
-}
 export const load = async function({url}){
     const stateToken = url.searchParams.get('stateToken');
 
     if(stateToken && signInStates[stateToken]){
-        return safeCredentialsFromStateToken(stateToken);
+        return safeCredentialsFromStateToken(stateToken, signIn);
     }
 
     throw redirect(307, '/sv/sign-in2')
