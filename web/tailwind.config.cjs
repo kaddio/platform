@@ -5,6 +5,13 @@ const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
+  safelist: [
+    'bg-white',
+    {
+      pattern: /bg-(gray|purple|green|red|teal|yellow)-(300|400|500|600|700|800)/,
+      variants:['hover']
+    },
+  ],
   theme: {
     // letterSpacing: {
     //   tight: defaultTheme.letterSpacing.wide
@@ -38,6 +45,28 @@ module.exports = {
         800: 'hsl(306, 10%, 91%)',
         900: 'hsl(306, 12%, 96%)'
       },
+      yellow: {
+        100:"hsl(38, 84%, 8%)",
+        200:"hsl(38, 84%, 15%)",
+        300:"hsl(38, 78%, 33%)",
+        400:"hsl(41, 65%, 52%)",
+        500:"hsl(41, 85%, 62%)",
+        600:"hsl(41, 85%, 72%)",
+        700:"hsl(41, 85%, 80%)",
+        800:"hsl(43, 85%, 87%)",
+        900:"hsl(41, 100%, 94%)"
+      },
+      teal: {
+        100:"hsl(196, 90%, 6%)",
+        200:"hsl(196, 45%, 14%)",
+        300:"hsl(194, 25%, 28%)",
+        400:"hsl(196, 22%, 42%)",
+        500:"hsl(196, 18%, 54%)",
+        600:"hsl(196, 16%, 70%)",
+        700:"hsl(196, 15%, 82%)",
+        800:"hsl(196, 15%, 90%)",
+        900:"hsl(196, 20%, 96%)"
+      },
       oldpink:  '#c38f9c',
       oldpinkdarker:  '#b16e7f',
     },
@@ -50,5 +79,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
 }

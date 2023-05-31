@@ -103,17 +103,21 @@
     }
 </script>
 <div class="w-sceen h-screen flex flex-col">
-<div class="bg-purple-400 p-6 text-white text-xl flex flex-row gap-5 align-middle">
-    <img src="https://next.kaddio.com/img/kaddio-logo.png" alt="" class="h-7">
-    Hitta klinik
+<div class="bg-purple-400 p-6 ">
+    <div class="container mx-auto text-white text-xl flex flex-row gap-5 align-middle">
+        <img src="https://next.kaddio.com/img/kaddio-logo.png" alt="" class="h-7">
+        Hitta klinik
+        <h1>{[data.keyword, data.place].filter(Boolean).join(" > ")}</h1>
+    </div>
+    
     
 </div>
 <div class="bg-gray-100 p-4 lg:p-12 pt-4 lg:pt-20 flex grow">
-    <div class="flex flex-col gap-10 lg:w-full lg:flex-row" >
-        <form method="get" class="p-0 w-full md:w-80 shrink-0 flex flex-col md:flex-row lg:flex-col gap-8 justify-start" bind:this={searchForm}>
-            <div class="flex flex-col">
+    <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto " >
+        <form method="get" class="p-0 grid grid-cols-2 gap-8 h-fit" bind:this={searchForm}>
+            <div class="flex flex-col col-span-2 md:col-span-1 lg:col-span-2">
                 <label class="font-semibold mb-2 ml-3 ">Sök</label>
-                <AutoComplete showClear={true} dropdownClassName="rounded py-2 px-3 border-none shadow" onChange={submit} itemClass="p-5" noInputStyles={true} inputClassName="rounded py-2 px-3 border-none w-full md:w-72 lg:w-full" minCharactersToSearch={0} placeholder="Sök" labelFunction={i => i?.label} searchFunction={autocompleteSearch} bind:selectedItem={selectedItem} delay={200}>
+                <AutoComplete showClear={true} dropdownClassName="rounded py-2 px-3 border-none shadow" onChange={submit} itemClass="p-5" noInputStyles={true} inputClassName="rounded py-2 px-3 border-none w-full" minCharactersToSearch={0} placeholder="Sök" labelFunction={i => i?.label} searchFunction={autocompleteSearch} bind:selectedItem={selectedItem} delay={200}>
                     <div slot="item" let:item let:label>
                         <div class="py-1">
                             {#if item.type=='KEYWORD'}
@@ -128,16 +132,16 @@
                         </div>
                     </div>
                 </AutoComplete>
-                <div class="px-4 py-3 flex flex-wrap gap-3 hidden md:flex">
+                <div class="px-4 py-3 flex flex-wrap gap-2 hidden md:flex">
                     {#each defaultKeywords as keyword}
                         <a class="text-xs text-gray-400" href on:click="{()=>selectedItem = {label: keyword}}">{keyword}</a>
                     {/each}
                 </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col col-span-2 md:col-span-1 lg:col-span-2">
                 <div class="flex flex-row justify-between mb-2 ml-3 items-baseline">
                     <label class="font-semibold ">Plats</label>
-                    <a class="text-xs text-gray-400 font-semibold md:hidden" href="" on:click={setMyLocation}>
+                    <a class="text-xs text-gray-400 font-semibold" href="" on:click={setMyLocation}>
                         Min plats
                         {#if loadingPlace}
                             <i class="fa-duotone fa-spinner-third fa-spin"></i>
@@ -147,7 +151,7 @@
                     </a>
                 </div>
                 
-                <AutoComplete showClear={true} dropdownClassName="rounded py-2 px-3 border-none shadow" onChange={submit} itemClass="p-5" labelFunction="{i => i?.name }" valueFunction="{i => i?.name}"noInputStyles={true} inputClassName="rounded py-2 px-3 border-none w-full md:w-72 lg:w-full" minCharactersToSearch={0} placeholder="Sök plats" searchFunction={autocompletePlace} bind:selectedItem={selectedPlace} delay={200}>
+                <AutoComplete showClear={true} dropdownClassName="rounded py-2 px-3 border-none shadow" onChange={submit} itemClass="p-5" labelFunction="{i => i?.name }" valueFunction="{i => i?.name}"noInputStyles={true} inputClassName="rounded py-2 px-3 border-none w-full" minCharactersToSearch={0} placeholder="Sök plats" searchFunction={autocompletePlace} bind:selectedItem={selectedPlace} delay={200}>
                     <div slot="item" let:item let:label>
                         <!-- {@html label} -->
                         <!-- to render the default higliglighted item label -->
@@ -157,17 +161,9 @@
                         </div>
                     </div>
                 </AutoComplete>
-                <div class="px-4 py-3 md:flex md:flex-wrap gap-3 hidden">
-                    <a class="text-xs text-gray-400 font-semibold" href on:click={setMyLocation}>
-                        Min plats 
-                        {#if loadingPlace}
-                            <i class="fa-duotone fa-spinner-third fa-spin"></i>
-                        {:else}
-                            <i class="fa fa-location-arrow"></i>
-                        {/if}
-                    </a>
+                <div class="px-4 py-3 md:flex md:flex-wrap gap-2 hidden">
                     {#each defaultPlaces as place}
-                        <a class="text-xs text-gray-400 font-semibold" href on:click={()=>selectedPlace = {name:place}}>{place}</a>
+                        <a class="text-xs text-gray-400" href on:click={()=>selectedPlace = {name:place}}>{place}</a>
                     {/each}
                 </div>
             </div>
@@ -175,16 +171,22 @@
         <div class="flex flex-col h-full grow">
             
             {#if data.organizations.length}
+            
                 <div class="flex justify-between">
                     <label class="font-semibold mb-2 ml-3">Sökresultat</label>
                 </div>        
-                <div class="flex gap-8 flex-wrap lg:mt-0">
-                    
+                <div class="lg:mt-0">
+                    <div class="grid grid-cols-12 gap-7">
                     {#each data.organizations as organization}
-                    <OrganizationCard organization={organization}></OrganizationCard>    
-                    {/each}
                     
+                    
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-4">
+                            <OrganizationCard organization={organization}></OrganizationCard>  
+                        </div>  
+                    {/each}        
+                    </div>
                 </div>
+            
                 <div class="flex flex-row justify-start gap-8">
                     <a href="" class="text-gray-500 font-semibold mt-2 ml-3" on:click={()=> data.page++}>Ladda fler</a>
                     
@@ -209,5 +211,7 @@
    .autocomplete-list-item.selected {
     @apply bg-purple-500;
   }
-   
+   /* :global(:root) {
+        font-size: 14px;
+   } */
 </style>

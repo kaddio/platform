@@ -12,7 +12,7 @@
     const addressString = [organization.address, organization.city].filter(Boolean).join(", ");
 </script>
 
-<Card className="w-full sm:w-72 h-80">
+<Card className="w-full h-80">
     <div class="w-full h-80">
         <div class="w-full h-1/2" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center">
             
