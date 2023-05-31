@@ -1,11 +1,6 @@
-<script lang="ts">
-	import Footer from "../components/footer.svelte";
-
-
+<script>
+	import '/src/app.css';
 </script>
 
-<div class="bg-white">
-	<slot />
-</div>
+<slot />
 
-<Footer />

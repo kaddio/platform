@@ -12,6 +12,9 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
 	kit: {
+		alias: {
+			"$components": "src/components"
+		},
 		adapter: adapter()
 	}
 };

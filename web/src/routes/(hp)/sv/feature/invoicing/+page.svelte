@@ -1,8 +1,8 @@
 <script>
-	import Qa from "../../../components/qa.svelte";
-	import ModuleFeature from "../../../components/moduleFeature.svelte";
-	import ModuleSection from "../../../components/moduleSection.svelte";
-	import FaqSection from "../../../components/faqSection.svelte";
+	import Qa from "$components/qa.svelte";
+	import ModuleFeature from "$components/moduleFeature.svelte";
+	import ModuleSection from "$components/moduleSection.svelte";
+	import FaqSection from "$components/faqSection.svelte";
 </script>
 
 <svelte:head>
@@ -26,13 +26,6 @@
 
 <FaqSection>
 	<span slot="title">Detaljer</span>
-
-	<Qa>
-		<span slot="q">Artiklar</span>
-		<span slot="a">
-			Duschtvål, handukar etc. Kaddio haz it got
-		</span>
-	</Qa>
 
 	<Qa>
 		<span slot="q">Fakturaunderlag</span>

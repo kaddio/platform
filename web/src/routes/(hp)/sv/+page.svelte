@@ -4,33 +4,50 @@
 	import PricesSv from './pricesSv.svelte';
 	import ReferencesSv from './referencesSv.svelte';
 	import { setContext } from 'svelte';
-	import Footer from '../components/footer.svelte';
+	import Footer from '$components/footer.svelte';
 	import SecuritySectionSv from './securitySectionSv.svelte';
-	import Nav from '../components/nav.svelte';
+	import Nav from '$components/nav.svelte';
 	import CrmSv from './crmSv.svelte';
 	import Testimonial from './testimonial.svelte';
+	import { scroll } from '$lib/scroll';
 
 	setContext('lang', 'sv');
+
+
+	/*** Idea...
+
+
+	src="https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false/https://next.kaddio.com/img/man.jpg" 
+
+srcset="
+   https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=640/https://next.kaddio.com/img/man.jpg 640w,
+	https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=960/https://next.kaddio.com/img/man.jpg 960w,
+	https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=1920/https://next.kaddio.com/img/man.jpg 1920w,
+	https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=2560/https://next.kaddio.com/img/man.jpg 2560w,
+"
+
+***/
+
 </script>
 
 <svelte:head>
-	<title>Kaddio - framtidens journalsystem</title>
-	<meta name="description" content="Kaddio - Webbaserat allt-i-allo-system för dig som hjälper andra" />
+	<title>Kaddio</title>
+	<meta name="description" content="Webbaserat helhetssystem för dig som hjälper andra" />
 </svelte:head>
 
 <div class="bg-white">
 	<Nav darkHeader={true} />
 
-	<div class="relative isolate overflow-hidden bg-gray-900 pt-14 pb-16 sm:pb-20">
+	<div class="relative -mt-24 isolate overflow-hidden bg-gray-900 pt-14 pb-16 sm:pb-20">
 		<img src="/img/man.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
 		<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 			<div class="text-center">
 				<h1 class="text-4xl font-normal tracking-tight text-white sm:text-6xl">Kaddio är allt du behöver</h1>
-				<p class="mt-6 text-lg leading-8 font-light text-white">Webbaserat allt-i-allo-system för dig som hjälper andra.</p>
+				<p class="mt-6 text-lg leading-8 font-light text-white">Webbaserat helhetssystem för dig som hjälper andra.</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
-					<a href="https://demo.kaddio.com/login" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
-					<a href="/sv/create" class="text-sm font-semibold leading-6 text-white">Skapa konto <span aria-hidden="true">→</span></a>
+					<a href="https://demo.kaddio.com/login-demo" target="_blank" rel="noreferrer" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400">Prova demo</a>
+					<button on:click={() => (scroll('functions'))} class="text-sm font-semibold leading-6 text-white">Läs mer <span aria-hidden="true">→</span></button>
 				</div>
 			</div>
 

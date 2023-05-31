@@ -1,0 +1,3 @@
+name = "image-resizer"
+main = "image-resizer/src/index.ts"
+compatibility_date = "2023-05-22"

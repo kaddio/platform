@@ -1,11 +1,11 @@
 <script lang="ts">	
 	import { setContext } from 'svelte';
-	import FaqSection from '../../components/faqSection.svelte';
-	import Qa from '../../components/qa.svelte';
-	import SimpleCentered from '../../components/simpleCentered.svelte';
-	import SimpleCenteredPiece from '../../components/simpleCenteredPiece.svelte';
-	import Footer from '../../components/footer.svelte';
-	import Nav from '../../components/nav.svelte';
+	import FaqSection from '$components/faqSection.svelte';
+	import Qa from '$components/qa.svelte';
+	import SimpleCentered from '$components/simpleCentered.svelte';
+	import SimpleCenteredPiece from '$components/simpleCenteredPiece.svelte';
+	import Footer from '$components/footer.svelte';
+	import Nav from '$components/nav.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -38,7 +38,7 @@
 			I Kaddios Hjälpcenter help.kaddio.com fyller vi kontinuerligt på med artiklar och svar på vanliga frågor.
 		</span>
 		<span slot="link">
-			<a href="https://help.kaddio.com/help" class="text-sm font-semibold leading-6 text-oldpink">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>	
 

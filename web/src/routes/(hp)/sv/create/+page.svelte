@@ -1,8 +1,8 @@
 <script lang="ts">	
-	import Header from '../headerSv.svelte';
 	import { setContext } from 'svelte';
-	import Footer from '../../components/footer.svelte';
-	import CreateAccount from '../../components/createAccount.svelte';
+	import Footer from '$components/footer.svelte';
+	import CreateAccount from '$components/createAccount.svelte';
+	import Nav from '$components/nav.svelte';
 	
 	setContext('lang', 'sv');
 
@@ -13,6 +13,6 @@
 	<meta name="description" content="Skapa konto" />
 </svelte:head>
 
-<Header />
+<Nav />
 <CreateAccount />
 <Footer />

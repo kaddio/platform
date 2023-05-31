@@ -1,8 +1,8 @@
 <script>
-	import Qa from "../../../components/qa.svelte";
-	import ModuleFeature from "../../../components/moduleFeature.svelte";
-	import ModuleSection from "../../../components/moduleSection.svelte";
-	import FaqSection from "../../../components/faqSection.svelte";
+	import Qa from "$components/qa.svelte";
+	import ModuleFeature from "$components/moduleFeature.svelte";
+	import ModuleSection from "$components/moduleSection.svelte";
+	import FaqSection from "$components/faqSection.svelte";
 </script>
 
 <svelte:head>
@@ -19,7 +19,7 @@
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
-	</ModuleFeature> -->
+	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Flexibelt.</span>
@@ -28,7 +28,7 @@
 Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
 	</ModuleFeature>
 
-	<!-- <ModuleFeature>
+	<ModuleFeature>
 		<span slot="title">Säkert.</span>
 		<span slot="body">
 			Behörighetsstyrning
@@ -37,9 +37,9 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</ModuleFeature> -->
 
 
-	
+
 </ModuleSection>
-  
+
 
 <FaqSection>
 	<span slot="title">Detaljer</span>
@@ -47,10 +47,10 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<Qa>
 		<span slot="q">Anteckningsmallar</span>
 		<span slot="a">
-			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj din egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
+			Skapa dina egna mallar för journalanteckningar så de passar din verksamhet. Välj dina egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer.
 		</span>
 	</Qa>
-	
+
 	<Qa>
 		<span slot="q">Journalformulär</span>
 		<span slot="a">
@@ -80,9 +80,16 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</Qa>
 
 	<Qa>
-		<span slot="q">Bild</span>
+		<span slot="q">Rita på standardbilder</span>
 		<span slot="a">
-			Rita på fram- och baksida av en människokropp för att dokumentera till exempel var klienten upplever smärta.
+			Rita på Kaddios standardbilder för att dokumentera till exempel var klienten upplever smärta.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Rita på egna bilder</span>
+		<span slot="a">
+			Ladda upp egna bilder att rita på så att det passar din verksamhet.
 		</span>
 	</Qa>
 

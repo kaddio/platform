@@ -1,11 +1,11 @@
 <script lang="ts">	
 	import { setContext } from 'svelte';
-	import FaqSection from '../../components/faqSection.svelte';
-	import Qa from '../../components/qa.svelte';
-	import SimpleCentered from '../../components/simpleCentered.svelte';
-	import SimpleCenteredPiece from '../../components/simpleCenteredPiece.svelte';
-	import Footer from '../../components/footer.svelte';
-	import Nav from '../../components/nav.svelte';
+	import FaqSection from '$components/faqSection.svelte';
+	import Qa from '$components/qa.svelte';
+	import SimpleCentered from '$components/simpleCentered.svelte';
+	import SimpleCenteredPiece from '$components/simpleCenteredPiece.svelte';
+	import Footer from '$components/footer.svelte';
+	import Nav from '$components/nav.svelte';
 	
 	setContext('lang', 'es');
 </script>
@@ -19,15 +19,15 @@
 
 <SimpleCentered>
 	<span slot="title">Contáctanos</span>
-	<span slot="sub">Estamos aquí para ayudar</span>
+	<span slot="sub">Estamos aquí para ayudarte</span>
 
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Centro de ayuda</span>
 		<span slot="body">
-			En el Centro de ayuda de Kaddio help.kaddio.com, estamos reabasteciendo continuamente los artículos y respuestas a preguntas comunes.
+			En el Centro de ayuda de Kaddio ayuda.kaddio.com, estamos reabasteciendo continuamente los artículos y respuestas a preguntas comunes.
 		</span>
 		<span slot="link">
-			<a href="https://help.kaddio.com/help" class="text-sm font-semibold leading-6 text-oldpink">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://ayuda.kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">ayuda.kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>	
 

@@ -70,12 +70,11 @@ module.exports = {
       oldpink:  '#c38f9c',
       oldpinkdarker:  '#b16e7f',
     },
-    extend: {
-      fontFamily: {
-        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
-      }
-    },
+    
+    fontFamily: {
+      // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

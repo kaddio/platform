@@ -1,8 +1,8 @@
 <script>
-	import Qa from "../../../components/qa.svelte";
-	import ModuleFeature from "../../../components/moduleFeature.svelte";
-	import ModuleSection from "../../../components/moduleSection.svelte";
-	import FaqSection from "../../../components/faqSection.svelte";
+	import Qa from "$components/qa.svelte";
+	import ModuleFeature from "$components/moduleFeature.svelte";
+	import ModuleSection from "$components/moduleSection.svelte";
+	import FaqSection from "$components/faqSection.svelte";
 </script>
 
 <svelte:head>
@@ -57,7 +57,7 @@
 	<Qa>
 		<span slot="q">Delegering</span>
 		<span slot="a">
-			Delegering
+			Delegera uppgifter till kollegor
 		</span>
 	</Qa>
 

@@ -50,6 +50,7 @@
 		"find-in-files": "^0.5.0",
 		"lodash": "^4.17.21",
 		"simple-svelte-autocomplete": "^2.5.2",
+		"schema-dts": "^1.1.2",
 		"typed.js": "^2.0.12"
 	}
 }

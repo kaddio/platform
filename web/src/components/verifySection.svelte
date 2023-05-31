@@ -1,0 +1,115 @@
+<script lang="ts">
+	import { getContext } from "svelte";
+	import { _ } from "$lib/stores";
+	import { enhance } from "$app/forms";
+	import { page } from "$app/stores";
+
+    let authMethod: string;
+
+
+    let emailIsSent: boolean = false;
+    $: stateToken = $page.url.searchParams.get('stateToken');
+    
+</script>
+
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <img class="mx-auto h-10 w-auto" src="/img/kaddio-black.png" alt="Kaddio logo">
+
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            Verify your identity
+        </h2>
+    </div>
+  
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" use:enhance method="POST">
+        
+        {JSON.stringify($page)}
+
+        <div>
+            <label for="authMethod" class="block text-sm font-medium leading-6 text-gray-900">Authentication method</label>
+            <select id="authMethod" bind:value={authMethod} name="authMethod" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <option value="sms">SMS</option>
+                <option value="totp">Authenticator</option>
+                <option value="email">Email</option>
+                <option value="webauthn">Build in a authenticator</option>
+            </select>
+        </div>
+
+        {#if authMethod == 'sms'}
+            {#if $page.form?.smsIsSent}
+                A verification code has been sent to your phone (...1810). Enter the code to continue and be redirected. For test use 1234
+
+                <div>
+                    <div class="flex items-center justify-between">
+                        <label for="verify-sms" class="block text-sm font-medium leading-6 text-gray-900">Code</label>
+                    </div>
+
+                    <div class="mt-2">
+                        <input id="verify-sms" name="verify-sms" type="text" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Verify</button>
+                </div>
+
+            {:else}
+                <p class="mt-3 text-sm leading-6 text-gray-600">
+                    Send an authentication code to device ending in nnn.
+                </p>
+
+                <input type="hidden" name="sendSms" value="1" />
+
+                <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send code</button>
+            {/if}
+        {/if}
+
+        {#if authMethod == 'totp'}
+            <div>
+                <div class="flex items-center justify-between">
+                    <label for="verify-totp" class="block text-sm font-medium leading-6 text-gray-900">Code</label>
+                </div>
+
+                <div class="mt-2">
+                    <input id="verify-totp" name="verify-totp" type="text" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        {/if}
+
+
+        {#if authMethod == 'email'}
+            {#if $page.form?.smsIsSent}
+                A verification code has been sent to your phone (...1810). Enter the code to continue and be redirected. For test use 1234
+
+                <div>
+                    <div class="flex items-center justify-between">
+                        <label for="verify-sms" class="block text-sm font-medium leading-6 text-gray-900">Code</label>
+                    </div>
+
+                    <div class="mt-2">
+                        <input id="verify-sms" name="verify-sms" type="text" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Verify</button>
+                </div>
+
+            {:else}
+                <p class="mt-3 text-sm leading-6 text-gray-600">
+                    Send a verification code to n...n@nnn.nn.
+                </p>
+
+                <input type="hidden" name="sendEmail" value="1" />
+
+                <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send code</button>
+            {/if}
+        {/if}
+
+    </form>
+
+
+    </div>
+  </div>
+  

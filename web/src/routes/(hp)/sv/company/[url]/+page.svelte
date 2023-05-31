@@ -10,16 +10,30 @@
 	import KdItem from "../../../../../components/kdItem.svelte";
 	import { groupBy } from "lodash";
 	import Gallery from "./components/gallery.svelte";
-	
+    import { websiteSchema } from "$lib/json-ld";
+	import LdTag from "$lib/components/LDTag.svelte";
+	import { json } from "@sveltejs/kit";
     export let data;
-    const organization = data.organization;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
+    const organization = data.organization;
 
+    if(data.orgData){
+        schema = {
+            ...websiteSchema,
+            name: "Kaddio ...",
+            description: `This is Kadd`
+        }
+    }
+    
     const nextTime = dayjs(organization.nextFreeTime).fromNow()
     
     const bookingTypes = groupBy(organization.bookingTypes, 'categoryName');
+    
+    let schema = websiteSchema;
+
 </script>
+
 <div class="w-screen h-full bg-gray-100">
     <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 relative p-8" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center;">
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">

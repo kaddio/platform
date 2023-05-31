@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
-	import { token } from '../../../stores.js';
+	import { token } from '$lib/stores.js';
 
     export let data;
 
-    if(data.referrerData){
+    if(Object.keys(data.referrerData).length > 0){
         $token = data.referrerData;
     }
 
@@ -14,3 +14,7 @@
     }
 
 </script>
+
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
