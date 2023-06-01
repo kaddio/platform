@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { Size, Variant } from "../../../../../../components/common_types";
 	import KdItem from "../../../../../../components/kdItem.svelte";
-	import KdButton from "../../../../../../components/kdbutton.svelte";
+	
     import dayjs from 'dayjs';
+	import KdLinkButton from "../../../../../../components/kdLinkButton.svelte";
     
     export let hosts: any[];
     
@@ -26,7 +27,7 @@
             {/if}
         </span>
         <span slot="action">
-            <KdButton size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdButton>
+            <KdLinkButton href="{host.bookingLink}" size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdLinkButton>
         </span>
     </KdItem>
 {/each}

@@ -4,6 +4,7 @@
 	import KdButton from "../../../../../../components/kdbutton.svelte";
     import dayjs from 'dayjs';
 	import { Size, Variant } from "../../../../../../components/common_types";
+	import KdLinkButton from "../../../../../../components/kdLinkButton.svelte";
     
     export let bookingTypes: any[];
     const groupedDookingTypes = groupBy(bookingTypes, 'categoryName');
@@ -26,7 +27,7 @@
                 {/if}
             </span>
             <span slot="action">
-                <KdButton size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdButton>
+                <KdLinkButton href="{bookingType.bookingLink}" size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdLinkButton>
             </span>
         </KdItem>
     {/each}

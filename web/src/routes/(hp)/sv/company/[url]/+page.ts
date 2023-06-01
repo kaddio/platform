@@ -10,16 +10,19 @@ export async function load({ params, fetch }) {
                     stars,
                     address,
                     city,
+                    bookingLink
                     places {
                         name
                         address,
                         city
+                        bookingLink
                     }
                     bookingTypes {
                         name
                         categoryName
                         price
                         clientVisibleLength
+                        bookingLink
                     }
                     homepage {
                         headerImg
@@ -31,6 +34,7 @@ export async function load({ params, fetch }) {
                         lastname
                         imgUrl
                         nextFreeTime
+                        bookingLink
                     }
                 }
             }

@@ -16,6 +16,7 @@
 	import BookingTypes from "./components/booking_types.svelte";
 	import Hosts from "./components/hosts.svelte";
 	import Link from "./components/link.svelte";
+	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
@@ -39,9 +40,12 @@
 
 <div class="w-screen h-full bg-gray-100 pb-8">
     <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 relative p-8" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center;">
+        <div class="overlay"></div>
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
-                <div></div>
+                <div>
+                    <img src="/img/kaddio-logo.png" alt="" class="h-7">
+                </div>
                 <KdButton  variant={Variant.LIGHT} color={Color.DEFAULT}>Logga in</KdButton>
             </div>
 
@@ -61,7 +65,7 @@
             <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
                 <a class="text-sm uppercase text-gray-500 font-semibold">Platser</a>
                 <a class="text-sm uppercase text-gray-500 font-semibold">Behandlingar</a>
-                <a class="text-sm uppercase text-gray-500 font-semibold">Behandlare</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
                 <a class="text-sm uppercase text-gray-500 font-semibold">
                     Omdömen
                     <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
@@ -92,7 +96,9 @@
                                 {place.name} <small class="text-gray-500">{place.address}</small>
                             </span>
                             
-                            <span slot="action"><KdButton size={Size.SM} variant={Variant.OUTLINE}}>Boka</KdButton></span>
+                            <span slot="action">
+                                <KdLinkButton size={Size.SM} variant={Variant.OUTLINE} href="">Boka</KdLinkButton>
+                            </span>
                         </KdItem>
                     {/each}
                 </div>
@@ -102,7 +108,7 @@
     </div>
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         <Card className="flex flex-col gap-5  p-5 col-span-1 ">
-            <a class="text-sm uppercase text-gray-500 font-semibold">Behandlare</a>
+            <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
             <Hosts hosts={organization.hosts}></Hosts>
         </Card>
         
@@ -118,3 +124,14 @@
         Kaddio
     </div>
 </footer>
+<style>
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.5567620798319328) 100%);
+}
+</style>
