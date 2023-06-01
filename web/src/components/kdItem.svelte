@@ -10,7 +10,7 @@
     <!-- <div  class="kd-item-icon"><slot name="avatar"></slot></div> -->
     <div class=" flex flex-col gap-1 grow">
         <div ><slot name="title"></slot></div>
-        <div class="text-sm text-gray-400"> <slot name="subtitle"></slot></div>
+        <div class="text-sm text-gray-400 font-semibold"> <slot name="subtitle"></slot></div>
     </div>
     
     <div ><slot name="action"></slot></div>

@@ -8,23 +8,26 @@
 	import KdButton from "../../../../../components/kdButton.svelte";
 	import { Color, Size, Variant } from "../../../../../components/common_types";
 	import KdItem from "../../../../../components/kdItem.svelte";
-	import { groupBy } from "lodash";
+	import { groupBy, size } from "lodash";
 	import Gallery from "./components/gallery.svelte";
     import { websiteSchema } from "$lib/json-ld";
 	import LdTag from "$lib/components/LDTag.svelte";
 	import { json } from "@sveltejs/kit";
+	import BookingTypes from "./components/booking_types.svelte";
+	import Hosts from "./components/hosts.svelte";
+	import Link from "./components/link.svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
     const organization = data.organization;
 
-    if(data.orgData){
-        schema = {
-            ...websiteSchema,
-            name: "Kaddio ...",
-            description: `This is Kadd`
-        }
-    }
+    // if(data.orgData){
+    //     schema = {
+    //         ...websiteSchema,
+    //         name: "Kaddio ...",
+    //         description: `This is Kadd`
+    //     }
+    // }
     
     const nextTime = dayjs(organization.nextFreeTime).fromNow()
     
@@ -34,7 +37,7 @@
 
 </script>
 
-<div class="w-screen h-full bg-gray-100">
+<div class="w-screen h-full bg-gray-100 pb-8">
     <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 relative p-8" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center;">
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
@@ -54,80 +57,64 @@
     </div>
     </div>
     <div class="">
-        <div class=" bg-white">
+        <div class="bg-white">
             <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
-            <a class="text-sm uppercase text-gray-500 font-semibold">Platser</a>
-            <a class="text-sm uppercase text-gray-500 font-semibold">Behandlingar</a>
-            <a class="text-sm uppercase text-gray-500 font-semibold">Behandlare</a>
-            <a class="text-sm uppercase text-gray-500 font-semibold">
-                Omdömen
-                <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
-                <i class="fa fa-star text-yellow-500"></i>
-            </a>
+                <a class="text-sm uppercase text-gray-500 font-semibold">Platser</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold">Behandlingar</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold">Behandlare</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold">
+                    Omdömen
+                    <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
+                    <i class="fa fa-star text-yellow-500"></i>
+                </a>
+            </div>
         </div>
-        </div>
-        <div class="flex gap-8 mt-8 max-w-screen-lg mx-auto">
-            <div>
-            <Card className="grow max-w-prose ">
-                <div class="prose line-clamp-6 p-8">
+        <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5">
+            <Card className="grow col-span-3">
+                <div class="prose p-8 max-h-96">
                     {@html organization.homepage?.presentation}
                     <a href="">Läs mer</a>
+                </div>    
+            </Card>
+        
+            <Card className="flex flex-col gap-4 col-span-2">
+                <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
+                <div class="flex flex-col gap-4 my-8 mx-8">
+                    <Link href="http://insta.com" type="instagram"></Link>
+                    <Link href="http://external.com" type="external"></Link>
+                    <Link href="http://fb.com" type="facebook"></Link>
                 </div>
-                
                 <Gallery imageSrcs={organization.homepage.pics}></Gallery>
-            </Card>
-            
-        </div>
-            <div class="flex flex-col gap-8">
-            <Card className="flex flex-col gap-5 grow p-5 w-96 max-h-96 overflow-scroll">
-                {#each organization.hosts as host} 
-                    
-                        <KdItem>
-                            <img src={host.imgUrl} slot="avatar" />
-                            <span slot="title">
-                                {host.firstname} {host.lastname}
-                            </span>
-                            <span slot="subtitle">
-                                {#if host.nextFreeTime}
-                                    {dayjs(host.nextFreeTime).fromNow()}
-                                {:else}
-                                    Inga lediga tider
-                                {/if}
-                            </span>
-                            <span slot="action">
-                                <KdButton size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdButton>
-                            </span>
-                        </KdItem>
-                        
-                 
-                {/each}
-            </Card>
-            
-            <Card className="flex flex-col gap-5 grow p-5 w-96 max-h-96 overflow-scroll">
-                {#each Object.entries(bookingTypes) as [category, bookingTypesInCategory]} 
-                    <span class="uppercase text-gray-400 text-sm font-semibold">{category || ""}</span>
-                    {#each bookingTypesInCategory as bookingType}                         
+                <div class="flex flex-col gap-4  p-8 max-h-96 overflow-scroll">
+                    {#each organization.places as place} 
                         <KdItem>
                             <span slot="title">
-                                {bookingType.name}
+                                {place.name} <small class="text-gray-500">{place.address}</small>
                             </span>
-                            <span slot="subtitle">
-                                {bookingType.clientVisibleLength} min · {bookingType.price} kr
-                                {#if bookingType.nextFreeTime}
-                                    {dayjs(bookingType.nextFreeTime).fromNow()}
-                                {:else}
-                                    Inga lediga tider
-                                {/if}
-                            </span>
-                            <span slot="action">
-                                <KdButton size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdButton>
-                            </span>
+                            
+                            <span slot="action"><KdButton size={Size.SM} variant={Variant.OUTLINE}}>Boka</KdButton></span>
                         </KdItem>
                     {/each}
-
-                {/each}
+                </div>
+                
             </Card>
         </div>
-        </div>
+    </div>
+    <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
+        <Card className="flex flex-col gap-5  p-5 col-span-1 ">
+            <a class="text-sm uppercase text-gray-500 font-semibold">Behandlare</a>
+            <Hosts hosts={organization.hosts}></Hosts>
+        </Card>
+        
+        <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-1 ">
+            <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
+            <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
+        </Card>
     </div>
 </div>
+
+<footer class="bg-gray-200">
+    <div class="max-w-screen-lg mx-auto py-8">
+        Kaddio
+    </div>
+</footer>

@@ -8,8 +8,12 @@ export async function load({ params, fetch }) {
                 findOrganization(url: "${params.url}") {
                     name,
                     stars,
+                    address,
+                    city,
                     places {
                         name
+                        address,
+                        city
                     }
                     bookingTypes {
                         name
