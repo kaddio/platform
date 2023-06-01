@@ -38,6 +38,10 @@
 
 </script>
 
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
+
 <div class="w-screen h-full bg-gray-100 pb-8">
     <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 relative p-8" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center;">
         <div class="overlay"></div>
