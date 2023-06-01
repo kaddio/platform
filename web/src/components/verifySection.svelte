@@ -7,10 +7,11 @@
     let authMethod: string;
 
 
-    let emailIsSent: boolean = false;
+    let codeIsSent: boolean = false;
     $: stateToken = $page.url.searchParams.get('stateToken');
     
 </script>
+
 
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -37,7 +38,7 @@
         </div>
 
         {#if authMethod == 'sms'}
-            {#if $page.form?.smsIsSent}
+            {#if $page.form?.codeIsSent}
                 A verification code has been sent to your phone (...1810). Enter the code to continue and be redirected. For test use 1234
 
                 <div>
@@ -79,7 +80,7 @@
 
 
         {#if authMethod == 'email'}
-            {#if $page.form?.smsIsSent}
+            {#if $page.form?.codeIsSent}
                 A verification code has been sent to your phone (...1810). Enter the code to continue and be redirected. For test use 1234
 
                 <div>
