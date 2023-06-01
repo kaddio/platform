@@ -3,13 +3,10 @@
 	import { _ } from "$lib/stores";
 	import { enhance } from "$app/forms";
 	import { page } from "$app/stores";
+    const lang = getContext('lang');
 
     let authMethod: string;
 
-
-    let codeIsSent: boolean = false;
-    $: stateToken = $page.url.searchParams.get('stateToken');
-    
 </script>
 
 
@@ -18,7 +15,7 @@
       <img class="mx-auto h-10 w-auto" src="/img/kaddio-black.png" alt="Kaddio logo">
 
         <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Verify your identity
+            {$_('Verifiera identitet')}
         </h2>
     </div>
   
@@ -30,12 +27,13 @@
         <div>
             <label for="authMethod" class="block text-sm font-medium leading-6 text-gray-900">Authentication method</label>
             <select id="authMethod" bind:value={authMethod} name="authMethod" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                <option value="sms">SMS</option>
-                <option value="totp">Authenticator</option>
-                <option value="email">Email</option>
-                <option value="webauthn">Build in a authenticator</option>
+                <option disabled={!$page.data.mustVerifyWithOneOf.sms || null} value="sms">SMS</option>
+                <option disabled={!$page.data.mustVerifyWithOneOf.totp || null} value="totp">Authenticator</option>
+                <option disabled={!$page.data.mustVerifyWithOneOf.email || null} value="email">Email</option>
+                <option disabled={!$page.data.mustVerifyWithOneOf.webauthn || null} value="webauthn">Built in authenticator</option>
             </select>
         </div>
+
 
         {#if authMethod == 'sms'}
             {#if $page.form?.codeIsSent}

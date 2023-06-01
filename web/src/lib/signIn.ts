@@ -81,6 +81,7 @@ export const verify = async function({request, url}){
     if(!stateToken || !signInStates[stateToken]){
         return fail(400);
     }
+    
 
     if(jsonData.sendSms){
         sendSms(stateToken);
