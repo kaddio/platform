@@ -6,6 +6,7 @@
   
 	import type { PageData } from "../../../$types";
 	import OrganizationCard from "../../../components/organizationCard.svelte";
+	import { apiUrl } from "$lib/apiUrl";
 
     export let data: PageData;
     let searchForm: HTMLFormElement;
@@ -36,7 +37,7 @@
             }
         }
         `;
-        const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+        const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
             method: 'POST',
             body: JSON.stringify({query}),
             headers: {
@@ -61,7 +62,7 @@
             }
         }
         `;
-        const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+        const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
             method: 'POST',
             body: JSON.stringify({query}),
             headers: {

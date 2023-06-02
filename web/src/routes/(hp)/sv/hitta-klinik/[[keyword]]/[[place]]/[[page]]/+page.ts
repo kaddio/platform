@@ -1,3 +1,4 @@
+import { apiUrl } from '$lib/apiUrl.js';
 import type { Organization } from './types.js';
 
 export async function load({params, url, fetch}) : Promise<{organizations: Organization[], keyword: string}>{
@@ -26,8 +27,8 @@ export async function load({params, url, fetch}) : Promise<{organizations: Organ
         }
       }
     `;
-    
-    const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+
+    const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
         body: JSON.stringify({query}),
         headers: {

@@ -1,7 +1,8 @@
+import { apiUrl } from '$lib/apiUrl.js'
 
 export async function load({ params, fetch }) {
 
-    const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+    const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
         body: JSON.stringify({query: `
             query {

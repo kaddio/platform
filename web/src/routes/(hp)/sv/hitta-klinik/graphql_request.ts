@@ -1,11 +1,12 @@
 import type { HandleFetch } from "@sveltejs/kit";
 import { Organization } from "./types";
+import { apiUrl } from "$lib/apiUrl";
 
 export const grapqhlApi = async function<T>(
     query: string,
     fetch
 ): Promise<T> {
-    const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+    const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
         body: JSON.stringify({query}),
         headers: {
