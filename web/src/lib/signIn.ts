@@ -3,7 +3,7 @@ import { signInStates } from './sign-in-states';
 
 const f = async function(data){
     try{
-        const response = await fetch('https://0e8476be2a2f.ngrok.app/api/token', {
+        const response = await fetch('http://127.0.0.1:3000/api/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
