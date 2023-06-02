@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Card from "../../../../../components/card.svelte";
-	import Kdbutton from "../../../../../components/kdButton.svelte";
 	import type { Organization } from "../types";
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
