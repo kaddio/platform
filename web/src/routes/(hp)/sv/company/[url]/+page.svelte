@@ -4,8 +4,8 @@
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
-	import KdButton from "../../../../../components/kdButton.svelte";
-	import { Color, Size, Variant } from "../../../../../components/common_types";
+
+    import { Color, Size, Variant } from "../../../../../components/common_types";
 	import KdItem from "../../../../../components/kdItem.svelte";
 	import { groupBy, size } from "lodash";
 	import Gallery from "./components/gallery.svelte";
@@ -16,6 +16,7 @@
 	import Hosts from "./components/hosts.svelte";
 	import Link from "./components/link.svelte";
 	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
+	import Kdbutton from "$components/kdbutton.svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
@@ -49,7 +50,7 @@
                 <div>
                     <img src="/img/kaddio-logo.png" alt="" class="h-7">
                 </div>
-                <KdButton  variant={Variant.LIGHT} color={Color.DEFAULT}>Logga in</KdButton>
+                <Kdbutton  variant={Variant.LIGHT} color={Color.DEFAULT}>Logga in</Kdbutton>
             </div>
 
             
