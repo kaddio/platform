@@ -5,7 +5,7 @@ type SignInStatesTypes = {
     mustVerifyWithOneOf?: object,
     credentials?: object,
     verificationCodes?: [string],
-    smsIsSent?: boolean,
+    codeIsSent?: boolean
     token?: object,
     orgs?: [object]
 }

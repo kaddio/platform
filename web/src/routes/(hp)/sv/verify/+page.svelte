@@ -2,8 +2,6 @@
 	import VerifySection from "$components/verifySection.svelte";
 	import { setContext } from "svelte";
 	setContext('lang', 'sv');
-
-
 </script>
 
 <svelte:head>

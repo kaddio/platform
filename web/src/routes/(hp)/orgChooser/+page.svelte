@@ -12,4 +12,8 @@
 
 Hej här är dina organisationer: 
 
-{JSON.stringify($page)}
+{#each $page.data.orgs as org}
+
+	<a href=https://{org.url}.kaddio.com>{org.name} ({org.url})</a>
+	
+{/each}

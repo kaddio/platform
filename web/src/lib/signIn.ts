@@ -81,14 +81,25 @@ export const verify = async function({request, url}){
     if(!stateToken || !signInStates[stateToken]){
         return fail(400);
     }
+    
 
     if(jsonData.sendSms){
         sendSms(stateToken);
 
-        signInStates[stateToken].smsIsSent = true;
+        signInStates[stateToken].codeIsSent = true;
 
         return {
-            smsIsSent: true
+            codeIsSent: true
+        }
+    }
+
+    if(jsonData.sendEmail){
+        sendEmail(stateToken);
+
+        signInStates[stateToken].codeIsSent = true;
+
+        return {
+            codeIsSent: true
         }
     }
 

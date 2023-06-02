@@ -201,6 +201,10 @@ const translations = {
     "Kaddio Hjälpcenter": {
         en: "Visit Help Center",
         es: 'Centro de ayuda de Kaddio'
+    },
+    "Verifiera identitet": {
+        en: "Verify your identity",
+        es: "Verify your identity",
     }
 }
 
