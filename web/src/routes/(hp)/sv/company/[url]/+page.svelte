@@ -16,7 +16,7 @@
 	import Hosts from "./components/hosts.svelte";
 	import Link from "./components/link.svelte";
 	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
-	import KdButton from "$components/kdButton.svelte";
+	import KdButton from "$components/kd-button.svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
