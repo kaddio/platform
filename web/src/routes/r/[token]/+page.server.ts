@@ -1,11 +1,11 @@
+import { apiUrl } from "$lib/apiUrl"
 
 async function referrerData(token: string){
-    const url = 'https://api.kaddio.com/api/referrer?' + new URLSearchParams({token});
+    const url = `${apiUrl()}/api/referrer?` + new URLSearchParams({token});
 
     console.log(`token: ${token}`)
 
     try {
-        // 'http://127.0.0.1:3000/api/referrer';
         const response = await fetch(url);
         const data = await response.json();
 
