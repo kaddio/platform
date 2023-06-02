@@ -142,5 +142,10 @@ enligt GDPR.
         <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Lena Nyberg</strong> - Chief Information Officer</div>
       </figcaption>
     </figure> -->
+
+    <LegalParagraph>
+      <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/Third-Party-Subprocessors">Third-Party Subprocessors <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
+    </LegalParagraph>
+
 </Legal>
 

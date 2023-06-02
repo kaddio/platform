@@ -37,7 +37,7 @@
 
         {#if authMethod == 'sms'}
             {#if $page.form?.codeIsSent}
-                A verification code has been sent to your phone (...1810). Enter the code to continue and be redirected. For test use 1234
+                A verification code has been sent to your phone. Enter the code to continue and be redirected. For test use 1234
 
                 <div>
                     <div class="flex items-center justify-between">
