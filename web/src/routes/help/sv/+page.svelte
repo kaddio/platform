@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from "../../../card.svelte";
+	import Card from "$components/card.svelte";
 	import HelpArticleLink from "../help-article-link.svelte";
     import type { PageData } from "./$types";
 
