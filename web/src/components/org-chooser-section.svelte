@@ -2,7 +2,8 @@
 	import { page } from "$app/stores";
 	import { _ } from "$lib/stores";
 	import OrgChooserOrgSection from "./org-chooser-org-section.svelte";
-    const orgs = $page.data.orgs;
+
+    //      <OrgChooserOrgSection name={org.name} url={org.url} roles={org.roles} logoUrl={'https://kaddio.com/cdn-cgi/image/width=256,fit=contain,format=auto,metadata=none,quality=80,anim=false/' + org.logoUrl} />
 </script>
 
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -14,10 +15,11 @@
         </h2>
     </div>
 
-    <ul class="divide-y divide-gray-100">
+    <ul class="mt-10 divide-y divide-gray-100">
 
+        
         {#each $page.data.orgs as org}
-            <OrgChooserOrgSection name={org.name} url={org.url} roles={org.roles} />
+            <OrgChooserOrgSection name={org.name} url={org.url} roles={org.roles} logoUrl={'' + org.logoUrl} />
             
         {/each}
 

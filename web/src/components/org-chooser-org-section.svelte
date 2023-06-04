@@ -15,7 +15,7 @@
         <div class="px-4 sm:px-6 lg:px-8">
           <div class="mx-auto flex max-w-4xl justify-between gap-x-6">
             <div class="flex gap-x-4">
-              <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src={logoUrl} alt="">
+              <img class="h-12 w-12 flex-none rounded-full bg-gray-300" src={logoUrl} alt="">
               <div class="min-w-0 flex-auto">
                 <p class="text-sm font-semibold leading-6 text-gray-900">
                   <a href={computedUrl}>

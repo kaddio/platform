@@ -79,7 +79,7 @@
 
         {#if authMethod == 'email'}
             {#if $page.form?.codeIsSent}
-                A verification code has been sent to your phone (...1810). Enter the code to continue and be redirected. For test use 1234
+                A verification code has been sent to your email. Enter the code to continue and be redirected. For test use 1234
 
                 <div>
                     <div class="flex items-center justify-between">
@@ -92,17 +92,17 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Verify</button>
+                    <button type="submit" class="flex w-full justify-center rounded-md bg-oldpink px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink">Verify</button>
                 </div>
 
             {:else}
                 <p class="mt-3 text-sm leading-6 text-gray-600">
-                    Send a verification code to n...n@nnn.nn.
+                    Send a verification code to your email
                 </p>
 
                 <input type="hidden" name="sendEmail" value="1" />
 
-                <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send code</button>
+                <button type="submit" class="flex w-full justify-center rounded-md bg-oldpink px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink">Send code</button>
             {/if}
         {/if}
 
