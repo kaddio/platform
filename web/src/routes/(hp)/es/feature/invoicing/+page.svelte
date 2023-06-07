@@ -56,7 +56,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Factura Electrónica</span>
+		<span slot="q">Factura electrónica</span>
 		<span slot="a">
 			Envía facturas electrónicas con Kaddio según el estándar de la UE PEPPOL.
 		</span>
