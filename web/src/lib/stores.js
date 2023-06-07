@@ -112,7 +112,7 @@ const translations = {
     },
     "Kostnadsfritt i 1 månad.": {
         en: 'Free for one month.',
-        es: 'Gratis por un mes',
+        es: 'Gratis por un mes.',
     },
     "Förnamn": {
         en: 'Firstname',
