@@ -205,6 +205,10 @@ const translations = {
     "Verifiera identitet": {
         en: "Verify your identity",
         es: "Verify your identity",
+    },
+    "Ev. rabattkod löser du in i Kaddio efter att du startat ditt konto.": {
+        en: "You redeem the discount code in Kaddio after you have created your account.",
+        es: "Canjea el código de descuento promocional en Kaddio después de haber creado tu cuenta.",
     }
 }
 
