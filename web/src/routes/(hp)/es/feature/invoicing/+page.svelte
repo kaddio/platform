@@ -65,7 +65,7 @@
 	<Qa>
 		<span slot="q">Co-facturación</span>
 		<span slot="a">
-			Factura varios clientes a una misma empresa, como una grupo o una compañía de seguros.
+			Factura varios clientes a una misma empresa, como un grupo o una compañía de seguros.
 		</span>
 	</Qa>
 
