@@ -1,9 +1,10 @@
 import { fail, redirect } from '@sveltejs/kit';
 import { signInStates } from './sign-in-states';
+import { apiUrl } from './apiUrl';
 
 const f = async function(data){
     try{
-        const response = await fetch('https://0e8476be2a2f.ngrok.app/api/token', {
+        const response = await fetch('http://127.0.0.1:3000/api/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -58,16 +59,72 @@ const addVerificationCode = function(stateToken: string, code: string): void{
 }
 
 const sendSms = async function(stateToken: string){
+    if(!signInStates[stateToken].sms){
+        return
+    }
+
+    const number = signInStates[stateToken].sms[0];
+
+    const code = '1234';
+    const message = `Your One-time code is ${code}`;
     console.log('Emulate send sms... Code is 1234')
-    const code = "1234";
+
+    try{
+        const response = await fetch(apiUrl() + '/api/sendSms', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message,
+                number
+            })
+        });
+        
+        const json = await response.json();
+        console.log(json);
+
+    }
+
+    catch(e){
+        console.log('error')
+        console.log(e);
+    }
 
     addVerificationCode(stateToken, code)
 }
 
 
 const sendEmail = async function(stateToken: string){
-    console.log('Emulate send email... Code is 1234')
-    const code = "1234";
+    if(!signInStates[stateToken].sms){
+        return
+    }
+
+    const email = signInStates[stateToken].email[0];
+
+    const code = '1234';
+    const message = `Your One-time code is ${code}`;
+
+    try{
+        const response = await fetch(apiUrl() + '/api/sendEmail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message,
+                email
+            })
+        });
+        
+        // const json = await response.json();
+
+    }
+
+    catch(e){
+        console.log('error')
+        console.log(e);
+    }
 
     addVerificationCode(stateToken, code)
 }
@@ -81,14 +138,25 @@ export const verify = async function({request, url}){
     if(!stateToken || !signInStates[stateToken]){
         return fail(400);
     }
+    
 
     if(jsonData.sendSms){
         sendSms(stateToken);
 
-        signInStates[stateToken].smsIsSent = true;
+        signInStates[stateToken].codeIsSent = true;
 
         return {
-            smsIsSent: true
+            codeIsSent: true
+        }
+    }
+
+    if(jsonData.sendEmail){
+        sendEmail(stateToken);
+
+        signInStates[stateToken].codeIsSent = true;
+
+        return {
+            codeIsSent: true
         }
     }
 
@@ -126,8 +194,11 @@ export const signIn = async function({request, url}){
     const data = await request.formData();
     const jsonData = Object.fromEntries(data.entries());
 
+    const orgUrls = url.searchParams.get('urls')?.split(',');
+
     let {credentials, orgs} = await f({
-        credentials: jsonData
+        credentials: jsonData,
+        ...(orgUrls.length > 0 ? {urls: orgUrls} : {})
     });
 
     credentials = {

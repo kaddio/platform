@@ -1,6 +1,6 @@
 import { safeCredentialsFromStateToken } from '$lib/safe-credentials.js';
 import { signInStates } from '$lib/sign-in-states';
-import { signIn, verify } from '$lib/signIn.js';
+import { verify } from '$lib/signIn.js';
 
 import { redirect } from '@sveltejs/kit';
 
@@ -22,7 +22,7 @@ export const load = async function({url}){
     }
 
     if(stateToken && signInStates[stateToken]){
-        return safeCredentialsFromStateToken(stateToken, signIn);
+        return safeCredentialsFromStateToken(stateToken, signInStates);
     }
 
     throw redirect(307, '/sv/sign-in2')

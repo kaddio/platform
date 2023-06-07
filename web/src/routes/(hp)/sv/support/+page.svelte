@@ -67,14 +67,14 @@
 
 	<SimpleCenteredPiece icon="signal">
 		<span slot="title">
-			Status <span class="inline-flex items-center rounded bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-800">Kommer snart</span>
+			Status
 		</span>
 		<span slot="body">
 			Undrar du hur det går för Kaddio just nu? Kolla vår status-sida för info kring drift och tillgänglighet.
 		</span>
-		<!-- <span slot="link">
-			<a href="https://status.kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">status.kaddio.com <span aria-hidden="true">&rarr;</span></a>
-		</span> -->
+		<span slot="link">
+			<a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.statuspage.io <span aria-hidden="true">&rarr;</span></a>
+		</span>
 	</SimpleCenteredPiece>		
 
 </SimpleCentered>

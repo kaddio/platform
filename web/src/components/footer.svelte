@@ -58,6 +58,10 @@
               </li>
 
               <li>
+                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Status</a>
+              </li>
+
+              <li>
                 <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Changelog</a>
               </li>
 

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { groupBy } from "lodash";
 	import KdItem from "../../../../../../components/kdItem.svelte";
-	import KdButton from "../../../../../../components/kdbutton.svelte";
     import dayjs from 'dayjs';
 	import { Size, Variant } from "../../../../../../components/common_types";
 	import KdLinkButton from "../../../../../../components/kdLinkButton.svelte";

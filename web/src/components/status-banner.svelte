@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { getContext } from "svelte";
 	import { _, regionBannerDismiss } from "$lib/stores";
+    const lang = getContext('lang');
 
 </script>
 
@@ -16,7 +17,7 @@
             <strong class="font-semibold">{$_('Status')}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>{$_('Kaddio upplever just nu driftproblem')}
         </p>
 
-        <!-- <a href="support" class="whitespace-nowrap text-sm">{$_('Support')}&nbsp;<span aria-hidden="true">&rarr;</span></a>             -->
+        <a href="/{lang}/support" class="whitespace-nowrap text-sm">{$_('Support')}&nbsp;<span aria-hidden="true">&rarr;</span></a>            
     </div>
     <div class="flex flex-1 justify-end">
     </div>

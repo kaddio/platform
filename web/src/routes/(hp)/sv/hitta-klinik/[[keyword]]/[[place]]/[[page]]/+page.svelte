@@ -9,6 +9,7 @@
 	import FooterMarketplace from "../../../../components/footerMarketplace.svelte";
 	import KdLinkButton from "../../../../../../../components/kdLinkButton.svelte";
 	import { Color } from "../../../../../../../components/common_types";
+	import { apiUrl } from "$lib/apiUrl";
 
     export let data: PageData;
     let page = data.page || 0;
@@ -41,7 +42,7 @@
             }
         }
         `;
-        const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+        const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
             method: 'POST',
             body: JSON.stringify({query}),
             headers: {
@@ -66,7 +67,7 @@
             }
         }
         `;
-        const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
+        const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
             method: 'POST',
             body: JSON.stringify({query}),
             headers: {
@@ -111,6 +112,7 @@
 </script>
 <svelte:head>
 	<title>Hitta {[data.keyword, data.place].filter(Boolean).join(" ") || "klinik"} | Kaddio</title>
+    <meta name="robots" content="noindex">
 </svelte:head>
 <div class="w-sceen flex flex-col">
 <div class="bg-purple-400 p-6 ">

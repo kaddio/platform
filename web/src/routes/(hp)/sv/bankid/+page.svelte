@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-	import OrgChooserSection from "$components/org-chooser-section.svelte";
 	import { setContext } from "svelte";
 	setContext('lang', 'sv');
-
 
 </script>
 
@@ -11,4 +9,7 @@
     <meta name="robots" content="noindex">
 </svelte:head>
 
-<OrgChooserSection />
+
+<a href={$page.data.sameUnitUrl}>Mobile bankid on same unit</a>
+
+<a href={$page.data.otherUnitUrl}>Mobile bankid on other unit (qr)</a>

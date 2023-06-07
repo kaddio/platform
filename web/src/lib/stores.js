@@ -201,6 +201,14 @@ const translations = {
     "Kaddio Hjälpcenter": {
         en: "Visit Help Center",
         es: 'Centro de ayuda de Kaddio'
+    },
+    "Verifiera identitet": {
+        en: "Verify your identity",
+        es: "Verify your identity",
+    },
+    "Ev. rabattkod löser du in i Kaddio efter att du startat ditt konto.": {
+        en: "You redeem the discount code in Kaddio after you have created your account.",
+        es: "Si tienes un código promocional puedes canjearlo luego de crear una cuenta en Kaddio.",
     }
 }
 

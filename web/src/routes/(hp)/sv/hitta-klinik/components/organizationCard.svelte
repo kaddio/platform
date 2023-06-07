@@ -1,10 +1,11 @@
 <script lang="ts">
-	import Card from "../../../../../components/card.svelte";
-	import Kdbutton from "../../../../../components/kdButton.svelte";
-	import type { Organization } from "../types";
+	import Card from "$components/card.svelte";
+
+    import type { Organization } from "../types";
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
+	import KdButton from "$components/kd-button.svelte";
     export let organization: Organization
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
@@ -33,7 +34,7 @@
                 {:else}
                     <a class="text-gray-400 font-semibold" href="https://{organization.url}.kaddio.com/booking">Bokning</a>
                 {/if}
-                <a href="https://{organization.url}.kaddio.com"><Kdbutton>Besök</Kdbutton></a>
+                <a href="https://{organization.url}.kaddio.com"><KdButton>Besök</KdButton></a>
             </div>
         
         </div>
