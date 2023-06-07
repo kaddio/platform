@@ -1,38 +1,28 @@
 <script lang="ts">
-	import Card from "../../../../../components/card.svelte";
-	import Kdbutton from "../../../../../components/kdButton.svelte";
-	import type { Organization } from "../types";
+    import Card from "../../../../../components/card.svelte";
+    import Kdbutton from "../../../../../components/kdButton.svelte";
+    import type { Organization } from "../types";
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
-	import KdButton from "../../../../../components/kdButton.svelte";
-	import { Color, Size, Variant } from "../../../../../components/common_types";
-	import KdItem from "../../../../../components/kdItem.svelte";
-	import { groupBy, size } from "lodash";
-	import Gallery from "./components/gallery.svelte";
+    import KdButton from "../../../../../components/kdButton.svelte";
+    import { Color, Size, Variant } from "../../../../../components/common_types";
+    import KdItem from "../../../../../components/kdItem.svelte";
+    import { groupBy, size } from "lodash";
+    import Gallery from "./components/gallery.svelte";
     import { websiteSchema } from "$lib/json-ld";
-	import LdTag from "$lib/components/LDTag.svelte";
-	import { json } from "@sveltejs/kit";
-	import BookingTypes from "./components/booking_types.svelte";
-	import Hosts from "./components/hosts.svelte";
-	import Link from "./components/link.svelte";
-	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
+
+    import BookingTypes from "./components/booking_types.svelte";
+    import Hosts from "./components/hosts.svelte";
+    import Link from "./components/link.svelte";
+    import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
+	import FooterMarketplace from "../../components/footerMarketplace.svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
     const organization = data.organization;
-
-    // if(data.orgData){
-    //     schema = {
-    //         ...websiteSchema,
-    //         name: "Kaddio ...",
-    //         description: `This is Kadd`
-    //     }
-    // }
     
     const nextTime = dayjs(organization.nextFreeTime).fromNow()
-    
-    const bookingTypes = groupBy(organization.bookingTypes, 'categoryName');
     
     let schema = websiteSchema;
 
@@ -43,9 +33,15 @@
         <div class="overlay"></div>
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
-                <div>
+                <a href="" class="text-white flex gap-6 items-center">
                     <img src="/img/kaddio-logo.png" alt="" class="h-7">
-                </div>
+                    {#if data.ref}
+                        <a href="{data.ref}" on:click={()=>history.back()}>
+                            <i class="fa fa-arrow-left"></i>
+                            Sökresultat
+                        </a>
+                    {/if}
+                </a>
                 <KdButton  variant={Variant.LIGHT} color={Color.DEFAULT}>Logga in</KdButton>
             </div>
 
@@ -123,9 +119,7 @@
 </div>
 
 <footer class="bg-gray-200">
-    <div class="max-w-screen-lg mx-auto py-8">
-        Kaddio
-    </div>
+   <FooterMarketplace></FooterMarketplace>
 </footer>
 <style>
 .overlay {
@@ -137,9 +131,9 @@
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.5567620798319328) 100%);
 }
-
+/* 
 :global(:root) {
     font-size: clamp(.9rem, 1vw, 1.2rem);
-}
+} */
 
 </style>

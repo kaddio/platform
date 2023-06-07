@@ -1,5 +1,5 @@
 
-export async function load({ params, fetch }) {
+export async function load({ params, fetch, url }) {
 
     const result = await fetch("http://127.0.0.1:3000/graphqlmarketplace", {
         method: 'POST',
@@ -50,6 +50,7 @@ export async function load({ params, fetch }) {
     const data = await result.json();
 
     return {
-        organization: data.data.findOrganization
+        organization: data.data.findOrganization,
+        ref: url.searchParams.get("ref")
     };
 }

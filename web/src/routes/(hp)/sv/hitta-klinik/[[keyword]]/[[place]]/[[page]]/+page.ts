@@ -8,7 +8,7 @@ export async function load({params, url, fetch}) : Promise<{organizations: Organ
     const ORGS_PER_PAGE = 12;
     const query = `
     query {
-        findOrganizations(keyword: "${keyword || ''}", geoQuery: "${place || 'Sverige'}", skip: ${parsedPage*ORGS_PER_PAGE}, limit: ${ORGS_PER_PAGE}) {
+        findOrganizations(keyword: "${keyword || ''}", geoQuery: "${place || 'Sverige'}", skip: 0, limit: ${(parsedPage+1)*ORGS_PER_PAGE}) {
           name,
           address,
           addressString(geoQuery: "${place || ''}"),

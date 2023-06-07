@@ -6,8 +6,13 @@
   
 	import type { PageData } from "../../../$types";
 	import OrganizationCard from "../../../components/organizationCard.svelte";
+	import FooterMarketplace from "../../../../components/footerMarketplace.svelte";
+	import KdLinkButton from "../../../../../../../components/kdLinkButton.svelte";
+	import { Color } from "../../../../../../../components/common_types";
 
     export let data: PageData;
+    let page = data.page || 0;
+
     let searchForm: HTMLFormElement;
     let selectedItem = (data.keyword && data.keyword !== "Alla") ? {
         label: data.keyword
@@ -101,19 +106,29 @@
         searchForm.action = getUrl();
         searchForm.submit()
     }
+
+    $: nextPageLink = `/sv/hitta-klinik/${keywordPart()}/${placePart()}/${page + 1 }`;
 </script>
-<div class="w-sceen h-screen flex flex-col">
+<svelte:head>
+	<title>Hitta {[data.keyword, data.place].filter(Boolean).join(" ") || "klinik"} | Kaddio</title>
+</svelte:head>
+<div class="w-sceen flex flex-col">
 <div class="bg-purple-400 p-6 ">
-    <div class="container mx-auto text-white text-xl flex flex-row gap-5 align-middle">
-        <img src="https://next.kaddio.com/img/kaddio-logo.png" alt="" class="h-7">
-        Hitta klinik
-        <h1>{[data.keyword, data.place].filter(Boolean).join(" > ")}</h1>
+    <div class="container mx-auto text-white text-xl grid grid-cols-3 max-w-screen-xl">
+        <div class="flex items-center gap-3 col-span-1">
+            <img src="https://www.kaddio.com/img/kaddio-logo.png" alt="" class="h-7">
+            Hitta klinik
+        </div>
+        <h1 class="col-span-1 text-center">{[data.keyword, data.place].filter(Boolean).join(" › ")}</h1>
+        <div class="col-span-1">
+
+        </div>
     </div>
     
     
 </div>
 <div class="bg-gray-100 p-4 lg:p-12 pt-4 lg:pt-20 flex grow">
-    <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto " >
+    <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto max-w-screen-xl" >
         <form method="get" class="p-0 grid grid-cols-2 gap-8 h-fit" bind:this={searchForm}>
             <div class="flex flex-col col-span-2 md:col-span-1 lg:col-span-2">
                 <label class="font-semibold mb-2 ml-3 ">Sök</label>
@@ -187,8 +202,10 @@
                     </div>
                 </div>
             
-                <div class="flex flex-row justify-start gap-8">
-                    <a href="" class="text-gray-500 font-semibold mt-2 ml-3" on:click={()=> data.page++}>Ladda fler</a>
+                <div class="flex flex-row justify-between gap-8 pt-8">
+                    <KdLinkButton href="{nextPageLink}" color="{Color.SECONDARY}">
+                        Ladda fler
+                    </KdLinkButton>
                     
                     <a href="" class="text-gray-500 mt-2 ml-3" on:click={()=>scrollTo({top: 0, behavior:'smooth'})}>Till toppen</a>
                 </div>
@@ -205,14 +222,15 @@
 </div>
 </div>
 <!-- <AutocompleteInput optionsFn={getData} placeholder="Sök..." on:selected={navigate}></AutocompleteInput> -->
-
-
+<footer>
+<FooterMarketplace></FooterMarketplace>
+</footer>
 <style>
    .autocomplete-list-item.selected {
     @apply bg-purple-500;
   }
 
 :global(:root) {
-  font-size: clamp(12px, 0.5711rem + 0.5725vw, 15px);
+  font-size: clamp(.75rem, 0.5711rem + 0.5725vw, 1rem);
 }
 </style>
