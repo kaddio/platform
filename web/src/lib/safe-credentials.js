@@ -6,6 +6,10 @@ export const safeCredentialsFromStateToken = function(stateToken, signInStates){
     return {
         verified: credentials.verified,
         mustVerifyWithOneOf: credentials.mustVerifyWithOneOf,
-        orgs: credentials.orgs
+        orgs: credentials.orgs,
+        bankid: {
+            status: credentials.bankid?.status,
+            device: credentials.bankid?.device,
+        }
     }
 }

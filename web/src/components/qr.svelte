@@ -8,10 +8,11 @@
         try {
             qr = await QRCode.toString(str, { type: "svg", errorCorrectionLevel: 'L' });
         } catch (err) {
-            console.error(err)
+            console.log(err)
         }
     }
 
+    
     $: generateQR(str);
     
 </script>
