@@ -20,6 +20,7 @@ export async function load({ params, fetch }) {
                     bookingTypes {
                         name
                         categoryName
+                        description
                         price
                         clientVisibleLength
                         bookingLink
@@ -32,6 +33,8 @@ export async function load({ params, fetch }) {
                     hosts {
                         firstname
                         lastname
+                        presentation
+                        title
                         imgUrl
                         nextFreeTime
                         bookingLink

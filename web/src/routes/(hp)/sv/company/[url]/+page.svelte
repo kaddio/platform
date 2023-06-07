@@ -73,15 +73,15 @@
                 </a>
             </div>
         </div>
-        <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5">
-            <Card className="grow col-span-3">
+        <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5 px-5">
+            <Card className="col-span-5 sm:col-span-3">
                 <div class="prose p-8 max-h-96">
                     {@html organization.homepage?.presentation}
                     <a href="">Läs mer</a>
                 </div>    
             </Card>
         
-            <Card className="flex flex-col gap-4 col-span-2">
+            <Card className="flex flex-col gap-4 col-span-5 sm:col-span-2">
                 <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
                 <div class="flex flex-col gap-4 my-8 mx-8">
                     <Link href="http://insta.com" type="instagram"></Link>
@@ -106,16 +106,19 @@
             </Card>
         </div>
     </div>
-    <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
-        <Card className="flex flex-col gap-5  p-5 col-span-1 ">
-            <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
-            <Hosts hosts={organization.hosts}></Hosts>
-        </Card>
-        
-        <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-1 ">
-            <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
-            <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
-        </Card>
+    <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8 px-5">
+        <div class="col-span-2 sm:col-span-1">
+            <div class="text-sm uppercase text-gray-500 font-semibold ml-5 mb-3">Personal</div>
+            <Card className="flex flex-col gap-5  p-5  ">
+                <Hosts hosts={organization.hosts}></Hosts>
+            </Card>
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+            <div class="text-sm uppercase text-gray-500 font-semibold ml-5 mb-3">Tjänster</div>
+            <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll  ">
+                <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
+            </Card>
+        </div>
     </div>
 </div>
 
@@ -132,6 +135,11 @@
     bottom: 0;
     right: 0;
     background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.5567620798319328) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.5567620798319328) 100%);
 }
+
+:global(:root) {
+    font-size: clamp(.9rem, 1vw, 1.2rem);
+}
+
 </style>
