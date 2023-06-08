@@ -30,7 +30,7 @@
 
         {#if $token.img}            
             <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-                <img class="max-h-12 w-full object-contain object-left" src="{imageHandler($token.img, {format: 'auto', fit:'scale-down', width: 320})}" alt="{$token.name} logo" width="105">
+                <img class="max-h-24 w-full object-contain object-left" src="{imageHandler($token.img, {format: 'auto', fit:'scale-down', width: 320})}" alt="{$token.name} logo" width="105">
             </div>
         {/if}
       </div>
@@ -39,7 +39,5 @@
   
   
 {/if}
-
-
 
 <Footer />
