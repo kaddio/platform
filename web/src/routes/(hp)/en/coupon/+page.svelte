@@ -20,7 +20,7 @@
       <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
         <div class="mx-auto w-full max-w-xl lg:mx-0">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900">{$token.name} recommends Kaddio</h2>
-          <p class="mt-6 text-lg leading-8 text-gray-600">With this coupon from {$token.name}, you can user Kaddio for free until {$token.debitFromISO}</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">With this coupon from {$token.name}, you can use Kaddio for free until {$token.debitFromISO}</p>
           <div class="mt-8 flex items-center gap-x-6">
 
             <a href="/en/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink">Create account</a>
