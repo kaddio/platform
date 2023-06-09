@@ -9,6 +9,8 @@ export const safeCredentialsFromStateToken = function(stateToken, signInStates){
         orgs: credentials.orgs,
         bankid: {
             status: credentials.bankid?.status,
+            user: credentials.bankid?.completionData?.user,
+            hintCode: credentials.bankid?.hintCode,
             device: credentials.bankid?.device,
         }
     }
