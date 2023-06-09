@@ -2,7 +2,7 @@ import { fail, redirect } from '@sveltejs/kit';
 import { signInStates } from './sign-in-states';
 import { apiUrl } from './apiUrl';
 
-const f = async function(data){
+export const f = async function(data){
     try{
         const response = await fetch('http://127.0.0.1:3000/api/token', {
             method: 'POST',

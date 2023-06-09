@@ -49,7 +49,7 @@ export const order = async function(options: OrderOptions): Promise<OrderRespons
     }
     
     catch(e){
-        // console.error(e)
+        console.error(e)
 
     }
 
@@ -118,9 +118,9 @@ export const collect = async function(orderRef: string): Promise<CollectResponse
 export const qr = function(start: Date, qrStartSecret: string, qrStartToken: string): string{
     const now = new Date();
 
-    const elapsedTimeInSeconds = Math.floor((now.getTime() - start.getTime()) / 1000);
+    const elapsedTimeInSeconds = Math.floor((now.getTime() - start.getTime()) / 1000) + "";
 
-    const qrAuthCode = hmac(qrStartSecret, elapsedTimeInSeconds + "");
+    const qrAuthCode = hmac(elapsedTimeInSeconds, qrStartSecret)
 
     return `bankid.${qrStartToken}.${elapsedTimeInSeconds}.${qrAuthCode}`;
 }

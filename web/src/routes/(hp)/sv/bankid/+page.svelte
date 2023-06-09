@@ -11,7 +11,7 @@
 
 		interval = setInterval(() => {
 			invalidate('app:bankid');
-		}, 2000);
+		}, 1000);
 	});
 
 </script>
