@@ -60,7 +60,7 @@ export async function load({ params, fetch }) {
         body: JSON.stringify({query: `
             query {
                 findInvoice(id: "${params.id}") {
-                    normalizedCellphone,
+                    normalizedCellPhone,
                     _id,
                     amount
                 }
