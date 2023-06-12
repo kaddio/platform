@@ -7,12 +7,12 @@
 
 <svelte:head>
 	<title>Kaddio - Formularios</title>
-	<meta name="description" content="En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y reciba las respuestas directamente en el." />
+	<meta name="description" content="En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en el." />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Formularios</span>
-	<span slot="sub">En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y reciba las respuestas directamente en el.</span>
+	<span slot="sub">En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en el.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
