@@ -57,7 +57,7 @@
 	<Qa>
 		<span slot="q">Delegación de tareas</span>
 		<span slot="a">
-			Delega tareas a colegas o clientes
+			Delega tareas a colegas o clientes.
 		</span>
 	</Qa>
 
