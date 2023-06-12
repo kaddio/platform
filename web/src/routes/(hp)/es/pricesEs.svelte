@@ -42,6 +42,6 @@
 
 
 <Price currency="EUR" modules="{modules}">
-	<span slot="title">Solo paga por lo que usas</span>
+	<span slot="title">Paga solo por lo que uses</span>
 	<span slot="sub">Sin cargo de inicio. 1 mes gratis.</span>
 </Price>

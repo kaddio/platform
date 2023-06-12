@@ -5,7 +5,7 @@
 
 <ModulesSection>
   <span slot="title">Selecciona las características que deseas</span> 
-  <span slot="subtitle">Kaddio se adapta a tus necesidades. Elige las funciones que necesites y cambia cuando quieras. Solo paga por lo que usas.</span> 
+  <span slot="subtitle">Kaddio se adapta a tus necesidades. Elige las funciones que necesites y cambia cuando quieras. Paga solo por lo que uses.</span> 
 
     <ModulePresentation href="es/feature/log">
         <span slot="icon">
