@@ -4,8 +4,8 @@ import type { AxiosInstance } from "axios";
 import axios from "axios";
 import { hmac } from "$lib/hmac.js";
 
-const pfx = await promises.readFile('src/lib/bankid/FPTestcert4_20220818.p12');
-const ca = await promises.readFile('src/lib/bankid/cert/test.ca');
+const pfx = await promises.readFile('src/lib/bankid/server/FPTestcert4_20220818.p12');
+const ca = await promises.readFile('src/lib/bankid/server/cert/test.ca');
 const passphrase = 'qwerty123';
 
 const httpsAgent = new Agent({

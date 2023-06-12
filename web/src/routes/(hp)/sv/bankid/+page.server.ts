@@ -1,4 +1,4 @@
-import { cancel, collect, order, qr } from "$lib/bankid/bankid.js";
+import { cancel, collect, order, qr } from "$lib/bankid/server/bankid.js";
 import { safeCredentialsFromStateToken } from "$lib/safe-credentials.js";
 import { signInStates } from "$lib/sign-in-states.js";
 import { fail, redirect } from "@sveltejs/kit";
