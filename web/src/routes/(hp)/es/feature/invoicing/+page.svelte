@@ -37,7 +37,7 @@
 	<Qa>
 		<span slot="q">Envío de facturas</span>
 		<span slot="a">
-			Envía tus facturas por correo, e-mail, a través del chat de Kaddio o como e-factura.
+			Envía tus facturas por correo postal, correo electrónico, a través del chat de Kaddio o como factura electrónica.
 		</span>
 	</Qa>
 
@@ -58,7 +58,7 @@
 	<Qa>
 		<span slot="q">Factura electrónica</span>
 		<span slot="a">
-			Envía facturas electrónicas con Kaddio según el estándar de la UE PEPPOL.
+			Envía facturas electrónicas con Kaddio según el estándar PEPPOL de la UE.
 		</span>
 	</Qa>
 
