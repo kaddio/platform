@@ -55,7 +55,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Reserva con Mobilt BankID</span>
+		<span slot="q">Reservas con Mobilt BankID</span>
 		<span slot="a">
 			El cliente inicia sesión en Kaddio con Mobil BankID para poder reservar una cita. Adecuado para aquellos que quieren asegurar la identidad de la persona que reserva.
 		</span>
@@ -83,7 +83,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Reserva de grupo</span>
+		<span slot="q">Reservas de grupo</span>
 		<span slot="a">
 			Publica horarios que se puedan reservar para más de un paciente.
 		</span>
