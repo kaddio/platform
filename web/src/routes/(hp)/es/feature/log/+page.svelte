@@ -54,7 +54,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<Qa>
 		<span slot="q">Formularios</span>
 		<span slot="a">
-			Crea tus propios formularios o utiliza formularios estándar de uso común directamente desde Kaddio. Envía formularios de valoración y declaraciones de salud por e-mail y SMS. Los formularios se pueden enviar automáticamente en relación con la reserva o manualmente si es necesario. Las respuestas se guardan en la historia clínica.
+			Crea tus propios formularios o utiliza formularios estándar de uso común directamente desde Kaddio. Envía formularios de valoración y declaraciones de salud correo electrónico y SMS. Los formularios se pueden enviar automáticamente en relación con la reserva o manualmente si es necesario. Las respuestas se guardan en la historia clínica.
 		</span>
 	</Qa>
 

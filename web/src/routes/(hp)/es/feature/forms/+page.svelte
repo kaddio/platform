@@ -7,12 +7,12 @@
 
 <svelte:head>
 	<title>Kaddio - Formularios</title>
-	<meta name="description" content="En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en ellos." />
+	<meta name="description" content="En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envío de formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en ellos." />
 </svelte:head>
 
 <ModuleSection>
 	<span slot="title">Formularios</span>
-	<span slot="sub">En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envía formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en ellos.</span>
+	<span slot="sub">En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envío de formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en ellos.</span>
 
 	<!-- <ModuleFeature>
 		<span slot="title">Förbered</span>
@@ -55,16 +55,16 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Envía formularios clínicos</span>
+		<span slot="q">Envío de formularios clínicos</span>
 		<span slot="a">
 			Envía un formulario clínico de forma automática con la reserva en línea o, de preferirlo, de forma manual. Las respuestas se guardan en la historia clínica.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Envía formulario de presupuesto</span>
+		<span slot="q">Envío de formulario de presupuestos</span>
 		<span slot="a">
-			Envía formularios de valoración y declaraciones de salud por e-mail y SMS.
+			Envía formularios de valoración y declaraciones de salud correo electrónico y SMS.
 		</span>
 	</Qa>
 
