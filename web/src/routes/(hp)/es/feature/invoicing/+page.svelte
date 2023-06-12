@@ -63,7 +63,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Co-facturación</span>
+		<span slot="q">Cofacturación</span>
 		<span slot="a">
 			Factura varios clientes a una misma empresa, como un grupo o una compañía de seguros.
 		</span>
