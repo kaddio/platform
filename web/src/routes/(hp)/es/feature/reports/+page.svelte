@@ -50,7 +50,7 @@
 	<Qa>
 		<span slot="q">Crea encuestas</span>
 		<span slot="a">
-			Diseña encuestas a tu gusto. Utiliza diferentes tipos de respuestas, como texto libre, escala, valor numérico y selección múltiple. Elige cómo Kaddio calculará los resultados, ya sea mediante suma o promedio. Establece límites y etiquetas para obtener una visión general rápida de los resultados.
+			Diseña encuestas a tu gusto. Utiliza diferentes tipos de respuestas, como texto libre, escala, valor numérico u selección múltiple. Elige cómo Kaddio calculará los resultados, ya sea mediante suma o promedio. Establece límites y etiquetas para obtener una visión general rápida de los resultados.
 		</span>
 	</Qa>
 
