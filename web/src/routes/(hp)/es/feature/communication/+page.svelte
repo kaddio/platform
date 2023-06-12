@@ -85,14 +85,14 @@
 	<Qa>
 		<span slot="q">Noticias</span>
 		<span slot="a">
-			Recibe notificaciones de mensajes por correo electrónico cuando no haya iniciado sesión en Kaddio.
+			Recibe notificaciones de mensajes por correo electrónico cuando no hayas iniciado sesión en Kaddio.
 		</span>
 	</Qa>
 
 	<Qa>
 		<span slot="q">Formulario de contacto</span>
 		<span slot="a">
-			Crea formulario de contacto público para clientes.
+			Crea un formulario de contacto público para clientes.
 		</span>
 	</Qa>
 
