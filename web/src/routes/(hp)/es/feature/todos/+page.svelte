@@ -43,7 +43,7 @@
 	<Qa>
 		<span slot="q">Creación de tareas</span>
 		<span slot="a">
-			Crea una lista de verificación de las cosas que hacer.
+			Crea una lista de verificación de las cosas que hay que hacer.
 		</span>
 	</Qa>
 
