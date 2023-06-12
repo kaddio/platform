@@ -57,7 +57,7 @@
 	<Qa>
 		<span slot="q">Reservas con Mobilt BankID</span>
 		<span slot="a">
-			El cliente inicia sesión en Kaddio con Mobil BankID para poder reservar una cita. Adecuado para aquellos que quieren asegurar la identidad de la persona que reserva.
+			El cliente inicia sesión en Kaddio con Mobilt BankID para poder reservar una cita. Adecuado para aquellos que quieren asegurar la identidad de la persona que reserva.
 		</span>
 	</Qa>
 
