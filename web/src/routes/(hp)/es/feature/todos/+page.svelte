@@ -41,7 +41,7 @@
 	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Crear tareas</span>
+		<span slot="q">Creación de tareas</span>
 		<span slot="a">
 			Crea una lista de verificación de las cosas que hacer.
 		</span>
