@@ -113,7 +113,7 @@
 	<Qa>
 		<span slot="q">Sistema de reservas en tu página web</span>
 		<span slot="a">
-			Integra el sistema de reservas directamente en tu página web
+			Integra el sistema de reservas directamente en tu página web.
 		</span>
 	</Qa>
 
