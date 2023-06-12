@@ -43,7 +43,7 @@
 	<Qa>
 		<span slot="q">Formulario estándar</span>
 		<span slot="a">
-			Descarga, edita y envía los formularios estándar más comunes directamente desde Kaddio.
+			Descarga, edita y envía los formularios estándares más comunes directamente desde Kaddio.
 		</span>
 	</Qa>
 
