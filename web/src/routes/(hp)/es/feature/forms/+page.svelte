@@ -50,7 +50,7 @@
 	<Qa>
 		<span slot="q">Crea formularios</span>
 		<span slot="a">
-			Diseña formularios según tus necesidades. Usa diferentes tipos de respuesta como, texto libre, escala, valor numérico y opción múltiple. Tu eliges cómo Kaddio debe calcular el resultado, por ejemplo, como una suma o un valor promedio. Tu estableces los límites para obtener una vista rápida del resultado.
+			Diseña formularios según tus necesidades. Usa diferentes tipos de respuesta, como texto libre, escala, valor numérico y opción múltiple. Tu eliges cómo Kaddio debe calcular el resultado, por ejemplo, como una suma o un valor promedio. Tu estableces los límites para obtener una vista rápida del resultado.
 		</span>
 	</Qa>
 
