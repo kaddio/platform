@@ -64,7 +64,7 @@
 	<Qa>
 		<span slot="q">Recordatorios SMS</span>
 		<span slot="a">
-			Elija si y cuándo se envían recordatorios por SMS antes de una cita reservada.
+			Elije si y cuándo se envían recordatorios por SMS antes de una cita reservada.
 		</span>
 	</Qa>
 
