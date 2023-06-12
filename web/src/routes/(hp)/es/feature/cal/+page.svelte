@@ -50,7 +50,7 @@
 	<Qa>
 		<span slot="q">Sistema de reservas accesible</span>
 		<span slot="a">
-			El cliente puede hacer reservas él mismo a través de un sitio web accesible al público
+			El cliente puede hacer reservas él mismo a través de un sitio web accesible al público.
 		</span>
 	</Qa>
 
