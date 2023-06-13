@@ -10,9 +10,9 @@ const createPaymentRequest = async function(payeeAlias: string, payerAlias: stri
     // const ca = await promises.readFile('src/lib/swish/...');
     // const passphrase = 'swish';
 
-    const cert = await promises.readFile('src/lib/swish/cert/Swish_Merchant_TestCertificate_1234679304.pem', {encoding: 'utf-8'})
-    const key = await promises.readFile('src/lib/swish/cert/Swish_Merchant_TestCertificate_1234679304.key', {encoding: 'utf-8'})
-    const ca = await promises.readFile('src/lib/swish/cert/Swish_TLS_RootCA.pem', {encoding: 'utf-8'})
+    const cert = await promises.readFile('src/lib/swish/server/cert/Swish_Merchant_TestCertificate_1234679304.pem', {encoding: 'utf-8'})
+    const key = await promises.readFile('src/lib/swish/server/cert/Swish_Merchant_TestCertificate_1234679304.key', {encoding: 'utf-8'})
+    const ca = await promises.readFile('src/lib/swish/server/cert/Swish_TLS_RootCA.pem', {encoding: 'utf-8'})
 
     const httpsAgent = new Agent({
         cert,
