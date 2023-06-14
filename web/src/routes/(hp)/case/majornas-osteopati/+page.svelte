@@ -26,8 +26,6 @@ import Legal from "$components/legal.svelte";
     <span slot="intro">
         Samtliga personuppgifter vi behandlar är nödvändiga i avtalsförhållandet mellan Kaddio och kunden, alternativt sker
         med kundens samtycke för att tillhandahålla en så bra tjänst som möjligt. Vi sparar personuppgifterna så länge de
-        behövs i vår affärsrelation med kunden och raderas därefter. Har du frågor eller är missnöjd är du välkommen att
-        höra av dig till oss eller till vårt dataskyddsombud <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>        
     </span>
 
 
@@ -38,7 +36,7 @@ import Legal from "$components/legal.svelte";
         <!-- <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/ana.png" alt=""> -->
       </figure>
     
-
+<!-- 
     <LegalTitle>
       Modules
     </LegalTitle>
@@ -82,7 +80,7 @@ enligt GDPR.
         <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
         <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Lena Nyberg</strong> - Chief Information Officer</div>
       </figcaption>
-    </figure>
+    </figure> -->
 
 </Legal>
 

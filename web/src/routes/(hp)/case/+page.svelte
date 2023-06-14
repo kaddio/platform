@@ -28,10 +28,6 @@
             Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.
         </BlogPost>
         
-        <BlogPost href="/case/spine-clinic" title="Pain is only the beginning" name="Spine Clinic" nameTitle="" location="Hua Hin, Thailand" tags={["Medical record, Invoicing"]}>
-            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.
-        </BlogPost>
-
     </div>
       </div>
     </div>
