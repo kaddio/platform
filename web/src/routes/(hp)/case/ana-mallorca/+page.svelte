@@ -14,7 +14,7 @@ import Legal from "$components/legal.svelte";
 
 <Legal>
     <span slot="pretitle">
-        Case study @ Mallorca
+        Case study @ Mallorca, Spain
         
     </span>
     

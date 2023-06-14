@@ -20,15 +20,15 @@
         <p class="mt-2 text-lg leading-8 text-gray-600">How other successful businesses use Kaddio.</p>
         <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 
-        <BlogPost href="/case/ana-mallorca" title="Osteopathic endeavours in Mallorca" name="Ana Casanovas practice" nameTitle="" location="Mallorca, Spain" tags={["Journal", "Booking"]} img="/img/ana.png">
+        <BlogPost href="/case/ana-mallorca" title="Osteopathic endeavours in Mallorca" name="Ana Casanovas practice" nameTitle="" location="Mallorca, Spain" tags={["Medical record", "Booking"]} img="/img/ana.png">
             Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.
         </BlogPost>
 
-        <BlogPost href="/case/molndalskliniken" title="An old approach to the new body" name="Mölndalskliniken" nameTitle="" location="Mölndal, Sweden" tags={["Journal"]}>
+        <BlogPost href="/case/majornas-osteopati" title="An old approach to the new body" name="Majornas Osteopati" nameTitle="" location="Göteborg, Sweden" tags={["Medical record"]}>
             Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.
         </BlogPost>
         
-        <BlogPost href="/case/spine-clinic" title="Pain is only the beginning" name="Spine Clinic" nameTitle="" location="Hua Hin, Thailand" tags={["Journal, Invoiing"]}>
+        <BlogPost href="/case/spine-clinic" title="Pain is only the beginning" name="Spine Clinic" nameTitle="" location="Hua Hin, Thailand" tags={["Medical record, Invoicing"]}>
             Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.
         </BlogPost>
 
