@@ -7,11 +7,6 @@
   setContext('lang', 'en');
 
 </script>
-
-<svelte:head>
-    <meta name="robots" content="noindex">
-</svelte:head>
-
   
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

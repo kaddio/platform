@@ -7,6 +7,11 @@
 
 </script>
 
+
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
+
 <Nav />
 
 <slot />
