@@ -6,11 +6,13 @@
 	import { getRegion } from "$lib/regions";
 
     const lang = getContext('lang');
+    const hideLangBanner = getContext('hideLangBanner')
+
     const geo: string = $page.data.geo;
 
     const region = getRegion($page.data.geo)
 
-    $: showBannerComputed = ($regionBannerDismiss !== undefined && !$regionBannerDismiss) && geo && (region.lang !== lang);
+    $: showBannerComputed = ($regionBannerDismiss !== undefined && !$regionBannerDismiss) && geo && (region.lang !== lang) && !hideLangBanner;
 </script>
 
 {#if showBannerComputed}
