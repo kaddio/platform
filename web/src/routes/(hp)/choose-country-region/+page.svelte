@@ -4,6 +4,8 @@
 	import Nav from '$components/nav.svelte';
 	
 	setContext('lang', 'en');
+	setContext('hideLangBanner', true);
+
 
 </script>
 
