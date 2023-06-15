@@ -7,6 +7,8 @@
 	import { setContext } from 'svelte';
 
     setContext('lang', 'en');
+    setContext('hideLangBanner', true);
+
 
     const quotes = [
         ['I sometimes have cream in my coffee', 'David', 'C3(P)O at Kaddio'],
