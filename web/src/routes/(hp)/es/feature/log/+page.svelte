@@ -61,7 +61,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<Qa>
 		<span slot="q">Cartas y remisiones</span>
 		<span slot="a">
-			Crea cartas, remisiones y certificados. Envía por correo postal, a través del chat de Kaddio o como PDF.
+			Crea cartas, remisiones y certificados. Envíalos por correo postal, a través del chat de Kaddio o como PDF.
 		</span>
 	</Qa>
 
