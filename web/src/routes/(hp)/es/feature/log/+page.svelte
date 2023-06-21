@@ -80,7 +80,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</Qa>
 
 	<Qa>
-		<span slot="q">Gráficas del cuerpo humano.</span>
+		<span slot="q">Gráficas del cuerpo humano</span>
 		<span slot="a">
 			Haz dibujos en las gráficas corporales para documentar, por ejemplo, dónde experimenta dolor el paciente.
 		</span>
