@@ -75,7 +75,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<Qa>
 		<span slot="q">Controla la seguridad de las historias clínicas</span>
 		<span slot="a">
-			Elije quiénes pueden leer el historial médico del paciente.
+			Elige quiénes pueden leer el historial médico del paciente.
 		</span>
 	</Qa>
 
