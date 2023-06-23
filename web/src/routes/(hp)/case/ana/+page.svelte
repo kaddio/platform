@@ -5,6 +5,7 @@ import Legal from "$components/legal.svelte";
 	import LegalParagraph from "$components/legalParagraph.svelte";
 	import LegalTitle from "$components/legalTitle.svelte";
 	import LegalUl from "$components/legalUl.svelte";
+	import { imageHandler } from "$lib/img";
 
 </script>
 
@@ -23,12 +24,20 @@ import Legal from "$components/legal.svelte";
     </span>
 
 
+    <figure class="mt-16">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src={imageHandler('/img/ana.png', {format: "auto", width: 1200})} alt="">
+    </figure>
+
+
     <LegalParagraph>
       "I really like working with everything that is a bout the mind-body relationship, to help people understand that it is not only biology."
       While Ana's interests are strongly rooted in traditional crafts, she also has a constant lookout for the new and modern.
       "I was looking for a way to make my medical records more efficient, and that is when I found Kaddio."
     </LegalParagraph>
 
+    <LegalParagraph>
+      Watch the video to hear more about Ana's work and hobbies, and how Kaddio allows for more flexibility in her work with medical records.        
+    </LegalParagraph>
 
     <figure class="mt-16">
       <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/838791658?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ana Casanovas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -36,9 +45,6 @@ import Legal from "$components/legal.svelte";
         <!-- <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/ana.png" alt=""> -->
     </figure>
 
-    <LegalParagraph>
-      Watch the video to hear more about Ana's work and hobbies, and how Kaddio allows for more flexibility in her work with medical records.        
-    </LegalParagraph>
 
 
     <!-- <figure class="mt-16">

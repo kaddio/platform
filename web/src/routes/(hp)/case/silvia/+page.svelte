@@ -5,6 +5,7 @@ import Legal from "$components/legal.svelte";
 	import LegalParagraph from "$components/legalParagraph.svelte";
 	import LegalTitle from "$components/legalTitle.svelte";
 	import LegalUl from "$components/legalUl.svelte";
+	import { imageHandler } from "$lib/img";
 
 </script>
 
@@ -16,8 +17,13 @@ import Legal from "$components/legal.svelte";
     
     <span slot="title">Meet Silvia</span>
     <span slot="subtitle">
-      Silvia Tiray carefully watches the movement of the wind and waves at the beach in Mallorca. She is about to go kitesurfing together with her husband and son.
+      Silvia Triay carefully watches the movement of the wind and waves at the beach in Mallorca. She is about to go kitesurfing together with her husband and son.
     </span>
+
+    <figure class="mt-16">
+      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src={imageHandler('/img/silvia.png', {format: "auto", width: 1200})} alt="">
+    </figure>
+
 
     <span slot="intro">
       "You must be sharp and responsive at all times", Silvia says.
@@ -26,16 +32,16 @@ import Legal from "$components/legal.svelte";
     </span>
 
 
-    <figure class="mt-16">
-        <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/331174627?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Petter Jormin, Osteopat"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
-
-        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/silvia.png" alt="">
-    </figure>
-
 
     <LegalParagraph>
-      Silvia and her husband Lluis Miguel Horta run the center Osteopatia Mallorca in Palma, Mallorca. At the end of 2022, Silvia started the transition from working with pen and paper to taking digital medical records, using Kaddio.
+      Silvia and her husband run the center Osteopatia Mallorca in Palma, Mallorca. In 2022, Silvia started the transition from working with pen and paper to taking digital medical records, using Kaddio.
     </LegalParagraph>
+
+
+    <figure class="mt-16">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/838309986?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Silvia Triay"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <!-- <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/silvia.png" alt=""> -->
+    </figure>
 
 
 
