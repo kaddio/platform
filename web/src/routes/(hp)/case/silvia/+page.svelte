@@ -8,33 +8,46 @@ import Legal from "$components/legal.svelte";
 
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex">
-</svelte:head>
-
 <Legal>
     <span slot="pretitle">
-        Case study @ Göteborg, Sweden
+        Case study @ Mallorca, Spain
         
     </span>
     
-    <span slot="title">Meet Petter</span>
+    <span slot="title">Meet Silvia</span>
     <span slot="subtitle">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+      Silvia Tiray carefully watches the movement of the wind and waves at the beach in Mallorca. She is about to go kitesurfing together with her husband and son.
     </span>
 
     <span slot="intro">
-        Samtliga personuppgifter vi behandlar är nödvändiga i avtalsförhållandet mellan Kaddio och kunden, alternativt sker
-        med kundens samtycke för att tillhandahålla en så bra tjänst som möjligt. Vi sparar personuppgifterna så länge de
+      "You must be sharp and responsive at all times", Silvia says.
+      Just as carefully as she watches the waves of the ocean, Silvia watches the movements and responses of her clients during osteopathic treatments.
+      "You know that the circumstances may change at any moment and you have to adapt to whatever will happen next."
     </span>
 
 
     <figure class="mt-16">
+        <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/331174627?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Petter Jormin, Osteopat"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
 
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/331174627?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Petter Jormin, Osteopat"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-        <!-- <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/ana.png" alt=""> -->
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/silvia.png" alt="">
     </figure>
+
+
+    <LegalParagraph>
+      Silvia and her husband Lluis Miguel Horta run the center Osteopatia Mallorca in Palma, Mallorca. At the end of 2022, Silvia started the transition from working with pen and paper to taking digital medical records, using Kaddio.
+    </LegalParagraph>
+
+
+
+    <!-- <figure class="mt-16">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/ana.png" alt="">
+        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+          </svg>
+          Faucibus commodo massa rhoncus, volutpat.
+        </figcaption>
+      </figure> -->
     
 <!-- 
     <LegalTitle>

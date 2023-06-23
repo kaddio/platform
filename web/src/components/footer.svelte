@@ -80,11 +80,9 @@
                 <a href="/about-us" class="text-sm hover:underline leading-6 text-gray-600">About us</a>
               </li>
 
-              {#if $page.url.pathname.includes('case')}
-                <li>
-                  <a href="/case" class="text-sm hover:underline leading-6 text-gray-600">Case studies</a>
-                </li>
-              {/if}
+              <li>
+                <a href="/case" class="text-sm hover:underline leading-6 text-gray-600">Case studies</a>
+              </li>
               
               <!-- <li>
                 <a href="/career" class="text-sm hover:underline leading-6 text-gray-600">Lediga tjänster</a>
