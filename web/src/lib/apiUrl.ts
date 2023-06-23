@@ -5,5 +5,5 @@ export const apiUrl = function(){
         return 'http://127.0.0.1:3000'
     }
 
-    return 'https://api.kaddio.com';
+    return 'https://support.kaddio.com';
 }
