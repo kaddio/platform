@@ -19,11 +19,11 @@
     <div>
       <div class="flex items-center gap-x-4 text-xs">
         <time datetime="2020-03-16" class="text-gray-500">Case study</time>
-        {#each tags as tag}
+        <!-- {#each tags as tag}
             <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
                 {tag}
             </a>            
-        {/each}
+        {/each} -->
       </div>
       <div class="group relative max-w-xl">
         <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">

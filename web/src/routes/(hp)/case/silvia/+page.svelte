@@ -19,10 +19,10 @@ import Legal from "$components/legal.svelte";
     <span slot="subtitle">
       Silvia Triay carefully watches the movement of the wind and waves at the beach in Mallorca. She is about to go kitesurfing together with her husband and son.
     </span>
-
+<!-- 
     <figure class="mt-16">
       <img class="aspect-video rounded-xl bg-gray-50 object-cover" src={imageHandler('/img/silvia.png', {format: "auto", width: 1200})} alt="">
-    </figure>
+    </figure> -->
 
 
     <span slot="intro">

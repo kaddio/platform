@@ -22,12 +22,12 @@ import Legal from "$components/legal.svelte";
     <span slot="intro">
       Ana works as an osteopath and physiotherapist since more then 20 years. She runs her own clinic, Spanda Healthcare, in the town Selva in the beautiful Tramuntana mountains of Mallorca.
     </span>
-
+<!-- 
 
     <figure class="mt-16">
         <img class="aspect-video rounded-xl bg-gray-50 object-cover" src={imageHandler('/img/ana.png', {format: "auto", width: 1200})} alt="">
     </figure>
-
+ -->
 
     <LegalParagraph>
       "I really like working with everything that is a bout the mind-body relationship, to help people understand that it is not only biology."
