@@ -32,7 +32,7 @@
 	</SimpleCenteredPiece>	
 
 	<SimpleCenteredPiece icon="envelope">
-		<span slot="title">E-mail</span>
+		<span slot="title">Correo electrónico</span>
 		<span slot="body">
 			Envía un correo electrónico a support@kaddio.com si tienes preguntas. Durante los días laborables de 9 a 15 horas, hacemos todo lo posible para responder en pocas horas. Durante los períodos de vacaciones, los tiempos de respuesta pueden ser más largos.
 		</span>
