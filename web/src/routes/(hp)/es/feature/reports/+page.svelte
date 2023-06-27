@@ -62,22 +62,22 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Envía encuestas basadas en las reservas.</span>
+		<span slot="q">Envío de encuestas basadas en las reservas</span>
 		<span slot="a">
 			Envía la encuesta a los clientes que hayan realizado una reserva dentro de un determinado intervalo de tiempo.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Envía la encuesta basada en grupos específicos.</span>
+		<span slot="q">Envía las encuestas basadas en grupos específicos</span>
 		<span slot="a">
 			Envía la encuesta a los clientes o terapeutas basándote en el grupo al que pertenecen.
 		</span>
 	</Qa>
 	<Qa>
-		<span slot="q">Las encuestas proporcionan respuestas anónimas.</span>
+		<span slot="q">Respuestas anónimas para las encuestas</span>
 		<span slot="a">
-			Todas las respuestas recopiladas a través de las encuestas son anónimas y no pueden ser vinculadas a ningún cliente o terapeuta específico.
+			Todas las respuestas recopiladas a través de las encuestas son anónimas y no se pueden vincular a ningún cliente o terapeuta específico.
 		</span>
 	</Qa>
 
