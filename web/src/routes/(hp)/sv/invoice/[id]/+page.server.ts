@@ -5,69 +5,6 @@ import { Agent } from 'node:https'
 import axios from 'axios';
 
 
-const createPaymentRequest = async function(payeeAlias: string, payerAlias: string|null, amount: string, currency = 'SEK'){
-    // const pfx = await promises.readFile('src/lib/swish/...');
-    // const ca = await promises.readFile('src/lib/swish/...');
-    // const passphrase = 'swish';
-
-    const cert = await promises.readFile('src/lib/swish/server/cert/Swish_Merchant_TestCertificate_1234679304.pem', {encoding: 'utf-8'})
-    const key = await promises.readFile('src/lib/swish/server/cert/Swish_Merchant_TestCertificate_1234679304.key', {encoding: 'utf-8'})
-    const ca = await promises.readFile('src/lib/swish/server/cert/Swish_TLS_RootCA.pem', {encoding: 'utf-8'})
-
-    const httpsAgent = new Agent({
-        cert,
-        key,
-        ca
-    });
-
-    const url = "https://mss.cpc.getswish.net/swish-cpcapi";
-
-    const instructionUUID = crypto.randomUUID().replaceAll('-', '').toUpperCase();
-    const callbackUrl = 'https://8afa1721b57a.ngrok.app';
-
-    const data = {
-        payeePaymentReference: '0123456789',
-        payeeAlias,
-        ...(payerAlias ? {payerAlias} : {}),
-
-        amount,
-        message: 'hejsan svejsan id123',
-        currency,
-
-        callbackUrl
-    }
-
-    let res;
-    try{
-        console.log(JSON.stringify(data))
-        res = await axios(`${url}/api/v2/paymentrequests/${instructionUUID}`, {
-            method: 'PUT',
-            httpsAgent,
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            data: JSON.stringify(data)
-
-        });
-        // console.log(res.data)
-
-    }
-    
-    catch(e){
-        console.error(e.response?.data)
-
-    }
-
-    return res?.data;
-}
-
-type Invoice = {
-    amount: number,
-    _id: string,
-    normalizedCellPhone?: string,
-    currency: string
-}
-
 export const actions = {
     async default({request, params}){
 
@@ -99,6 +36,77 @@ export const actions = {
     }
 }
 
+const createPaymentRequest = async function(payeeAlias: string, payerAlias: string|null, amount: string, currency = 'SEK'){
+    // const pfx = await promises.readFile('src/lib/swish/...');
+    // const ca = await promises.readFile('src/lib/swish/...');
+    // const passphrase = 'swish';
+
+    const cert = await promises.readFile('src/lib/swish/server/cert/Swish_Merchant_TestCertificate_1234679304.pem', {encoding: 'utf-8'})
+    const key = await promises.readFile('src/lib/swish/server/cert/Swish_Merchant_TestCertificate_1234679304.key', {encoding: 'utf-8'})
+    const ca = await promises.readFile('src/lib/swish/server/cert/Swish_TLS_RootCA.pem', {encoding: 'utf-8'})
+
+    const httpsAgent = new Agent({
+        cert,
+        key,
+        ca
+    });
+
+    const url = "https://mss.cpc.getswish.net/swish-cpcapi";
+
+    const instructionUUID = crypto.randomUUID().replaceAll('-', '').toUpperCase();
+    const callbackUrl = 'https://a26198a4df4e.ngrok.app/sv/invoice';
+
+    const data = {
+        payeePaymentReference: '0123456789',
+        payeeAlias,
+        ...(payerAlias ? {payerAlias} : {}),
+
+        amount,
+        message: 'hejsan svejsan id123',
+        currency,
+
+        callbackUrl
+    }
+
+    let res;
+    try{
+        // console.log(JSON.stringify(data))
+        res = await axios(`${url}/api/v2/paymentrequests/${instructionUUID}`, {
+            method: 'PUT',
+            httpsAgent,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            data: JSON.stringify(data)
+
+        });
+        // console.log(res.data)
+
+        const { paymentRequestToken } = res.headers;     
+
+        console.log(paymentRequestToken)
+
+        // return {
+        //     id: 
+        // };
+
+    }
+    
+    catch(e){
+        console.error(e.response?.data)
+
+    }
+}
+
+
+type Invoice = {
+    amount: number,
+    _id: string,
+    normalizedCellPhone?: string,
+    currency: string
+}
+
+
 async function getInvoice(invoiceId: string): Promise<Invoice>{
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
@@ -129,5 +137,5 @@ export async function load({ params }) {
 
     return {
         invoice
-    };    
+    };   
 }
