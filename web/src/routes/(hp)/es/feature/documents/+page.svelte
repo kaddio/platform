@@ -76,7 +76,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Colabora con tus colegas.</span>
+		<span slot="q">Colaboración entre colegas.</span>
 		<span slot="a">
 			Permite que varias personas escriban y editen el mismo documento.
 		</span>
