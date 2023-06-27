@@ -55,7 +55,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Comparte archivos</span>
+		<span slot="q">Archivos compartidos</span>
 		<span slot="a">
 			Comparte todo tipo de archivos de forma segura en el chat.
 		</span>
