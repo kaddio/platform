@@ -172,7 +172,7 @@ const translations = {
     },
     "Läs mer": {
         en: 'Learn more',
-        es: 'Aprende más'
+        es: 'Descubre más'
     },
     "Modul": {
         en: 'Module',
