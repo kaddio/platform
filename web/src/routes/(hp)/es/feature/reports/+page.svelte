@@ -41,7 +41,7 @@
 	<span slot="title">Funciones</span>
 
 	<Qa>
-		<span slot="q">Crea informes</span>
+		<span slot="q">Creación de informes</span>
 		<span slot="a">
 			Utiliza la herramienta de informes para crear informes sobre reservas, facturación, respuestas de encuestas y más. Visualiza los resultados de forma gráfica y exporta los datos como archivos .csv.
 		</span>
