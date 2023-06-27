@@ -119,7 +119,15 @@ enligt GDPR.
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">SMS.</strong> System för att leverera SMS till patienter som har en bokning i kalendern. (SMS-påminnelser).
+            <strong class="font-semibold text-gray-900">SMS.</strong> System för att leverera SMS via Twilio.
+      </LegalLi>
+
+      <LegalLi>
+            <strong class="font-semibold text-gray-900">BankID.</strong> System för att ansluta mot BankID.
+      </LegalLi>
+
+      <LegalLi>
+        <strong class="font-semibold text-gray-900">Kortbetalning klientbokning.</strong> System för att hantera kortbetalning online i samband med bokning.
       </LegalLi>
 
       <LegalLi>
@@ -144,8 +152,10 @@ enligt GDPR.
     </figure> -->
 
     <LegalParagraph>
-      <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/Third-Party-Subprocessors">Third-Party Subprocessors <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
+      För detaljer, se vår lista över <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/Third-Party-Subprocessors">Third-Party Subprocessors <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
     </LegalParagraph>
 
+    <LegalParagraph>
+      Se även <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/FAQ">FAQ <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
+    </LegalParagraph>
 </Legal>
-
