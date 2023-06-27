@@ -24,7 +24,7 @@
           Petter runs two clinics in Sweden. In his daily practice he meets all kinds of patients which gives him new perspectives every day.          
         </BlogPost>
 
-        <BlogPost href="/case/osteopatia-mallorca" title="Digital transition" name="Osteopatía Mallorca" nameTitle="" location="Mallorca, Spain" tags={["Medical record", "Booking"]} img={imageHandler('/img/silvia.png', {format: "auto", width: 640})}>
+        <BlogPost href="/case/osteopatia-mallorca" title="Digital transition" name="Osteopatía Mallorca" nameTitle="" location="Palma, Spain" tags={["Medical record", "Booking"]} img={imageHandler('/img/silvia.png', {format: "auto", width: 640})}>
           Silvia and her husband run the center Osteopatía Mallorca in Palma, Mallorca. In 2022, Silvia started the transition from working with pen and paper to taking digital medical records, using Kaddio.
         </BlogPost>
 
