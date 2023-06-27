@@ -62,7 +62,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Envía facturas</span>
+		<span slot="q">Envío de facturas</span>
 		<span slot="a">
 			Envía tus facturas directamente en el chat.
 		</span>
