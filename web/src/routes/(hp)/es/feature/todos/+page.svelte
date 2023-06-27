@@ -78,7 +78,7 @@
 	<Qa>
 		<span slot="q">Historial</span>
 		<span slot="a">
-			Revisa qué tareas se han completado
+			Revisa qué tareas se han completado.
 		</span>
 	</Qa>
 
