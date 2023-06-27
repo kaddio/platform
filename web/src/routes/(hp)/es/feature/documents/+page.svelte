@@ -50,7 +50,7 @@
 	<Qa>
 		<span slot="q">Gestión de versiones</span>
 		<span slot="a">
-			Guardar versiones de documentos para tener un seguimiento de los cambios.
+			Guarda versiones de documentos para tener un seguimiento de los cambios.
 		</span>
 	</Qa>
 
