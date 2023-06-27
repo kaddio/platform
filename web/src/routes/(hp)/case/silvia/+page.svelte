@@ -12,12 +12,11 @@ import Legal from "$components/legal.svelte";
 <Legal>
     <span slot="pretitle">
         Case study @ Mallorca, Spain
-        
     </span>
     
     <span slot="title">Meet Silvia</span>
     <span slot="subtitle">
-      Silvia Triay carefully watches the movement of the wind and waves at the beach in Mallorca. She is about to go kitesurfing together with her husband and son.
+      Silvia Triay is about to go kitesurfing with her family. She carefully watches the movement of the wind and waves at the Sa Rápita beach in Mallorca. 
     </span>
 <!-- 
     <figure class="mt-16">
@@ -34,7 +33,7 @@ import Legal from "$components/legal.svelte";
 
 
     <LegalParagraph>
-      Silvia and her husband run the center Osteopatia Mallorca in Palma, Mallorca. In 2022, Silvia started the transition from working with pen and paper to taking digital medical records, using Kaddio.
+      Silvia and her husband run the center Osteopatía Mallorca in Palma. In 2022, they started the transition from pen and paper to digital medical records, using Kaddio.
     </LegalParagraph>
 
 
