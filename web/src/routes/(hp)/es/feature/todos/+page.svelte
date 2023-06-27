@@ -64,7 +64,7 @@
 	<Qa>
 		<span slot="q">Recordatorios</span>
 		<span slot="a">
-			Kaddio notifica cuando se delega una tarea o si una tarea está cerca de la fecha límite
+			Kaddio notifica cuando se delega una tarea o si una tarea está cerca de la fecha límite.
 		</span>
 	</Qa>
 
