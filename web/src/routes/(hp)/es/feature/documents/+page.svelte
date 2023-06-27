@@ -55,7 +55,7 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Cargar archivos</span>
+		<span slot="q">Carga de archivos</span>
 		<span slot="a">
 			Sube todo tipo de archivos a Kaddio.
 		</span>
