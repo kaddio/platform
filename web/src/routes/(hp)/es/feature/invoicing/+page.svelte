@@ -79,14 +79,14 @@
 	<Qa>
 		<span slot="q">Contabilidad</span>
 		<span slot="a">
-			Exporta facturas como archivo SIE o archivo CSV para cargar en un programa de contabilidad.
+			Exporta facturas como archivo .sie o archivo .csv para cargar en un programa de contabilidad.
 		</span>
 	</Qa>
 
 	<Qa>
 		<span slot="q">Monedas</span>
 		<span slot="a">
-			Envía facturas en las 33 monedas más comunes del mundo, con tipos de cambio automáticos actualizados diariamente por el BCE. Kaddio publica automáticamente las ganancias y pérdidas de tipo de cambio en la exportación SIE.
+			Envía facturas en las 33 monedas más comunes del mundo, con tipos de cambio automáticos actualizados diariamente por el BCE. Kaddio publica automáticamente las ganancias y pérdidas de tipo de cambio en la exportación .sie.
 		</span>
 	</Qa>
 
