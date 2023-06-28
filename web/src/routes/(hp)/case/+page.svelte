@@ -24,7 +24,7 @@
           Petter runs two clinics in Sweden. In his daily practice he meets all kinds of patients which gives him new perspectives every day.          
         </BlogPost>
 
-        <BlogPost href="/case/spanda-healthcare" title="Traditional meets modern" name="Spanda Healthcare" nameTitle="" location="Selva, Spain" tags={["Medical record"]} img={imageHandler('/img/ana.png', {format: "auto", width: 640})}>
+        <BlogPost href="/case/spanda-healthcare" title="Traditional meets modern" name="Spanda Healthcare" nameTitle="" location="Selva, Spain" tags={["Medical record", "Invoicing", "Communication"]} img={imageHandler('/img/ana.png', {format: "auto", width: 640})}>
           Ana is an osteopath and physiotherapist with more than 20 years of experience in the field. She runs Spanda Healthcare in the beautiful Tramuntana mountains of Mallorca.
         </BlogPost>
 
