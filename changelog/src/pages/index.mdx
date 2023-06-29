@@ -8,6 +8,20 @@ export async function getStaticProps() {
   return { props: {} }
 }
 
+
+---
+
+## Video updates {{ date: '2023-05-21T00:00Z' }}
+
+
+### <SparkleIcon /> Improvements
+- Enables peer-to-peer for Safari
+- Prevents screen lock / turn off while in a conference
+- Fixes an issue seen in p2p connections where sources of the initiator are not signaled to the remote since the tracks are added while the initiator is waiting for a session-accept from the peer
+- Fixes an issue where media gets sent on jvb connection even when the connection is suspended
+- Fixes an edge case where the main room is locked and everyone leaves it to a breakout room and then coming back breaks the meeting
+- Fixes audio output device for notifications
+
 ---
 
 ## Kaddio Status page {{ date: '2023-05-31T00:00Z' }}
