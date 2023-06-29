@@ -68,8 +68,8 @@ export function Intro() {
         <IconLink href="https://help.kaddio.com" icon={BookIcon} className="flex-none">
           Help Center
         </IconLink>
-        <IconLink href="https://github.com/kaddio" icon={GitHubIcon} className="flex-none">
-          GitHub
+        <IconLink href="https://github.com/kaddio/documentation" icon={GitHubIcon} className="flex-none">
+          Technical docs
         </IconLink>
         <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
           RSS
