@@ -22,13 +22,13 @@
         <span slot="body">Easy-to-use time booking and online payment that does everything you expect.</span>
     </ModulePresentation>
 
-    <!-- <ModulePresentation href="en/feature/invoicing">
+    <ModulePresentation href="en/feature/invoicing">
           <span slot="icon">
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
           <span slot="title">Invoicing</span>
           <span slot="body">Complete invoicing system for small and medium sized businesses.</span>
-    </ModulePresentation> -->
+    </ModulePresentation>
         
     <ModulePresentation href="en/feature/communication">
       <span slot="icon">

@@ -6,26 +6,26 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Fakturering</title>
-	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
+	<title>Kaddio - Invoicing</title>
+	<meta name="description" content="Kaddio Invoicing is a complete invoicing service for small and medium businesses." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Fakturering</span>
-	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
+	<span slot="title">Kaddio Invoicing</span>
+	<span slot="sub">Kaddio Invoicing is a complete invoicing service for small and medium businesses.</span>
 
 	<ModuleFeature>
-		<span slot="title">Spara tid</span>
+		<span slot="title">Save time</span>
 		<span slot="body">
-			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar så att du skicka en fakturera med tre klick.
+			Save time with integrated invoicing. Kaddio automatically makes suggestions for invoicing based on bookings or medical records. 
 		</span>
 	</ModuleFeature>
 	
 </ModuleSection>
   
-
+<!--
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Details</span>
 
 	<Qa>
 		<span slot="q">Artiklar</span>
@@ -92,3 +92,4 @@
 	</Qa>
 
 </FaqSection>
+-->
