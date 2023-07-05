@@ -12,31 +12,32 @@
 
 <ModuleSection>
 	<span slot="title">Kaddio Journal</span>
-	<span slot="sub">Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.</span>
+	<span slot="sub">
+		Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.
+	</span>
 
-	<!-- <ModuleFeature>
-		<span slot="title">Användarvänligt.</span>
+	<ModuleFeature>
+		<span slot="title">Dokumentera.</span>
 		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
+		</span> 
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">Anpassa.</span>
+		<span slot="body">
+			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
+			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Flexibelt.</span>
+		<span slot="title">Kontrollera.</span>
 		<span slot="body">
-			Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.
-Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Säkert.</span>
-		<span slot="body">
-			Behörighetsstyrning
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
+			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
 		</span>
-	</ModuleFeature> -->
-
-
+	</ModuleFeature>
 
 </ModuleSection>
 
