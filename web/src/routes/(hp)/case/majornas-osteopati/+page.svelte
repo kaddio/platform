@@ -16,11 +16,14 @@ import Legal from "$components/legal.svelte";
     
     <span slot="title">Meet Petter</span>
     <span slot="subtitle">
-      "Each client teaches me something. By seeing all kinds of clients with all sorts of problems I can evolve my skills in osteopathic practice every day".
+      "What I like the most about osteopathy is the variation. New, exiting things happen every day."
     </span>
 
     <span slot="intro">
-      Petter Jormin is inspired by the client meeting. With two busy clinics he is gaining a lot of experience.
+      Petter is an osteopath since 2011 and runs two clinics. His clients constantly give him new perspectives on the job.
+"I evolve my osteopathic skills naturally by seeing all kinds of people with all kinds of problems."
+
+
     </span>
 <!-- 
 
@@ -31,7 +34,7 @@ import Legal from "$components/legal.svelte";
 
 
     <LegalParagraph>
-      Petter graduated in 2011 from Skandinaviska Osteopathögskolan. In the video he describes how Kaddio allows him to have more time for his clients.
+      "One of the benefits with Kaddio is that is web based", Petter says. "I feel that it is easy to use and safe. I can always reach it: From home, on my mobile, on my computer, on my tablet. I save a lot of time by not having to handle physical papers which gives me more time to focus on the client and the treatment."
     </LegalParagraph>
 
 
