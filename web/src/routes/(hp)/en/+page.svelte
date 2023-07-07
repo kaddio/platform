@@ -6,6 +6,7 @@
 	import ModulesEn from './modulesEn.svelte';
 	import PricesEn from './pricesEn.svelte';
 	import { scroll } from '$lib/scroll';
+	import QuotesEn from './quotesEn.svelte';
 
 	setContext('lang', 'en');
 </script>
@@ -54,7 +55,7 @@
 
 <ModulesEn />
 <!-- <CrmSv /> -->
-<!-- <QuotesSv /> -->
+<!-- <QuotesEn /> -->
 <PricesEn />
 <SecuritySectionEn />
 <!-- <ReferencesSv /> -->

@@ -7,7 +7,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Läs vad några av våra 2000 kunder tycker om Kaddio        
+        Hello! Läs vad några av våra 2000 kunder tycker om Kaddio        
     </span>
 
     <Quote>
