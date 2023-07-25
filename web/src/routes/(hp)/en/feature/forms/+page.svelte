@@ -6,16 +6,16 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Formulär</title>
+	<title>Kaddio - Forms</title>
 	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." />
 </svelte:head>
 
 <ModuleSection>
-	<span slot="title">Kaddio Formulär</span>
-	<span slot="sub">Automatisera utskick av formulär och hälsodeklarationer. I Kaddio kan du både använda standardformulär och skapa dina egna. Skicka journalformulär automatiskt vid bokning och få svaren direkt till journalen.</span>
+	<span slot="title">Kaddio Forms</span>
+	<span slot="sub">Automate issuing of forms and health declarations. In Kaddio, you can use your own assessment forms. Send forms automatically at bookings and receive answers as an entry in the medical records.</span>
 
 	<!-- <ModuleFeature>
-		<span slot="title">Förbered</span>
+		<span slot="title">Prepare</span>
 		<span slot="body">
 			... Kaddio kan automatiskt skicka de formulär eller hälsodeklarationen du vill ha ifyllda innan besöket.
 		</span>
