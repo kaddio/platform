@@ -22,42 +22,45 @@
 	</ModuleFeature>
 	
 </ModuleSection>
-  
-<!--
+<!--  
 <FaqSection>
 	<span slot="title">Details</span>
 
 	<Qa>
-		<span slot="q">Artiklar</span>
+		<span slot="q">Articles</span>
 		<span slot="a">
-			Kaddio har stöd för artiklar
+			Kaddio has support for articles.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Fakturaunderlag</span>
+		<span slot="q">Invoice bases</span>
 		<span slot="a">
-			Kaddio skapar automatiskt fakturaunderlag utifrån kalender och journal.
+			Kaddio automatically creates bases for invoices from bookings or medical records.
 		</span>
 	</Qa>
+
 	<Qa>
-		<span slot="q">Skicka fakturor</span>
+		<span slot="q">Send invoices</span>
 		<span slot="a">
 			Skicka fakturor med post, e-post, via Kaddios säkra kommunikation och e-faktura.
 		</span>
 	</Qa>
+
 	<Qa>
-		<span slot="q">Påminnelsefaktura</span>
+		<span slot="q">Reminders for invoices</span>
 		<span slot="a">
-			Skicka påminnelsefakturor automatiskt och manuellt.
+			Send reminders for invoices, automatically or manually.
 		</span>
 	</Qa>
+
 	<Qa>
 		<span slot="q">Automatisk avprickning</span>
 		<span slot="a">
 			Kaddio prickar av fakturor automatiskt när kunden betalar via bankgiro.
 		</span>
 	</Qa>
+	
 	<Qa>
 		<span slot="q">E-faktura</span>
 		<span slot="a">
@@ -80,14 +83,14 @@
 	<Qa>
 		<span slot="q">Export</span>
 		<span slot="a">
-			Exportera fakturor som SIE-fil eller CSV-fil för uppladdning i ett bokföringsprogram.
+			Exportera invoices as SIE or CSV filer for uploads to bokkeeping programs.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Valutor</span>
+		<span slot="q">Currencies</span>
 		<span slot="a">
-			Skicka fakturor i världens 33 vanligaste valutor, med automatiska växelkurser som uppdateras varje dag från ECB. Kaddio bokför automatiskt valutakursvinster och valutakursförluster i SIE-exporten.
+			Send invoices in the world's 33 most common currencies with automated exchange rates, updated each day from ECB. Kaddio automatically posts gains and losses from exchange rates in the exported SIE file.
 		</span>
 	</Qa>
 
