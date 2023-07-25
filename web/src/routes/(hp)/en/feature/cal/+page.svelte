@@ -31,7 +31,7 @@
 	<ModuleFeature>
 		<span slot="title">Streamline</span>
 		<span slot="body">
-			Streamline recurring events can be streamlined with templates.
+			Streamline recurring events with templates.
 	</ModuleFeature>
 </ModuleSection>
   
@@ -40,112 +40,112 @@
 	<span slot="title">Details</span>
 
 	<Qa>
-		<span slot="q">Kalender</span>
+		<span slot="q">Calendar</span>
 		<span slot="a">
-			Administrera bokningar i kalendern, till exempel ändra eller avboka tid. I kalendern ser du bokningar sida vid sida med möten och andra aktiviteter.
+			Administrate bookings in the calendar, for example, re-schedule or cancel appointments. The calendar shows bookings side by side with meetings and other activities.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Öppen klientbokning</span>
+		<span slot="q">Open booking for clients</span>
 		<span slot="a">
-			Klienten bokar tid själv på en publik websida.
+			Allow clients to book their own appointments on a public web page.
 		</span>
 	</Qa>
-
+<!--
 	<Qa>
 		<span slot="q">Bokning med Mobilt BankID</span>
 		<span slot="a">
 			Klienten loggar in i Kaddio med Mobilt BankID för att kunna boka tid. Passar dig som vill säkerställa identiteten på den som bokar.
 		</span>
 	</Qa>
-
+-->
 	<Qa>
-		<span slot="q">SMS-påminnelser</span>
+		<span slot="q">Text reminders</span>
 		<span slot="a">
-			Välj om och när SMS-påminnelser skickas inför och efter bokade tid.
+			Choose if and when reminders are sent by text messages, before and after booked appointments.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Formulär</span>
+		<span slot="q">Forms</span>
 		<span slot="a">
-			Skicka formulär automatiskt i samband med bokning, till exempel skattningsformulär och hälsodeklaration.
+			Automatically send forms in connection with bookings, for instance, assessment forms and health declarations.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Behandlingsformer</span>
+		<span slot="q">Treatments</span>
 		<span slot="a">
-			Erbjud olika typer av behandlingsformer. Koppla behandlingsformer till olika behandlare. Anpassa sms och mailutskick beroende på behandling.
+			Offer multiple treatments. Connect treatments to different users. Adjust text messages and emails to treatments.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Gruppbokning</span>
+		<span slot="q">Group sessions</span>
 		<span slot="a">
-			Lägg upp tider som är bokningsbara för fler än en deltagare.
+			Schedule time slots that are bookable for more than one participant.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Tidsoptimering</span>
+		<span slot="q">Time optimization</span>
 		<span slot="a">
-			Undvik onödiga hål i schemat. Kaddio optimerar bokningsbara tider utifrån behandlingformernas längd.
+			Avoid unnecessary gaps in your schedule. Kaddio optimizes bookable times to the duration of your offered treatments and your scheduled working hours.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Väntelistor</span>
+		<span slot="q">Waiting lists</span>
 		<span slot="a">
-			Skapa väntelistor med datum, anteckningar och delegeringsfunktion.
+			Create waiting lists with dates, notes and functions for delgation.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Kortbetalning vid bokning</span>
+		<span slot="q">Pay by card at booking</span>
 		<span slot="a">
-			Låt klienten betala med kort direkt vid bokning online.
+			Let your clients pay by card directly when booking online.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Fakturering</span>
+		<span slot="q">Invoicing</span>
 		<span slot="a">
-			Automatiska faktureringsunderlag skapas utifrån bokningar.
+			Invoice bases are created automatically from scheduled bookings.
 		</span>
 	</Qa>
 	<Qa>
-		<span slot="q">Visa bokning på din hemsida</span>
+		<span slot="q">Show bookable times on your website</span>
 		<span slot="a">
-			Integrera bokning direkt på din hemsida.
+			Integrate time booking directly on your website.
 		</span>
 	</Qa>
 	<Qa>
-		<span slot="q">Platser</span>
+		<span slot="q">Places</span>
 		<span slot="a">
-			Kaddio har stöd för om du har mottagningar på flera platser. Information i mail och sms-påminnelser anpassas beroende på plats.
+			Kaddio handles if you have multiple offices. Information in emails and reminders by text messages are adjusted to the indicated place.
 		</span>
 	</Qa>
 
 	<Qa>
-		<span slot="q">Rumsbokning</span>
+		<span slot="q">Book rooms</span>
 		<span slot="a">
-			Schemaläggning för dina rum. Kaddio ser till att behandlingar bara bokas in när det finns tillgängliga rum.
+			Schedule your rooms. Kaddio ensures that treatments can only be booked if there are available rooms.
 		</span>
 	</Qa>
-
+<!--
 	<Qa>
 		<span slot="q">Personalliggare</span>
 		<span slot="a">
 			Kaddio kan användas som digital personalliggare genom Arbetstid i Kalendern, med hjälp av Loggning uppfylls även Skatteverkets regler kring kontroll.
 		</span>
 	</Qa>
-
+-->
 	<Qa>
-		<span slot="q">Loggning</span>
+		<span slot="q">Logs</span>
 		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
+			Reading and editing of medical records are logged. The log shows what actions have been performed for the records of a client; by whom, when, and from what IP address.
 		</span>
 	</Qa>
 
