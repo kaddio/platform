@@ -67,9 +67,9 @@
     <div class="">
         <div class="bg-white">
             <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
-                <a class="text-sm uppercase text-gray-500 font-semibold">Platser</a>
-                <a class="text-sm uppercase text-gray-500 font-semibold">Behandlingar</a>
-                <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold" href="#places">Platser</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types">Behandlingar</a>
+                <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts">Personal</a>
                 <a class="text-sm uppercase text-gray-500 font-semibold">
                     Omdömen
                     <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
@@ -92,8 +92,8 @@
                     <Link href="http://external.com" type="external"></Link>
                     <Link href="http://fb.com" type="facebook"></Link>
                 </div>
-                <Gallery imageSrcs={organization.homepage.pics}></Gallery>
-                <div class="flex flex-col gap-4  p-8 max-h-96 overflow-scroll">
+                <Gallery imageSrcs={organization.homepage?.pics || []}></Gallery>
+                <div class="flex flex-col gap-4  p-8 max-h-96 overflow-scroll" id="places">
                     {#each organization.places as place} 
                         <KdItem>
                             <span slot="title">
@@ -111,12 +111,12 @@
         </div>
     </div>
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
-        <Card className="flex flex-col gap-5  p-5 col-span-1 ">
+        <Card className="flex flex-col gap-5  p-5 col-span-1 " id="hosts">
             <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
             <Hosts hosts={organization.hosts}></Hosts>
         </Card>
         
-        <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-1 ">
+        <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-1 " id="booking-types">
             <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
             <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
         </Card>
