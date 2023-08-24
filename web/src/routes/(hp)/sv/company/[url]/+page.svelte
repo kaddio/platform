@@ -17,25 +17,18 @@
 	import Link from "./components/link.svelte";
 	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
 	import KdButton from "$components/kd-button.svelte";
+	import { page } from "$app/stores";
+	import Footer from "../../../../../components/footer.svelte";
+	import { setContext } from "svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
     const organization = data.organization;
 
-    // if(data.orgData){
-    //     schema = {
-    //         ...websiteSchema,
-    //         name: "Kaddio ...",
-    //         description: `This is Kadd`
-    //     }
-    // }
+    setContext('lang', 'sv');
     
-    const nextTime = dayjs(organization.nextFreeTime).fromNow()
-    
-    const bookingTypes = groupBy(organization.bookingTypes, 'categoryName');
-    
-    let schema = websiteSchema;
-
+    let showBackButton = !!$page.url.searchParams.get('backbutton');
+    console.log(showBackButton)
 </script>
 
 <svelte:head>
@@ -47,9 +40,13 @@
         <div class="overlay"></div>
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
-                <div>
-                    <img src="/img/kaddio-logo.png" alt="" class="h-7">
-                </div>
+                    <div class="flex gap-5">
+                        <img src="/img/kaddio-logo.png" alt="" class="h-7">
+                        {#if showBackButton}
+                            <a href="javascript:history.back()" class="text-white text-lg"><i class="fa fa-arrow-left"></i> Tillbaka till sökresultat </a>
+                        {/if}
+                    </div>
+
                 <KdButton  variant={Variant.LIGHT} color={Color.DEFAULT}>Logga in</KdButton>
             </div>
 
@@ -65,27 +62,29 @@
     </div>
     </div>
     <div class="">
-        <div class="bg-white">
-            <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
-                <a class="text-sm uppercase text-gray-500 font-semibold" href="#places">Platser</a>
-                <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types">Behandlingar</a>
-                <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts">Personal</a>
-                <a class="text-sm uppercase text-gray-500 font-semibold">
-                    Omdömen
-                    <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
-                    <i class="fa fa-star text-yellow-500"></i>
-                </a>
+        {#if organization.hasBooking}
+            <div class="bg-white">
+                <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
+                    <a class="text-sm uppercase text-gray-500 font-semibold" href="#places">Platser</a>
+                    <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types">Behandlingar</a>
+                    <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts">Personal</a>
+                    <a class="text-sm uppercase text-gray-500 font-semibold">
+                        Omdömen
+                        <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
+                        <i class="fa fa-star text-yellow-500"></i>
+                    </a>
+                </div>
             </div>
-        </div>
+        {/if}
         <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5">
-            <Card className="grow col-span-3">
-                <div class="prose p-8 max-h-96">
+            <Card className="grow col-span-5 md:col-span-3">
+                <div class="prose p-8">
                     {@html organization.homepage?.presentation}
-                    <a href="">Läs mer</a>
+                    <!-- <a href="">Läs mer</a> -->
                 </div>    
             </Card>
         
-            <Card className="flex flex-col gap-4 col-span-2">
+            <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
                 <div class="flex flex-col gap-4 my-8 mx-8">
                     <Link href="http://insta.com" type="instagram"></Link>
@@ -93,37 +92,42 @@
                     <Link href="http://fb.com" type="facebook"></Link>
                 </div>
                 <Gallery imageSrcs={organization.homepage?.pics || []}></Gallery>
-                <div class="flex flex-col gap-4  p-8 max-h-96 overflow-scroll" id="places">
-                    {#each organization.places as place} 
-                        <KdItem>
-                            <span slot="title">
-                                {place.name} <small class="text-gray-500">{place.address}</small>
-                            </span>
-                            
-                            <span slot="action">
-                                <KdLinkButton size={Size.SM} variant={Variant.OUTLINE} href="">Boka</KdLinkButton>
-                            </span>
-                        </KdItem>
-                    {/each}
-                </div>
+                {#if organization.hasBooking && organization.homepage?.showPlaces}
+                    <div class="flex flex-col gap-4  p-8 overflow-scroll" id="places">
+                        {#each organization.places as place} 
+                            <KdItem>
+                                <span slot="title">
+                                    {place.name} <small class="text-gray-500">{place.address}</small>
+                                </span>
+                                
+                                <span slot="action">
+                                    <KdLinkButton size={Size.SM} variant={Variant.OUTLINE} href="">Boka</KdLinkButton>
+                                </span>
+                            </KdItem>
+                        {/each}
+                    </div>
+                {/if}
                 
             </Card>
         </div>
     </div>
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
-        <Card className="flex flex-col gap-5  p-5 col-span-1 " id="hosts">
-            <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
-            <Hosts hosts={organization.hosts}></Hosts>
-        </Card>
-        
-        <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-1 " id="booking-types">
-            <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
-            <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
-        </Card>
+        {#if organization.homepage?.showUs}
+            <Card className="flex flex-col gap-5  p-5 col-span-2 md:col-span-1 " id="hosts">
+                <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
+                <Hosts hosts={organization.hosts}></Hosts>
+            </Card>
+        {/if}
+        {#if organization.hasBooking}
+            <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-2 md:col-span-1 " id="booking-types">
+                <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
+                <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
+            </Card>
+        {/if}
     </div>
 </div>
 
-<footer class="bg-gray-200">
+<!-- <footer class="bg-gray-200">
     <div class="max-w-screen-lg mx-auto py-8">
         Kaddio
     </div>
@@ -138,4 +142,6 @@
     background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.5567620798319328) 100%);
 }
-</style>
+</style> -->
+
+<Footer></Footer>

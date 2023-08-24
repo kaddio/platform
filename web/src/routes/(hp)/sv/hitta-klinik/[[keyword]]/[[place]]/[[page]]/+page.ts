@@ -16,6 +16,7 @@ export async function load({params, url, fetch}) : Promise<{organizations: Organ
           city,
           url,
           keywords,
+          hasBooking,
           bookingTypes {
             name,
             nextFreeTime

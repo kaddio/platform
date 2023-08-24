@@ -11,7 +11,8 @@ export async function load({ params, fetch }) {
                     stars,
                     address,
                     city,
-                    bookingLink
+                    bookingLink,
+                    hasBooking,
                     places {
                         name
                         address,
@@ -29,6 +30,8 @@ export async function load({ params, fetch }) {
                         headerImg
                         presentation
                         pics
+                        showPlaces
+                        showUs
                     }
                     hosts {
                         firstname

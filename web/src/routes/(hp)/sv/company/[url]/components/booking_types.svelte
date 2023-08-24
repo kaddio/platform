@@ -11,7 +11,7 @@
 
 
 {#each Object.entries(groupedDookingTypes) as [category, bookingTypesInCategory]} 
-    <span class="uppercase text-gray-400 text-sm font-semibold">{category || ""}</span>
+    <span class="uppercase text-gray-400 text-sm font-semibold">{category == "null" ? "" : category}</span>
     {#each bookingTypesInCategory as bookingType}                         
         <KdItem>
             <span slot="title">

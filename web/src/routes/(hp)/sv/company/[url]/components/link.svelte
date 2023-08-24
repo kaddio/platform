@@ -5,9 +5,9 @@
         EXTERNAL = 'external',
     }
     const iconMap = {
-        [LinkType.INSTAGRAM]: "fa-brands fa-instagram",
-        [LinkType.FACEBOOK]: "fa-brands fa-facebook",
-        [LinkType.EXTERNAL]: "fa fa-globe",
+        [LinkType.INSTAGRAM]: "fa-brands fa-fw fa-instagram",
+        [LinkType.FACEBOOK]: "fa-brands fa-fw fa-facebook",
+        [LinkType.EXTERNAL]: "fa fa-fw fa-globe",
     }
     export let href: string; 
     export let type: LinkType
@@ -16,3 +16,4 @@
 <a href={href} class="inline-flex gap-7 items-center">
     <i class="{iconMap[type]} text-teal-600 fa-lg"></i><span class="text-teal-400 font-semibold">{href}</span>
 </a>
+
