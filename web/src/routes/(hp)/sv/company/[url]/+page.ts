@@ -13,6 +13,7 @@ export async function load({ params, fetch }) {
                     city,
                     bookingLink,
                     hasBooking,
+                    url
                     places {
                         name
                         address,

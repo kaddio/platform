@@ -133,7 +133,7 @@
                                 <i class="fa fa-magnifying-glass text-gray-400 mr-4"></i><span >Sök {item.label}</span>
                             {/if}
                             {#if item.type=='ORG'}
-                                <i class="fa fa-globe text-gray-400 mr-4"></i><a href="http://{item.url}.kaddio.com">{item.label}</a>
+                                <i class="fa fa-globe text-gray-400 mr-4"></i><a href="/sv/company/{item.url}?backbutton=1">{item.label}</a>
                             {/if}
                         </div>
                     </div>

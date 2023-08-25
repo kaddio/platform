@@ -28,7 +28,7 @@
     setContext('lang', 'sv');
     
     let showBackButton = !!$page.url.searchParams.get('backbutton');
-    console.log(showBackButton)
+
 </script>
 
 <svelte:head>
@@ -47,16 +47,20 @@
                         {/if}
                     </div>
 
-                <KdButton  variant={Variant.LIGHT} color={Color.DEFAULT}>Logga in</KdButton>
+                    <KdLinkButton variant={Variant.LIGHT} color={Color.DEFAULT} href="https://{organization.url}.kaddio.com/login">Logga in</KdLinkButton>
             </div>
 
             
         
-        
-            <h1 class="text-white absolute bottom-8 text-3xl">
-                {organization.name}
+            <div class="flex justify-between w-full">
+                <h1 class="text-white absolute bottom-8 text-3xl">
+                    {organization.name}
 
-            </h1>
+                </h1>
+                <div class="absolute bottom-8 right-0">
+                    <KdLinkButton variant={Variant.FLAT} color={Color.PRIMARY} href="https://{organization.url}.kaddio.com/booking">Boka tid</KdLinkButton>
+                </div>
+            </div>
         
         
     </div>
@@ -77,9 +81,9 @@
             </div>
         {/if}
         <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5">
-            <Card className="grow col-span-5 md:col-span-3">
+            <Card className="grow col-span-5 md:col-span-3 ">
                 <div class="prose p-8">
-                    {@html organization.homepage?.presentation}
+                    {@html organization.homepage?.presentation || "Välkommen!"}
                     <!-- <a href="">Läs mer</a> -->
                 </div>    
             </Card>
@@ -93,7 +97,7 @@
                 </div>
                 <Gallery imageSrcs={organization.homepage?.pics || []}></Gallery>
                 {#if organization.hasBooking && organization.homepage?.showPlaces}
-                    <div class="flex flex-col gap-4  p-8 overflow-scroll" id="places">
+                    <div class="flex flex-col gap-4  p-8 " id="places">
                         {#each organization.places as place} 
                             <KdItem>
                                 <span slot="title">
@@ -111,15 +115,15 @@
             </Card>
         </div>
     </div>
-    <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
+    <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8 ">
         {#if organization.homepage?.showUs}
-            <Card className="flex flex-col gap-5  p-5 col-span-2 md:col-span-1 " id="hosts">
+            <Card className="flex flex-col gap-5  p-5 col-span-2 md:col-span-1 md:max-h-screen overflow-scroll" id="hosts">
                 <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
                 <Hosts hosts={organization.hosts}></Hosts>
             </Card>
         {/if}
         {#if organization.hasBooking}
-            <Card className="flex flex-col gap-5  p-5  max-h-96 overflow-scroll col-span-2 md:col-span-1 " id="booking-types">
+            <Card className="flex flex-col gap-5 p-5 md:max-h-screen overflow-scroll col-span-2 md:col-span-1 " id="booking-types">
                 <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
                 <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
             </Card>

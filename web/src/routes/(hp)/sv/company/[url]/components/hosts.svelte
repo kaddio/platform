@@ -9,10 +9,10 @@
     
     const longList = hosts.length > 10;
     let expanded = !longList;
-    $: filteredHosts = expanded ? hosts : hosts.slice(0, 10);
+    // $: filteredHosts = expanded ? hosts : hosts.slice(0, 10);
 </script>
 
-{#each filteredHosts as host} 
+{#each hosts as host} 
                 
     <KdItem>
         <img src={host.imgUrl} slot="avatar" />
@@ -32,6 +32,6 @@
     </KdItem>
 {/each}
 
-{#if longList && !expanded}
+<!-- {#if longList && !expanded}
     <a on:click={()=>expanded = true} href>Visa fler ({hosts.length - 10} st)</a>
-{/if}
+{/if} -->
