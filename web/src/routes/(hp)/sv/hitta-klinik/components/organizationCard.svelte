@@ -6,6 +6,7 @@
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
 	import KdButton from "$components/kd-button.svelte";
+	import { imageHandler } from "$lib/img";
     export let organization: Organization
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
@@ -16,7 +17,7 @@
 <Card className="w-full h-80">
     <div class="w-full h-80">
         <a href="/sv/company/{organization.url}?backbutton=1">
-            <div class="w-full h-1/2" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center">    
+            <div class="w-full h-1/2" style="background-image: url({imageHandler(organization.homepage?.headerImg, {format: "auto", width: 320}, false)}); background-size: cover; background-position: center">    
             </div>
         </a>
         
