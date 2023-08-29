@@ -41,6 +41,13 @@ export async function load({ params, fetch }) {
                         nextFreeTime
                         bookingLink
                     }
+                    reviews {
+                        name
+                        text
+                        stars
+                        date
+
+                    }
                 }
             }
         `}),

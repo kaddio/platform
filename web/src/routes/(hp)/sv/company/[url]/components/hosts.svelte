@@ -15,7 +15,16 @@
 {#each hosts as host} 
                 
     <KdItem>
-        <img src={host.imgUrl} slot="avatar" />
+        <span slot="avatar">
+            {#if host.imgUrl}
+                <img src={host.imgUrl} />    
+            {:else}
+                <div class="flex items-center justify-center h-full w-full bg-gray-100">
+                    <i class="fa fa-user text-3xl text-gray-300"></i>
+                </div>
+            {/if}
+        </span>
+        
         <span slot="title">
             {host.firstname} {host.lastname}
         </span>

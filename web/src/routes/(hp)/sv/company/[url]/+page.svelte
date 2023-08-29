@@ -20,6 +20,7 @@
 	import { page } from "$app/stores";
 	import Footer from "../../../../../components/footer.svelte";
 	import { setContext } from "svelte";
+	import Reviews from "./components/reviews.svelte";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
@@ -114,6 +115,9 @@
                 
             </Card>
         </div>
+    </div>
+    <div class="mx-auto max-w-screen-lg mt-8 ">
+        <Reviews reviews={organization.reviews}></Reviews>
     </div>
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8 ">
         {#if organization.homepage?.showUs}
