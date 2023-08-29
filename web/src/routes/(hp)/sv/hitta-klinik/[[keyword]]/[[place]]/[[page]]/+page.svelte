@@ -7,13 +7,15 @@
 	import type { PageData } from "../../../$types";
 	import OrganizationCard from "../../../components/organizationCard.svelte";
 	import { apiUrl } from "$lib/apiUrl";
+	import Footer from "../../../../../../../components/footer.svelte";
+	import { setContext } from "svelte";
 
     export let data: PageData;
     let searchForm: HTMLFormElement;
     let selectedItem = (data.keyword && data.keyword !== "Alla") ? {
         label: data.keyword
     } : undefined;
-
+    setContext('lang', 'sv')
     const isLocation = data.place?.match(/[+-]?([0-9]*[.])?[0-9]+,[+-]?([0-9]*[.])?[0-9]+/);
     let myPlace;
     let selectedPlace = isLocation ? 
@@ -212,6 +214,7 @@
 </div>
 <!-- <AutocompleteInput optionsFn={getData} placeholder="Sök..." on:selected={navigate}></AutocompleteInput> -->
 
+<Footer></Footer>
 
 <style>
    .autocomplete-list-item.selected {

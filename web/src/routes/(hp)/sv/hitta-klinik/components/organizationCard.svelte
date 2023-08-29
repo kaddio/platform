@@ -10,7 +10,7 @@
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
     const nextTime = dayjs(organization.nextFreeTime).fromNow()
-    const addressString = [organization.address, organization.city].filter(Boolean).join(", ");
+
 </script>
 
 <Card className="w-full h-80">
