@@ -11,7 +11,7 @@
 
 
 {#each Object.entries(groupedDookingTypes) as [category, bookingTypesInCategory]} 
-    <span class="uppercase text-gray-400 text-sm font-semibold">{category == "null" ? "" : category}</span>
+    <span class="uppercase text-gray-500 text-sm font-semibold">{category == "null" ? "" : category}</span>
     {#each bookingTypesInCategory as bookingType}                         
         <KdItem>
             <span slot="title">
@@ -26,7 +26,7 @@
                 {/if}
             </span>
             <span slot="action">
-                <KdLinkButton href="{bookingType.bookingLink}" size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdLinkButton>
+                <KdLinkButton href="{bookingType.bookingLink}" size="{Size.SM}" variant="{Variant.FLAT}">Sök tid</KdLinkButton>
             </span>
         </KdItem>
     {/each}

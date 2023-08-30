@@ -1,14 +1,12 @@
 <script lang="ts">
 
-    import AutoComplete from "simple-svelte-autocomplete"
-
-	
-  
+    import AutoComplete from "simple-svelte-autocomplete"  
 	import type { PageData } from "../../../$types";
 	import OrganizationCard from "../../../components/organizationCard.svelte";
 	import { apiUrl } from "$lib/apiUrl";
 	import Footer from "../../../../../../../components/footer.svelte";
 	import { setContext } from "svelte";
+	import FooterMarketplace from "../../../../../../../components/footerMarketplace.svelte";
 
     export let data: PageData;
     let searchForm: HTMLFormElement;
@@ -27,7 +25,7 @@
     let loadingPlace = false;
 
     let defaultPlaces = ["Stockholm", "Göteborg", "Malmö"];
-    let defaultKeywords = ["Psykolog", "Massage", "Fysioterapi","Kiropraktor","Idrottsskador", "Fobibehandling"];
+    let defaultKeywords = ["Psykolog", "Massage", "Vaccin","Fysioterapi","Kiropraktor","Idrottsskador", "Fobibehandling", "Läkarintyg"];
     
     async function autocompleteSearch(input:string) {
             const query = `
@@ -110,7 +108,7 @@
     <meta name="robots" content="noindex">
 </svelte:head>
 
-<div class="w-sceen h-screen flex flex-col">
+<div class="w-sceen  flex flex-col">
 <div class="bg-purple-400 p-6 ">
     <div class="container mx-auto text-white text-xl flex flex-row gap-5 align-middle">
         <img src="https://kaddio.com/img/kaddio-logo.png" alt="" class="h-7">
@@ -214,7 +212,7 @@
 </div>
 <!-- <AutocompleteInput optionsFn={getData} placeholder="Sök..." on:selected={navigate}></AutocompleteInput> -->
 
-<Footer></Footer>
+<FooterMarketplace></FooterMarketplace>
 
 <style>
    .autocomplete-list-item.selected {

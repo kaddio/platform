@@ -21,10 +21,13 @@
 	import Footer from "../../../../../components/footer.svelte";
 	import { setContext } from "svelte";
 	import Reviews from "./components/reviews.svelte";
+	import FooterMarketplace from "../../../../../components/footerMarketplace.svelte";
+	import { imageHandler } from "../../../../../lib/img";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);
     const organization = data.organization;
+
 
     setContext('lang', 'sv');
     
@@ -37,7 +40,7 @@
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
-    <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 relative p-8" style="background-image: url({organization.homepage?.headerImg}); background-size: cover; background-position: center;">
+    <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 relative p-8" style="background-image: url({imageHandler(organization.homepage?.headerImg, {format: "auto", width: 1280})}); background-size: cover; background-position: center;">
         <div class="overlay"></div>
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
@@ -56,10 +59,10 @@
             <div class="flex justify-between w-full">
                 <h1 class="text-white absolute bottom-8 text-3xl">
                     {organization.name}
-
                 </h1>
+                
                 <div class="absolute bottom-8 right-0">
-                    <KdLinkButton variant={Variant.FLAT} color={Color.PRIMARY} href="https://{organization.url}.kaddio.com/booking">Boka tid</KdLinkButton>
+                    <KdLinkButton variant={Variant.FLAT} color={Color.PRIMARY} size={Size.XL} href="https://{organization.url}.kaddio.com/booking">Sök tid</KdLinkButton>
                 </div>
             </div>
         
@@ -91,6 +94,7 @@
         
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
+                <div class="text-gray-500 px-8">{organization.address} {organization.city}</div>
                 <div class="flex flex-col gap-4 my-8 mx-8">
                     <Link href="http://insta.com" type="instagram"></Link>
                     <Link href="http://external.com" type="external"></Link>
@@ -106,7 +110,7 @@
                                 </span>
                                 
                                 <span slot="action">
-                                    <KdLinkButton size={Size.SM} variant={Variant.OUTLINE} href="">Boka</KdLinkButton>
+                                    <KdLinkButton size={Size.SM} variant={Variant.OUTLINE} href="">Sök tid</KdLinkButton>
                                 </span>
                             </KdItem>
                         {/each}
@@ -128,7 +132,7 @@
         {/if}
         {#if organization.hasBooking}
             <Card className="flex flex-col gap-5 p-5 md:max-h-screen overflow-scroll col-span-2 md:col-span-1 " id="booking-types">
-                <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a>
+                <!-- <a class="text-sm uppercase text-gray-500 font-semibold">Tjänster</a> -->
                 <BookingTypes bookingTypes={organization.bookingTypes}></BookingTypes>
             </Card>
         {/if}
@@ -139,7 +143,7 @@
     <div class="max-w-screen-lg mx-auto py-8">
         Kaddio
     </div>
-</footer>
+</footer> -->
 <style>
 .overlay {
     position: absolute;
@@ -148,8 +152,8 @@
     bottom: 0;
     right: 0;
     background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.5567620798319328) 100%);
+background: linear-gradient(180deg in oklab, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,.05) 70%, rgba(0,0,0,0.5567620798319328) 100%);
 }
-</style> -->
+</style>
 
-<Footer></Footer>
+<FooterMarketplace></FooterMarketplace>

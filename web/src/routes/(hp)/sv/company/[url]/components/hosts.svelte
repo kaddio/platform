@@ -36,7 +36,7 @@
             {/if}
         </span>
         <span slot="action">
-            <KdLinkButton href="{host.bookingLink}" size="{Size.SM}" variant="{Variant.FLAT}">Boka</KdLinkButton>
+            <KdLinkButton href="{host.bookingLink}" size="{Size.SM}" variant="{Variant.FLAT}">Sök tid</KdLinkButton>
         </span>
     </KdItem>
 {/each}

@@ -22,9 +22,11 @@
         </a>
         
         <div class="h-1/2 p-4 flex  flex-col justify-between">
-            <div class="uppercase text-xs text-gray-400 font-semibold line-clamp-1">{organization.keywords?.join(" · ") || ""}</div>
-            <h3 class="font-semibold">{organization.name}</h3>
-            <small class="text-gray-400 line-clamp-1">{organization.addressString}</small>
+            <a href="/sv/company/{organization.url}?backbutton=1">
+                <div class="uppercase text-xs text-gray-400 font-semibold line-clamp-1">{organization.keywords?.join(" · ") || ""}</div>
+                <h3 class="font-semibold">{organization.name}</h3>
+                <small class="text-gray-400 line-clamp-1">{organization.addressString}</small>
+            </a>
             <div class="flex-grow"></div>
             <div class="flex gap-5 justify-between items-center text-sm">
                 {#if organization.hasBooking }
