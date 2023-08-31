@@ -4,6 +4,9 @@
 	import { countryCodeFromLang, getRegion } from "$lib/regions";
 	import { page } from "$app/stores";
   const lang = getContext('lang');
+
+  console.log('%c Work with us?', 'color: #c38f9c; font-size: 30px; font-weight: bold')
+  console.log('https://kaddio.com/career')
 </script>
 
 
