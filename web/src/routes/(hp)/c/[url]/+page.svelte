@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Card from "../../../../../components/card.svelte";
+	import Card from "../../../../components/card.svelte";
 	import type { Organization } from "../types";
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
 
-    import { Color, Size, Variant } from "../../../../../components/common_types";
-	import KdItem from "../../../../../components/kdItem.svelte";
+    import { Color, Size, Variant } from "../../../../components/common_types";
+	import KdItem from "../../../../components/kdItem.svelte";
 	import { groupBy, size } from "lodash";
 	import Gallery from "./components/gallery.svelte";
     import { websiteSchema } from "$lib/json-ld";
@@ -15,14 +15,14 @@
 	import BookingTypes from "./components/booking_types.svelte";
 	import Hosts from "./components/hosts.svelte";
 	import Link from "./components/link.svelte";
-	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
+	import KdLinkButton from "../../../../components/kdLinkButton.svelte";
 	import KdButton from "$components/kd-button.svelte";
 	import { page } from "$app/stores";
-	import Footer from "../../../../../components/footer.svelte";
+	import Footer from "../../../../components/footer.svelte";
 	import { setContext } from "svelte";
 	import Reviews from "./components/reviews.svelte";
-	import FooterMarketplace from "../../../../../components/footerMarketplace.svelte";
-	import { imageHandler } from "../../../../../lib/img";
+	import FooterMarketplace from "../../../../components/footerMarketplace.svelte";
+	import { imageHandler } from "../../../../lib/img";
     export let data;
     dayjs.locale("sv")
     dayjs.extend(relativeTime);

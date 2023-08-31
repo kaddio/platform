@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { groupBy } from "lodash";
-	import KdItem from "../../../../../../components/kdItem.svelte";
+	import KdItem from "../../../../../components/kdItem.svelte";
     import dayjs from 'dayjs';
-	import { Size, Variant } from "../../../../../../components/common_types";
-	import KdLinkButton from "../../../../../../components/kdLinkButton.svelte";
+	import { Size, Variant } from "../../../../../components/common_types";
+	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
     
     export let bookingTypes: any[];
     const groupedDookingTypes = groupBy(bookingTypes, 'categoryName');

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Size, Variant } from "../../../../../../components/common_types";
-	import KdItem from "../../../../../../components/kdItem.svelte";
+	import { Size, Variant } from "../../../../../components/common_types";
+	import KdItem from "../../../../../components/kdItem.svelte";
 	
     import dayjs from 'dayjs';
-	import KdLinkButton from "../../../../../../components/kdLinkButton.svelte";
+	import KdLinkButton from "../../../../../components/kdLinkButton.svelte";
     
     export let hosts: any[];
     

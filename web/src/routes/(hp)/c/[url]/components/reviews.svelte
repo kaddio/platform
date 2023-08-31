@@ -3,7 +3,7 @@
 
 	
 	import Stars from "./stars.svelte";
-	import Card from "../../../../../../components/card.svelte";
+	import Card from "../../../../../components/card.svelte";
 
     type Review = {
         name: string,

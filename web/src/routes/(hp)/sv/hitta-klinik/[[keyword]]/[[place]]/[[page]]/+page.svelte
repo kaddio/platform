@@ -7,8 +7,10 @@
 	import Footer from "../../../../../../../components/footer.svelte";
 	import { setContext } from "svelte";
 	import FooterMarketplace from "../../../../../../../components/footerMarketplace.svelte";
+	import { loadData } from "./load_data";
 
     export let data: PageData;
+    let page = 0;
     let searchForm: HTMLFormElement;
     let selectedItem = (data.keyword && data.keyword !== "Alla") ? {
         label: data.keyword
@@ -25,7 +27,7 @@
     let loadingPlace = false;
 
     let defaultPlaces = ["Stockholm", "Göteborg", "Malmö"];
-    let defaultKeywords = ["Psykolog", "Massage", "Vaccin","Fysioterapi","Kiropraktor","Idrottsskador", "Fobibehandling", "Läkarintyg"];
+    let defaultKeywords = ["Psykolog", "Massage", "Vaccination","Fysioterapi","Kiropraktor","Idrottsskador", "Fobibehandling", "Läkarintyg"];
     
     async function autocompleteSearch(input:string) {
             const query = `
@@ -75,6 +77,15 @@
         return data.data.autocompletePlace;
     }
 
+    async function loadMore() {
+        page = page + 1;
+        const {
+            organizations
+        } = await loadData({params: {page, keyword: data.keyword, place: data.place}, fetch});
+        data.organizations = data.organizations.concat(organizations);
+        data = data;
+    }
+
     const setMyLocation = function() {
         loadingPlace = true;
         navigator.geolocation.getCurrentPosition(
@@ -120,7 +131,7 @@
 </div>
 <div class="bg-gray-100 p-4 lg:p-12 pt-4 lg:pt-20 flex grow">
     <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto " >
-        <form method="get" class="p-0 grid grid-cols-2 gap-8 h-fit" bind:this={searchForm}>
+        <div class="p-0 grid grid-cols-2 gap-8 h-fit" >
             <div class="flex flex-col col-span-2 md:col-span-1 lg:col-span-2">
                 <label class="font-semibold mb-2 ml-3 ">Sök</label>
                 <AutoComplete showClear={true} dropdownClassName="rounded py-2 px-3 border-none shadow" onChange={submit} itemClass="p-5" noInputStyles={true} inputClassName="rounded py-2 px-3 border-none w-full" minCharactersToSearch={0} placeholder="Sök" labelFunction={i => i?.label} searchFunction={autocompleteSearch} bind:selectedItem={selectedItem} delay={200}>
@@ -173,7 +184,7 @@
                     {/each}
                 </div>
             </div>
-        </form>
+        </div>
         <div class="flex flex-col h-full grow">
             
             {#if data.organizations.length}
@@ -194,7 +205,7 @@
                 </div>
             
                 <div class="flex flex-row justify-start gap-8">
-                    <a href="" class="text-gray-500 font-semibold mt-2 ml-3" on:click={()=> data.page++}>Ladda fler</a>
+                    <a href="" class="text-gray-500 font-semibold mt-2 ml-3" on:click={()=> loadMore()}>Ladda fler</a>
                     
                     <a href="" class="text-gray-500 mt-2 ml-3" on:click={()=>scrollTo({top: 0, behavior:'smooth'})}>Till toppen</a>
                 </div>
