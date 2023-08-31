@@ -30,7 +30,7 @@
 			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 <!-- 		<span slot="link">
-			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-oldpink">Agendar una cita <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://support.kaddio.com/booking/cal/introduccion-a-kaddio-via-videollamada" class="text-sm font-semibold leading-6 text-oldpink">Agendar una cita <span aria-hidden="true">&rarr;</span></a>
 		</span> -->
 	</SimpleCenteredPiece>
 
