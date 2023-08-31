@@ -24,7 +24,7 @@
 	<SimpleCenteredPiece icon="sparkles">
 		<span slot="title">Ser cliente</span>
 		<span slot="body">
-			Te conviertes en cliente al <a href="/es/create" class="font-semibold text-oldpink">Crear una cuenta</a>. Si necesitas ayuda, puedes enviar un correo electrónico y te contactaremos a la brevedad.
+			Te conviertes en cliente al <a href="/es/create" class="font-semibold text-oldpink">Crear una cuenta</a>. Si necesitas ayuda, puedes enviar un correo electrónico a support@kaddio.com y te contactaremos a la brevedad.
 		</span>
 		<span slot="link">
 			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
