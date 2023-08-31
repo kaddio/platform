@@ -24,11 +24,14 @@
 	<SimpleCenteredPiece icon="sparkles">
 		<span slot="title">Ser cliente</span>
 		<span slot="body">
-			Te conviertes en cliente al <a href="/es/create" class="font-semibold text-oldpink">Crear una cuenta</a>. Si necesitas ayuda, puedes reservar un horario y te llamamos.
+			Te conviertes en cliente al <a href="/es/create" class="font-semibold text-oldpink">Crear una cuenta</a>. Si necesitas ayuda, puedes enviar un correo electrónico y te contactaremos a la brevedad.
 		</span>
 		<span slot="link">
-			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-oldpink">Agendar una cita <span aria-hidden="true">&rarr;</span></a>
+			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
+<!-- 		<span slot="link">
+			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-oldpink">Agendar una cita <span aria-hidden="true">&rarr;</span></a>
+		</span> -->
 	</SimpleCenteredPiece>
 
 	<SimpleCenteredPiece icon="hands-holding-heart">
@@ -42,7 +45,7 @@
 	</SimpleCenteredPiece>	
 
 	<SimpleCenteredPiece icon="envelope">
-		<span slot="title">Correo electrónico</span>
+		<span slot="title">Soporte Técnico</span>
 		<span slot="body">
 			Envía un correo electrónico a support@kaddio.com si tienes preguntas. Durante los días laborables de 9 a 15 horas, hacemos todo lo posible para responder en pocas horas. Durante los períodos de vacaciones, los tiempos de respuesta pueden ser más largos.
 		</span>
