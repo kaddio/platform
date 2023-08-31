@@ -73,9 +73,13 @@
         {#if organization.hasBooking}
             <div class="bg-white">
                 <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
-                    <a class="text-sm uppercase text-gray-500 font-semibold" href="#places">Platser</a>
+                    {#if organization.homepage?.showPlaces}
+                        <a class="text-sm uppercase text-gray-500 font-semibold" href="#places">Platser</a>
+                    {/if}
                     <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types">Behandlingar</a>
-                    <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts">Personal</a>
+                    {#if organization.homepage?.showUs}
+                        <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts">Personal</a>
+                    {/if}
                     <a class="text-sm uppercase text-gray-500 font-semibold">
                         Omdömen
                         <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
@@ -96,9 +100,9 @@
                 <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
                 <div class="text-gray-500 px-8">{organization.address} {organization.city}</div>
                 <div class="flex flex-col gap-4 my-8 mx-8">
-                    <Link href="http://insta.com" type="instagram"></Link>
-                    <Link href="http://external.com" type="external"></Link>
-                    <Link href="http://fb.com" type="facebook"></Link>
+                    {#each organization.homepage?.links as link}
+                        <Link href="{link.url}" type="{link.type}"></Link>
+                    {/each}
                 </div>
                 <Gallery imageSrcs={organization.homepage?.pics || []}></Gallery>
                 {#if organization.hasBooking && organization.homepage?.showPlaces}

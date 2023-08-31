@@ -11,7 +11,7 @@
 
 <footer class="bg-gray-200" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
-  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+  <div class="mx-auto max-w-screen-lg px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
       <img class="h-7" src="/img/kaddio-black.png" alt="Company name">
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -57,12 +57,12 @@
 
             </ul>
           </div>
-          <div class="mt-10 md:mt-0">
+          <!-- <div class="mt-10 md:mt-0">
             <h3 class="text-sm font-semibold leading-6 text-gray-900"></h3>
             <ul class="mt-6 space-y-4">
                
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
       

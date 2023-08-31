@@ -33,6 +33,10 @@ export async function load({ params, fetch }) {
                         pics
                         showPlaces
                         showUs
+                        links {
+                            type
+                            url
+                        }
                     }
                     hosts {
                         firstname
