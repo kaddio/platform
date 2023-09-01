@@ -106,7 +106,7 @@
     const placePart = ()=> myPlace || ( selectedPlace ? encodeURIComponent(selectedPlace.name) :  "Sverige");
     const keywordPart = ()=> selectedItem ? encodeURIComponent(selectedItem.label) :  "Alla";
 
-    const getUrl = ()=> `/sv/hitta-klinik/${keywordPart()}/${placePart()}/${data.page || ""}`;
+    const getUrl = ()=> `/sv/hitta-klinik/${keywordPart()}/${placePart()}`;
     
     const submit = function() {
         if(!searchForm) return;
