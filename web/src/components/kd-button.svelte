@@ -10,6 +10,6 @@
 </script>
 
 
-<button {...$$restProps} class="font-semibold rounded {buttonCssClass(variant, color, size)}"><slot></slot></button>
+<button {...$$restProps} class="font-semibold rounded whitespace-nowrap {buttonCssClass(variant, color, size)}"><slot></slot></button>
 
 

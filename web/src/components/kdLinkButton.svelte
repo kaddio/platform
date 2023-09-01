@@ -11,6 +11,6 @@
 </script>
 
 
-<a {...$$restProps} class="font-semibold rounded {buttonCssClass(variant, color, size)}"><slot></slot></a>
+<a {...$$restProps} class="font-semibold rounded whitespace-nowrap {buttonCssClass(variant, color, size)}"><slot></slot></a>
 
 
