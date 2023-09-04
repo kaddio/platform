@@ -46,7 +46,9 @@
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
                 <div class="flex gap-5">
-                    <img src="/img/kaddio-logo.png" alt="" class="h-7" />
+                    <a href="/sv/hitta-klinik">
+                        <img src="/img/kaddio-logo.png" alt="" class="h-7" />
+                    </a>
                     {#if showBackButton}
                         <a href="javascript:history.back()" class="text-white text-lg"
                             ><i class="fa fa-arrow-left" /> Tillbaka till sökresultat
@@ -80,7 +82,7 @@
     <div class="">
         {#if organization.hasBooking}
             <div class="bg-white">
-                <div class="max-w-screen-lg mx-auto flex flex-row justify-between w-full p-6">
+                <div class="max-w-screen-lg mx-auto flex flex-row gap-7 w-full p-6">
                     {#if organization.homepage?.showPlaces && organization.hasPlaces}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#places"
                             >Platser</a
@@ -94,11 +96,11 @@
                             >Personal</a
                         >
                     {/if}
-                    <a class="text-sm uppercase text-gray-500 font-semibold">
+                    <!-- <a class="text-sm uppercase text-gray-500 font-semibold">
                         Omdömen
                         <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
                         <i class="fa fa-star text-yellow-500" />
-                    </a>
+                    </a> -->
                 </div>
             </div>
         {/if}
@@ -112,19 +114,27 @@
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
-                <div class="text-gray-500 px-8 mb-8">
-                    {organization.address || ''}
-                    {organization.city}
-                </div>
-                <Map address={`${organization.address} ${organization.city}`} />
-                <div class="flex flex-col gap-4 my-8 mx-8">
-                    {#each organization.homepage?.links as link}
-                        <Link href={link.url} type={link.type} />
-                    {/each}
-                </div>
+                {#if !organization.hasPlaces}
+                    <div class="text-gray-500 px-8 mb-8">
+                        {organization.address || ''}
+                        {organization.city}
+                    </div>
+
+                    <Map address={`${organization.address} ${organization.city}`} />
+                {/if}
+                {#if organization.homepage?.links.length}
+                    <div class="flex flex-col gap-4 my-8 mx-8">
+                        {#each organization.homepage?.links as link}
+                            <Link href={link.url} type={link.type} />
+                        {/each}
+                    </div>
+                {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
                 {#if organization.hasBooking && organization.homepage?.showPlaces}
-                    <div class="flex flex-col gap-4 p-8" id="places">
+                    <div
+                        class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
+                        id="places"
+                    >
                         {#each organization.places as place}
                             <KdItem>
                                 <span slot="title">
