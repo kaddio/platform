@@ -112,11 +112,11 @@
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
-                <div class="text-gray-500 px-8">
+                <div class="text-gray-500 px-8 mb-8">
                     {organization.address || ''}
                     {organization.city}
                 </div>
-                <Map address={`${organization.address} ${organization.city}`} />;
+                <Map address={`${organization.address} ${organization.city}`} />
                 <div class="flex flex-col gap-4 my-8 mx-8">
                     {#each organization.homepage?.links as link}
                         <Link href={link.url} type={link.type} />

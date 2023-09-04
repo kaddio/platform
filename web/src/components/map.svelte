@@ -94,7 +94,12 @@
         return new Promise<Coordinates>((resolve, reject) => {
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({ address: address }, function (result, status: string) {
+                console.log(result[0].geometry.location);
                 if ((status = 'OK')) {
+                    const coords = {
+                        latitude: result[0].geometry.location.lat(),
+                        longitude: result[0].geometry.location.lng()
+                    };
                     resolve(result[0].geometry.location);
                 } else {
                     reject(new Error('addressToCoordinates ' + result));
@@ -102,7 +107,7 @@
             });
         });
     };
-    if (process.browser) {
+    onMount(() => {
         window.initMap = async function () {
             const center: Coordinates = await addressToCoordinates(address);
 
@@ -128,14 +133,12 @@
                 position: center
             });
         };
-    }
+        var script = document.createElement('script');
+        script.src =
+            'https://maps.googleapis.com/maps/api/js?key=AIzaSyCXqXMri1T3Ndjue5lQVDLx9nM-uoTIuZQ&callback=initMap';
+        script.async = true;
+        document.head.appendChild(script);
+    });
 </script>
 
-<svelte:head>
-    <script
-        async
-        src="//maps.googleapis.com/maps/api/js?key=AIzaSyBMsThX-fXXnWgTKCbaBIlx0B13eIxp7F4&language=en&callback=initMap"
-    ></script>;
-</svelte:head>
-
-<div bind:this={container} />
+<div bind:this={container} class="aspect-video" />
