@@ -44,7 +44,7 @@
 
         <Person>
             <span slot="name">Karolina</span>
-            <span slot="title">Project Management + Finance</span>
+            <span slot="title">Strategy + Testing + Finance + Support</span>
         </Person>
 
         <Person>
@@ -64,7 +64,7 @@
 
         <Person>
             <span slot="name">Camilla</span>
-            <span slot="title">Customer support</span>
+            <span slot="title">UX, Customer support</span>
         </Person>
 
         <Person src="/img/david.png">
@@ -79,12 +79,12 @@
 
         <Person>
             <span slot="name">Agustin</span>
-            <span slot="title">Customer support</span>
+            <span slot="title">Customer support + Social Media</span>
         </Person>
 
         <Person src="/img/carl.png">
             <span slot="name">Carl</span>
-            <span slot="title">Kaddio Lectures</span>
+            <span slot="title">Media + Kaddio Lectures</span>
         </Person>
 
         <Person>
