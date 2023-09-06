@@ -14,6 +14,7 @@ export async function load({ params, fetch }) {
                     bookingLink,
                     hasBooking,
                     hasPlaces
+                    hasContactForm
                     url
                     places {
                         name

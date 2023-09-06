@@ -40,7 +40,7 @@
         style="background-image: url({imageHandler(organization.homepage?.headerImg, {
             format: 'auto',
             width: 1280
-        })}); background-size: cover; background-position: center;"
+        })}); background-size: cover; background-position: center; "
     >
         <div class="overlay" />
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
@@ -128,6 +128,14 @@
                             <Link href={link.url} type={link.type} />
                         {/each}
                     </div>
+                {/if}
+                {#if organization.hasContactForm}
+                    <KdLinkButton
+                        href="https://{organization.url}.kaddio.com/contact-us"
+                        color={Color.PRIMARY}
+                        className="m-8"
+                        variant={Variant.FLAT}>Kontakta oss</KdLinkButton
+                    >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
                 {#if organization.hasBooking && organization.homepage?.showPlaces}
