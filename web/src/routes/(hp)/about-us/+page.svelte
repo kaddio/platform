@@ -39,7 +39,7 @@
 
         <Person>
             <span slot="name">Arvid</span>
-            <span slot="title">Co-Founder + CTO</span>
+            <span slot="title">Co-Founder + CTO + Dev</span>
         </Person>
 
         <Person>
@@ -59,7 +59,7 @@
 
         <Person>
             <span slot="name">Jesper</span>
-            <span slot="title">Development</span>
+            <span slot="title">Dev</span>
         </Person>
 
         <Person>
@@ -69,7 +69,7 @@
 
         <Person src="/img/david.png">
             <span slot="name">David</span>
-            <span slot="title">CEO + Market</span>
+            <span slot="title">CEO + Market + Dev</span>
         </Person>
 
         <Person>
@@ -79,7 +79,7 @@
 
         <Person>
             <span slot="name">Agustin</span>
-            <span slot="title">Customer support + Social Media</span>
+            <span slot="title">Customer support + Social Media + Dev</span>
         </Person>
 
         <Person src="/img/carl.png">
