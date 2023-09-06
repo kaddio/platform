@@ -49,7 +49,7 @@
 
         <Person>
             <span slot="name">Daniel</span>
-            <span slot="title">People + Market</span>
+            <span slot="title">People</span>
         </Person>
 
         <Person>
@@ -69,7 +69,7 @@
 
         <Person src="/img/david.png">
             <span slot="name">David</span>
-            <span slot="title">Co-Founder + CEO</span>
+            <span slot="title">CEO + Market</span>
         </Person>
 
         <Person>
