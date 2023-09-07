@@ -54,7 +54,7 @@
 
         <Person>
             <span slot="name">Lena</span>
-            <span slot="title">Customer support</span>
+            <span slot="title">CISO & customer support</span>
         </Person>
 
         <Person>
