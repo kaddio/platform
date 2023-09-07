@@ -39,12 +39,12 @@
 
         <Person>
             <span slot="name">Arvid</span>
-            <span slot="title">Co-Founder + CTO + Dev</span>
+            <span slot="title">CTO, co-founder, dev</span>
         </Person>
 
         <Person>
             <span slot="name">Karolina</span>
-            <span slot="title">Strategy + Testing + Finance + Support</span>
+            <span slot="title">CFO, strategy, Support</span>
         </Person>
 
         <Person>
@@ -64,12 +64,12 @@
 
         <Person>
             <span slot="name">Camilla</span>
-            <span slot="title">UX, Customer support</span>
+            <span slot="title">UX, customer support</span>
         </Person>
 
         <Person src="/img/david.png">
             <span slot="name">David</span>
-            <span slot="title">CEO + Market + Dev</span>
+            <span slot="title">CEO, market & dev</span>
         </Person>
 
         <Person>
@@ -79,12 +79,12 @@
 
         <Person>
             <span slot="name">Agustin</span>
-            <span slot="title">Customer support + Social Media + Dev</span>
+            <span slot="title">Customer support, social Media & dev</span>
         </Person>
 
         <Person src="/img/carl.png">
             <span slot="name">Carl</span>
-            <span slot="title">Media + Kaddio Lectures</span>
+            <span slot="title">Media & Kaddio Lectures</span>
         </Person>
 
         <Person>
