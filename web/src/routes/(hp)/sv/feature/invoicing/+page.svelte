@@ -17,7 +17,21 @@
 	<ModuleFeature>
 		<span slot="title">Spara tid</span>
 		<span slot="body">
-			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar så att du skicka en fakturera med tre klick.
+			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar. Du skickar en fakturera med tre klick.
+		</span>
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">Automatisera</span>
+		<span slot="body">
+			Automatisera utskick av påminnelsefakturor. Håll koll på betalningar genom automatisk avprickning av fakturor betalda via Bankgiro.
+		</span>
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">E-fakturera</span>
+		<span slot="body">
+			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
 		</span>
 	</ModuleFeature>
 	

@@ -12,26 +12,26 @@
 
 <ModuleSection>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
+	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. <br>I Kaddio är kalendern även din publika bokning.</span>
 
 	<ModuleFeature>
-		<span slot="title">Automatisera</span>
+		<span slot="title">Planera</span>
 		<span slot="body">
-			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
+			Skapa bokningsbara tider direkt från din kalender. Konfigurera dina bokningstyper i detalj. Välj om dina kunder bokar och betalar själva eller om du tar kontroll över varje minut. 
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Samarbeta</span>
 		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med.
+			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Effektivisera</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar enkelt och spara tid. Bestäm själv vilka kollegor som ska se vad.
+			Har du återkommande händelser i kalendern? Skapa mallar och spara tid. 
 		</span>
 	</ModuleFeature>
 </ModuleSection>
