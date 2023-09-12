@@ -49,7 +49,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
     
 		<span slot="title">
       Flexibiliy
-      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product</span>
+      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product value</span>
     </span>
 		<span slot="body">
 			Kaddio is flexible in a sense that it can be used in many ways for many different industries. It's a tool that can be used to solve many different problems. It's flexibility also means a user may use parts of the system and not others. Kaddio incorporates right into their business and should minimize steps needed to change system as a whole.
@@ -59,18 +59,17 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 	<ModuleFeature>
 		<span slot="title">
       Wholeness
-      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product</span>
+      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product value</span>
     </span>
 		<span slot="body">
-			But Kaddio may also be the only tool needed to fulfill all needs of a business. It's complete in that sense.
-			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
+			But Kaddio may also be the only tool needed to fulfill all needs of a business. It's complete in that sense. Wholeness also means that Kaddio is a complete system, but not a collection of different tools glued together. It's a complete system that works together and where each part of the system seamlessly integrates with the other.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">
       Simplicity
-      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product</span>
+      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product value</span>
 
     </span>
 		<span slot="body">
@@ -84,7 +83,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
     
 		<span slot="title">
       Human
-      <span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company</span>
+      <span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company value</span>
     </span>
 		<span slot="body">
 			Kaddio as a company is human. We're an independent business and a small team of people who care about our customers, each other and our products.
@@ -97,29 +96,34 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This section is a work in progress. We're working on a style guide for our writing.
+		This section describes how we approach writing. It's a guide for how to write in a way that's consistent with our brand. Technical writing, marketing writing, social media writing, it's all here.
 	</span>
 
 	<ModuleFeature>
-		<span slot="title">Flexibiliy</span>
+		<span slot="title">Help articles</span>
 		<span slot="body">
-			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
+		 	Should mainly communicate product values. Should be very much to the point, short and concise. Help articles should be easy to understand. Avoid specifics if possible and give the article a long life.
 		</span> 
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Complete</span>
+		<span slot="title">Social media</span>
 		<span slot="body">
-			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
-			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
+			Writing for social media is more laid back, but must be consistent with our values, here it's the company values that are important. It's a way to show our human side.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Simplicity</span>
+		<span slot="title">Product copy</span>
 		<span slot="body">
-			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
-			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
+			Consistency is key here, being consistent to the very word helps us reuse sentences for translations. Avoid specifics and be as general as possible also ensures the copy will have a long life and that it's translations can be reused.
+		</span>
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">Newsletters</span>
+		<span slot="body">
+			Newsletters are currently our main channel to customers. We communicate both product and company values. Newsletters should be easy to grasp and be written in a way that makes the recipient feel like they're talking to a friend.
 		</span>
 	</ModuleFeature>
 
@@ -138,14 +142,27 @@ import ModuleFeature from "$components/moduleFeature.svelte";
     <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <Person color="bg-oldpink">
             <span slot="name">Oldpink</span>
-            <span slot="title">#c38f9c</span>
+            <span slot="title">Website links</span>
         </Person>
 
         <Person color="bg-oldpinkdarker">
           <span slot="name">Oldpink darker</span>
-          <span slot="title">#b16e7f</span>
-      </Person>
-    </ul>
+          <span slot="title">Hover state for oldpink etc.</span>
+		</Person>
+
+        <Person color="bg-yellow-500">
+            <span slot="name">Yellow</span>
+        </Person>
+
+        <Person color="bg-red-500">
+			<span slot="name">Red</span>
+        </Person>		
+
+		<Person color="bg-teal-500">
+            <span slot="name">Teal</span>
+        </Person>		
+
+	</ul>
   </div>
 </div>
 
