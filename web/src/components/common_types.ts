@@ -20,7 +20,8 @@ export enum Color {
     DEFAULT = 'default',
     SUCCESS = 'success',
     WARNING = 'warning',
-    DANGER = 'danger'
+    DANGER = 'danger',
+    THEME_PRIMARY = 'theme-primary'
 }
 
 const tailwindColorMap = {
@@ -29,7 +30,8 @@ const tailwindColorMap = {
     [Color.DANGER]: 'red',
     [Color.DEFAULT]: 'gray',
     [Color.WARNING]: 'yellow',
-    [Color.SUCCESS]: 'green'
+    [Color.SUCCESS]: 'green',
+    [Color.THEME_PRIMARY]: 'primary'
 };
 
 const sizeClass = function (size: Size) {

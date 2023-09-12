@@ -8,7 +8,7 @@ module.exports = {
   safelist: [
     'bg-white',
     {
-      pattern: /bg-(gray|purple|green|red|teal|yellow)-(300|400|500|600|700|800)/,
+      pattern: /bg-(gray|purple|green|red|teal|yellow|primary)-(300|400|500|600|700|800)/,
       variants:['hover']
     },
   ],
@@ -77,6 +77,17 @@ module.exports = {
         700:"hsl(196, 15%, 82%)",
         800:"hsl(196, 15%, 90%)",
         900:"hsl(196, 20%, 96%)"
+      },
+      primary: {
+        100:"var(--primary-100, hsl(306, 60%, 5%))",
+        200:"var(--primary-200, hsl(306, 25%, 12%))",
+        300:"var(--primary-300, hsl(306, 15%, 20%))",
+        400:"var(--primary-400, hsl(306, 12%, 33%))",
+        500:"var(--primary-500, hsl(306, 10%, 49%))",
+        600:"var(--primary-600, hsl(306, 7%, 65%))",
+        700:"var(--primary-700, hsl(306, 8%, 79%))",
+        800:"var(--primary-800, hsl(306, 10%, 91%))",
+        900:"var(--primary-900, hsl(306, 12%, 96%))"
       },
       oldpink:  '#c38f9c',
       oldpinkdarker:  '#b16e7f',

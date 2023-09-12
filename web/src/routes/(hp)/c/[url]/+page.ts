@@ -16,6 +16,10 @@ export async function load({ params, fetch }) {
                     hasPlaces
                     hasContactForm
                     url
+                    cssVars {
+                        name,
+                        value
+                    }
                     places {
                         name
                         address,

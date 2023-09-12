@@ -15,7 +15,7 @@
 
     import { page } from '$app/stores';
 
-    import { setContext } from 'svelte';
+    import { onDestroy, onMount, setContext } from 'svelte';
     import Reviews from './components/reviews.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import { imageHandler } from '../../../../lib/img';
@@ -28,10 +28,30 @@
     setContext('lang', 'sv');
 
     let showBackButton = !!$page.url.searchParams.get('backbutton');
+    onMount(() => {
+        const r = document.querySelector(':root');
+        organization.cssVars.forEach((c) => {
+            r.style.setProperty(`${c.name}`, c.value);
+        });
+    });
+    onDestroy(() => {
+        if (typeof document === 'undefined') return;
+        const r = document.querySelector(':root');
+        organization.cssVars.forEach((c) => {
+            r.style.removeProperty(`${c.name}`);
+        });
+    });
 </script>
 
 <svelte:head>
     <meta name="robots" content="noindex" />
+    <!--keywords for search engines-->
+    <meta name="keywords" content={organization.keywords?.join(', ')} />
+    <title>{organization.name} - {organization.keywords?.join(', ')} - {organization.city}}</title>
+    <meta
+        name="description"
+        content="{organization.name} - {organization.keywords?.join(', ')} - {organization.city}"
+    />
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
@@ -68,19 +88,22 @@
                     {organization.name}
                 </h1>
 
-                <div class="absolute bottom-4 right-0">
-                    <KdLinkButton
-                        variant={Variant.FLAT}
-                        color={Color.PRIMARY}
-                        size={Size.XL}
-                        href="https://{organization.url}.kaddio.com/booking">Sök tid</KdLinkButton
-                    >
-                </div>
+                {#if organization.showBooking}
+                    <div class="absolute bottom-4 right-0">
+                        <KdLinkButton
+                            variant={Variant.FLAT}
+                            color={Color.THEME_PRIMARY}
+                            size={Size.XL}
+                            href="https://{organization.url}.kaddio.com/booking"
+                            >Sök tid</KdLinkButton
+                        >
+                    </div>
+                {/if}
             </div>
         </div>
     </div>
     <div class="">
-        {#if organization.hasBooking}
+        {#if organization.showBooking}
             <div class="bg-white">
                 <div class="max-w-screen-lg mx-auto flex flex-row gap-7 w-full p-6">
                     {#if organization.homepage?.showPlaces && organization.hasPlaces}
@@ -113,14 +136,19 @@
             </Card>
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
-                <h3 class="text-bold text-lg px-8 mt-8">{organization.name}</h3>
+                <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
                 {#if !organization.hasPlaces}
-                    <div class="text-gray-500 px-8 mb-8">
-                        {organization.address || ''}
-                        {organization.city}
+                    <div
+                        class="text-gray-500 px-8 mb-8"
+                        itemscope
+                        itemtype="http://schema.org/PostalAddress"
+                    >
+                        <span itemprop="streetAddress">{organization.address || ''}</span>
+                        <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
-
-                    <Map address={`${organization.address} ${organization.city}`} />
+                    {#if organization.address && organization.city}
+                        <Map address={`${organization.address} ${organization.city}`} />
+                    {/if}
                 {/if}
                 {#if organization.homepage?.links.length}
                     <div class="flex flex-col gap-4 my-8 mx-8">
@@ -132,13 +160,13 @@
                 {#if organization.hasContactForm}
                     <KdLinkButton
                         href="https://{organization.url}.kaddio.com/contact-us"
-                        color={Color.PRIMARY}
+                        color={Color.THEME_PRIMARY}
                         className="m-8"
                         variant={Variant.FLAT}>Kontakta oss</KdLinkButton
                     >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
-                {#if organization.hasBooking && organization.homepage?.showPlaces}
+                {#if organization.showBooking && organization.homepage?.showPlaces}
                     <div
                         class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
                         id="places"
@@ -175,7 +203,7 @@
                 <Hosts hosts={organization.hosts} />
             </Card>
         {/if}
-        {#if organization.hasBooking}
+        {#if organization.showBooking}
             <Card
                 className="flex flex-col gap-5 p-5 md:max-h-screen overflow-scroll col-span-2 md:col-span-1 "
                 id="booking-types"
@@ -196,10 +224,12 @@
         bottom: 0;
         right: 0;
         background: rgb(255, 255, 255);
+        /* mix-blend-mode: multiply; */
         background: linear-gradient(
             180deg in oklab,
             rgba(0, 0, 0, 0.5567620798319328) 0%,
-            rgba(255, 255, 255, 0) 20%,
+            rgba(0, 0, 0, 0.1) 3rem,
+            rgba(0, 0, 0, 0) 5rem,
             rgba(0, 0, 0, 0) 60%,
             rgba(0, 0, 0, 0.05) 70%,
             rgba(0, 0, 0, 0.5567620798319328) 100%

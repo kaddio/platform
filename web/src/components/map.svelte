@@ -94,12 +94,7 @@
         return new Promise<Coordinates>((resolve, reject) => {
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({ address: address }, function (result, status: string) {
-                console.log(result[0].geometry.location);
                 if ((status = 'OK')) {
-                    const coords = {
-                        latitude: result[0].geometry.location.lat(),
-                        longitude: result[0].geometry.location.lng()
-                    };
                     resolve(result[0].geometry.location);
                 } else {
                     reject(new Error('addressToCoordinates ' + result));
@@ -108,6 +103,7 @@
         });
     };
     onMount(() => {
+        // console.log('address', address)
         window.initMap = async function () {
             const center: Coordinates = await addressToCoordinates(address);
 
@@ -141,4 +137,6 @@
     });
 </script>
 
-<div bind:this={container} class="aspect-video" />
+{#if address}
+    <div bind:this={container} class="aspect-video" />
+{/if}

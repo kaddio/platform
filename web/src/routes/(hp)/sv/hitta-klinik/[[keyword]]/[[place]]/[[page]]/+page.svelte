@@ -100,6 +100,12 @@
         });
         data.organizations = data.organizations.concat(organizations);
         data = data;
+        setTimeout(function scrollToNewOrgs() {
+            const el = document.getElementsByClassName('organization');
+            if (el.length) {
+                el[el.length - 12].scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100);
     }
 
     const setMyLocation = function () {
@@ -184,7 +190,7 @@
                                 {/if}
                                 {#if item.type == 'ORG'}
                                     <i class="fa fa-globe text-gray-400 mr-4" /><a
-                                        href="/sv/company/{item.url}?backbutton=1">{item.label}</a
+                                        href="/c/{item.url}?backbutton=1">{item.label}</a
                                     >
                                 {/if}
                             </div>
