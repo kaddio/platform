@@ -96,7 +96,7 @@
               </li> -->
 
               <!-- <li>
-                <a href="/press" class="text-sm hover:underline leading-6 text-gray-600">Press</a>
+                <a href="/media-kit" class="text-sm hover:underline leading-6 text-gray-600">Media kit</a>
               </li> -->
 
             </ul>
