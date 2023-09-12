@@ -10,6 +10,12 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 
 </script>
 
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
+
+
+
 <Nav />
 
 <div class="overflow-hidden bg-white py-32">
