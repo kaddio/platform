@@ -24,9 +24,9 @@ import ModuleFeature from "$components/moduleFeature.svelte";
       <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Media kit</h2>
         <p class="mt-6 text-xl leading-8 text-gray-600">Logos, product screenshots, brand values, tonality. It's all here.</p>
-        <p class="mt-6 text-base leading-7 text-gray-600">If you're missing something here or would like to use our content in a way not covered here. Please let us know</p>
+        <p class="mt-6 text-base leading-7 text-gray-600">If you're missing something here or would like to use our content in a way not covered here. Please let us know.</p>
         <div class="mt-10 flex">
-          <a href="#" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink-600">Join our team <span aria-hidden="true">&rarr;</span></a>
+          <a href="/en/support" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink-600">Get in touch <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
@@ -42,7 +42,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Brand values <i class="fa-regular fa-heart"></i></span>
 	<span slot="sub">
-		Our brand reflects who we are and it defines what we do. Fluff warning ahead.
+		Our brand reflects who we are and it defines what we do. Fluff warning ahead!
 	</span>
 
 	<ModuleFeature>
@@ -78,15 +78,26 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 	</ModuleFeature>
 
 
-  
-  <ModuleFeature>
-    
+
+	<ModuleFeature>
 		<span slot="title">
-      Human
-      <span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company value</span>
-    </span>
+			We're human!
+			<span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company value</span>
+		</span>
+
 		<span slot="body">
 			Kaddio as a company is human. We're an independent business and a small team of people who care about our customers, each other and our products.
+		</span> 
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">
+			We take responsibility!
+			<span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company value</span>
+		</span>
+
+		<span slot="body">
+			We use our own products and take responsibility for our products. We we make a mistake we own up to it and fix it. We're not afraid to admit we mess up, rather we see it as an opportunity to show who we are.
 		</span> 
 	</ModuleFeature>
 
