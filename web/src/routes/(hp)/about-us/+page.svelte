@@ -26,9 +26,6 @@
 </script>
 
 <Nav />
-  
-
-  
 
 
 <div class="bg-white py-24 sm:py-32">
@@ -155,9 +152,31 @@
 
 
 
+<!-- 
+<Stat>
+  <span slot="title">Trusted by thousands of users worldwide</span>
+  <span slot="body">Since 2016, users have trusted Kaddio to be The Heart of their digital operations, storing their most valuable assets.</span>
 
+  <StatPiece>
+      <span slot="title">Organizations</span>
+      <span slot="body">1100+</span>
+  </StatPiece>
 
+  <StatPiece>
+      <span slot="title">Countries</span>
+      <span slot="body">14</span>
+  </StatPiece>
 
+  <StatPiece>
+      <span slot="title">Historical uptime</span>
+      <span slot="body">99.995%</span>
+  </StatPiece>
+
+  <StatPiece>
+      <span slot="title">Geographical backup locations</span>
+      <span slot="body">3</span>
+  </StatPiece>
+</Stat> -->
 
 
 
