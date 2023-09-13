@@ -5,6 +5,7 @@
   import LdTag from '$lib/components/LDTag.svelte';
   import { jobPostingSchema } from '$lib/json-ld';
   setContext('lang', 'en');
+  setContext('hideLangBanner', true);
 </script>
 
 <LdTag schema={jobPostingSchema} />
@@ -15,7 +16,6 @@
 </svelte:head>
 
 <Nav />
-
 
 
 <div class="bg-white py-32">
