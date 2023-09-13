@@ -7,6 +7,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 	import { setContext } from "svelte";
 
   setContext('lang', 'en');
+  setContext('hideLangBanner', true);
 
 </script>
 
