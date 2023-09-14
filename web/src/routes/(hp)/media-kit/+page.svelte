@@ -64,7 +64,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 		</span>
 		
 		<span slot="body">
-			Kaddio is whole and capable to fulfill all needs of a business. Wholeness means that Kaddio is a complete system and not a collection of different tools juxtaposed. It's a complete system that works as one body and where each part of the system seamlessly integrates with the other.
+			Kaddio is whole and capable to fulfill all needs of a business. Wholeness means that Kaddio is a complete system but not a collection of different tools juxtaposed. It's a complete system that works as one body and where each part of the system seamlessly integrates with the other.
 		</span>
 	</ModuleFeature>
 
@@ -74,11 +74,9 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 		</span>
 	
 		<span slot="body">
-			Every part of Kaddio is and shoulw be designed to be simple. Simple to use, simple to understand, Kaddio should also be simple to implement into an existing business. It should also be easy to understand what Kaddio is and what problems it solves.
+			Every part of Kaddio is and should be designed to be simple. Simple to use, simple to understand, Kaddio should also be simple to implement into an existing business. It should also be easy to understand what Kaddio is and what problems it solves.
 		</span>
 	</ModuleFeature>
-
-
 </ModuleSection>
 
 
@@ -88,7 +86,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This section describes how we approach writing and will help you write in a way that's consistent with our brand. The tone is always professional, warm and humane. Clear and consistent, avoid being vague and ambiguous. "Don't make me think" may be used as a guideline.
+		This is how we approach writing so that it's consistent with our brand. Our tone is always professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. "Don't make me think" may be used as a guideline.
 	</span>
 
 	<ModuleFeature>
@@ -128,7 +126,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
   <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
     <div class="max-w-2xl">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Colors <i class="fa-regular fa-palette"></i></h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">kaddio.com is our living example of how we use colors. These are our main colors that we use throughout everything we do.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Our colors communicate warmth and kaddio.com should be our living example of how we use colors. These are the main colors we use throughout everything (most) we do.</p>
     </div>
     <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <Person color="bg-oldpink">
