@@ -46,40 +46,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Brand values <i class="fa-regular fa-heart text-oldpink"></i></span>
 	<span slot="sub">
-		Our brand reflects who we are and it defines what we do. Fluff warning ahead!
-	</span>
-
-
-	<ModuleFeature>
-		<span slot="title">
-			We're humans behind the facade
-		</span>
-
-		<span slot="body">
-			We're an independent business and a small team of people who care about our customers, each other and our products.
-		</span> 
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">
-			We take responsibility of what we do
-		</span>
-
-		<span slot="body">
-			We use our own products and take responsibility for our products. We we make a mistake we own up to it and fix it. We're not afraid to admit we mess up, rather we see it as an opportunity to prove ourselfs.
-		</span> 
-	</ModuleFeature>
-
-</ModuleSection>
-
-
-
-
-
-<ModuleSection>
-	<span slot="title">Product values <i class="fa-regular fa-laptop"></i></span>
-	<span slot="sub">
-		Our products reflect brand values but also have their own specific values.
+		Our brand reflects who we are and it helps define what we do. Fluff warning ahead!
 	</span>
 
 	<ModuleFeature>
