@@ -54,7 +54,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 			Flexibility
 		</span>
 		<span slot="body">
-			Kaddio is flexible, thus it can be used in many ways for many different industries. Flexibility also means a user may use parts of the system and not others. Kaddio incorporates right into their business and we always strive to make that move as seamless as possible.
+			Kaddio is flexible, thus it can be used in many ways for many different industries. Flexibility also means our customers may use parts of the system and not others, then the other parts of the system should not be distracting. Kaddio incorporates right into our customers business and we always strive to make a move to Kaddio as seamless as it could possibly be.
 		</span> 
 	</ModuleFeature>
 
