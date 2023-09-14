@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Footer from "$components/footer.svelte";
+	import LegalLi from "$components/legalLi.svelte";
+	import LegalUl from "$components/legalUl.svelte";
 import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import Nav from "$components/nav.svelte";
@@ -40,75 +42,86 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 </div>
 
 
+
 <ModuleSection>
-	<span slot="title">Brand values <i class="fa-regular fa-heart"></i></span>
+	<span slot="title">Brand values <i class="fa-regular fa-heart text-oldpink"></i></span>
 	<span slot="sub">
 		Our brand reflects who we are and it defines what we do. Fluff warning ahead!
 	</span>
 
+
 	<ModuleFeature>
-    
 		<span slot="title">
-      Flexibiliy
-      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product value</span>
-    </span>
+			We're humans behind the facade
+		</span>
+
 		<span slot="body">
-			Kaddio is flexible in a sense that it can be used in many ways for many different industries. It's a tool that can be used to solve many different problems. It's flexibility also means a user may use parts of the system and not others. Kaddio incorporates right into their business and should minimize steps needed to change system as a whole.
+			We're an independent business and a small team of people who care about our customers, each other and our products.
 		</span> 
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">
-      Wholeness
-      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product value</span>
-    </span>
-		<span slot="body">
-			But Kaddio may also be the only tool needed to fulfill all needs of a business. It's complete in that sense. Wholeness also means that Kaddio is a complete system, but not a collection of different tools glued together. It's a complete system that works together and where each part of the system seamlessly integrates with the other.
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">
-      Simplicity
-      <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-oldpink ring-1 ring-inset ring-oldpink">Product value</span>
-
-    </span>
-		<span slot="body">
-			Every part of Kaddio is designed to be simple. Simple to use, simple to understand, Kaddio should also be simple to implement into an existing business.
-		</span>
-	</ModuleFeature>
-
-
-
-	<ModuleFeature>
-		<span slot="title">
-			We're human!
-			<span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company value</span>
+			We take responsibility of what we do
 		</span>
 
 		<span slot="body">
-			Kaddio as a company is human. We're an independent business and a small team of people who care about our customers, each other and our products.
-		</span> 
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">
-			We take responsibility!
-			<span class="rounded-full bg-teal-500/10 px-3 py-1 text-sm font-semibold leading-6 text-teal-400 ring-1 ring-inset ring-teal-500/20">Company value</span>
-		</span>
-
-		<span slot="body">
-			We use our own products and take responsibility for our products. We we make a mistake we own up to it and fix it. We're not afraid to admit we mess up, rather we see it as an opportunity to show who we are.
+			We use our own products and take responsibility for our products. We we make a mistake we own up to it and fix it. We're not afraid to admit we mess up, rather we see it as an opportunity to prove ourselfs.
 		</span> 
 	</ModuleFeature>
 
 </ModuleSection>
 
 
+
+
+
+<ModuleSection>
+	<span slot="title">Product values <i class="fa-regular fa-laptop"></i></span>
+	<span slot="sub">
+		Our products reflect brand values but also have their own specific values.
+	</span>
+
+	<ModuleFeature>
+		<span slot="title">
+			Flexibility
+		</span>
+		<span slot="body">
+			Kaddio is flexible, thus it can be used in many ways for many different industries. Flexibility also means a user may use parts of the system and not others. Kaddio incorporates right into their business and we always strive to make that move as seamless as possible.
+		</span> 
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">
+      		Wholeness
+		</span>
+		
+		<span slot="body">
+			Kaddio is whole and capable to fulfill all needs of a business. Wholeness means that Kaddio is a complete system and not a collection of different tools juxtaposed. It's a complete system that works as one body and where each part of the system seamlessly integrates with the other.
+		</span>
+	</ModuleFeature>
+
+	<ModuleFeature>
+		<span slot="title">
+			Simplicity
+		</span>
+	
+		<span slot="body">
+			Every part of Kaddio is and shoulw be designed to be simple. Simple to use, simple to understand, Kaddio should also be simple to implement into an existing business. It should also be easy to understand what Kaddio is and what problems it solves.
+		</span>
+	</ModuleFeature>
+
+
+</ModuleSection>
+
+
+
+
+
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This section describes how we approach writing. It's a guide for how to write in a way that's consistent with our brand. Technical writing, marketing writing, social media writing, it's all here.
+		This section describes how we approach writing and will help you write in a way that's consistent with our brand. The tone is always professional, warm and humane. Clear and consistent, avoid being vague and ambiguous. "Don't make me think" may be used as a guideline.
 	</span>
 
 	<ModuleFeature>
@@ -140,7 +153,6 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 	</ModuleFeature>
 
 </ModuleSection>
-
 
 
 
@@ -177,8 +189,6 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 	</ul>
   </div>
 </div>
-
-
 
 
 <Footer />
