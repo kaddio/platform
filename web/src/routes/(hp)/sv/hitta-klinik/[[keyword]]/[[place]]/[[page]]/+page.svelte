@@ -147,14 +147,16 @@
         <div class="container mx-auto text-white text-xl flex flex-row gap-5 align-middle">
             <img src="https://kaddio.com/img/kaddio-logo.png" alt="" class="h-7" />
             Hitta klinik
-            <h1>{[data.keyword, data.place].filter(Boolean).join(' › ')}</h1>
+            <h1>
+                {[data.keyword, isLocation ? 'Min plats' : data.place].filter(Boolean).join(' › ')}
+            </h1>
         </div>
     </div>
 
     <div class="bg-gray-100 p-4 lg:p-12 pt-4 lg:pt-20 flex grow">
         <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
             <form
-                class="p-0 grid grid-cols-2 gap-8 h-fit"
+                class="p-0 grid grid-cols-2 gap-8 h-fit w-full sm:w-96"
                 name="searchForm"
                 bind:this={searchForm}
                 method="GET"
@@ -266,7 +268,7 @@
                     <div class="flex justify-between">
                         <label class="font-semibold mb-2 ml-3"
                             >Sökresultat &nbsp;<span class="font-normal text-gray-500"
-                                >{data.organizations.length} av {data.count}</span
+                                >Visar {data.organizations.length} av {data.count}</span
                             ></label
                         >
                     </div>
@@ -280,7 +282,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-row justify-start gap-8">
+                    <div class="flex flex-row justify-center gap-8 mt-12 relative">
                         {#if data.organizations.length < data.count}
                             <a
                                 href=""
@@ -291,7 +293,7 @@
 
                         <a
                             href=""
-                            class="text-gray-500 mt-2 ml-3"
+                            class="text-gray-500 mt-2 ml-3 absolute bottom-0 right-0"
                             on:click={() => scrollTo({ top: 0, behavior: 'smooth' })}>Till toppen</a
                         >
                     </div>
