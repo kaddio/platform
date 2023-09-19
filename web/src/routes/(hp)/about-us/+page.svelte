@@ -58,7 +58,7 @@
 
         <Person>
             <span slot="name">Jesper</span>
-            <span slot="title">Dev</span>
+            <span slot="title">Developer</span>
         </Person>
 
         <Person>
@@ -79,6 +79,11 @@
         <Person>
             <span slot="name">Agustin</span>
             <span slot="title">Customer support, social Media & dev</span>
+        </Person>
+
+        <Person>
+            <span slot="name">Jesper L</span>
+            <span slot="title">Developer</span>
         </Person>
 
         <Person src="/img/carl.png">
