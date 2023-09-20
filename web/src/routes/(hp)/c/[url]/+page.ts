@@ -1,10 +1,10 @@
-import { apiUrl } from '$lib/apiUrl.js'
+import { apiUrl } from '$lib/apiUrl.js';
 
 export async function load({ params, fetch }) {
-
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
-        body: JSON.stringify({query: `
+        body: JSON.stringify({
+            query: `
             query {
                 findOrganization(url: "${params.url}") {
                     name,
@@ -13,6 +13,13 @@ export async function load({ params, fetch }) {
                     city,
                     bookingLink,
                     hasBooking,
+                    hasPlaces
+                    hasContactForm
+                    url
+                    cssVars {
+                        name,
+                        value
+                    }
                     places {
                         name
                         address,
@@ -32,6 +39,10 @@ export async function load({ params, fetch }) {
                         pics
                         showPlaces
                         showUs
+                        links {
+                            type
+                            url
+                        }
                     }
                     hosts {
                         firstname
@@ -40,13 +51,21 @@ export async function load({ params, fetch }) {
                         nextFreeTime
                         bookingLink
                     }
+                    reviews {
+                        name
+                        text
+                        stars
+                        date
+
+                    }
                 }
             }
-        `}),
+        `
+        }),
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
         }
-    })
+    });
 
     const data = await result.json();
 

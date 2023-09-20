@@ -1,9 +1,9 @@
 export enum Size {
-    XS = "xs",
-    SM = "sm",
-    MD = "md",
-    LG = "lg",
-    XL = "XL"
+    XS = 'xs',
+    SM = 'sm',
+    MD = 'md',
+    LG = 'lg',
+    XL = 'XL'
 }
 
 export enum Variant {
@@ -20,10 +20,10 @@ export enum Color {
     DEFAULT = 'default',
     SUCCESS = 'success',
     WARNING = 'warning',
-    DANGER = 'danger'
+    DANGER = 'danger',
+    THEME_PRIMARY = 'theme-primary'
 }
 
-    
 const tailwindColorMap = {
     [Color.PRIMARY]: 'purple',
     [Color.SECONDARY]: 'teal',
@@ -31,30 +31,31 @@ const tailwindColorMap = {
     [Color.DEFAULT]: 'gray',
     [Color.WARNING]: 'yellow',
     [Color.SUCCESS]: 'green',
+    [Color.THEME_PRIMARY]: 'primary'
 };
 
-const sizeClass = function(size: Size) {
-    switch(size) {
+const sizeClass = function (size: Size) {
+    switch (size) {
         case Size.XS:
-            return "text-xs px-1.5 py-0.5"
+            return 'text-xs px-1.5 py-0.5';
         case Size.SM:
-            return "text-sm px-2 py-1"
+            return 'text-sm px-2 py-1';
         case Size.MD:
-            return "px-2.5 py-1.5"
+            return 'px-2.5 py-1.5';
         case Size.LG:
-            return "text-lg px-3.5 py-2.5"
+            return 'text-lg px-3.5 py-2.5';
         case Size.XL:
-            return "text-xl px-5 py-3"
+            return 'text-xl px-5 py-3';
     }
-}
+};
 
-const semanticColorToTailwindColor = function(color: Color) : string {
-    return tailwindColorMap[color]
-}
+const semanticColorToTailwindColor = function (color: Color): string {
+    return tailwindColorMap[color];
+};
 
-export const cssClass = function(variant: Variant, color: Color):string {
+export const cssClass = function (variant: Variant, color: Color): string {
     const tailwindColor = semanticColorToTailwindColor(color);
-    switch(variant) {
+    switch (variant) {
         case Variant.FLAT:
             return `bg-${tailwindColor}-400 text-white hover:bg-${tailwindColor}-300`;
         case Variant.GRADIENT:
@@ -65,8 +66,8 @@ export const cssClass = function(variant: Variant, color: Color):string {
         case Variant.OUTLINE:
             return `bg-white text-${tailwindColor}-400 border-${tailwindColor}-300`;
     }
-}
+};
 
-export const buttonCssClass = function(variant: Variant, color: Color, size: Size) {
-    return `${cssClass(variant, color)} ${sizeClass(size)}`;
-}
+export const buttonCssClass = function (variant: Variant, color: Color, size: Size) {
+    return `text-center ${cssClass(variant, color)} ${sizeClass(size)}`;
+};
