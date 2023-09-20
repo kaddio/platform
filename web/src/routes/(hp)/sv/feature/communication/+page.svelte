@@ -13,33 +13,76 @@
 <ModuleSection>
 	<span slot="title">Kaddio Kommunikation</span>
 	<span slot="sub">Chat och video för upp till 500 samtidiga deltagare</span>
-<!-- 
+ 
 	<ModuleFeature>
-		<span slot="title">Automatisera</span>
+		<span slot="title">Ställ krav på säkerheten</span>
 		<span slot="body">
-			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
+			Kräv inloggning till samtalet eller chatten med Mobilt BankID eller tvåfaktorsautentisering. Kaddios inloggningsalternativ uppfyller Socialstyrelsens krav på stark autentisering. 
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Interagera</span>
+		<span slot="title">Dela information</span>
 		<span slot="body">
-			Det är enkelt att byta till video..
+			Skicka känslig information på ett säkert sätt genom chatten. Dela skärm under videosamtal. Spela in videosamtal som klient kan ladda ner.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
-		<span slot="title">Och du kan växa med Kaddio</span>
+		<span slot="title">Väx med Kaddio</span>
 		<span slot="body">
-			Kaddio Video har stöd för minst 500 deltagare samtidigt.
+			Håll enskilda samtal eller stora föreläsningar. Kaddio Video har stöd för minst 500 deltagare samtidigt.
 		</span>
-	</ModuleFeature> -->
+	</ModuleFeature>
 </ModuleSection>
   
 
 <FaqSection>
 	<span slot="title">Detaljer</span>
 
+	<Qa>
+		<span slot="q">Stark autentisering</span>
+		<span slot="a">
+			Logga in med Mobilt BankID eller genom tvåfaktorsautentisering med e-post, lösenord och kod via SMS. Båda metoderna uppfyller Socialstyrelsens krav på stark autentisering. Inloggningsalternativen gäller både behandlare och klient.
+		</span>
+	</Qa>
+
+
+	<Qa>
+		<span slot="q">Säker delning</span>
+		<span slot="a">
+			I inloggat läge i Kaddio är allt krypterat. Dela känslig information på ett säkert sätt genom chatten. Skriv meddelanden direkt eller bifoga filer. Skicka brev och fakturor direkt i chatten.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Skärmdelning</span>
+		<span slot="a">
+			Dela skärm under videosamtal.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Gruppchat</span>
+		<span slot="a">
+			Skapa chatgrupper snabbt och enkelt.
+		</span>
+	</Qa>
+
+	<Qa>
+		<span slot="q">Spela in samtal</span>
+		<span slot="a">
+			Spela in videosamtal och dela med klient vid behov. Inspelningen laddas upp i chatten och är synlig för behandlare i 24 timmar.
+		</span>
+	</Qa>
+	
+	<Qa>
+		<span slot="q">Autosvar</span>
+		<span slot="a">
+			Ställ in autosvar i chatten, om du till exempel blir sjuk eller är på semester.
+		</span>
+	</Qa>
+<!--
 	<Qa>
 		<span slot="q">Skärmdelning</span>
 		<span slot="a">
@@ -48,11 +91,10 @@
 	</Qa>
 
 	<Qa>
-		<span slot="q">Spela in</span>
+		<span slot="q">Skärmdelning</span>
 		<span slot="a">
-			Videosamtal är inspelningsbara, videon laddas upp i konversationen och är synlig för behandlare i 24 timmar.
+			Dela skärm
 		</span>
 	</Qa>
-
-
+-->
 </FaqSection>

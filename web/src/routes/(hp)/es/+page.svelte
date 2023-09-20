@@ -6,6 +6,7 @@
 	import PricesEs from './pricesEs.svelte';
 	import { scroll } from '$lib/scroll';
 	import SecuritySectionEs from '../es/securitySectionEs.svelte';
+	import ReferencesEs from './referencesEs.svelte';
 
 	setContext('lang', 'es');
 </script>
@@ -59,5 +60,5 @@
 <PricesEs />
 <SecuritySectionEs />
 
-<!-- <ReferencesSv /> -->
+<ReferencesEs />
 <Footer />

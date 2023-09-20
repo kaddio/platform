@@ -68,9 +68,9 @@ export const jobPostingSchema: WithContext<JobPosting> = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: "Senior Software Engineer",
-    description : "<p>Kaddio strive to be a reflective organization...</p>",
-    datePosted: "2023-05-20",
-    validThrough: "2025-05-20",
+    description : "<p>At Kaddio, we have a lot of freedom with flexible work hours, you can work remotely 50% if you prefer. We have a super cosy office in central Göteborg, Sweden. We all speak English and Swedish, some speak Spanish.</p>",
+    datePosted: "2023-09-01",
+    validThrough: "2025-09-01",
     employmentType: "full-time",
     hiringOrganization: {
         "@type": "Organization",
@@ -92,7 +92,7 @@ export const jobPostingSchema: WithContext<JobPosting> = {
         "currency": "SEK",
         "value": {
           "@type": "QuantitativeValue",
-          "value": 60000,
+          "value": 55000,
           "unitText": "MONTH"
         }
     }
