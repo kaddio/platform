@@ -76,9 +76,9 @@
             <span slot="title">Customer support</span>
         </Person>
 
-        <Person>
+        <Person src="/img/agustin.png">
             <span slot="name">Agustin</span>
-            <span slot="title">Customer support, social Media & dev</span>
+            <span slot="title">Customer support, social media & dev</span>
         </Person>
 
         <Person>
