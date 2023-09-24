@@ -11,7 +11,7 @@ import Legal from "$components/legal.svelte";
 
 <Legal>
     <span slot="pretitle">
-        Case study @ Göteborg, Sweden
+        Kaddio Case study @ Göteborg, Sweden
     </span>
     
     <span slot="title">Meet Petter</span>
