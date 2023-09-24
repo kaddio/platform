@@ -70,7 +70,7 @@
 			Status
 		</span>
 		<span slot="body">
-			What is the status of our underlaying services? Check our statuspage for availability.
+			What is the status on our services? Check statuspage for health.
 		</span>
 		<span slot="link">
 			<a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.statuspage.io <span aria-hidden="true">&rarr;</span></a>
