@@ -3,6 +3,7 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
 	<meta name="description" content="Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys." />
 </svelte:head>
 
-<ModuleSection>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/reports-se.png">
 	<span slot="title">Kaddio Rapporter</span>
 	<span slot="sub">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys.</span>
 
@@ -34,7 +35,7 @@
 			...
 		</span>
 	</ModuleFeature> -->
-</ModuleSection>
+</ModuleSectionWithImage>
   
 
 <FaqSection>
