@@ -3,6 +3,7 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
 	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." />
 </svelte:head>
 
-<ModuleSection>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/form-se.png">
 	<span slot="title">Kaddio Formulär</span>
 	<span slot="sub">Automatisera utskick av formulär och hälsodeklarationer. I Kaddio kan du både använda standardformulär och skapa dina egna. Skicka journalformulär automatiskt vid bokning och få svaren direkt till journalen.</span>
 
@@ -34,7 +35,7 @@
 			...
 		</span>
 	</ModuleFeature> -->
-</ModuleSection>
+</ModuleSectionWithImage>
   
 
 <FaqSection>
