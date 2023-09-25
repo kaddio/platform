@@ -3,6 +3,8 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
 </script>
 
 <svelte:head>
@@ -10,32 +12,32 @@
 	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
 </svelte:head>
 
-<ModuleSection>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png">
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="timer">
 		<span slot="title">Spara tid</span>
 		<span slot="body">
 			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar. Du skickar en fakturera med tre klick.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="arrows-spin">
 		<span slot="title">Automatisera</span>
 		<span slot="body">
 			Automatisera utskick av påminnelsefakturor. Håll koll på betalningar genom automatisk avprickning av fakturor betalda via Bankgiro.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="file-contract">
 		<span slot="title">E-fakturera</span>
 		<span slot="body">
 			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 	
-</ModuleSection>
+</ModuleSectionWithImage>
   
 
 <FaqSection>
