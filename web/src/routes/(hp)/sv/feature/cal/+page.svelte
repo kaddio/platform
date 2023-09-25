@@ -3,6 +3,8 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
 </script>
 
 <svelte:head>
@@ -10,31 +12,31 @@
 	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning." />
 </svelte:head>
 
-<ModuleSection>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png">
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. <br>I Kaddio är kalendern även din publika bokning.</span>
+	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Planera</span>
 		<span slot="body">
 			Skapa bokningsbara tider direkt från din kalender. Konfigurera dina bokningstyper i detalj. Välj om dina kunder bokar och betalar själva eller om du tar kontroll över varje minut. 
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="people-pulling">
 		<span slot="title">Samarbeta</span>
 		<span slot="body">
 			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Effektivisera</span>
 		<span slot="body">
 			Har du återkommande händelser i kalendern? Skapa mallar och spara tid. 
 		</span>
-	</ModuleFeature>
-</ModuleSection>
+	</ModuleFeatureWithIcon>
+</ModuleSectionWithImage>
   
 
 <FaqSection>

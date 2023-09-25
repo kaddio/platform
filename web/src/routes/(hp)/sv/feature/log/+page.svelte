@@ -3,6 +3,8 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
 </script>
 
 <svelte:head>
@@ -10,36 +12,36 @@
 	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
 </svelte:head>
 
-<ModuleSection>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png">
 	<span slot="title">Kaddio Journal</span>
 	<span slot="sub">
 		Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.
 	</span>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="pen">
 		<span slot="title">Dokumentera</span>
 		<span slot="body">
 			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
 		</span> 
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="sliders">
 		<span slot="title">Anpassa</span>
 		<span slot="body">
 			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
 			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="gamepad-modern">
 		<span slot="title">Kontrollera</span>
 		<span slot="body">
 			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
 			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-</ModuleSection>
+</ModuleSectionWithImage>
 
 
 <FaqSection>
