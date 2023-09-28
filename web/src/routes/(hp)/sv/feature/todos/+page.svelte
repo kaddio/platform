@@ -12,6 +12,7 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/tasks-se.png">
+	<span slot="h1">Uppgifter</span>
 	<span slot="title">Kaddio Uppgifter</span>
 	<span slot="sub">Gör din egen att-göra-lista eller delegera till någon annan.</span>
 

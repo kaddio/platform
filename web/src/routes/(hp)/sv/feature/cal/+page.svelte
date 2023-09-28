@@ -13,6 +13,7 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png">
+	<span slot="h1">Onlinebokning</span>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
 	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
 

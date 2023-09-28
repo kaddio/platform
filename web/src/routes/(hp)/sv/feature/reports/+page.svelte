@@ -12,6 +12,7 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/reports-se.png">
+	<span slot="h1">Statistik</span>
 	<span slot="title">Kaddio Rapporter</span>
 	<span slot="sub">Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys.</span>
 

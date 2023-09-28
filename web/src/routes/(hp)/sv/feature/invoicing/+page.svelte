@@ -13,6 +13,7 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png">
+	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
 

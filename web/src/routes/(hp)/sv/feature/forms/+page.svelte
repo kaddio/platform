@@ -12,6 +12,7 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/form-se.png">
+	<span slot="h1">Formulär</span>
 	<span slot="title">Kaddio Formulär</span>
 	<span slot="sub">Automatisera utskick av formulär och hälsodeklarationer. I Kaddio kan du både använda standardformulär och skapa dina egna. Skicka journalformulär automatiskt vid bokning och få svaren direkt till journalen.</span>
 
