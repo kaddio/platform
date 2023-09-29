@@ -70,9 +70,21 @@ const translations = {
         en: 'Medical record',
         es: 'Historia clínica'
     },
+    "Journalsystem": {
+        en: 'Electronic medical record',
+        es: 'Historia clínica'
+    },
     "Tidsbokning": {
         en: 'Booking',
         es: 'Sistema de reservas'
+    },
+    "Onlinebokning": {
+        en: 'Online booking',
+        es: 'Sistema de reservas'
+    },
+    "Kommunikation": {
+        en: 'Communication',
+        es: 'Vídeo y chat encriptados'
     },
     "Fakturering": {
         en: 'Invoicing',
