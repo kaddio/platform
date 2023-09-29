@@ -7,6 +7,7 @@ services:
      plan: starter
      branch: master
      rootDir: web
+     pullRequestPreviewsEnabled: true 
      domains:
       - kaddio.com
      region: frankfurt
