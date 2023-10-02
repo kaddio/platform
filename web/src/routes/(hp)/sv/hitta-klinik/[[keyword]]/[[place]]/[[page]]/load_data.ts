@@ -21,6 +21,7 @@ export async function loadData({
 			url,
 			keywords,
 			hasBooking,
+            showBooking,
 			bookingTypes {
 				name,
 				nextFreeTime
@@ -47,7 +48,7 @@ export async function loadData({
     }
 
     const orgs = await result.json();
-    console.log(orgs);
+
     return {
         organizations: orgs.data.findOrganizations.organizations,
         count: orgs.data.findOrganizations.count,
