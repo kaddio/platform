@@ -36,7 +36,7 @@
             </a>
             <div class="flex-grow" />
             <div class="flex gap-5 justify-between items-center text-sm">
-                {#if organization.hasBooking}
+                {#if organization.showBooking}
                     {#if organization.nextFreeTime}
                         <a
                             class="text-green-400 font-semibold"
@@ -47,11 +47,11 @@
                         <a
                             target="_blank"
                             class="text-gray-400 font-semibold"
-                            href="https://{organization.url}.kaddio.com/booking">Bokning</a
+                            href="https://{organization.url}.kaddio.com/booking"
+                            >Inga lediga tider</a
                         >
                     {/if}
                 {/if}
-                <a href="/c/{organization.url}?backbutton=1"><KdButton>Besök</KdButton></a>
             </div>
         </div>
     </div>

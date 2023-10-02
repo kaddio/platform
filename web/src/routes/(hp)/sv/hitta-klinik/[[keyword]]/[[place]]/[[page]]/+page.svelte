@@ -121,7 +121,7 @@
             },
             function error() {
                 loadingPlace = false;
-                alert('Fel');
+                alert('Du måste aktivera platstjänster i din webbläsare');
             }
         );
     };
@@ -287,7 +287,7 @@
                             <a
                                 href=""
                                 class="text-gray-500 font-semibold mt-2 ml-3"
-                                on:click={() => loadMore()}>Ladda fler</a
+                                on:click|preventDefault={() => loadMore()}>Ladda fler</a
                             >
                         {/if}
 
