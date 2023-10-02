@@ -13,6 +13,7 @@ export async function load({ params, fetch }) {
                     city,
                     bookingLink,
                     hasBooking,
+                    showBooking,
                     hasPlaces
                     hasContactForm
                     url
@@ -68,7 +69,7 @@ export async function load({ params, fetch }) {
     });
 
     const data = await result.json();
-
+    console.log(data);
     return {
         organization: data.data.findOrganization
     };
