@@ -7,10 +7,15 @@
     export let darkHeader: boolean = false;
 
     let navOpen = false;
+    let salesOpen = false;
 	
-	function handleNav() {
-		navOpen = !navOpen;
-	}
+    function handleNav() {
+      navOpen = !navOpen;
+    }
+
+    function handleSales() {
+      salesOpen = !salesOpen;
+    }
 
     $: lightText = darkHeader && !navOpen;
 
@@ -133,18 +138,18 @@ $: $page.url && (navOpen = false);
             <div class="bg-gray-50">
               <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
-                  <a href="https://demo.kaddio.com/login-demo" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  <a href="https://demo.kaddio.com/login-demo" rel="noreferrer" target="_blank" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
 
                     <i class="fal fa-fw fa-external-link fa-xl text-gray-400"></i>
                     Prova demo
                   </a>
-                  <a href="tel:+46313204414" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  <a href="/{lang}/sales" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" />
                     </svg>
-                    Kontakta sälj +46 (0) 31-320 44 14
+                    Kontakta sälj
                   </a>
-                  <a href="#functions" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  <a href="/{lang}/#functions" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M2.5 3A1.5 1.5 0 001 4.5v4A1.5 1.5 0 002.5 10h6A1.5 1.5 0 0010 8.5v-4A1.5 1.5 0 008.5 3h-6zm11 2A1.5 1.5 0 0012 6.5v7a1.5 1.5 0 001.5 1.5h4a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0017.5 5h-4zm-10 7A1.5 1.5 0 002 13.5v2A1.5 1.5 0 003.5 17h6a1.5 1.5 0 001.5-1.5v-2A1.5 1.5 0 009.5 12h-6z" clip-rule="evenodd" />
                     </svg>
@@ -156,11 +161,13 @@ $: $page.url && (navOpen = false);
           </div>
         </div>
   
-        <!-- <a href="/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Case</a> -->
-        <a href="/{lang}/sales" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Nyfiken på Kaddio?</a>
+        <a href="/{lang}/#price" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Pris</a>
+        <!-- <a href="/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kundberättelser</a> -->
+        <!-- <a href="/{lang}/sales" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Nyfiken på Kaddio?</a> -->
         <!-- <a href="/sv/hitta-klinik" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"><i class="fa fa-magnifying-glass"></i> Hitta klinik</a> -->
-
         <a href="/{lang}/support" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Support</a>
+
+        
 
     </div>
 
@@ -183,58 +190,84 @@ $: $page.url && (navOpen = false);
 
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div on:click={() => (show = false)} class="lg:hidden" class:hidden={!show} role="dialog" aria-modal="true">
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-10"></div>
-      <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Kaddio</span>
-            <img class="h-8 w-auto" src="/img/kaddio-black.png" alt="">
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <div class="-mx-3">
-                <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-                  Product
-                  <!--
-                    Expand/collapse icon, toggle classes based on menu open state.
-  
-                    Open: "rotate-180", Closed: ""
-                  -->
-                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                  </svg>
-                </button>
-                <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                <div class="mt-2 space-y-2" id="disclosure-1">
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Integrations</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch demo</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact sales</a>
-                  <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">View all products</a>
-                </div>
+<!-- Mobile menu, show/hide based on menu open state. -->
+<div on:click={() => (show = false)} class="lg:hidden" class:invisible={!show} role="dialog" aria-modal="true">
+  <!-- Background backdrop, show/hide based on slide-over state. -->
+  <div class="fixed inset-0 z-10"></div>
+  <div class="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+    <div class="p-6">
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Kaddio</span>
+          <img class="h-8 w-auto" src="/img/kaddio-black.png" alt="Kaddio logotype">
+        </a>
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <a href="/{lang}/feature/log" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <i class="fal fa-fw fa-xl fa-heart text-gray-600 group-hover:text-oldpink"></i>
+
               </div>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-            </div>
-            <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-            </div>
+              {$_('Journalsystem')}
+            </a>
+            <a href="/{lang}/feature/cal" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <i class="fal fa-fw fa-xl fa-stopwatch text-gray-600 group-hover:text-oldpink"></i>
+              </div>
+              {$_('Onlinebokning')}
+            </a>
+            <a href="/{lang}/feature/communication" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <i class="fal fa-fw fa-xl fa-comments text-gray-600 group-hover:text-oldpink"></i>
+              </div>
+              {$_('Kommunikation')}
+            </a>
+            <a href="/{lang}/feature/invoicing" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <i class="fal fa-fw fa-xl fa-file-lines text-gray-600 group-hover:text-oldpink"></i>
+              </div>
+              {$_('Fakturering')}
+            </a>
+            <a href="/{lang}/#functions" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="h-5 w-5 flex-none text-gray-400 group-hover:text-oldpink" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M2.5 3A1.5 1.5 0 001 4.5v4A1.5 1.5 0 002.5 10h6A1.5 1.5 0 0010 8.5v-4A1.5 1.5 0 008.5 3h-6zm11 2A1.5 1.5 0 0012 6.5v7a1.5 1.5 0 001.5 1.5h4a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0017.5 5h-4zm-10 7A1.5 1.5 0 002 13.5v2A1.5 1.5 0 003.5 17h6a1.5 1.5 0 001.5-1.5v-2A1.5 1.5 0 009.5 12h-6z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              {$_('Visa alla tjänster')}
+            </a>
+          </div>
+          <div class="space-y-2 py-6">
+            <a href="/{lang}/#price" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pris</a>
+            <a href="/{lang}/support" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Support</a>
+          </div>
+          <div class="py-6">
+            <a href="/{lang}/sign-in" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Logga in</a>
+            <a href="/{lang}/create" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Skapa konto</a>
           </div>
         </div>
       </div>
     </div>
+    <div class="sticky bottom-0 grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50 text-center">
+      <a href="https://demo.kaddio.com/login-demo" target="_blank" rel="noreferrer" class="p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100">
+        <i class="fal fa-fw fa-external-link fa-xl text-gray-400"></i>
+        {$_('Prova demo')}
+      </a>
+      <a href="/{lang}/sales" class="p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100">{$_('Kontakta sälj')}</a>
+    </div>
+  </div>
+</div>
+    
+
+
+
   </header>
   

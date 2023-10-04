@@ -1,14 +1,11 @@
 
 <div class="relative bg-white">
-	<div class="lg:absolute lg:inset-0 lg:left-1/2">
-	  <img class="h-auto w-full bg-gray-50 object-cover object-top lg:absolute lg:h-full" src="/img/daniel-y-rufus.png" alt="">
-	</div>
 	<div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
 	  <div class="px-6 lg:px-8">
 		<div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
 			<h2 class="text-3xl font-bold tracking-tight text-gray-900">Funderar du på om Kaddio kan passa dig?</h2>
 			<p class="mt-6 text-lg leading-8 text-gray-900">
-				Kontakta mig så hjälper jag dig. Jag finns oftast tillgänglig på vardagar kl 9 - 15.
+				Kontakta Daniel så hjälper han dig. Tillgänglig på vardagar kl 9 - 15.
 
 			</p>
 			<dl class="mt-10 space-y-4 text-base leading-7 text-gray-900">
@@ -43,5 +40,10 @@
 		</div>
 	  </div>
 	</div>
+
+	<div class="lg:absolute lg:inset-0 lg:left-1/2">
+		<img class="h-auto w-full bg-gray-50 object-cover object-top lg:absolute lg:h-full" src="/img/daniel-y-rufus.png" alt="">
+	</div>
+  
   </div>
   
