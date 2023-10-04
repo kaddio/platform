@@ -76,10 +76,10 @@
 </svelte:head>
 
 <div class="w-sceen flex flex-col">
-    <div class="w-full relative p-16">
+    <div class="w-full relative p-4 md:p-16">
         <div
-            style="background-image: url('/img/sigmund-YUuSAJkS3U4-unsplash.jpg'); background-size: cover; background-position: center; "
-            class="w-full top-0 absolute left-0 bottom-0 right-0 purple-img"
+            style="background-image: url('/img/man.jpg'); background-size: cover; background-position: center; "
+            class="w-full top-0 absolute left-0 bottom-0 right-0"
         />
         <div
             class="mx-auto flex gap-5 align-middle justify-center items-center top-0 left-0 flex-col relative max-w-screen-lg py-16"
@@ -125,9 +125,9 @@
     </div>
 
     <div class="bg-gray-100 p-4 lg:p-12 pt-4 lg:pt-20 flex grow">
-        <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
+        <div class="gap-10 lg:w-full container mx-auto">
             <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-16">
                     {#each keywords as keyword}
                         <a class="col-span-1" href="" on:click={() => (selectedItem = keyword)}>
                             <KeywordCard keyword={keyword.label} imgUrl={keyword.imgUrl} />
