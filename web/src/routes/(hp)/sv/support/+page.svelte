@@ -28,7 +28,7 @@
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Hjälpcenter</span>
 		<span slot="body">
-			I Kaddios Hjälpcenter help.kaddio.com fyller vi kontinuerligt på med artiklar och svar på vanliga frågor.
+			I Kaddios Hjälpcenter hittar du guider och svar på vanliga frågor.
 		</span>
 		<span slot="link">
 			<a href="https://help.kaddio.com/help" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">help.kaddio.com <span aria-hidden="true">&rarr;</span></a>
@@ -38,7 +38,7 @@
 	<SimpleCenteredPiece icon="envelope">
 		<span slot="title">E-post</span>
 		<span slot="body">
-			Det går även bra att maila oss för frågor och support. Under vardagar 9-15 gör vi vårt bästa för att svara dig inom några timmar.
+			Under vardagar 9-15 gör vi vårt bästa för att svara dig inom några timmar.
 		</span>
 		<span slot="link">
 			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
@@ -71,13 +71,12 @@
 	</SimpleCenteredPiece>		
 
 	<SimpleCenteredPiece icon="sparkles">
-		<span slot="title">Funderar du på om Kaddio skulle passa dig?</span>
+		<span slot="title">Bli kund</span>
 		<span slot="body">
-			Du blir kund genom att <a href="/sv/create" class="font-semibold text-oldpink">Skapa konto</a>. 
-			<br>Har du frågor kan du kontakta vår säljare Daniel
+			Du blir kund genom att <a href="/sv/create" class="font-semibold text-oldpink">Skapa konto</a>. Funderar du på om Kaddio kan passa dig?
 		</span>
 		<span slot="link">
-			<a href="/sv/sales" class="text-sm font-semibold leading-6 text-oldpink">Kontakta Daniel <span aria-hidden="true">&rarr;</span></a>
+			<a href="/sv/sales" class="text-sm font-semibold leading-6 text-oldpink">Kontakta sälj <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>
 	
