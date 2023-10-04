@@ -1,12 +1,13 @@
 <script lang="ts">	
-	import { setContext } from 'svelte';
+	import { getContext, setContext } from 'svelte';
 	import FaqSection from '$components/faqSection.svelte';
 	import Qa from '$components/qa.svelte';
 	import SimpleCentered from '$components/simpleCentered.svelte';
 	import SimpleCenteredPiece from '$components/simpleCenteredPiece.svelte';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
-	
+	const lang = getContext('lang');
+
 	setContext('lang', 'sv');
 
 </script>
@@ -19,18 +20,10 @@
 <Nav />
 
 <SimpleCentered>
-	<span slot="title">Kontakta oss</span>
+	<span slot="title">Support</span>
 	<span slot="sub">Vi finns här för att hjälpa till</span>
 
-	<SimpleCenteredPiece icon="sparkles">
-		<span slot="title">Bli kund</span>
-		<span slot="body">
-			Du blir kund genom att <a href="/sv/create" class="font-semibold text-oldpink">Skapa konto</a>. Behöver du hjälp kan du även boka in en tid så ringer vi upp dig.
-		</span>
-		<span slot="link">
-			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-oldpink">Boka tid <span aria-hidden="true">&rarr;</span></a>
-		</span>
-	</SimpleCenteredPiece>
+
 
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Hjälpcenter</span>
@@ -77,6 +70,17 @@
 		</span>
 	</SimpleCenteredPiece>		
 
+	<SimpleCenteredPiece icon="sparkles">
+		<span slot="title">Funderar du på om Kaddio skulle passa dig?</span>
+		<span slot="body">
+			Du blir kund genom att <a href="/sv/create" class="font-semibold text-oldpink">Skapa konto</a>. 
+			<br>Har du frågor kan du kontakta vår säljare Daniel
+		</span>
+		<span slot="link">
+			<a href="/sv/sales" class="text-sm font-semibold leading-6 text-oldpink">Kontakta Daniel <span aria-hidden="true">&rarr;</span></a>
+		</span>
+	</SimpleCenteredPiece>
+	
 </SimpleCentered>
 
 <Footer />

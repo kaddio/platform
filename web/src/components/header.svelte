@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from "$app/stores";
     import { _ } from "$lib/stores";
     import { getContext } from "svelte";
     const lang = getContext('lang');
@@ -26,8 +27,30 @@ function clickOutside(node){
   document.addEventListener("click", handleClick, true);
 }
 
+function onKeyDown(event){
+  if(event.repeat) return;
+
+  if(event.key === 'Escape'){
+    show = false;
+    navOpen = false;
+    event.preventDefault();
+  }
+
+  if(event.key === 'm'){
+    navOpen = true;
+    show = true;
+    event.preventDefault();
+  }
+
+}
+
+$: $page.url && (navOpen = false);
 
 </script>
+
+<svelte:window
+    on:keydown={onKeyDown}
+/>
 
 <header class="relative isolate z-10">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -41,7 +64,7 @@ function clickOutside(node){
       <div class="hidden lg:flex lg:gap-x-12">
         <div>
           <button on:click={handleNav} type="button" class="{lightText ? 'text-white' : 'text-gray-900'} flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
-            Funktioner
+            Tjänster
             <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
@@ -57,7 +80,7 @@ function clickOutside(node){
               From: "opacity-100 translate-y-0"
               To: "opacity-0 -translate-y-1"
           -->
-          <div class:hidden={!navOpen} class="absolute inset-x-0 top-0 -z-10 bg-white pt-14 shadow-lg ring-1 ring-gray-900/5">
+          <div class:invisible={!navOpen} class="absolute inset-x-0 top-0 -z-10 bg-white pt-14 shadow-lg ring-1 ring-gray-900/5">
             <div class="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
               <div class="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -115,17 +138,17 @@ function clickOutside(node){
                     <i class="fal fa-fw fa-external-link fa-xl text-gray-400"></i>
                     Prova demo
                   </a>
-                  <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  <a href="tel:+46313204414" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" />
                     </svg>
-                    Kontakta sälj 0313204414
+                    Kontakta sälj +46 (0) 31-320 44 14
                   </a>
-                  <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                  <a href="#functions" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M2.5 3A1.5 1.5 0 001 4.5v4A1.5 1.5 0 002.5 10h6A1.5 1.5 0 0010 8.5v-4A1.5 1.5 0 008.5 3h-6zm11 2A1.5 1.5 0 0012 6.5v7a1.5 1.5 0 001.5 1.5h4a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0017.5 5h-4zm-10 7A1.5 1.5 0 002 13.5v2A1.5 1.5 0 003.5 17h6a1.5 1.5 0 001.5-1.5v-2A1.5 1.5 0 009.5 12h-6z" clip-rule="evenodd" />
                     </svg>
-                    Visa alla produkter
+                    Visa alla tjänster
                   </a>
                 </div>
               </div>
@@ -133,8 +156,10 @@ function clickOutside(node){
           </div>
         </div>
   
-        <a href="/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Case</a>
-        <a href="/{lang}/support" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kontakta sälj</a>
+        <!-- <a href="/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Case</a> -->
+        <a href="/{lang}/sales" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Nyfiken på Kaddio?</a>
+        <!-- <a href="/sv/hitta-klinik" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"><i class="fa fa-magnifying-glass"></i> Hitta klinik</a> -->
+
         <a href="/{lang}/support" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Support</a>
 
     </div>
@@ -158,7 +183,7 @@ function clickOutside(node){
 
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div use:clickOutside on:outclick={() => (show = false)} class="lg:hidden" class:hidden={!show} role="dialog" aria-modal="true">
+    <div on:click={() => (show = false)} class="lg:hidden" class:hidden={!show} role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-10"></div>
       <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">

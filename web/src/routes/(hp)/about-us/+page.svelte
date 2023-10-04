@@ -48,7 +48,7 @@
 
         <Person>
             <span slot="name">Daniel</span>
-            <span slot="title">People</span>
+            <span slot="title">Sales</span>
         </Person>
 
         <Person>

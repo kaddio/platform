@@ -214,6 +214,14 @@ const translations = {
         en: "Visit Help Center",
         es: 'Centro de ayuda de Kaddio'
     },
+    "Kontakta sälj": {
+        en: "Contact sales",
+        es: 'Contactar ventas'
+    },
+    "Kundberättelser": {
+        en: "Case studies",
+        es: 'Casos de estudio'
+    },
     "Verifiera identitet": {
         en: "Verify your identity",
         es: "Verify your identity",
