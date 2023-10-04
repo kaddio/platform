@@ -1,8 +1,10 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import Error from '../routes/+error.svelte';
+    import FooterMarketplace from './footerMarketplace.svelte';
 
-    export let address: string;
+    export let addresses: string[];
+
     let container: HTMLElement;
     const styles = [
         {
@@ -105,16 +107,12 @@
     onMount(() => {
         // console.log('address', address)
         window.initMap = async function () {
-            const center: Coordinates = await addressToCoordinates(address);
-
             const map = new google.maps.Map(container, {
-                center,
                 zoom: 15,
                 styles: styles,
                 scrollwheel: !1,
                 mapTypeControl: false
             });
-
             if ('ontouchstart' in window) {
                 map.setOptions({
                     draggable: false,
@@ -123,11 +121,25 @@
                     disableDoubleClickZoom: true
                 });
             }
+            let bounds = new google.maps.LatLngBounds();
+            await Promise.all(
+                addresses.map(async (address) => {
+                    const center: Coordinates = await addressToCoordinates(address);
 
-            const marker = new google.maps.Marker({
-                map: map,
-                position: center
-            });
+                    const marker = new google.maps.Marker({
+                        map: map,
+                        position: center
+                    });
+                    bounds.extend(marker.getPosition());
+
+                    marker.addListener('click', () => {
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                    });
+                })
+            );
+
+            map.fitBounds(bounds);
         };
         var script = document.createElement('script');
         script.src =
@@ -137,6 +149,6 @@
     });
 </script>
 
-{#if address}
+{#if addresses.length > 0}
     <div bind:this={container} class="aspect-video" />
 {/if}

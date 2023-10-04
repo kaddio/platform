@@ -17,6 +17,7 @@ export async function load({ params, fetch }) {
                     hasPlaces
                     hasContactForm
                     url
+                    keywords
                     cssVars {
                         name,
                         value

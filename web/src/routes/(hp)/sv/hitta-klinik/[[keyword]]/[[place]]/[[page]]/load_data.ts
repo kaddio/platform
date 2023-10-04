@@ -5,7 +5,15 @@ export async function loadData({
     fetch
 }): Promise<{ organizations: Organization[]; keyword: string; count: number }> {
     const { keyword = '', place, page = '0' } = params;
-
+    if (!keyword && !place) {
+        return {
+            organizations: [],
+            count: 0,
+            // place,
+            keyword
+            // page: 0
+        };
+    }
     const parsedPage = parseInt(page);
     const ORGS_PER_PAGE = 12;
     const query = `
