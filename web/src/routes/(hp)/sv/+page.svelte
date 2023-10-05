@@ -10,6 +10,7 @@
 	import CrmSv from './crmSv.svelte';
 	import Testimonial from './testimonial.svelte';
 	import { scroll } from '$lib/scroll';
+    import ContactDanielSv from './contactDanielSv.svelte';
 
 	setContext('lang', 'sv');
 
@@ -79,4 +80,5 @@ srcset="
 <SecuritySectionSv />
 
 <ReferencesSv />
+<ContactDanielSv />
 <Footer />

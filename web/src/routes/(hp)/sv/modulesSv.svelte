@@ -4,8 +4,8 @@
 </script>
 
 <ModulesSection>
-  <span slot="title">Välj de funktioner du vill</span> 
-  <span slot="subtitle">Kaddio anpassar sig efter dina behov. Välj de funktioner du behöver och ändra när du vill. Du betalar bara för det du använder.</span> 
+  <span slot="title">Välj de tjänster du vill</span> 
+  <span slot="subtitle">Kaddio anpassar sig efter dina behov. Välj de tjänster du behöver och ändra när du vill. Du betalar bara för det du använder.</span> 
 
     <ModulePresentation href="sv/feature/log">
         <span slot="icon">

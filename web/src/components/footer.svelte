@@ -18,9 +18,9 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Tjänster')}</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Nyfiken på Kaddio')}</h3>
             <ul class="mt-6 space-y-4">
-              <li>
+              <!-- <li>
                 <a href="/{lang}/feature/log" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Journal')}</a>
               </li>
 
@@ -46,8 +46,25 @@
 
               <li>
                 <a href="/{lang}/feature/communication" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Video')}</a>
+              </li> -->
+
+              <li>
+                <a href="/{lang}#functions" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Tjänster')}</a>
               </li>
 
+              <li>
+                <a href="/case" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kundberättelser')}</a>
+              </li>
+              <li>
+                <a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
+              </li>
+              <li>
+                <a href="/{lang}/sales" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta säljare')}</a>
+              </li>
+
+              <li>
+                <a href="/{lang}/create" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Skapa konto')}</a>
+              </li>
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
@@ -55,10 +72,6 @@
             <ul class="mt-6 space-y-4">
               <li>
                   <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
-              </li>
-
-              <li>
-                <a href="/{lang}/support" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta oss')}</a>
               </li>
 
               <li>
@@ -72,24 +85,26 @@
               <li>
                 <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Developer API</a>
               </li>
+
+              <li>
+                <a href="/{lang}/support" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta support')}</a>
+              </li>
           </ul>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">About us</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/about-us" class="text-sm hover:underline leading-6 text-gray-600">About us</a>
+                <a href="/about-us" class="text-sm hover:underline leading-6 text-gray-600">Meet our team</a>
               </li>
 
               <li>
                 <a href="/career" class="text-sm hover:underline leading-6 text-gray-600">Career</a>
               </li>
 
-              <li>
-                <a href="/case" class="text-sm hover:underline leading-6 text-gray-600">Case studies</a>
-              </li>
+              
               
               <!-- <li>
                 <a href="/partners" class="text-sm hover:underline leading-6 text-gray-600">Partners</a>

@@ -124,8 +124,6 @@
                 
             </div>
 
-            <p class="mt-4 text-sm leading-6 text-gray-500">{$_('Ev. rabattkod löser du in i Kaddio efter att du startat ditt konto.')}</p>
-
             
             {#if $page.status !== 200}
                 <div class="rounded-md bg-red-50 p-4 mt-10">

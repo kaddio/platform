@@ -70,9 +70,21 @@ const translations = {
         en: 'Medical record',
         es: 'Historia clínica'
     },
+    "Journalsystem": {
+        en: 'Electronic medical record',
+        es: 'Historia clínica'
+    },
     "Tidsbokning": {
         en: 'Booking',
         es: 'Sistema de reservas'
+    },
+    "Onlinebokning": {
+        en: 'Online booking',
+        es: 'Sistema de reservas'
+    },
+    "Kommunikation": {
+        en: 'Communication',
+        es: 'Vídeo y chat encriptados'
     },
     "Fakturering": {
         en: 'Invoicing',
@@ -201,6 +213,14 @@ const translations = {
     "Kaddio Hjälpcenter": {
         en: "Visit Help Center",
         es: 'Centro de ayuda de Kaddio'
+    },
+    "Kontakta sälj": {
+        en: "Contact sales",
+        es: 'Contactar ventas'
+    },
+    "Kundberättelser": {
+        en: "Case studies",
+        es: 'Casos de estudio'
     },
     "Verifiera identitet": {
         en: "Verify your identity",
