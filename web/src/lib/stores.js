@@ -242,6 +242,10 @@ const translations = {
         en: "Curious about Kaddio",
         es: "Curioso sobre Kaddio",
     },
+    "Kontakta support": {
+        en: "Contact support",
+        es: "Contactar soporte",
+    },
 }
 
 const links = {
