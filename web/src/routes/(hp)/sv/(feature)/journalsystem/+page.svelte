@@ -1,14 +1,12 @@
 <script>
 	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
 </script>
 
 <svelte:head>
-	<title>Kaddio - Journal</title>
+	<title>Kaddio Journal - komplett journalsystem för vård</title>
 	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
 </svelte:head>
 
