@@ -7,14 +7,14 @@
   <span slot="title">Selecciona las características que deseas</span> 
   <span slot="subtitle">Kaddio se adapta a tus necesidades. Elige las funciones que necesites y cambia cuando quieras. Paga solo por lo que uses.</span> 
 
-    <ModulePresentation href="es/feature/log">
+    <ModulePresentation href="es/historia-clinica">
         <span slot="icon">
           <i class="text-white fa-regular fa-heart"></i>
         </span>
         <span slot="title">Historia clínica</span>
         <span slot="body">Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinarias de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades.</span>
     </ModulePresentation>
-    <ModulePresentation href="es/feature/cal">
+    <ModulePresentation href="es/sistema-de-reservas">
         <span slot="icon">
           <i class="text-white fa-regular fa-stopwatch"></i>
       </span>
@@ -22,7 +22,7 @@
         <span slot="body">Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="es/feature/invoicing">
+    <ModulePresentation href="es/sistema-de-facturacion">
           <span slot="icon">
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
@@ -30,7 +30,7 @@
           <span slot="body">Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio.</span>
     </ModulePresentation>
         
-    <ModulePresentation href="es/feature/communication">
+    <ModulePresentation href="es/video-y-chat-encriptados">
       <span slot="icon">
           <i class="text-white fa-regular fa-comments"></i>
       </span>
