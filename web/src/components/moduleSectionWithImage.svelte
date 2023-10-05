@@ -9,8 +9,8 @@
 		<div class="lg:pr-8 lg:pt-4">
 		  <div class="lg:max-w-lg">
 			<h1 class="text-base font-semibold leading-7 text-oldpink"><slot name="h1" /></h1>
-			<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><slot name="title" /></p>
-			<p class="mt-6 text-lg leading-8 text-gray-600"><slot name="sub" /></p>
+			<h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><slot name="title" /></h2>
+			<h3 class="mt-6 text-lg leading-8 text-gray-600"><slot name="sub" /></h3>
 			<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
 				<slot />
 			</dl>
