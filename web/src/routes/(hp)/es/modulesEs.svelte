@@ -38,7 +38,7 @@
         <span slot="body">Vídeo seguro hasta 500 participantes.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="es/feature/forms">
+    <ModulePresentation href="es/formularios">
       <span slot="icon">
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
@@ -46,7 +46,7 @@
         <span slot="body">Envía formularios y la declaración de salud a tus clientes, de forma automática o manual.</span>
     </ModulePresentation>
         
-    <ModulePresentation href="es/feature/todos">
+    <ModulePresentation href="es/tareas">
       <span slot="icon">
           <i class="text-white fa-regular fa-list-ul"></i>
       </span>
@@ -54,7 +54,7 @@
         <span slot="body">Crea tu propia "Lista de tareas pendientes". Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo.</span>
     </ModulePresentation>
                 
-    <ModulePresentation href="es/feature/documents">
+    <ModulePresentation href="es/documentos">
       <span slot="icon">
           <i class="text-white fa-regular fa-folder-tree"></i>
       </span>
@@ -62,7 +62,7 @@
         <span slot="body">Colabora en la nube con tus colegas. Limita el acceso en el sistema de gestión de archivos con un avanzado control de permisos. El control de versiones y las copias de seguridad se realizan automáticamente.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="es/feature/reports">
+    <ModulePresentation href="es/informes">
       <span slot="icon">
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>
