@@ -36,9 +36,9 @@
 	</SimpleCenteredPiece>	
 
 	<SimpleCenteredPiece icon="envelope">
-		<span slot="title">E-post</span>
+		<span slot="title">Mailsupport</span>
 		<span slot="body">
-			Under vardagar 9-15 gör vi vårt bästa för att svara dig inom några timmar.
+			Är du kund och har tekniska frågor om Kaddio? Under vardagar 9-15 gör vi vårt bästa för att svara dig inom några timmar.
 		</span>
 		<span slot="link">
 			<a href="mailto:support@kaddio.com" class="text-sm font-semibold leading-6 text-oldpink">support@kaddio.com <span aria-hidden="true">&rarr;</span></a>
@@ -73,7 +73,7 @@
 	<SimpleCenteredPiece icon="sparkles">
 		<span slot="title">Bli kund</span>
 		<span slot="body">
-			Du blir kund genom att <a href="/sv/create" class="font-semibold text-oldpink">Skapa konto</a>. Funderar du på om Kaddio kan passa dig?
+			Du blir kund genom att <a href="/sv/create" class="font-semibold text-oldpink">Skapa konto</a>. Funderar du på om Kaddio kan passa dig? Kontakta vår säljavdelning så hjälper vi dig.
 		</span>
 		<span slot="link">
 			<a href="/sv/sales" class="text-sm font-semibold leading-6 text-oldpink">Kontakta sälj <span aria-hidden="true">&rarr;</span></a>
