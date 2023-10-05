@@ -3,43 +3,53 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+
 </script>
 
 <svelte:head>
-	<title>Kaddio - Medical Record</title>
-	<meta name="description" content="Kaddio Medical Record is a complete module for documentation of your clients." />
+	<title>Electronic medical record</title>
+	<meta name="description" content="Kaddio Electronic Medical Record is a complete system for documenting your clients." />
 </svelte:head>
 
-<ModuleSection>
-	<span slot="title">Kaddio Medical Record</span>
-	<span slot="sub">Kaddio Medical Record is a complete module for documentation of your clients.</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Electronic medical record">
+	<span slot="h1">Electronic medical record</span>
+	<span slot="title">Kaddio EMR</span>
+	<span slot="sub">
+		Kaddio EMR is an electronic medical record system that has everything you need to document your business and journal your clients. A complete solution for health professionals.
+	</span>
 
-	<!-- <ModuleFeature>
-		<span slot="title">Användarvänligt.</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+	<ModuleFeatureWithIcon icon="pen">
+		<span slot="title">
+			Document it
 		</span>
-	</ModuleFeature> -->
-
-	<ModuleFeature>
-		<span slot="title">Flexible.</span>
 		<span slot="body">
-			Browse through our medical record templates or tailor everything based on your needs
+			Keep your notes safe and secure, wherever you are. No paper, binders or backups.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<!-- <ModuleFeature>
-		<span slot="title">Säkert.</span>
+	<ModuleFeatureWithIcon icon="sliders">
+		<span slot="title">
+			Customize
+		</span>
 		<span slot="body">
-			Behörighetsstyrning
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+			Tool up your own templates for journal entries based on your business needs.
 		</span>
-	</ModuleFeature> -->
+	</ModuleFeatureWithIcon>
 
+	<ModuleFeatureWithIcon icon="gamepad-modern">
+		<span slot="title">
+			Control
+		</span>
+		<span slot="body">
+			Control access to clients and journals. You decide who can access what.
+			Follow activity in journals through Kaddio's log for traceability and regulatory compliance.
+		</span>
+	</ModuleFeatureWithIcon>
 
-	
-</ModuleSection>
-  
+</ModuleSectionWithImage>
+
 
 <FaqSection>
 	<span slot="title">Details</span>
