@@ -5,9 +5,10 @@
     import AutocompletePlace from './components/AutocompletePlace.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import KeywordCard from './components/KeywordCard.svelte';
-    import { keywords } from './keywords';
+    import { keywords, allKeywords, keywordsByCategory } from './keywords';
     import { places } from './places';
     import AutocompleteKeyword from './components/AutocompleteKeyword.svelte';
+    import { entries } from 'lodash';
 
     export let data: PageData;
     let page = 0;
@@ -134,6 +135,24 @@
                         </a>
                     {/each}
                 </div>
+                <div class="mt-36 mb-24 columns-2 md:columns-6 gap-18 px-4">
+                    {#each Object.entries(keywordsByCategory) as [category, keywords]}
+                        <h3
+                            class="text-sm uppercase text-gray-700 mb-2 font-semibold break-after-avoid"
+                        >
+                            {category}
+                        </h3>
+                        {#each keywords as keyword}
+                            <a
+                                class=" text-gray-600 mt-2 text-sm block"
+                                href=""
+                                on:click={() => (selectedItem = { label: keyword.name })}
+                                >{keyword.name}</a
+                            >
+                        {/each}
+                        <div class="mb-4" />
+                    {/each}
+                </div>
             </div>
         </div>
     </div>
@@ -151,6 +170,6 @@
     }
 
     :global(.purple-img) {
-        filter: sepia(10%) saturate(50%) brightness(80%);
+        filter: sepia(30%) hue-rotate(340deg) saturate(50%) brightness(80%);
     }
 </style>

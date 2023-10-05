@@ -165,9 +165,7 @@
                         >
                     </div>
                 {:else}
-                    <div
-                        class="flex items-center justify-center flex-col gap-7 text-gray-400 h-full"
-                    >
+                    <div class="flex items-center justify-center flex-col gap-7 text-gray-400 h-96">
                         <i class="fa fa-magnifying-glass fa-3x" />
                         <h2 class="text-2xl font-semibold">Inga resultat</h2>
                     </div>
