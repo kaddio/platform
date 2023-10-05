@@ -8,14 +8,15 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Kalender och Tidsbokning</title>
+	<title>Onlinebokning med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Onlinebokning</span>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
-	<span slot="sub">Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är kalendern även din publika bokning.</span>
+	<span slot="sub">
+		Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig. I Kaddio är kalendern även din publika bokning så att du enkelt kan hantera bokningsbara tider, möten och grupppass i samma vy.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Planera</span>
