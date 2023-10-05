@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio Journal - komplett journalsystem för vård</title>
+	<title>Journalsystem med allt du behöver</title>
 	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
 </svelte:head>
 
@@ -14,7 +14,7 @@
 	<span slot="h1">Journalsystem</span>
 	<span slot="title">Kaddio Journal</span>
 	<span slot="sub">
-		Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård.
+		Kaddio Journal är journalsystemet som har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård helt enkelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
