@@ -2,9 +2,9 @@
 	<div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
 	  <div class="px-6 lg:px-8">
 		<div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-			<h1 class="text-3xl font-bold tracking-tight text-gray-900">
+			<p class="text-3xl font-bold tracking-tight text-gray-900">
                 <slot name="title" />
-            </h1>
+            </p>
 			<p class="mt-6 text-lg leading-8 text-gray-900">
                 <slot name="intro" />
 			</p>
