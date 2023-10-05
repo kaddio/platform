@@ -270,7 +270,7 @@ const links = {
     },
     uppgifter: {
         en: 'todos',
-        es: 'todos'
+        es: 'tareas'
     },
     dokument: {
         en: 'documents',
