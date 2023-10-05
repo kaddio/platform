@@ -2,6 +2,7 @@
     import { page } from "$app/stores";
     import { _, link } from "$lib/stores";
     import { getContext } from "svelte";
+    import LangBanner from "./lang-banner.svelte";
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -58,6 +59,8 @@ $: $page.url && (navOpen = false);
 />
 
 <header class="relative isolate z-10">
+  <LangBanner />
+  
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 gap-x-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="/{lang}" class="-m-1.5 p-1.5">
@@ -251,12 +254,12 @@ $: $page.url && (navOpen = false);
             </a>
           </div>
           <div class="space-y-2 py-6">
-            <a href="/{lang}/#price" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pris</a>
-            <a href="/{lang}/support" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Support</a>
+            <a href="/{lang}/#price" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Pris')}</a>
+            <a href="/{lang}/support" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Support')}</a>
           </div>
           <div class="py-6">
-            <a href="/{lang}/sign-in" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Logga in</a>
-            <a href="/{lang}/create" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Skapa konto</a>
+            <a href="/{lang}/sign-in" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Logga in')}</a>
+            <a href="/{lang}/create" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{ $_('Skapa konto')}</a>
           </div>
         </div>
       </div>
