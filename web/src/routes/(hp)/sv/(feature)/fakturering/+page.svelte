@@ -8,14 +8,16 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Fakturering</title>
+	<title>Fakturering för små och medelstora företag</title>
 	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio fakturering">
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
-	<span slot="sub">Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.</span>
+	<span slot="sub">
+		Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag. Kaddio fakturering tillsammans med Kaddio Onlinebokning och Kaddio Journalsystem gör faktureringen enkel och samtidigt flexibel.
+	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
 		<span slot="title">Spara tid</span>
@@ -51,7 +53,13 @@
 		</span>
 	</Qa>
 	<Qa>
-		<span slot="q">Skicka fakturor</span>
+		<span slot="q">Artiklar</span>
+		<span slot="a">
+			Kaddio kan spara dina artiklar och tjänster för att ännu enklare kunna fakturera för dem.
+		</span>
+	</Qa>
+	<Qa>
+		<span slot="q">Leverans</span>
 		<span slot="a">
 			Skicka fakturor med post, e-post, via Kaddios säkra kommunikation och e-faktura.
 		</span>
