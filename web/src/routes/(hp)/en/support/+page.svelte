@@ -6,6 +6,7 @@
 	import SimpleCenteredPiece from '$components/simpleCenteredPiece.svelte';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
+    import { _ } from '$lib/stores';
 	
 	setContext('lang', 'en');
 
@@ -19,18 +20,8 @@
 <Nav />
 
 <SimpleCentered>
-	<span slot="title">Contact us</span>
+	<span slot="title">Support</span>
 	<span slot="sub">We're here to help</span>
-
-	<SimpleCenteredPiece icon="sparkles">
-		<span slot="title">Get started</span>
-		<span slot="body">
-			<a href="/en/create" class="font-semibold text-oldpink">Create an account</a> to get started. Need guidance after that, schedule a time with us.
-		</span>
-		<span slot="link">
-			<a href="https://support.kaddio.com/booking" class="text-sm font-semibold leading-6 text-oldpink">Schedule a 1-1 with Kaddio <span aria-hidden="true">&rarr;</span></a>
-		</span>
-	</SimpleCenteredPiece>
 
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Help center</span>
@@ -76,6 +67,17 @@
 			<a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.statuspage.io <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>		
+
+	<SimpleCenteredPiece icon="sparkles">
+		<span slot="title">Get started</span>
+		<span slot="body">
+			<a href="/en/create" class="font-semibold text-oldpink">Create an account</a> to get started. Need guidance after that, schedule a time with us.
+		</span>
+		<span slot="link">
+			<a href="/en/sales" class="text-sm font-semibold leading-6 text-oldpink">{ $_('Kontakta sälj')} <span aria-hidden="true">&rarr;</span></a>
+		</span>
+	</SimpleCenteredPiece>
+
 
 </SimpleCentered>
 

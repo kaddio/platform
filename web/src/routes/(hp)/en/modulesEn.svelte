@@ -4,17 +4,17 @@
 </script>
 
 <ModulesSection>
-  <span slot="title">Choose the functions you want</span> 
-  <span slot="subtitle">Kaddio follows your need. Choose the functions you need and change when you want. Pay for what you use.</span> 
+  <span slot="title">Choose the services you want</span> 
+  <span slot="subtitle">Kaddio follows your need. Choose the services you need and change when you want. Pay for what you use.</span> 
 
-    <ModulePresentation href="en/feature/log">
+    <ModulePresentation href="en/electronic-medical-record">
         <span slot="icon">
           <i class="text-white fa-regular fa-heart"></i>
         </span>
         <span slot="title">Medical record</span>
         <span slot="body">Kaddio Medical Record is a complete module for documentation of your clients.</span>
     </ModulePresentation>
-    <ModulePresentation href="en/feature/cal">
+    <ModulePresentation href="en/online-booking">
         <span slot="icon">
           <i class="text-white fa-regular fa-stopwatch"></i>
       </span>
@@ -22,7 +22,7 @@
         <span slot="body">Easy-to-use time booking and online payment that does everything you expect.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="en/feature/invoicing">
+    <ModulePresentation href="en/invoicing">
           <span slot="icon">
               <i class="text-white fa-regular fa-file-lines"></i>
           </span>
@@ -30,7 +30,7 @@
           <span slot="body">Complete invoicing system for small and medium sized businesses.</span>
     </ModulePresentation>
         
-    <ModulePresentation href="en/feature/communication">
+    <ModulePresentation href="en/communication">
       <span slot="icon">
           <i class="text-white fa-regular fa-comments"></i>
       </span>
@@ -54,7 +54,7 @@
         <span slot="body">Do your own todo-list or delegate it to someone.</span>
     </ModulePresentation>
                  -->
-    <ModulePresentation href="en/feature/documents">
+    <ModulePresentation href="en/documents">
       <span slot="icon">
           <i class="text-white fa-regular fa-folder-tree"></i>
       </span>
@@ -62,7 +62,7 @@
         <span slot="body">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes by default.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="en/feature/reports">
+    <ModulePresentation href="en/reports">
       <span slot="icon">
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>

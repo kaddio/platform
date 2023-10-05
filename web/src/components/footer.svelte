@@ -59,7 +59,7 @@
                 <a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
               <li>
-                <a href="/{lang}/sales" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta säljare')}</a>
+                <a href="/{lang}/sales" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta sälj')}</a>
               </li>
 
               <li>

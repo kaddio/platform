@@ -1,6 +1,6 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import { _ } from "$lib/stores";
+    import { _, link } from "$lib/stores";
     import { getContext } from "svelte";
     const lang = getContext('lang');
 
@@ -69,7 +69,7 @@ $: $page.url && (navOpen = false);
       <div class="hidden lg:flex lg:gap-x-12">
         <div>
           <button on:click={handleNav} type="button" class="{lightText ? 'text-white' : 'text-gray-900'} flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
-            Tjänster
+            {$_('Tjänster')}
             <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
@@ -91,7 +91,7 @@ $: $page.url && (navOpen = false);
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <i class="fal fa-fw fa-xl fa-heart"></i>
                 </div>
-                <a href="/{lang}/feature/log" class="mt-6 block font-semibold text-gray-900">
+                <a href="{$link('journalsystem', lang)}" class="mt-6 block font-semibold text-gray-900">
                     {$_('Journalsystem')}
                   <span class="absolute inset-0"></span>
                 </a>
@@ -103,18 +103,19 @@ $: $page.url && (navOpen = false);
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <i class="fal fa-fw fa-xl fa-stopwatch"></i>
                 </div>
-                <a href="/{lang}/feature/cal" class="mt-6 block font-semibold text-gray-900">
+                <a href="{$link('onlinebokning', lang)}" class="mt-6 block font-semibold text-gray-900">
                     {$_('Onlinebokning')}
                   <span class="absolute inset-0"></span>
                 </a>
                 <p class="mt-1 text-gray-600">
-                    Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.                </p>
+                    Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.
+                </p>
               </div>
               <div class="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <i class="fal fa-fw fa-xl fa-comments"></i>
                 </div>
-                <a href="/{lang}/feature/communication" class="mt-6 block font-semibold text-gray-900">
+                <a href="{$link('kommunikation', lang)}" class="mt-6 block font-semibold text-gray-900">
                     {$_('Kommunikation')}
                   <span class="absolute inset-0"></span>
                 </a>
@@ -126,7 +127,7 @@ $: $page.url && (navOpen = false);
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <i class="fal fa-fw fa-xl fa-file-lines"></i>
                 </div>
-                <a href="/{lang}/feature/invoicing" class="mt-6 block font-semibold text-gray-900">
+                <a href="{$link('fakturering', lang)}" class="mt-6 block font-semibold text-gray-900">
                   {$_('Fakturering')}
                   <span class="absolute inset-0"></span>
                 </a>
@@ -141,19 +142,19 @@ $: $page.url && (navOpen = false);
                   <a href="https://demo.kaddio.com/login-demo" rel="noreferrer" target="_blank" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
 
                     <i class="fal fa-fw fa-external-link fa-xl text-gray-400"></i>
-                    Prova demo
+                    {$_('Prova demo')}
                   </a>
                   <a href="/{lang}/sales" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" />
                     </svg>
-                    Kontakta sälj
+                    {$_('Kontakta sälj')}
                   </a>
                   <a href="/{lang}/#functions" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M2.5 3A1.5 1.5 0 001 4.5v4A1.5 1.5 0 002.5 10h6A1.5 1.5 0 0010 8.5v-4A1.5 1.5 0 008.5 3h-6zm11 2A1.5 1.5 0 0012 6.5v7a1.5 1.5 0 001.5 1.5h4a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0017.5 5h-4zm-10 7A1.5 1.5 0 002 13.5v2A1.5 1.5 0 003.5 17h6a1.5 1.5 0 001.5-1.5v-2A1.5 1.5 0 009.5 12h-6z" clip-rule="evenodd" />
                     </svg>
-                    Visa alla tjänster
+                    {$_('Visa alla tjänster')}
                   </a>
                 </div>
               </div>
@@ -161,11 +162,15 @@ $: $page.url && (navOpen = false);
           </div>
         </div>
   
-        <a href="/{lang}/#price" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Pris</a>
+        <a href="/{lang}/#price" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">
+          {$_('Pris')}
+        </a>
         <!-- <a href="/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kundberättelser</a> -->
         <!-- <a href="/{lang}/sales" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Nyfiken på Kaddio?</a> -->
         <!-- <a href="/sv/hitta-klinik" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"><i class="fa fa-magnifying-glass"></i> Hitta klinik</a> -->
-        <a href="/{lang}/support" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Support</a>
+        <a href="/{lang}/support" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">
+          {$_('Support')}
+        </a>
 
         
 
@@ -211,26 +216,26 @@ $: $page.url && (navOpen = false);
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
-            <a href="/{lang}/feature/log" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+            <a href="{$link('journalsystem', lang)}" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
               <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                 <i class="fal fa-fw fa-xl fa-heart text-gray-600 group-hover:text-oldpink"></i>
 
               </div>
               {$_('Journalsystem')}
             </a>
-            <a href="/{lang}/feature/cal" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+            <a href="{$link('onlinebokning', lang)}" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
               <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                 <i class="fal fa-fw fa-xl fa-stopwatch text-gray-600 group-hover:text-oldpink"></i>
               </div>
               {$_('Onlinebokning')}
             </a>
-            <a href="/{lang}/feature/communication" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+            <a href="{$link('kommunikation', lang)}" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
               <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                 <i class="fal fa-fw fa-xl fa-comments text-gray-600 group-hover:text-oldpink"></i>
               </div>
               {$_('Kommunikation')}
             </a>
-            <a href="/{lang}/feature/invoicing" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+            <a href="fakturering" class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
               <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                 <i class="fal fa-fw fa-xl fa-file-lines text-gray-600 group-hover:text-oldpink"></i>
               </div>

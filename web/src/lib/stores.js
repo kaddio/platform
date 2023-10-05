@@ -218,6 +218,14 @@ const translations = {
         en: "Contact sales",
         es: 'Contactar ventas'
     },
+    "Prova demo": {
+        en: "Try demo",
+        es: 'Probar demo'
+    },
+    "Visa alla tjänster": {
+        en: "View all services",
+        es: 'Ver todos los servicios'
+    },
     "Kundberättelser": {
         en: "Case studies",
         es: 'Casos de estudio'
@@ -229,8 +237,58 @@ const translations = {
     "Ev. rabattkod löser du in i Kaddio efter att du startat ditt konto.": {
         en: "You redeem the discount code in Kaddio after you have created your account.",
         es: "Si tienes un código promocional puedes canjearlo luego de crear una cuenta en Kaddio.",
-    }
+    },
+    "Nyfiken på Kaddio": {
+        en: "Curious about Kaddio",
+        es: "Curioso sobre Kaddio",
+    },
 }
+
+const links = {
+    journalsystem: {
+        en: 'electronic-medical-record',
+        es: 'historia-clinica'
+    },
+
+    onlinebokning: {
+        en: 'online-booking',
+        es: 'sistema-de-reservas'
+    },
+
+    kommunikation: {
+        en: 'communication',
+        es: 'video-y-chat-encriptados'
+    },
+
+    fakturering: {
+        en: 'invoicing',
+        es: 'sistema-de-facturacion'
+    },
+    formulär: {
+        en: 'forms',
+        es: 'formularios'
+    },
+    uppgifter: {
+        en: 'todos',
+        es: 'todos'
+    },
+    dokument: {
+        en: 'documents',
+        es: 'documentos'
+    },
+    rapporter: {
+        en: 'reports',
+        es: 'informes'
+    },
+}
+
+export let link = readable(function(name, lang = getContext('lang')){
+    console.log(name, lang, links[name]);
+
+    const translatedLink = (lang == 'sv') ? name : links[name][lang];
+
+    return `/${lang}/${translatedLink}`;
+});
 
 export let _ = readable(function(phrase, lang = getContext('lang')){
     const fallbackLang = 'sv';
