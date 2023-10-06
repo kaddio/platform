@@ -33,7 +33,7 @@ srcset="
 
 <svelte:head>
 	<title>Journalsystem, onlinebokning, kommunikation, fakturering</title>
-	<meta name="description" content="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" />
+	<meta name="description" content="Helhetssystem för vård med journalsystem, onlinebokning, kommunikation, fakturering i samma system." />
 </svelte:head>
 
 <div class="bg-white">
