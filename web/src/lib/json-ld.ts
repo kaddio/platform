@@ -84,7 +84,8 @@ export const jobPostingSchema: WithContext<JobPosting> = {
             "streetAddress": "Linnégatan 5",
             "addressLocality": "Göteborg",
             "postalCode": "41304",
-            "addressCountry": "SE"
+            "addressCountry": "SE",
+            addressRegion: "Västra Götalands län"
         }
     },
     baseSalary: {
