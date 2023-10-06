@@ -23,10 +23,10 @@ export const localBusinessSchema: WithContext<LocalBusiness> = {
     "@type": "LocalBusiness"    
 }
 
-export const organizationSchema: WithContext<Organization> = {
+export const kaddioOrgSchema: WithContext<Organization> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Kaddio AB",
+    name: "Kaddio",
     url: "https://kaddio.com",
     logo: "https://kaddio.com/img/kaddio-black.png"
 }
