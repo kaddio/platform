@@ -287,8 +287,6 @@ const links = {
 }
 
 export let link = readable(function(name, lang = getContext('lang')){
-    console.log(name, lang, links[name]);
-
     const translatedLink = (lang == 'sv') ? name : links[name][lang];
 
     return `/${lang}/${translatedLink}`;
