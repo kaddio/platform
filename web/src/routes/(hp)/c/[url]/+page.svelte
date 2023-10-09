@@ -41,13 +41,18 @@
             r.style.removeProperty(`${c.name}`);
         });
     });
+
+    const addresses = [
+        `${organization.address} ${organization.city}`,
+        ...organization.places.map((p) => `${p.address} ${p.city}`)
+    ];
 </script>
 
 <svelte:head>
     <meta name="robots" content="noindex" />
     <!--keywords for search engines-->
     <meta name="keywords" content={organization.keywords?.join(', ')} />
-    <title>{organization.name} - {organization.keywords?.join(', ')} - {organization.city}}</title>
+    <title>{organization.name} - {organization.keywords?.join(', ')} - {organization.city}</title>
     <meta
         name="description"
         content="{organization.name} - {organization.keywords?.join(', ')} - {organization.city}"
@@ -146,10 +151,9 @@
                         <span itemprop="streetAddress">{organization.address || ''}</span>
                         <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
-                    {#if organization.address && organization.city}
-                        <Map address={`${organization.address} ${organization.city}`} />
-                    {/if}
                 {/if}
+                <Map {addresses} />
+
                 {#if organization.homepage?.links.length}
                     <div class="flex flex-col gap-4 my-8 mx-8">
                         {#each organization.homepage?.links as link}
