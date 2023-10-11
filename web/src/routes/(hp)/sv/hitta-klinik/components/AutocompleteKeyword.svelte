@@ -34,12 +34,18 @@
             : [];
         return [...searchItem, ...data.data.autocompleteSearch];
     }
+    const onChangeLocal = function () {
+        if (selectedKeyword?.type == 'ORG') {
+            return;
+        }
+        onChange(selectedKeyword);
+    };
 </script>
 
 <AutoComplete
     showClear={true}
     dropdownClassName="rounded py-2 px-3 border-none shadow"
-    {onChange}
+    onChange={onChangeLocal}
     itemClass="p-5"
     noInputStyles={true}
     inputClassName="rounded py-2 px-3 border-none w-full text-black"
