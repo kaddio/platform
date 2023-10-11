@@ -18,10 +18,6 @@
 		selected: true
 	},
     {
-		name: "Dokument",
-		price: 29
-	},
-    {
 		name: "Fakturering",
 		price: 79
 	},
@@ -30,17 +26,9 @@
 		price: 119
 	},
     {
-		name: "Hemsida",
+		name: "Dokument",
 		price: 29
 	},
-    {
-		name: "Uppgifter",
-		price: 29
-	},
-    {
-		name: "Samlingsräkning Region",
-		price: 29
-	}
 ]
 </script>
 
