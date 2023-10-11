@@ -40,12 +40,12 @@
                     {#if organization.nextFreeTime}
                         <a
                             class="text-green-400 font-semibold"
-                            target="_blank"
+                            target="_blank" rel="noreferrer" 
                             href="https://{organization.url}.kaddio.com/booking">Tid {nextTime}</a
                         >
                     {:else}
                         <a
-                            target="_blank"
+                            target="_blank" rel="noreferrer" 
                             class="text-gray-400 font-semibold"
                             href="https://{organization.url}.kaddio.com/booking"
                             >Inga lediga tider</a
