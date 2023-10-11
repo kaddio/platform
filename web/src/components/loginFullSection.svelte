@@ -3,6 +3,8 @@
 	import { _ } from "$lib/stores";
 	import { enhance } from "$app/forms";
 	import { page } from "$app/stores";
+
+    const lang = getContext("lang");
     
 </script>
 
@@ -59,7 +61,7 @@
 
       <p class="mt-10 text-center text-sm text-gray-500">
         eller 
-        <a href="#" class="font-semibold leading-6 text-oldpink hover:text-oldpinkdarker">skapa ett konto</a>
+        <a href="/{lang}/create" class="font-semibold leading-6 text-oldpink hover:text-oldpinkdarker">skapa ett konto</a>
       </p>
     </div>
   </div>
