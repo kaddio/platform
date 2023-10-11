@@ -3,7 +3,6 @@
 
     export let title: string;
     export let name: string;
-    export let nameTitle: string;
     export let location: string;
     export let tags;
     export let href: string;
