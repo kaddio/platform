@@ -6,17 +6,17 @@ export let token = writable();
 
 export let regionBannerDismiss;
 
-if(browser){
-    if(sessionStorage.getItem('token')){
+if (browser) {
+    if (sessionStorage.getItem('token')) {
         token = writable(JSON.parse(sessionStorage.getItem('token')));
     }
 
-    token.subscribe(function(val){
-        if(val){
+    token.subscribe(function (val) {
+        if (val) {
             sessionStorage.setItem('token', JSON.stringify(val));
         }
 
-        else{
+        else {
             sessionStorage.removeItem('token');
         }
     });
@@ -86,6 +86,11 @@ const translations = {
         en: 'Communication',
         es: 'Vídeo y chat encriptados'
     },
+    "Chat och Video": {
+        en: 'Chat and Video',
+        es: 'Vídeo y Chat encriptados'
+    },
+
     "Fakturering": {
         en: 'Invoicing',
         es: 'Sistema de facturación'
@@ -286,20 +291,20 @@ const links = {
     },
 }
 
-export let link = readable(function(name, lang = getContext('lang')){
+export let link = readable(function (name, lang = getContext('lang')) {
     const translatedLink = (lang == 'sv') ? name : links[name][lang];
 
     return `/${lang}/${translatedLink}`;
 });
 
-export let _ = readable(function(phrase, lang = getContext('lang')){
+export let _ = readable(function (phrase, lang = getContext('lang')) {
     const fallbackLang = 'sv';
 
-    function phraseExist(phrase, lang){
+    function phraseExist(phrase, lang) {
         return !!(translations[phrase] && translations[phrase][lang]);
     }
 
-    if(lang == fallbackLang || lang == undefined || !phraseExist(phrase, lang)){
+    if (lang == fallbackLang || lang == undefined || !phraseExist(phrase, lang)) {
         return phrase;
     }
 
