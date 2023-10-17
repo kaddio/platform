@@ -53,7 +53,7 @@
 
     <LegalUl>
       <LegalLi><strong class="font-semibold text-gray-900">Ny kund.</strong> När du skapar en ny organisation ber vi dig om personuppgifter, bl.a. förnamn, efternamn och e-post.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar..</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar.</LegalLi>
     </LegalUl>
 
     <LegalTitle>
