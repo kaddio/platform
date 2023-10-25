@@ -41,12 +41,6 @@
             navOpen = false;
             event.preventDefault();
         }
-
-        if (event.key === 'm') {
-            navOpen = true;
-            show = true;
-            event.preventDefault();
-        }
     }
 
     $: $page.url && (navOpen = false);
