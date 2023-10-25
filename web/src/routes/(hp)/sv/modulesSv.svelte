@@ -18,9 +18,9 @@
         <span slot="icon">
             <i class="text-white fa-regular fa-heart" />
         </span>
-        <span slot="title">Journal</span>
+        <span slot="title">Journalsystem</span>
         <span slot="body"
-            >Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra
+            >Kaddio Journalsystem har allt du behöver för att dokumentera verksamheten och journalföra
             klienter. Ett komplett journalsystem för vård.</span
         >
     </ModulePresentation>
