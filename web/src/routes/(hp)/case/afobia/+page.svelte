@@ -32,13 +32,11 @@ import Legal from "$components/legal.svelte";
 
 
     <LegalParagraph>
-        Jonas uses Kaddio for all three businesses. The idea for Amedo was even triggered by a certatin functionality he found in Kaddio. "As Kaddio develops, I find new opportunities to develop my businesses".
-
-        
+        Jonas uses Kaddio for all three businesses. The idea for Amedo was triggered by a specific feature he found in Kaddio. "As Kaddio develops, I find new opportunities to develop my businesses".
     </LegalParagraph>
 
     <LegalParagraph>
-    What Jonas likes the most about Kaddio is the stability of the system and the responsiveness of the Kaddio team. "The world changes, the business changes and therefore, we need a flexible system", Jonas concludes.
+    What Jonas likes the most is the stability of Kaddio and the responsiveness of the team. "The world changes, the business changes and therefore, we need a flexible system", Jonas concludes.
     </LegalParagraph>
 
     <figure class="mt-16">
