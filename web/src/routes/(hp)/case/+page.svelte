@@ -28,6 +28,10 @@
           Ana is an osteopath and physiotherapist with more than 20 years of experience in the field. She runs Spanda Healthcare in the beautiful Tramuntana mountains of Mallorca.
         </BlogPost>
 
+        <BlogPost href="/case/afobia" title="Curiosity drives business development" name="PsykologA" location="Stockholm, Sweden" tags={["Medical record", "Booking", "Communication"]} img={imageHandler('/img/jonas.jpeg', {format: "auto", width: 640})}>
+          Jonas is a psychologist and psychotherapist with a passion for business development. Meet Jonas at his clinic in Stockholm where he uses Kaddio as a source of inspiration for new business ideas.
+        </BlogPost>
+
         <!-- <BlogPost href="/case/majornas-osteopati" title="An old approach to the new body" name="Majornas Osteopati" location="Göteborg, Sweden" tags={["Medical record"]}>
             Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.
         </BlogPost> -->
