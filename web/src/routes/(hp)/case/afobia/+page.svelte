@@ -20,7 +20,7 @@ import Legal from "$components/legal.svelte";
     </span>
 
     <span slot="intro">
-        Jonas Evander is a psychologist, psychotherapist and business developer who runs several clinics in Stockholm: PsykologA for therapy and coaching, Afobia that specializes in CBT for phobia and fear, and Amedo, a web-based clinic for neuropsychiatric evaluations.
+        Jonas Evander is a psychologist, psychotherapist and business developer who runs several clinics in Stockholm: Afobia that specializes in CBT for phobia and fear, the web-based clinic Amedo for neuropsychiatric evaluations, and PsykologA for therapy and coaching.
 
     </span>
 <!-- 
