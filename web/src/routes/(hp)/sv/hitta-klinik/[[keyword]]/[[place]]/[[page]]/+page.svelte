@@ -90,8 +90,10 @@
             class="mx-auto flex gap-12 items-end top-0 left-0 relative max-w-screen-lg flex-col p-4 pt-0 md:flex-row justify-between"
         >
             <a href="/sv/hitta-klinik">
-                <h1 class="text-xl flex gap-8 text-white font-semibold">
-                    <img src="/img/kaddio-logo.png" alt="" class="h-8" /> Hitta klinik
+                <h1 class="text-xl flex gap-4 text-white font-semibold">
+                    <img src="/img/kaddio-logo.png" alt="" class="h-8 relative" /><span
+                        >Hitta klinik</span
+                    >
                 </h1>
             </a>
 
