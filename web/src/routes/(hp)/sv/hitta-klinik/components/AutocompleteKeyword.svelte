@@ -31,7 +31,12 @@
                       label: input
                   }
               ]
-            : [];
+            : [
+                  {
+                      type: 'KEYWORD',
+                      label: 'Visa alla'
+                  }
+              ];
         return [...searchItem, ...data.data.autocompleteSearch];
     }
     const onChangeLocal = function () {
