@@ -87,7 +87,7 @@
             class="w-full top-0 absolute left-0 bottom-0 right-0"
         />
         <div
-            class="mx-auto flex gap-12 items-end top-0 left-0 relative max-w-screen-lg flex-col p-4 pt-0 md:flex-row justify-between"
+            class="mx-auto flex gap-12 items-center md:items-end top-0 left-0 relative max-w-screen-lg flex-col p-4 pt-0 md:flex-row justify-between"
         >
             <a href="/sv/hitta-klinik">
                 <h1 class="text-xl flex gap-4 text-white font-semibold">
@@ -130,9 +130,9 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 p-8 lg:p-12 pt- lg:pt-20 flex grow">
+    <div class="bg-gray-100 p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
         <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
-            <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
+            <div class="flex flex-col h-full grow max-w-screen-lg">
                 {#if data.organizations.length}
                     <div class="flex justify-between">
                         <div class="font-semibold mb-2 ml-3">
@@ -142,9 +142,9 @@
                         </div>
                     </div>
                     <div class="lg:mt-0">
-                        <div class="grid grid-cols-12 gap-12">
+                        <div class="grid grid-cols-6 gap-12">
                             {#each data.organizations as organization}
-                                <div class="col-span-12 sm:col-span-6 xl:col-span-4">
+                                <div class="col-span-6 sm:col-span-3 xl:col-span-2">
                                     <OrganizationCard {organization} />
                                 </div>
                             {/each}
