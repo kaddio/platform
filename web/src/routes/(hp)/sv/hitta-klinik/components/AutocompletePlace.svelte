@@ -26,16 +26,20 @@
 
         return data.data.autocompletePlace;
     }
+    $: showClear = !!selectedPlace;
 </script>
 
 <AutoComplete
-    showClear={true}
+    {showClear}
     dropdownClassName="rounded py-2 px-3 border-none shadow"
     {onChange}
     itemClass="p-5"
     labelFunction={(i) => i?.name}
     valueFunction={(i) => i?.name}
     noInputStyles={true}
+    noResultsText="Inga träffar"
+    showLoadingIndicator={true}
+    hideArrow={true}
     inputClassName="rounded py-2 px-3 border-none w-full text-black"
     minCharactersToSearch={0}
     placeholder="Sök plats"
