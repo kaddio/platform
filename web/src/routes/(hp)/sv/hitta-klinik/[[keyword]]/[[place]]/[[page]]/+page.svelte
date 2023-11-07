@@ -132,7 +132,7 @@
 
     <div class="bg-gray-100 p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
         <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
-            <div class="flex flex-col h-full grow max-w-screen-lg">
+            <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
                 {#if data.organizations.length}
                     <div class="flex justify-between">
                         <div class="font-semibold mb-2 ml-3">

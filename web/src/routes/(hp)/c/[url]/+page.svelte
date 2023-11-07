@@ -183,7 +183,10 @@
                                 </span>
 
                                 <span slot="action">
-                                    <KdLinkButton size={Size.SM} variant={Variant.OUTLINE} href=""
+                                    <KdLinkButton
+                                        size={Size.SM}
+                                        variant={Variant.OUTLINE}
+                                        href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}"
                                         >Sök tid</KdLinkButton
                                     >
                                 </span>
