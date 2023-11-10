@@ -1,15 +1,19 @@
 <script lang="ts">
-
-	import { Color, Size, Variant, buttonCssClass, cssClass } from "./common_types";
-
-
-    export let size: Size = Size.MD;
-    export let variant: Variant = Variant.FLAT;
-    export let color: Color = Color.PRIMARY;
-
+    import { buttonCssClass } from './common_types';
+    import type { Color, Size, Variant } from './common_types';
+    export let size: Size = 'md';
+    export let variant: Variant = 'flat';
+    export let color: Color = 'primary';
 </script>
 
-
-<button {...$$restProps} class="font-semibold rounded whitespace-nowrap {buttonCssClass(variant, color, size)}"><slot></slot></button>
-
-
+<button
+    on:click
+    on:mouseover
+    on:mouseenter
+    on:mouseleave
+    class="font-semibold rounded whitespace-nowrap {$$restProps.class || ''} {buttonCssClass(
+        variant,
+        color,
+        size
+    )}"><slot /></button
+>

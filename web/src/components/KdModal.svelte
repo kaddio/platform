@@ -1,9 +1,30 @@
 <script lang="ts">
-    let dialog;
+    import KdButton from './kd-button.svelte';
+
+    let dialog: HTMLDialogElement;
     export let open = true;
+    export let closeButton = true;
+    $: if (dialog) {
+        if (open) {
+            dialog.showModal();
+        } else {
+            dialog.close();
+        }
+    }
 </script>
 
-<dialog bind:this={dialog}>
+<dialog bind:this={dialog} class="rounded-xl relative">
+    <div class="absolute top-0 right-0 m-4" class:hidden={!closeButton}>
+        <KdButton
+            on:click={() => {
+                open = false;
+            }}
+            variant="inverted"
+            color="default"
+        >
+            <i class="fa fa-times" />
+        </KdButton>
+    </div>
     <slot name="header" />
     <slot name="body" />
 </dialog>

@@ -34,6 +34,7 @@ export async function load({ params, fetch }) {
                         price
                         clientVisibleLength
                         bookingLink
+                        description
                     }
                     homepage {
                         headerImg
@@ -52,6 +53,8 @@ export async function load({ params, fetch }) {
                         imgUrl
                         nextFreeTime
                         bookingLink
+                        presentation
+                        title
                     }
                     reviews {
                         name

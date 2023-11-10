@@ -3,8 +3,6 @@
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
-
-    import { Color, Size, Variant } from '../../../../components/common_types';
     import KdItem from '../../../../components/kdItem.svelte';
 
     import Gallery from './components/gallery.svelte';
@@ -82,8 +80,8 @@
                 </div>
 
                 <KdLinkButton
-                    variant={Variant.LIGHT}
-                    color={Color.DEFAULT}
+                    variant="light"
+                    color="default"
                     href="https://{organization.url}.kaddio.com/login">Logga in</KdLinkButton
                 >
             </div>
@@ -96,9 +94,9 @@
                 {#if organization.showBooking}
                     <div class="absolute bottom-4 right-0">
                         <KdLinkButton
-                            variant={Variant.FLAT}
-                            color={Color.THEME_PRIMARY}
-                            size={Size.XL}
+                            variant="flat"
+                            color="theme-primary"
+                            size="xl"
                             href="https://{organization.url}.kaddio.com/booking"
                             >Sök tid</KdLinkButton
                         >
@@ -164,9 +162,9 @@
                 {#if organization.hasContactForm}
                     <KdLinkButton
                         href="https://{organization.url}.kaddio.com/contact-us"
-                        color={Color.THEME_PRIMARY}
-                        className="m-8"
-                        variant={Variant.FLAT}>Kontakta oss</KdLinkButton
+                        color="theme-primary"
+                        class="m-8"
+                        variant="flat">Kontakta oss</KdLinkButton
                     >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
@@ -184,8 +182,8 @@
 
                                 <span slot="action">
                                     <KdLinkButton
-                                        size={Size.SM}
-                                        variant={Variant.OUTLINE}
+                                        size="sm"
+                                        variant="outline"
                                         href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}"
                                         >Sök tid</KdLinkButton
                                     >

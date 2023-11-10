@@ -1,9 +1,9 @@
 <script lang="ts">
-    import { Color, Size, Variant } from '../../../../../components/common_types';
     import KdItem from '../../../../../components/kdItem.svelte';
 
     import dayjs from 'dayjs';
     import KdLinkButton from '../../../../../components/kdLinkButton.svelte';
+    import HostModal from './host_modal.svelte';
 
     export let hosts: any[];
 
@@ -33,15 +33,13 @@
             {#if host.nextFreeTime}
                 <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
             {:else}
-                <span class="text-red-300">Inga tider</span>
+                <span class="text-red-300">Inga lediga tider</span>
             {/if}
+            <HostModal {host} />
         </span>
         <span slot="action">
-            <KdLinkButton
-                href={host.bookingLink}
-                size={Size.SM}
-                variant={Variant.FLAT}
-                color={Color.THEME_PRIMARY}>Sök tid</KdLinkButton
+            <KdLinkButton href={host.bookingLink} size="sm" variant="flat" color="theme-primary"
+                >Sök tid</KdLinkButton
             >
         </span>
     </KdItem>

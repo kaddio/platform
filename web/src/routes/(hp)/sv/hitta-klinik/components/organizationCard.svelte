@@ -5,7 +5,7 @@
     import dayjs from 'dayjs';
     import relativeTime from 'dayjs/plugin/relativeTime';
     import 'dayjs/locale/sv';
-    import KdButton from '$components/kd-button.svelte';
+
     import { imageHandler } from '$lib/img';
     export let organization: Organization;
     dayjs.locale('sv');
