@@ -2,8 +2,8 @@
     import { groupBy } from 'lodash';
     import KdItem from '../../../../../components/kdItem.svelte';
     import dayjs from 'dayjs';
-    import { Color, Size, Variant } from '../../../../../components/common_types';
     import KdLinkButton from '../../../../../components/kdLinkButton.svelte';
+    import BookingTypeModal from './booking_type_modal.svelte';
 
     export let bookingTypes: any[];
     const groupedDookingTypes = groupBy(bookingTypes, 'categoryName');
@@ -22,18 +22,23 @@
                 <span slot="subtitle">
                     {bookingType.clientVisibleLength} min ·
                     <span itemprop="offer">{bookingType.price} kr</span>
+                    ·
                     {#if bookingType.nextFreeTime}
-                        {dayjs(bookingType.nextFreeTime).fromNow()}
+                        <span class="text-green-300"
+                            >{dayjs(bookingType.nextFreeTime).fromNow()}</span
+                        >
                     {:else}
-                        Inga lediga tider
+                        <span class="text-red-300">Inga lediga tider</span>
                     {/if}
+                    <br />
+                    <BookingTypeModal {bookingType} />
                 </span>
                 <span slot="action">
                     <KdLinkButton
                         href={bookingType.bookingLink}
-                        size={Size.SM}
-                        color={Color.THEME_PRIMARY}
-                        variant={Variant.FLAT}>Sök tid</KdLinkButton
+                        size="sm"
+                        color="theme-primary"
+                        variant="flat">Sök tid</KdLinkButton
                     >
                 </span>
             </KdItem>
