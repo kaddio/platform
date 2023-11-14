@@ -248,21 +248,22 @@
                 </div>
             </div>
 
+            <a href="/{lang}/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{$_('Kundberättelser')}</a>
+
             <a
                 href="/{lang}/#price"
                 class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"
             >
                 {$_('Pris')}
             </a>
-            <!-- <a href="/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Kundberättelser</a> -->
             <!-- <a href="/{lang}/sales" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">Nyfiken på Kaddio?</a> -->
             <!-- <a href="/sv/hitta-klinik" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"><i class="fa fa-magnifying-glass"></i> Hitta klinik</a> -->
-            <a
+            <!-- <a
                 href="/{lang}/support"
                 class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"
             >
                 {$_('Support')}
-            </a>
+            </a> -->
         </div>
 
         <div class="flex flex-1 items-center justify-end gap-x-6">

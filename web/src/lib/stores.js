@@ -46,6 +46,14 @@ const translations = {
         en: 'Price',
         es: 'Precio'
     },
+    Kundberättelser: {
+        en: 'Case studies',
+        es: 'Casos de estudio'
+    },
+    Kundberättelse: {
+        en: 'Case study',
+        es: 'Caso de estudio'
+    },
     Avtal: {
         en: 'Legal',
         es: 'Legal'
