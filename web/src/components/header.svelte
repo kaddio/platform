@@ -3,6 +3,7 @@
     import { _, link } from '$lib/stores';
     import { getContext } from 'svelte';
     import LangBanner from './lang-banner.svelte';
+    import GTag from './gTag.svelte';
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -47,6 +48,8 @@
 </script>
 
 <svelte:window on:keydown={onKeyDown} />
+
+<GTag />
 
 <header class="relative isolate z-10">
     <LangBanner />
