@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { groupBy } from 'lodash';
+    import _ from 'lodash';
     import KdItem from '../../../../../components/kdItem.svelte';
     import dayjs from 'dayjs';
     import KdLinkButton from '../../../../../components/kdLinkButton.svelte';
     import BookingTypeModal from './booking_type_modal.svelte';
 
     export let bookingTypes: any[];
-    const groupedDookingTypes = groupBy(bookingTypes, 'categoryName');
+    const groupedDookingTypes = _.groupBy(bookingTypes, 'categoryName');
 </script>
 
 {#each Object.entries(groupedDookingTypes) as [category, bookingTypesInCategory]}
