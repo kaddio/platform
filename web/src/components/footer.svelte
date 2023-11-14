@@ -23,49 +23,53 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Nyfiken på Kaddio')}</h3>
             <ul class="mt-6 space-y-4">
               <!-- <li>
-                <a href="/{lang}/feature/log" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Journal')}</a>
+                <a href="/{lang}/feature/log" class="text-sm leading-6 text-gray-600">{ $_('Journal')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/cal" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Tidsbokning')}</a>
+                <a href="/{lang}/feature/cal" class="text-sm leading-6 text-gray-600">{ $_('Tidsbokning')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/invoicing" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Fakturering')}</a>
+                <a href="/{lang}/feature/invoicing" class="text-sm leading-6 text-gray-600">{ $_('Fakturering')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/communication" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Chat')}</a>
+                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">{ $_('Chat')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/documents" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Dokument')}</a>
+                <a href="/{lang}/feature/documents" class="text-sm leading-6 text-gray-600">{ $_('Dokument')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/forms" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Formulär')}</a>
+                <a href="/{lang}/feature/forms" class="text-sm leading-6 text-gray-600">{ $_('Formulär')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/feature/communication" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Video')}</a>
+                <a href="/{lang}/feature/communication" class="text-sm leading-6 text-gray-600">{ $_('Video')}</a>
               </li> -->
 
               <li>
-                <a href="/{lang}#functions" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Tjänster')}</a>
+                <a href="/{lang}#functions" class="text-sm leading-6 text-gray-600">{ $_('Tjänster')}</a>
               </li>
 
               <li>
-                <a href="/case" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kundberättelser')}</a>
+                <a href="/case" class="text-sm leading-6 text-gray-600">{ $_('Kundberättelser')}</a>
               </li>
               <li>
-                <a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
               <li>
-                <a href="/{lang}/sales" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta sälj')}</a>
+                <a href="/{lang}/sales" class="text-sm leading-6 text-gray-600">{ $_('Kontakta sälj')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/create" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Skapa konto')}</a>
+                <a href="/{lang}/create" class="text-sm leading-6 text-gray-600">{ $_('Skapa konto')}</a>
+              </li>
+
+              <li>
+                <a href="http://eepurl.com/gsgcG5" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
             </ul>
           </div>
@@ -73,23 +77,23 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
+                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
               </li>
 
               <li>
-                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Status</a>
+                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Status</a>
               </li>
 
               <li>
-                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Changelog</a>
+                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Changelog</a>
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm hover:underline leading-6 text-gray-600">Developer API</a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Developer API</a>
               </li>
 
               <li>
-                <a href="/{lang}/support" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Kontakta support')}</a>
+                <a href="/{lang}/support" class="text-sm leading-6 text-gray-600">{ $_('Kontakta support')}</a>
               </li>
           </ul>
           </div>
@@ -99,21 +103,21 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">About us</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/about-us" class="text-sm hover:underline leading-6 text-gray-600">Meet our team</a>
+                <a href="/about-us" class="text-sm leading-6 text-gray-600">Meet our team</a>
               </li>
 
               <li>
-                <a href="/career" class="text-sm hover:underline leading-6 text-gray-600">Career</a>
+                <a href="/career" class="text-sm leading-6 text-gray-600">Career</a>
               </li>
 
               
               
               <!-- <li>
-                <a href="/partners" class="text-sm hover:underline leading-6 text-gray-600">Partners</a>
+                <a href="/partners" class="text-sm leading-6 text-gray-600">Partners</a>
               </li> -->
 
               <!-- <li>
-                <a href="/media-kit" class="text-sm hover:underline leading-6 text-gray-600">Media kit</a>
+                <a href="/media-kit" class="text-sm leading-6 text-gray-600">Media kit</a>
               </li> -->
 
             </ul>
@@ -122,11 +126,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/{lang}/legal/tos" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
+                <a href="/{lang}/legal/tos" class="text-sm leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/legal/privacy" class="text-sm hover:underline leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
+                <a href="/{lang}/legal/privacy" class="text-sm leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
               </li>
             </ul>
           </div>
@@ -135,26 +139,12 @@
       
     </div>
 
-<!--     
-    <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
-      <div>
-        <h3 class="text-sm font-semibold leading-6 text-gray-900">Subscribe to our newsletter</h3>
-        <p class="mt-2 text-sm hover:underline leading-6 text-gray-900">The latest news, articles, and resources, sent to your inbox weekly.</p>
-      </div>
-      <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
-        <label for="email-address" class="sr-only">Email address</label>
-        <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:w-56 sm:text-sm hover:underline sm:leading-6" placeholder="Enter your email">
-        <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-          <button type="submit" class="flex w-full items-center justify-center rounded-md bg-oldpink px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
-        </div>
-      </form>
-    </div>     -->
-
+  
 
     <div class="mt-8 border-t border-gray/10 pt-8 md:flex md:items-center md:justify-between">
       <div class="flex space-x-6 md:order-2">
 
-      <a href="/choose-country-region" class="text-gray-600 text-sm hover:underline">
+      <a href="/choose-country-region" class="text-gray-600 text-sm">
         Choose country or region
       </a>
 
