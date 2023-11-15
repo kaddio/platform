@@ -33,8 +33,8 @@
               ]
             : [
                   {
-                      type: 'KEYWORD',
-                      label: 'Visa alla'
+                      type: 'SHOW_ALL',
+                      label: undefined
                   }
               ];
         return [...searchItem, ...data.data.autocompleteSearch];
@@ -47,6 +47,9 @@
     };
 
     $: showClear = !!selectedKeyword;
+    $: if (selectedKeyword?.type == 'SHOW_ALL') {
+        selectedKeyword = undefined;
+    }
 </script>
 
 <AutoComplete
@@ -77,6 +80,11 @@
             {#if item.type == 'ORG'}
                 <i class="fa fa-globe text-gray-400 mr-4" /><a href="/c/{item.url}?backbutton=1"
                     >{item.label}</a
+                >
+            {/if}
+            {#if item.type == 'SHOW_ALL'}
+                <i class="fa fa-times text-gray-400 mr-4" /><a href="/c/{item.url}?backbutton=1"
+                    >Visa alla</a
                 >
             {/if}
         </div>
