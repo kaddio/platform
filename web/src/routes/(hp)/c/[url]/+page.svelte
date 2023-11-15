@@ -140,17 +140,6 @@
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
-                {#if !organization.hasPlaces}
-                    <div
-                        class="text-gray-500 px-8 mb-8"
-                        itemscope
-                        itemtype="http://schema.org/PostalAddress"
-                    >
-                        <span itemprop="streetAddress">{organization.address || ''}</span>
-                        <span itemprop="addressLocality">{organization.city || ''}</span>
-                    </div>
-                {/if}
-                <Map {addresses} />
 
                 {#if organization.homepage?.links.length}
                     <div class="flex flex-col gap-4 my-8 mx-8">
@@ -168,6 +157,7 @@
                     >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
+                <Map {addresses} />
                 {#if organization.showBooking && organization.homepage?.showPlaces}
                     <div
                         class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
@@ -190,6 +180,16 @@
                                 </span>
                             </KdItem>
                         {/each}
+                    </div>
+                {/if}
+                {#if !organization.hasPlaces}
+                    <div
+                        class="text-gray-500 px-8 mb-8"
+                        itemscope
+                        itemtype="http://schema.org/PostalAddress"
+                    >
+                        <span itemprop="streetAddress">{organization.address || ''}</span>
+                        <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
                 {/if}
             </Card>
