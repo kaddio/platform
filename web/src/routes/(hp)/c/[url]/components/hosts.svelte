@@ -30,11 +30,18 @@
             {host.lastname}
         </span>
         <span slot="subtitle">
+            {#if host.title}
+                <div class=" text-gray-400 font-semibold line-clamp-1" style="max-width: 20rem">
+                    {host.title}
+                </div>
+            {/if}
+
             {#if host.nextFreeTime}
                 <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
             {:else}
                 <span class="text-red-300">Inga lediga tider</span>
             {/if}
+            &nbsp;
             <HostModal {host} />
         </span>
         <span slot="action">
