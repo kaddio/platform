@@ -31,7 +31,7 @@
 
 <style>
     dialog::backdrop {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
         animation: fade-in 0.4s;
     }
 
@@ -42,5 +42,9 @@
         to {
             opacity: 1;
         }
+    }
+
+    dialog {
+        position: fixed;
     }
 </style>
