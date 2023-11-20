@@ -1,3 +1,9 @@
+<script>
+	let image = '/img/daniel_sale.jpeg';
+	let hoverImage = '/img/daniel_rufus.jpeg';
+	let imageSrc = image;
+</script>
+
 <div class="relative bg-white">
 	<div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
 	  <div class="px-6 lg:px-8">
@@ -43,8 +49,10 @@
 	  </div>
 	</div>
 
-	<div class="lg:absolute lg:inset-0 lg:left-1/2">
-		<img class="h-auto w-full bg-gray-50 object-cover object-top lg:absolute lg:h-full" src="/img/daniel-disputation.png" alt="">
+	<div class="lg:absolute lg:inset-0 lg:left-1/2"
+		on:mouseenter={() => { imageSrc = hoverImage }}
+		on:mouseleave={() => { imageSrc = image }}>
+		<img class="z-0 h-auto w-full bg-gray-50 object-cover object-top lg:absolute lg:h-full" src={imageSrc} alt="">
 	</div>
   
   </div>
