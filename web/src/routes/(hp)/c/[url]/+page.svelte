@@ -122,11 +122,13 @@
                             >Personal</a
                         >
                     {/if}
-                    <!-- <a class="text-sm uppercase text-gray-500 font-semibold">
-                        Omdömen
-                        <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
-                        <i class="fa fa-star text-yellow-500" />
-                    </a> -->
+                    {#if organization.useReviews}
+                        <a class="text-sm uppercase text-gray-500 font-semibold" href="#reviews">
+                            Omdömen
+                            <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
+                            <i class="fa fa-star text-yellow-500" />
+                        </a>
+                    {/if}
                 </div>
             </div>
         {/if}
@@ -195,9 +197,9 @@
             </Card>
         </div>
     </div>
-    <!-- <div class="mx-auto max-w-screen-lg mt-8">
-		<Reviews reviews={organization.reviews} />
-	</div> -->
+    <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
+        <Reviews reviews={organization.reviews} reviewCount={organization.reviewCount} />
+    </div>
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         {#if organization.homepage?.showUs}
             <Card

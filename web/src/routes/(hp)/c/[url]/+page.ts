@@ -56,12 +56,13 @@ export async function load({ params, fetch }) {
                         presentation
                         title
                     }
+                    useReviews
+                    reviewCount
                     reviews {
-                        name
-                        text
+                        clientName
+                        comment
                         stars
                         date
-
                     }
                 }
             }
