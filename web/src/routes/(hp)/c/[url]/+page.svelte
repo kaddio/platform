@@ -157,7 +157,7 @@
                     >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
-                <Map {addresses} />
+
                 {#if organization.showBooking && organization.homepage?.showPlaces}
                     <div
                         class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
@@ -192,6 +192,7 @@
                         <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
                 {/if}
+                <Map {addresses} />
             </Card>
         </div>
     </div>
