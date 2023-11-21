@@ -198,7 +198,11 @@
         </div>
     </div>
     <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
-        <Reviews reviews={organization.reviews} reviewCount={organization.reviewCount} />
+        <Reviews
+            reviews={organization.reviews}
+            reviewCount={organization.reviewCount}
+            stars={organization.stars}
+        />
     </div>
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         {#if organization.homepage?.showUs}
