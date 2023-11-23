@@ -58,6 +58,7 @@ export async function load({ params, fetch }) {
                     }
                     useReviews
                     reviewCount
+                    starsHistogram
                     reviews {
                         clientName
                         comment

@@ -1,32 +1,31 @@
-import type { HandleFetch } from "@sveltejs/kit";
-import { Organization } from "./types";
-import { apiUrl } from "$lib/apiUrl";
+import type { HandleFetch } from '@sveltejs/kit';
+import { Organization } from './types';
+import { apiUrl } from '$lib/apiUrl';
 
-export const grapqhlApi = async function<T>(
-    query: string,
-    fetch
-): Promise<T> {
+export const grapqhlApi = async function <T>(query: string, fetch): Promise<T> {
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
-        body: JSON.stringify({query}),
+        body: JSON.stringify({ query }),
         headers: {
-            'Content-Type': 'application/json',
-        },
-    })
+            'Content-Type': 'application/json'
+        }
+    });
 
     const data = await result.json();
-    if(data.errors) {
+    if (data.errors) {
         throw data.errors;
     }
     return data as Promise<T>;
-}
+};
 
 export class KaddioMarketplaceApi {
     constructor(fetch) {
         this.fetch = fetch;
     }
     async findOrganizations(keyword: string, limit: number = 10): Promise<Organization[]> {
-        return (await grapqhlApi<Organization[]>(`
+        return (
+            await grapqhlApi<Organization[]>(
+                `
             query {
                 findOrganizations(keyword: "${keyword}", limit: ${limit}) {
                 name,
@@ -35,6 +34,7 @@ export class KaddioMarketplaceApi {
                 city,
                 url,
                 keywords,
+                stars,
                 bookingTypes {
                     name,
                     nextFreeTime
@@ -45,6 +45,9 @@ export class KaddioMarketplaceApi {
                 }
                 }
             }
-        `, fetch)).findOrganizations
+        `,
+                fetch
+            )
+        ).findOrganizations;
     }
 }

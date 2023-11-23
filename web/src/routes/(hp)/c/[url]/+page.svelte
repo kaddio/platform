@@ -200,6 +200,7 @@
     <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
         <Reviews
             reviews={organization.reviews}
+            histogram={organization.starsHistogram}
             reviewCount={organization.reviewCount}
             stars={organization.stars}
         />
