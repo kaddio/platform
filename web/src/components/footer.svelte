@@ -89,7 +89,7 @@
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Developer API</a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
               </li>
 
               <li>
