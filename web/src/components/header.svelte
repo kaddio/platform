@@ -117,7 +117,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-heart" />
+                                <i class="fal fa-fw fa-xl fa-heart group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('journalsystem', lang)}
@@ -136,7 +136,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-stopwatch" />
+                                <i class="fal fa-fw fa-xl fa-stopwatch group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('onlinebokning', lang)}
@@ -155,7 +155,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-comments" />
+                                <i class="fal fa-fw fa-xl fa-comments group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('kommunikation', lang)}
@@ -174,7 +174,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-file-lines" />
+                                <i class="fal fa-fw fa-xl fa-file-lines group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('fakturering', lang)}
