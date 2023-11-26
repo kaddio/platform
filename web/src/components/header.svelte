@@ -127,8 +127,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Kaddio Journal har allt du behöver för att dokumentera verksamheten
-                                och journalföra klienter.
+                                {$_('Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter.')}
                             </p>
                         </div>
                         <div
@@ -147,8 +146,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Komplett bokningssystem och onlinebetalning som gör allt du
-                                förväntar dig.
+                                {$_('Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.')}
                             </p>
                         </div>
                         <div
@@ -167,8 +165,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Kommunicera krypterat via chat eller video inom och utom
-                                organisationen.
+                                {$_('Kommunicera krypterat via chat eller video inom och utom organisationen.')}
                             </p>
                         </div>
                         <div
@@ -187,8 +184,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Kaddio Fakturering är ett komplett faktureringsprogram för små och
-                                medelstora företag.
+                                {$_('Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.')}
                             </p>
                         </div>
                     </div>
