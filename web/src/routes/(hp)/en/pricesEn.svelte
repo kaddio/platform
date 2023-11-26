@@ -3,7 +3,7 @@
 
     const modules = [{
         name: "Core",
-		price: 12,
+		price: 13,
 		selected: true,
         disabled: true
     },
@@ -14,12 +14,8 @@
 	},
     {
 		name: "Time booking and calendar",
-		price: 6,
+		price: 9,
 		selected: true
-	},
-    {
-		name: "Documents",
-		price: 2
 	},
     {
 		name: "Invoicing",
@@ -28,14 +24,6 @@
     {
 		name: "Communication",
 		price: 9
-	},
-    {
-		name: "Homepage",
-		price: 2
-	},
-    {
-		name: "Tasks",
-		price: 2
 	}
 ]
 </script>
