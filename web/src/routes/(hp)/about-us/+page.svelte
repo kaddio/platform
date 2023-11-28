@@ -149,7 +149,7 @@
           <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></div>
         </time>
         <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Black numbers!</p>
-        <p class="mt-1 text-base leading-7 text-gray-600">Kaddio has been independent from external investors since the beginning, now we are also economically independent from out parent company.</p>
+        <p class="mt-1 text-base leading-7 text-gray-600">Kaddio has been independent from external investors since the beginning, now we are also economically independent from our parent company.</p>
       </div>
     </div>
   </div>
