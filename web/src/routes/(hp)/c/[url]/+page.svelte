@@ -125,7 +125,9 @@
                     {#if organization.useReviews}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#reviews">
                             Omdömen
-                            <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
+                            <span class="text-gray-800"
+                                >{organization.stars && organization.stars.toFixed(1)}</span
+                            >
                             <i class="fa fa-star text-yellow-500" />
                         </a>
                     {/if}

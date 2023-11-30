@@ -17,7 +17,7 @@
 
 <div class="grid grid-cols-3 sm:grid-cols-2 w-full gap-8 mb-4">
     <div class="flex flex-col col-span-1 sm:items-center">
-        <div class="text-6xl font-semibold text-gray-500">{stars.toFixed(1)}</div>
+        <div class="text-6xl font-semibold text-gray-500">{stars && stars.toFixed(1)}</div>
         <div class="text-gray-500">
             <a class="text-primary font-bold">Visa alla ({count} st)</a>
         </div>
