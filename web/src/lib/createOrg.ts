@@ -1,4 +1,4 @@
-import { fail, redirect } from '@sveltejs/kit';
+import { fail } from '@sveltejs/kit';
 
 export const createOrg = async function ({ request }) {
     const data = await request.formData();
@@ -27,7 +27,9 @@ export const createOrg = async function ({ request }) {
     }
 
     if (r.status == 'success') {
-        throw redirect(301, 'complete');
+        return {
+            success: true
+        };
     } else if (r.status == 'fail' && r.msg == 'Alla fält är ej ifyllda') {
         return fail(400, {
             missingFields: true
