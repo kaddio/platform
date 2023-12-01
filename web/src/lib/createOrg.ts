@@ -27,7 +27,7 @@ export const createOrg = async function ({ request }) {
     }
 
     if (r.status == 'success') {
-        throw redirect(301, 'create/complete');
+        throw redirect(301, 'complete');
     } else if (r.status == 'fail' && r.msg == 'Alla fält är ej ifyllda') {
         return fail(400, {
             missingFields: true
