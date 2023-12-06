@@ -8,6 +8,9 @@
         date: Date;
         comment: string;
         stars: number;
+        answer: {
+            answer: string;
+        };
     };
 </script>
 
@@ -22,4 +25,9 @@
     </div>
     <span class="text-gray-400 font-semibold">{dayjs(review.date).fromNow()}</span>
     <span class="mt-5">{review.comment}</span>
+    {#if review.answer}
+        <span class="mt-5 text-gray-800 bg-gray-100 rounded p-5 border-gray-200 border"
+            >{review.answer.answer}</span
+        >
+    {/if}
 </Card>

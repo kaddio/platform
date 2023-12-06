@@ -64,6 +64,9 @@ export async function load({ params, fetch }) {
                         comment
                         stars
                         date
+                        answer{
+                            answer
+                        }
                     }
                 }
             }
@@ -75,7 +78,7 @@ export async function load({ params, fetch }) {
     });
 
     const data = await result.json();
-    console.log(data);
+
     return {
         organization: data.data.findOrganization
     };
