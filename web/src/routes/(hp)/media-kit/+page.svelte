@@ -140,8 +140,8 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 -->
 <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
   <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Normal.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-50">
+    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+      <img src="/img/logotypes/Kaddio_Logga_Normal.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
       <a href="/img/logotypes/Kaddio_Logga_Normal.svg" class="absolute inset-0 focus:outline-none">
         <span class="sr-only">View details for image</span>
 	  </a>
@@ -150,8 +150,8 @@ import ModuleFeature from "$components/moduleFeature.svelte";
   </li>
 
     <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Normal.png" alt="" class="pointer-events-none object-cover group-hover:opacity-50">
+    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+      <img src="/img/logotypes/Kaddio_Logga_Normal.png" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
       <a href="/img/logotypes/Kaddio_Logga_Normal.png" class="absolute inset-0 focus:outline-none">
         <span class="sr-only">View details for image</span>
 	  </a>
@@ -163,8 +163,8 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 
 
   <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Symbol.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-50">
+    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+      <img src="/img/logotypes/Kaddio_Logga_Symbol.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
       <a href="/img/logotypes/Kaddio_Logga_Symbol.svg" class="absolute inset-0 focus:outline-none">
         <span class="sr-only">View details for image</span>
 	  </a>
@@ -174,8 +174,8 @@ import ModuleFeature from "$components/moduleFeature.svelte";
   
 
   <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Symbol.png" alt="" class="pointer-events-none object-cover group-hover:opacity-50">
+    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+      <img src="/img/logotypes/Kaddio_Logga_Symbol.png" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
       <a href="/img/logotypes/Kaddio_Logga_Symbol.png" class="absolute inset-0 focus:outline-none">
         <span class="sr-only">View details for image</span>
 	  </a>
