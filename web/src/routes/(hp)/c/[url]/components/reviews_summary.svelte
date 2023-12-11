@@ -1,7 +1,8 @@
 <script lang="ts">
     import KdModal from '../../../../../components/KdModal.svelte';
+    import AllReviewsModalButton from './all_reviews_modal_button.svelte';
     import Stars from './stars.svelte';
-
+    export let orgUrl: string;
     export let histogram: number[];
     export let count: number;
     export let stars: number;
@@ -41,4 +42,5 @@
             </div>
         {/each}
     </div>
+    <AllReviewsModalButton {orgUrl} />
 </div>
