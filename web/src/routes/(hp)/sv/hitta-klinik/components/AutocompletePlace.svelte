@@ -53,7 +53,7 @@
         <!-- render anything else -->
         <div class="py-1">
             <i class="fa fa-magnifying-glass text-gray-400 mr-4" /><span>{item.name}</span>
-            <span class="text-gray-400">{item.secondaryName}</span>
+            <span class="text-gray-400">{item.secondaryName || ''}</span>
         </div>
     </div>
 </AutoComplete>
