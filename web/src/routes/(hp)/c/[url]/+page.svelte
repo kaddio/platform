@@ -199,14 +199,17 @@
             </Card>
         </div>
     </div>
-    <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
-        <Reviews
-            reviews={organization.reviews}
-            histogram={organization.starsHistogram}
-            reviewCount={organization.reviewCount}
-            stars={organization.stars}
-        />
-    </div>
+    {#if organization.useReviews}
+        <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
+            <Reviews
+                reviews={organization.reviews}
+                histogram={organization.starsHistogram}
+                reviewCount={organization.reviewCount}
+                stars={organization.stars}
+            />
+        </div>
+    {/if}
+
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         {#if organization.homepage?.showUs}
             <Card
