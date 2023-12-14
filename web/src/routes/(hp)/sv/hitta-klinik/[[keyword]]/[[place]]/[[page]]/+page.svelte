@@ -183,7 +183,7 @@
         @apply bg-purple-500;
     }
 
-    :global(:root) {
+    /* :global(:root) {
         font-size: clamp(12px, 0.5711rem + 0.5725vw, 15px);
-    }
+    } */
 </style>

@@ -5,12 +5,12 @@
     import AutocompletePlace from './components/AutocompletePlace.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import KeywordCard from './components/KeywordCard.svelte';
-    import { keywords, allKeywords, keywordsByCategory } from './keywords';
-    import { places } from './places';
+    import { keywords, keywordsByCategory } from './keywords';
     import AutocompleteKeyword from './components/AutocompleteKeyword.svelte';
-    import { entries } from 'lodash';
 
     export let data: PageData;
+    let keywordInput: string;
+
     let page = 0;
     let searchForm: HTMLFormElement;
     let selectedItem =
@@ -50,7 +50,16 @@
 
     const placePart = () =>
         myPlace || (selectedPlace ? encodeURIComponent(selectedPlace.name) : 'Sverige');
-    const keywordPart = () => (selectedItem ? encodeURIComponent(selectedItem.label) : 'Alla');
+
+    const keywordPart = () => {
+        if (selectedItem) {
+            return encodeURIComponent(selectedItem.label);
+        }
+        if (keywordInput) {
+            return encodeURIComponent(keywordInput);
+        }
+        return 'Alla';
+    };
 
     const getUrl = () => `/sv/hitta-klinik/${keywordPart()}/${placePart()}`;
 
@@ -96,6 +105,7 @@
                 name="searchForm"
                 bind:this={searchForm}
                 method="GET"
+                on:submit|preventDefault={() => {}}
                 action={getUrl()}
             >
                 <div class="flex flex-col col-span-2 md:col-span-1">
@@ -165,9 +175,9 @@
         @apply bg-purple-500;
     }
 
-    :global(:root) {
+    /* :global(:root) {
         font-size: clamp(12px, 0.5711rem + 0.5725vw, 15px);
-    }
+    } */
 
     :global(.purple-img) {
         filter: sepia(30%) hue-rotate(340deg) saturate(50%) brightness(80%);
