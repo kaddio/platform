@@ -240,7 +240,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background: rgb(255, 255, 255);
+        background: rgb(255, 255, 255, 0);
         /* mix-blend-mode: multiply; */
         background: linear-gradient(
             180deg in oklab,
