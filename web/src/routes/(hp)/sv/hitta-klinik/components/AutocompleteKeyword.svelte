@@ -41,7 +41,7 @@
 
         const data = await result.json();
         loadedItems = data.data.autocompleteSearch;
-    }, 2000);
+    }, 200);
 
     async function autocompleteSearch(input: string) {
         keywordInput = input;
