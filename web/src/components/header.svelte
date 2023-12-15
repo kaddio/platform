@@ -3,7 +3,7 @@
     import { _, link } from '$lib/stores';
     import { getContext } from 'svelte';
     import LangBanner from './lang-banner.svelte';
-    import GTag from './gTag.svelte';
+    import Cookie from './cookie.svelte';
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -49,7 +49,7 @@
 
 <svelte:window on:keydown={onKeyDown} />
 
-<GTag />
+<Cookie />
 
 <header class="relative isolate z-10">
     <LangBanner />
@@ -117,7 +117,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-heart" />
+                                <i class="fal fa-fw fa-xl fa-heart group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('journalsystem', lang)}
@@ -127,8 +127,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Kaddio Journal har allt du behöver för att dokumentera verksamheten
-                                och journalföra klienter.
+                                {$_('Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter.')}
                             </p>
                         </div>
                         <div
@@ -137,7 +136,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-stopwatch" />
+                                <i class="fal fa-fw fa-xl fa-stopwatch group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('onlinebokning', lang)}
@@ -147,8 +146,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Komplett bokningssystem och onlinebetalning som gör allt du
-                                förväntar dig.
+                                {$_('Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.')}
                             </p>
                         </div>
                         <div
@@ -157,7 +155,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-comments" />
+                                <i class="fal fa-fw fa-xl fa-comments group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('kommunikation', lang)}
@@ -167,8 +165,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Kommunicera krypterat via chat eller video inom och utom
-                                organisationen.
+                                {$_('Kommunicera krypterat via chat eller video inom och utom organisationen.')}
                             </p>
                         </div>
                         <div
@@ -177,7 +174,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-file-lines" />
+                                <i class="fal fa-fw fa-xl fa-file-lines group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('fakturering', lang)}
@@ -187,8 +184,7 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                Kaddio Fakturering är ett komplett faktureringsprogram för små och
-                                medelstora företag.
+                                {$_('Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.')}
                             </p>
                         </div>
                     </div>

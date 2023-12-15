@@ -263,6 +263,27 @@ const translations = {
     'Kontakta support': {
         en: 'Contact support',
         es: 'Contactar soporte'
+    },
+
+    'Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter.':
+        {
+            en: 'Kaddio Journal has everything you need to document your business and journal clients.',
+            es: 'Kaddio Journal tiene todo lo que necesitas para documentar tu negocio y registrar clientes.'
+        },
+
+    'Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.': {
+        en: 'Complete booking system and online payment that does everything you expect.',
+        es: 'Sistema de reservas completo y pago en línea que hace todo lo que esperas.'
+    },
+
+    'Kommunicera krypterat via chat eller video inom och utom organisationen.': {
+        en: 'Communicate encrypted via chat or video within and outside the organization.',
+        es: 'Comunícate de forma encriptada a través de chat o vídeo dentro y fuera de la organización.'
+    },
+
+    'Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.': {
+        en: 'Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses.',
+        es: 'Kaddio Invoicing es un programa de facturación completo para pequeñas y medianas empresas.'
     }
 };
 

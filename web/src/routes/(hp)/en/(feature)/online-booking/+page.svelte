@@ -1,8 +1,8 @@
 <script>
 	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+	import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+	import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
 </script>
 
 <svelte:head>
@@ -10,30 +10,34 @@
 	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
 
-<ModuleSection>
-	<span slot="title">Time booking and calendar</span>
-	<span slot="sub">Easy-to-use time booking and online payment that does everything you expect.</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+	<span slot="h1">Online booking</span>
+	<span slot="title">Kaddio calendar and booking</span>
+	<span slot="sub">
+		Easy-to-use time booking and online payment that does everything you expect. In Kaddio, the calendar is also your public booking so that you can easily manage bookable times, meetings and group sessions in the same view.
+	</span>
 
-	<ModuleFeature>
-		<span slot="title">Automate</span>
+	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+		<span slot="title">Plan</span>
 		<span slot="body">
-			Automate you schedule and let your clients book and pay, or take meticulous control. Booking types can be configured in detail.
+			Create bookable times directly from your calendar. Configure your booking types in detail. Choose whether your customers book and pay themselves or if you take control of every minute.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="people-pulling">
 		<span slot="title">Collaborate</span>
 		<span slot="body">
-			Use the calendar to book meetings
+			Use the calendar to schedule meetings and easily choose who should be involved. Decide for yourself which colleagues should see what.				
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
 
-	<ModuleFeature>
+	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Streamline</span>
 		<span slot="body">
-			Streamline recurring events with templates.
-	</ModuleFeature>
-</ModuleSection>
+			Do you have recurring events in the calendar? Create templates and save time.
+		</span>
+	</ModuleFeatureWithIcon>
+</ModuleSectionWithImage>
   
 
 <FaqSection>
