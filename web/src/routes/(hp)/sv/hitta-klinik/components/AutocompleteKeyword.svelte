@@ -40,13 +40,13 @@
         });
 
         const data = await result.json();
+        console.log(data);
         loadedItems = data.data.autocompleteSearch;
     }, 200);
 
     async function autocompleteSearch(input: string) {
         keywordInput = input;
         await loadAutocompleteResults(input);
-
         return items;
     }
 
@@ -60,6 +60,7 @@
               label: undefined
           };
     $: items = [searchItem, ...loadedItems];
+
     //this is a hack to let links in the dropdown to work as ordinary links
     const onChangeLocal = function () {
         if (selectedKeyword?.type == 'ORG') {
@@ -67,6 +68,8 @@
         }
         onChange(selectedKeyword);
     };
+
+    autocompleteSearch('');
 
     $: showClear = !!selectedKeyword;
     $: if (selectedKeyword?.type == 'SHOW_ALL') {
