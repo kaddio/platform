@@ -6,6 +6,8 @@
     import MarketplaceBanner from './marketplace-banner.svelte';
     import Cookie from './cookie.svelte';
     import Seo from './seo.svelte';
+    import LdTag from '$lib/components/LDTag.svelte';
+    import { kaddioOrgSchema } from '$lib/json-ld';
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -58,6 +60,8 @@
     image="https://kaddio.com/img/kaddio-fade.png" 
     type="website" 
  />
+
+ <LdTag schema={kaddioOrgSchema} />
 
 <Cookie />
 

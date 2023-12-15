@@ -18,6 +18,9 @@
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import { imageHandler } from '../../../../lib/img';
     import Map from '../../../../components/map.svelte';
+    import Seo from '$components/seo.svelte';
+    import LdTag from '$lib/components/LDTag.svelte';
+    import { localBusinessSchema } from '$lib/json-ld';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -44,18 +47,26 @@
         `${organization.address} ${organization.city}`,
         ...organization.places.map((p) => `${p.address} ${p.city}`)
     ];
+
+    const imagesFromImageHandler = organization.homepage?.pics.map((p) =>
+        imageHandler(p, {
+            format: 'auto',
+            width: 1280
+        })
+    );
+
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex" />
-    <!--keywords for search engines-->
-    <meta name="keywords" content={organization.keywords?.join(', ')} />
-    <title>{organization.name} - {organization.keywords?.join(', ')} - {organization.city}</title>
-    <meta
-        name="description"
-        content="{organization.name} - {organization.keywords?.join(', ')} - {organization.city}"
-    />
-</svelte:head>
+ <!-- <LdTag schema={localBusinessSchema} /> -->
+
+<Seo
+    url={`https://kaddio.com/c/${organization.url}`}
+    type="business.business"
+    title={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
+    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
+    locality={organization.city} 
+    images={imagesFromImageHandler}
+/>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
     <div
