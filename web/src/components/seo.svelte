@@ -1,16 +1,24 @@
+<script lang="ts">
+    export let url: string;
+    export let type: string;
+    export let title: string;
+    export let description: string;
+    export let image: string;
+</script>
+
 <svelte:head>
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://kaddio.com" />
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content={type} />
     <meta
         property="og:title"
-        content="Journalsystem, onlinebokning, kommunikation, fakturering"
+        content={title}
     />
     <meta
         property="og:description"
-        content="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra"
+        content={description}
     />
-    <meta property="og:image" content="https://kaddio.com/img/kaddio-fade.png" />
+    <meta property="og:image" content={image} />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -18,12 +26,12 @@
     <meta property="twitter:url" content="https://kaddio.com" />
     <meta
         name="twitter:title"
-        content="Journalsystem, onlinebokning, kommunikation, fakturering"
+        content={title}
     />
     <meta
         name="twitter:description"
-        content="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra"
+        content={description}
     />
-    <meta name="twitter:image" content="https://kaddio.com/img/kaddio-fade.png" />
+    <meta name="twitter:image" content={image} />
 
 </svelte:head>
