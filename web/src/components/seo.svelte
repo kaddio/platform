@@ -5,6 +5,7 @@
     export let type: string;
     export let title: string;
     export let description: string;
+    export let keywords: string;
     export let images: Array<string>;
     export let phone: string;
     export let latitude: string;
@@ -16,8 +17,10 @@
 
 </script>
 
-
 <svelte:head>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+
     <!-- Facebook Meta Tags -->
     <meta property="og:site_name" content="Kaddio" />
     <meta property="og:locale" content="sv_SE" />
