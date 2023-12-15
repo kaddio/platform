@@ -5,6 +5,7 @@
     import LangBanner from './lang-banner.svelte';
     import MarketplaceBanner from './marketplace-banner.svelte';
     import Cookie from './cookie.svelte';
+    import Seo from './seo.svelte';
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -49,6 +50,8 @@
 </script>
 
 <svelte:window on:keydown={onKeyDown} />
+
+<Seo />
 
 <Cookie />
 
