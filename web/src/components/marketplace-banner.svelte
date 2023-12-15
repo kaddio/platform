@@ -11,7 +11,7 @@
     let marketplaceBannerDismiss: Writable<string>;
 
     if (browser) {
-        marketplaceBannerDismiss = writable<string>(window.localStorage.getItem('marketplaceBannerDismiss') ?? "false");
+        marketplaceBannerDismiss = writable<string>(window.sessionStorage.getItem('marketplaceBannerDismiss') ?? "false");
 
         marketplaceBannerDismiss.subscribe(
             (value) => (localStorage.marketplaceBannerDismiss = value)
