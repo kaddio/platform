@@ -46,7 +46,7 @@
     async function autocompleteSearch(input: string) {
         keywordInput = input;
         await loadAutocompleteResults(input);
-        console.log(items);
+
         return items;
     }
 
