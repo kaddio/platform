@@ -95,7 +95,11 @@
             class="mx-auto flex gap-5 align-middle justify-center items-center top-0 left-0 flex-col relative max-w-screen-lg py-16"
         >
             <h1 class="text-5xl flex gap-8 text-white">
-                <img src="https://kaddio.com/img/kaddio-logo.png" alt="" class="h-12" /> Kaddio
+                <img
+                    src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
+                    alt="Kaddio"
+                    class="h-24 invert"
+                />
             </h1>
 
             <h2 class="text-lg mb-6 text-white">Sök och hitta rätt klinik för dina behov</h2>
