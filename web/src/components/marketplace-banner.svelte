@@ -14,7 +14,7 @@
         marketplaceBannerDismiss = writable<string>(window.sessionStorage.getItem('marketplaceBannerDismiss') ?? "false");
 
         marketplaceBannerDismiss.subscribe(
-            (value) => (localStorage.marketplaceBannerDismiss = value)
+            (value) => (sessionStorage.marketplaceBannerDismiss = value)
         );
     }
 
