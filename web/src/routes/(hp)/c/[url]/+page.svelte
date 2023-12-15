@@ -70,7 +70,7 @@
             <div class="flex justify-between w-full">
                 <div class="flex gap-5">
                     <a href="/sv/hitta-klinik">
-                        <img src="/img/kaddio-logo.png" alt="" class="h-7" />
+                        <img src="/img/kaddio-logo.png" alt="Kaddio logotype" class="h-7" />
                     </a>
                     {#if showBackButton}
                         <a href="javascript:history.back()" class="text-white text-lg"
