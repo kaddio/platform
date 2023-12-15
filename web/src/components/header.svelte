@@ -51,7 +51,13 @@
 
 <svelte:window on:keydown={onKeyDown} />
 
-<Seo />
+<Seo 
+    url="https://kaddio.com" 
+    title="Journalsystem, onlinebokning, kommunikation, fakturering"
+    description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
+    image="https://kaddio.com/img/kaddio-fade.png" 
+    type="website" 
+ />
 
 <Cookie />
 
