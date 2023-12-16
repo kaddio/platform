@@ -49,21 +49,15 @@
                                 <a
                                     href="/{lang}/create"
                                     class="text-sm hover:underline leading-6 text-gray-600"
-                                    >{$_('Skapa konto')}</a
+                                    >{$_('Anslut ditt företag')}</a
                                 >
                             </li>
+
                             <li>
                                 <a
-                                    href="/about-us"
+                                    href="/{lang}/sales"
                                     class="text-sm hover:underline leading-6 text-gray-600"
-                                    >{$_('Om Kaddio')}</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="/{lang}/support"
-                                    class="text-sm hover:underline leading-6 text-gray-600"
-                                    >{$_('Kontakta Kaddio')}</a
+                                    >{$_('Kontakta sälj')}</a
                                 >
                             </li>
                         </ul>
