@@ -57,8 +57,9 @@
     url="https://kaddio.com" 
     title="Journalsystem, onlinebokning, kommunikation, fakturering"
     description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
-    image="https://kaddio.com/img/kaddio-fade.png" 
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
     type="website" 
+    phone="+46313204414"
  />
 
  <LdTag schema={kaddioOrgSchema} />
