@@ -60,17 +60,18 @@
  <!-- <LdTag schema={localBusinessSchema} /> -->
  
  <svelte:head>
-    <title>{organization.name} - {organization.keywords?.join(', ')} - {organization.city}</title>
+    <title>{organization.name}, {organization.city} - Kaddio</title>
  </svelte:head>
 
 <Seo
     url={`https://kaddio.com/c/${organization.url}`}
     type="business.business" 
     keywords={organization.keywords?.join(', ')} 
-    title={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
+    title={`${organization.name}, ${organization.city} - Kaddio`}
     description={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
     locality={organization.city} 
     images={imagesFromImageHandler} 
+    streetAddress={organization.address}
 />
 
 <div class="w-screen h-full bg-gray-100 pb-8">
