@@ -8,8 +8,8 @@
     export let keywords: string;
     export let images: Array<string>;
     export let phone: string;
-    export let latitude: string;
-    export let longitude: string;
+    export let latitude: string = "";
+    export let longitude: string = "";
     export let streetAddress: string;
     export let locality: string;
     export let country: string;
