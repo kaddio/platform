@@ -5,12 +5,13 @@
     import AutocompletePlace from './components/AutocompletePlace.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import KeywordCard from './components/KeywordCard.svelte';
-    import { keywords, allKeywords, keywordsByCategory } from './keywords';
-    import { places } from './places';
+    import { keywords, keywordsByCategory } from './keywords';
     import AutocompleteKeyword from './components/AutocompleteKeyword.svelte';
-    import { entries } from 'lodash';
+    import Seo from '$components/seo.svelte';
 
     export let data: PageData;
+    let keywordInput: string;
+
     let page = 0;
     let searchForm: HTMLFormElement;
     let selectedItem =
@@ -50,7 +51,16 @@
 
     const placePart = () =>
         myPlace || (selectedPlace ? encodeURIComponent(selectedPlace.name) : 'Sverige');
-    const keywordPart = () => (selectedItem ? encodeURIComponent(selectedItem.label) : 'Alla');
+
+    const keywordPart = () => {
+        if (selectedItem) {
+            return encodeURIComponent(selectedItem.label);
+        }
+        if (keywordInput) {
+            return encodeURIComponent(keywordInput);
+        }
+        return 'Alla';
+    };
 
     const getUrl = () => `/sv/hitta-klinik/${keywordPart()}/${placePart()}`;
 
@@ -72,9 +82,14 @@
     });
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex" />
-</svelte:head>
+<Seo
+    url="https://kaddio.com/sv/hitta-klinik"
+    type="website" 
+    keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage" 
+    title="Boka hälsa på Kaddio"
+    description="På Kaddio kan du hitta och boka allt inom hälsa över hela Sverige"
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+/>
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative p-4 md:p-16">
@@ -86,7 +101,11 @@
             class="mx-auto flex gap-5 align-middle justify-center items-center top-0 left-0 flex-col relative max-w-screen-lg py-16"
         >
             <h1 class="text-5xl flex gap-8 text-white">
-                <img src="https://kaddio.com/img/kaddio-logo.png" alt="" class="h-12" /> Kaddio
+                <img
+                    src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
+                    alt="Kaddio"
+                    class="h-24 invert"
+                />
             </h1>
 
             <h2 class="text-lg mb-6 text-white">Sök och hitta rätt klinik för dina behov</h2>
@@ -96,6 +115,7 @@
                 name="searchForm"
                 bind:this={searchForm}
                 method="GET"
+                on:submit|preventDefault={() => {}}
                 action={getUrl()}
             >
                 <div class="flex flex-col col-span-2 md:col-span-1">
@@ -165,9 +185,9 @@
         @apply bg-purple-500;
     }
 
-    :global(:root) {
+    /* :global(:root) {
         font-size: clamp(12px, 0.5711rem + 0.5725vw, 15px);
-    }
+    } */
 
     :global(.purple-img) {
         filter: sepia(30%) hue-rotate(340deg) saturate(50%) brightness(80%);

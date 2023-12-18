@@ -91,8 +91,11 @@
         >
             <a href="/sv/hitta-klinik">
                 <h1 class="text-xl flex gap-4 text-white font-semibold">
-                    <img src="/img/kaddio-logo.png" alt="" class="h-8 relative" /><span>Kaddio</span
-                    >
+                    <img
+                        src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
+                        alt="Kaddio"
+                        class="h-14 invert"
+                    />
                 </h1>
             </a>
 
@@ -183,7 +186,7 @@
         @apply bg-purple-500;
     }
 
-    :global(:root) {
+    /* :global(:root) {
         font-size: clamp(12px, 0.5711rem + 0.5725vw, 15px);
-    }
+    } */
 </style>

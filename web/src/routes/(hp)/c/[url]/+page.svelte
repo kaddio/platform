@@ -18,6 +18,9 @@
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import { imageHandler } from '../../../../lib/img';
     import Map from '../../../../components/map.svelte';
+    import Seo from '$components/seo.svelte';
+    import LdTag from '$lib/components/LDTag.svelte';
+    import { localBusinessSchema } from '$lib/json-ld';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -44,18 +47,32 @@
         `${organization.address} ${organization.city}`,
         ...organization.places.map((p) => `${p.address} ${p.city}`)
     ];
+
+    const imagesFromImageHandler = organization.homepage?.pics.map((p) =>
+        imageHandler(p, {
+            format: 'auto',
+            width: 1280
+        })
+    );
+
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex" />
-    <!--keywords for search engines-->
-    <meta name="keywords" content={organization.keywords?.join(', ')} />
-    <title>{organization.name} - {organization.keywords?.join(', ')} - {organization.city}</title>
-    <meta
-        name="description"
-        content="{organization.name} - {organization.keywords?.join(', ')} - {organization.city}"
-    />
-</svelte:head>
+ <!-- <LdTag schema={localBusinessSchema} /> -->
+ 
+ <svelte:head>
+    <title>{organization.name}, {organization.city} - Kaddio</title>
+ </svelte:head>
+
+<Seo
+    url={`https://kaddio.com/c/${organization.url}`}
+    type="business.business" 
+    keywords={organization.keywords?.join(', ')} 
+    title={`${organization.name}, ${organization.city} - Kaddio`}
+    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
+    locality={organization.city} 
+    images={imagesFromImageHandler} 
+    streetAddress={organization.address}
+/>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
     <div
@@ -70,7 +87,7 @@
             <div class="flex justify-between w-full">
                 <div class="flex gap-5">
                     <a href="/sv/hitta-klinik">
-                        <img src="/img/kaddio-logo.png" alt="" class="h-7" />
+                        <img src="/img/kaddio-logo.png" alt="Kaddio logotype" class="h-7" />
                     </a>
                     {#if showBackButton}
                         <a href="javascript:history.back()" class="text-white text-lg"
@@ -122,11 +139,15 @@
                             >Personal</a
                         >
                     {/if}
-                    <!-- <a class="text-sm uppercase text-gray-500 font-semibold">
-                        Omdömen
-                        <span class="text-gray-800">{organization.stars?.toFixed(1)}</span>
-                        <i class="fa fa-star text-yellow-500" />
-                    </a> -->
+                    {#if organization.useReviews}
+                        <a class="text-sm uppercase text-gray-500 font-semibold" href="#reviews">
+                            Omdömen
+                            <span class="text-gray-800"
+                                >{organization.stars && organization.stars.toFixed(1)}</span
+                            >
+                            <i class="fa fa-star text-yellow-500" />
+                        </a>
+                    {/if}
                 </div>
             </div>
         {/if}
@@ -195,9 +216,17 @@
             </Card>
         </div>
     </div>
-    <!-- <div class="mx-auto max-w-screen-lg mt-8">
-		<Reviews reviews={organization.reviews} />
-	</div> -->
+    {#if organization.useReviews}
+        <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
+            <Reviews
+                reviews={organization.reviews}
+                histogram={organization.starsHistogram}
+                reviewCount={organization.reviewCount}
+                stars={organization.stars}
+            />
+        </div>
+    {/if}
+
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         {#if organization.homepage?.showUs}
             <Card
@@ -228,7 +257,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background: rgb(255, 255, 255);
+        background: rgb(255, 255, 255, 0);
         /* mix-blend-mode: multiply; */
         background: linear-gradient(
             180deg in oklab,

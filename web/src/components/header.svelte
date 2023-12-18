@@ -3,7 +3,11 @@
     import { _, link } from '$lib/stores';
     import { getContext } from 'svelte';
     import LangBanner from './lang-banner.svelte';
+    import MarketplaceBanner from './marketplace-banner.svelte';
     import Cookie from './cookie.svelte';
+    import Seo from './seo.svelte';
+    import LdTag from '$lib/components/LDTag.svelte';
+    import { kaddioOrgSchema } from '$lib/json-ld';
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -49,10 +53,22 @@
 
 <svelte:window on:keydown={onKeyDown} />
 
+<Seo 
+    url="https://kaddio.com" 
+    title="Journalsystem, onlinebokning, kommunikation, fakturering"
+    description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+    type="website" 
+    phone="+46313204414"
+ />
+
+ <LdTag schema={kaddioOrgSchema} />
+
 <Cookie />
 
 <header class="relative isolate z-10">
     <LangBanner />
+    <MarketplaceBanner />
 
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 gap-x-6 lg:px-8"

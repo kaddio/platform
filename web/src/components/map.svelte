@@ -108,7 +108,9 @@
         // console.log('address', address)
         window.initMap = async function () {
             const map = new google.maps.Map(container, {
-                zoom: 15,
+                maxZoom: 16,
+                minZoom: 2,
+                zoom: 14,
                 styles: styles,
                 scrollwheel: !1,
                 mapTypeControl: false
@@ -133,7 +135,7 @@
                     bounds.extend(marker.getPosition());
 
                     marker.addListener('click', () => {
-                        map.setZoom(10);
+                        map.setZoom(15);
                         map.setCenter(marker.getPosition());
                     });
                 })

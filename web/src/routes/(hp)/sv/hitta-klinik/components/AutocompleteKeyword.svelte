@@ -1,11 +1,27 @@
 <script lang="ts">
     import AutoComplete from 'simple-svelte-autocomplete';
     import { apiUrl } from '$lib/apiUrl';
+    import { onMount } from 'svelte';
 
     export let onChange: (item: any) => void;
     export let selectedKeyword: any;
+    export let keywordInput;
 
-    async function autocompleteSearch(input: string) {
+    const debounce = (fn, delay) => {
+        let timeoutID;
+        return function (...args) {
+            if (timeoutID) {
+                clearTimeout(timeoutID);
+            }
+            timeoutID = setTimeout(() => {
+                fn(...args);
+            }, delay);
+        };
+    };
+
+    let loadedItems = [];
+    let items = [];
+    const loadAutocompleteResults = debounce(async function (input: string) {
         const query = `
         query {
             autocompleteSearch(query: "${input}") {
@@ -24,27 +40,36 @@
         });
 
         const data = await result.json();
-        const searchItem = input
-            ? [
-                  {
-                      type: 'KEYWORD',
-                      label: input
-                  }
-              ]
-            : [
-                  {
-                      type: 'SHOW_ALL',
-                      label: undefined
-                  }
-              ];
-        return [...searchItem, ...data.data.autocompleteSearch];
+        console.log(data);
+        loadedItems = data.data.autocompleteSearch;
+    }, 200);
+
+    async function autocompleteSearch(input: string) {
+        keywordInput = input;
+        await loadAutocompleteResults(input);
+        return items;
     }
+
+    $: searchItem = keywordInput
+        ? {
+              type: 'FIND',
+              label: keywordInput
+          }
+        : {
+              type: 'SHOW_ALL',
+              label: undefined
+          };
+    $: items = [searchItem, ...loadedItems];
+
+    //this is a hack to let links in the dropdown to work as ordinary links
     const onChangeLocal = function () {
         if (selectedKeyword?.type == 'ORG') {
             return;
         }
         onChange(selectedKeyword);
     };
+
+    autocompleteSearch('');
 
     $: showClear = !!selectedKeyword;
     $: if (selectedKeyword?.type == 'SHOW_ALL') {
@@ -66,8 +91,9 @@
     hideArrow={true}
     labelFunction={(i) => i?.label}
     searchFunction={autocompleteSearch}
+    {items}
     bind:selectedItem={selectedKeyword}
-    delay={200}
+    delay={0}
 >
     <div slot="item" let:item let:label>
         <div class="py-1">
