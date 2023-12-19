@@ -35,6 +35,7 @@ export async function load({ params, fetch }) {
                         clientVisibleLength
                         bookingLink
                         description
+                        nextFreeTime
                     }
                     homepage {
                         headerImg
