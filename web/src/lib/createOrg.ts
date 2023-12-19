@@ -1,47 +1,44 @@
 import { fail } from '@sveltejs/kit';
 
-export const createOrg = async function({request}){
+export const createOrg = async function ({ request }) {
+    const data = await request.formData();
+    const jsonData = Object.fromEntries(data.entries());
 
-        const data = await request.formData();
-        const jsonData = Object.fromEntries(data.entries());
+    const URL = 'https://api.kaddio.com/api/org'; //'http://localhost:3000/api/org'
 
-        console.log(jsonData)
+    console.log(jsonData);
 
-        try{
-            const response = await fetch('https://api.kaddio.com/api/org', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(jsonData)
-            });
-            
-            const r = await response.json();
-            console.log(r);
+    let r;
 
-            if(r.status == 'success'){
-                return {
-                    success: true
-                }
-            }
+    try {
+        const response = await fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(jsonData)
+        });
 
-            else if(r.status == 'fail' && r.msg == 'Alla fält är ej ifyllda'){
-                return fail(400, {
-                    missingFields: true
-                })
-            }
+        r = await response.json();
+        console.log(r);
+    } catch (e) {
+        console.log(e);
+        return fail(400, { success: false });
+    }
 
-            else if(r.status == 'fail' && r.msg == 'URL är upptagen, prova med en annan'){
-                return fail(400, {
-                    urlUnavailable: true
-                })
-            }
+    if (r.status == 'success') {
+        return {
+            success: true
+        };
+    } else if (r.status == 'fail' && r.msg == 'Alla fält är ej ifyllda') {
+        return fail(400, {
+            missingFields: true
+        });
+    } else if (r.status == 'fail' && r.msg == 'URL är upptagen, prova med en annan') {
+        return fail(400, {
+            urlUnavailable: true
+        });
+    }
 
-            return fail(400)
-        }
-
-        catch(e){
-            console.log(e);
-            return fail(400, {success: false});
-        }
-}
+    return fail(400);
+};

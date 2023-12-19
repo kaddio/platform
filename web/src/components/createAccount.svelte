@@ -37,7 +37,7 @@
     <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
         <!-- <Cloud /> -->
         {#if $page.form?.success}
-            <div class="mx-auto max-w-2xl text-center">
+            <div id="account-created-successfully" class="mx-auto max-w-2xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{ $_('Tack!')}</h2>
                 <p class="mt-2 text-lg leading-8 text-gray-600">{ $_('Kontot är skapat, kolla din mail för att logga in.')}</p>
             </div>

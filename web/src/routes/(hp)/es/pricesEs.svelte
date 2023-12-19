@@ -3,7 +3,7 @@
 
     const modules = [{
         name: "Core",
-		price: 12,
+		price: 13,
 		selected: true,
         disabled: true
     },
@@ -14,12 +14,8 @@
 	},
     {
 		name: "Reservas y Calendario",
-		price: 6,
+		price: 9,
 		selected: true
-	},
-    {
-		name: "Documentos",
-		price: 2
 	},
     {
 		name: "Facturación",
@@ -28,14 +24,6 @@
     {
 		name: "Vídeo y chat",
 		price: 9
-	},
-    {
-		name: "Página web",
-		price: 2
-	},
-    {
-		name: "Tareas",
-		price: 2
 	}
 ]
 </script>

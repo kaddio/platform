@@ -29,6 +29,7 @@ export async function loadData({
 			url,
 			keywords,
 			hasBooking,
+            stars,
             showBooking,
 			bookingTypes {
 				name,

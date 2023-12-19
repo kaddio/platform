@@ -4,7 +4,7 @@
     const modules = [
         {
             name: 'Core',
-            price: 149,
+            price: 159,
             selected: true,
             disabled: true
         },
@@ -15,7 +15,7 @@
         },
         {
             name: 'Tidsbokning & Kalender',
-            price: 79,
+            price: 119,
             selected: true
         },
         {
@@ -25,10 +25,6 @@
         {
             name: 'Chat och Video',
             price: 119
-        },
-        {
-            name: 'Dokument',
-            price: 29
         }
     ];
 </script>

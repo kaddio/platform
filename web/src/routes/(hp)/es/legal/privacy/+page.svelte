@@ -60,7 +60,9 @@
 
     <LegalUl>
       <LegalLi><strong class="font-semibold text-gray-900">Mejora.</strong> La información que recopilamos se utiliza para proporcionar, mejorar y proteger nuestros servicios.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> Kaddio utiliza cookies únicamente para fines de equilibrio de carga y seguridad. No se utiliza para ningún otro propósito.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> kaddio.com (el propio sitio web de Kaddio) utiliza cookies para marketing. La aplicación Kaddio utiliza cookies únicamente para fines de equilibrio de carga y seguridad.</LegalLi>      
+
+
     </LegalUl>
 
 

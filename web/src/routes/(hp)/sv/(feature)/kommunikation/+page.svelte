@@ -1,8 +1,8 @@
 <script>
     import Qa from '$components/qa.svelte';
-    import ModuleFeature from '$components/moduleFeature.svelte';
-    import ModuleSection from '$components/moduleSection.svelte';
     import FaqSection from '$components/faqSection.svelte';
+    import ModuleSectionWithImage from '$components/moduleSectionWithImage.svelte';
+    import ModuleFeatureWithIcon from '$components/moduleFeatureWithIcon.svelte';
 </script>
 
 <svelte:head>
@@ -10,35 +10,43 @@
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
 </svelte:head>
 
-<ModuleSection>
-    <span slot="title">Kaddio Chat och Video</span>
-    <span slot="sub">Chat och video för upp till 500 samtidiga deltagare</span>
 
-    <ModuleFeature>
-        <span slot="title">Ställ krav på säkerheten</span>
-        <span slot="body">
-            Kräv inloggning till samtalet eller chatten med Mobilt BankID eller
+<ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Journalsystem">
+	<span slot="h1">Kommunikation</span>
+	<span slot="title">Kaddio Chat och Video</span>
+	<span slot="sub">
+		Med Kaddio Chat och video kan du chatta krypterat via chat och video både inom och utom din organisation.
+	</span>
+
+	<ModuleFeatureWithIcon icon="lock">
+		<span slot="title">Ställ krav på säkerheten</span>
+		<span slot="body">
+			Kräv inloggning till samtalet eller chatten med Mobilt BankID eller
             tvåfaktorsautentisering. Kaddios inloggningsalternativ uppfyller Socialstyrelsens krav
             på stark autentisering.
-        </span>
-    </ModuleFeature>
+		</span> 
+	</ModuleFeatureWithIcon>
 
-    <ModuleFeature>
-        <span slot="title">Dela information</span>
-        <span slot="body">
-            Skicka känslig information på ett säkert sätt genom chatten. Dela skärm under
+	<ModuleFeatureWithIcon icon="share">
+		<span slot="title">Dela information</span>
+		<span slot="body">
+			Skicka känslig information på ett säkert sätt genom chatten. Dela skärm under
             videosamtal. Spela in videosamtal som klient kan ladda ner.
-        </span>
-    </ModuleFeature>
+		</span>
+	</ModuleFeatureWithIcon>
 
-    <ModuleFeature>
-        <span slot="title">Väx med Kaddio</span>
-        <span slot="body">
-            Håll enskilda samtal eller stora föreläsningar. Kaddio Video har stöd för minst 500
+	<ModuleFeatureWithIcon icon="seedling">
+		<span slot="title">Väx med Kaddio</span>
+		<span slot="body">
+			Håll enskilda samtal eller stora föreläsningar. Kaddio Video har stöd för minst 500
             deltagare samtidigt.
-        </span>
-    </ModuleFeature>
-</ModuleSection>
+		</span>
+	</ModuleFeatureWithIcon>
+
+</ModuleSectionWithImage>
+
+
+
 
 <FaqSection>
     <span slot="title">Detaljer</span>
