@@ -82,6 +82,11 @@
     });
 </script>
 
+
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
+<!-- 
 <Seo
     url="https://kaddio.com/sv/hitta-klinik"
     type="website" 
@@ -89,7 +94,7 @@
     title="Boka hälsa på Kaddio"
     description="På Kaddio kan du hitta och boka allt inom hälsa över hela Sverige"
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
-/>
+/> -->
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative p-4 md:p-16">
