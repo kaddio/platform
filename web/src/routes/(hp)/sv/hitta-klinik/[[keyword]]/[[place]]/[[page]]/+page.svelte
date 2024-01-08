@@ -21,7 +21,7 @@
             : undefined;
     setContext('lang', 'sv');
     const isLocation = data.place?.match(/[+-]?([0-9]*[.])?[0-9]+,[+-]?([0-9]*[.])?[0-9]+/);
-    let myPlace;
+    let myPlace = isLocation ? data.place : undefined;
     let selectedPlace = isLocation
         ? { name: 'Min plats' }
         : data.place && data.place !== 'Sverige'
@@ -66,7 +66,7 @@
     const placePart = () =>
         myPlace || (selectedPlace ? encodeURIComponent(selectedPlace.name) : 'Sverige');
     const keywordPart = () => (selectedItem ? encodeURIComponent(selectedItem.label) : 'Alla');
-    $: console.log({ selectedItem, selectedPlace });
+    $: console.log({ myPlace });
     const getUrl = () => `/sv/hitta-klinik/${keywordPart()}/${placePart()}`;
 
     const submit = function () {
