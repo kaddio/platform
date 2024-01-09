@@ -13,7 +13,7 @@
     }
 </script>
 
-<dialog bind:this={dialog} class="rounded-xl relative">
+<dialog bind:this={dialog} class="rounded-xl relative pt-4">
     <div class="absolute top-0 right-0 m-4" class:hidden={!closeButton}>
         <KdButton
             on:click={() => {
