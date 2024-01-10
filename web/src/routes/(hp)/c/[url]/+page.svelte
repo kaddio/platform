@@ -21,6 +21,7 @@
     import Seo from '$components/seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { localBusinessSchema } from '$lib/json-ld';
+    import Links from './components/links.svelte';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -54,23 +55,24 @@
             width: 1280
         })
     );
-
 </script>
 
- <!-- <LdTag schema={localBusinessSchema} /> -->
- 
- <svelte:head>
+<!-- <LdTag schema={localBusinessSchema} /> -->
+
+<svelte:head>
     <title>{organization.name}, {organization.city} - Kaddio</title>
- </svelte:head>
+</svelte:head>
 
 <Seo
     url={`https://kaddio.com/c/${organization.url}`}
-    type="business.business" 
-    keywords={organization.keywords?.join(', ')} 
+    type="business.business"
+    keywords={organization.keywords?.join(', ')}
     title={`${organization.name}, ${organization.city} - Kaddio`}
-    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
-    locality={organization.city} 
-    images={imagesFromImageHandler} 
+    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${
+        organization.city
+    }`}
+    locality={organization.city}
+    images={imagesFromImageHandler}
     streetAddress={organization.address}
 />
 
@@ -162,13 +164,10 @@
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
 
-                {#if organization.homepage?.links.length}
-                    <div class="flex flex-col gap-4 my-8 mx-8">
-                        {#each organization.homepage?.links as link}
-                            <Link href={link.url} type={link.type} />
-                        {/each}
-                    </div>
-                {/if}
+                <div class="flex flex-col gap-4 my-8 mx-8">
+                    <Links links={organization.homepage?.links} />
+                </div>
+
                 {#if organization.hasContactForm}
                     <KdLinkButton
                         href="https://{organization.url}.kaddio.com/contact-us"

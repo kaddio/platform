@@ -44,8 +44,12 @@ export async function load({ params, fetch }) {
                         showPlaces
                         showUs
                         links {
-                            type
-                            url
+                            facebook
+                            instagram
+                            linkedin
+                            external
+                            telephone
+                            email
                         }
                     }
                     hosts {
