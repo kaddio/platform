@@ -9,6 +9,7 @@
     import BookingTypes from './components/booking_types.svelte';
     import Hosts from './components/hosts.svelte';
     import Link from './components/link.svelte';
+    import Links from './components/links.svelte';
     import KdLinkButton from '../../../../components/kdLinkButton.svelte';
 
     import { page } from '$app/stores';
@@ -21,7 +22,6 @@
     import Seo from '$components/seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { localBusinessSchema } from '$lib/json-ld';
-    import Links from './components/links.svelte';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -164,10 +164,14 @@
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
 
-                <div class="flex flex-col gap-4 my-8 mx-8">
-                    <Links links={organization.homepage?.links} />
-                </div>
-
+                {#if organization.homepage?.links.length}
+                    <div class="flex flex-col gap-4 my-8 mx-8">
+                        <Links links={organization.homepage} />
+                        {#each organization.homepage?.links as link}
+                            <Link href={link.url} type={link.type} />
+                        {/each}
+                    </div>
+                {/if}
                 {#if organization.hasContactForm}
                     <KdLinkButton
                         href="https://{organization.url}.kaddio.com/contact-us"

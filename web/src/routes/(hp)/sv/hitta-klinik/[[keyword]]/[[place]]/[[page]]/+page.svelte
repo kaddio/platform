@@ -77,7 +77,7 @@
     };
 
     const keywordPart = () => (selectedItem ? encodeURIComponent(selectedItem.label) : 'Alla');
-    $: console.log({ myCoords });
+
     const getUrl = () => `/sv/hitta-klinik/${keywordPart()}/${placePart()}`;
 
     const submit = function () {
