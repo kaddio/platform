@@ -106,7 +106,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 	<ModuleFeature>
 		<span slot="title">Product copy</span>
 		<span slot="body">
-			Consistency is key, being consistent to the very word helps us reuse sentences for translations. Avoiding specifics and being as general as possible also ensures the copy will have a long life and that it's translations can be reused.
+			Consistency is key, being consistent to the very word helps us reuse sentences for translations. Avoiding specifics and being as general as possible also ensures the copy will have a long life and that it's translations can be reused. All product copy is written in Swedish and then translated.
 		</span>
 	</ModuleFeature>
 
