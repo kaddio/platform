@@ -127,7 +127,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
   <ModuleFeature>
 		<span slot="title">Don't ✨ with 🙃</span>
 		<span slot="body">
-      <strong>Avoid</strong> 😃 🐖 <i>and</i> <strong><i>mixing <i style="text-decoration: underline">of styles</i></strong>. When used, it must have a well defined purpose. 
+      <strong>Avoid</strong> emojis/icons <i>and</i> <strong><i>mixing <i style="text-decoration: underline">of styles</i></strong>. When used, it must have a well defined purpose. 
 		</span>
 	</ModuleFeature>
 
