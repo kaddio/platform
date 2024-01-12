@@ -86,34 +86,48 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This is how we approach writing so that it's consistent with our brand. Our tone is always professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. "Don't make me think" may be used as a guideline.
+		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. Use "Don't make me think" as a guideline.
 	</span>
 
 	<ModuleFeature>
 		<span slot="title">Help articles</span>
 		<span slot="body">
-		 	Should mainly communicate product values. Should be very much to the point, short and concise. Help articles should be easy to understand. Avoid specifics if possible and give the article a long life.
+		 	Should mainly communicate product values. Should be very much to the point, short and concise. Help articles should be easy to understand. Avoid specifics to give the article a long life.
 		</span> 
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Social media</span>
 		<span slot="body">
-			Writing for social media is more laid back, but must be consistent with our values, here it's the company values that are important. It's a way to show our human side.
+			Writing for social media is more laid back, but still consistent with our values, more focus on company values. It's a way to show our human side.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Product copy</span>
 		<span slot="body">
-			Consistency is key here, being consistent to the very word helps us reuse sentences for translations. Avoid specifics and be as general as possible also ensures the copy will have a long life and that it's translations can be reused.
+			Consistency is key, being consistent to the very word helps us reuse sentences for translations. Avoiding specifics and being as general as possible also ensures the copy will have a long life and that it's translations can be reused.
 		</span>
 	</ModuleFeature>
 
 	<ModuleFeature>
 		<span slot="title">Newsletters</span>
 		<span slot="body">
-			Newsletters are currently our main channel to customers. We communicate both product and company values. Newsletters should be easy to grasp and be written in a way that makes the recipient feel like they're talking to a friend.
+			Today, Newsletters are our main channel to customers. We communicate both product and company values. Newsletters should be easy to grasp and be written in such a way that it makes the reader feel like a friend is talking to them.
+		</span>
+	</ModuleFeature>
+
+  <ModuleFeature>
+		<span slot="title">Dashboard news</span>
+		<span slot="body">
+			The dashboard is where all of our users start their sessions. The message here should be short and up-to-date. 3-5 items in total and 1-2 sentences per item. News is about the now so avoid using the word "now". Any news must not be older than 4 weeks.
+		</span>
+	</ModuleFeature>
+
+  <ModuleFeature>
+		<span slot="title">Don't ✨ with 🙃</span>
+		<span slot="body">
+      <strong>Avoid</strong> 😃 🐖 <i>and</i> <strong><i>mixing <i style="text-decoration: underline">of styles</i></strong>. When used, it must have a well defined purpose. 
 		</span>
 	</ModuleFeature>
 
