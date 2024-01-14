@@ -4,6 +4,9 @@
     let dialog: HTMLDialogElement;
     export let open = true;
     export let closeButton = true;
+
+    export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'md';
+
     $: if (dialog) {
         if (open) {
             dialog.showModal();
@@ -13,7 +16,9 @@
     }
 </script>
 
-<dialog bind:this={dialog} class="rounded-xl relative">
+<!--tailwind whitelist-->
+
+<dialog bind:this={dialog} class="rounded-xl relative pt-4 {size}">
     <div class="absolute top-0 right-0 m-4" class:hidden={!closeButton}>
         <KdButton
             on:click={() => {
@@ -46,5 +51,25 @@
 
     dialog {
         position: fixed;
+    }
+
+    dialog.xs {
+        width: 20rem;
+    }
+
+    dialog.sm {
+        width: 30rem;
+    }
+
+    dialog.md {
+        width: 40rem;
+    }
+
+    dialog.lg {
+        width: 50rem;
+    }
+
+    dialog.xl {
+        width: 60rem;
     }
 </style>

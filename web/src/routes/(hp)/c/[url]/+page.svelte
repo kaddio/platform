@@ -9,6 +9,7 @@
     import BookingTypes from './components/booking_types.svelte';
     import Hosts from './components/hosts.svelte';
     import Link from './components/link.svelte';
+    import Links from './components/links.svelte';
     import KdLinkButton from '../../../../components/kdLinkButton.svelte';
 
     import { page } from '$app/stores';
@@ -54,27 +55,27 @@
             width: 1280
         })
     );
-
 </script>
 
- <!-- <LdTag schema={localBusinessSchema} /> -->
+<!-- <LdTag schema={localBusinessSchema} /> -->
 <!--  
  <svelte:head>
     <title>{organization.name}, {organization.city} - Kaddio</title>
  </svelte:head> -->
 
-
 <svelte:head>
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
 </svelte:head>
 <!-- <Seo
     url={`https://kaddio.com/c/${organization.url}`}
-    type="business.business" 
-    keywords={organization.keywords?.join(', ')} 
+    type="business.business"
+    keywords={organization.keywords?.join(', ')}
     title={`${organization.name}, ${organization.city} - Kaddio`}
-    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`}
-    locality={organization.city} 
-    images={imagesFromImageHandler} 
+    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${
+        organization.city
+    }`}
+    locality={organization.city}
+    images={imagesFromImageHandler}
     streetAddress={organization.address}
 /> -->
 
@@ -168,6 +169,7 @@
 
                 {#if organization.homepage?.links.length}
                     <div class="flex flex-col gap-4 my-8 mx-8">
+                        <Links links={organization.homepage} />
                         {#each organization.homepage?.links as link}
                             <Link href={link.url} type={link.type} />
                         {/each}

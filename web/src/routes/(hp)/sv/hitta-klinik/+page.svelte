@@ -22,7 +22,7 @@
             : undefined;
     setContext('lang', 'sv');
     const isLocation = data.place?.match(/[+-]?([0-9]*[.])?[0-9]+,[+-]?([0-9]*[.])?[0-9]+/);
-    let myPlace;
+    let myCoords;
     let selectedPlace = isLocation
         ? { name: 'Min plats' }
         : data.place && data.place !== 'Sverige'
@@ -36,7 +36,7 @@
         navigator.geolocation.getCurrentPosition(
             function success(position) {
                 loadingPlace = false;
-                myPlace = [position.coords.longitude, position.coords.latitude].join(',');
+                myCoords = [position.coords.longitude, position.coords.latitude].join(',');
 
                 selectedPlace = {
                     name: 'Min plats'
@@ -49,8 +49,20 @@
         );
     };
 
-    const placePart = () =>
-        myPlace || (selectedPlace ? encodeURIComponent(selectedPlace.name) : 'Sverige');
+    const placePart = () => {
+        if (!selectedPlace) {
+            return 'Sverige';
+        }
+        if (myCoords) {
+            return encodeURIComponent(myCoords);
+        }
+
+        if (!myCoords) {
+            return encodeURIComponent(selectedPlace.name);
+        }
+    };
+
+    myCoords || (selectedPlace ? encodeURIComponent(selectedPlace.name) : 'Sverige');
 
     const keywordPart = () => {
         if (selectedItem) {
@@ -82,15 +94,14 @@
     });
 </script>
 
-
 <svelte:head>
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
 </svelte:head>
 <!-- 
 <Seo
     url="https://kaddio.com/sv/hitta-klinik"
-    type="website" 
-    keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage" 
+    type="website"
+    keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
     title="Boka hälsa på Kaddio"
     description="På Kaddio kan du hitta och boka allt inom hälsa över hela Sverige"
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 

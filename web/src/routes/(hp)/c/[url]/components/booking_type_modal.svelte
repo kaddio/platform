@@ -19,7 +19,7 @@
                 {bookingType.clientVisibleLength} min · {bookingType.price} kr
             </div>
         </div>
-        <div slot="body" class="prose p-8 font-normal">
+        <div slot="body" class="p-8 font-normal">
             {bookingType.description}
         </div>
     </KdModal>

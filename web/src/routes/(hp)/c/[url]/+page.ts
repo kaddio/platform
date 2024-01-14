@@ -47,6 +47,8 @@ export async function load({ params, fetch }) {
                             type
                             url
                         }
+                        telephone
+                        email
                     }
                     hosts {
                         firstname

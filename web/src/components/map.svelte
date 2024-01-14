@@ -118,7 +118,6 @@
             if ('ontouchstart' in window) {
                 map.setOptions({
                     draggable: false,
-                    zoomControl: false,
                     scrollwheel: false,
                     disableDoubleClickZoom: true
                 });

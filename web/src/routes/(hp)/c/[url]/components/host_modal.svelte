@@ -17,10 +17,12 @@
                 {host.firstname}
                 {host.lastname}
             </div>
-            <div class="text-gray-400">
-                {host.title}
-            </div>
+            {#if host.title}
+                <div class="text-gray-400">
+                    {host.title}
+                </div>
+            {/if}
         </div>
-        <div slot="body" class="prose p-8 font-normal">{host.presentation}</div>
+        <div slot="body" class="p-8 font-normal">{host.presentation}</div>
     </KdModal>
 {/if}
