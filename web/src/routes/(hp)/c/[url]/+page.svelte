@@ -45,8 +45,8 @@
     });
 
     const addresses = [
-        `${organization.address} ${organization.city}`,
-        ...organization.places.map((p) => `${p.address} ${p.city}`)
+        `${organization.address}, ${organization.city}`,
+        ...organization.places.map((p) => `${p.address}, ${p.city}`)
     ];
 
     const imagesFromImageHandler = organization.homepage?.pics.map((p) =>
@@ -55,6 +55,11 @@
             width: 1280
         })
     );
+
+    function removeStyleAttributesWithRegex(html) {
+        // Use a regular expression to remove style attributes
+        return html.replace(/style\s*=\s*["'][^"']*["']/gi, '');
+    }
 </script>
 
 <!-- <LdTag schema={localBusinessSchema} /> -->
@@ -159,7 +164,9 @@
         <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5">
             <Card className="grow col-span-5 md:col-span-3 ">
                 <div class="prose p-8">
-                    {@html organization.homepage?.presentation || 'Välkommen!'}
+                    {@html removeStyleAttributesWithRegex(
+                        organization.homepage?.presentation || 'Välkommen!'
+                    )}
                     <!-- <a href="">Läs mer</a> -->
                 </div>
             </Card>

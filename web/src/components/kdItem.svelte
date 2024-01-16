@@ -8,12 +8,12 @@
         </div>
     {/if}
     <!-- <div  class="kd-item-icon"><slot name="avatar"></slot></div> -->
-    <div class=" flex flex-col gap-0 grow">
+    <div class=" flex flex-col gap-0 grow shrink">
         <div><slot name="title" /></div>
         <div class="text-sm text-gray-400 font-semibold"><slot name="subtitle" /></div>
     </div>
 
-    <div><slot name="action" /></div>
+    <div class="shrink-0"><slot name="action" /></div>
 </div>
 
 <style>

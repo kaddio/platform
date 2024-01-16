@@ -93,13 +93,13 @@
         longitude: number;
     }
     const addressToCoordinates = function (address: string): Promise<Coordinates> {
-        return new Promise<Coordinates>((resolve, reject) => {
+        return new Promise<Coordinates | undefined>((resolve, reject) => {
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({ address: address }, function (result, status: string) {
-                if ((status = 'OK')) {
+                if ((status = 'OK') && result) {
                     resolve(result[0].geometry.location);
                 } else {
-                    reject(new Error('addressToCoordinates ' + result));
+                    resolve(undefined);
                 }
             });
         });
@@ -126,7 +126,7 @@
             await Promise.all(
                 addresses.map(async (address) => {
                     const center: Coordinates = await addressToCoordinates(address);
-
+                    if (!center) return;
                     const marker = new google.maps.Marker({
                         map: map,
                         position: center
