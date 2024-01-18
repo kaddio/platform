@@ -36,7 +36,7 @@
                 </div>
             {/if}
 
-            {#if host.nextFreeTime}
+            {#if host.nextFreeTime && host.hasSomeClientBookableBookingType}
                 <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
             {:else}
                 <span class="text-red-300">Inga lediga tider</span>
@@ -45,9 +45,11 @@
             <HostModal {host} />
         </span>
         <span slot="action">
-            <KdLinkButton href={host.bookingLink} size="sm" variant="flat" color="theme-primary"
-                >Sök tid</KdLinkButton
-            >
+            {#if host.hasSomeClientBookableBookingType}
+                <KdLinkButton href={host.bookingLink} size="sm" variant="flat" color="theme-primary"
+                    >Sök tid</KdLinkButton
+                >
+            {/if}
         </span>
     </KdItem>
 {/each}

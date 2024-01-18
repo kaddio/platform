@@ -58,6 +58,7 @@ export async function load({ params, fetch }) {
                         bookingLink
                         presentation
                         title
+                        hasSomeClientBookableBookingType
                     }
                     useReviews
                     reviewCount

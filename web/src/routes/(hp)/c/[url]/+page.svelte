@@ -109,7 +109,7 @@
                 <KdLinkButton
                     variant="light"
                     color="default"
-                    href="https://{organization.url}.kaddio.com/login">Logga in</KdLinkButton
+                    href="https://{organization.url}.kaddio.com/dashboard">Logga in</KdLinkButton
                 >
             </div>
 
