@@ -6,7 +6,7 @@
     import HostModal from './host_modal.svelte';
 
     export let hosts: any[];
-
+    export let bookingFilterOnHost: boolean;
     const longList = hosts.length > 10;
     let expanded = !longList;
 
@@ -35,17 +35,19 @@
                     {host.title}
                 </div>
             {/if}
-
-            {#if host.nextFreeTime && host.hasSomeClientBookableBookingType}
-                <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
-            {:else}
-                <span class="text-red-300">Inga lediga tider</span>
+            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
+                {#if host.nextFreeTime}
+                    <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
+                {:else}
+                    <span class="text-red-300">Inga lediga tider</span>
+                {/if}
+                &nbsp;
             {/if}
-            &nbsp;
+
             <HostModal {host} />
         </span>
         <span slot="action">
-            {#if host.hasSomeClientBookableBookingType}
+            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
                 <KdLinkButton href={host.bookingLink} size="sm" variant="flat" color="theme-primary"
                     >Sök tid</KdLinkButton
                 >

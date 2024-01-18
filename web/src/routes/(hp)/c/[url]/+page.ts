@@ -18,6 +18,7 @@ export async function load({ params, fetch }) {
                     hasContactForm
                     url
                     keywords
+                    bookingFilterOnHost
                     cssVars {
                         name,
                         value

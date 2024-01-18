@@ -248,7 +248,10 @@
                 id="hosts"
             >
                 <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
-                <Hosts hosts={organization.hosts} />
+                <Hosts
+                    hosts={organization.hosts}
+                    bookingFilterOnHost={organization.bookingFilterOnHost}
+                />
             </Card>
         {/if}
         {#if organization.showBooking}
