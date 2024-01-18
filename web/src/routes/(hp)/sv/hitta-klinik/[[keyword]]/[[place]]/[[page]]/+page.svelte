@@ -83,6 +83,7 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
+        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
         searchForm.submit();
     };
 </script>

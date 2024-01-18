@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { PageData } from '../../$types';
-    import { setContext } from 'svelte';
+    import { onMount, setContext } from 'svelte';
     import { beforeNavigate } from '$app/navigation';
     import AutocompletePlace from './components/AutocompletePlace.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
@@ -79,8 +79,17 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
+        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
         searchForm.submit();
     };
+
+    onMount(() => {
+        const url = window.sessionStorage && window.sessionStorage.getItem('searchUrl');
+        if (url) {
+            window.sessionStorage && window.sessionStorage.removeItem('searchUrl');
+            window.history.replaceState({}, '', url);
+        }
+    });
 
     beforeNavigate((navigation) => {
         if (!document.startViewTransition) return;

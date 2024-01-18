@@ -29,7 +29,13 @@
 
     setContext('lang', 'sv');
 
-    let showBackButton = !!$page.url.searchParams.get('backbutton');
+    const back = () => {
+        if (window.sessionStorage.getItem('searchUrl')) {
+            window.location = window.sessionStorage.getItem('searchUrl');
+            return;
+        }
+        window.location = '/sv/hitta-klinik';
+    };
     onMount(() => {
         const r = document.querySelector(':root');
         organization.cssVars.forEach((c) => {
@@ -96,14 +102,10 @@
         <div class="max-w-screen-lg mx-auto mx-auto relative h-full">
             <div class="flex justify-between w-full">
                 <div class="flex gap-5">
-                    <a href="/sv/hitta-klinik">
+                    <a on:click={() => back()} href class="flex gap-5">
+                        <i class="fa fa-arrow-left text-white text-xl" />
                         <img src="/img/kaddio-logo.png" alt="Kaddio logotype" class="h-7" />
                     </a>
-                    {#if showBackButton}
-                        <a href="javascript:history.back()" class="text-white text-lg"
-                            ><i class="fa fa-arrow-left" /> Tillbaka till sökresultat
-                        </a>
-                    {/if}
                 </div>
 
                 <KdLinkButton
@@ -191,6 +193,10 @@
                     >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
+                {#if !organization.hasPlaces}
+                    <small class="text-gray-700">{organization.address}</small>
+                    <small class="text-gray-700">{organization.city}</small>
+                {/if}
 
                 {#if organization.showBooking && organization.homepage?.showPlaces}
                     <div

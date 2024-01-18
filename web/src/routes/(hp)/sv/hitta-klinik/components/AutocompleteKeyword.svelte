@@ -104,14 +104,10 @@
                 <i class="fa fa-magnifying-glass text-gray-400 mr-4" /><span>Sök {item.label}</span>
             {/if}
             {#if item.type == 'ORG'}
-                <i class="fa fa-globe text-gray-400 mr-4" /><a href="/c/{item.url}?backbutton=1"
-                    >{item.label}</a
-                >
+                <i class="fa fa-globe text-gray-400 mr-4" /><a href="/c/{item.url}">{item.label}</a>
             {/if}
             {#if item.type == 'SHOW_ALL'}
-                <i class="fa fa-times text-gray-400 mr-4" /><a href="/c/{item.url}?backbutton=1"
-                    >Visa alla</a
-                >
+                <i class="fa fa-times text-gray-400 mr-4" /><a href="/c/{item.url}">Visa alla</a>
             {/if}
         </div>
     </div>
