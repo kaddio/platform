@@ -117,18 +117,6 @@
                 <h1 class="text-white absolute bottom-4 text-3xl">
                     {organization.name}
                 </h1>
-
-                {#if organization.showBooking}
-                    <div class="absolute bottom-4 right-0">
-                        <KdLinkButton
-                            variant="flat"
-                            color="theme-primary"
-                            size="xl"
-                            href="https://{organization.url}.kaddio.com/booking"
-                            >Sök tid</KdLinkButton
-                        >
-                    </div>
-                {/if}
             </div>
         </div>
     </div>
@@ -157,6 +145,18 @@
                             >
                             <i class="fa fa-star text-yellow-500" />
                         </a>
+                    {/if}
+                    <div class="grow" />
+                    {#if organization.showBooking}
+                        <div class="">
+                            <KdLinkButton
+                                variant="flat"
+                                color="theme-primary"
+                                size="lg"
+                                href="https://{organization.url}.kaddio.com/booking"
+                                >Sök tid</KdLinkButton
+                            >
+                        </div>
                     {/if}
                 </div>
             </div>
