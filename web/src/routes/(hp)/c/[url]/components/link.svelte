@@ -12,6 +12,7 @@
         [LinkType.EXTERNAL]: 'fa fa-fw fa-globe'
     };
     export let href: string;
+    export let label: string;
     export let type: LinkType;
 
     const stripProtocol = (href?: string) => href?.replace(/^(https?:\/\/)?(www\.)?/, '') || '';
@@ -20,7 +21,7 @@
 {#if href}
     <a {href} class="inline-flex gap-7 items-center">
         <i class="{iconMap[type]} text-teal-600 fa-lg" /><span class="text-teal-400 font-semibold"
-            >{stripProtocol(href)}</span
+            >{label || stripProtocol(href)}</span
         >
     </a>
 {/if}

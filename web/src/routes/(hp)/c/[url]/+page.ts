@@ -19,6 +19,7 @@ export async function load({ params, fetch }) {
                     url
                     keywords
                     bookingFilterOnHost
+                    redirectToNewHomepage
                     cssVars {
                         name,
                         value
@@ -47,6 +48,7 @@ export async function load({ params, fetch }) {
                         links {
                             type
                             url
+                            label
                         }
                         telephone
                         email

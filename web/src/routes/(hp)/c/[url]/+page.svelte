@@ -22,6 +22,7 @@
     import Seo from '$components/seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { localBusinessSchema } from '$lib/json-ld';
+    import { redirect } from '@sveltejs/kit';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -68,27 +69,29 @@
     }
 </script>
 
-<!-- <LdTag schema={localBusinessSchema} /> -->
-<!--  
- <svelte:head>
-    <title>{organization.name}, {organization.city} - Kaddio</title>
- </svelte:head> -->
+{#if organization.redirectToNewHomepage}
+    <LdTag schema={localBusinessSchema} />
+    <Seo
+        url={`https://kaddio.com/c/${organization.url}`}
+        type="business.business"
+        keywords={organization.keywords?.join(', ')}
+        title={`${organization.name}, ${organization.city} - Kaddio`}
+        description={`${organization.name} - ${organization.keywords?.join(', ')} - ${
+            organization.city
+        }`}
+        locality={organization.city}
+        images={imagesFromImageHandler}
+        streetAddress={organization.address}
+    />
+{/if}
 
 <svelte:head>
-    <meta name="robots" content="noindex" />
+    {#if organization.redirectToNewHomepage}
+        <title>{organization.name}, {organization.city} - Kaddio</title>
+    {:else}
+        <meta name="robots" content="noindex" />
+    {/if}
 </svelte:head>
-<!-- <Seo
-    url={`https://kaddio.com/c/${organization.url}`}
-    type="business.business"
-    keywords={organization.keywords?.join(', ')}
-    title={`${organization.name}, ${organization.city} - Kaddio`}
-    description={`${organization.name} - ${organization.keywords?.join(', ')} - ${
-        organization.city
-    }`}
-    locality={organization.city}
-    images={imagesFromImageHandler}
-    streetAddress={organization.address}
-/> -->
 
 <div class="w-screen h-full bg-gray-100 pb-8">
     <div
@@ -116,7 +119,7 @@
             </div>
 
             <div class="flex justify-between w-full">
-                <h1 class="text-white absolute bottom-4 text-3xl">
+                <h1 class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl">
                     {organization.name}
                 </h1>
             </div>
@@ -125,7 +128,9 @@
     <div class="">
         {#if organization.showBooking}
             <div class="bg-white">
-                <div class="max-w-screen-lg mx-auto flex flex-row gap-7 w-full p-6">
+                <div
+                    class="max-w-screen-lg mx-auto flex flex-row gap-7 w-full p-6 flex-wrap justify-between"
+                >
                     {#if organization.homepage?.showPlaces && organization.hasPlaces}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#places"
                             >Platser</a
@@ -154,7 +159,7 @@
                             <KdLinkButton
                                 variant="flat"
                                 color="theme-primary"
-                                size="lg"
+                                size="md"
                                 href="https://{organization.url}.kaddio.com/booking"
                                 >Sök tid</KdLinkButton
                             >
@@ -180,7 +185,7 @@
                     <div class="flex flex-col gap-4 my-8 mx-8">
                         <Links links={organization.homepage} />
                         {#each organization.homepage?.links as link}
-                            <Link href={link.url} type={link.type} />
+                            <Link href={link.url} type={link.type} label={link.label} />
                         {/each}
                     </div>
                 {/if}
@@ -193,10 +198,12 @@
                     >
                 {/if}
                 <Gallery imageSrcs={organization.homepage?.pics || []} />
-                {#if !organization.hasPlaces}
-                    <small class="text-gray-700">{organization.address}</small>
-                    <small class="text-gray-700">{organization.city}</small>
-                {/if}
+                <!-- {#if !organization.hasPlaces}
+                    <div class="p-8">
+                        <small class="text-gray-700">{organization.address}</small>
+                        <small class="text-gray-700">{organization.city}</small>
+                    </div>
+                {/if} -->
 
                 {#if organization.showBooking && organization.homepage?.showPlaces}
                     <div
@@ -214,7 +221,7 @@
                                     <KdLinkButton
                                         size="sm"
                                         variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}"
+                                        href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}?selectonly=1"
                                         >Sök tid</KdLinkButton
                                     >
                                 </span>
