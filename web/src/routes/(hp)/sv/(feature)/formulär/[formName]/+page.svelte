@@ -9,8 +9,10 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Formulär</title>
-	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." />
+    <meta name="robots" content="noindex">
+
+	<!-- <title>Kaddio - Formulär</title>
+	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." /> -->
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/form-se.png">
