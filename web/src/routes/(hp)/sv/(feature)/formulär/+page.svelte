@@ -74,7 +74,7 @@
 
 </FaqSection>
 
-{#if data.pkgs.length > 0}
+{#if data.pkgs?.length > 0}
 	<FaqSection>
 		<span slot="title">Inbyggda formulär i Kaddio</span>
 
