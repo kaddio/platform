@@ -71,34 +71,6 @@
 		</span>
 	</Qa>
 
-	<Qa>
-		<span slot="q">Standardformulär</span>
-		<span slot="a">
-			Ladda ner, editera och skicka de vanligaste standardformulären direkt från Kaddio:
-			<small>
-				<ul>	
-					<li>AUDIT – Alcohol Use Disorders Identification Test</li>
-					<li>BBQ - Brunnsviken Quality of Life Scale (QUOLI)</li>
-					<li>CPQ - Clinical Perfectionism Questionnaire</li>
-					<li>DSM-5 – Självskattning av aktuella symtom</li>
-					<li>DUDIT – Drug Use Disorders Identification Test</li>
-					<li>GAD-7 – Generalized Anxiety Disorder</li>
-					<li>ISI – Insomnia Severity Index</li>
-					<li>KEDS - självskattningstest för utmattningssyndrom</li>
-					<li>MADRS-S – Montgomery-Åsberg Depression Rating Scale Självskattning</li>
-					<li>OCI-R – Obsessive-Compulsive Inventory-Revised Scale</li>
-					<li>PCL-5 – Posttraumatic Stress Disorder Checklist</li>
-					<li>PDSS-SR – Självskattning för panikångestsyndrom</li>
-					<li>PHQ-9 – Formulär för patienthälsa</li>
-					<li>PSS-10 – Perceived Stress Scale (10 frågor)</li>
-					<li>PSS-14 – Perceived Stress Scale (14 frågor)</li>
-					<li>PSWQ – Penn State Worry Questionnaire</li>
-					<li>WHODAS 2.0 – Formulär för mätning av hälsa och funktionshinder (12 frågor självadministrerad)</li>
-					<li>WHODAS 2.0 – Formulär för mätning av hälsa och funktionshinder (36 frågor självadministrerad)</li>
-				</ul>
-			</small>
-		</span>
-	</Qa>
 
 </FaqSection>
 

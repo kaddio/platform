@@ -6,7 +6,7 @@ export async function load({ params, fetch }) {
         body: JSON.stringify({
             query: `
             query {
-                findPackages(packageType:"LETTER") {
+                findPackages(packageType:"FORM", verified: true) {
                     packages{
                         name,
                         desc
