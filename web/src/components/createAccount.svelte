@@ -85,10 +85,17 @@
         
 
                 <div class="sm:col-span-2">
-                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('E-post')}</label>
-                <div class="mt-2.5">
-                    <input value={$page.form?.email ?? ''} type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:text-sm sm:leading-6">
+                    <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('E-post')}</label>
+                    <div class="mt-2.5">
+                        <input value={$page.form?.email ?? ''} type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:text-sm sm:leading-6">
+                    </div>
                 </div>
+
+                <div class="sm:col-span-2">
+                    <label for="telephone" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Telefon')}</label>
+                    <div class="mt-2.5">
+                        <input value={$page.form?.telephone ?? ''} type="telephone" name="telephone" id="telephone" autocomplete="telephone" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-oldpink sm:text-sm sm:leading-6">
+                    </div>
                 </div>
 
                 <div class="sm:col-span-2">
