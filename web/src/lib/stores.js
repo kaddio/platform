@@ -155,6 +155,10 @@ const translations = {
         en: 'Email address',
         es: 'Correo-e'
     },
+    Telefon: {
+        en: 'Telephone',
+        es: 'Teléfono'
+    },
     Företagsnamn: {
         en: 'Business name',
         es: 'Nombre de la organización'
