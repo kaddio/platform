@@ -37,7 +37,8 @@ export async function loadData({
 			}
 			nextFreeTime,
 			homepage {
-				headerImg
+				headerImg,
+                mainActivity,
 			}
 		},
 		count
