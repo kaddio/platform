@@ -102,13 +102,13 @@
             class="mx-auto flex gap-12 items-center md:items-end top-0 left-0 relative max-w-screen-lg flex-col p-4 pt-0 md:flex-row justify-between"
         >
             <a href="/sv/hitta-klinik">
-                <h1 class="text-xl flex gap-4 text-white font-semibold">
+                <span class="text-xl flex gap-4 text-white font-semibold">
                     <img
                         src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
                         alt="Kaddio"
                         class="h-14 invert"
                     />
-                </h1>
+                </span>
             </a>
 
             <form
@@ -150,7 +150,9 @@
                 {#if data.organizations.length}
                     <div class="flex justify-between">
                         <div class="font-semibold mb-2 ml-3">
-                            Sökresultat &nbsp;<span class="font-normal text-gray-500"
+                            <h1 class="inline">{data.keyword} {data.place}</h1>
+                            &nbsp;
+                            <span class="font-normal text-gray-500"
                                 >Visar {data.organizations.length} av {data.count}</span
                             >
                         </div>
