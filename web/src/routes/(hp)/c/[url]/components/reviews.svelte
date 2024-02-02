@@ -45,7 +45,7 @@
                 class="mt-5"
                 variant="inverted"
                 color="primary"
-                on:click={() => (limit = limit + 10)}>Visa fler</KdButton
+                on:click={() => (limit = limit + 9)}>Visa fler</KdButton
             >
         </span>
     {/if}
