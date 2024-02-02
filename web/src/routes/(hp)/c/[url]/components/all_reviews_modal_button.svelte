@@ -9,12 +9,18 @@
     import { loadReviews } from '../load_reviews';
     import ReviewsSummary from './reviews_summary.svelte';
     let reviews = [];
-    let reviewCount = 0;
-    let stars: 0;
+    export let reviewCount: number;
+    let stars = 0;
+    export let starsFilter = undefined;
+
     let starsHistogram = [0, 0, 0, 0, 0];
 
     const loadData = async () => {
-        ({ reviewCount, reviews, stars, starsHistogram } = await loadReviews(orgUrl, limit));
+        const data = await loadReviews(orgUrl, limit);
+        reviews = data.reviews;
+        reviewCount = data.reviewCount;
+        stars = data.stars;
+        starsHistogram = data.starsHistogram;
     };
     $: {
         if (open) {
@@ -23,18 +29,20 @@
     }
 </script>
 
-<KdButton class="ml-5" variant="inverted" color="primary" on:click={() => (open = true)}
+<KdButton class="" variant="inverted" color="primary" on:click={() => (open = true)}
     >Visa alla</KdButton
 >
 
 <KdModal bind:open>
-    <div slot="body">
+    <div slot="body" class="max-h-96 overflow-scroll">
         <!-- <ReviewsSummary histogram={starsHistogram} count={reviewCount} {stars} /> -->
         <span class="text-gray-500 flex gap-5 items-center" style="width: 600px">
             <!-- <div class="text-4xl font-semibold">{stars} <i class="fa fa-star text-yellow-500" /></div> -->
-            <div>av 5 stjärnor, totalt {reviewCount} omdömen</div>
+            <div>{stars.toFixed(1)} av 5 stjärnor, totalt {reviewCount} omdömen</div>
             <div class="grow" />
-            <KdButton class="ml-5" variant="inverted" color="primary">Visa alla</KdButton>
+            <KdButton variant="inverted" color="primary" class="mr-8"
+                >Visa alla ({reviewCount} st)</KdButton
+            >
         </span>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-5">
             {#each reviews as review}

@@ -169,14 +169,16 @@
             </div>
         {/if}
         <div class="gap-8 mt-8 max-w-screen-lg mx-auto grid grid-cols-5">
-            <Card className="grow col-span-5 md:col-span-3 ">
-                <div class="prose p-8">
-                    {@html removeStyleAttributesWithRegex(
-                        organization.homepage?.presentation || 'Välkommen!'
-                    )}
-                    <!-- <a href="">Läs mer</a> -->
-                </div>
-            </Card>
+            <div class="grow col-span-5 md:col-span-3">
+                <Card className=" ">
+                    <div class="prose p-8">
+                        {@html removeStyleAttributesWithRegex(
+                            organization.homepage?.presentation || 'Välkommen!'
+                        )}
+                        <!-- <a href="">Läs mer</a> -->
+                    </div>
+                </Card>
+            </div>
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
                 <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
@@ -243,16 +245,6 @@
             </Card>
         </div>
     </div>
-    {#if organization.useReviews}
-        <div class="mx-auto max-w-screen-lg mt-8" id="reviews">
-            <Reviews
-                reviews={organization.reviews}
-                histogram={organization.starsHistogram}
-                reviewCount={organization.reviewCount}
-                stars={organization.stars}
-            />
-        </div>
-    {/if}
 
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         {#if organization.homepage?.showUs}
@@ -274,6 +266,19 @@
             >
                 <BookingTypes bookingTypes={organization.bookingTypes} />
             </Card>
+        {/if}
+    </div>
+    <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
+        {#if organization.useReviews}
+            <div id="reviews" class="mt-8 col-span-2">
+                <Reviews
+                    reviews={organization.reviews}
+                    histogram={organization.starsHistogram}
+                    reviewCount={organization.reviewCount}
+                    stars={organization.stars}
+                    orgUrl={organization.url}
+                />
+            </div>
         {/if}
     </div>
 </div>

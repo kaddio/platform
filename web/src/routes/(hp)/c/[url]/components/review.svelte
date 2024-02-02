@@ -14,20 +14,20 @@
     };
 </script>
 
-<Card className="flex flex-col col-span-1 p-5">
+<div class="flex flex-col col-span-1 p-3 sm:px-5 sm:py-4 text-sm bg-gray-50 rounded-lg">
     <div class="flex gap-2 align-baseline">
-        <span class="font-bold">{review.clientName}</span>
+        <span class="font-semibold">{review.clientName}</span>
 
         <span class="flex-grow" />
         <span class="text-right">
             <Stars stars={review.stars} />
         </span>
     </div>
-    <span class="text-gray-400 font-semibold">{dayjs(review.date).fromNow()}</span>
+    <span class="text-gray-500 text-xs">{dayjs(review.date).fromNow()}</span>
     <span class="mt-5">{review.comment}</span>
     {#if review.answer}
-        <span class="mt-5 text-gray-800 bg-gray-100 rounded p-5 border-gray-200 border"
-            >{review.answer.answer}</span
+        <span class="mb-3 mt-5 text-gray-800 bg-gray-200 rounded px-4 py-3 border-gray-200 border"
+            ><strong /> {review.answer.answer}</span
         >
     {/if}
-</Card>
+</div>
