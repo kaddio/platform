@@ -119,7 +119,9 @@
             </div>
 
             <div class="flex justify-between w-full">
-                <h1 class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl">
+                <h1
+                    class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl bg-gray-600/30 backdrop-blur-sm px-4 py-3 rounded shadow-xl"
+                >
                     {organization.name}
                 </h1>
             </div>

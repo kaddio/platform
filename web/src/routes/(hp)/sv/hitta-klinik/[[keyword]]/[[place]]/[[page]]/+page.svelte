@@ -99,16 +99,14 @@
             class="w-full top-0 absolute left-0 bottom-0 right-0"
         />
         <div
-            class="mx-auto flex gap-12 items-center md:items-end top-0 left-0 relative max-w-screen-lg flex-col p-4 pt-0 md:flex-row justify-between"
+            class="mx-auto flex sm:gap-12 items-center md:items-end top-0 left-0 relative max-w-screen-lg flex-col p-0 pb-2 pt-0 md:flex-row justify-between"
         >
             <a href="/sv/hitta-klinik">
-                <span class="text-xl flex gap-4 text-white font-semibold">
-                    <img
-                        src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
-                        alt="Kaddio"
-                        class="h-14 invert"
-                    />
-                </span>
+                <img
+                    src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
+                    alt="Kaddio"
+                    class="h-14 invert"
+                />
             </a>
 
             <form
@@ -144,7 +142,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
+    <div class="bg-gray-100 p-4 sm:p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
         <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
             <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
                 {#if data.organizations.length}
