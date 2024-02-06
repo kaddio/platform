@@ -15,7 +15,7 @@
     export let stars: number;
     export let reviewCount: number;
     export let histogram: number[];
-    let limit = 6;
+    let limit = 9;
 
     const loadData = async (limit: number) => {
         const data = await loadReviews(orgUrl, limit);

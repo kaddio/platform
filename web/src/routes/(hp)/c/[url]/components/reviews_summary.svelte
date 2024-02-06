@@ -36,7 +36,7 @@
         {#each Object.keys(histogramByStars) as key}
             <div class="flex gap-5 items-center max-w-md">
                 <div class="flex-grow-0">
-                    <Stars stars={Number(key)} />
+                    <Stars stars={Number(key)} reverse={true} />
                 </div>
                 <div class="flex-grow">
                     <div class=" bg-transparent rounded-full h-2">
