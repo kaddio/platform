@@ -225,7 +225,7 @@
                                     <KdLinkButton
                                         size="sm"
                                         variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}?selectonly=1"
+                                        href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
                                         >Sök tid</KdLinkButton
                                     >
                                 </span>
