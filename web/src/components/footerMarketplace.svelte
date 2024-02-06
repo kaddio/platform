@@ -24,6 +24,8 @@
         'Linköping',
         'Helsingborg'
     ];
+    const year = new Date().getFullYear();
+    
 </script>
 
 <footer class="bg-gray-200" aria-labelledby="footer-heading">
@@ -140,7 +142,7 @@
         </a> -->
             </div>
             <p class="mt-8 text-xs leading-5 text-gray-900 md:order-1 md:mt-0">
-                &copy; 2023 Kaddio AB. All rights reserved.
+                Copyright &copy; {year} Kaddio AB. All rights reserved.
             </p>
         </div>
     </div>
