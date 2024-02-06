@@ -53,6 +53,7 @@ export async function load({ params, fetch }) {
                         telephone
                         email
                         mainActivity
+                        metaDescription
                     }
                     hosts {
                         firstname

@@ -87,7 +87,10 @@
 
 <svelte:head>
     {#if organization.redirectToNewHomepage}
-        <title>{organization.name}, {organization.city} - Kaddio</title>
+        <title
+            >{organization.homepage.mainActivity}, {organization.city}, {organization.name} - Kaddio</title
+        >
+        <meta name="description" content={organization.homepage.metadescription} />
     {:else}
         <meta name="robots" content="noindex" />
     {/if}
