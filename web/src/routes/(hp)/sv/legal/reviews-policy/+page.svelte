@@ -15,53 +15,50 @@
 
 <Legal>
     <span slot="pretitle">Kaddio Policy</span>
-    <span slot="title">Policy för Godkända Omdömen och Recensioner</span>
+    <span slot="title">Policy för godkända omdömen</span>
     <span slot="subtitle">
         Vi på Kaddio välkomnar och uppmuntrar användarna att lämna omdömen och recensioner om sina
-        erfarenheter med våra bokningstjänster. Vi tror på öppenhet och ärlighet, och vi strävar
-        efter att erbjuda en plattform där användarna kan dela sina åsikter på ett konstruktivt
-        sätt. För att upprätthålla integriteten och kvaliteten på de omdömen och recensioner som
-        publiceras på vår webbplats har vi utvecklat följande policy.
+        erfarenheter. För att upprätthålla integriteten och kvaliteten på de omdömen och recensioner
+        som publiceras på vår webbplats har vi följande policy.
     </span>
 
     <LegalTitle>Relevans</LegalTitle>
     <LegalParagraph>
         Omdömen och recensioner som publiceras på Kaddio måste vara relevanta för den specifika
-        bokningen eller upplevelsen som beskrivs. Allmänna eller irrelevanta kommentarer kommer inte
-        att godkännas.
+        bokningen eller upplevelsen som beskrivs. Allmänna eller irrelevanta kommentarer kan komma
+        att tas bort.
     </LegalParagraph>
 
     <LegalTitle>Ärlighet och Rättvisa</LegalTitle>
     <LegalParagraph>
-        Ärlighet och Rättvisa: Omdömen och recensioner måste vara ärliga och rättvisa utifrån
-        användarens verkliga erfarenheter med våra tjänster. Falska eller vilseledande påståenden
-        kommer inte att tolereras.
+        Omdömen och recensioner måste vara ärliga och rättvisa utifrån användarens verkliga
+        erfarenheter. Falska eller vilseledande påståenden kan komma att tas bort.
     </LegalParagraph>
 
-    <LegalTitle>Respektfullt Språk</LegalTitle>
+    <LegalTitle>Respektfullt språk</LegalTitle>
     <LegalParagraph>
-        Användare måste använda ett respektfullt och opartiskt språk i sina omdömen och recensioner.
-        Personliga påhopp, diskriminerande kommentarer eller olämpligt språk kommer att avvisas.
+        Användare måste använda ett respektfullt språk i sina omdömen. Personliga påhopp,
+        diskriminerande kommentarer eller olämpligt språk kommer att avvisas.
     </LegalParagraph>
 
-    <LegalTitle>Inga Konfidentiella Uppgifter</LegalTitle>
+    <LegalTitle>Inga konfidentiella uppgifter</LegalTitle>
     <LegalParagraph>
         Användare får inte lämna ut konfidentiella eller personliga uppgifter om andra personer i
-        sina omdömen och recensioner. Detta inkluderar namn, kontaktinformation och andra
-        privatlivsrelaterade detaljer.
+        sina omdömen. Detta inkluderar namn, kontaktinformation och andra privatlivsrelaterade
+        detaljer.
     </LegalParagraph>
 
-    <LegalTitle>Inget Spam eller Reklam</LegalTitle>
+    <LegalTitle>Inget spam eller reklam</LegalTitle>
     <LegalParagraph>
-        Omdömen och recensioner som innehåller spam, reklam eller länkar till andra webbplatser
-        kommer inte att publiceras.
+        Omdömen som innehåller spam, reklam eller länkar till andra webbplatser kan komma att tas
+        bort.
     </LegalParagraph>
-    <LegalTitle>Policyns Genomförande och Radering av Omdömen</LegalTitle>
+    <LegalTitle>Policyns genomförande och radering av omdömen</LegalTitle>
 
     <LegalParagraph
         >Vi på Kaddio förbehåller oss rätten att granska och moderera alla omdömen och recensioner
         som lämnas på vår webbplats. Om ett omdöme anses strida mot denna policy kan det komma att
-        tas bort eller redigeras av vårt modereringsteam.</LegalParagraph
+        tas bort av vårt modereringsteam.</LegalParagraph
     >
 
     <LegalParagraph
@@ -70,7 +67,7 @@
         alla rapporterade omdömen och vidta lämpliga åtgärder i enlighet med denna policy.</LegalParagraph
     >
 
-    <LegalTitle>Ändringar i Policyn</LegalTitle>
+    <LegalTitle>Ändringar i policyn</LegalTitle>
 
     <LegalParagraph
         >Denna policy för godkända omdömen och recensioner kan komma att ändras och uppdateras vid
