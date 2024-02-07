@@ -119,8 +119,6 @@
             </div>
 
             <div class="flex justify-between w-full">
-                {organization}
-
                 <h1 class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl">
                     {organization.name}
                 </h1>
