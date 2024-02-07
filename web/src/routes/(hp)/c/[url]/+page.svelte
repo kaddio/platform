@@ -192,10 +192,11 @@
                             width: 200
                         })}
                         alt={organization.name}
-                        class="h-12 md:h-16 lg:h-20 object-left object-contain ml-8 mt-8"
+                        class="h-12 md:h-16 lg:h-20 object-contain mt-8"
                     />
+                {:else}
+                    <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
                 {/if}
-                <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
 
                 {#if organization.homepage?.links.length}
                     <div class="flex flex-col gap-4 my-8 mx-8">
