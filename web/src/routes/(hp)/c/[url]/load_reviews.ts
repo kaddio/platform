@@ -13,7 +13,10 @@ export const loadReviews = async function (orgUrl: string, limit: number) {
                         stars
                         date
                         answer{
-                            answer
+                            answer   
+                        }
+                        answeredByUser {
+                            firstname
                         }
                     }
                 }

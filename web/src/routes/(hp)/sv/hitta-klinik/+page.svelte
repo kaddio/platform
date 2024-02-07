@@ -117,23 +117,25 @@
 /> -->
 
 <div class="w-sceen flex flex-col">
-    <div class="w-full relative p-4 md:p-16">
+    <div class="w-full relative md:p-16">
         <div
             style="background-image: url('/img/man.jpg'); background-size: cover; background-position: center; "
             class="w-full top-0 absolute left-0 bottom-0 right-0"
         />
         <div
-            class="mx-auto flex gap-5 align-middle justify-center items-center top-0 left-0 flex-col relative max-w-screen-lg py-16"
+            class="mx-auto flex gap-0 sm:gap-5 align-middle justify-center items-center top-0 left-0 flex-col relative max-w-screen-lg px-4 pb-6 pt-0 sm:py-16"
         >
             <h1 class="text-5xl flex gap-8 text-white">
                 <img
                     src="https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"
                     alt="Kaddio"
-                    class="h-24 invert"
+                    class="h-16 sm:h-24 invert"
                 />
             </h1>
 
-            <h2 class="text-lg mb-6 text-white">Sök och hitta rätt klinik för dina behov</h2>
+            <h2 class=" text-lg mb-6 text-white hidden sm:block">
+                Sök och hitta rätt klinik för dina behov
+            </h2>
 
             <form
                 class="p-0 grid md:grid-cols-2 grid-cols-1 gap-5 w-full max-w-screen-sm"

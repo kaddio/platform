@@ -20,6 +20,7 @@ export async function load({ params, fetch }) {
                     keywords
                     bookingFilterOnHost
                     redirectToNewHomepage
+                    logo
                     cssVars {
                         name,
                         value
@@ -53,6 +54,7 @@ export async function load({ params, fetch }) {
                         telephone
                         email
                         mainActivity
+                        metaDescription
                     }
                     hosts {
                         firstname

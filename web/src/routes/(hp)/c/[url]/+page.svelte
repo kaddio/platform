@@ -183,7 +183,18 @@
             </div>
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
-                <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
+                {#if organization.logo}
+                    <img
+                        src={imageHandler(organization.logo, {
+                            format: 'auto',
+                            width: 200
+                        })}
+                        alt={organization.name}
+                        class="h-12 md:h-16 lg:h-20 object-contain mt-8"
+                    />
+                {:else}
+                    <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
+                {/if}
 
                 {#if organization.homepage?.links.length}
                     <div class="flex flex-col gap-4 my-8 mx-8">
@@ -217,15 +228,15 @@
                         {#each organization.places as place}
                             <KdItem>
                                 <span slot="title">
-                                    {place.name}
-                                    <small class="text-gray-500">{place.address}</small>
+                                    {place.name || ''}
+                                    <small class="text-gray-500">{place.address || ''}</small>
                                 </span>
 
                                 <span slot="action">
                                     <KdLinkButton
                                         size="sm"
                                         variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}?selectonly=1"
+                                        href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
                                         >Sök tid</KdLinkButton
                                     >
                                 </span>
