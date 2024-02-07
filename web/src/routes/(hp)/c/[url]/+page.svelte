@@ -87,10 +87,7 @@
 
 <svelte:head>
     {#if organization.redirectToNewHomepage}
-        <title
-            >{organization.homepage.mainActivity}, {organization.city}, {organization.name} - Kaddio</title
-        >
-        <meta name="description" content={organization.homepage.metadescription} />
+        <title>{organization.name}, {organization.city} - Kaddio</title>
     {:else}
         <meta name="robots" content="noindex" />
     {/if}
@@ -122,9 +119,7 @@
             </div>
 
             <div class="flex justify-between w-full">
-                <h1
-                    class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl bg-gray-600/30 backdrop-blur-sm px-4 py-3 rounded shadow-xl"
-                >
+                <h1 class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl">
                     {organization.name}
                 </h1>
             </div>
@@ -152,10 +147,12 @@
                     {#if organization.useReviews}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#reviews">
                             Omdömen
-                            <span class="text-gray-800"
-                                >{organization.stars && organization.stars.toFixed(1)}</span
+
+                            <span class=" rounded-full border border-gray-300 px-2 py-1 ml-2"
+                                >{organization.stars && organization.stars.toFixed(1)}<i
+                                    class="fa fa-star text-yellow-500"
+                                /></span
                             >
-                            <i class="fa fa-star text-yellow-500" />
                         </a>
                     {/if}
                     <div class="grow" />
@@ -228,7 +225,7 @@
                                     <KdLinkButton
                                         size="sm"
                                         variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
+                                        href="https://{organization.url}.kaddio.com/booking/{place.name.toLowerCase()}?selectonly=1"
                                         >Sök tid</KdLinkButton
                                     >
                                 </span>
@@ -238,7 +235,7 @@
                 {/if}
                 {#if !organization.hasPlaces}
                     <div
-                        class="text-gray-500 px-8 mb-8"
+                        class="text-gray-500 px-8 py-4"
                         itemscope
                         itemtype="http://schema.org/PostalAddress"
                     >

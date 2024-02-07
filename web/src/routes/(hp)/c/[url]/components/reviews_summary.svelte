@@ -29,18 +29,18 @@
 <div class="grid grid-cols-3 w-full gap-4 sm:gap-8 mt-4 mb-8 sm:mt-8 sm:mb-12">
     <div class="flex flex-col col-span-1 sm:items-end">
         <!-- <a class="text-sm uppercase text-gray-500 font-semibold mb-5" href="#hosts">OMDÖMEN</a> -->
-        <div class="text-5xl font-semibold text-gray-500">{stars && stars.toFixed(1)}</div>
-        <div class="text-gray-500">{count} omdömen</div>
+        <div class=" text-6xl font-semibold text-gray-500">{stars && stars.toFixed(1)}</div>
+        <div class="text-gray-500 top-1 relative">{count} omdömen</div>
     </div>
     <div class="flex flex-col-reverse col-span-2 text-xs">
         {#each Object.keys(histogramByStars) as key}
             <div class="flex gap-5 items-center max-w-md">
                 <div class="flex-grow-0">
-                    <Stars stars={Number(key)} reverse={true} />
+                    <Stars stars={Number(key)} />
                 </div>
                 <div class="flex-grow">
-                    <div class=" bg-transparent rounded-full h-2">
-                        <div class="bg-yellow-500 rounded-full h-2" style={styles[key]} />
+                    <div class=" bg-transparent rounded-full h-1.5">
+                        <div class="bg-yellow-500 rounded-full h-1.5" style={styles[key]} />
                     </div>
                 </div>
                 <div class="flex-grow-0">{histogramByStars[key]}</div>
