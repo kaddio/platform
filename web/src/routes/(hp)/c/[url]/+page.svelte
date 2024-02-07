@@ -147,10 +147,12 @@
                     {#if organization.useReviews}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#reviews">
                             Omdömen
-                            <span class="text-gray-800"
-                                >{organization.stars && organization.stars.toFixed(1)}</span
+
+                            <span class=" rounded-full border border-gray-300 px-2 py-1 ml-2"
+                                >{organization.stars && organization.stars.toFixed(1)}<i
+                                    class="fa fa-star text-yellow-500"
+                                /></span
                             >
-                            <i class="fa fa-star text-yellow-500" />
                         </a>
                     {/if}
                     <div class="grow" />
@@ -233,7 +235,7 @@
                 {/if}
                 {#if !organization.hasPlaces}
                     <div
-                        class="text-gray-500 px-8 mb-8"
+                        class="text-gray-500 px-8 py-4"
                         itemscope
                         itemtype="http://schema.org/PostalAddress"
                     >
