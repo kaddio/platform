@@ -9,6 +9,8 @@
     console.log('https://kaddio.com/career')
   });
 
+  const year = new Date().getFullYear();
+
 </script>
 
 
@@ -180,7 +182,7 @@
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-xs leading-5 text-gray-900 md:order-1 md:mt-0">&copy; 2023 Kaddio AB. All rights reserved.</p>
+      <p class="mt-8 text-xs leading-5 text-gray-900 md:order-1 md:mt-0">Copyright &copy; {year} Kaddio AB. All rights reserved.</p>
     </div>
   </div>
 </footer>
