@@ -119,6 +119,8 @@
             </div>
 
             <div class="flex justify-between w-full">
+                {organization}
+
                 <h1 class="text-white absolute bottom-0 md:bottom-4 text-xl md:text-3xl">
                     {organization.name}
                 </h1>
@@ -183,6 +185,16 @@
             </div>
 
             <Card className="flex flex-col gap-4 col-span-5 md:col-span-2">
+                {#if organization.logo}
+                    <img
+                        src={imageHandler(organization.logo, {
+                            format: 'auto',
+                            width: 200
+                        })}
+                        alt={organization.name}
+                        class="h-12 md:h-16 lg:h-20 object-left object-contain ml-8 mt-8"
+                    />
+                {/if}
                 <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
 
                 {#if organization.homepage?.links.length}

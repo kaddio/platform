@@ -15,24 +15,18 @@
 
 <Legal>
     <span slot="pretitle">Kaddio Policy</span>
-    <span slot="title">Policy för godkända omdömen</span>
-    <span slot="subtitle">
-        Vi på Kaddio välkomnar och uppmuntrar användarna att lämna omdömen och recensioner om sina
-        erfarenheter. För att upprätthålla integriteten och kvaliteten på de omdömen och recensioner
-        som publiceras på vår webbplats har vi följande policy.
-    </span>
+    <span slot="title">Policy för omdömen</span>
 
     <LegalTitle>Relevans</LegalTitle>
     <LegalParagraph>
-        Omdömen och recensioner som publiceras på Kaddio måste vara relevanta för den specifika
-        bokningen eller upplevelsen som beskrivs. Allmänna eller irrelevanta kommentarer kan komma
-        att tas bort.
+        Omdömen som publiceras måste vara relevanta för den specifika bokningen eller upplevelsen
+        som beskrivs. Allmänna eller irrelevanta kommentarer kan komma att tas bort.
     </LegalParagraph>
 
-    <LegalTitle>Ärlighet och Rättvisa</LegalTitle>
+    <LegalTitle>Ärlighet och rättvisa</LegalTitle>
     <LegalParagraph>
-        Omdömen och recensioner måste vara ärliga och rättvisa utifrån användarens verkliga
-        erfarenheter. Falska eller vilseledande påståenden kan komma att tas bort.
+        Omdömen måste vara ärliga och rättvisa utifrån användarens verkliga erfarenheter. Falska
+        eller vilseledande påståenden kan komma att tas bort.
     </LegalParagraph>
 
     <LegalTitle>Respektfullt språk</LegalTitle>
@@ -56,9 +50,9 @@
     <LegalTitle>Policyns genomförande och radering av omdömen</LegalTitle>
 
     <LegalParagraph
-        >Vi på Kaddio förbehåller oss rätten att granska och moderera alla omdömen och recensioner
-        som lämnas på vår webbplats. Om ett omdöme anses strida mot denna policy kan det komma att
-        tas bort av vårt modereringsteam.</LegalParagraph
+        >Vi på Kaddio förbehåller oss rätten att granska och moderera alla omdömen som lämnas på vår
+        webbplats. Om ett omdöme anses strida mot denna policy kan det komma att tas bort av vårt
+        modereringsteam.</LegalParagraph
     >
 
     <LegalParagraph

@@ -20,6 +20,7 @@ export async function load({ params, fetch }) {
                     keywords
                     bookingFilterOnHost
                     redirectToNewHomepage
+                    logo
                     cssVars {
                         name,
                         value
