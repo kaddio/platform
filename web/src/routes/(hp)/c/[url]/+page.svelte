@@ -230,8 +230,8 @@
                         {#each organization.places as place}
                             <KdItem>
                                 <span slot="title">
-                                    {place.name}
-                                    <small class="text-gray-500">{place.address}</small>
+                                    {place.name || ''}
+                                    <small class="text-gray-500">{place.address || ''}</small>
                                 </span>
 
                                 <span slot="action">
