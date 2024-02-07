@@ -32,7 +32,7 @@
     <LegalTitle>Respektfullt språk</LegalTitle>
     <LegalParagraph>
         Användare måste använda ett respektfullt språk i sina omdömen. Personliga påhopp,
-        diskriminerande kommentarer eller olämpligt språk kommer att avvisas.
+        diskriminerande kommentarer eller olämpligt språk kan komma att tas bort.
     </LegalParagraph>
 
     <LegalTitle>Inga konfidentiella uppgifter</LegalTitle>
@@ -50,7 +50,7 @@
     <LegalTitle>Policyns genomförande och radering av omdömen</LegalTitle>
 
     <LegalParagraph
-        >Vi på Kaddio förbehåller oss rätten att granska och moderera alla omdömen som lämnas på vår
+        >Kaddio förbehåller sig rätten att granska och moderera alla omdömen som lämnas på vår
         webbplats. Om ett omdöme anses strida mot denna policy kan det komma att tas bort av vårt
         modereringsteam.</LegalParagraph
     >
