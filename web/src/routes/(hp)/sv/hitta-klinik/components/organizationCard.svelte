@@ -36,7 +36,7 @@
         <div class="h-1/2 p-4 flex flex-col justify-between">
             <a href="/c/{organization.url}">
                 <div class="uppercase text-xs text-gray-400 font-semibold line-clamp-1">
-                    {organization.mainActivity || ''}
+                    {organization.homepage?.mainActivity || ''}
                 </div>
                 <h3 class="font-semibold">{organization.name}</h3>
                 <small class="text-gray-400 line-clamp-1">{organization.addressString || ''}</small>
