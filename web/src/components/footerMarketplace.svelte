@@ -25,7 +25,6 @@
         'Helsingborg'
     ];
     const year = new Date().getFullYear();
-    
 </script>
 
 <footer class="bg-gray-200" aria-labelledby="footer-heading">
@@ -92,7 +91,7 @@
                                 <li>
                                     <a
                                         data-sveltekit-reload
-                                        href="/sv/hitta-klinik/{keyword}"
+                                        href="/sv/hitta-klinik/{keyword}/Sverige"
                                         class="text-sm hover:underline leading-6 text-gray-600"
                                         >{keyword}</a
                                     >
