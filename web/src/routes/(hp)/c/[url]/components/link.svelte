@@ -8,7 +8,7 @@
     const iconMap = {
         [LinkType.INSTAGRAM]: 'fa-brands fa-fw fa-instagram',
         [LinkType.FACEBOOK]: 'fa-brands fa-fw fa-facebook',
-        [LinkType.LINKEDIN]: 'fa-brands fa-fw fa-linked-in',
+        [LinkType.LINKEDIN]: 'fa-brands fa-fw fa-linkedin-in',
         [LinkType.EXTERNAL]: 'fa fa-fw fa-globe'
     };
     export let href: string;
