@@ -86,7 +86,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. Use "Don't make me think" as a guideline.
+		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. Use "Don't make me think" as a guideline. The key takeaway should begin a sentence, one word (the first word) should be enough.
 	</span>
 
 	<ModuleFeature>
