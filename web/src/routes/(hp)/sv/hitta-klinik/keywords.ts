@@ -74,6 +74,16 @@ export const allKeywords = [
     { name: 'Livsstilsterapeut', category: 'Övrigt' }
 ];
 
+export const allKeywordsPsykologi = allKeywords.filter(
+    (keyword) => keyword.category === 'Psykologi'
+);
+export const allKeywordsMedicin = allKeywords.filter((keyword) => keyword.category === 'Medicin');
+export const allKeywordsKropp = allKeywords.filter(
+    (keyword) => keyword.category === 'Manuell terapi'
+);
+
+export const allKeywordsOther = allKeywords.filter((keyword) => keyword.category === 'Övrigt');
+
 export const keywordsByCategory = allKeywords.reduce((acc, keyword) => {
     if (!acc[keyword.category]) {
         acc[keyword.category] = [];

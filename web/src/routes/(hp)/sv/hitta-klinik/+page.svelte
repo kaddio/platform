@@ -5,9 +5,15 @@
     import AutocompletePlace from './components/AutocompletePlace.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import KeywordCard from './components/KeywordCard.svelte';
-    import { keywords, keywordsByCategory } from './keywords';
+    import { allKeywordsKropp, allKeywordsMedicin, allKeywordsOther, allKeywordsPsykologi, keywords, keywordsByCategory } from './keywords';
     import AutocompleteKeyword from './components/AutocompleteKeyword.svelte';
     import Seo from '$components/seo.svelte';
+    import TwcKeywordCard from './components/twcKeywordCard.svelte';
+    import TwcKeywordCardArea from './components/twcKeywordCardArea.svelte';
+    import TwcWhiteSpace from './components/twcWhiteSpace.svelte';
+    import ModulePresentation from '$components/modulePresentation.svelte';
+    import ModuleSection from '$components/moduleSection.svelte';
+    import ModuleFeature from '$components/moduleFeature.svelte';
 
     export let data: PageData;
     let keywordInput: string;
@@ -133,7 +139,7 @@
                 />
             </h1>
 
-            <h2 class=" text-lg mb-6 text-white hidden sm:block">
+            <h2 class="mb-6 text-white hidden sm:block">
                 Sök och hitta rätt klinik för dina behov
             </h2>
 
@@ -172,6 +178,125 @@
         </div>
     </div>
 
+
+
+
+    <TwcWhiteSpace>
+
+            <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Få bättre hjälp</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Prata med psykolog, träna med fysioterapeut, få hjälp med ryggen hos en kiropraktor, naprapat eller osteopat. Eller något helt annat, här hittar du den hjälp du kan behöva.</p>
+        </div>
+
+        <TwcKeywordCardArea>
+            <TwcKeywordCard src="/img/keywords/sigmund-rnMRwtBY_nU-unsplash.jpg">
+                <span slot="title">Psykolog</span>
+            </TwcKeywordCard>
+
+            <TwcKeywordCard src="/img/keywords/toa-heftiba-hBLf2nvp-Yc-unsplash.jpg">
+                <span slot="title">Massage</span>
+            </TwcKeywordCard>
+
+            <TwcKeywordCard src="/img/keywords/sincerely-media-qzmPDJJOz4c-unsplash.jpg">
+                <span slot="title">Fysioterapi</span>
+            </TwcKeywordCard>
+
+            <TwcKeywordCard src="/img/keywords/joyce-hankins-IG96K_HiDk0-unsplash.jpg">
+                <span slot="title">Kiropraktor</span>
+            </TwcKeywordCard>
+
+            <TwcKeywordCard src="/img/keywords/yogendra-singh-KtPJkTlke8Y-unsplash.jpg">
+                <span slot="title">Idrottsskador</span>
+            </TwcKeywordCard>
+
+            <TwcKeywordCard src="/img/keywords/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg">
+                <span slot="title">Läkarintyg</span>
+            </TwcKeywordCard>
+        </TwcKeywordCardArea>
+    </TwcWhiteSpace>
+
+
+
+    <ModuleSection>
+        <span slot="title">Allt</span>
+        <span slot="sub">Kaddio Invoicing is a complete invoicing service for small and medium businesses.</span>
+
+        <ModuleFeature>
+            <span slot="title">Allt inom psykologi</span>
+            <span slot="body">
+                <ul>
+                    {#each allKeywordsPsykologi as keyword}
+                        <li>
+                            <a href="">
+                            {keyword.name}
+                            </a>
+                        </li>
+                    {/each}
+                </ul>
+            </span>
+        </ModuleFeature>
+
+        <ModuleFeature>
+            <span slot="title">Allt inom medicin</span>
+            <span slot="body">
+                <ul>
+                    {#each allKeywordsMedicin as keyword}
+                        <li>
+                            <a href="">
+                            {keyword.name}
+                            </a>
+                        </li>
+                    {/each}
+                </ul>
+            </span>
+        </ModuleFeature>             
+
+        <ModuleFeature>
+            <span slot="title">Allt inom kroppsterapi</span>
+            <span slot="body">
+                <ul>
+                    {#each allKeywordsKropp as keyword}
+                        <li>
+                            <a href="">
+                            {keyword.name}
+                            </a>
+                        </li>
+                    {/each}
+                </ul>
+            </span>
+        </ModuleFeature>     
+        
+        <ModuleFeature>
+            <span slot="title">Allt övrigt</span>
+            <span slot="body">
+                <ul>
+                    {#each allKeywordsOther as keyword}
+                        <li>
+                            <a href="">
+                            {keyword.name}
+                            </a>
+                        </li>
+                    {/each}
+                </ul>
+            </span>
+        </ModuleFeature>          
+        
+    </ModuleSection>
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
     <div class="bg-gray-100 p-4 lg:p-12 pt-4 lg:pt-20 flex grow">
         <div class="gap-10 lg:w-full container mx-auto">
             <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
@@ -202,7 +327,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <FooterMarketplace />

@@ -3,6 +3,7 @@
     import { _ } from '$lib/stores';
     import { countryCodeFromLang, getRegion } from '$lib/regions';
     import { page } from '$app/stores';
+    import { allKeywords, allKeywordsKropp, allKeywordsMedicin, allKeywordsPsykologi } from '../routes/(hp)/sv/hitta-klinik/keywords';
     const lang = getContext('lang');
     let defaultKeywords = [
         'Psykolog',
@@ -27,7 +28,89 @@
     const year = new Date().getFullYear();
 </script>
 
-<footer class="bg-gray-200" aria-labelledby="footer-heading">
+
+
+
+
+<footer class="bg-oldpink" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="space-y-8">
+        <img class="h-20" src="/img/logotypes/Kaddio_Logga_Tagline_English.svg" alt="Company name">
+        <p class="text-sm leading-6 text-white">På kaddio.com hittar du den hjälp du söker.</p>
+
+      </div>
+      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-bold leading-6 text-white">För företag</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-white hover:text-white">Anslut ditt företag</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-white hover:text-white">Kontakta sälj</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-white hover:text-white">Commerce</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-white hover:text-white">Insights</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-bold leading-6 text-white">Populärt, psykologi</h3>
+            <ul role="list" class="mt-6 space-y-4">
+                {#each allKeywordsPsykologi as keyword}
+                    <li>
+                        <a href="#" class="text-sm leading-6 text-white hover:text-white">{keyword.name}</a>
+                    </li>
+                {/each}
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-bold leading-6 text-white">Populärt, kropp</h3>
+            <ul role="list" class="mt-6 space-y-4">
+                {#each allKeywordsKropp as keyword}
+                    <li>
+                        <a href="#" class="text-sm leading-6 text-white hover:text-white">{keyword.name}</a>
+                    </li>
+                {/each}
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-bold leading-6 text-white">Populärt, medicin</h3>
+            <ul role="list" class="mt-6 space-y-4">
+                {#each allKeywordsMedicin as keyword}
+                    <li>
+                        <a href="#" class="text-sm leading-6 text-white hover:text-white">{keyword.name}</a>
+                    </li>
+                {/each}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+      <p class="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-screen-lg px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
