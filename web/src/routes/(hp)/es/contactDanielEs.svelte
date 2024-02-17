@@ -1,13 +1,15 @@
 <script>
     import SalesSection from "$components/salesSection.svelte";
+    import { rawSalesData } from "$lib/figureOutSaleInfo";
 </script>
 
-<SalesSection>
+<SalesSection imageSrc={rawSalesData.daniel.src}>
 	<span slot="title">
 		¿Estás pensando si Kaddio puede ser adecuado para ti?
 	</span>
+
 	<span slot="intro">
-		Contacta a Daniel y él te ayudará. Disponible de lunes a viernes de 9 a 15 (CEST).
+		Contacta a Daniel y él te ayudará. Disponible los jueves y viernes.
 	</span>
 	<span slot="location">
 		Göteborg, Suecia

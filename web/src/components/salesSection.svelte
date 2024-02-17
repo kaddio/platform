@@ -1,7 +1,5 @@
-<script>
-    let image = '/img/daniel_sale.jpeg';
-    let hoverImage = '/img/daniel_rufus.jpeg';
-    let imageSrc = image;
+<script lang="ts">
+    export let imageSrc: string;
 </script>
 
 <div class="relative bg-white">
@@ -94,13 +92,6 @@
         <img
             class="w-3/4 h-auto rounded-full bg-gray-50 lg:absolute lg:h-3/4 lg:w-auto 2xl:h-4/5"
             src={imageSrc}
-            alt=""
-            on:mouseenter={() => {
-                imageSrc = hoverImage;
-            }}
-            on:mouseleave={() => {
-                imageSrc = image;
-            }}
-        />
+            alt="" />
     </div>
 </div>
