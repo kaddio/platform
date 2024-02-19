@@ -37,6 +37,12 @@
         }
         window.location = '/sv/hitta-klinik';
     };
+    let hasBackButton = false;
+    onMount(() => {
+        if (window.sessionStorage && window.sessionStorage.getItem('searchUrl')) {
+            hasBackButton = true;
+        }
+    });
     onMount(() => {
         const r = document.querySelector(':root');
         organization.cssVars.forEach((c) => {
