@@ -1,11 +1,14 @@
 <script lang="ts">
-	import Footer from "$components/footer.svelte";
+	import FaqSection from "$components/faqSection.svelte";
+import Footer from "$components/footer.svelte";
 	import LegalLi from "$components/legalLi.svelte";
 	import LegalUl from "$components/legalUl.svelte";
 import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import Nav from "$components/nav.svelte";
 	import Person from "$components/person.svelte";
+    import Qa from "$components/qa.svelte";
+    import Qr from "$components/qr.svelte";
 	import { setContext } from "svelte";
 
   setContext('lang', 'en');
@@ -86,7 +89,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. Use "Don't make me think" as a guideline. The key takeaway should begin a sentence, one word (the first word) is often enough.
+		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous.
 	</span>
 
 	<ModuleFeature>
@@ -134,6 +137,37 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 </ModuleSection>
 
 
+<FaqSection>
+	<span slot="title">More on writing</span>
+
+  <Qa>
+		<span slot="q">Use inclusive term "User"</span>
+		<span slot="a">
+			Use the inclusive and more agnostic term User instead of specifically using "Host" and "Client". Eg. not all users identify "Client" as their customers, but use the term "Patient" instead.
+		</span>
+	</Qa>
+
+  <Qa>
+		<span slot="q">Aid short attention span</span>
+		<span slot="a">
+			The key takeaway of any sentence, paragraph or article should begin. Often one word (the first word) is often enough.
+		</span>
+	</Qa>
+
+  <Qa>
+		<span slot="q">Think TL;DR</span>
+		<span slot="a">
+			The key takeaway in any article shoule be grasped by someone who only skims the text. For example, if describing a complex or technical process, describe the process firt for someone who is not going to read the rest of the text. Then write the text for people who read the rest of the text.
+		</span>
+	</Qa>
+
+  <Qa>
+		<span slot="q">Don't make me think</span>
+		<span slot="a">
+			Don't make me think is a great book by Steve Krug :) But it's also a principle we like. The key takeaway is that the user should not have to think about what to do.
+		</span>
+	</Qa>  
+</FaqSection>
 
 
 <div class="bg-white">
