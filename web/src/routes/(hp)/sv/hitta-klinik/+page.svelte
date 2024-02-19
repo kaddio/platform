@@ -184,8 +184,8 @@
     <TwcWhiteSpace>
 
             <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Få bättre hjälp</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Prata med psykolog, träna med fysioterapeut, få hjälp med ryggen hos en kiropraktor, naprapat eller osteopat. Eller något helt annat, här hittar du den hjälp du kan behöva.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Hitta bättre hjälp här.</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Här hittar du psykologer, fysioterapeuter, naprapater och mycket mer. Allt samlat på samma ställe. Prata med psykolog, träna med fysioterapeut, få hjälp med ryggen hos en kiropraktor, naprapat eller osteopat. Eller något helt annat, här hittar du den hjälp du kan behöva.</p>
         </div>
 
         <TwcKeywordCardArea>

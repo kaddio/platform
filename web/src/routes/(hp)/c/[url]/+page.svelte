@@ -23,6 +23,8 @@
     import LdTag from '$lib/components/LDTag.svelte';
     import { localBusinessSchema } from '$lib/json-ld';
     import { redirect } from '@sveltejs/kit';
+    import TwcList from '../../sv/hitta-klinik/components/twcList.svelte';
+    import TwcListItem from '../../sv/hitta-klinik/components/twcListItem.svelte';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -92,6 +94,16 @@
         <meta name="robots" content="noindex" />
     {/if}
 </svelte:head>
+
+
+
+
+
+
+
+
+
+
 
 <div class="w-screen h-full bg-gray-100 pb-8">
     <div
@@ -258,6 +270,29 @@
             </Card>
         </div>
     </div>
+    
+    <TwcList>
+        {#each organization.bookingTypes as bookingType}
+            <TwcListItem actionEnabled={bookingType.nextFreeTime}>
+                <span slot="name">{bookingType.name}</span>
+                <span slot="slot2">{bookingType.clientVisibleLength} min</span>
+                <span slot="slot3">
+                    {#if bookingType.nextFreeTime}
+                        <div class="flex items-start gap-x-3">
+                            <div class="rounded-md py-1 px-2 text-xs font-medium ring-1 ring-inset text-green-700 bg-green-50 ring-green-600/20">{dayjs(bookingType.nextFreeTime).fromNow()}</div>
+                        </div>
+
+                    {:else}
+
+                        <div class="flex items-start gap-x-3">
+                            <div class="rounded-md py-1 px-2 text-xs font-medium ring-1 ring-inset text-red-700 bg-red-50 ring-red-600/10">Ingen ledig tid</div>
+                        </div>                    
+                    {/if}
+                </span>
+                <span slot="slot4">{bookingType.price} kr</span>
+            </TwcListItem>
+        {/each}
+    </TwcList>
 
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
         {#if organization.homepage?.showUs}

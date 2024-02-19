@@ -63,7 +63,7 @@
           <div class="mt-10 md:mt-0">
             <h3 class="text-sm font-bold leading-6 text-white">Populärt, psykologi</h3>
             <ul role="list" class="mt-6 space-y-4">
-                {#each allKeywordsPsykologi as keyword}
+                {#each allKeywordsPsykologi.slice(0, 5) as keyword}
                     <li>
                         <a href="#" class="text-sm leading-6 text-white hover:text-white">{keyword.name}</a>
                     </li>
@@ -75,7 +75,7 @@
           <div>
             <h3 class="text-sm font-bold leading-6 text-white">Populärt, kropp</h3>
             <ul role="list" class="mt-6 space-y-4">
-                {#each allKeywordsKropp as keyword}
+                {#each allKeywordsKropp.slice(0, 5) as keyword}
                     <li>
                         <a href="#" class="text-sm leading-6 text-white hover:text-white">{keyword.name}</a>
                     </li>
@@ -85,7 +85,7 @@
           <div class="mt-10 md:mt-0">
             <h3 class="text-sm font-bold leading-6 text-white">Populärt, medicin</h3>
             <ul role="list" class="mt-6 space-y-4">
-                {#each allKeywordsMedicin as keyword}
+                {#each allKeywordsMedicin.slice(0, 5) as keyword}
                     <li>
                         <a href="#" class="text-sm leading-6 text-white hover:text-white">{keyword.name}</a>
                     </li>
