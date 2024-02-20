@@ -20,6 +20,10 @@
 <svelte:head>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+    
+    {#if title}
+        <title>{title}</title>
+    {/if}
 
     <!-- Facebook Meta Tags -->
     <meta property="og:site_name" content="Kaddio" />
