@@ -21,6 +21,8 @@
 
     $: url = slugify(orgName || '');
 
+	import { token } from '$lib/stores';
+    
     const countries = [
         ['Sverige', 'SE'],
         ['Finland', 'FI'],
@@ -51,6 +53,8 @@
 
         
         <form method="POST" use:enhance class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <input type="hidden" name="coupon" value={$token?.token}>
+
             <div class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
                 <div>
                 <label for="firstname" class="block text-sm font-semibold leading-6 text-gray-900">{ $_('Förnamn')}</label>
