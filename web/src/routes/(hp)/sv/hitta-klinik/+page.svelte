@@ -79,16 +79,11 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
-        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
         searchForm.submit();
     };
 
     onMount(() => {
-        const url = window.sessionStorage && window.sessionStorage.getItem('searchUrl');
-        if (url) {
-            window.sessionStorage && window.sessionStorage.removeItem('searchUrl');
-            window.history.replaceState({}, '', url);
-        }
+        window.sessionStorage && window.sessionStorage.removeItem('searchUrl');
     });
 
     beforeNavigate((navigation) => {

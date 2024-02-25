@@ -8,7 +8,7 @@
 
     import AutocompleteKeyword from '../../../components/AutocompleteKeyword.svelte';
     import AutocompletePlace from '../../../components/AutocompletePlace.svelte';
-    import { prevent_default } from 'svelte/internal';
+    import { onMount, prevent_default } from 'svelte/internal';
 
     export let data: PageData;
     let page = 0;
@@ -83,9 +83,13 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
-        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
+        
         searchForm.submit();
     };
+
+    onMount(() => {
+        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
+    });
 </script>
 
 <svelte:head>
