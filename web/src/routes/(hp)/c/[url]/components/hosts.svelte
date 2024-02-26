@@ -35,14 +35,14 @@
                     {host.title}
                 </div>
             {/if}
-            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
+            <!-- {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
                 {#if host.nextFreeTime}
                     <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
                 {:else}
                     <span class="text-red-300">Inga lediga tider</span>
                 {/if}
                 &nbsp;
-            {/if}
+            {/if} -->
 
             <HostModal {host} />
         </span>
