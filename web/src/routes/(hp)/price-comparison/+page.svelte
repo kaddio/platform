@@ -29,7 +29,7 @@
         <h3 id="tier-basic" class="text-sm font-semibold leading-6 text-gray-900">Free</h3>
         <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
           <span class="text-4xl font-bold">{price.free}</span>
-          <span class="text-sm font-semibold">/mo</span>
+          <span class="text-sm font-semibold">/month</span>
         </p>
         <a href="#" aria-describedby="tier-basic" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink text-oldpink ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Buy plan</a>
         <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900">
@@ -82,7 +82,7 @@
         <h3 id="tier-essential" class="text-sm font-semibold leading-6 text-gray-900">Pro</h3>
         <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
           <span class="text-4xl font-bold">{price.pro}</span>
-          <span class="text-sm font-semibold">/mo and user</span>
+          <span class="text-sm font-semibold">/month</span>
         </p>
         <a href="#" aria-describedby="tier-essential" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink bg-oldpink text-white hover:bg-indigo-500">Buy plan</a>
         <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900">
@@ -152,7 +152,7 @@
         <h3 id="tier-premium" class="text-sm font-semibold leading-6 text-gray-900">Enterprise</h3>
         <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
           <span class="text-4xl font-bold">{price.enterprise}</span>
-          <span class="text-sm font-semibold">/mo and user</span>
+          <span class="text-sm font-semibold">/month</span>
         </p>
         <a href="#" aria-describedby="tier-premium" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink text-oldpink ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Buy plan</a>
         <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900">
@@ -256,22 +256,22 @@
               <th scope="row"><span class="sr-only">Price</span></th>
               <td class="px-6 pt-2 xl:px-8">
                 <div class="flex items-baseline gap-x-1 text-gray-900">
-                  <span class="text-2xl font-bold">{price.free}</span>
-                  <span class="text-sm font-semibold leading-6">/mo</span>
+                  <span class="text-4xl font-bold">{price.free}</span>
+                  <span class="text-sm font-semibold leading-6">/month</span>
                 </div>
                 <a href="#" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink text-oldpink ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Buy plan</a>
               </td>
               <td class="px-6 pt-2 xl:px-8">
                 <div class="flex items-baseline gap-x-1 text-gray-900">
-                  <span class="text-2xl font-bold">{price.pro}</span>
-                  <span class="text-sm font-semibold leading-6">/mo and user</span>
+                  <span class="text-4xl font-bold">{price.pro}</span>
+                  <span class="text-sm font-semibold leading-6">/month</span>
                 </div>
                 <a href="#" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink bg-oldpink text-white hover:bg-indigo-500">Buy plan</a>
               </td>
               <td class="px-6 pt-2 xl:px-8">
                 <div class="flex items-baseline gap-x-1 text-gray-900">
-                  <span class="text-2xl font-bold">{price.enterprise}</span>
-                  <span class="text-sm font-semibold leading-6">/mo and user</span>
+                  <span class="text-4xl font-bold">{price.enterprise}</span>
+                  <span class="text-sm font-semibold leading-6">/month</span>
                 </div>
                 <a href="#" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink text-oldpink ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Buy plan</a>
               </td>
