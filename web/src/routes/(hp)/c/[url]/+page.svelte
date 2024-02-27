@@ -146,7 +146,7 @@
                         >
                     {/if}
                     <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types"
-                        >Behandlingar</a
+                        >Tjänster</a
                     >
                     {#if organization.homepage?.showUs}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts"
@@ -172,7 +172,7 @@
                                 color="theme-primary"
                                 size="md"
                                 href="https://{organization.url}.kaddio.com/booking"
-                                >Sök tid</KdLinkButton
+                                >Boka tid</KdLinkButton
                             >
                         </div>
                     {/if}
