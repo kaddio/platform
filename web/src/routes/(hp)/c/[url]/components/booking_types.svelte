@@ -29,8 +29,8 @@
                         >
                     {:else}
                         <span class="text-red-300">Inga lediga tider</span>
-                    {/if} -->
-                    &nbsp;
+                    {/if}
+                    &nbsp;-->
                     <BookingTypeModal {bookingType} />
                 </span>
                 <span slot="action">

@@ -276,6 +276,7 @@
             >
                 <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
                 <Hosts
+                    showBooking={organization.showBooking}
                     useReviews={organization.useReviews}
                     hosts={organization.hosts}
                     bookingFilterOnHost={organization.bookingFilterOnHost}

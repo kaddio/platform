@@ -8,6 +8,7 @@
     export let hosts: any[];
     export let bookingFilterOnHost: boolean;
     export let useReviews: boolean;
+    export let showBooking: boolean;
     const longList = hosts.length > 10;
     let expanded = !longList;
 
@@ -48,7 +49,7 @@
             <HostModal {host} />
         </span>
         <span slot="action">
-            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
+            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost && showBooking}
                 <KdLinkButton href={host.bookingLink} size="sm" variant="flat" color="theme-primary"
                     >Sök tid</KdLinkButton
                 >
