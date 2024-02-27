@@ -83,7 +83,7 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
-        
+
         searchForm.submit();
     };
 

@@ -24,7 +24,7 @@
                     false
                 )}); background-size: cover; background-position: center"
             />
-            {#if organization.stars}
+            {#if organization.stars && organization.useReviews}
                 <div
                     class="bg-white rounded-bl absolute top-0 right-0 text-sm px-1 font-semibold text-gray-500"
                 >

@@ -7,6 +7,7 @@
 
     export let hosts: any[];
     export let bookingFilterOnHost: boolean;
+    export let useReviews: boolean;
     const longList = hosts.length > 10;
     let expanded = !longList;
 
