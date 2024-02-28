@@ -146,7 +146,7 @@
                         >
                     {/if}
                     <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types"
-                        >Tjänster</a
+                        >Behandlingar</a
                     >
                     {#if organization.homepage?.showUs}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts"
@@ -172,7 +172,7 @@
                                 color="theme-primary"
                                 size="md"
                                 href="https://{organization.url}.kaddio.com/booking"
-                                >Boka tid</KdLinkButton
+                                >Sök tid</KdLinkButton
                             >
                         </div>
                     {/if}
@@ -229,7 +229,7 @@
                     </div>
                 {/if} -->
 
-                {#if organization.showBooking && organization.homepage?.showPlaces}
+                {#if organization.homepage?.showPlaces}
                     <div
                         class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
                         id="places"
@@ -242,12 +242,14 @@
                                 </span>
 
                                 <span slot="action">
-                                    <KdLinkButton
-                                        size="sm"
-                                        variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
-                                        >Sök tid</KdLinkButton
-                                    >
+                                    {#if organization.showBooking}
+                                        <KdLinkButton
+                                            size="sm"
+                                            variant="outline"
+                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
+                                            >Sök tid</KdLinkButton
+                                        >
+                                    {/if}
                                 </span>
                             </KdItem>
                         {/each}
@@ -276,8 +278,6 @@
             >
                 <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
                 <Hosts
-                    showBooking={organization.showBooking}
-                    useReviews={organization.useReviews}
                     hosts={organization.hosts}
                     bookingFilterOnHost={organization.bookingFilterOnHost}
                 />
