@@ -24,7 +24,7 @@
         </span>
     </div>
     <span class="text-gray-500 text-xs">{dayjs(review.date).fromNow()}</span>
-    <span class="mt-5">{review.comment}</span>
+    <span class="mt-5">{review.comment || ''}</span>
     {#if review.answer}
         hjk
         <span class="mb-3 mt-5 text-gray-800 bg-gray-200 rounded px-4 py-3 border-gray-200 border"
