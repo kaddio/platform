@@ -8,6 +8,7 @@
     import Seo from './seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { kaddioOrgSchema } from '$lib/json-ld';
+    import ReferralBanner from './referral-banner.svelte';
     const lang = getContext('lang');
 
     export let darkHeader: boolean = false;
@@ -55,7 +56,6 @@
 
 <Seo 
     url="https://kaddio.com" 
-    title="Journalsystem, onlinebokning, kommunikation, fakturering"
     description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
     type="website" 
@@ -68,6 +68,7 @@
 
 <header class="relative isolate z-10">
     <LangBanner />
+    <ReferralBanner />
     <MarketplaceBanner />
 
     <nav

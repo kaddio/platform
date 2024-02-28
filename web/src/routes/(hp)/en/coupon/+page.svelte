@@ -4,13 +4,19 @@
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
 	import { imageHandler } from '$lib/img';
-    setContext('lang', 'en');
+  import Seo from '$components/seo.svelte';
+  setContext('lang', 'en');
 
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex">
-</svelte:head>
+<Seo 
+    url="https://kaddio.com" 
+    title="Kaddio is recommended by {$token.name}"
+    description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+    type="website" 
+    phone="+46313204414"
+ />
 
 <Nav />
 
