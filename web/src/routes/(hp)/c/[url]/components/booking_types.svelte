@@ -23,14 +23,14 @@
                     {bookingType.clientVisibleLength} min ·
                     <span itemprop="offer">{bookingType.price} kr</span>
                     <br />
-                    {#if bookingType.nextFreeTime}
+                    <!-- {#if bookingType.nextFreeTime}
                         <span class="text-green-300"
                             >{dayjs(bookingType.nextFreeTime).fromNow()}</span
                         >
                     {:else}
                         <span class="text-red-300">Inga lediga tider</span>
                     {/if}
-                    &nbsp;
+                    &nbsp;-->
                     <BookingTypeModal {bookingType} />
                 </span>
                 <span slot="action">

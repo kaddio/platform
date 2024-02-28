@@ -12,7 +12,7 @@ export const keywords = [
     //     imgUrl: '/img/keywords/diana-polekhina-ZBstHWt9vLc-unsplash.jpg'
     // },
     {
-        label: 'Fysioterapi',
+        label: 'Fysioterapeut',
         imgUrl: '/img/keywords/sincerely-media-qzmPDJJOz4c-unsplash.jpg'
     },
     {
@@ -28,7 +28,7 @@ export const keywords = [
     //     imgUrl: '/img/keywords/vidar-nordli-mathisen-gF7QEWM7tm4-unsplash.jpg'
     // },
     {
-        label: 'Läkarintyg',
+        label: 'Läkare',
         imgUrl: '/img/keywords/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg'
     }
 ];

@@ -23,6 +23,7 @@
     import LdTag from '$lib/components/LDTag.svelte';
     import { localBusinessSchema } from '$lib/json-ld';
     import { redirect } from '@sveltejs/kit';
+    import FooterDiscrete from '../../../../components/footerDiscrete.svelte';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -37,6 +38,12 @@
         }
         window.location = '/sv/hitta-klinik';
     };
+    let hasBackButton = false;
+    onMount(() => {
+        if (window.sessionStorage && window.sessionStorage.getItem('searchUrl')) {
+            hasBackButton = true;
+        }
+    });
     onMount(() => {
         const r = document.querySelector(':root');
         organization.cssVars.forEach((c) => {
@@ -106,7 +113,9 @@
             <div class="flex justify-between w-full">
                 <div class="flex gap-5">
                     <a on:click={() => back()} href class="flex gap-5">
-                        <i class="fa fa-arrow-left text-white text-xl" />
+                        {#if hasBackButton}
+                            <i class="fa fa-arrow-left text-white text-xl" />
+                        {/if}
                         <img src="/img/kaddio-logo.png" alt="Kaddio logotype" class="h-7" />
                     </a>
                 </div>
@@ -220,7 +229,7 @@
                     </div>
                 {/if} -->
 
-                {#if organization.showBooking && organization.homepage?.showPlaces}
+                {#if organization.homepage?.showPlaces}
                     <div
                         class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
                         id="places"
@@ -233,12 +242,14 @@
                                 </span>
 
                                 <span slot="action">
-                                    <KdLinkButton
-                                        size="sm"
-                                        variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
-                                        >Sök tid</KdLinkButton
-                                    >
+                                    {#if organization.showBooking}
+                                        <KdLinkButton
+                                            size="sm"
+                                            variant="outline"
+                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
+                                            >Sök tid</KdLinkButton
+                                        >
+                                    {/if}
                                 </span>
                             </KdItem>
                         {/each}
@@ -295,8 +306,11 @@
         {/if}
     </div>
 </div>
-
-<FooterMarketplace />
+{#if hasBackButton}
+    <FooterMarketplace />
+{:else}
+    <FooterDiscrete />
+{/if}
 
 <style>
     .overlay {
