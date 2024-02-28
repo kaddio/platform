@@ -60,7 +60,7 @@
                 <a href="/{lang}/case" class="text-sm leading-6 text-gray-600">{ $_('Kundberättelser')}</a>
               </li>
               <li>
-                <a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="{getRegion(countryCodeFromLang(lang)).demoLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
               <li>
                 <a href="/{lang}/sales" class="text-sm leading-6 text-gray-600">{ $_('Kontakta sälj')}</a>
