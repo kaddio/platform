@@ -1,14 +1,13 @@
 <script lang="ts">
-	import FaqSection from "$components/faqSection.svelte";
-import Footer from "$components/footer.svelte";
+	import Footer from "$components/footer.svelte";
+    import Img from "$components/img.svelte";
+    import ImgSection from "$components/imgSection.svelte";
 	import LegalLi from "$components/legalLi.svelte";
 	import LegalUl from "$components/legalUl.svelte";
 import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import Nav from "$components/nav.svelte";
 	import Person from "$components/person.svelte";
-    import Qa from "$components/qa.svelte";
-    import Qr from "$components/qr.svelte";
 	import { setContext } from "svelte";
 
   setContext('lang', 'en');
@@ -89,7 +88,7 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 <ModuleSection>
 	<span slot="title">Writing <i class="fa-regular fa-pen"></i></span>
 	<span slot="sub">
-		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous.
+		This is how we approach writing so that it's consistent with our brand. Our tone is professional, warm and humane. We aim to be clear and consistent, and we avoid being vague and ambiguous. Use "Don't make me think" as a guideline. The key takeaway should begin a sentence, one word (the first word) is often enough.
 	</span>
 
 	<ModuleFeature>
@@ -137,110 +136,13 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 </ModuleSection>
 
 
-<FaqSection>
-	<span slot="title">More on writing</span>
-
-  <Qa>
-		<span slot="q">Use inclusive term "User"</span>
-		<span slot="a">
-			Use the inclusive and more agnostic term User instead of specifically using "Host" and "Client". Eg. not all users identify "Client" as their customers, but use the term "Patient" instead.
-		</span>
-	</Qa>
-
-  <Qa>
-		<span slot="q">Aid short attention span</span>
-		<span slot="a">
-			The key takeaway of any sentence, paragraph or article should begin. Often one word (the first word) is often enough.
-		</span>
-	</Qa>
-
-  <Qa>
-		<span slot="q">Think TL;DR</span>
-		<span slot="a">
-			The key takeaway in any article shoule be grasped by someone who only skims the text. For example, if describing a complex or technical process, describe the process firt for someone who is not going to read the rest of the text. Then write the text for people who read the rest of the text.
-		</span>
-	</Qa>
-
-  <Qa>
-		<span slot="q">Don't make me think</span>
-		<span slot="a">
-			Don't make me think is a great book by Steve Krug :) But it's also a principle we like. The key takeaway is that the user should not have to think about what to do.
-		</span>
-	</Qa>  
-</FaqSection>
-
-
-<div class="bg-white">
-	<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-<ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-  <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Normal.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Normal.svg" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Normal.svg</p>
-  </li>
-
-    <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Normal.png" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Normal.png" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Normal.png</p>
-  </li>
-
-
-
-
-  <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Symbol.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Symbol.svg" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Symbol.svg</p>
-  </li>  
-  
-
-  <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Symbol.png" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Symbol.png" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Symbol.png</p>
-  </li>  
-  
-
-</ul>
-		
-	</div>
-</div>
-
-
-
-
-
+<ImgSection>
+    <Img src="/img/logotypes/Kaddio_Logga_Normal.svg" name="Kaddio_Logga_Normal.svg" />
+    <Img src="/img/logotypes/Kaddio_Logga_Normal.png" name="Kaddio_Logga_Normal.png" />
+    <Img src="/img/logotypes/Kaddio_Logga_Symbol.svg" name="Kaddio_Logga_Symbol.svg" />
+    <Img src="/img/logotypes/Kaddio_Logga_Symbol.png" name="Kaddio_Logga_Symbol.png" />  
+    <Img src="/img/man.jpg" name="man.png" />  
+</ImgSection>
 
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
