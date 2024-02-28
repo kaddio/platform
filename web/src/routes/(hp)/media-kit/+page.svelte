@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Footer from "$components/footer.svelte";
+    import Img from "$components/img.svelte";
+    import ImgSection from "$components/imgSection.svelte";
 	import LegalLi from "$components/legalLi.svelte";
 	import LegalUl from "$components/legalUl.svelte";
 import ModuleFeature from "$components/moduleFeature.svelte";
@@ -134,79 +136,13 @@ import ModuleFeature from "$components/moduleFeature.svelte";
 </ModuleSection>
 
 
-
-
-<div class="bg-white">
-	<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-<ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-  <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Normal.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Normal.svg" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Normal.svg</p>
-  </li>
-
-    <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Normal.png" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Normal.png" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Normal.png</p>
-  </li>
-
-
-
-
-  <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Symbol.svg" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Symbol.svg" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Symbol.svg</p>
-  </li>  
-  
-
-  <li class="relative">
-    <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-oldpink focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-      <img src="/img/logotypes/Kaddio_Logga_Symbol.png" alt="" class="pointer-events-none object-cover group-hover:opacity-75">
-      <a href="/img/logotypes/Kaddio_Logga_Symbol.png" class="absolute inset-0 focus:outline-none">
-        <span class="sr-only">View details for image</span>
-	  </a>
-    </div>
-    <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">Kaddio_Logga_Symbol.png</p>
-  </li>  
-  
-
-</ul>
-		
-	</div>
-</div>
-
-
-
-
-
+<ImgSection>
+    <Img src="/img/logotypes/Kaddio_Logga_Normal.svg" name="Kaddio_Logga_Normal.svg" />
+    <Img src="/img/logotypes/Kaddio_Logga_Normal.png" name="Kaddio_Logga_Normal.png" />
+    <Img src="/img/logotypes/Kaddio_Logga_Symbol.svg" name="Kaddio_Logga_Symbol.svg" />
+    <Img src="/img/logotypes/Kaddio_Logga_Symbol.png" name="Kaddio_Logga_Symbol.png" />  
+    <Img src="/img/man.jpg" name="man.png" />  
+</ImgSection>
 
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
