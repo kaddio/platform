@@ -100,13 +100,13 @@
 </script>
 
 <svelte:head>
-    {#if !keywordExists(data.keyword)}
+    {#if !keywordExists(data.keyword) || data.organizations.length == 0}
         <meta name="robots" content="noindex">
     {/if}
 </svelte:head>
 
 
-{#if keywordExists(data.keyword)}
+{#if keywordExists(data.keyword) && data.organizations.length > 0}
     <Seo
         url="https://kaddio.com/sv/hitta-klinik"
         type="website"
