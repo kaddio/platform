@@ -55,7 +55,7 @@ export const descFromKeywordAndPlace = (keyword: string, place: string) => {
         placeStr = '.';
     }
 
-    const keywordData = allKeywords.find((k) => k.name.toLowerCase() === keyword);
+    const keywordData = allKeywords.find((k) => k.name.toLowerCase() === keyword.toLowerCase());
     const useGeneralDescForKeyword = !keywordData || !keywordData.desc || keyword === 'Alla';
 
     if (useGeneralDescForKeyword && place) {
