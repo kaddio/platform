@@ -9,7 +9,7 @@
     import AutocompleteKeyword from '../../../components/AutocompleteKeyword.svelte';
     import AutocompletePlace from '../../../components/AutocompletePlace.svelte';
     import { onMount, prevent_default } from 'svelte/internal';
-    import { descriptionFromKeywordAndPlace, keywordExists } from "$lib/keywords";
+    import { descFromKeywordAndPlace, keywordExists, shouldShowMetaForPage } from "$lib/keywords";
     import Seo from '$components/seo.svelte';
 
     export let data: PageData;
@@ -95,24 +95,25 @@
 
     $: title = `${data.keyword} ${data.place} - Kaddio`;
 
-    $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}`, `description: ${descriptionFromKeywordAndPlace(data.keyword, data.place)}`);
+    $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
+    $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
     
 </script>
 
 <svelte:head>
-    {#if !keywordExists(data.keyword) || data.organizations.length == 0}
+    {#if !shouldShowMetaForPage(data.keyword, data.organizations.length)}
         <meta name="robots" content="noindex">
     {/if}
 </svelte:head>
 
 
-{#if keywordExists(data.keyword) && data.organizations.length > 0}
+{#if shouldShowMetaForPage(data.keyword, data.organizations.length)}
     <Seo
         url="https://kaddio.com/sv/hitta-klinik"
         type="website"
         keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
         title={title}
-        description={descriptionFromKeywordAndPlace(data.keyword, data.place)}
+        description={descFromKeywordAndPlace(data.keyword, data.place)}
         images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
     />
 {/if}
