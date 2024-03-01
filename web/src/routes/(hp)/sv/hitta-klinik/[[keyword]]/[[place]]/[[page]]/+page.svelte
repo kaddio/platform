@@ -95,8 +95,8 @@
 
     $: title = `${data.keyword} ${data.place} - Kaddio`;
 
-    $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
-    $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
+    // $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
+    // $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
     
 </script>
 

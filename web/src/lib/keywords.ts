@@ -46,7 +46,6 @@ export const keywordExists = (keyword: string): boolean => {
 };
 
 export const descFromKeywordAndPlace = (keyword: string, place: string) => {
-    // console.log(keyword, place);
     let placeStr = '';
 
     if (place) {
