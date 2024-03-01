@@ -74,23 +74,22 @@
         // Use a regular expression to remove style attributes
         return html.replace(/style\s*=\s*["'][^"']*["']/gi, '');
     }
+    let description = organization.homepage?.metaDescription || `${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`;
+    
 </script>
 
-{#if organization.redirectToNewHomepage}
-    <LdTag schema={localBusinessSchema} />
-    <Seo
-        url={`https://kaddio.com/c/${organization.url}`}
-        type="business.business"
-        keywords={organization.keywords?.join(', ')}
-        title={`${organization.name}, ${organization.city} - Kaddio`}
-        description={`${organization.name} - ${organization.keywords?.join(', ')} - ${
-            organization.city
-        }`}
-        locality={organization.city}
-        images={imagesFromImageHandler}
-        streetAddress={organization.address}
-    />
-{/if}
+<LdTag schema={localBusinessSchema} />
+<Seo
+    url={`https://kaddio.com/c/${organization.url}`}
+    type="business.business"
+    keywords={organization.keywords?.join(', ')}
+    title={`${organization.name}, ${organization.city} - Kaddio`}
+    description={description}
+    locality={organization.city}
+    images={imagesFromImageHandler}
+    streetAddress={organization.address}
+/>
+
 
 <svelte:head>
     {#if organization.redirectToNewHomepage}
