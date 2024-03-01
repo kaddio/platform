@@ -33,8 +33,41 @@ export const keywords = [
     }
 ];
 
-export const allKeywords = [
-    { name: 'Psykolog', category: 'Psykologi' },
+export const keywordExists = (keyword: string): boolean => {
+    if (keyword === 'Alla') return true;
+
+    return !!allKeywords.find((k) => k.name === keyword);
+};
+
+export const descriptionFromKeywordAndPlace = (keyword: string, place: string) => {
+    console.log(keyword, place);
+    let placeStr = '';
+
+    if (place) {
+        placeStr = ` ${place}.`;
+    } else {
+        placeStr = '.';
+    }
+
+    const keywordData = allKeywords.find((k) => k.name.toLowerCase() === keyword);
+
+    if (keyword === 'Alla' && place) {
+        return `Sök efter behandlingar och kliniker ${place}`;
+    }
+
+    if (keyword === 'Alla' && (!place || place === 'Sverige')) {
+        return `Sök efter behandlingar och kliniker i hela Sverige`;
+    }
+
+    if (!keywordData) {
+        return false;
+    }
+
+    return `${keywordData.desc}${placeStr}`;
+};
+
+const allKeywords = [
+    { name: 'Psykolog', category: 'Psykologi', desc: 'Boka tid med psykolog' },
     { name: 'Psykoterapi', category: 'Psykologi' },
     { name: 'Samtalsterapi', category: 'Psykologi' },
     { name: 'KBT', category: 'Psykologi' },
@@ -42,7 +75,7 @@ export const allKeywords = [
     { name: 'ACT', category: 'Psykologi' },
     { name: 'Depressionsbehandling', category: 'Psykologi' },
     { name: 'Ångestbehandling', category: 'Psykologi' },
-    { name: 'Tvångssyndrom', category: 'Psykologi' },
+    { name: 'Tvångssyndrom', category: 'Psykologi', desc: 'Sök hjälp för tvångssyndrom' },
     { name: 'Fobibehandling', category: 'Psykologi' },
     { name: 'Familjerådgivning', category: 'Psykologi' },
     { name: 'Parterapi', category: 'Psykologi' },
