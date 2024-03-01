@@ -34,7 +34,7 @@ export const keywords = [
 ];
 
 export const shouldShowMetaForPage = (keyword: string, matches: number): boolean => {
-    // if (matches == 0) return false;
+    if (matches == 0) return false;
 
     return keywordExists(keyword);
 };
