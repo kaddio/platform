@@ -9,6 +9,8 @@
     import AutocompleteKeyword from '../../../components/AutocompleteKeyword.svelte';
     import AutocompletePlace from '../../../components/AutocompletePlace.svelte';
     import { onMount, prevent_default } from 'svelte/internal';
+    import { descriptionFromKeywordAndPlace, keywordExists } from "$lib/keywords";
+    import Seo from '$components/seo.svelte';
 
     export let data: PageData;
     let page = 0;
@@ -90,11 +92,30 @@
     onMount(() => {
         window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
     });
+
+    $: title = `${data.keyword} ${data.place} - Kaddio`;
+
+    $: console.log(keywordExists(data.keyword), descriptionFromKeywordAndPlace(data.keyword, data.place));
+    
 </script>
 
 <svelte:head>
-    <meta name="robots" content="noindex" />
+    {#if !keywordExists(data.keyword)}
+        <meta name="robots" content="noindex">
+    {/if}
 </svelte:head>
+
+
+{#if keywordExists(data.keyword)}
+    <Seo
+        url="https://kaddio.com/sv/hitta-klinik"
+        type="website"
+        keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
+        title={title}
+        description={descriptionFromKeywordAndPlace(data.keyword, data.place)}
+        images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+    />
+{/if}
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative p-4">
