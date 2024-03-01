@@ -9,6 +9,8 @@
     import AutocompleteKeyword from '../../../components/AutocompleteKeyword.svelte';
     import AutocompletePlace from '../../../components/AutocompletePlace.svelte';
     import { onMount, prevent_default } from 'svelte/internal';
+    import { descFromKeywordAndPlace, keywordExists, shouldShowMetaForPage } from "$lib/keywords";
+    import Seo from '$components/seo.svelte';
 
     export let data: PageData;
     let page = 0;
@@ -90,11 +92,31 @@
     onMount(() => {
         window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
     });
+
+    $: title = `${data.keyword} ${data.place} - Kaddio`;
+
+    // $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
+    // $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
+    
 </script>
 
 <svelte:head>
-    <meta name="robots" content="noindex" />
+    {#if !shouldShowMetaForPage(data.keyword, data.organizations.length)}
+        <meta name="robots" content="noindex">
+    {/if}
 </svelte:head>
+
+
+{#if shouldShowMetaForPage(data.keyword, data.organizations.length)}
+    <Seo
+        url="https://kaddio.com/sv/hitta-klinik"
+        type="website"
+        keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
+        title={title}
+        description={descFromKeywordAndPlace(data.keyword, data.place)}
+        images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+    />
+{/if}
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative p-4">

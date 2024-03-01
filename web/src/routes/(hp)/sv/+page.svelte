@@ -28,14 +28,14 @@ srcset="
 
 ***/
 </script>
-
+<!-- 
 <svelte:head>
     <title>Journalsystem, onlinebokning, kommunikation, fakturering</title>
     <meta
         name="description"
         content="Helhetssystem för vård med journalsystem, onlinebokning, kommunikation, fakturering i samma system."
     />
-</svelte:head>
+</svelte:head> -->
 
 <div class="bg-white">
     <Nav darkHeader={true} />
