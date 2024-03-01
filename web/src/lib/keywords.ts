@@ -40,7 +40,7 @@ export const keywordExists = (keyword: string): boolean => {
 };
 
 export const descriptionFromKeywordAndPlace = (keyword: string, place: string) => {
-    console.log(keyword, place);
+    // console.log(keyword, place);
     let placeStr = '';
 
     if (place) {
@@ -50,17 +50,14 @@ export const descriptionFromKeywordAndPlace = (keyword: string, place: string) =
     }
 
     const keywordData = allKeywords.find((k) => k.name.toLowerCase() === keyword);
+    const useGeneralDescForKeyword = !keywordData || !keywordData.desc || keyword === 'Alla';
 
-    if (keyword === 'Alla' && place) {
+    if (useGeneralDescForKeyword && place) {
         return `Sök efter behandlingar och kliniker ${place}`;
     }
 
-    if (keyword === 'Alla' && (!place || place === 'Sverige')) {
+    if (useGeneralDescForKeyword && (!place || place === 'Sverige')) {
         return `Sök efter behandlingar och kliniker i hela Sverige`;
-    }
-
-    if (!keywordData) {
-        return false;
     }
 
     return `${keywordData.desc}${placeStr}`;

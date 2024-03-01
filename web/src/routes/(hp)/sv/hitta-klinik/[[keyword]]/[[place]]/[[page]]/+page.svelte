@@ -95,7 +95,7 @@
 
     $: title = `${data.keyword} ${data.place} - Kaddio`;
 
-    $: console.log(keywordExists(data.keyword), descriptionFromKeywordAndPlace(data.keyword, data.place));
+    $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}`, `description: ${descriptionFromKeywordAndPlace(data.keyword, data.place)}`);
     
 </script>
 
