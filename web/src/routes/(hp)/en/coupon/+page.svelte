@@ -6,6 +6,7 @@
 	import { imageHandler } from '$lib/img';
   import Seo from '$components/seo.svelte';
   setContext('lang', 'en');
+  setContext('hideLangBanner', true);
 
 </script>
 

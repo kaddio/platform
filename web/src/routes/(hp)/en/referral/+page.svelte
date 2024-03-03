@@ -5,6 +5,8 @@
 	import Nav from '$components/nav.svelte';
 	import { imageHandler } from '$lib/img';
     setContext('lang', 'en');
+    setContext('hideLangBanner', true);
+
 </script>
 
 <svelte:head>
