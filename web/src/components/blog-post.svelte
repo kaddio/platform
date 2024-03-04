@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Tag from "./tag.svelte";
+
     export let title: string;
     export let name: string;
     export let location: string;
@@ -18,9 +20,7 @@
       <div class="flex items-center gap-x-4 text-xs">
         <time datetime="2020-03-16" class="text-gray-500">{type}</time>
         {#each tags as tag}
-            <span class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">
-                {tag}
-            </span>            
+          <Tag>{tag}</Tag>
         {/each}
       </div>
       <div class="group relative max-w-xl">
