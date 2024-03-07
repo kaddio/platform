@@ -1,5 +1,7 @@
 <script>
 	import Customer from "$components/customer.svelte";
+    import { imageHandler } from "$lib/img";
+
 </script>
 
 
@@ -16,13 +18,13 @@
         </div>
       </div>
       <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-        <Customer src="/customer-logos/malmo.png" alt="Malmö Universitet"></Customer>
-        <Customer src="/customer-logos/rfsl.png" alt="RFSL"></Customer>
-        <Customer src="/customer-logos/Twitch.png" alt="Twitch"></Customer>
-        <Customer src="/customer-logos/storasyster_ny.png" alt="Storasyster"></Customer>
-        <Customer src="/customer-logos/sveakbt.png" alt="Svea KBT"></Customer>
-        <Customer src="/customer-logos/dinpsykolog.png" alt="Din Psykolog"></Customer>
-        <Customer src="/customer-logos/IKSU Orange 2019 (kopia).png" alt="IKSU"></Customer>
+        <Customer src={imageHandler("/customer-logos/malmo.png", {format: "auto", width: 640})} alt="Malmö Universitet"></Customer>
+        <Customer src={imageHandler("/customer-logos/rfsl.png", {format: "auto", width: 640})} alt="RFSL"></Customer>
+        <Customer src={imageHandler("/customer-logos/Twitch.png", {format: "auto", width: 640})} alt="Twitch"></Customer>
+        <Customer src={imageHandler("/customer-logos/storasyster_ny.png", {format: "auto", width: 640})} alt="Storasyster"></Customer>
+        <Customer src={imageHandler("/customer-logos/sveakbt.png", {format: "auto", width: 640})} alt="Svea KBT"></Customer>
+        <Customer src={imageHandler("/customer-logos/dinpsykolog.png", {format: "auto", width: 640})} alt="Din Psykolog"></Customer>
+        <Customer src={imageHandler("/customer-logos/IKSU Orange 2019 (kopia).png", {format: "auto", width: 640})} alt="IKSU"></Customer>
       </div>
     </div>
   </div>
