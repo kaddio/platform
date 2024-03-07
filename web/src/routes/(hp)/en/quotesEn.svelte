@@ -54,7 +54,7 @@
     <Quote>
         A functional and easy program for medical records, with a quick and professional support team.
         <span slot="quoted">
-            Kim Olausson <cite>Lic. Physiotherapist <a href="http://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+            Kim Olausson <cite>Lic. Physiotherapist <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
         </span>
     </Quote>    
 </QuotesSection>

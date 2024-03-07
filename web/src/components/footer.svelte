@@ -71,7 +71,7 @@
               </li>
 
               <li>
-                <a href="http://eepurl.com/gsgcG5" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://eepurl.com/gsgcG5" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
             </ul>
           </div>

@@ -51,7 +51,7 @@
     <Quote>
         Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
         <span slot="quoted">
-            Kim Olausson <cite>Leg Fysioterapeut <a href="http://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+            Kim Olausson <cite>Leg Fysioterapeut <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
         </span>
     </Quote>    
 </QuotesSection>
