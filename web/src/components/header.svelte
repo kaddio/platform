@@ -9,8 +9,8 @@
     import LdTag from '$lib/components/LDTag.svelte';
     import { kaddioOrgSchema } from '$lib/json-ld';
     import ReferralBanner from './referral-banner.svelte';
+    import { imageHandler } from '$lib/img';
     const lang = getContext('lang');
-
     export let darkHeader: boolean = false;
 
     let navOpen = false;
@@ -337,7 +337,7 @@
                 <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Kaddio</span>
-                        <img class="h-8 w-auto" src="/img/kaddio-black.png" alt="Kaddio logotype" />
+                        <img class="h-8 w-auto" src={imageHandler("/img/kaddio-black.png", {format: "auto"})} alt="Kaddio logotype" />
                     </a>
                     <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                         <span class="sr-only">Close menu</span>

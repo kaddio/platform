@@ -3,6 +3,7 @@
     import { _ } from '$lib/stores';
     import { countryCodeFromLang, getRegion } from '$lib/regions';
     import { page } from '$app/stores';
+    import { imageHandler } from '$lib/img';
     const lang = getContext('lang');
     let defaultKeywords = [
         'Psykolog',
@@ -31,7 +32,7 @@
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-screen-lg px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-            <img class="h-7" src="/img/kaddio-black.png" alt="Company name" />
+            <img class="h-7" src={imageHandler("/img/kaddio-black.png", {format: "auto"})} alt="Company name" />
             <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
