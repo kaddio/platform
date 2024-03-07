@@ -400,7 +400,7 @@
                                 {$_('Chat och Video')}
                             </a>
                             <a
-                                href="fakturering"
+                                href={$link('fakturering', lang)}
                                 class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 <div
