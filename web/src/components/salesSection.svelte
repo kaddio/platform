@@ -1,7 +1,10 @@
 <script>
-    let image = '/img/daniel_sale.jpeg';
-    let hoverImage = '/img/daniel_rufus.jpeg';
+    import { imageHandler } from "$lib/img";
+
+    let image = imageHandler('/img/daniel_sale.jpeg', {format: "auto", width: 640});
+    let hoverImage = imageHandler('/img/daniel_rufus.jpeg', {format: "auto", width: 640});
     let imageSrc = image;
+
 </script>
 
 <div class="relative bg-white">
