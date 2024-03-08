@@ -4,7 +4,6 @@
     import { setContext, getContext } from 'svelte';
 
     import { _ } from '$lib/stores';
-    console.log($page.url);
 
     try{
       const possibleLangFromPath = $page.url.pathname.split('/')[1];
