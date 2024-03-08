@@ -8,6 +8,7 @@
 	import { scroll } from '$lib/scroll';
 	import QuotesEn from './quotesEn.svelte';
     import { hrefLangAlternates } from '$lib/stores';
+    import { imageHandler } from '$lib/img';
 
 	setContext('lang', 'en');
 </script>
@@ -22,7 +23,7 @@
 	<Nav darkHeader={true} />
 
 	<div class="relative -mt-24  isolate overflow-hidden bg-gray-900 pt-14 pb-16 sm:pb-20">
-		<img src="/img/man.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+		<img src={imageHandler("/img/man.jpg", {format: "auto"})} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
 		<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 			<div class="text-center">
