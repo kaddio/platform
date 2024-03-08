@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('sales', 'sv')}
+	{@html hrefLangAlternates('sales')}
 
 	<title>Nyfiken på Kaddio</title>
 	<meta name="description" content="Är du nyfiken på Kaddio?" />

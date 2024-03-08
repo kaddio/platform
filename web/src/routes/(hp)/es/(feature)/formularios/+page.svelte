@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('formulär', 'es')}
+	{@html hrefLangAlternates('formulär')}
 
 	<title>Kaddio - Formularios</title>
 	<meta name="description" content="En Kaddio, puedes usar formularios estándar y crear los tuyos propios. Envío de formularios clínicos automáticamente al hacer la reserva y recibe las respuestas directamente en ellos." />

@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-    {@html hrefLangAlternates('kommunication', 'sv')}
+    {@html hrefLangAlternates('kommunication')}
 
     <title>Kaddio - Kommunikation</title>
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />

@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('dokument', 'es')}
+	{@html hrefLangAlternates('dokument')}
 
 	<title>Kaddio - Dokument</title>
 	<meta name="description" content="Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt." />

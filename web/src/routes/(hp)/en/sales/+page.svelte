@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('sales', 'en')}
+	{@html hrefLangAlternates('sales')}
 
 	<title>
         Curious about Kaddio?

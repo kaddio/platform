@@ -367,7 +367,7 @@ const links = {
     }
 };
 
-export const hrefLangAlternates = function (name, lang = getContext('lang')) {
+export const hrefLangAlternates = function (name) {
     const alternateLangs = ['sv', 'en', 'es'];
 
     if (!links[name]) {

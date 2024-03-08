@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('create', 'en')}
+	{@html hrefLangAlternates('create')}
 
 	<title>Kaddio - skapa konto</title>
 	<meta name="description" content="Skapa konto" />

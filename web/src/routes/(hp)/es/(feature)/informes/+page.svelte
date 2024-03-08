@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('rapporter', 'es')}
+	{@html hrefLangAlternates('rapporter')}
 
 	<title>Kaddio - Informes</title>
 	<meta name="description" content="Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys." />

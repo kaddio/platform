@@ -9,7 +9,7 @@
 
 
 <svelte:head>
-  {@html hrefLangAlternates('sign-in', 'sv')}
+  {@html hrefLangAlternates('sign-in')}
 	<title>Kaddio - Logga in</title>
 	<meta name="description" content="Logga in i Kaddio" />
 </svelte:head>

@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	  {@html hrefLangAlternates('sign-in', 'es')}
+	  {@html hrefLangAlternates('sign-in')}
 
 	<title>Kaddio - Logga in</title>
 	<meta name="description" content="Logga in i Kaddio" />

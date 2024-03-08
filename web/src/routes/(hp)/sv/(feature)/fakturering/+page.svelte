@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('fakturering', 'sv')}
+	{@html hrefLangAlternates('fakturering')}
 
 	<title>Fakturering för små och medelstora företag</title>
 	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />

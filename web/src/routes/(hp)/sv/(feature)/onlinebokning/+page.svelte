@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('onlinebokning', 'sv')}
+	{@html hrefLangAlternates('onlinebokning')}
 	<title>Onlinebokning med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>

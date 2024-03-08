@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('fakturering', 'es')}
+	{@html hrefLangAlternates('fakturering')}
 
 	<title>Kaddio - Sistema de facturación</title>
 	<meta name="description" content="Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio." />

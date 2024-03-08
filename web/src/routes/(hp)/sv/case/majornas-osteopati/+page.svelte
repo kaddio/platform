@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  {@html hrefLangAlternates('case/majornas-osteopati', 'sv')}
+  {@html hrefLangAlternates('case/majornas-osteopati')}
 </svelte:head>
 
 

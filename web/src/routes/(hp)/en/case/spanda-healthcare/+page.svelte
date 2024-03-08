@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  {@html hrefLangAlternates('case/spanda-healthcare', 'en')}
+  {@html hrefLangAlternates('case/spanda-healthcare')}
 </svelte:head>
 
 <Legal>

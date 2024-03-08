@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('uppgifter', 'sv')}
+	{@html hrefLangAlternates('uppgifter')}
 
 	<title>Kaddio - Uppgifter</title>
 	<meta name="description" content="Gör din egen att-göra-lista eller delegera till någon annan." />

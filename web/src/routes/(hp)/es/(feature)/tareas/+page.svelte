@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('uppgifter', 'es')}
+	{@html hrefLangAlternates('uppgifter')}
 
 	<title>Kaddio - Tareas</title>
 	<meta name="description" content="Crea tu propia - lista de tareas pendientes -. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo." />

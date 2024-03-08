@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('formulär', 'sv')}
+	{@html hrefLangAlternates('formulär')}
 
 	<title>Kaddio - Formulär</title>
 	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." />

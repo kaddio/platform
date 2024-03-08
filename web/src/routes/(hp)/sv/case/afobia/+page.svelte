@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  {@html hrefLangAlternates('case/afobia', 'sv')}
+  {@html hrefLangAlternates('case/afobia')}
 </svelte:head>
 
 

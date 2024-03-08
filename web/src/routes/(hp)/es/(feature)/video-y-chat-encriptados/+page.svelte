@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('kommunikation', 'en')}
+	{@html hrefLangAlternates('kommunikation')}
 
 	<title>Kaddio - Vídeo y chat encriptados</title>
 	<meta name="description" content="Vídeo seguro hasta 500 participantes." />
