@@ -3,9 +3,13 @@
 	import FaqSection from "$components/faqSection.svelte";
 	import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
 	import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
+
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('onlinebokning')}
+
 	<title>Kaddio - Time booking and calendar</title>
 	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
