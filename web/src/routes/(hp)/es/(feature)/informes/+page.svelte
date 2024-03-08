@@ -3,10 +3,13 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+	import { hrefLangAlternates } from "$lib/stores";
 </script>
 
 <svelte:head>
-	<title>Kaddio - Rapporter</title>
+	{@html hrefLangAlternates('rapporter', 'es')}
+
+	<title>Kaddio - Informes</title>
 	<meta name="description" content="Få koll på verksamheten med Kaddios statistikverktyg. Visualisera data i Kaddio eller exportera för egen analys." />
 </svelte:head>
 

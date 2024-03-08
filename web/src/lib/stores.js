@@ -292,6 +292,29 @@ const translations = {
 };
 
 const links = {
+    case: {
+        en: 'case'
+    },
+
+    'case/afobia': {
+        en: 'case/afobia'
+    },
+
+    sales: {
+        en: 'sales',
+        es: 'sales'
+    },
+
+    'sign-in': {
+        en: 'sign-in',
+        es: 'sign-in'
+    },
+
+    create: {
+        en: 'create',
+        es: 'create'
+    },
+
     journalsystem: {
         en: 'electronic-medical-record',
         es: 'historia-clinica'
@@ -327,6 +350,25 @@ const links = {
         en: 'reports',
         es: 'informes'
     }
+};
+
+export const hrefLangAlternates = function (name, lang = getContext('lang')) {
+    const alternateLangs = ['sv', 'en', 'es'].filter((l) => l != lang);
+
+    if (!links[name]) {
+        return '';
+    }
+
+    return alternateLangs
+        .map((lang) => {
+            const translatedLink = lang == 'sv' ? name : links[name][lang];
+
+            if (translatedLink) {
+                return `<link rel="alternate" hreflang="${lang}" href="/${lang}/${translatedLink}" />`;
+            }
+        })
+        .filter(Boolean)
+        .join('');
 };
 
 export let link = readable(function (name, lang = getContext('lang')) {

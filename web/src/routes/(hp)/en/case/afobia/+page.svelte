@@ -1,7 +1,12 @@
 <script>
   import Legal from "$components/legal.svelte";
 	import LegalParagraph from "$components/legalParagraph.svelte";
+  import { hrefLangAlternates } from "$lib/stores";
 </script>
+
+<svelte:head>
+  {@html hrefLangAlternates('case/afobia', 'en')}
+</svelte:head>
 
 <Legal>
     <span slot="pretitle">

@@ -3,9 +3,11 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('journalsystem', 'sv')}
 	<title>Journalsystem med allt du behöver</title>
 	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
 </svelte:head>

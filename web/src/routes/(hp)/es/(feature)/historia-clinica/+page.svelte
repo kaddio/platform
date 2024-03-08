@@ -3,9 +3,13 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
+
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('journalsystem', 'es')}
+
 	<title>Kaddio - Historia clínica</title>
 	<meta name="description" content="Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades." />
 </svelte:head>

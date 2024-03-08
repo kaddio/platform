@@ -3,9 +3,13 @@
     import FaqSection from '$components/faqSection.svelte';
     import ModuleSectionWithImage from '$components/moduleSectionWithImage.svelte';
     import ModuleFeatureWithIcon from '$components/moduleFeatureWithIcon.svelte';
+    import { hrefLangAlternates } from '$lib/stores';
+
 </script>
 
 <svelte:head>
+    {@html hrefLangAlternates('kommunication', 'sv')}
+
     <title>Kaddio - Kommunikation</title>
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
 </svelte:head>

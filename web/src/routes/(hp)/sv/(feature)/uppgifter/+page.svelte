@@ -4,9 +4,13 @@
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
+
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('uppgifter', 'sv')}
+
 	<title>Kaddio - Uppgifter</title>
 	<meta name="description" content="Gör din egen att-göra-lista eller delegera till någon annan." />
 </svelte:head>
