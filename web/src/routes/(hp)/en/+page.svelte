@@ -7,11 +7,13 @@
 	import PricesEn from './pricesEn.svelte';
 	import { scroll } from '$lib/scroll';
 	import QuotesEn from './quotesEn.svelte';
+    import { hrefLangAlternates } from '$lib/stores';
 
 	setContext('lang', 'en');
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('/')}
 	<title>Kaddio - all-in-one platform for health professionals</title>
 	<meta name="description" content="Kaddio is an all-in-one platform for health professionals" />
 </svelte:head>

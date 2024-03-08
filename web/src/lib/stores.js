@@ -370,6 +370,14 @@ const links = {
 export const hrefLangAlternates = function (name) {
     const alternateLangs = ['sv', 'en', 'es'];
 
+    if (name == '/') {
+        return alternateLangs
+            .map((lang) => {
+                return `<link rel="alternate" hreflang="${lang}" href="/${lang}" />`;
+            })
+            .join('');
+    }
+
     if (!links[name]) {
         return '';
     }

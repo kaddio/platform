@@ -7,11 +7,14 @@
 	import { scroll } from '$lib/scroll';
 	import SecuritySectionEs from '../es/securitySectionEs.svelte';
 	import ReferencesEs from './referencesEs.svelte';
+    import { hrefLangAlternates } from '$lib/stores';
 
 	setContext('lang', 'es');
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('/')}
+
 	<title>Kaddio</title>
 	<meta name="description" content="Kaddio - Sistema todo en uno basado en la web para usted que ayuda a otros" />
 </svelte:head>

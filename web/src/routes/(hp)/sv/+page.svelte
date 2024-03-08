@@ -11,6 +11,7 @@
     import Testimonial from './testimonial.svelte';
     import { scroll } from '$lib/scroll';
     import ContactDanielSv from './contactDanielSv.svelte';
+    import { hrefLangAlternates } from '$lib/stores';
 
     setContext('lang', 'sv');
 
@@ -27,6 +28,7 @@ srcset="
 "
 
 ***/
+
 </script>
 <!-- 
 <svelte:head>
@@ -36,6 +38,10 @@ srcset="
         content="Helhetssystem för vård med journalsystem, onlinebokning, kommunikation, fakturering i samma system."
     />
 </svelte:head> -->
+
+<svelte:head>
+	{@html hrefLangAlternates('/')}
+</svelte:head>
 
 <div class="bg-white">
     <Nav darkHeader={true} />
