@@ -3,9 +3,13 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
+
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('dokument', 'es')}
+
 	<title>Kaddio - Dokument</title>
 	<meta name="description" content="Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt." />
 </svelte:head>

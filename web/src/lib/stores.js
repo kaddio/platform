@@ -288,10 +288,48 @@ const translations = {
     'Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.': {
         en: 'Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses.',
         es: 'Kaddio Invoicing es un programa de facturación completo para pequeñas y medianas empresas.'
+    },
+
+    'Sidan kunde inte hittas': {
+        en: 'Page not found',
+        es: 'Página no encontrada'
+    },
+
+    'Ursäkta, men vi kunde inte hitta sidan.': {
+        en: 'Sorry, we couldn’t find the page you’re looking for.',
+        es: 'Lo sentimos, no pudimos encontrar la página que buscas.'
+    },
+
+    'Tillbaks hem': {
+        en: 'Back to home',
+        es: 'Volver a inicio'
     }
 };
 
 const links = {
+    case: {
+        en: 'case'
+    },
+
+    'case/afobia': {
+        en: 'case/afobia'
+    },
+
+    sales: {
+        en: 'sales',
+        es: 'sales'
+    },
+
+    'sign-in': {
+        en: 'sign-in',
+        es: 'sign-in'
+    },
+
+    create: {
+        en: 'create',
+        es: 'create'
+    },
+
     journalsystem: {
         en: 'electronic-medical-record',
         es: 'historia-clinica'
@@ -327,6 +365,25 @@ const links = {
         en: 'reports',
         es: 'informes'
     }
+};
+
+export const hrefLangAlternates = function (name, lang = getContext('lang')) {
+    const alternateLangs = ['sv', 'en', 'es'].filter((l) => l != lang);
+
+    if (!links[name]) {
+        return '';
+    }
+
+    return alternateLangs
+        .map((lang) => {
+            const translatedLink = lang == 'sv' ? name : links[name][lang];
+
+            if (translatedLink) {
+                return `<link rel="alternate" hreflang="${lang}" href="/${lang}/${translatedLink}" />`;
+            }
+        })
+        .filter(Boolean)
+        .join('');
 };
 
 export let link = readable(function (name, lang = getContext('lang')) {

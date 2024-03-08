@@ -3,9 +3,13 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
+
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('fakturering', 'es')}
+
 	<title>Kaddio - Sistema de facturación</title>
 	<meta name="description" content="Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio." />
 </svelte:head>

@@ -3,9 +3,13 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import { hrefLangAlternates } from "$lib/stores";
+
 </script>
 
 <svelte:head>
+	{@html hrefLangAlternates('kommunikation', 'en')}
+
 	<title>Kaddio - Vídeo y chat encriptados</title>
 	<meta name="description" content="Vídeo seguro hasta 500 participantes." />
 </svelte:head>
