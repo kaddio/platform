@@ -7,7 +7,7 @@
 <li>
     <div class="flex items-center gap-x-6">
 
-      <img class="h-16 w-16 rounded-full {color}" src={src} alt={alt}>
+      <img class="h-16 w-16 rounded-full {color}" loading="lazy" src={src} alt={alt}>
 
       <div>
         <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900"><slot name="name" /></h3>

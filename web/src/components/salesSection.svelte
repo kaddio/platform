@@ -96,6 +96,7 @@
     <div class="lg:absolute lg:inset-0 lg:left-1/2 flex items-center justify-center mb-24 lg:mb-0">
         <img
             class="w-3/4 h-auto rounded-full bg-gray-50 lg:absolute lg:h-3/4 lg:w-auto 2xl:h-4/5"
+            loading="lazy"
             src={imageSrc}
             alt=""
             on:mouseenter={() => {
