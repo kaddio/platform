@@ -288,6 +288,21 @@ const translations = {
     'Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.': {
         en: 'Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses.',
         es: 'Kaddio Invoicing es un programa de facturación completo para pequeñas y medianas empresas.'
+    },
+
+    'Sidan kunde inte hittas': {
+        en: 'Page not found',
+        es: 'Página no encontrada'
+    },
+
+    'Ursäkta, men vi kunde inte hitta sidan.': {
+        en: 'Sorry, we couldn’t find the page you’re looking for.',
+        es: 'Lo sentimos, no pudimos encontrar la página que buscas.'
+    },
+
+    'Tillbaks hem': {
+        en: 'Back to home',
+        es: 'Volver a inicio'
     }
 };
 
