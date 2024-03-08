@@ -76,16 +76,6 @@
             <span slot="title">Customer support</span>
         </Person>
 
-        <Person src="/img/agustin.png">
-            <span slot="name">Agustin</span>
-            <span slot="title">Customer support, social media & dev</span>
-        </Person>
-
-        <Person>
-            <span slot="name">Jesper L</span>
-            <span slot="title">Developer</span>
-        </Person>
-
         <Person src="/img/carl.png">
             <span slot="name">Carl</span>
             <span slot="title">Media & Kaddio Lectures</span>
