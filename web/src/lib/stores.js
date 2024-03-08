@@ -1,6 +1,7 @@
 import { browser } from '$app/environment';
 import { getContext } from 'svelte';
 import { readable, writable } from 'svelte/store';
+import { dev } from '$app/environment';
 
 export let token = writable();
 
@@ -366,10 +367,12 @@ const links = {
 export const hrefLangAlternates = function (name) {
     const alternateLangs = ['sv', 'en', 'es'];
 
+    const prefix = dev ? '' : 'https://kaddio.com';
+
     if (name == '/') {
         return alternateLangs
             .map((lang) => {
-                return `<link rel="alternate" hreflang="${lang}" href="/${lang}" />`;
+                return `<link rel="alternate" hreflang="${lang}" href="${prefix}/${lang}" />`;
             })
             .join('');
     }
@@ -383,7 +386,7 @@ export const hrefLangAlternates = function (name) {
             const translatedLink = lang == 'sv' ? name : links[name][lang];
 
             if (translatedLink) {
-                return `<link rel="alternate" hreflang="${lang}" href="/${lang}/${translatedLink}" />`;
+                return `<link rel="alternate" hreflang="${lang}" href="${prefix}/${lang}/${translatedLink}" />`;
             }
         })
         .filter(Boolean)
