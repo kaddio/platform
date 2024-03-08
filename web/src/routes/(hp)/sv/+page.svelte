@@ -42,6 +42,7 @@ srcset="
 
 <svelte:head>
 	{@html hrefLangAlternates('/')}
+    <title>Journalsystem, onlinebokning, kommunikation, fakturering</title>
 </svelte:head>
 
 <div class="bg-white">
