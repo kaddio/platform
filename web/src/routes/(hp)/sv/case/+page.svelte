@@ -5,6 +5,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Kaddio - kundberättelser</title>
+</svelte:head>
+
 <BlogPosts>
   <span slot="pretitle">
       Kundberättelser
