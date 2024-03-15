@@ -16,20 +16,6 @@
 
     setContext('lang', 'sv');
 
-    /*** Idea...
-
-
-	src="https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false/https://next.kaddio.com/img/man.jpg" 
-
-srcset="
-   https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=640/https://next.kaddio.com/img/man.jpg 640w,
-	https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=960/https://next.kaddio.com/img/man.jpg 960w,
-	https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=1920/https://next.kaddio.com/img/man.jpg 1920w,
-	https://kaddio.com/cdn-cgi/image/format=auto,metadata=none,anim=false,width=2560/https://next.kaddio.com/img/man.jpg 2560w,
-"
-
-***/
-
 </script>
 <!-- 
 <svelte:head>
