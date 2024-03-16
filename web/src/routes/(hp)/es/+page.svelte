@@ -4,11 +4,9 @@
 	import Nav from '$components/nav.svelte';
 	import ModulesEs from './modulesEs.svelte';
 	import PricesEs from './pricesEs.svelte';
-	import { scroll } from '$lib/scroll';
 	import SecuritySectionEs from '../es/securitySectionEs.svelte';
 	import ReferencesEs from './referencesEs.svelte';
     import { hrefLangAlternates } from '$lib/stores';
-    import { imageHandler } from '$lib/img';
     import Hero from '$lib/components/hero.svelte';
 
 	setContext('lang', 'es');
