@@ -7,25 +7,12 @@
     import Footer from '$components/footer.svelte';
     import SecuritySectionSv from './securitySectionSv.svelte';
     import Nav from '$components/nav.svelte';
-    import CrmSv from './crmSv.svelte';
-    import Testimonial from './testimonial.svelte';
-    import { scroll } from '$lib/scroll';
     import ContactDanielSv from './contactDanielSv.svelte';
     import { hrefLangAlternates } from '$lib/stores';
-    import { imageHandler } from '$lib/img';
     import Hero from '$lib/components/hero.svelte';
 
     setContext('lang', 'sv');
-
 </script>
-<!-- 
-<svelte:head>
-    <title>Journalsystem, onlinebokning, kommunikation, fakturering</title>
-    <meta
-        name="description"
-        content="Helhetssystem för vård med journalsystem, onlinebokning, kommunikation, fakturering i samma system."
-    />
-</svelte:head> -->
 
 <svelte:head>
 	{@html hrefLangAlternates('/')}
