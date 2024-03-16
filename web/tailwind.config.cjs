@@ -88,7 +88,7 @@ module.exports = {
                 800: 'var(--primary-800, hsl(306, 10%, 91%))',
                 900: 'var(--primary-900, hsl(306, 12%, 96%))'
             },
-            oldpink: '#b16e7f',
+            oldpink: '#a15e6f',
             oldpinkdarker: '#9d4e61'
         }
 
