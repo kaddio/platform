@@ -88,8 +88,8 @@ module.exports = {
                 800: 'var(--primary-800, hsl(306, 10%, 91%))',
                 900: 'var(--primary-900, hsl(306, 12%, 96%))'
             },
-            oldpink: '#c38f9c',
-            oldpinkdarker: '#b16e7f'
+            oldpink: '#b16e7f',
+            oldpinkdarker: '#9d4e61'
         },
 
         fontFamily: {
