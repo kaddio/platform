@@ -37,7 +37,7 @@
 
   <Hero manAlt="Bakgrundsbild för Kaddio, en person som sitter med en kaffekopp i handen" demoLink="https://demo.kaddio.com/login-demo">
     <span slot="title">Kaddio är allt du behöver</span>
-    <span slot="subtitle">Onlinebokning, journalsystem, chat, video och fakturering i samma system. Samt mycket mer.</span>
+    <span slot="subtitle">Onlinebokning, journalsystem, chat, video och fakturering i samma system.</span>
 
   </Hero>
 
