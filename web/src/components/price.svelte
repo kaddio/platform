@@ -47,7 +47,7 @@
                       </td>
                         
                         <td class="py-4 pl-4 pr-3 text-sm sm:pl-0">
-                          <div class="font-medium text-gray-900">{module.name}</div>
+                          <label for={module.name} class="font-medium text-gray-900">{module.name}</label>
                       </td>
                   
                       <td class="py-4 pl-3 pr-4 text-right text-sm text-gray-500 sm:pr-0">{module.price}</td>
