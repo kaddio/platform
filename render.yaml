@@ -4,10 +4,10 @@ services:
     env: node
     buildCommand: npm install && npm run build
     startCommand: node build/index.js
-    plan: starter
+    plan: standard
     scaling:
       minInstances: 1
-      maxInstances: 3
+      maxInstances: 2
       targetMemoryPercent: 80
     branch: master
     rootDir: web
