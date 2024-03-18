@@ -1,13 +1,16 @@
-name: lighthouse
+name: Lighthouse CI
 on: [push]
 jobs:
-  lighthouseci:
+  lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v11
         with:
-          node-version: 20
-      - run: npm install && npm install -g @lhci/cli@0.13.x
-      - run: npm run build
-      - run: lhci autorun
+          urls: |
+            https://example.com/
+            https://example.com/blog
+          budgetPath: ./budget.json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
