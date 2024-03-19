@@ -19,7 +19,7 @@
     <KdItem>
         <span slot="avatar">
             {#if host.imgUrl}
-                <img src={host.imgUrl} alt="Bild på {host.firstname} {host.lastname}" />
+                <img src={host.imgUrl} loading="lazy" alt="Bild på {host.firstname} {host.lastname}" />
             {:else}
                 <div class="flex items-center justify-center h-full w-full bg-gray-100">
                     <i class="fa fa-user text-3xl text-gray-300" />
