@@ -90,12 +90,12 @@ module.exports = {
             },
             oldpink: '#a15e6f',
             oldpinkdarker: '#9d4e61'
-        },
-
-        fontFamily: {
-            // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-            sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
         }
+
+        // fontFamily: {
+        //     // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        //     sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
+        // }
     },
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 };
