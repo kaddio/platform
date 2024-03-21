@@ -33,6 +33,15 @@
     ].map(c => ({label: c[0], name: c[1]}))
 
     const defaultCountryCode = getRegion(countryCodeFromLang(getContext('lang'))).defaultCountryCode;
+
+    $: if($page.form?.success){
+        console.log('dataLayer push');
+
+        window.dataLayer.push({
+            'event': 'formSubmission',
+            'formType': 'Create account'}
+        );
+    }
 </script>
 
 
