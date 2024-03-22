@@ -45,6 +45,7 @@
         gtag('js', new Date());
         gtag('config', gtmId);
         var s = document.createElement('script');
+        s.async = true;
         s.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
         document.head.append(s);
 
