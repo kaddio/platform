@@ -51,7 +51,9 @@
 
     $: $page.url && (navOpen = false);
 
-    const src = lightText ? imageHandler('/img/kaddio-logo.png', {format: "auto"}) : imageHandler('/img/kaddio-black.png', {format: "auto"});
+    $: imageSrc = lightText ? '/img/kaddio-logo.png' : '/img/kaddio-black.png';
+    $: src = imageHandler(imageSrc, {format: "auto"});
+    
 </script>
 
 <svelte:window on:keydown={onKeyDown} />
