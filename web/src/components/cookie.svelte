@@ -3,7 +3,7 @@
     import { browser } from '$app/environment';
 
     import { writable } from "svelte/store";
-    import { getContext } from "svelte";
+    import { getContext, onMount } from "svelte";
 
     let cookiesAllow;
 
@@ -17,6 +17,50 @@
 
     const lang = getContext("lang");
 
+
+
+
+    const gtmId = 'GTM-PM82HWFT';
+
+    function gtag(){
+        window.dataLayer.push(arguments);
+    }
+
+    if(browser){
+        window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+
+        console.log('init as denied!')
+    }
+        
+    onMount(async () => {
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });        
+
+        gtag('js', new Date());
+        gtag('config', gtmId);
+        var s = document.createElement('script');
+        s.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
+        document.head.append(s);
+
+    });
+
+    $: if(browser && ($cookiesAllow == true || $cookiesAllow == "true")){
+        console.log('cookie granted!');
+
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted'
+        });
+        
+    }    
 </script>
 
 {#if $cookiesAllow == "undefined"}
@@ -28,24 +72,4 @@
             <button on:click={() => {$cookiesAllow = false}} type="button" class="text-sm font-semibold leading-6 text-gray-900">Reject</button>
         </div>
     </div>
-{/if}
-
-<svelte:head>
-    {#if $cookiesAllow == true}
-
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PM82HWFT');</script>
-        <!-- End Google Tag Manager -->
-    {/if}
-</svelte:head>
-
-{#if $cookiesAllow == true}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe title="googletagmanager" src="https://www.googletagmanager.com/ns.html?id=GTM-PM82HWFT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 {/if}
