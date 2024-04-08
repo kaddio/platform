@@ -14,7 +14,7 @@
     </div>
     <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p class="text-sm leading-6 text-gray-900">
-            <strong class="font-semibold">{$_('Status')}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>{$_('Kaddio upplever just nu driftproblem')}
+            <strong class="font-semibold">{$_('Status')}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>{$_('Viktig information: Just nu visas inte äldre anteckningar i journalmodulen. All data finns i systemet och kommer att kunna visas som vanligt igen under dagen (måndag 8 april). Vi jobbar så snabbt vi kan med att lösa detta.')}
         </p>
 
         <a href="/{lang}/support" class="whitespace-nowrap text-sm">{$_('Support')}&nbsp;<span aria-hidden="true">&rarr;</span></a>            

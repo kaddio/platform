@@ -10,6 +10,7 @@
     import { kaddioOrgSchema } from '$lib/json-ld';
     import ReferralBanner from './referral-banner.svelte';
     import { imageHandler } from '$lib/img';
+    import StatusBanner from './status-banner.svelte';
     const lang = getContext('lang');
     export let darkHeader: boolean = false;
 
@@ -74,6 +75,7 @@
     <LangBanner />
     <ReferralBanner />
     <MarketplaceBanner />
+    <StatusBanner></StatusBanner>
 
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 gap-x-6 lg:px-8"
