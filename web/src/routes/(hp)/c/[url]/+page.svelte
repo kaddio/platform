@@ -171,7 +171,7 @@
                                 color="theme-primary"
                                 size="md"
                                 href="https://{organization.url}.kaddio.com/booking"
-                                >Sök tid</KdLinkButton
+                                >Boka tid</KdLinkButton
                             >
                         </div>
                     {/if}
