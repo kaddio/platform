@@ -63,7 +63,7 @@
 
     <LegalUl>
       <LegalLi><strong class="font-semibold text-gray-900">Förbättring.</strong> Den information vi samlar in används för att tillhandahålla, förbättra och skydda våra tjänster.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> kaddio.com (Kaddios egen hemsida) använder cookies för marknadsföring. Applikationen Kaddio använder endast cookies för lastbalansering och säkerhet.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> kaddio.com (Kaddios egen hemsida) använder <strong>inte</strong> cookies. Applikationen Kaddio använder endast cookies för lastbalansering och säkerhet.</LegalLi>
     </LegalUl>
 
 
