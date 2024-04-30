@@ -4,7 +4,7 @@ services:
     env: node
     buildCommand: npm install && npm run build
     startCommand: node build/index.js
-    plan: standard
+    plan: pro
     scaling:
       minInstances: 1
       maxInstances: 2
