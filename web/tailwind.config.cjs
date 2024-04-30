@@ -93,8 +93,7 @@ module.exports = {
         },
 
         fontFamily: {
-            // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-            sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
+            sans: ['ui-sans-serif', 'system-ui']
         }
     },
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
