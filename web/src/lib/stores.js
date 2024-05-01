@@ -369,28 +369,34 @@ export const hrefLangAlternates = function (name) {
 
     const prefix = dev ? '' : 'https://kaddio.com';
 
+    const countrySelectorLink = `<link rel="alternate" href="${prefix}/choose-country-region" hreflang="x-default" />`;
+
     if (name == '/') {
-        return alternateLangs
-            .map((lang) => {
-                return `<link rel="alternate" hreflang="${lang}" href="${prefix}/${lang}" />`;
-            })
-            .join('');
+        return (
+            alternateLangs
+                .map((lang) => {
+                    return `<link rel="alternate" hreflang="${lang}" href="${prefix}/${lang}" />`;
+                })
+                .join('') + countrySelectorLink
+        );
     }
 
     if (!links[name]) {
         return '';
     }
 
-    return alternateLangs
-        .map((lang) => {
-            const translatedLink = lang == 'sv' ? name : links[name][lang];
+    return (
+        alternateLangs
+            .map((lang) => {
+                const translatedLink = lang == 'sv' ? name : links[name][lang];
 
-            if (translatedLink) {
-                return `<link rel="alternate" hreflang="${lang}" href="${prefix}/${lang}/${translatedLink}" />`;
-            }
-        })
-        .filter(Boolean)
-        .join('');
+                if (translatedLink) {
+                    return `<link rel="alternate" hreflang="${lang}" href="${prefix}/${lang}/${translatedLink}" />`;
+                }
+            })
+            .filter(Boolean)
+            .join('') + countrySelectorLink
+    );
 };
 
 export let link = readable(function (name, lang = getContext('lang')) {
