@@ -14,10 +14,7 @@ const allOrgs = async function () {
             method: 'GET'
         });
 
-        const json = await response.json();
-
-        // console.log(json);
-        return json;
+        return await response.json();
     } catch (e) {
         console.log(e);
         return fail(400, { success: false });
