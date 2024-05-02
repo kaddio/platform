@@ -303,62 +303,112 @@ const translations = {
     }
 };
 
-const links = {
+export const links = {
+    'hitta-klinik': {
+        sv: 'hitta-klinik'
+    },
+
+    'choose-country-region': {
+        default: 'choose-country-region'
+    },
+
+    'about-us': {
+        default: 'about-us'
+    },
+
+    career: {
+        default: 'career'
+    },
+
+    support: {
+        sv: 'support',
+        en: 'support',
+        es: 'support'
+    },
+
     case: {
+        sv: 'case',
         en: 'case'
     },
 
     'case/afobia': {
+        sv: 'case/afobia',
         en: 'case/afobia'
     },
 
+    'case/osteopatia-mallorca': {
+        sv: 'case/osteopatia-mallorca',
+        en: 'case/osteopatia-mallorca'
+    },
+
+    'case/spanda-healthcare': {
+        sv: 'case/spanda-healthcare',
+        en: 'case/spanda-healthcare'
+    },
+
+    'case/majornas-osteopati': {
+        sv: 'case/majornas-osteopati',
+        en: 'case/majornas-osteopati'
+    },
+
     sales: {
+        sv: 'sales',
         en: 'sales',
         es: 'sales'
     },
 
     'sign-in': {
+        sv: 'sign-in',
         en: 'sign-in',
         es: 'sign-in'
     },
 
     create: {
+        sv: 'create',
         en: 'create',
         es: 'create'
     },
 
     journalsystem: {
+        sv: 'journalsystem',
         en: 'electronic-medical-record',
         es: 'historia-clinica'
     },
 
     onlinebokning: {
+        sv: 'onlinebokning',
         en: 'online-booking',
         es: 'sistema-de-reservas'
     },
 
     kommunikation: {
+        sv: 'kommunikation',
         en: 'communication',
         es: 'video-y-chat-encriptados'
     },
 
     fakturering: {
+        sv: 'fakturering',
         en: 'invoicing',
         es: 'sistema-de-facturacion'
     },
     formulär: {
+        sv: 'formulär',
         en: 'forms',
         es: 'formularios'
     },
     uppgifter: {
+        sv: 'uppgifter',
         en: 'todos',
         es: 'tareas'
     },
     dokument: {
+        sv: 'dokument',
         en: 'documents',
         es: 'documentos'
     },
     rapporter: {
+        sv: 'rapporter',
         en: 'reports',
         es: 'informes'
     }
