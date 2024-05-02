@@ -31,8 +31,8 @@
       <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">{$_('Sidan kunde inte hittas')}</h1>
       <p class="mt-4 text-base text-white/70 sm:mt-6">{$_('Ursäkta, men vi kunde inte hitta sidan.')}</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="/{lang}/" class="rounded-md bg-purple-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
-          <a href="/{lang}/support" class="text-sm font-semibold text-white">Contact support <span aria-hidden="true">&rarr;</span></a>
+          <a href="/{lang}/" class="rounded-md bg-purple-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{$_('Tillbaks hem')}</a>
+          <a href="/{lang}/support" class="text-sm font-semibold text-white">{$_('Kontakta support')} <span aria-hidden="true">&rarr;</span></a>
         </div>
     </div>
   </main>
