@@ -1,7 +1,7 @@
 import { allKeywords } from '$lib/keywords';
 const prefix = 'https://kaddio.com';
 
-// List all customers on hitta klinik!
+// List all keywords on hitta klinik!
 export async function GET() {
     const urls = allKeywords.map(({ name }) => {
         const safeName = encodeURIComponent(name);
