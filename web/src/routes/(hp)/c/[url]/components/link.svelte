@@ -19,7 +19,7 @@
 </script>
 
 {#if href}
-    <a {href} class="inline-flex gap-7 items-center">
+    <a {href} class="inline-flex gap-7 items-center" rel="ugc, nofollow">
         <i class="{iconMap[type]} text-teal-600 fa-lg" /><span class="text-teal-400 font-semibold"
             >{label || stripProtocol(href)}</span
         >
