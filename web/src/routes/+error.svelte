@@ -7,7 +7,14 @@
 
     try{
       const possibleLangFromPath = $page.url.pathname.split('/')[1];
-      setContext('lang', possibleLangFromPath);
+
+      if(['sv', 'en', 'es'].includes(possibleLangFromPath)){
+        setContext('lang', possibleLangFromPath);
+      }
+      else{
+        console.log('inget språk... Använd engelska');
+        setContext('lang', 'en');
+      }
     } catch (e) {
       console.log('inget språk...');
       // setContext('lang', 'en');
