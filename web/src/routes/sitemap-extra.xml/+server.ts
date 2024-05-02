@@ -7,14 +7,13 @@ const sitemap = function () {
     const xml = Object.entries(links).map(function ([key, value]) {
         return Object.entries(value)
             .map(function ([lang, page]) {
-                // SHould be :list
                 const alternates = Object.entries(value).map(function ([lang, page]) {
                     return `
-				<xhtml
+				<xhtml:list
 					rel="alternate"
 					hreflang="${lang}"
 					href="${prefix}/${lang}/${page}"/>				
-			`;
+			`.trim();
                 });
 
                 if (lang == 'default') {
@@ -22,7 +21,7 @@ const sitemap = function () {
 						<url>
 							<loc>${prefix}/${key}</loc>
 						</url>
-					`;
+					`.trim();
                 } else {
                     return `
 						<url>
@@ -30,7 +29,7 @@ const sitemap = function () {
 
 							${alternates.join('')}
 						</url>
-					`;
+					`.trim();
                 }
             })
             .join('');
