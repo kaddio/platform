@@ -22,13 +22,15 @@ const allOrgs = async function () {
 };
 
 const orgsToSitemap = function (urls: string[]) {
-    return urls.map((url) =>
-        `
-        <url>
-            <loc>${prefix}/c/${url}</loc>
-        </url>
-    `.trim()
-    );
+    return urls
+        .map((url) =>
+            `
+                <url>
+                    <loc>${prefix}/c/${url}</loc>
+                </url>
+            `.trim()
+        )
+        .join('');
 };
 
 export async function GET() {
