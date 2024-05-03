@@ -14,14 +14,14 @@
         >{category == 'null' ? '' : category}</span
     >
     {#each bookingTypesInCategory as bookingType}
-        <div itemscope itemtype="http://schema.org/Product">
+        <div>
             <KdItem>
-                <span slot="title" itemprop="name">
+                <span slot="title">
                     {bookingType.name}
                 </span>
                 <span slot="subtitle">
                     {bookingType.clientVisibleLength} min ·
-                    <span itemprop="offer">{bookingType.price} kr</span>
+                    <span>{bookingType.price} kr</span>
                     <br />
                     <!-- {#if bookingType.nextFreeTime}
                         <span class="text-green-300"
