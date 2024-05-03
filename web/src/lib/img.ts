@@ -31,7 +31,6 @@ export const imageHandler = function (
         const optionsStr = Object.entries(options)
             .map(([key, value]) => `${key}=${value}`)
             .join(',');
-        console.log(optionsStr);
 
         return `https://kaddio.com/cdn-cgi/image/${optionsStr}/${getSrc(src)}`;
     }
