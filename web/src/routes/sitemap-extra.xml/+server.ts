@@ -1,6 +1,10 @@
 import { dev } from '$app/environment';
 import { links } from '$lib/stores';
 
+const list = function (hreflang: string, href: string) {
+    return `<xhtml:list rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
+};
+
 const sitemap = function () {
     const prefix = 'https://kaddio.com';
 
@@ -8,12 +12,7 @@ const sitemap = function () {
         return Object.entries(value)
             .map(function ([lang, page]) {
                 const alternates = Object.entries(value).map(function ([lang, page]) {
-                    return `
-				<xhtml:list 
-					rel="alternate"
-					hreflang="${lang}"
-					href="${prefix}/${lang}/${page}"/>				
-			`.trim();
+                    return list(lang, `${prefix}/${lang}/${page}`);
                 });
 
                 const xDefaultPath = function (value) {
@@ -30,10 +29,7 @@ const sitemap = function () {
                     }
                 };
 
-                const xDefault = `<xhtml
-					rel="alternate"
-					hreflang="x-default"
-					href="${prefix}${xDefaultPath(value)}"/>`.trim();
+                const xDefault = list('x-default', `${prefix}${xDefaultPath(value)}`);
 
                 if (lang == 'default') {
                     return `
@@ -46,7 +42,6 @@ const sitemap = function () {
                     return `
 						<url>
 							<loc>${prefix}/${lang}/${key}</loc>
-
 							${alternates.join('')}
                             ${xDefault}
 						</url>
