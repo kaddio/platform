@@ -5,13 +5,10 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-    import { hrefLangAlternates } from "$lib/stores";
 
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('fakturering')}
-
 	<title>Fakturering för små och medelstora företag</title>
 	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
 </svelte:head>

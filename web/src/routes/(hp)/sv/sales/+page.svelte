@@ -7,15 +7,12 @@
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
     import ContactDanielSv from '../contactDanielSv.svelte';
-    import { hrefLangAlternates } from '$lib/stores';
 
 	setContext('lang', 'sv');
 
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('sales')}
-
 	<title>Nyfiken på Kaddio</title>
 	<meta name="description" content="Är du nyfiken på Kaddio?" />
 </svelte:head>

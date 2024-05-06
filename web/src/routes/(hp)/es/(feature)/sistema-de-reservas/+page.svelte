@@ -3,13 +3,9 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
-    import { hrefLangAlternates } from "$lib/stores";
-
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('onlinebokning')}
-
 	<title>Kaddio - Sistema de reservas</title>
 	<meta name="description" content="Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio." />
 </svelte:head>

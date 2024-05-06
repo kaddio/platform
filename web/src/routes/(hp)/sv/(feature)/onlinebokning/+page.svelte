@@ -5,12 +5,10 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-    import { hrefLangAlternates } from "$lib/stores";
 
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('onlinebokning')}
 	<title>Onlinebokning med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>

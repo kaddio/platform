@@ -4,14 +4,11 @@
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
-    import { hrefLangAlternates } from "$lib/stores.js";
 
 	export let data;
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('formulär')}
-
 	<title>Kaddio - Formulär</title>
 	<meta name="description" content="Automatisera utskick av formulär och hälsodeklarationer." />
 </svelte:head>

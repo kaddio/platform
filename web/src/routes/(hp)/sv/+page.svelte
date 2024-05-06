@@ -8,14 +8,12 @@
     import SecuritySectionSv from './securitySectionSv.svelte';
     import Nav from '$components/nav.svelte';
     import ContactDanielSv from './contactDanielSv.svelte';
-    import { hrefLangAlternates } from '$lib/stores';
     import Hero from '$lib/components/hero.svelte';
 
     setContext('lang', 'sv');
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('/')}
     <title>Journalsystem, onlinebokning, kommunikation, fakturering</title>
 </svelte:head>
 

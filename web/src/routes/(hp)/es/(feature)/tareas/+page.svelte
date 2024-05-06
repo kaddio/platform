@@ -3,13 +3,10 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
-    import { hrefLangAlternates } from "$lib/stores";
 
 </script>
 
 <svelte:head>
-	{@html hrefLangAlternates('uppgifter')}
-
 	<title>Kaddio - Tareas</title>
 	<meta name="description" content="Crea tu propia - lista de tareas pendientes -. Delega tareas a otros y obtén una visión general de las acciones que deben llevarse a cabo." />
 </svelte:head>
