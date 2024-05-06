@@ -68,7 +68,7 @@ export const descFromKeywordAndPlace = (keyword: string, place: string) => {
     return `${keywordData.desc}${placeStr}`;
 };
 
-const allKeywords = [
+export const allKeywords = [
     { name: 'Psykolog', category: 'Psykologi', desc: 'Boka tid med psykolog' },
     { name: 'Psykoterapi', category: 'Psykologi', desc: 'Boka tid för psykoterapi' },
     { name: 'Samtalsterapi', category: 'Psykologi', desc: 'Boka tid för samtalsterapi' },
