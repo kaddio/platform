@@ -1,8 +1,8 @@
 import { dev } from '$app/environment';
 import { links } from '$lib/stores';
 
-const list = function (hreflang: string, href: string) {
-    return `<xhtml:list rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
+const link = function (hreflang: string, href: string) {
+    return `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
 };
 
 const sitemap = function () {
@@ -12,7 +12,7 @@ const sitemap = function () {
         return Object.entries(value)
             .map(function ([lang, page]) {
                 const alternates = Object.entries(value).map(function ([lang, page]) {
-                    return list(lang, `${prefix}/${lang}/${page}`);
+                    return link(lang, `${prefix}/${lang}/${page}`);
                 });
 
                 const xDefaultPath = function (value) {
@@ -29,7 +29,7 @@ const sitemap = function () {
                     }
                 };
 
-                const xDefault = list('x-default', `${prefix}${xDefaultPath(value)}`);
+                const xDefault = link('x-default', `${prefix}${xDefaultPath(value)}`);
 
                 if (lang == 'default') {
                     return `
