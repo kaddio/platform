@@ -9,17 +9,37 @@ const sitemap = function () {
             .map(function ([lang, page]) {
                 const alternates = Object.entries(value).map(function ([lang, page]) {
                     return `
-				<xhtml:list
+				<xhtml:list 
 					rel="alternate"
 					hreflang="${lang}"
 					href="${prefix}/${lang}/${page}"/>				
 			`.trim();
                 });
 
+                const xDefaultPath = function (value) {
+                    if (value['default']) {
+                        return `/${value['default']}`;
+                    }
+
+                    if (value['en']) {
+                        return `/en/${value['en']}`;
+                    }
+
+                    if (value['sv']) {
+                        return `/sv/${value['sv']}`;
+                    }
+                };
+
+                const xDefault = `<xhtml
+					rel="alternate"
+					hreflang="x-default"
+					href="${prefix}${xDefaultPath(value)}"/>`.trim();
+
                 if (lang == 'default') {
                     return `
 						<url>
 							<loc>${prefix}/${key}</loc>
+                            ${xDefault}
 						</url>
 					`.trim();
                 } else {
@@ -28,6 +48,7 @@ const sitemap = function () {
 							<loc>${prefix}/${lang}/${key}</loc>
 
 							${alternates.join('')}
+                            ${xDefault}
 						</url>
 					`.trim();
                 }
