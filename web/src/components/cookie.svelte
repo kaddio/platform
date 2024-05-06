@@ -24,8 +24,6 @@
         s.defer = true;
         s.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
         document.head.append(s);
-
-        console.log('init as denied!')
     });
         
 </script>
