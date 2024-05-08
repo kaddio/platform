@@ -41,7 +41,7 @@ const sitemap = function () {
                 } else {
                     return `
 						<url>
-							<loc>${prefix}/${lang}/${key}</loc>
+							<loc>${prefix}/${lang}/${value[lang]}</loc>
 							${alternates.join('')}
                             ${xDefault}
 						</url>
