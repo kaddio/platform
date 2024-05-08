@@ -10,7 +10,7 @@
     </a>
 {/if}
 {#if links.email}
-    <a href={links.email} class="inline-flex gap-7 items-center">
+    <a href="mailto:{links.email}" class="inline-flex gap-7 items-center">
         <i class="fa fa-fw fa-envelope text-teal-600 fa-lg" /><span
             class="text-teal-400 font-semibold">{links.email}</span
         >
