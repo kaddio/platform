@@ -80,19 +80,19 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
+                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
               </li>
 
               <li>
-                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Status</a>
+                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Status</a>
               </li>
 
               <li>
-                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Changelog</a>
+                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Changelog</a>
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
               </li>
 
               <li>
