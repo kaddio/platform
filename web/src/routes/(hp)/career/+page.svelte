@@ -23,7 +23,7 @@
     <div class="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
       <div class="w-full lg:max-w-lg lg:flex-auto">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We're always looking for awesome people</h2>
-        <p class="mt-6 text-xl leading-8 text-gray-600">At Kaddio, we have a lot of freedom with flexible work hours, you can work remotely 50% if you prefer. We have a super cosy office in central Göteborg, Sweden. We all speak English and Swedish, some speak Spanish.</p>
+        <p class="mt-6 text-xl leading-8 text-gray-600">At Kaddio, we have a lot of freedom with 6 hour work days and flexible working hours. We have a super cosy office in central Göteborg, Sweden. We speak English and Swedish.</p>
         <img src="/img/david-arvid-kaffe.jpg" alt="" class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]">
       </div>
       <div class="w-full lg:max-w-xl lg:flex-auto">
