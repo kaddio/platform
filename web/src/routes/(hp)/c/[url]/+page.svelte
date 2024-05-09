@@ -121,7 +121,7 @@
 
                 <KdLinkButton
                     variant="light"
-                    color="default"
+                    color="default" rel="nofollow" 
                     href="https://{organization.url}.kaddio.com/dashboard">Logga in</KdLinkButton
                 >
             </div>
