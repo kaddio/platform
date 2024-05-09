@@ -1,6 +1,30 @@
 import { dev } from '$app/environment';
 import { links } from '$lib/stores';
 
+const homepageLinksSection = `
+    <xhtml:link rel="alternate" hreflang="sv" href="https://kaddio.com/sv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaddio.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kaddio.com/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kaddio.com/en"/>
+`;
+
+const homepageSection = `
+    <url>
+        <loc>https://kaddio.com/sv</loc>
+        ${homepageLinksSection}
+    </url>
+
+    <url>
+        <loc>https://kaddio.com/en</loc>
+        ${homepageLinksSection}
+    </url>
+
+    <url>
+        <loc>https://kaddio.com/es</loc>
+        ${homepageLinksSection}
+    </url>
+`.trim();
+
 const link = function (hreflang: string, href: string) {
     return `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
 };
@@ -55,6 +79,7 @@ const sitemap = function () {
 		<?xml version="1.0" encoding="UTF-8"?>
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 		xmlns:xhtml="http://www.w3.org/1999/xhtml">
+            ${homepageSection}
 			${xml.join('')}
 		</urlset>`;
 };
