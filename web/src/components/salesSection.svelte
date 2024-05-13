@@ -83,8 +83,8 @@
                             </svg>
                         </dt>
                         <dd>
-                            <a class="hover:text-gray-900" href="mailto:sales@kaddio.com"
-                                >sales@kaddio.com</a
+                            <a class="hover:text-gray-900" href="mailto:hello@kaddio.com"
+                                >hello@kaddio.com</a
                             >
                         </dd>
                     </div>
