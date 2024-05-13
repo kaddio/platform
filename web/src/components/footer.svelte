@@ -72,7 +72,7 @@
               </li>
 
               <li>
-                <a href="https://eepurl.com/gsgcG5" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://eepurl.com/gsgcG5" hreflang="en" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
             </ul>
           </div>
@@ -84,15 +84,15 @@
               </li>
 
               <li>
-                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Status</a>
+                <a href="https://kaddio.statuspage.io" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Status</a>
               </li>
 
               <li>
-                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Changelog</a>
+                <a href="https://changelog.kaddio.com" hreflang="en" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Changelog</a>
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" hreflang="en" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
               </li>
 
               <li>
@@ -106,11 +106,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">About us</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/about-us" class="text-sm leading-6 text-gray-600">Meet our team</a>
+                <a href="/about-us" hreflang="en" class="text-sm leading-6 text-gray-600">Meet our team</a>
               </li>
 
               <li>
-                <a href="/career" class="text-sm leading-6 text-gray-600">Career</a>
+                <a href="/career" hreflang="en" class="text-sm leading-6 text-gray-600">Career</a>
               </li>
 
               
