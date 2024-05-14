@@ -8,6 +8,7 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    // Svenska
     '/sv/feature/cal': {
         c: 301,
         d: '/sv/onlinebokning'
@@ -19,17 +20,12 @@ const pathsRedirectMap = {
         d: '/en/electronic-medical-record'
     },
 
-    '/en/rapporter': {
+    '/faq': {
         c: 301,
-        d: '/en/reports'
+        d: '/en/support'
     },
 
-    // TODO /en/tasks when we have it!
-    '/en/uppgifter': {
-        c: 302,
-        d: '/sv/uppgifter'
-    },
-
+    // Español
     '/es/kommunikation': {
         c: 301,
         d: '/es/video-y-chat-encriptados'
@@ -58,6 +54,88 @@ const pathsRedirectMap = {
     '/es/rapporter': {
         c: 301,
         d: '/es/informes'
+    },
+
+    '/es/uppgifter': {
+        c: 301,
+        d: '/es/tareas'
+    },
+
+    '/es/formulär': {
+        c: 301,
+        d: '/es/formularios'
+    },
+
+    '/es/feature/log': {
+        c: 301,
+        d: '/es/historia-clinica'
+    },
+
+    '/es/feature/todos': {
+        c: 301,
+        d: '/es/tareas'
+    },
+
+    '/es/tos.html': {
+        c: 301,
+        d: '/es/legal/tos'
+    },
+
+    '/es/career.html': {
+        c: 301,
+        d: '/career'
+    },
+
+    '/es/feature/invoicing': {
+        c: 301,
+        d: '/es/sistema-de-facturacion'
+    },
+
+    '/es/survey': {
+        c: 301,
+        d: '/es/formularios'
+    },
+
+    '/es/files': {
+        c: 301,
+        d: '/es/documentos'
+    },
+
+    '/es/chat': {
+        c: 301,
+        d: '/es/video-y-chat-encriptados'
+    },
+
+    '/es/invoicing': {
+        c: 301,
+        d: '/es/sistema-de-facturacion'
+    },
+
+    '/es/forms': {
+        c: 301,
+        d: '/es/formularios'
+    },
+
+    '/es/about-us': {
+        c: 301,
+        d: '/about-us'
+    },
+
+    '/es/career': {
+        c: 301,
+        d: '/career'
+    },
+
+    // English
+    '/en/rapporter': {
+        c: 301,
+        d: '/en/reports'
+    },
+
+    // TODO /en/tasks when we have it!
+    '/en/uppgifter': {
+        c: 302,
+        d: '/sv/uppgifter'
     },
 
     '/en/fakturering': {
