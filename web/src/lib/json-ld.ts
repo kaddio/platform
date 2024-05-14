@@ -28,10 +28,23 @@ export const websiteSchema = {
     // ],
 };
 
+type OrgType = {
+    name: string;
+    url: string;
+};
+
+const urlFromOrgUrl = function (orgUrl: string): string {
+    return `https://kaddio.com/c/${orgUrl}`;
+};
+
 // Kan användas på kaddio.com/company/afobia etc.
-export const localBusinessSchema: WithContext<LocalBusiness> = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness'
+export const localBusinessSchema = function (org: Partial<OrgType>): WithContext<LocalBusiness> {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        ...(org.name ? { name: org.name } : {}),
+        url: urlFromOrgUrl(org.url)
+    };
 };
 
 export const kaddioOrgSchema: WithContext<Organization> = {

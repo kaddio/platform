@@ -76,7 +76,7 @@
     }
     let description = organization.homepage?.metaDescription || `${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`;
 
-    const titleFromOrg = function(org){
+    const titleFromOrg = function(org): string{
         const cityStr = org.city ? `, ${org.city}` : '';
 
         return `${org.name}${cityStr} - Kaddio`;
@@ -84,7 +84,7 @@
     
 </script>
 
-<LdTag schema={localBusinessSchema} />
+<LdTag schema={localBusinessSchema(organization)} />
 <Seo
     url={`https://kaddio.com/c/${organization.url}`}
     type="business.business"
