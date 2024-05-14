@@ -92,11 +92,7 @@
 
 
 <svelte:head>
-    {#if organization.redirectToNewHomepage}
-        <title>{organization.name}, {organization.city} - Kaddio</title>
-    {:else}
-        <meta name="robots" content="noindex" />
-    {/if}
+    <title>{organization.name}, {organization.city} - Kaddio</title>
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
