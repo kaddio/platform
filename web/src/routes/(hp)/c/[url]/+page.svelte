@@ -75,6 +75,12 @@
         return html.replace(/style\s*=\s*["'][^"']*["']/gi, '');
     }
     let description = organization.homepage?.metaDescription || `${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`;
+
+    const titleFromOrg = function(org){
+        const cityStr = org.city ? `, ${org.city}` : '';
+
+        return `${org.name}${cityStr} - Kaddio`;
+    }
     
 </script>
 
@@ -83,7 +89,7 @@
     url={`https://kaddio.com/c/${organization.url}`}
     type="business.business"
     keywords={organization.keywords?.join(', ')}
-    title={`${organization.name}, ${organization.city} - Kaddio`}
+    title={titleFromOrg(organization)}
     description={description}
     locality={organization.city}
     images={imagesFromImageHandler}
@@ -92,7 +98,7 @@
 
 
 <svelte:head>
-    <title>{organization.name}, {organization.city} - Kaddio</title>
+    <title>{titleFromOrg(organization)}</title>
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
