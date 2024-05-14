@@ -5,6 +5,9 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import Nonameyet from "$components/nonameyet.svelte";
+    import ProductFeature from "$components/productFeature.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
 
 </script>
 
@@ -42,6 +45,15 @@
 	</ModuleFeatureWithIcon>
 	
 </ModuleSectionWithImage>
+
+<Nonameyet>
+	<span slot="h2">Så fungerar Kaddio fakturering</span>
+	<span slot="body">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea. Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea. Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</span>
+</Nonameyet>
+
+<ProductFeature></ProductFeature>
+
+<ProductFeatureImageOnLeft></ProductFeatureImageOnLeft>
   
 
 <FaqSection>
