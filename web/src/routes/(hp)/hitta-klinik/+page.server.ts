@@ -1,5 +1,5 @@
 import { redirect } from '@sveltejs/kit';
 
 export function load({ url }) {
-    throw redirect(307, '/sv/hitta-klinik');
+    throw redirect(301, '/sv/hitta-klinik');
 }
