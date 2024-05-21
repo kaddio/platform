@@ -8,6 +8,26 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    '/video': {
+        c: 301,
+        d: '/en/communication'
+    },
+
+    '/edu-bankid': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/backup': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/support.html': {
+        c: 301,
+        d: '/en/support'
+    },
+
     // Svenska
     '/sv/feature/cal': {
         c: 301,
