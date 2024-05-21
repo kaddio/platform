@@ -27,8 +27,8 @@
     
     <div class="max-w-xl">
         <div class="mt-8 flex items-center gap-x-4 text-xs">
-        <span class="text-gray-500"><i class="fal fa-location-dot"></i> {organization.addressString}</span>
-            <a href="#" class="relative z-10 rounded-full bg-green-800 px-3 py-1.5 font-medium text-gray-600 hover:bg-green-700"><i class="fal fa-timer"></i> Tid om 6h</a>
+        <span class="text-gray-500"><i class="fal fa-location-dot"></i> {organization.city}</span>
+            <a href="https://{organization.url}.kaddio.com/booking" class="relative z-10 rounded-full bg-green-800 px-3 py-1.5 font-medium text-gray-600 hover:bg-green-700"><i class="fal fa-timer"></i> Tid {nextTime}</a>
         <!-- {#each keywords as keyword}
             <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{keyword}</a>
         
@@ -42,7 +42,7 @@
             </a>
         </h3>
         <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-            {@html organization.homepage?.presentation || 'Välkommen!'}            
+            {@html organization.homepage?.metaDescription || 'Välkommen!'}            
         </p>
         </div>
         <div class="relative mt-8 flex items-center gap-x-4">
