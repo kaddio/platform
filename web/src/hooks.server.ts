@@ -8,14 +8,43 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    '/tos': {
+        c: 301,
+        d: '/en/legal/tos'
+    },
+
+    '/helpcenter': {
+        c: 301,
+        d: '/en/support'
+    },
     '/video': {
         c: 301,
         d: '/en/communication'
     },
 
+    '/booking': {
+        c: 301,
+        d: '/en/online-booking'
+    },
+
+    '/en/career.html': {
+        c: 301,
+        d: '/career'
+    },
+
+    '/career.html': {
+        c: 301,
+        d: '/career'
+    },
+
     '/edu-bankid': {
         c: 301,
         d: '/en'
+    },
+
+    '/edu-cal': {
+        c: 301,
+        d: '/en/online-booking'
     },
 
     '/backup': {
