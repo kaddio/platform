@@ -33,12 +33,6 @@ export const keywords = [
     }
 ];
 
-export const shouldShowMetaForPage = (keyword: string, matches: number): boolean => {
-    if (matches == 0) return false;
-
-    return keywordExists(keyword);
-};
-
 export const keywordExists = (keyword: string): boolean => {
     if (keyword === 'Alla') return true;
 
