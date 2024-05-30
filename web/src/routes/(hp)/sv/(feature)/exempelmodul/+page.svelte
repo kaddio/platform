@@ -9,6 +9,7 @@
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
 
 </script>
 
@@ -47,6 +48,7 @@
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
+<ProductFeatureImageOnLeft></ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
