@@ -12,6 +12,7 @@
     import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
     import Quote from "$components/quote.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
+    import ProductPricingSection from "$components/productPricingSection.svelte";
 </script>
 
 <svelte:head>
@@ -122,7 +123,7 @@
     
 </QuotesSection>
 
-
+<ProductPricingSection></ProductPricingSection>
 <!-- 
 <FaqSection>
 	<span slot="title">Vanliga frågor</span>
