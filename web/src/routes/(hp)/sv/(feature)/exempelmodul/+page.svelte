@@ -14,7 +14,7 @@
 
 <svelte:head>
     <meta name="robots" content="noindex">
-	
+
 	<title>Exempel med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>
@@ -50,7 +50,7 @@
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta ingår i Kaddio Onlinebokning</span>
+	<span slot="title">Detta är Kaddio Onlinebokning</span>
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
@@ -87,9 +87,9 @@
 		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
-
+<!-- 
 <FaqSection>
-	<span slot="title">Detaljer</span>
+	<span slot="title">Vanliga frågor</span>
 
 	<Qa>
 		<span slot="q">Kalender</span>
@@ -201,4 +201,4 @@
 		</span>
 	</Qa>
 
-</FaqSection>
+</FaqSection> -->
