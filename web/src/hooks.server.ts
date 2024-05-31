@@ -32,6 +32,11 @@ const pathsRedirectMap = {
         d: '/career'
     },
 
+    '/en/forms': {
+        c: 301,
+        d: '/en'
+    },
+
     '/career.html': {
         c: 301,
         d: '/career'
