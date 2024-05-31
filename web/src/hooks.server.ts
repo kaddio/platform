@@ -87,7 +87,7 @@ const pathsRedirectMap = {
 
     '/es/dokument': {
         c: 301,
-        d: '/es/documentos'
+        d: '/es'
     },
 
     '/es/fakturering': {
@@ -102,17 +102,17 @@ const pathsRedirectMap = {
 
     '/es/rapporter': {
         c: 301,
-        d: '/es/informes'
+        d: '/es'
     },
 
     '/es/uppgifter': {
         c: 301,
-        d: '/es/tareas'
+        d: '/es'
     },
 
     '/es/formulär': {
         c: 301,
-        d: '/es/formularios'
+        d: '/es/historia-clinica'
     },
 
     '/es/feature/log': {
@@ -122,7 +122,7 @@ const pathsRedirectMap = {
 
     '/es/feature/todos': {
         c: 301,
-        d: '/es/tareas'
+        d: '/es'
     },
 
     '/es/tos.html': {
@@ -142,12 +142,12 @@ const pathsRedirectMap = {
 
     '/es/survey': {
         c: 301,
-        d: '/es/formularios'
+        d: '/es'
     },
 
     '/es/files': {
         c: 301,
-        d: '/es/documentos'
+        d: '/es'
     },
 
     '/es/chat': {
@@ -162,7 +162,7 @@ const pathsRedirectMap = {
 
     '/es/forms': {
         c: 301,
-        d: '/es/formularios'
+        d: '/es'
     },
 
     '/es/about-us': {
@@ -178,13 +178,12 @@ const pathsRedirectMap = {
     // English
     '/en/rapporter': {
         c: 301,
-        d: '/en/reports'
+        d: '/en'
     },
 
-    // TODO /en/tasks when we have it!
     '/en/uppgifter': {
         c: 302,
-        d: '/sv/uppgifter'
+        d: '/sv'
     },
 
     '/en/fakturering': {
@@ -194,7 +193,7 @@ const pathsRedirectMap = {
 
     '/en/dokument': {
         c: 301,
-        d: '/en/documents'
+        d: '/en'
     },
 
     '/en/kommunikation': {
@@ -220,7 +219,7 @@ const pathsRedirectMap = {
 
     '/en/feature/reports': {
         c: 301,
-        d: '/en/reports'
+        d: '/en'
     },
 
     // '/en/gdpr': {
@@ -230,7 +229,7 @@ const pathsRedirectMap = {
 
     '/en/tasks': {
         c: 302,
-        d: '/en/electronic-medical-record'
+        d: '/en'
     },
 
     // '/en/domain': {
@@ -240,7 +239,7 @@ const pathsRedirectMap = {
 
     '/en/feature/documents': {
         c: 301,
-        d: '/en/documents'
+        d: '/en'
     },
 
     '/en/booking': {
@@ -265,7 +264,7 @@ const pathsRedirectMap = {
 
     '/en/files': {
         c: 302,
-        d: '/en/documents'
+        d: '/en'
     }
 };
 
