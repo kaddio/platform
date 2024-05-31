@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from "$lib/stores";
-  export let href: string;
+  export let href: string | undefined = undefined;
 </script>
 
 <div class="relative pl-16">
@@ -13,8 +13,9 @@
     <slot name="title" />
   </dt>
   <dd class="mt-2 text-base leading-7 text-gray-600"><slot name="body" /></dd>
-
-  <p class="mt-1">
-    <a href={href} class="text-sm font-semibold leading-6 text-oldpink">{$_("Läs mer")} <span aria-hidden="true">→</span></a>
-  </p>  
+  {#if href}  
+    <p class="mt-1">
+      <a href={href} class="text-sm font-semibold leading-6 text-oldpink">{$_("Läs mer")} <span aria-hidden="true">→</span></a>
+    </p>  
+  {/if}
 </div>
