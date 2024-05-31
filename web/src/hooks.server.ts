@@ -68,6 +68,26 @@ const pathsRedirectMap = {
         d: '/sv/onlinebokning'
     },
 
+    '/sv/rapporter': {
+        c: 301,
+        d: '/sv'
+    },
+
+    '/sv/uppgifter': {
+        c: 301,
+        d: '/sv'
+    },
+
+    '/sv/formulär': {
+        c: 301,
+        d: '/sv'
+    },
+
+    '/sv/dokument': {
+        c: 301,
+        d: '/sv'
+    },
+
     // TODO edit redirect when a page about packages exists.
     '/packages': {
         c: 301,
