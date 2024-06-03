@@ -1,41 +1,21 @@
 import { apiUrl } from '$lib/apiUrl.js';
 import { redirect } from '@sveltejs/kit';
 
-function urlIsAnEmail(url: string) {
-    return url.indexOf('@') !== -1 && url.indexOf('.') !== -1;
-}
+function urlFromEmail(possibleUrl: string) {
+    const emailLookup = {
+        'janne@pnd.se': 'demo'
+    };
 
-async function fetchOrgUrlFromEmail(email: string) {
-    try {
-        const result = await fetch(`${apiUrl()}/api/url-from-email/${email}`, {
-            method: 'GET'
-        });
-
-        const data = await result.json();
-
-        return data?.url;
-    } catch (e) {
-        console.log(e);
-    }
-}
-
-async function urlFromEmail(possibleUrl: string) {
-    const isEmail = urlIsAnEmail(possibleUrl);
-
-    if (isEmail) {
-        const url = await fetchOrgUrlFromEmail(possibleUrl);
-
-        if (url) {
-            return url;
-        }
-    }
+    return emailLookup[possibleUrl];
 }
 
 export async function load({ params, fetch }) {
-    const redirectUrl = await urlFromEmail(params.url);
+    const redirectUrl = urlFromEmail(params.url);
+
+    console.log(redirectUrl);
 
     if (redirectUrl) {
-        throw redirect(301, `https://kaddio.com/c/${redirectUrl}`);
+        throw redirect(301, `http://localhost:5173/c/${redirectUrl}`);
     }
 
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
