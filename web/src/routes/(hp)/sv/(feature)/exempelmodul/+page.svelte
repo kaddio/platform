@@ -137,8 +137,8 @@
 		<span slot="sub">1300</span>
 	</StatsSectionPart>
 	<StatsSectionPart>
-		<span slot="title">Historisk upptid</span>
-		<span slot="sub">99,995%</span>
+		<span slot="title">anställda</span>
+		<span slot="sub">7</span>
 	</StatsSectionPart>
 </StatsSection>
 <!-- 
