@@ -13,6 +13,8 @@
     import Quote from "$components/quote.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
     import ProductPricingSection from "$components/productPricingSection.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
 </script>
 
 <svelte:head>
@@ -124,6 +126,21 @@
 </QuotesSection>
 
 <ProductPricingSection></ProductPricingSection>
+
+<StatsSection>
+	<StatsSectionPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">Historisk upptid</span>
+		<span slot="sub">99,995%</span>
+	</StatsSectionPart>
+</StatsSection>
 <!-- 
 <FaqSection>
 	<span slot="title">Vanliga frågor</span>
