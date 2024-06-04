@@ -204,7 +204,9 @@ export async function load({ params, fetch }) {
 
     const data = await result.json();
 
-    return {
-        organization: data.data.findOrganization
-    };
+    if (data?.data?.findOrganization) {
+        return { organization: data.data.findOrganization };
+    } else {
+        throw redirect(302, 'https://kaddio.com/en');
+    }
 }
