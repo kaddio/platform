@@ -158,6 +158,11 @@ const pathsRedirectMap = {
     },
 
     // Svenska
+    '/sv/feature/forms': {
+        c: 301,
+        d: '/en'
+    },
+
     '/sv/feature/cal': {
         c: 301,
         d: '/sv/onlinebokning'
