@@ -20,10 +20,7 @@
         'Göteborg',
         'Malmö',
         'Uppsala',
-        'Västerås',
-        'Örebro',
-        'Linköping',
-        'Helsingborg'
+        'Örebro'
     ];
     const year = new Date().getFullYear();
 
