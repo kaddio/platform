@@ -8,6 +8,36 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    '/hittaklinik': {
+        c: 301,
+        d: '/sv/hitta-klinik'
+    },
+
+    '/en/hitta-klinik': {
+        c: 301,
+        d: '/sv/hitta-klinik'
+    },
+
+    '/en/hittaklinik': {
+        c: 301,
+        d: '/sv/hitta-klinik'
+    },
+
+    '/sv/hittaklinik': {
+        c: 301,
+        d: '/sv/hitta-klinik'
+    },
+
+    '/es/hittaklinik': {
+        c: 301,
+        d: '/sv/hitta-klinik'
+    },
+
+    '/es/hitta-klinik': {
+        c: 301,
+        d: '/sv/hitta-klinik'
+    },
+
     '/lectures': {
         c: 301,
         d: '/en'
