@@ -260,7 +260,22 @@ const pathsRedirectMap = {
         d: '/es/historia-clinica'
     },
 
+    '/es/log': {
+        c: 301,
+        d: '/es/historia-clinica'
+    },
+
     '/es/feature/todos': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/feature/forms': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/tasks': {
         c: 301,
         d: '/es'
     },
