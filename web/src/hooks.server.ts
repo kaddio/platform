@@ -335,9 +335,14 @@ const pathsRedirectMap = {
         d: '/en'
     },
 
+    '/environment': {
+        c: 301,
+        d: '/about-us'
+    },
+
     '/environment.html': {
         c: 301,
-        d: '/en'
+        d: '/about-us'
     },
 
     '/en/rapporter': {
