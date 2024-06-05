@@ -294,7 +294,8 @@ const pathsRedirectMap = {
 };
 
 const handlePossibleRedirects = function (path: string) {
-    const match = pathsRedirectMap[path];
+    const decodedPath: string = decodeURIComponent(path);
+    const match: boolean = pathsRedirectMap[decodedPath];
 
     if (match) {
         console.log('match on redirect, redirecting...');
