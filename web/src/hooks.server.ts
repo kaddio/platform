@@ -8,6 +8,26 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    '/lectures': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/lectures.html': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/privacy': {
+        c: 301,
+        d: '/en/legal/privacy'
+    },
+
+    '/security': {
+        c: 301,
+        d: '/en'
+    },
+
     '/website': {
         c: 301,
         d: '/en'
