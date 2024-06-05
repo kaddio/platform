@@ -215,7 +215,16 @@ const pathsRedirectMap = {
         d: '/career'
     },
 
-    // English
+    '/en/responsible-disclosure.html': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/environment.html': {
+        c: 301,
+        d: '/en'
+    },
+
     '/en/rapporter': {
         c: 301,
         d: '/en'
@@ -272,17 +281,12 @@ const pathsRedirectMap = {
         d: '/en'
     },
 
-    // '/en/domain': {
-    //     c: 302,
-    //     d: '/en/homepage'
-    // }
-
-    '/en/documents': {
+    '/en/domain': {
         c: 301,
         d: '/en'
     },
 
-    '/en/responsible-disclosure.html': {
+    '/en/documents': {
         c: 301,
         d: '/en'
     },
