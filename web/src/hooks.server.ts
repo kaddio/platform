@@ -262,6 +262,11 @@ const pathsRedirectMap = {
     //     d: '/en/homepage'
     // }
 
+    '/en/documents': {
+        c: 301,
+        d: '/en'
+    },
+
     '/en/feature/documents': {
         c: 301,
         d: '/en'
