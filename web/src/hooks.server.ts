@@ -245,6 +245,16 @@ const pathsRedirectMap = {
         d: '/es/historia-clinica'
     },
 
+    '/es/booking': {
+        c: 301,
+        d: '/es/sistema-de-reservas'
+    },
+
+    '/es/feature/cal': {
+        c: 301,
+        d: '/es/sistema-de-reservas'
+    },
+
     '/es/feature/log': {
         c: 301,
         d: '/es/historia-clinica'
