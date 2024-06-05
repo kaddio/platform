@@ -8,6 +8,26 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    '/website': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/payment': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/invoicing': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/fakturering': {
+        c: 301,
+        d: '/sv'
+    },
+
     '/tos': {
         c: 301,
         d: '/en/legal/tos'
@@ -271,10 +291,10 @@ const pathsRedirectMap = {
         d: '/en'
     },
 
-    // '/en/gdpr': {
-    //     c: 301,
-    //     d: '/'
-    // },
+    '/en/gdpr': {
+        c: 301,
+        d: '/en'
+    },
 
     '/en/tasks': {
         c: 302,
@@ -311,14 +331,29 @@ const pathsRedirectMap = {
         d: '/en/online-booking'
     },
 
+    '/developer': {
+        c: 301,
+        d: '/career'
+    },
+
     '/en/developer': {
-        c: 302,
+        c: 301,
         d: '/career'
     },
 
     '/en/case/fakturering': {
         c: 302,
         d: '/en/invoicing'
+    },
+
+    '/case/silvia': {
+        c: 302,
+        d: '/en/case/osteopatia-mallorca'
+    },
+
+    '/case/psykologa': {
+        c: 302,
+        d: '/en/case/afobia'
     },
 
     '/en/files': {
