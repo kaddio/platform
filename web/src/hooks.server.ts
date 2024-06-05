@@ -8,6 +8,21 @@ function getLang(event) {
 }
 
 const pathsRedirectMap = {
+    '/iframe': {
+        c: 301,
+        d: 'https://help.kaddio.com/help/integrera-kaddio-tidsbokning-pa-din-egen-hemsida'
+    },
+
+    '/en/todos': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/enterprise': {
+        c: 301,
+        d: '/en'
+    },
+
     '/hittaklinik': {
         c: 301,
         d: '/sv/hitta-klinik'
@@ -334,6 +349,11 @@ const pathsRedirectMap = {
     '/en/journalsystem': {
         c: 301,
         d: '/en/electronic-medical-record'
+    },
+
+    '/en/reports': {
+        c: 301,
+        d: '/en'
     },
 
     '/en/feature/reports': {
