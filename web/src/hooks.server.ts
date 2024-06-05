@@ -37,6 +37,11 @@ const pathsRedirectMap = {
         d: '/en'
     },
 
+    '/forms': {
+        c: 301,
+        d: '/en'
+    },
+
     '/career.html': {
         c: 301,
         d: '/career'
@@ -57,6 +62,11 @@ const pathsRedirectMap = {
         d: '/en'
     },
 
+    '/support': {
+        c: 301,
+        d: '/en/support'
+    },
+
     '/support.html': {
         c: 301,
         d: '/en/support'
@@ -64,6 +74,11 @@ const pathsRedirectMap = {
 
     // Svenska
     '/sv/feature/cal': {
+        c: 301,
+        d: '/sv/onlinebokning'
+    },
+
+    '/bokningssystem': {
         c: 301,
         d: '/sv/onlinebokning'
     },
@@ -263,6 +278,16 @@ const pathsRedirectMap = {
     // }
 
     '/en/documents': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/en/responsible-disclosure.html': {
+        c: 301,
+        d: '/en'
+    },
+
+    '/domain': {
         c: 301,
         d: '/en'
     },
