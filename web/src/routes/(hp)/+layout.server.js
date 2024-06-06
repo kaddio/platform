@@ -5,12 +5,11 @@ const browserFingerprint = (request, ip) => {
         }, 0);
     };
 
-    const domain = request.headers.get('host');
     const userAgent = request.headers.get('user-agent');
     const language = request.headers.get('accept-language');
     const validityInterval = Math.round(new Date() / 1000 / 3600 / 24 / 4);
 
-    return stringToHash(`${ip};${domain};${userAgent};${language};${validityInterval}`);
+    return stringToHash(`${ip};${userAgent};${language};${validityInterval}`);
 };
 
 export function load({ request, url, getClientAddress }) {
