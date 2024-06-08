@@ -4,7 +4,6 @@
     import { getContext } from 'svelte';
     import LangBanner from './lang-banner.svelte';
     import MarketplaceBanner from './marketplace-banner.svelte';
-    import Cookie from './cookie.svelte';
     import Seo from './seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { kaddioOrgSchema } from '$lib/json-ld';
@@ -68,8 +67,6 @@
  />
 
  <LdTag schema={kaddioOrgSchema} />
-
-<Cookie />
 
 <header class="relative isolate z-10">
     <LangBanner />
