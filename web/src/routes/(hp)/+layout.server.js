@@ -1,16 +1,4 @@
-const browserFingerprint = (request, ip) => {
-    const stringToHash = function (s) {
-        return s.split('').reduce((hash, char) => {
-            return char.charCodeAt(0) + (hash << 6) + (hash << 16) - hash;
-        }, 0);
-    };
-
-    const userAgent = request.headers.get('user-agent');
-    const language = request.headers.get('accept-language');
-    const validityInterval = Math.round(new Date() / 1000 / 3600 / 24 / 4);
-
-    return stringToHash(`${ip};${userAgent};${language};${validityInterval}`);
-};
+import { browserFingerprint } from '$lib/browser-fingerprint';
 
 export function load({ request, url, getClientAddress }) {
     const anonUserId = browserFingerprint(request, getClientAddress());
