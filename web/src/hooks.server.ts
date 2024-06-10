@@ -290,6 +290,11 @@ const pathsRedirectMap = {
         d: '/es'
     },
 
+    '/es/tareas': {
+        c: 301,
+        d: '/es'
+    },
+
     '/es/tos.html': {
         c: 301,
         d: '/es/legal/tos'
