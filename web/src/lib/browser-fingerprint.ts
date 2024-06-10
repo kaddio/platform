@@ -1,6 +1,6 @@
 import type { RequestEvent } from '@sveltejs/kit';
 
-const fingerPrint = function (userAgent: string, acceptLanguage: string, ip: string) {
+const fingerprint = function (userAgent: string, acceptLanguage: string, ip: string) {
     const stringToHash = function (s: string) {
         return s.split('').reduce((hash, char) => {
             return char.charCodeAt(0) + (hash << 6) + (hash << 16) - hash;
@@ -16,5 +16,5 @@ export const browserFingerprint = (request: RequestEvent, ip: string) => {
     const userAgent = request.headers.get('user-agent');
     const acceptLanguage = request.headers.get('accept-language');
 
-    return fingerPrint(userAgent, acceptLanguage, ip);
+    return fingerprint(userAgent, acceptLanguage, ip);
 };
