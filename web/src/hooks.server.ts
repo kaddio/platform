@@ -1,7 +1,7 @@
 import { redirect } from '@sveltejs/kit';
 
 function getLang(event) {
-    const sv = event.url.pathname.includes('/sv') && 'sv';
+    const sv = event.url.pathname.includes('/sv') || (event.url.pathname.includes('/c/') && 'sv');
     const es = event.url.pathname.includes('/es') && 'es';
 
     return sv || es || 'en';
