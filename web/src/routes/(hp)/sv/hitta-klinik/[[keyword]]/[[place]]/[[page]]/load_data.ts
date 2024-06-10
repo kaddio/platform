@@ -1,6 +1,7 @@
 import { apiUrl } from '$lib/apiUrl.js';
 
 export async function loadData({
+    trackingData,
     params,
     fetch
 }): Promise<{ organizations: Organization[]; keyword: string; count: number }> {
@@ -14,6 +15,7 @@ export async function loadData({
             // page: 0
         };
     }
+
     const parsedPage = parseInt(page);
     const ORGS_PER_PAGE = 12;
     const query = `
@@ -50,7 +52,8 @@ export async function loadData({
         method: 'POST',
         body: JSON.stringify({ query }),
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'x-tracking-data': JSON.stringify(trackingData)
         }
     });
 

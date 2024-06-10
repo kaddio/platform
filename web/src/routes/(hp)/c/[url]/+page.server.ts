@@ -1,4 +1,5 @@
 import { apiUrl } from '$lib/apiUrl.js';
+import { browserFingerprint } from '$lib/browser-fingerprint.js';
 import { redirect } from '@sveltejs/kit';
 
 function urlFromEmail(possibleUrl: string) {
@@ -111,13 +112,20 @@ function urlFromEmail(possibleUrl: string) {
     return emailLookup[possibleUrl];
 }
 
-export async function load({ params, fetch }) {
+export async function load({ params, fetch, request, getClientAddress }) {
     const redirectUrl = urlFromEmail(params.url);
 
     if (redirectUrl) {
         console.log(`Redirecting from email ${params.url} to ${redirectUrl}`);
         throw redirect(301, `https://kaddio.com/c/${redirectUrl}`);
     }
+
+    const trackingData = {
+        fingerprint: browserFingerprint(request, getClientAddress()),
+        app: 'website',
+        label: 'pageview',
+        category: 'homepage'
+    };
 
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
         method: 'POST',
@@ -198,7 +206,8 @@ export async function load({ params, fetch }) {
         `
         }),
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'x-tracking-data': JSON.stringify(trackingData)
         }
     });
 
