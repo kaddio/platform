@@ -320,6 +320,11 @@ const pathsRedirectMap = {
         d: '/es'
     },
 
+    '/es/informes': {
+        c: 301,
+        d: '/es'
+    },
+
     '/es/about-us': {
         c: 301,
         d: '/about-us'
@@ -394,6 +399,11 @@ const pathsRedirectMap = {
     '/en/feature/reports': {
         c: 301,
         d: '/en'
+    },
+
+    '/en/feature/communication': {
+        c: 301,
+        d: '/en/communication'
     },
 
     '/en/gdpr': {
