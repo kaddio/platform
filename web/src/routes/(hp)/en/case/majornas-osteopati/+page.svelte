@@ -4,6 +4,9 @@
 
 </script>
 
+<svelte:head>
+  <title>Kaddio Case study @ Göteborg, Sweden</title>
+</svelte:head>
 
 <Legal>
     <span slot="pretitle">
