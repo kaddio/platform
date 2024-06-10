@@ -38,7 +38,7 @@
         <span slot="body">Communicate securely and encrypted via chat or video. With two or 500 participants.</span>
     </ModulePresentation>
 
-    <!-- <ModulePresentation href="en/feature/forms">
+    <!-- <ModulePresentation>
       <span slot="icon">
           <i class="text-white fa-regular fa-clipboard-list-check"></i>
       </span>
@@ -46,7 +46,7 @@
         <span slot="body">Automate delivery of forms and health assessments.</span>
     </ModulePresentation>
         
-    <ModulePresentation href="en/feature/todos">
+    <ModulePresentation>
       <span slot="icon">
           <i class="text-white fa-regular fa-list-ul"></i>
       </span>
@@ -54,7 +54,7 @@
         <span slot="body">Do your own todo-list or delegate it to someone.</span>
     </ModulePresentation>
                  -->
-    <ModulePresentation href="en/documents">
+    <ModulePresentation>
       <span slot="icon">
           <i class="text-white fa-regular fa-folder-tree"></i>
       </span>
@@ -62,7 +62,7 @@
         <span slot="body">Collaborate in the cloud with your collegues. Restrict access in the file management system with advanced permission control. Version management and backup comes by default.</span>
     </ModulePresentation>
 
-    <ModulePresentation href="en/reports">
+    <ModulePresentation>
       <span slot="icon">
           <i class="text-white fa-regular fa-chart-line"></i>
       </span>
