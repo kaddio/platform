@@ -245,6 +245,16 @@ const pathsRedirectMap = {
         d: '/es/historia-clinica'
     },
 
+    '/es/formularios': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/documentos': {
+        c: 301,
+        d: '/es'
+    },
+
     '/es/booking': {
         c: 301,
         d: '/es/sistema-de-reservas'
@@ -343,6 +353,26 @@ const pathsRedirectMap = {
     '/environment': {
         c: 301,
         d: '/about-us'
+    },
+
+    '/es/support.html': {
+        c: 301,
+        d: '/es/support'
+    },
+
+    '/es/enterprise.html': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/enterprise': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/environment.html': {
+        c: 301,
+        d: '/es'
     },
 
     '/environment.html': {
