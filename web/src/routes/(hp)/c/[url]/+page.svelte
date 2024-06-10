@@ -100,6 +100,7 @@
 
 <svelte:head>
     <title>{titleFromOrg(organization)}</title>
+    <link rel="canonical" href="https://kaddio.com/c/{organization.url}" />
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
