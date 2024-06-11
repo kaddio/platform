@@ -137,8 +137,8 @@
 		<span slot="sub">1300</span>
 	</StatsSectionPart>
 	<StatsSectionPart>
-		<span slot="title">anställda</span>
-		<span slot="sub">7</span>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">10 000</span>
 	</StatsSectionPart>
 </StatsSection>
 <!-- 
