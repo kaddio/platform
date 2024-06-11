@@ -18,7 +18,7 @@
     </div>
     <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
       <p class="text-sm leading-6 text-gray-900">
-        Letar du efter behandling eller vill du söka bland kliniker? 
+        Söker du behandling? 
       </p>
       <a href="/sv/hitta-klinik" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Sök här <span aria-hidden="true">&rarr;</span></a>
     </div>
