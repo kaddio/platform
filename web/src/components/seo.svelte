@@ -1,7 +1,10 @@
 <script lang="ts">
     // https://developers.facebook.com/blog/post/2013/06/05/platform-updates--new-open-graph-business-object-type/
 
-    export let url: string;
+    import { page } from "$app/stores";
+    import { countryCodeFromLang } from "$lib/regions";
+
+    export let url: string = $page.url.href;
     export let type: string;
     export let title: string;
     export let description: string;
@@ -15,11 +18,18 @@
     export let country: string = '';
     export let postalCode: string = '';
 
+    export const lang = 'sv';
+
+    const locale = `${lang}_${countryCodeFromLang(lang)}`;
+
 </script>
 
 <svelte:head>
     <meta name="description" content={description} />
-    <meta name="keywords" content={keywords} />
+
+    {#if keywords}
+        <meta name="keywords" content={keywords} />
+    {/if}
     
     {#if title}
         <title>{title}</title>
@@ -27,8 +37,12 @@
 
     <!-- Facebook Meta Tags -->
     <meta property="og:site_name" content="Kaddio" />
-    <meta property="og:locale" content="sv_SE" />
-    <meta property="og:url" content={url} />
+    <meta property="og:locale" content="{locale}" />
+
+    {#if url}
+        <meta property="og:url" content={url} />
+    {/if}
+
     <meta property="og:type" content={type} />
     <meta
         property="og:title"
