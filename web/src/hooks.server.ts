@@ -1,10 +1,15 @@
 import { redirect } from '@sveltejs/kit';
 
 function getLang(event) {
-    const sv = event.url.pathname.includes('/sv') || (event.url.pathname.includes('/c/') && 'sv');
-    const es = event.url.pathname.includes('/es') && 'es';
+    if (event.url.pathname.includes('/sv') || event.url.pathname.includes('/c/')) {
+        return 'sv';
+    }
 
-    return sv || es || 'en';
+    if (event.url.pathname.includes('/es')) {
+        return 'es';
+    }
+
+    return 'en';
 }
 
 const pathsRedirectMap = {
