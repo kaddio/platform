@@ -1,5 +1,6 @@
 <script lang="ts">
     // https://developers.facebook.com/blog/post/2013/06/05/platform-updates--new-open-graph-business-object-type/
+    // https://ogp.me
 
     import { page } from "$app/stores";
     import { countryCodeFromLang } from "$lib/regions";
