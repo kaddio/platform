@@ -10,7 +10,6 @@ export async function load({
 }): Promise<{ organizations: Organization[]; keyword: string; count: number }> {
     const trackingData = {
         fingerprint: browserFingerprint(request, getClientAddress()),
-        app: 'website',
         label: 'pageview',
         category: 'ks'
     };

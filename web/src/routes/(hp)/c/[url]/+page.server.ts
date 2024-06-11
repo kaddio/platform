@@ -122,7 +122,6 @@ export async function load({ params, fetch, request, getClientAddress }) {
 
     const trackingData = {
         fingerprint: browserFingerprint(request, getClientAddress()),
-        app: 'website',
         label: 'pageview',
         category: 'homepage'
     };
