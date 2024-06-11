@@ -138,7 +138,7 @@
 	</StatsSectionPart>
 	<StatsSectionPart>
 		<span slot="title">videomöten per månad</span>
-		<span slot="sub">10 000</span>
+		<span slot="sub">8500</span>
 	</StatsSectionPart>
 </StatsSection>
 <!-- 
