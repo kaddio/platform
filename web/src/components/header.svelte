@@ -241,7 +241,7 @@
                                     {$_('Kontakta sälj')}
                                 </a>
                                 <a
-                                    href="/{lang}/#functions"
+                                    href="/{lang}#functions"
                                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                                 >
                                     <svg
@@ -416,7 +416,7 @@
                                 {$_('Fakturering')}
                             </a>
                             <a
-                                href="/{lang}/#functions"
+                                href="/{lang}#functions"
                                 class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 <div
