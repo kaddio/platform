@@ -121,7 +121,7 @@ export async function load({ params, fetch, request, getClientAddress }) {
     }
 
     const trackingData = {
-        fingerprint: browserFingerprint(request, getClientAddress()),
+        fingerprint: await browserFingerprint(request, getClientAddress()),
         label: 'pageview',
         category: 'org_homepage',
         orgUrl: params.url

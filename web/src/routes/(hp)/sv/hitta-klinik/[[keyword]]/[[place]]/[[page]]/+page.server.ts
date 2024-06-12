@@ -9,7 +9,7 @@ export async function load({
     fetch
 }): Promise<{ organizations: Organization[]; keyword: string; count: number }> {
     const trackingData = {
-        fingerprint: browserFingerprint(request, getClientAddress()),
+        fingerprint: await browserFingerprint(request, getClientAddress()),
         label: 'pageview',
         category: 'ks'
     };

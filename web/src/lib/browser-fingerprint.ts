@@ -1,16 +1,18 @@
 import type { RequestEvent } from '@sveltejs/kit';
 
-const fingerprint = function (str: string) {
-    const stringToHash = function (s: string) {
-        return s.split('').reduce((hash, char) => {
-            return char.charCodeAt(0) + (hash << 6) + (hash << 16) - hash;
-        }, 0);
-    };
+const fingerprint = async function (str: string) {
+    async function digestMessage(message: string) {
+        const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
+        const hashBuffer = await window.crypto.subtle.digest('SHA-256', msgUint8); // hash the message
+        const hashArray = Array.from(new Uint8Array(hashBuffer)); // convert buffer to byte array
+        const hashHex = hashArray.map((b) => b.toString(16).padStart(2, '0')).join(''); // convert bytes to hex string
+        return hashHex;
+    }
 
-    return stringToHash(str);
+    return await digestMessage(str);
 };
 
-export const browserFingerprint = (request: RequestEvent, ip: string) => {
+export const browserFingerprint = async (request: RequestEvent, ip: string) => {
     const userAgent = request.headers.get('user-agent');
     const acceptLanguage = request.headers.get('accept-language');
 
@@ -19,5 +21,5 @@ export const browserFingerprint = (request: RequestEvent, ip: string) => {
         ip = '127.0.0.1';
     }
 
-    return fingerprint(`${ip};${userAgent};${acceptLanguage}`);
+    return await fingerprint(`${ip};${userAgent};${acceptLanguage}`);
 };
