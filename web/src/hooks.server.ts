@@ -1,10 +1,15 @@
 import { redirect } from '@sveltejs/kit';
 
 function getLang(event) {
-    const sv = event.url.pathname.includes('/sv') && 'sv';
-    const es = event.url.pathname.includes('/es') && 'es';
+    if (event.url.pathname.includes('/sv') || event.url.pathname.includes('/c/')) {
+        return 'sv';
+    }
 
-    return sv || es || 'en';
+    if (event.url.pathname.includes('/es')) {
+        return 'es';
+    }
+
+    return 'en';
 }
 
 const pathsRedirectMap = {
@@ -245,6 +250,16 @@ const pathsRedirectMap = {
         d: '/es/historia-clinica'
     },
 
+    '/es/formularios': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/documentos': {
+        c: 301,
+        d: '/es'
+    },
+
     '/es/booking': {
         c: 301,
         d: '/es/sistema-de-reservas'
@@ -276,6 +291,11 @@ const pathsRedirectMap = {
     },
 
     '/es/tasks': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/tareas': {
         c: 301,
         d: '/es'
     },
@@ -320,6 +340,11 @@ const pathsRedirectMap = {
         d: '/es'
     },
 
+    '/es/informes': {
+        c: 301,
+        d: '/es'
+    },
+
     '/es/about-us': {
         c: 301,
         d: '/about-us'
@@ -338,6 +363,26 @@ const pathsRedirectMap = {
     '/environment': {
         c: 301,
         d: '/about-us'
+    },
+
+    '/es/support.html': {
+        c: 301,
+        d: '/es/support'
+    },
+
+    '/es/enterprise.html': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/enterprise': {
+        c: 301,
+        d: '/es'
+    },
+
+    '/es/environment.html': {
+        c: 301,
+        d: '/es'
     },
 
     '/environment.html': {
@@ -394,6 +439,11 @@ const pathsRedirectMap = {
     '/en/feature/reports': {
         c: 301,
         d: '/en'
+    },
+
+    '/en/feature/communication': {
+        c: 301,
+        d: '/en/communication'
     },
 
     '/en/gdpr': {

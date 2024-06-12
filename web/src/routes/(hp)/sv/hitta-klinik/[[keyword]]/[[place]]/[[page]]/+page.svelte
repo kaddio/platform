@@ -92,8 +92,16 @@
     onMount(() => {
         window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
     });
+    
+    const titleForMarketplace = (keyword: string, place: string) => {
+        if(!keyword) return 'Kaddio';
 
-    $: title = `${data.keyword} ${data.place} - Kaddio`;
+        if(keyword && place) return `${keyword} ${place} - Kaddio`;
+
+        return `${keyword} - Kaddio`
+    }
+
+    $: title = titleForMarketplace(data.keyword, data.place);
 
     // $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
     // $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));

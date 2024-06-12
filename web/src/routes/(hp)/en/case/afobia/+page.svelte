@@ -3,6 +3,10 @@
 	import LegalParagraph from "$components/legalParagraph.svelte";
 </script>
 
+<svelte:head>
+  <title>Kaddio Case study @ Stockholm, Sweden</title>
+</svelte:head>
+
 <Legal>
     <span slot="pretitle">
         Kaddio Case study @ Stockholm, Sweden

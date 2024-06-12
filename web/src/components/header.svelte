@@ -58,13 +58,13 @@
 
 <svelte:window on:keydown={onKeyDown} />
 
-<Seo 
+<!-- <Seo 
     url="https://kaddio.com" 
     description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
     type="website" 
     phone="+46313204414"
- />
+ /> -->
 
  <LdTag schema={kaddioOrgSchema} />
 

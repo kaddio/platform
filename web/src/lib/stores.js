@@ -391,26 +391,6 @@ export const links = {
         sv: 'fakturering',
         en: 'invoicing',
         es: 'sistema-de-facturacion'
-    },
-    formulär: {
-        sv: 'formulär',
-        en: 'forms',
-        es: 'formularios'
-    },
-    uppgifter: {
-        sv: 'uppgifter',
-        en: 'todos',
-        es: 'tareas'
-    },
-    dokument: {
-        sv: 'dokument',
-        en: 'documents',
-        es: 'documentos'
-    },
-    rapporter: {
-        sv: 'rapporter',
-        en: 'reports',
-        es: 'informes'
     }
 };
 

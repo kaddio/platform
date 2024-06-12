@@ -4,7 +4,8 @@
     import StatPiece from '$components/statPiece.svelte';
 	import Nav from '$components/nav.svelte';
 	import Footer from '$components/footer.svelte';
-	import { setContext } from 'svelte';
+	import { getContext, setContext } from 'svelte';
+    import Seo from '$components/seo.svelte';
 
     setContext('lang', 'en');
     setContext('hideLangBanner', true);
@@ -25,8 +26,15 @@
     };
 </script>
 
-<Nav />
+<Seo
+    lang={getContext('lang')} 
+    type="website"
+    title="About Kaddio"
+    description="Kaddio provides health professionals with an effective way to manage their business securely in the cloud."
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+/>
 
+<Nav />
 
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
