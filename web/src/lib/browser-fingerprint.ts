@@ -2,11 +2,9 @@ import type { RequestEvent } from '@sveltejs/kit';
 
 const fingerprint = async function (str: string) {
     async function digestMessage(message: string) {
-        const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
-        const hashBuffer = await window.crypto.subtle.digest('SHA-256', msgUint8); // hash the message
-        const hashArray = Array.from(new Uint8Array(hashBuffer)); // convert buffer to byte array
-        const hashHex = hashArray.map((b) => b.toString(16).padStart(2, '0')).join(''); // convert bytes to hex string
-        return hashHex;
+        return message.split('').reduce((hash, char) => {
+            return char.charCodeAt(0) + (hash << 6) + (hash << 16) - hash;
+        }, 0);
     }
 
     return await digestMessage(str);
