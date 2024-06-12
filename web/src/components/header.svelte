@@ -267,7 +267,7 @@
             <a href="/{lang}/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{$_('Kundberättelser')}</a>
 
             <a
-                href="/{lang}/#price"
+                href="/{lang}#price"
                 class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"
             >
                 {$_('Pris')}
@@ -440,7 +440,7 @@
                         </div>
                         <div class="space-y-2 py-6">
                             <a
-                                href="/{lang}/#price"
+                                href="/{lang}#price"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >{$_('Pris')}</a
                             >
