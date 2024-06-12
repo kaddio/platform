@@ -173,7 +173,7 @@
                                 variant="flat"
                                 color="theme-primary"
                                 size="md"
-                                href="https://{organization.url}.kaddio.com/booking?utm_source={utmSource($page.url)}"
+                                href="https://{organization.url}.kaddio.com/booking/cal?utm_source={utmSource($page.url)}"
                                 >Boka tid</KdLinkButton
                             >
                         </div>
