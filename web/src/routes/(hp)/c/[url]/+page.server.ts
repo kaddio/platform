@@ -123,7 +123,8 @@ export async function load({ params, fetch, request, getClientAddress }) {
     const trackingData = {
         fingerprint: browserFingerprint(request, getClientAddress()),
         label: 'pageview',
-        category: 'homepage'
+        category: 'homepage',
+        orgUrl: params.url
     };
 
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
