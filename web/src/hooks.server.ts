@@ -70,7 +70,7 @@ const pathsRedirectMap = {
 
     '/privacy': {
         c: 301,
-        d: '/en/legal/privacy'
+        d: '/sv/legal/privacy'
     },
 
     '/security': {
@@ -100,7 +100,7 @@ const pathsRedirectMap = {
 
     '/tos': {
         c: 301,
-        d: '/en/legal/tos'
+        d: '/sv/legal/tos'
     },
 
     '/helpcenter': {
