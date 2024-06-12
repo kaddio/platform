@@ -1,4 +1,3 @@
-import { dev } from '$app/environment';
 import { links } from '$lib/stores';
 
 const homepageLinksSection = `

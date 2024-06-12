@@ -33,12 +33,6 @@ export const keywords = [
     }
 ];
 
-export const shouldShowMetaForPage = (keyword: string, matches: number): boolean => {
-    if (matches == 0) return false;
-
-    return keywordExists(keyword);
-};
-
 export const keywordExists = (keyword: string): boolean => {
     if (keyword === 'Alla') return true;
 
@@ -99,16 +93,16 @@ export const allKeywords = [
     { name: 'Idrottsskador', category: 'Manuell terapi', desc: 'Sök hjälp för idrottsskador' },
     { name: 'Idrottsmassage', category: 'Manuell terapi', desc: 'Boka tid för idrottsmassage' },
     { name: 'Läkare', category: 'Medicin', desc: 'Boka tid med läkare' },
-    { name: 'Arbetsterapeut', category: 'Medicin', desc: 'Boka tid med arbetsterapeut' },
+    // { name: 'Arbetsterapeut', category: 'Medicin', desc: 'Boka tid med arbetsterapeut' },
     { name: 'Funktionsmedicin', category: 'Medicin', desc: 'Boka tid för funktionsmedicin' },
     { name: 'Provtagning', category: 'Medicin', desc: 'Boka tid för provtagning' },
     { name: 'Läkarintyg', category: 'Medicin', desc: 'Boka tid för läkarintyg' },
-    { name: 'Vaccination', category: 'Medicin', desc: 'Boka tid för vaccination' },
-    { name: 'Dietist', category: 'Medicin', desc: 'Boka tid med dietist' },
-    { name: 'Fotvård', category: 'Medicin', desc: 'Boka tid för fotvård' },
-    { name: 'Logoped', category: 'Övrigt', desc: 'Boka tid med logoped' },
-    { name: 'Veterinär', category: 'Övrigt', desc: 'Boka tid hos veterinär' },
-    { name: 'Hundfysioterapeut', category: 'Övrigt', desc: 'Boka tid hos hundfysioterapeut' },
+    // { name: 'Vaccination', category: 'Medicin', desc: 'Boka tid för vaccination' },
+    // { name: 'Dietist', category: 'Medicin', desc: 'Boka tid med dietist' },
+    // { name: 'Fotvård', category: 'Medicin', desc: 'Boka tid för fotvård' },
+    // { name: 'Logoped', category: 'Övrigt', desc: 'Boka tid med logoped' },
+    // { name: 'Veterinär', category: 'Övrigt', desc: 'Boka tid hos veterinär' },
+    // { name: 'Hundfysioterapeut', category: 'Övrigt', desc: 'Boka tid hos hundfysioterapeut' },
     { name: 'Coach', category: 'Övrigt', desc: 'Boka tid med coach' },
     { name: 'Livsstilsterapeut', category: 'Övrigt', desc: 'Boka tid med livsstilsterapeut' }
 ];

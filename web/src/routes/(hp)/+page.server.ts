@@ -8,5 +8,5 @@ export function load({ url }) {
         throw redirect(301, next);
     }
 
-    throw redirect(307, '/sv');
+    throw redirect(301, '/sv');
 }

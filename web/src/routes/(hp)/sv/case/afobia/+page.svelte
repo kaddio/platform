@@ -4,6 +4,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Kaddio Kundberättelse @ Stockholm</title>
+</svelte:head>
+
 <Legal>
     <span slot="pretitle">
         Kundberättelse @ Stockholm

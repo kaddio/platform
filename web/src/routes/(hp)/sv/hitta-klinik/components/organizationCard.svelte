@@ -15,7 +15,7 @@
 
 <Card className="w-full h-80 organization">
     <div class="w-full h-80">
-        <a href="/c/{organization.url}" class="relative">
+        <a href="/c/{organization.url}?utm_source=ks" class="relative">
             <div
                 class="w-full h-1/2"
                 style="background-image: url({imageHandler(
@@ -34,7 +34,7 @@
         </a>
 
         <div class="h-1/2 p-4 flex flex-col justify-between">
-            <a href="/c/{organization.url}">
+            <a href="/c/{organization.url}?utm_source=ks">
                 <div class="uppercase text-xs text-gray-400 font-semibold line-clamp-1">
                     {organization.homepage?.mainActivity || ''}
                 </div>

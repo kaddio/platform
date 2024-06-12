@@ -10,6 +10,10 @@
 
 </script>
 
+<svelte:head>
+    <meta name="robots" content="noindex">
+</svelte:head>
+
 <Seo 
     url="https://kaddio.com" 
     title="Kaddio is recommended by {$token.name}"

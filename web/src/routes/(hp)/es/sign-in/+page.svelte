@@ -6,8 +6,8 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Logga in</title>
-	<meta name="description" content="Logga in i Kaddio" />
+	<title>Kaddio - Iniciar sesión</title>
+	<meta name="description" content="Iniciar sesión" />
 </svelte:head>
 
 <LoginSection />

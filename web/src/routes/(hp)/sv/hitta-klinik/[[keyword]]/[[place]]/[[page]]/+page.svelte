@@ -9,7 +9,7 @@
     import AutocompleteKeyword from '../../../components/AutocompleteKeyword.svelte';
     import AutocompletePlace from '../../../components/AutocompletePlace.svelte';
     import { onMount, prevent_default } from 'svelte/internal';
-    import { descFromKeywordAndPlace, keywordExists, shouldShowMetaForPage } from "$lib/keywords";
+    import { descFromKeywordAndPlace } from "$lib/keywords";
     import Seo from '$components/seo.svelte';
     import OrganizationCard2 from '../../../components/organizationCard2.svelte';
     import { browser } from '$app/environment';
@@ -95,7 +95,53 @@
         window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
     });
 
-    $: title = `${data.keyword} ${data.place} - Kaddio`;
+    const titleMarketplace = function(keyword: string, place: string): string{
+        if(!keyword || keyword == 'Alla'){
+            keyword = 'Vård och hälsa'
+        }
+
+        if(place == 'Sverige'){
+            place = "hela Sverige";
+        }
+
+        if(keyword && place) return `${keyword} ${place}`;
+
+        return `${keyword} hela Sverige`
+    }
+
+    const addKaddio = function(str: string): string{
+        if(str){
+            return `${str} - Kaddio`;
+        }
+
+        else{
+            return 'Kaddio';
+        }
+    }
+
+    const h1ForMarketplace = (keyword: string, place: string) => {
+        if(!keyword || keyword == 'Alla'){
+            keyword = 'Vård och hälsa'
+        }
+
+        if(place == 'Sverige'){
+            place = "hela Sverige";
+        }
+
+        if(keyword && place) return `${keyword} ${place}`;
+
+        return `${keyword} hela Sverige`
+    }
+
+    $: title = addKaddio(titleMarketplace(data.keyword, data.place));
+
+    const hits = function(count: number){
+        if(count == 1){
+            return `${count} träff`;
+        }
+
+        return `${count} träffar`;
+    }
 
     // $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
     // $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
@@ -106,22 +152,15 @@
     
 </script>
 
-<svelte:head>
-    {#if !shouldShowMetaForPage(data.keyword, data.organizations.length)}
-        <meta name="robots" content="noindex">
-    {/if}
-</svelte:head>
 
-{#if shouldShowMetaForPage(data.keyword, data.organizations.length)}
-    <Seo
-        url="https://kaddio.com/sv/hitta-klinik"
-        type="website"
-        keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
-        title={title}
-        description={descFromKeywordAndPlace(data.keyword, data.place)}
-        images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
-    />
-{/if}
+<Seo
+    url="https://kaddio.com/sv/hitta-klinik"
+    type="website"
+    keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
+    title={title}
+    description={descFromKeywordAndPlace(data.keyword, data.place)}
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+/>
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative p-4">
@@ -224,10 +263,10 @@
                     {#if data.organizations.length}
                         <div class="flex justify-between">
                             <div class="font-semibold mb-2 ml-3">
-                                <h1 class="inline">{data.keyword} {data.place}</h1>
+                                <h1 class="inline">{titleMarketplace(data.keyword, data.place)}</h1>
                                 &nbsp;
                                 <span class="font-normal text-gray-500"
-                                    >Visar {data.organizations.length} av {data.count}</span
+                                    > · {hits(data.count)}</span
                                 >
                             </div>
                         </div>

@@ -15,6 +15,30 @@
         />
 
         %sveltekit.head%
+
+        <script defer src="https://app.tinyanalytics.io/pixel/Z7kDF9v5o3y9iueN"></script>
+
+        <!--- Simple Analytics start--->
+        <script>
+            sa_metadata = { app: 'web' };
+
+            function saAddMetadata(data) {
+                if (data.type === 'pageview') {
+                    return {};
+                } else if (data.type === 'event') {
+                    const token = sessionStorage.getItem('token');
+
+                    if (token) {
+                        return { token };
+                    } else {
+                        return {};
+                    }
+                }
+
+                return {};
+            }
+        </script>
+        <!--- Simple Analytics end--->
     </head>
     <body data-sveltekit-preload-data="hover">
         <div style="display: contents">%sveltekit.body%</div>

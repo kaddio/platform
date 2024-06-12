@@ -4,7 +4,8 @@
     import dayjs from 'dayjs';
     import KdLinkButton from '../../../../../components/kdLinkButton.svelte';
     import BookingTypeModal from './booking_type_modal.svelte';
-
+    import { utmSource } from '$lib/utm-source';
+    import { page } from '$app/stores';
     export let bookingTypes: any[];
     const groupedDookingTypes = _.groupBy(bookingTypes, 'categoryName');
 </script>
@@ -35,7 +36,7 @@
                 </span>
                 <span slot="action">
                     <KdLinkButton
-                        href={bookingType.bookingLink}
+                        href="{bookingType.bookingLink}&utm_source={utmSource($page.url)}"
                         size="sm"
                         color="theme-primary"
                         variant="flat">Sök tid</KdLinkButton

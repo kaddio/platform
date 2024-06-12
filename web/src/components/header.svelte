@@ -4,7 +4,6 @@
     import { getContext } from 'svelte';
     import LangBanner from './lang-banner.svelte';
     import MarketplaceBanner from './marketplace-banner.svelte';
-    import Cookie from './cookie.svelte';
     import Seo from './seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { kaddioOrgSchema } from '$lib/json-ld';
@@ -59,17 +58,15 @@
 
 <svelte:window on:keydown={onKeyDown} />
 
-<Seo 
+<!-- <Seo 
     url="https://kaddio.com" 
     description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
     type="website" 
     phone="+46313204414"
- />
+ /> -->
 
  <LdTag schema={kaddioOrgSchema} />
-
-<Cookie />
 
 <header class="relative isolate z-10">
     <LangBanner />
@@ -244,7 +241,7 @@
                                     {$_('Kontakta sälj')}
                                 </a>
                                 <a
-                                    href="/{lang}/#functions"
+                                    href="/{lang}#functions"
                                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                                 >
                                     <svg
@@ -270,7 +267,7 @@
             <a href="/{lang}/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{$_('Kundberättelser')}</a>
 
             <a
-                href="/{lang}/#price"
+                href="/{lang}#price"
                 class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"
             >
                 {$_('Pris')}
@@ -419,7 +416,7 @@
                                 {$_('Fakturering')}
                             </a>
                             <a
-                                href="/{lang}/#functions"
+                                href="/{lang}#functions"
                                 class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 <div
@@ -443,7 +440,7 @@
                         </div>
                         <div class="space-y-2 py-6">
                             <a
-                                href="/{lang}/#price"
+                                href="/{lang}#price"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >{$_('Pris')}</a
                             >

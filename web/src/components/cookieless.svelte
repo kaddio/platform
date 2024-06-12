@@ -1,10 +1,12 @@
 <script lang="ts">
+    import { page } from "$app/stores";
 	import { _ } from "$lib/stores";
     import { onMount } from "svelte";
 
-    onMount(() => {
-        const gtmId = 'GTM-PM82HWFT';
-        
+    const userId = $page.data.anonUserId;
+    const gtmId = 'GTM-PM82HWFT';
+
+    onMount(() => {        
         function gtag(){
             window.dataLayer.push(arguments);
         }
@@ -19,7 +21,10 @@
         });        
 
         gtag('js', new Date());
-        gtag('config', gtmId);
+        gtag('config', gtmId, {
+            userId
+        });
+        
         var s = document.createElement('script');
         s.defer = true;
         s.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
@@ -27,4 +32,3 @@
     });
         
 </script>
-

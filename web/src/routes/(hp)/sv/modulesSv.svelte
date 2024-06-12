@@ -56,7 +56,7 @@
         >
     </ModulePresentation>
 
-    <ModulePresentation href={$link('formulär', lang)}>
+    <ModulePresentation>
         <span slot="icon">
             <i class="text-white fa-regular fa-clipboard-list-check" />
         </span>
@@ -64,7 +64,7 @@
         <span slot="body">Automatisera utskick av formulär och hälsodeklarationer.</span>
     </ModulePresentation>
 
-    <ModulePresentation href={$link('uppgifter', lang)}>
+    <ModulePresentation>
         <span slot="icon">
             <i class="text-white fa-regular fa-list-ul" />
         </span>
@@ -72,7 +72,7 @@
         <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
     </ModulePresentation>
 
-    <ModulePresentation href={$link('dokument', lang)}>
+    <ModulePresentation>
         <span slot="icon">
             <i class="text-white fa-regular fa-folder-tree" />
         </span>
@@ -83,7 +83,7 @@
         >
     </ModulePresentation>
 
-    <ModulePresentation href={$link('rapporter', lang)}>
+    <ModulePresentation>
         <span slot="icon">
             <i class="text-white fa-regular fa-chart-line" />
         </span>

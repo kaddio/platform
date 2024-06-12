@@ -24,6 +24,7 @@
     import { localBusinessSchema } from '$lib/json-ld';
     import { redirect } from '@sveltejs/kit';
     import FooterDiscrete from '../../../../components/footerDiscrete.svelte';
+    import { utmSource } from '$lib/utm-source';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -81,7 +82,7 @@
 
         return `${org.name}${cityStr} - Kaddio`;
     }
-    
+        
 </script>
 
 <LdTag schema={localBusinessSchema(organization)} />
@@ -99,6 +100,7 @@
 
 <svelte:head>
     <title>{titleFromOrg(organization)}</title>
+    <link rel="canonical" href="https://kaddio.com/c/{organization.url}" />
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
@@ -172,7 +174,7 @@
                                 variant="flat"
                                 color="theme-primary"
                                 size="md"
-                                href="https://{organization.url}.kaddio.com/booking"
+                                href="https://{organization.url}.kaddio.com/booking?utm_source={utmSource($page.url)}"
                                 >Boka tid</KdLinkButton
                             >
                         </div>
@@ -216,7 +218,7 @@
                 {/if}
                 {#if organization.hasContactForm}
                     <KdLinkButton
-                        href="https://{organization.url}.kaddio.com/contact-us"
+                        href="https://{organization.url}.kaddio.com/contact-us?utm_source={utmSource($page.url)}"
                         color="theme-primary"
                         class="m-8"
                         variant="flat">Kontakta oss</KdLinkButton
@@ -247,7 +249,7 @@
                                         <KdLinkButton
                                             size="sm"
                                             variant="outline"
-                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
+                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1&utm_source={utmSource($page.url)}"
                                             >Sök tid</KdLinkButton
                                         >
                                     {/if}
