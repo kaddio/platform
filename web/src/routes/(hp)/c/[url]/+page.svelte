@@ -25,6 +25,7 @@
     import { redirect } from '@sveltejs/kit';
     import FooterDiscrete from '../../../../components/footerDiscrete.svelte';
     import { utmSource } from '$lib/utm-source';
+    import { kaddioOrgUrl } from '$lib/apiUrl';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -173,7 +174,7 @@
                                 variant="flat"
                                 color="theme-primary"
                                 size="md"
-                                href="https://{organization.url}.kaddio.com/booking/cal?utm_source={utmSource($page.url)}"
+                                href="{kaddioOrgUrl(organization.url)}/booking/cal?utm_source={utmSource($page.url)}"
                                 >Boka tid</KdLinkButton
                             >
                         </div>
