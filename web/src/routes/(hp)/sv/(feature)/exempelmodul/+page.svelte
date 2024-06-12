@@ -15,6 +15,8 @@
     import ProductPricingSection from "$components/productPricingSection.svelte";
     import StatsSection from "$components/statsSection.svelte";
     import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 </script>
 
 <svelte:head>
@@ -126,6 +128,24 @@
 </QuotesSection>
 
 <ProductPricingSection></ProductPricingSection>
+
+<StatsSectionWithText>
+    <StatsSectionWithTextPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+    </StatsSectionWithTextPart>
+</StatsSectionWithText>
+
 
 <StatsSection>
 	<StatsSectionPart>
