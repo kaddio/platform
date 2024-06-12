@@ -123,7 +123,7 @@ export async function load({ params, fetch, request, getClientAddress }) {
     const trackingData = {
         fingerprint: browserFingerprint(request, getClientAddress()),
         label: 'pageview',
-        category: 'homepage',
+        category: 'org_homepage',
         orgUrl: params.url
     };
 
