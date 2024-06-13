@@ -43,7 +43,7 @@
                         <a
                             href="/en/create"
                             class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oldpink"
-                            >Create account</a
+                            >Use coupon</a
                         >
                         <a href="/en" class="text-sm font-semibold text-gray-900"
                             >Learn more about Kaddio <span aria-hidden="true">&rarr;</span></a
