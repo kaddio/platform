@@ -36,8 +36,7 @@
                         {$token.name} recommends Kaddio
                     </h2>
                     <p class="mt-6 text-lg leading-8 text-gray-600">
-                        With this coupon from {$token.name}, you can use Kaddio for free for {$token.credits}
-                        months.
+                        With this coupon from {$token.name}, you can use Kaddio for free for {$token.credits} months.
                     </p>
                     <div class="mt-8 flex items-center gap-x-6">
                         <a
