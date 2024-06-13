@@ -1,10 +1,11 @@
+import { dev } from '$app/environment';
 import { fail } from '@sveltejs/kit';
 
 export const createOrg = async function ({ request }) {
     const data = await request.formData();
     const jsonData = Object.fromEntries(data.entries());
 
-    const URL = 'https://api.kaddio.com/api/org'; //'http://localhost:3000/api/org'
+    const URL = dev ? 'http://localhost:3000/api/org' : 'https://api.kaddio.com/api/org';
 
     console.log(jsonData);
 
