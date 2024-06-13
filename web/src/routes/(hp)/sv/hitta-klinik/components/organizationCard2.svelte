@@ -28,7 +28,7 @@
     <div class="max-w-xl">
         <div class="mt-8 flex items-center gap-x-4 text-xs">
         <span class="text-gray-500"><i class="fal fa-location-dot"></i> {organization.city}</span>
-            <a href="https://{organization.url}.kaddio.com/booking" class="relative z-10 rounded-full bg-green-800 px-3 py-1.5 font-medium text-gray-600 hover:bg-green-700"><i class="fal fa-timer"></i> Tid {nextTime}</a>
+            <a href="https://{organization.url}.kaddio.com/booking/cal?utm_source=ks" class="relative z-10 rounded-full bg-green-800 px-3 py-1.5 font-medium text-gray-600 hover:bg-green-700"><i class="fal fa-timer"></i> Tid {nextTime}</a>
         <!-- {#each keywords as keyword}
             <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{keyword}</a>
         
@@ -36,7 +36,7 @@
         </div>
         <div class="group relative">
         <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-            <a href="/c/{organization.url}">
+            <a href="/c/{organization.url}?utm_source=ks">
             <span class="absolute inset-0"></span>
             {organization.name}
             </a>
