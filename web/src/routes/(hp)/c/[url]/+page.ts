@@ -193,6 +193,9 @@ export async function load({ params, fetch }) {
                             answer
                         }
                     }
+                    geoPoint {
+                        coordinates
+                    }
                 }
             }
         `
@@ -203,7 +206,7 @@ export async function load({ params, fetch }) {
     });
 
     const data = await result.json();
-
+    console.log(data);
     if (data?.data?.findOrganization) {
         return { organization: data.data.findOrganization };
     } else {
