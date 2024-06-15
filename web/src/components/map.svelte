@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import Error from '../routes/+error.svelte';
     import FooterMarketplace from './footerMarketplace.svelte';
-
+    export let points: number[][];
     export let addresses: string[];
 
     let container: HTMLElement;
@@ -124,12 +124,13 @@
             }
             let bounds = new google.maps.LatLngBounds();
             await Promise.all(
-                addresses.map(async (address) => {
-                    const center: Coordinates = await addressToCoordinates(address);
-                    if (!center) return;
+                points.map(async (point) => {
                     const marker = new google.maps.Marker({
                         map: map,
-                        position: center
+                        position: {
+                            lng: point[0],
+                            lat: point[1]
+                        }
                     });
                     bounds.extend(marker.getPosition());
 

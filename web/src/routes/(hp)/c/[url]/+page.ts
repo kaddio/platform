@@ -193,6 +193,9 @@ export async function load({ params, fetch }) {
                             answer
                         }
                     }
+                    geoPoint {
+                        coordinates
+                    }
                 }
             }
         `
