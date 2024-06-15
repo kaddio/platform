@@ -27,6 +27,16 @@ if (browser) {
 }
 
 const translations = {
+    'Tack!': {
+        en: 'Thank you!',
+        es: '¡Gracias!'
+    },
+
+    'Kontot är skapat, kolla din mail för att logga in.': {
+        en: 'The account is created, please check your mail to log in.',
+        es: 'La cuenta ha sido creada, revisa tu correo electrónico para iniciar sesión.'
+    },
+
     'Kontakta oss': {
         en: 'Contact',
         es: 'Contactar'
