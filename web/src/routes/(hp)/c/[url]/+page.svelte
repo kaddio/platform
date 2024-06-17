@@ -7,7 +7,6 @@
 
     import Gallery from './components/gallery.svelte';
     import BookingTypes from './components/booking_types.svelte';
-    import Hosts from './components/hosts.svelte';
     import Link from './components/link.svelte';
     import Links from './components/links.svelte';
     import KdLinkButton from '../../../../components/kdLinkButton.svelte';
@@ -25,6 +24,8 @@
     import { redirect } from '@sveltejs/kit';
     import FooterDiscrete from '../../../../components/footerDiscrete.svelte';
     import { utmSource } from '$lib/utm-source';
+    import People from './components/people.svelte';
+    import Person from './components/person.svelte';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -151,11 +152,7 @@
                     <a class="text-sm uppercase text-gray-500 font-semibold" href="#booking-types"
                         >Behandlingar</a
                     >
-                    {#if organization.homepage?.showUs}
-                        <a class="text-sm uppercase text-gray-500 font-semibold" href="#hosts"
-                            >Personal</a
-                        >
-                    {/if}
+
                     {#if organization.useReviews}
                         <a class="text-sm uppercase text-gray-500 font-semibold" href="#reviews">
                             Omdömen
@@ -274,18 +271,6 @@
     </div>
 
     <div class="max-w-screen-lg mx-auto grid grid-cols-2 gap-8 mt-8">
-        {#if organization.homepage?.showUs}
-            <Card
-                className="flex flex-col gap-5  p-5 col-span-2 md:col-span-1 md:max-h-screen overflow-scroll"
-                id="hosts"
-            >
-                <a class="text-sm uppercase text-gray-500 font-semibold">Personal</a>
-                <Hosts
-                    hosts={organization.hosts}
-                    bookingFilterOnHost={organization.bookingFilterOnHost}
-                />
-            </Card>
-        {/if}
         {#if organization.showBooking}
             <Card
                 className="flex flex-col gap-5 p-5 md:max-h-screen overflow-scroll col-span-2 md:col-span-1 "
@@ -309,6 +294,11 @@
         {/if}
     </div>
 </div>
+
+{#if organization.homepage?.showUs}
+    <People hosts={organization.hosts} />
+{/if}
+
 {#if hasBackButton}
     <FooterMarketplace />
 {:else}
