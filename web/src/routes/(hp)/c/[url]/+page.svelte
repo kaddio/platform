@@ -25,6 +25,7 @@
     import { redirect } from '@sveltejs/kit';
     import FooterDiscrete from '../../../../components/footerDiscrete.svelte';
     import { utmSource } from '$lib/utm-source';
+    import Contact from './components/contact.svelte';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -179,6 +180,17 @@
                             >
                         </div>
                     {/if}
+                    {#if organization.hasContactForm}
+                        <div class="">
+                            <KdLinkButton
+                                variant="flat"
+                                color="theme-primary"
+                                size="md"
+                                href="#contact"
+                                >Kontakta oss</KdLinkButton
+                            >
+                        </div>
+                    {/if}
                 </div>
             </div>
         {/if}
@@ -309,6 +321,9 @@
         {/if}
     </div>
 </div>
+
+<Contact />
+
 {#if hasBackButton}
     <FooterMarketplace />
 {:else}
