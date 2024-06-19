@@ -1,6 +1,7 @@
 import { apiUrl } from '$lib/apiUrl.js';
 import { browserFingerprint } from '$lib/browser-fingerprint.js';
 import { redirect } from '@sveltejs/kit';
+import { countryFromRequest } from '$lib/country-from-request';
 
 function urlFromEmail(possibleUrl: string) {
     const emailLookup = {
@@ -122,6 +123,7 @@ export async function load({ params, fetch, request, getClientAddress }) {
 
     const trackingData = {
         fingerprint: await browserFingerprint(request, getClientAddress()),
+        country: countryFromRequest(request),
         label: 'pageview',
         category: 'org_homepage',
         orgUrl: params.url
