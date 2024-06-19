@@ -113,7 +113,7 @@ function urlFromEmail(possibleUrl: string) {
     return emailLookup[possibleUrl];
 }
 
-export async function load({ params, fetch, request, getClientAddress }) {
+export async function load({ params, fetch, request, getClientAddress, url }) {
     const redirectUrl = urlFromEmail(params.url);
 
     if (redirectUrl) {
@@ -126,7 +126,8 @@ export async function load({ params, fetch, request, getClientAddress }) {
         country: countryFromRequest(request),
         label: 'pageview',
         category: 'org_homepage',
-        orgUrl: params.url
+        orgUrl: params.url,
+        path: url.pathname
     };
 
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
