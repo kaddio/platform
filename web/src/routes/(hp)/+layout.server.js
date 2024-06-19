@@ -1,7 +1,7 @@
 import { browserFingerprint } from '$lib/browser-fingerprint';
 
-export function load({ request, url, getClientAddress }) {
-    const anonUserId = browserFingerprint(request, getClientAddress());
+export async function load({ request, url, getClientAddress }) {
+    const anonUserId = await browserFingerprint(request, getClientAddress());
 
     const paramForTesting = url.searchParams.get('geo');
 

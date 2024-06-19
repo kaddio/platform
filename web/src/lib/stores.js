@@ -310,6 +310,11 @@ const translations = {
     'Tillbaks hem': {
         en: 'Back to home',
         es: 'Volver a inicio'
+    },
+
+    'Letar du behandling?': {
+        en: 'Looking for care?',
+        es: '¿Estás buscando tratamiento?'
     }
 };
 
