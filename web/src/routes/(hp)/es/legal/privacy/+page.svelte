@@ -8,9 +8,7 @@
 
 <svelte:head>
 	<title>Kaddio - Política de privacidad</title>
-	<meta name="description" content="Sekretesspolicy" />
-
-    <meta name="robots" content="noindex">
+	<meta name="description" content="Política de privacidad de Kaddio" />
 </svelte:head>
 
 

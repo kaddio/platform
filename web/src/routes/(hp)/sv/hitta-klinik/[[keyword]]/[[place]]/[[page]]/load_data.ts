@@ -64,8 +64,8 @@ export async function loadData({
     const orgs = await result.json();
 
     return {
-        organizations: orgs.data.findOrganizations.organizations,
-        count: orgs.data.findOrganizations.count,
+        organizations: orgs.data.findOrganizations?.organizations,
+        count: orgs.data.findOrganizations?.count,
         place,
         keyword,
         page: parsedPage

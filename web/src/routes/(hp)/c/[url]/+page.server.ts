@@ -216,6 +216,6 @@ export async function load({ params, fetch, request, getClientAddress }) {
     if (data?.data?.findOrganization) {
         return { organization: data.data.findOrganization };
     } else {
-        throw redirect(302, 'https://kaddio.com/en');
+        throw redirect(302, `https://${params.url}.kaddio.com/login`);
     }
 }

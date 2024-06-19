@@ -9,8 +9,6 @@
 <svelte:head>
 	<title>Kaddio - Sekretesspolicy</title>
 	<meta name="description" content="Sekretesspolicy" />
-
-    <meta name="robots" content="noindex">
 </svelte:head>
 
 

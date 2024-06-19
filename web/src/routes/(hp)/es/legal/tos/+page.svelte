@@ -12,8 +12,6 @@
 <svelte:head>
 	<title>Kaddio - Condiciones de uso</title>
 	<meta name="description" content="Condiciones de uso" />
-
-    <meta name="robots" content="noindex">
 </svelte:head>
 
 
