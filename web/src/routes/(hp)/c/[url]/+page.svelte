@@ -296,7 +296,7 @@
 </div>
 
 {#if organization.homepage?.showUs}
-    <People hosts={organization.hosts} />
+    <People hosts={organization.hosts} aboutUs={organization.homepage.aboutUs} />
 {/if}
 
 {#if hasBackButton}

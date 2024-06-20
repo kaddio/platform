@@ -159,6 +159,7 @@ export async function load({ params, fetch }) {
                     homepage {
                         headerImg
                         presentation
+                        aboutUs
                         pics
                         showPlaces
                         showUs
