@@ -1,6 +1,7 @@
 import { apiUrl } from '$lib/apiUrl.js';
 import { browserFingerprint } from '$lib/browser-fingerprint.js';
 import { redirect } from '@sveltejs/kit';
+import { countryFromRequest } from '$lib/country-from-request';
 
 function urlFromEmail(possibleUrl: string) {
     const emailLookup = {
@@ -112,7 +113,7 @@ function urlFromEmail(possibleUrl: string) {
     return emailLookup[possibleUrl];
 }
 
-export async function load({ params, fetch, request, getClientAddress }) {
+export async function load({ params, fetch, request, getClientAddress, url }) {
     const redirectUrl = urlFromEmail(params.url);
 
     if (redirectUrl) {
@@ -122,9 +123,11 @@ export async function load({ params, fetch, request, getClientAddress }) {
 
     const trackingData = {
         fingerprint: await browserFingerprint(request, getClientAddress()),
+        country: countryFromRequest(request),
         label: 'pageview',
         category: 'org_homepage',
-        orgUrl: params.url
+        orgUrl: params.url,
+        path: url.pathname
     };
 
     const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {

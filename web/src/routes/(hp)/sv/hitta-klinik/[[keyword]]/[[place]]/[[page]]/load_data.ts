@@ -48,24 +48,31 @@ export async function loadData({
 	}
 }`;
 
-    const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
-        method: 'POST',
-        body: JSON.stringify({ query }),
-        headers: {
-            'Content-Type': 'application/json',
-            'x-tracking-data': JSON.stringify(trackingData)
-        }
-    });
+    let orgs;
+    const fetchUrl = `${apiUrl()}/graphqlmarketplace`;
 
-    if (!result.ok) {
-        throw result;
+    try {
+        const result = await fetch(fetchUrl, {
+            method: 'POST',
+            body: JSON.stringify({ query }),
+            headers: {
+                'Content-Type': 'application/json',
+                'x-tracking-data': JSON.stringify(trackingData)
+            }
+        });
+
+        if (!result.ok) {
+            throw result;
+        }
+
+        orgs = await result.json();
+    } catch (e) {
+        console.error(`Could not fetch data for marketplace ${fetchUrl}`);
     }
 
-    const orgs = await result.json();
-
     return {
-        organizations: orgs.data.findOrganizations?.organizations,
-        count: orgs.data.findOrganizations?.count,
+        organizations: orgs?.data.findOrganizations?.organizations,
+        count: orgs?.data.findOrganizations?.count,
         place,
         keyword,
         page: parsedPage
