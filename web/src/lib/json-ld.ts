@@ -121,11 +121,11 @@ export const brandSchema: WithContext<Brand> = {
 export const jobPostingSchema: WithContext<JobPosting> = {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
-    title: 'Senior Software Engineer',
+    title: 'Senior Frontend Engineer',
     description:
-        '<p>At Kaddio, we have a lot of freedom with flexible work hours, you can work remotely 50% if you prefer. We have a super cosy office in central Göteborg, Sweden. We all speak English and Swedish, some speak Spanish.</p>',
-    datePosted: '2023-09-01',
-    validThrough: '2025-09-01',
+        '<p>You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things. At Kaddio, we have a lot of freedom with flexible work hours and 6 hours work week, you can work remotely 50% if you prefer. We have a super cosy office in central Göteborg, Sweden. We all speak English and Swedish.</p>',
+    datePosted: '2024-06-01',
+    validThrough: '2025-06-01',
     employmentType: 'full-time',
     hiringOrganization: {
         '@type': 'Organization',
@@ -136,7 +136,7 @@ export const jobPostingSchema: WithContext<JobPosting> = {
         '@type': 'Place',
         address: {
             '@type': 'PostalAddress',
-            streetAddress: 'Linnégatan 5',
+            streetAddress: 'Linnégatan',
             addressLocality: 'Göteborg',
             postalCode: '41304',
             addressCountry: 'SE',
@@ -148,7 +148,7 @@ export const jobPostingSchema: WithContext<JobPosting> = {
         currency: 'SEK',
         value: {
             '@type': 'QuantitativeValue',
-            value: 55000,
+            value: 50000,
             unitText: 'MONTH'
         }
     }
