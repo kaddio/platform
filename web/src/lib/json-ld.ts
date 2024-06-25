@@ -123,7 +123,7 @@ export const jobPostingSchema: WithContext<JobPosting> = {
     '@type': 'JobPosting',
     title: 'Senior Frontend Engineer',
     description:
-        '<p>You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things. At Kaddio, we have a lot of freedom with flexible work hours and 6 hours work week, you can work remotely 50% if you prefer. We have a super cosy office in central Göteborg, Sweden. We all speak English and Swedish.</p>',
+        '<p>You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things. At Kaddio, we have a lot of freedom with flexible work hours and 6 hour work days, you can work remotely 50% if you prefer. We have a super cosy office in central Göteborg, Sweden. We all speak English and Swedish.</p>',
     datePosted: '2024-06-01',
     validThrough: '2025-06-01',
     employmentType: 'full-time',
