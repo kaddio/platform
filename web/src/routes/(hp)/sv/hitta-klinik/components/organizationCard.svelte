@@ -49,14 +49,14 @@
                             class="text-green-400 font-semibold"
                             target="_blank"
                             rel="noreferrer"
-                            href="https://{organization.url}.kaddio.com/booking">Tid {nextTime}</a
+                            href="https://{organization.url}.kaddio.com/booking/cal">Tid {nextTime}</a
                         >
                     {:else}
                         <a
                             target="_blank"
                             rel="noreferrer"
                             class="text-gray-400 font-semibold"
-                            href="https://{organization.url}.kaddio.com/booking"
+                            href="https://{organization.url}.kaddio.com/booking/cal"
                             >Inga lediga tider</a
                         >
                     {/if}
