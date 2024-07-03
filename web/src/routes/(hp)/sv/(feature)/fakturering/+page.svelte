@@ -50,7 +50,7 @@
 	<ModuleFeatureWithIcon icon="file-contract">
 		<span slot="title">Kontrollera.</span>
 		<span slot="body">
-			Pricka av fakturor automatiskt. Exportera fakturainformation i SIE-4-, CSV- och XLSX-format för bokföring.
+			Pricka av fakturor automatiskt. Exportera fakturainformation för bokföring.
 		</span>
 	</ModuleFeatureWithIcon>
 	
@@ -91,9 +91,9 @@
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Kontrollera</span>
 		<!-- <span slot="body">Fakturera på det sätt som passar dig.</span> -->
-
+		<ModuleOverviewFeature>Automatisk avprickning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Exportera fakturainformation som SIE-4, CSV och XLSX</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Exportera kundreskontra</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kundreskontra</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 	
