@@ -31,27 +31,27 @@
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag. I kombination med Kaddio Onlinebokning och Kaddio Journalsystem fakturerar du enkelt och flexibelt.
+		Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag. I kombination med Kaddio Bokning och Kaddio Journalsystem fakturerar du enkelt och flexibelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
-		<span slot="title">Spara tid</span>
+		<span slot="title">Spara tid.</span>
 		<span slot="body">
-			med integrerad fakturering. Kaddio föreslår automatiskt fakturaunderlag utifrån bokade tider eller journalanteckningar. Du skickar en fakturera med tre klick.
+			Skicka en faktura med tre klick. Kaddio föreslår automatiskt fakturaunderlag utifrån bokade tider eller journalanteckningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
-		<span slot="title">Automatisera</span>
+		<span slot="title">Automatisera.</span>
 		<span slot="body">
-			utskick av påminnelsefakturor. Håll koll på betalningar genom automatisk avprickning av fakturor betalda via Bankgiro.
+			Håll koll på betalningar från kund. Kaddio Fakturering erbjuder automatisk avprickning av fakturor och automatiserade utskick av påminnelser.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="file-contract">
-		<span slot="title">E-fakturera</span>
+		<span slot="title">E-fakturera.</span>
 		<span slot="body">
-			med Kaddio enligt EU-standarden PEPPOL.
+			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
 		</span>
 	</ModuleFeatureWithIcon>
 	
@@ -65,7 +65,7 @@
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="title">Detta är Kaddio Fakturering</span>
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
