@@ -75,8 +75,6 @@
 		<ModuleOverviewFeature>Automatiska fakturaunderlag från journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatisk avprickning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
-
-
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
