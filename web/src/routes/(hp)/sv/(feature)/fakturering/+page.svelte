@@ -73,7 +73,7 @@
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
 		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokningar eller journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Spara artiklar och tjänster att fakturera</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
@@ -93,13 +93,12 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Leverera</span>
-		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+		<span slot="body">Fakturera på det sätt som passar dig.</span>
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Brev</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-post</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Krypterad chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-faktura med PEPPOL</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
