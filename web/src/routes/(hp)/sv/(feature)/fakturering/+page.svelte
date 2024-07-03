@@ -35,23 +35,22 @@
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
-		<span slot="title">Spara tid.</span>
+		<span slot="title">Automatisera.</span>
 		<span slot="body">
-			Skicka en faktura med tre klick. Kaddio föreslår automatiskt fakturaunderlag utifrån bokade tider eller journalanteckningar.
+			Kaddio föreslår automatiskt fakturaunderlag utifrån bokade tider eller journalanteckningar. 
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
-		<span slot="title">Automatisera.</span>
-		<span slot="body">
-			Håll koll på betalningar från kund. Kaddio Fakturering erbjuder automatisk avprickning av fakturor och automatiserade utskick av påminnelser.
+		<span slot="title">Leverera.</span>
+		<span slot="body">Skicka fakturor som du vill, direkt från Kaddio.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="file-contract">
-		<span slot="title">Leverera.</span>
+		<span slot="title">Kontrollera.</span>
 		<span slot="body">
-			Skicka fakturor via e-post, brev och krypterad chat. E-fakturera enligt EU-standarden PEPPOL.
+			Exportera fakturainformation för bokföring.
 		</span>
 	</ModuleFeatureWithIcon>
 	
@@ -69,36 +68,35 @@
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Spara tid</span>
+		<span slot="title">Automatisera</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokningar eller journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Spara artiklar och tjänster att fakturera</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Automatisera</span>
+		<span slot="title">Leverera</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatisk avprickning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Leverera</span>
-		<span slot="body">Fakturera på det sätt som passar dig.</span>
+		<span slot="title">Kontrollera</span>
+		<!-- <span slot="body">Fakturera på det sätt som passar dig.</span> -->
 
-		<ModuleOverviewFeature>Brev</ModuleOverviewFeature>
-		<ModuleOverviewFeature>E-post</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Krypterad chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>E-faktura med PEPPOL</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skicka fakturor via brev, e-post och krypterad chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-fakturera globalt enligt PEPPOL-srtandard</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera fakturainformation som SIE-4 och CSV</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera kundreskontra</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera försenade fakturor (Inkassogram)</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
