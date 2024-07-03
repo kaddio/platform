@@ -84,8 +84,8 @@
 		<ModuleOverviewFeature>Skicka fakturor via brev, e-post och krypterad chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>E-fakturera globalt enligt PEPPOL-standard</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skicka fakturor i världens 33 vanligaste valutor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för samlingsfaktura</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för företagskunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skicka samlingsfaktura</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fakturera företagskunder</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
