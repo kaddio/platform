@@ -72,9 +72,9 @@
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
 		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska fakturaunderlag journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Spara artiklar och tjänster att fakturera</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag från journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatisk avprickning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
 
 
 	</ModuleOverviewFeaturesSegment>
@@ -83,20 +83,19 @@
 		<span slot="title">Leverera</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Automatisk avprickning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Skicka fakturor via brev, e-post och krypterad chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-fakturera globalt enligt PEPPOL-standard</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skicka fakturor i världens 33 vanligaste valutor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Samlingsfaktura – Flera kunder på samma faktura</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Företagskunder – När kunden själv inte står för kostnaden</ModuleOverviewFeature>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Kontrollera</span>
 		<!-- <span slot="body">Fakturera på det sätt som passar dig.</span> -->
 
-		<ModuleOverviewFeature>Skicka fakturor via brev, e-post och krypterad chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>E-fakturera globalt enligt PEPPOL-srtandard</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Exportera fakturainformation som SIE-4 och CSV</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera fakturainformation i SIE-4-, CSV- och XLSX-format</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Exportera kundreskontra</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Exportera försenade fakturor (Inkassogram)</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
