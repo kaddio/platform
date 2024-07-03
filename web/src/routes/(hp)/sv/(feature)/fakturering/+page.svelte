@@ -69,8 +69,8 @@
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Planera</span>
-		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+		<span slot="title">Spara tid</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
 		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
@@ -83,8 +83,8 @@
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Automatisera</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
@@ -92,8 +92,8 @@
 		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">E-fakturera</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
