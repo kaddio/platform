@@ -84,15 +84,15 @@
 		<ModuleOverviewFeature>Skicka fakturor via brev, e-post och krypterad chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>E-fakturera globalt enligt PEPPOL-standard</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skicka fakturor i världens 33 vanligaste valutor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Samlingsfaktura</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Företagskunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för samlingsfaktura</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för företagskunder</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Kontrollera</span>
 		<!-- <span slot="body">Fakturera på det sätt som passar dig.</span> -->
 
-		<ModuleOverviewFeature>Exportera fakturainformation i SIE-4-, CSV- och XLSX-format</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera fakturainformation som SIE-4, CSV och XLSX</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Exportera kundreskontra</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
