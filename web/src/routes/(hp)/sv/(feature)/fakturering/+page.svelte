@@ -43,14 +43,14 @@
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
 		<span slot="title">Leverera.</span>
-		<span slot="body">Skicka fakturor som du vill, direkt från Kaddio.
+		<span slot="body">Skicka fakturor via e-post, brev eller i krypterad chat, direkt från Kaddio.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="file-contract">
 		<span slot="title">Kontrollera.</span>
 		<span slot="body">
-			Exportera fakturainformation för bokföring.
+			Pricka av fakturor automatiskt. Exportera fakturainformation för bokföring som SIE-4, CSV och XLSX .
 		</span>
 	</ModuleFeatureWithIcon>
 	
