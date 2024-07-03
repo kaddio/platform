@@ -56,7 +56,12 @@
 	</ModuleFeatureWithIcon>
 	
 </ModuleSectionWithImage>
-  
+
+<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+	<span slot="pre">Själslig boost</span>
+	<span slot="title">Därför använder Ana Kaddio</span>
+	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+</ProductFeatureImageOnLeft>
 
 <!-- <FaqSection>
 	<span slot="title">Detaljer</span>
