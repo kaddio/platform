@@ -49,9 +49,9 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="file-contract">
-		<span slot="title">E-fakturera.</span>
+		<span slot="title">Leverera.</span>
 		<span slot="body">
-			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
+			Skicka fakturor via e-post, brev och krypterad chat. E-fakturera enligt EU-standarden PEPPOL.
 		</span>
 	</ModuleFeatureWithIcon>
 	
@@ -72,7 +72,7 @@
 		<span slot="title">Spara tid</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokningar eller journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
@@ -92,7 +92,7 @@
 		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">E-fakturera</span>
+		<span slot="title">Leverera</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
