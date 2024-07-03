@@ -86,6 +86,7 @@
 		<ModuleOverviewFeature>Skicka fakturor i världens 33 vanligaste valutor</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Samlingsfaktura</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Företagskunder</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Kontrollera</span>
@@ -95,6 +96,7 @@
 		<ModuleOverviewFeature>Exportera kundreskontra</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
+	
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
