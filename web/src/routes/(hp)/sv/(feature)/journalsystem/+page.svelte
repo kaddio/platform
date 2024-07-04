@@ -35,14 +35,14 @@
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
-		<span slot="title">Dokumentera</span>
+		<span slot="title">Dokumentera.</span>
 		<span slot="body">
 			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
-		<span slot="title">Anpassa</span>
+		<span slot="title">Anpassa.</span>
 		<span slot="body">
 			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
 			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
@@ -50,7 +50,7 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="gamepad-modern">
-		<span slot="title">Kontrollera</span>
+		<span slot="title">Kontrollera.</span>
 		<span slot="body">
 			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
 			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
