@@ -24,7 +24,7 @@
 	<meta name="robots" content="noindex">
 
 	<title>Journalsystem med allt du behöver</title>
-	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
+	<meta name="description" content="Kaddio Journal är ett komplett journalsystem som har allt du behöver för att dokumentera verksamheten och journalföra klienter." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Journalsystem">
