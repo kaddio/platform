@@ -21,6 +21,8 @@
 </script>
 
 <svelte:head>
+	<meta name="robots" content="noindex">
+
 	<title>Journalsystem med allt du behöver</title>
 	<meta name="description" content="Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård." />
 </svelte:head>
@@ -57,6 +59,11 @@
 
 </ModuleSectionWithImage>
 
+<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+	<span slot="pre">Själslig boost</span>
+	<span slot="title">Därför använder Ana Kaddio</span>
+	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+</ProductFeatureImageOnLeft>
 
 <FaqSection>
 	<span slot="title">Detaljer</span>
