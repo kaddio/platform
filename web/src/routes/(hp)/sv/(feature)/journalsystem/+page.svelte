@@ -59,6 +59,46 @@
 
 </ModuleSectionWithImage>
 
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Innehåll</span>
+	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Planera</span>
+		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+
+		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Samarbeta</span>
+		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+
+		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Effektivisera</span>
+		<span slot="body">Funktioner för att spara tid</span>
+
+		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
+
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Själslig boost</span>
 	<span slot="title">Därför använder Ana Kaddio</span>
