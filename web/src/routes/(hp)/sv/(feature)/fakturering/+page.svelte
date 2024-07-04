@@ -101,7 +101,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad några kunder säger om Fakturering       
+        Vad våra kunder säger om Fakturering       
     </span>
 
     <Quote>
