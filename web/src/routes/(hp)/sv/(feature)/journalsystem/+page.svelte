@@ -31,7 +31,7 @@
 	<span slot="h1">Journalsystem</span>
 	<span slot="title">Kaddio Journal</span>
 	<span slot="sub">
-		Kaddio Journal är journalsystemet som har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård helt enkelt.
+		Kaddio Journal är ett komplett journalsystem som har allt du behöver för att dokumentera verksamheten och journalföra klienter.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
