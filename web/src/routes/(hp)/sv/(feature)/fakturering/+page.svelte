@@ -31,7 +31,7 @@
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag. I kombination med Kaddio Bokning och Kaddio Journalsystem fakturerar du enkelt och flexibelt.
+		Kaddio Fakturering är ett integrerat faktureringsprogram för små och medelstora företag. I kombination med Kaddio Bokning och Kaddio Journalsystem fakturerar du enkelt och flexibelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
