@@ -102,7 +102,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Exempelmodulen       
+        Vad några kunder säger om Exempelmodulen       
     </span>
 
     <Quote>
