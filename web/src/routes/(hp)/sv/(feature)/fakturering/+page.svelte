@@ -5,7 +5,18 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-
+    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import ProductPricingSection from "$components/productPricingSection.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 </script>
 
 <svelte:head>
