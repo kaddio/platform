@@ -20,6 +20,8 @@
 </script>
 
 <svelte:head>
+	<meta name="robots" content="noindex">
+
 	<title>Fakturering för små och medelstora företag</title>
 	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
 </svelte:head>
@@ -28,7 +30,7 @@
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag. Kaddio fakturering tillsammans med Kaddio Onlinebokning och Kaddio Journalsystem gör faktureringen enkel och samtidigt flexibel.
+		Kaddio Fakturering är ett enkelt faktureringsprogram för små och medelstora företag. Kaddio fakturering tillsammans med Kaddio Onlinebokning och Kaddio Journalsystem gör faktureringen snabb och flexibel.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
