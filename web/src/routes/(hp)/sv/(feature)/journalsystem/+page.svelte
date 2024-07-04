@@ -132,7 +132,42 @@
     
 </QuotesSection>
 
-<FaqSection>
+<ProductPricingSection></ProductPricingSection>
+
+<StatsSectionWithText>
+    <StatsSectionWithTextPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+    </StatsSectionWithTextPart>
+</StatsSectionWithText>
+
+
+<StatsSection>
+	<StatsSectionPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+	</StatsSectionPart>
+</StatsSection>
+
+<!-- <FaqSection>
 	<span slot="title">Detaljer</span>
 
 	<Qa>
@@ -227,4 +262,4 @@
 			</Qa>
 		{/each}
 	</FaqSection>
-{/if}
+{/if} -->
