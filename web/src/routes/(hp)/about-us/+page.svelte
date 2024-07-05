@@ -46,17 +46,17 @@
 
         <Person>
             <span slot="name">Arvid</span>
-            <span slot="title">CTO, co-founder, dev</span>
+            <span slot="title">CTO, Co-founder, & Dev</span>
         </Person>
 
         <Person>
             <span slot="name">Karolina</span>
-            <span slot="title">CFO, strategy, Support</span>
+            <span slot="title">CFO, Strategy, Customer Support</span>
         </Person>
 
         <Person>
             <span slot="name">Lena</span>
-            <span slot="title">CISO & customer support</span>
+            <span slot="title">CISO & Customer support</span>
         </Person>
 
         <Person>
@@ -66,22 +66,22 @@
 
         <Person>
             <span slot="name">Camilla</span>
-            <span slot="title">UX, customer support</span>
+            <span slot="title">Market, UX, Customer support</span>
         </Person>
 
         <Person>
             <span slot="name">David</span>
-            <span slot="title">CEO, market & dev</span>
+            <span slot="title">CEO, Co-founder & Dev</span>
         </Person>
 
         <Person>
             <span slot="name">Marina</span>
-            <span slot="title">Customer support</span>
+            <span slot="title">Customer Support</span>
         </Person>
 
         <Person>
             <span slot="name">Claes</span>
-            <span slot="title">General counsel</span>
+            <span slot="title">General Counsel</span>
         </Person>
 
     </ul>
