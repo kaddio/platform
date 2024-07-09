@@ -72,11 +72,11 @@
 		<span slot="title">Dokumentera</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Anteckna och redigera med full historik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Journalför säkert via dator och mobil </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rita på bilder</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Ladda upp filer</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Stöd för ICD-10</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Skicka och ta emot standardformulär</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skicka och ta emot standardformulär direkt i journalen</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -94,9 +94,11 @@
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Styr behörigheter till journaler</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signera och redigera med historik</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Lista osignerade anteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Logg över editering och läsning av journaler med klockslag och IP-adress</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kaddio sköter datalagringen. Du får tid över till annat.</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 </ModuleOverviewFeaturesSection> 
