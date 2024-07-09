@@ -65,18 +65,19 @@
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
-	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="title">Detta är Kaddio Journal</span>
+	<span slot="body">Kaddio sköter datalagringen. Du får tid över till annat.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dokumentera</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
 		<ModuleOverviewFeature>Journalför säkert via dator och mobil </ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rita på bilder</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Ladda upp filer</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rita på bilder direkt i journalen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ladda upp filer i journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Stöd för ICD-10</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skicka och ta emot standardformulär direkt i journalen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -84,8 +85,8 @@
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Skapa egna anteckningsmallar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Skapa malltext och fraser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Ladda upp bilder att rita på</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Spara tid med malltext och fraser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ladda upp egna bilder att rita på</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Utforma egna formulär</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
@@ -97,8 +98,8 @@
 		<ModuleOverviewFeature>Signera och redigera anteckningar med full historik</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Lista osignerade anteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Logga läsning och redigering av journaler</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kaddio sköter datalagringen. Du får tid över till annat.</ModuleOverviewFeature>
+		
+
 	</ModuleOverviewFeaturesSegment>
 
 </ModuleOverviewFeaturesSection> 
