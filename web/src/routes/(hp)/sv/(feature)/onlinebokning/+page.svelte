@@ -30,26 +30,26 @@
 	<span slot="h1">Onlinebokning</span>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
 	<span slot="sub">
-		Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig. I Kaddio är kalendern även din publika bokning så att du enkelt kan hantera bokningsbara tider, möten och grupppass i samma vy.</span>
+		Kaddio Bokning är kalender och bokningssystem i ett. Hantera bokningar, gruppass och möten i samma vy och få koll på läget.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Planera</span>
+		<span slot="title">Planera.</span>
 		<span slot="body">
-			Skapa bokningsbara tider direkt från din kalender. Konfigurera dina bokningstyper i detalj. Välj om dina kunder bokar och betalar själva eller om du tar kontroll över varje minut. 
+			Skapa bokningsbara tider direkt från din kalender. Låt kunderna boka och betala på egen hand eller styr allt själv.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Samarbeta</span>
+		<span slot="title">Samarbeta.</span>
 		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
+			Använd kalendern för mötesbokning och rumsbokning. Välj vilka kollegor som ser vad.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Effektivisera.</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid. 
+			Skapa mallar för återkommande händelser i kalendern och spara tid. 
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
