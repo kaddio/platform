@@ -30,7 +30,7 @@
 	<span slot="h1">Onlinebokning</span>
 	<span slot="title">Kaddio Kalender och Tidsbokning</span>
 	<span slot="sub">
-		Kaddio Bokning är kalender och bokningssystem i ett. Hantera bokningar, gruppass och möten i samma vy och få koll på läget.</span>
+		Kaddio Onlinebokning är kalender och bokningssystem i ett. Hantera bokningar, gruppass och möten i samma vy och få koll på läget.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Planera.</span>
@@ -55,8 +55,8 @@
 </ModuleSectionWithImage>
   
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
-	<span slot="pre">Själslig boost</span>
-	<span slot="title">Därför använder Ana Kaddio</span>
+	<span slot="pre">Inspirerande text och bild</span>
+	<span slot="title">Därför använder X Kaddio Onlinebokning</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
