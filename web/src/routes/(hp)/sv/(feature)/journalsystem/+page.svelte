@@ -58,8 +58,8 @@
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
-	<span slot="pre">Själslig boost</span>
-	<span slot="title">Därför använder Ana Kaddio</span>
+	<span slot="pre">Inspirerande text och bild</span>
+	<span slot="title">Därför använder X Kaddio Journal</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
@@ -75,7 +75,7 @@
 		<ModuleOverviewFeature>Journalför säkert via dator och mobil </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rita på bilder direkt i journalen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Ladda upp filer i journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för ICD-10</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ange diagnoser enligt ICD-10</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skicka och ta emot standardformulär direkt i journalen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
