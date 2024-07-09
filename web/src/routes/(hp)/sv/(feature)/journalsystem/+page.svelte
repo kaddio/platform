@@ -164,7 +164,7 @@
 	</StatsSectionPart>
 </StatsSection>
 
-<FaqSection>
+<!-- <FaqSection>
 	<span slot="title">Detaljer</span>
 
 	<Qa>
@@ -259,4 +259,4 @@
 			</Qa>
 		{/each}
 	</FaqSection>
-{/if}
+{/if} -->
