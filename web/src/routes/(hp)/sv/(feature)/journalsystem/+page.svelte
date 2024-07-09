@@ -94,9 +94,9 @@
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Styr behörigheter till journaler</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Signera och redigera med historik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signera och redigera anteckningar med full historik</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Lista osignerade anteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Logg över editering och läsning av journaler med klockslag och IP-adress</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Logga läsning och redigering av journaler</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kaddio sköter datalagringen. Du får tid över till annat.</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
