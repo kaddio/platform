@@ -42,7 +42,7 @@
 	<ModuleFeatureWithIcon icon="people-pulling">
 		<span slot="title">Samarbeta.</span>
 		<span slot="body">
-			Använd kalendern för mötesbokning och rumsbokning. Välj vilka kollegor som ser vad.
+			Använd kalendern för mötesbokning och rumsbokning. Administrera organisationens bokningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
