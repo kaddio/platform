@@ -33,14 +33,14 @@
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
-		<span slot="title">Dokumentera</span>
+		<span slot="title">Dokumentera.</span>
 		<span slot="body">
 			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
-		<span slot="title">Anpassa</span>
+		<span slot="title">Anpassa.</span>
 		<span slot="body">
 			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
 			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
@@ -48,7 +48,7 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="gamepad-modern">
-		<span slot="title">Kontrollera</span>
+		<span slot="title">Kontrollera.</span>
 		<span slot="body">
 			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
 			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
@@ -69,38 +69,36 @@
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Planera</span>
-		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+		<span slot="title">Dokumentera</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
-
+		<ModuleOverviewFeature>Anteckna och redigera med full historik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rita på bilder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ladda upp filer</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för ICD-10</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skicka och ta emot standardformulär</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Anpassa</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Skapa egna anteckningsmallar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skapa malltext och fraser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ladda upp bilder att rita på</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Utforma egna formulär</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">Kontrollera</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Styr behörigheter till journaler</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Lista osignerade anteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Logg över editering och läsning av journaler med klockslag och IP-adress</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
+
 </ModuleOverviewFeaturesSection> 
 
 <QuotesSection>
