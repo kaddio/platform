@@ -66,7 +66,7 @@
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Journal</span>
-	<span slot="body">Kaddio sköter datalagringen. Du får tid över till annat.</span>
+	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Kaddio sköter datalagringen. Du får tid över till annat.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dokumentera</span>
@@ -115,7 +115,7 @@
             Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
         </span>
     </Quote>
-	   
+
     <Quote>
         Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
         <span slot="quoted">
