@@ -35,7 +35,7 @@
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Nyckeverb 1</span>
 		<span slot="body">
-			Text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. 
+			Kort text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. Ej för detaljerat.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -69,7 +69,7 @@
 		<span slot="title">Nyckelverb 1 från första sektionen</span>
 		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
-		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Mer detaljerat. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
