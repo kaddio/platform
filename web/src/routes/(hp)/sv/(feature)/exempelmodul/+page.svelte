@@ -27,15 +27,15 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
-	<span slot="h1">Onlinebokning</span>
-	<span slot="title">Kaddio Kalender och Tidsbokning</span>
+	<span slot="h1">Modulnamn</span>
+	<span slot="title">Kaddio Modulnamn</span>
 	<span slot="sub">
-		Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig. I Kaddio är kalendern även din publika bokning så att du enkelt kan hantera bokningsbara tider, möten och grupppass i samma vy.</span>
+		Superöversiktlig beskrivning av allt modulen gör med peppiga ord som komplett, smidig, effektiv, etc.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Planera</span>
+		<span slot="title">Nyckeverb 1</span>
 		<span slot="body">
-			Skapa bokningsbara tider direkt från din kalender. Konfigurera dina bokningstyper i detalj. Välj om dina kunder bokar och betalar själva eller om du tar kontroll över varje minut. 
+			Text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. 
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -49,27 +49,27 @@
 	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Effektivisera</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid. 
+			Skapa mallar och spara tid. 
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
-	<span slot="pre">Själslig boost</span>
-	<span slot="title">Därför använder Ana Kaddio</span>
-	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="pre">Inspirerande text</span>
+	<span slot="title">Därför använder X Kaddio Modulnamn</span>
+	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Onlinebokning</span>
-	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Planera</span>
-		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+		<span slot="title">Nyckelverb 1 från första sektionen</span>
+		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
-		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
@@ -102,7 +102,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad några kunder säger om Exempelmodulen       
+        Vad våra kunder säger om Exempelmodulen       
     </span>
 
     <Quote>
