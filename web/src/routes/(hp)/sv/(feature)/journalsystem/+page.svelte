@@ -72,32 +72,33 @@
 		<span slot="title">Dokumentera</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Journalför säkert via dator och mobil </ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rita på bilder direkt i journalen</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Ladda upp filer i journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Ange diagnoser enligt ICD-10</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Skicka och ta emot standardformulär direkt i journalen</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Exportera hela journalen eller enskilda anteckningar som PDF</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Krypterad journalföring via dator och mobil </ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bilder med ritfunktion</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Filuppladdning i journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export av journal eller enskilda anteckning som PDF</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Anpassa</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Skapa egna anteckningsmallar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Spara tid med malltext och fraser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Ladda upp egna bilder att rita på</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Utforma egna formulär</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för malltext</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för fraser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Uppladdning av egna bilder att rita på</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fri utformning av egna formulär</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Kontrollera</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Styr behörigheter till journaler</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Signera och redigera anteckningar med full historik</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Lista osignerade anteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Logga läsning och redigering av journaler</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Behörighetsstyrning för journaler</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signering och redigering av anteckningar med full historik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Listning av osignerade anteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Logg öven läsning och redigering av journaler</ModuleOverviewFeature>
 		
 
 	</ModuleOverviewFeaturesSegment>

@@ -42,7 +42,7 @@
 	<ModuleFeatureWithIcon icon="people-pulling">
 		<span slot="title">Samarbeta.</span>
 		<span slot="body">
-			Använd kalendern för mötesbokning och rumsbokning. Administrera organisationens bokningar.
+			Administrera mötesbokning och rumsbokning för hela organisationen.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -67,36 +67,41 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Planera</span>
-		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kalender och tidsbokning i samma vy</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Obegränsat antal behandlingsformer</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bokning med mobilt BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Påminnelser via e-post och SMS</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Formulär vid bokning</ModuleOverviewFeature>
+		
 		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för flera platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Mallar för arbetstid</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Öppen tidsbokning på hemsida</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ankomstregistrering</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Dagrapporter</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag ihop med modulen Fakturering</ModuleOverviewFeature>
+		
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
