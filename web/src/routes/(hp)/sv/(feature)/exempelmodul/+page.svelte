@@ -30,7 +30,7 @@
 	<span slot="h1">Modulnamn</span>
 	<span slot="title">Kaddio Modulnamn</span>
 	<span slot="sub">
-		Superöversiktlig beskrivning av allt modulen gör med peppiga ord som komplett, smidig, effektiv, etc.</span>
+		Superöversiktlig beskrivning av allt modulen gör med peppiga ord som komplett, smidig, effektiv, etc. Riktat till dig som kund.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Nyckeverb 1</span>
