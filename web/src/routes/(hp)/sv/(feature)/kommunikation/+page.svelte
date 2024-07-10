@@ -98,7 +98,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Kaddio Kommunikation       
+        Vad våra kunder säger om Kaddio Chat och Video       
     </span>
 
     <!-- <Quote>
