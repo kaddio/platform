@@ -29,13 +29,13 @@
 	<span slot="h1">Kommunikation</span>
 	<span slot="title">Kaddio Chat och Video</span>
 	<span slot="sub">
-		Med Kaddio Chat och Video kommunicerar du säkert med kollegor och klienter. I Kaddio är allt krypterat.
+		Med Kaddio Chat och Video kommunicerar du säkert med kollegor och klienter. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
 	</span>
 
 	<ModuleFeatureWithIcon icon="lock">
-		<span slot="title">Ställ krav på säkerheten.</span>
+		<span slot="title">Säkerhetsanpassa.</span>
 		<span slot="body">
-			Kräv inloggning till samtal och chat med Mobilt BankID eller
+			Kräv inloggning till videosamtal och chat med Mobilt BankID eller
             tvåfaktorsautentisering. 
 		</span> 
 	</ModuleFeatureWithIcon>
@@ -43,8 +43,7 @@
 	<ModuleFeatureWithIcon icon="share">
 		<span slot="title">Dela information.</span>
 		<span slot="body">
-			Skicka känslig information på ett säkert sätt genom chatten. Dela skärm under
-            videosamtal. Spela in videosamtal som klient kan ladda ner.
+			Skicka känslig information på ett säkert sätt genom chatten och dela skärm i krypterade videosamtal.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -60,21 +59,22 @@
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text och bild</span>
-	<span slot="title">Därför använder X Kaddio Kommunikation</span>
+	<span slot="title">Därför använder X Kaddio Chat och Video</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Kommunikation</span>
-	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="title">Detta är Kaddio Chat och Video</span>
+	<span slot="body">Introtext. Kaddio Chat och Video.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Säkerhetsanpassa</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+        <ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
         <ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inloggning för klient med tvåfaktorsautentisering</ModuleOverviewFeature>
-
+		<ModuleOverviewFeature>Inloggning för utländska klienter med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Kryptering av all information i inloggat läge</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -83,27 +83,25 @@
 
 		<ModuleOverviewFeature>Krypterad fildelning i chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inspelning av videosamtal som kan laddas ner av klient i chatten</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
     </ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Väx med Kaddio</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Videosamtal för 1-500 deltagare</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad några kunder säger om Exempelmodulen       
+        Vad våra kunder säger om Kaddio Kommunikation       
     </span>
 
-    <Quote>
+    <!-- <Quote>
         Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
         <span slot="quoted">
             Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
@@ -121,7 +119,7 @@
         <span slot="quoted">
             Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
-    </Quote>
+    </Quote> -->
     
 </QuotesSection>
 
