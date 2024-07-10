@@ -30,27 +30,27 @@
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett enkelt faktureringsprogram för små och medelstora företag. Kombinera med Kaddio Onlinebokning eller Kaddio Journalsystem för att fakturera snabbt och flexibelt.
+		Kaddio Fakturering är ett enkelt faktureringssystem för små och medelstora företag. Kombinera med Kaddio Onlinebokning eller Kaddio Journalsystem för att fakturera snabbt och flexibelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
 		<span slot="title">Spara tid.</span>
 		<span slot="body">
-			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar. Du skickar en fakturera med tre klick.
+			Skicka en faktura med tre klick. Underlag genereras automatiskt från bokade tider eller journalanteckningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
 		<span slot="title">Automatisera.</span>
 		<span slot="body">
-			Automatisera utskick av påminnelsefakturor. Håll koll på betalningar genom automatisk avprickning av fakturor betalda via Bankgiro.
+			Håll koll på dina fakturor genom automatiska påminnelser och avprickningar av inbetalningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="file-contract">
 		<span slot="title">Leverera.</span>
 		<span slot="body">
-			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
+			Fakturera via e-post, brev eller i chatten. Skicka e-fakturor till företag med PEPPOL-ID.
 		</span>
 	</ModuleFeatureWithIcon>
 	
@@ -58,44 +58,42 @@
   
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Själslig boost</span>
-	<span slot="title">Därför använder Ana Kaddio</span>
+	<span slot="title">Därför använder X Kaddio Fakturering</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="title">Detta är Kaddio Fakturering</span>
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Planera</span>
-		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+		<span slot="title">Spara tid</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
-
+		<ModuleOverviewFeature>Fakturering från automatiska underlag med tre klick</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kundreskontra</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export av fakturainformation som SIE-4, CSV och XLSX</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
+				
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Automatisera</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokade tider eller journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatisk sortering till Inkasso</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">Leverera</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-fakturering av företag med PEPPOL-ID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
