@@ -29,20 +29,19 @@
 	<span slot="h1">Kommunikation</span>
 	<span slot="title">Kaddio Chat och Video</span>
 	<span slot="sub">
-		Med Kaddio Chat och video kan du chatta krypterat via chat och video både inom och utom din organisation.
+		Med Kaddio Chat och Video kommunicerar du säkert med kollegor och klienter. I Kaddio är allt krypterat.
 	</span>
 
 	<ModuleFeatureWithIcon icon="lock">
-		<span slot="title">Ställ krav på säkerheten</span>
+		<span slot="title">Ställ krav på säkerheten.</span>
 		<span slot="body">
-			Kräv inloggning till samtalet eller chatten med Mobilt BankID eller
-            tvåfaktorsautentisering. Kaddios inloggningsalternativ uppfyller Socialstyrelsens krav
-            på stark autentisering.
+			Kräv inloggning till samtal och chat med Mobilt BankID eller
+            tvåfaktorsautentisering. 
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="share">
-		<span slot="title">Dela information</span>
+		<span slot="title">Dela information.</span>
 		<span slot="body">
 			Skicka känslig information på ett säkert sätt genom chatten. Dela skärm under
             videosamtal. Spela in videosamtal som klient kan ladda ner.
@@ -50,7 +49,7 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="seedling">
-		<span slot="title">Väx med Kaddio</span>
+		<span slot="title">Väx med Kaddio.</span>
 		<span slot="body">
 			Håll enskilda samtal eller stora föreläsningar. Kaddio Video har stöd för minst 500
             deltagare samtidigt.
@@ -60,42 +59,36 @@
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
-	<span slot="pre">Själslig boost</span>
-	<span slot="title">Därför använder Ana Kaddio</span>
+	<span slot="pre">Inspirerande text och bild</span>
+	<span slot="title">Därför använder X Kaddio Kommunikation</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="title">Detta är Kaddio Kommunikation</span>
 	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Planera</span>
-		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
-
-		<ModuleOverviewFeature>Kalender</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+		<span slot="title">Säkerhetsanpassa</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+        <ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inloggning för klient med tvåfaktorsautentisering</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Dela information</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Krypterad fildelning i chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inspelning av videosamtal som kan laddas ner av klient i chatten</ModuleOverviewFeature>
+    </ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">Väx med Kaddio</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
