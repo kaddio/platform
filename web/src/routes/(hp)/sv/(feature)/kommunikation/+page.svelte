@@ -29,7 +29,7 @@
 	<span slot="h1">Kommunikation</span>
 	<span slot="title">Kaddio Chat och Video</span>
 	<span slot="sub">
-		Med Kaddio Chat och Video kommunicerar du säkert med kollegor och klienter. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
+		Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
 	</span>
 
 	<ModuleFeatureWithIcon icon="lock">
@@ -74,7 +74,7 @@
         <ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
         <ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inloggning för utländska klienter med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Kryptering av all information i inloggat läge</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Kryptering av all information</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>

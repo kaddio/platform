@@ -95,14 +95,13 @@
 		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>E-fakturering av företag med PEPPOL-ID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad några kunder säger om Exempelmodulen       
+        Vad våra kunder säger om Kaddio Fakturering       
     </span>
 
     <Quote>
