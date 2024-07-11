@@ -24,7 +24,7 @@
 	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/booking-overview-en.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Online booking</span>
 	<span slot="title">Kaddio calendar and booking</span>
 	<span slot="sub">
