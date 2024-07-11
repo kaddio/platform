@@ -85,7 +85,7 @@
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för flera platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för verksamhet online och på flera platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
