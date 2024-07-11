@@ -30,26 +30,26 @@
 	<span slot="h1">Invoicing</span>
 	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
-		Superöversiktlig beskrivning av allt modulen gör med peppiga ord som komplett, smidig, effektiv, etc. Riktat till dig som kund.</span>
+		Kaddio Invoicing is a complete invoicing service for small and medium businesses. Combine with Kaddio Booking or Kaddio EMR for fast and flexible invoicing.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Nyckeverb 1</span>
+		<span slot="title">Save time.</span>
 		<span slot="body">
-			Kort text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. Ej för detaljerat.
+			Send an invoice in three clicks. Invoice data is automatically generated from bookings or medical record entries.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Samarbeta</span>
+		<span slot="title">Automate.</span>
 		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
+			Keep track of your invoices with automatic reminders and tick-off of payments.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Deliver.</span>
 		<span slot="body">
-			Skapa mallar och spara tid. 
+			Send invoices by email, letters or in the chat. Send e-invoices to companies with PEPPOL ID. 
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
