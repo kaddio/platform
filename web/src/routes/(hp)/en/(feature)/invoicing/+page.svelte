@@ -98,7 +98,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Exempelmodulen       
+        What our customers say about Kaddio Invoicing       
     </span>
 
 
