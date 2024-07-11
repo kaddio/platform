@@ -26,7 +26,7 @@
 	<meta name="description" content="Kaddio Invoicing is a complete invoicing service for small and medium businesses." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-en.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Invoicing</span>
 	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
