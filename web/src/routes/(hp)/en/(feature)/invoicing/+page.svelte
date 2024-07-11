@@ -26,7 +26,7 @@
 	<meta name="description" content="Kaddio Invoicing is a complete invoicing service for small and medium businesses." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-en.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-en.png" alt="Kaddio invoicing">
 	<span slot="h1">Invoicing</span>
 	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
@@ -56,47 +56,43 @@
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text</span>
-	<span slot="title">Därför använder X Kaddio Modulnamn</span>
+	<span slot="title">Why X uses Kaddio Invoicing</span>
 	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Invoicing</span>
 	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Nyckelverb 1 från första sektionen</span>
+		<span slot="title">Save time</span>
 		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
-		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Mer detaljerat. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Easy invoicing with automated invoice data</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export of invoice information as SIE-4, CSV and XLSX</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export of accounts receivable ledger</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export of debt collection</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Automate</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Automated invoice data from bookings or medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatic reminders</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatic sorting to debt collection</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">Deliver</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Invoicing via email, letters and chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-invoicing of businesses with PEPPOL ID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Collective invoicing of business customers</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
@@ -105,12 +101,7 @@
         Vad våra kunder säger om Exempelmodulen       
     </span>
 
-    <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
-        <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
-        </span>
-    </Quote>
+
     <Quote>
         Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
         <span slot="quoted">
@@ -118,12 +109,7 @@
         </span>
     </Quote>
     
-    <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
-        <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
-        </span>
-    </Quote>
+
     
 </QuotesSection>
 
