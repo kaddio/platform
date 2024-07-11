@@ -82,7 +82,7 @@
 
 		<ModuleOverviewFeature>Automated invoice data from bookings or medical record entries</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatic reminders</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatic sorting to debt collection</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatic sorting for debt collection</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
 
