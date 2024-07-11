@@ -30,7 +30,7 @@
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett enkelt faktureringssystem för små och medelstora företag. Kombinera med Kaddio Onlinebokning eller Kaddio Journalsystem för att fakturera snabbt och flexibelt.
+		Kaddio Fakturering är ett enkelt faktureringssystem för små och medelstora företag. Kombinera med Kaddio Bokning eller Kaddio Journalsystem för att fakturera snabbt och flexibelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
@@ -72,8 +72,8 @@
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
 		<ModuleOverviewFeature>Fakturering från automatiska underlag med tre klick</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export av fakturainformation som <br>SIE-4, CSV och XLSX</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kundreskontra</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Export av fakturainformation som SIE-4, CSV och XLSX</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
 				
 	</ModuleOverviewFeaturesSegment>
@@ -84,7 +84,7 @@
 
 		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokade tider eller journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatisk sortering till Inkasso</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatisk sortering till inkasso</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
 
@@ -94,7 +94,8 @@
 
 		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>E-fakturering av företag med PEPPOL-ID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature>
+
 
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
@@ -104,12 +105,7 @@
         Vad våra kunder säger om Kaddio Fakturering       
     </span>
 
-    <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
-        <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
-        </span>
-    </Quote>
+
     <Quote>
         Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
         <span slot="quoted">
@@ -117,12 +113,7 @@
         </span>
     </Quote>
     
-    <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
-        <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
-        </span>
-    </Quote>
+
     
 </QuotesSection>
 
