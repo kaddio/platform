@@ -43,7 +43,7 @@
 	<ModuleFeatureWithIcon icon="share">
 		<span slot="title">Dela information.</span>
 		<span slot="body">
-			Skicka känslig information på ett säkert sätt genom chatten och dela skärm i krypterade videosamtal.
+			Skicka känslig information på ett säkert sätt genom krypterad chat och videosamtal.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -91,7 +91,7 @@
 		<span slot="title">Väx med Kaddio</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Videosamtal för 1-500 deltagare</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  

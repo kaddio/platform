@@ -24,41 +24,40 @@
 	<meta name="robots" content="noindex">
 
 	<title>Chat and Video</title>
-	<meta name="description" content="Kaddio Electronic Medical Record is a complete system for documenting your clients." />
+	<meta name="description" content="Chat and video for up to 500 users." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/chat-en.png" alt="Kaddio chat and video">
 	<span slot="h1">Communication</span>
 	<span slot="title">Kaddio Chat and Video</span>
 	<span slot="sub">
-		Kaddio EMR is an electronic medical record system that has everything you need to document your business and journal your clients. A complete solution for health professionals.
+		With Kaddio Chat and Video you communicate securey with clients and colleagues. Kaddio fulfils the requirements for strong authentication.
 	</span>
 
-	<ModuleFeatureWithIcon icon="pen">
+	<ModuleFeatureWithIcon icon="lock">
 		<span slot="title">
-			Document it
+			Secure.
 		</span>
 		<span slot="body">
-			Keep your notes safe and secure, wherever you are. No paper, binders or backups.
+			Reguire login for video calls and chat with eID or two-factor authentication.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="sliders">
+	<ModuleFeatureWithIcon icon="share">
 		<span slot="title">
-			Customize
+			Share information.
 		</span>
 		<span slot="body">
-			Tool up your own templates for journal entries based on your business needs.
+			Send sensitive information securely encrypted chats and video calls.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="gamepad-modern">
+	<ModuleFeatureWithIcon icon="seedling">
 		<span slot="title">
-			Control
+			Grow with Kaddio.
 		</span>
 		<span slot="body">
-			Control access to clients and journals. You decide who can access what.
-			Follow activity in journals through Kaddio's log for traceability and regulatory compliance.
+			Offer private sessions or big lectures. Kaddio Video has support for more than 500 simultaneous users.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -66,53 +65,45 @@
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text</span>
-	<span slot="title">Därför använder X Kaddio Modulnamn</span>
+	<span slot="title">Why X uses Kaddio Chat and Video</span>
 	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Chat and Video</span>
 	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Nyckelverb 1 från första sektionen</span>
+		<span slot="title">Secure</span>
 		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
-		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Mer detaljerat. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Login with eID or two-factor authentication</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Encryption of all information</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Share information</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Encrypted file sharing in chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Screen sharing in video calls</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Recording of video calls for sharing with client in chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Contact form for clients</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">Grow with Kaddio</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Video calls for 2-500 participants</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Exempelmodulen       
+        What our customers say about Kaddio Chat and Video       
     </span>
 
     <Quote>
@@ -141,17 +132,17 @@
 
 <StatsSectionWithText>
     <StatsSectionWithTextPart>
-		<span slot="title">användare</span>
+		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
     </StatsSectionWithTextPart>
 
     <StatsSectionWithTextPart>
-		<span slot="title">bokningar per dygn</span>
+		<span slot="title">bookings per day</span>
 		<span slot="sub">1300+</span>
     </StatsSectionWithTextPart>
 
     <StatsSectionWithTextPart>
-		<span slot="title">videomöten per månad</span>
+		<span slot="title">video calls per month</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
 </StatsSectionWithText>
@@ -159,15 +150,15 @@
 
 <StatsSection>
 	<StatsSectionPart>
-		<span slot="title">användare</span>
+		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
 	</StatsSectionPart>
 	<StatsSectionPart>
-		<span slot="title">bokningar per dygn</span>
+		<span slot="title">bookings per day</span>
 		<span slot="sub">1300+</span>
 	</StatsSectionPart>
 	<StatsSectionPart>
-		<span slot="title">videomöten per månad</span>
+		<span slot="title">video calls per month</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
