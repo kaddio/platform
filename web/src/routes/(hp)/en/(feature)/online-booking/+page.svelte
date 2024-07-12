@@ -28,13 +28,13 @@
 	<span slot="h1">Online booking</span>
 	<span slot="title">Kaddio Booking</span>
 	<span slot="sub">
-		Kaddio Booking is your calendar and booking system in one. Manage bookings, meetings and group sessions in the same view and get sorted.
+		Kaddio Booking is your all-in-one calendar and booking system. Manage bookings, meetings and group sessions in the same view and get sorted.
 	</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Plan.</span>
 		<span slot="body">
-			Create bookable times directly from your calendar. Configure your booking types in detail. Choose whether your customers book and pay themselves or if you take control of every minute.
+			Create bookable times directly from your calendar. Let your client book and pay themselves or take control of everything.
 		</span>
 	</ModuleFeatureWithIcon>
 
