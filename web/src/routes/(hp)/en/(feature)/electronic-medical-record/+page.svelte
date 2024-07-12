@@ -31,7 +31,7 @@
 	<span slot="h1">Electronic medical record</span>
 	<span slot="title">Kaddio EMR</span>
 	<span slot="sub">
-		Kaddio EMR is an electronic medical record system that has everything you need to document your business and journal your clients. A complete solution for health professionals.
+		Kaddio EMR is an electronic medical record system that has everything you need to document your business and keep records of your clients. A complete solution for health professionals.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
@@ -80,9 +80,9 @@
 
 		<ModuleOverviewFeature>Encrypted record keeping</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Images with drawing functions</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Upload files to medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>File upload to medical record entries</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Diagnoses with ICD-10</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Standard forms directly in medical records</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Standard forms as entries in medical records</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Export of medical records or single entries in PDF format</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
@@ -91,20 +91,21 @@
 		<span slot="title">Customize</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Free design of templates for medical records</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for template text</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for phrases</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Upload of images to draw on</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Free design of forms</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Control</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Access control of medical records</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signing and editing functions with full history</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Listing of unsigned medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Log of reading and editing events for medical records</ModuleOverviewFeature>
+		
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
