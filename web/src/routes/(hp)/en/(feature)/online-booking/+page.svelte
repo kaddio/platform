@@ -26,82 +26,83 @@
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/booking-overview-en.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Online booking</span>
-	<span slot="title">Kaddio calendar and booking</span>
+	<span slot="title">Kaddio Booking</span>
 	<span slot="sub">
-		Easy-to-use time booking and online payment that does everything you expect. In Kaddio, the calendar is also your public booking so that you can easily manage bookable times, meetings and group sessions in the same view.
+		Kaddio Booking is your calendar and booking system in one. Manage bookings, meetings and group sessions in the same view and get sorted.
 	</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Plan</span>
+		<span slot="title">Plan.</span>
 		<span slot="body">
 			Create bookable times directly from your calendar. Configure your booking types in detail. Choose whether your customers book and pay themselves or if you take control of every minute.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Collaborate</span>
+		<span slot="title">Collaborate.</span>
 		<span slot="body">
-			Use the calendar to schedule meetings and easily choose who should be involved. Decide for yourself which colleagues should see what.				
+			Administer bookings of meetings and rooms for the entire organization.				
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Streamline</span>
 		<span slot="body">
-			Do you have recurring events in the calendar? Create templates and save time.
+			Create templates for recurring events in your calendar and save time.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text</span>
-	<span slot="title">Därför använder X Kaddio Modulnamn</span>
+	<span slot="title">Why X uses Kaddio Booking</span>
 	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Booking</span>
 	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Nyckelverb 1 från första sektionen</span>
+		<span slot="title">Plan</span>
 		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
-		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Mer detaljerat. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Calendar and booking in the same view</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Unlimited number of treatment types</ModuleOverviewFeature>
+		
+		<!-- <ModuleOverviewFeature>Booking with e-ID</ModuleOverviewFeature> -->
+		<ModuleOverviewFeature>Reminders via email and texts</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Forms at booking</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<span slot="title">Collaborate</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+		<ModuleOverviewFeature>Booking of meetings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for online business and multiple locations</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Staff register</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<span slot="title">Streamline</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Templates for working hours</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Public booking for clients</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Payment at booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Arrival registration</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Waiting lists</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Z reports</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automated invoicing information with the module Invoicing</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Exempelmodulen       
+        What our customers say about Kaddio Booking      
     </span>
 
     <Quote>
@@ -130,32 +131,32 @@
 
 <StatsSectionWithText>
     <StatsSectionWithTextPart>
-		<span slot="title">användare</span>
+		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
     </StatsSectionWithTextPart>
 
     <StatsSectionWithTextPart>
-		<span slot="title">bokningar per dygn</span>
+		<span slot="title">bookings per day</span>
 		<span slot="sub">1300+</span>
     </StatsSectionWithTextPart>
 
     <StatsSectionWithTextPart>
-		<span slot="title">videomöten per månad</span>
+		<span slot="title">video meetings per month</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
 </StatsSectionWithText>
 
 <StatsSection>
 	<StatsSectionPart>
-		<span slot="title">användare</span>
+		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
 	</StatsSectionPart>
 	<StatsSectionPart>
-		<span slot="title">bokningar per dygn</span>
+		<span slot="title">bookings per day</span>
 		<span slot="sub">1300+</span>
 	</StatsSectionPart>
 	<StatsSectionPart>
-		<span slot="title">videomöten per månad</span>
+		<span slot="title">video meetings per month</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
