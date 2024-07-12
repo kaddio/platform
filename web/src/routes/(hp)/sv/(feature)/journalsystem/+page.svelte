@@ -72,7 +72,7 @@
 		<span slot="title">Dokumentera</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Krypterad journalföring via dator och mobil </ModuleOverviewFeature>
+		<ModuleOverviewFeature>Krypterad journalföring</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bilder med ritfunktion</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Filuppladdning i journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
