@@ -71,7 +71,7 @@
 
 		<ModuleOverviewFeature>Kalender och tidsbokning i samma vy</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Obegränsat antal behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
+
 		<ModuleOverviewFeature>Bokning med mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Påminnelser via e-post och SMS</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Formulär vid bokning</ModuleOverviewFeature>
@@ -88,7 +88,7 @@
 		<ModuleOverviewFeature>Stöd för verksamhet online och påflera platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Effektivisera</span>
