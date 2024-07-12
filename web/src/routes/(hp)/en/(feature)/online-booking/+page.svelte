@@ -41,7 +41,7 @@
 	<ModuleFeatureWithIcon icon="people-pulling">
 		<span slot="title">Collaborate.</span>
 		<span slot="body">
-			Administer bookings of meetings and rooms for the entire organization.				
+			Schedule meetings and rooms for the entire organization.				
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -81,8 +81,8 @@
 		<span slot="title">Collaborate</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Booking of meetings</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Support for online business and multiple locations</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Scheduling of meetings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for online businesses and multiple locations</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Staff register</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
