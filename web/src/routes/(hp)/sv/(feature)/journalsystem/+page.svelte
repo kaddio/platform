@@ -58,15 +58,13 @@
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
-	<span slot="pre">Användarberättelser</span>
+	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
 	<span slot="title">Därför använder Silvia <br>Kaddio Journal</span>
-	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna som jag vill så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
+	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
 		<br> 
 		<br>Jag använder Kaddio för att organisera mina journalanteckningar och patientbesök bättre, och framför allt för att få mer tid till mina hobbies och min familj. Jag kan njuta mer av min fritid."</cite>
 		<br>
-		<br>Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien
-		<br>
-		<br>Läs mer om Silvias resa från analog till digital journalföring.
+		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">Se mer om Silvias resa från analog till digital journalföring →</a>
 	</span>
 </ProductFeatureImageOnLeft>
 
@@ -118,16 +116,9 @@
     </span>
 
     <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
+        Här vill man ha citat som rör just Journal.
         <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
-        </span>
-    </Quote>
-
-    <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
-        <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
         </span>
     </Quote>
     
