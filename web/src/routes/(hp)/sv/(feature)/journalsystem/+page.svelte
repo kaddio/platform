@@ -57,10 +57,13 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
 	<span slot="pre">Inspirerande text och bild</span>
-	<span slot="title">Därför använder X Kaddio Journal</span>
-	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="title">Därför använder Silvia <br>Kaddio Journal</span>
+	<span slot="body">Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna som jag vill så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
+		<br> 
+		<br>Jag använder Kaddio för att organisera mina journalanteckningar och patientbesök bättre, och framför allt för att få mer tid till mina hobbies och min familj. Jag kan njuta mer av min fritid.
+	</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
