@@ -81,7 +81,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Samarbeta</span>
-		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
@@ -90,7 +90,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Effektivisera</span>
-		<span slot="body">Funktioner för att spara tid</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
@@ -106,22 +106,9 @@
     </span>
 
     <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
+        Här vill man ha citat som rör just Exempelmodulen.
         <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
-        </span>
-    </Quote>
-    <Quote>
-        Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
-        <span slot="quoted">
-            Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
-        </span>
-    </Quote>
-    
-    <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
-        <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
         </span>
     </Quote>
     
