@@ -29,14 +29,14 @@
 	<span slot="h1">Kommunikation</span>
 	<span slot="title">Kaddio Chat och Video</span>
 	<span slot="sub">
-		Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
+		Kaddio Chat och Video gör att du kan kommunicera och dela information säkert med klienter och kollegor. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
 	</span>
 
 	<ModuleFeatureWithIcon icon="lock">
 		<span slot="title">Säkerhetsanpassa.</span>
 		<span slot="body">
 			Kräv inloggning till videosamtal och chat med Mobilt BankID eller
-            tvåfaktorsautentisering. 
+            tvåfaktorsautentisering.
 		</span> 
 	</ModuleFeatureWithIcon>
 
@@ -66,7 +66,7 @@
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Chat och Video</span>
-	<span slot="body">Introtext. Kaddio Chat och Video.</span>
+	<span slot="body">Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. <br>Allt i Kaddio är krypterat.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Säkerhetsanpassa</span>
@@ -100,6 +100,13 @@
     <span slot="title">
         Vad våra kunder säger om Kaddio Chat och Video       
     </span>
+
+    <Quote>
+        Här vill man ha citat som rör just Kommunikation.
+        <span slot="quoted">
+            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
+        </span>
+    </Quote>
 
     <!-- <Quote>
         Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!

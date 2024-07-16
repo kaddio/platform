@@ -111,6 +111,13 @@
     </span>
 
     <Quote>
+        Här vill man ha citat som rör just Bokning.
+        <span slot="quoted">
+            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
+        </span>
+    </Quote>
+
+    <!-- <Quote>
         Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
         <span slot="quoted">
             Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
@@ -128,7 +135,7 @@
         <span slot="quoted">
             Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
-    </Quote>
+    </Quote> -->
     
 </QuotesSection>
 
