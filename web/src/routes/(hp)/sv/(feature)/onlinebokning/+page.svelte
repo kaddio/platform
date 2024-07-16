@@ -63,7 +63,7 @@
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Bokning</span>
-	<span slot="body">Kaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är ensam behandlare eller del av ett större företag.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Planera</span>
@@ -85,7 +85,7 @@
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för verksamhet online och påflera platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för verksamhet online och på flera platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
