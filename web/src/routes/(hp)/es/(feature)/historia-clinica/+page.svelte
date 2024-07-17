@@ -53,7 +53,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</ModuleFeature>
 </ModuleSection> -->
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/historia-clinica-es.png" alt="Kaddio Hístoria clinica">
 	<span slot="h1">Historia clínica</span>
 	<span slot="title">Kaddio Historia clínica</span>
 	<span slot="sub">
