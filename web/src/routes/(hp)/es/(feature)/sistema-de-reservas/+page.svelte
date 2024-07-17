@@ -26,7 +26,7 @@
 	<meta name="description" content="Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/calendario-es.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Sistema de reservas</span>
 	<span slot="title">Kaddio Sistema de reservas</span>
 	<span slot="sub">

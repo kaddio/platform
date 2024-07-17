@@ -26,7 +26,7 @@
 	<meta name="description" content="Las facturas se crean automáticamente en función de las citas reservadas. También puedes crearlas de forma independiente. Todas las facturas se guardan en Kaddio." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio fakturering">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/facturas-es.png" alt="Kaddio fakturering">
 	<span slot="h1">Sistema de facturación</span>
 	<span slot="title">Kaddio Sistema de facturación</span>
 	<span slot="sub">

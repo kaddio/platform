@@ -26,7 +26,7 @@
     <meta name="description" content="Vídeo seguro hasta 500 participantes." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-sv.png" alt="Kaddio Chat">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-es.png" alt="Kaddio Chat">
 	<span slot="h1">Vídeo y chat encriptados</span>
 	<span slot="title">Kaddio Vídeo y chat encriptados</span>
 	<span slot="sub">
