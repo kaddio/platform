@@ -21,7 +21,7 @@
     </span>
 
     <span slot="intro">
-        All personal data that we process are necessary in the contractual relationship between Kaddio and the customer, 
+        We process personal data that is necessary for the contractual relationship between Kaddio and the customer, 
         alternatively, in agreement with the customer to be able to provide the best service possible. Personal data is saved 
         for as long as needed for the business relationship with the customer and then deleted. If you have questions or are dissatisfied you are welcome
         to contact us or our data protection officer at <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>.       
@@ -79,12 +79,12 @@
 
 
     <LegalTitle>
-      Where peronal data is handled
+      Where personal data is handled
     </LegalTitle>
 
     <LegalParagraph>
       GDPR is applicable in the entire EU/ESS which implies that all EU member states have equal 
-      protection of peronal data and personal integrity.
+      protection of personal data and personal integrity.
     </LegalParagraph>
 
 
