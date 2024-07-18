@@ -92,51 +92,53 @@
 
 
     <LegalUl>
-      <LegalLi>Personal data can according to GDPR be processed freely within the EU/ESS without limitations.</LegalLi>
+      <LegalLi>According to GDPR, personal data can be processed freely within the EU/ESS without limitations.</LegalLi>
       <LegalLi>
-        Outside of the EU/ESS personal data can only be handled given that the data processor follows the given regulations and has taken appropriate protective measures.
+        Outside of the EU/ESS personal data can only be processed given that the data processor follows the given regulations 
+        and has taken appropriate protective measures.
       </LegalLi>
     </LegalUl>
 
 
     <LegalParagraph>
-        Samtliga företag som hanterar personuppgifter för Kaddios räkning utanför EU/ESS har vi avtal med som
-innehåller standardavtalsklausuler som EU-kommissionen har beslutat om, vilket uppfyller skyddsnivå
-enligt GDPR.
+        For all suppliers who process personal data on behalf of Kaddio outside of the EU/EES, 
+        we have agreeements that contain standard contractual clauses imposed by the European commission
+        which fulfils an adequate level of protection according to GDPR.
   </LegalParagraph>
 
     
     <LegalTitle>
-        Data för följande ändamål hanteras utanför EU/ESS
+        Data for the following purposes are handled outside of the EU/ESS
     </LegalTitle>
 
 
 
     <LegalUl>
       <LegalLi>
-            <strong class="font-semibold text-gray-900">Nyhetsbrev.</strong> System för att skicka nyhetsbrev från Kaddio till våra kunder
+            <strong class="font-semibold text-gray-900">Newsletter.</strong> System to send newsletters from Kaddio to our customers.
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">SMS.</strong> System för att leverera SMS via Twilio.
+            <strong class="font-semibold text-gray-900">SMS.</strong> System to deliver SMS via Twilio.
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">BankID.</strong> System för att ansluta mot BankID.
+            <strong class="font-semibold text-gray-900">BankID.</strong> System to connect to BankID. <!--Add other eID methods when we have them-->
       </LegalLi>
 
       <LegalLi>
-        <strong class="font-semibold text-gray-900">Kortbetalning klientbokning.</strong> System för att hantera kortbetalning online i samband med bokning.
+        <strong class="font-semibold text-gray-900">Payment at booking.</strong> System to handle payment by card online at bookings.
       </LegalLi>
 
       <LegalLi>
-            <strong class="font-semibold text-gray-900">E-post.</strong> System för automatiska utskick av e-post för: fakturering, inbjudan av behandlare och patienter,
-            kvitto vid bokning samt bokning- och avbokningsbekräftelse.            
+            <strong class="font-semibold text-gray-900">Email.</strong> System for automated sending of emails for: invoicing, 
+            invitations for practitioners and clients, receipts at bookings, and confirmations of bookings and cancellations.           
       </LegalLi>
     </LegalUl>        
 
       <LegalParagraph>
-        Övrig data som innehåller personuppgifter hanteras inom EU/ESS. All lagring av data från Journal och Kommunikation sker inom EU/ESS.
+        All other information that contains personal data is handled within the EU/EES. 
+        All storage of data from Electronic Medical Records and Communication is within the EU/EES.
       </LegalParagraph>
 
 
@@ -151,10 +153,10 @@ enligt GDPR.
     </figure> -->
 
     <LegalParagraph>
-      För detaljer, se vår lista över <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/Third-Party-Subprocessors">Third-Party Subprocessors <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
+      For details, see our list of <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/Third-Party-Subprocessors">Third-Party Subprocessors <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
     </LegalParagraph>
 
     <LegalParagraph>
-      Se även <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/FAQ">FAQ <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
+      See also  <a class="font-semibold text-oldpink" target="_blank" rel="noreferrer" href="https://github.com/kaddio/documentation/wiki/FAQ">FAQ <i class="fa fa-regular fa-arrow-up-right-from-square" /></a>    
     </LegalParagraph>
 </Legal>
