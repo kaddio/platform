@@ -7,54 +7,59 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Användarvillkor</title>
+	<title>Kaddio - Terms of service</title>
 	<meta name="description" content="Användarvillkor" />
 </svelte:head>
 
 
 <Legal>
     <span slot="pretitle">Kaddio Policy</span>
-    <span slot="title">Användarvillkor</span>
+    <span slot="title">Terms of service</span>
     <span slot="subtitle">
-        Välkommen till Kaddio! I samband med att du skapar ett konto hos oss godkänner du dessa användarvillkor och vår behandling av personuppgifter enligt vad som framgår av vår hemsida kaddio.com.
+        Welcome to Kaddio! When you create an account with us, you consent to these terms of service 
+        and our processing of personal data as established on our website kaddio.com.
     </span>
 
     <span slot="intro">
-        Genom att skapa konto hos Kaddio godkänner du dessa användarvillkor, inklusive eventuella bilagor eller annat material vartill hänvisas ("Villkoren"). I och med att du skapat kontot har du också godkänt vår behandling av dina personuppgifter.         
+        By creating an account with Kaddio you approve these terms of service, including any appendices or material referred to 
+        ("Terms"). When creating the account you also approve our processing of your personal data.        
     </span>  
 
-    <LegalTitle>Betalning</LegalTitle>
+    <LegalTitle>Payment</LegalTitle>
 
     <LegalParagraph>
-        All debitering sker retroaktivt per månad via automatisk kortdebitering. Kaddio accepterar de vanligaste betal- och kreditkorten.
+        All debiting is performed retroactively per month via automated card debit. Kaddio accepts common debit- and credit cards.
     </LegalParagraph>
 
 
 
 
-    <LegalTitle>Licensens omfattning</LegalTitle>
+    <LegalTitle>Licence scope</LegalTitle>
     <LegalParagraph>
-        Kaddio AB är innehavare av samtliga rättigheter till Kaddio. Som användare får du bara använda tjänsten på avtalat sätt i enlighet med gällande Villkor.
+        Kaddio AB holds all rights to Kaddio. As a user, you may only use the service as agreed and according to current Terms.
     </LegalParagraph>
 
 
     <LegalParagraph>
-        Som köpare av våra produkter får du en icke-exklusiv licens att använda programvaran för en användning i den verksamhet du anger. Du har inte rätt att använda programvaran för annan verksamhet eller rätt att låta annan än de registrerade personer använda programvaran.        
+        As a buyer of our products you have a non-exclusive license to use the software in the business that you state. 
+        You do not have the right to use the software for other business or have the right to let anyone else than registered 
+        users use the software.      
     </LegalParagraph>
 
     <LegalParagraph>
-        Antalet användare av licensen och omfattningen av den programvara som omfattas av licensen ändrar du själv genom registrering löpande under avtalstiden.
+        The number of users of the license and the extent of the software included in the license is controlled by you through 
+        registration ongoing throughout the contractual period.
     </LegalParagraph>
 
     <LegalParagraph>
-        Kopiering av programvaran får inte ske utan vårt skriftliga samtycke.          
+        Copying of the software may not be performed without a written consent from us.         
     </LegalParagraph>
 
 
 
-    <LegalTitle>Ändringar i programvaran</LegalTitle>
+    <LegalTitle>Changes to the software</LegalTitle>
     <LegalParagraph>
-        Du har inte rätt att ändra programvaran. Upphovsrätt och alla andra rättigheter avseende ändringar i programvaran tillkommer Kaddio AB.
+        You do not have permission to change the software. Copyright and all rights regarding changes to the software attributes to Kaddio AB.
     </LegalParagraph>
 
 
