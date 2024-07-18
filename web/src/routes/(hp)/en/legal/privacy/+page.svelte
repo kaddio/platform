@@ -24,7 +24,7 @@
         We process personal data that is necessary for the contractual relationship between Kaddio and the customer, 
         alternatively, in agreement with the customer to be able to provide the best service possible. Personal data is saved 
         for as long as needed for the business relationship with the customer and then deleted. If you have questions or are dissatisfied you are welcome
-        to contact us or our data protection officer at <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>.       
+        to contact us, or our data protection officer at <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>.       
     </span>
 
     <LegalTitle>Processing of personal data of your clients</LegalTitle>
@@ -35,7 +35,7 @@
     </LegalParagraph>
 
     <LegalParagraph>
-      As a customer, you are responsible for taking appropriate organizational measures to fulfil GDPR regarding 
+      As a customer, you are responsible for taking appropriate organizational measures to fulfil GDPR with regards to 
       the processing of personal data of your clients. Each individual customer needs to decide where in the organization the
       responsibility for data protection issues lies. For more information on when it is adviceable or mandatory to 
       have a data protection officer and the responsibilities of such an officer, contact your local authorities for 
@@ -94,7 +94,7 @@
     <LegalUl>
       <LegalLi>According to GDPR, personal data can be processed freely within the EU/ESS without limitations.</LegalLi>
       <LegalLi>
-        Outside of the EU/ESS personal data can only be processed given that the data processor follows the given regulations 
+        Outside of the EU/ESS, personal data can only be processed given that the data processor follows the given regulations 
         and has taken appropriate protective measures.
       </LegalLi>
     </LegalUl>
