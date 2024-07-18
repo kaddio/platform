@@ -7,82 +7,84 @@
 </script>
 
 <svelte:head>
-	<title>Kaddio - Sekretesspolicy</title>
-	<meta name="description" content="Sekretesspolicy" />
+	<title>Kaddio - Privacy policy</title>
+	<meta name="description" content="Privacy policy" />
 </svelte:head>
 
 
 <Legal>
     <span slot="pretitle">Kaddio Policy</span>
-    <span slot="title">Sekretesspolicy</span>
+    <span slot="title">Privacy policy</span>
     <span slot="subtitle">
-        Kaddio AB är ansvarigt för behandlingen av personuppgifter som samlas in i Kaddio. Vid behandling av personuppgifter
-        följer vi dataskyddsförordningen (GDPR).
+        Kaddio AB is responsible for the processing of personal data collected in Kaddio. We process personal data according to 
+        the General Data Protection Regulation (GDPR). 
     </span>
 
     <span slot="intro">
-        Samtliga personuppgifter vi behandlar är nödvändiga i avtalsförhållandet mellan Kaddio och kunden, alternativt sker
-        med kundens samtycke för att tillhandahålla en så bra tjänst som möjligt. Vi sparar personuppgifterna så länge de
-        behövs i vår affärsrelation med kunden och raderas därefter. Har du frågor eller är missnöjd är du välkommen att
-        höra av dig till oss eller till vårt dataskyddsombud <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>        
+        All personal data that we process are necessary in the contractual relationship between Kaddio and the customer, 
+        alternatively, in agreement with the customer to be able to provide the best service possible. Personal data is saved 
+        for as long as needed for the business relationship with the customer and then deleted. If you have questions or are dissatisfied you are welcome
+        to contact us or our data protection officer at <a class="font-semibold text-oldpink" href="mailto:dpo@kaddio.com">dpo@kaddio.com</a>.       
     </span>
 
-    <LegalTitle>Behandling av dina klienters personuppgifter</LegalTitle>
+    <LegalTitle>Processing of personal data of your clients</LegalTitle>
 
     <LegalParagraph>
-      Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt "Personuppgiftsbiträdesavtal" (som finns att ladda ner när ditt konto har skapats).
+      Regarding the personal data of clients that customers of Kaddio add to the system, Kaddio has responsibilities
+      according to our Data Protection Agreement (DPA) that is available for download upon creation of an account.
     </LegalParagraph>
 
     <LegalParagraph>
-        Du som kund ska själv vidta lämpliga organisatoriska åtgärder för att uppfylla GDPR såvitt avser
-        behandlingen av personuppgifter. Varje enskild kund har att bestämma var i organisationen som ansvaret för
-        dataskyddsfrågor skall ligga. Läs mer hos Datainspektionen om när man måste eller bör ha ett dataskyddsombud och vad ett
-        sådant ombud gör.            
+      As a customer, you are responsible for taking appropriate organizational measures to fulfil GDPR regarding 
+      the processing of personal data of your clients. Each individual customer needs to decide where in the organization the
+      responsibility for data protection issues lies. For more information on when it is adviceable or mandatory to 
+      have a data protection officer and the responsibilities of such an officer, contact your local authorities for 
+      privacy protection.                     
     </LegalParagraph>
 
     <LegalParagraph>
-      Kaddio ger dig som kund tekniska förutsättningar att uppfylla kraven i GDPR.
+      Kaddio provides the technical conditions for you as a customer to be able to fulfil the requirements of GDPR.
     </LegalParagraph>
 
 
     <LegalTitle>
-        Information vi samlar in
+        Information we collect
     </LegalTitle>
 
     <LegalUl>
-      <LegalLi><strong class="font-semibold text-gray-900">Ny kund.</strong> När du skapar en ny organisation ber vi dig om personuppgifter, bl.a. förnamn, efternamn och e-post.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Användning.</strong> När du använder Kaddio sparar vi information om bl.a. vilka moduler du aktiverat. Vi sparar info om när du loggat in i våra serverloggar.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">New customer.</strong> When you create a new organization we ask for personal data like given name, family name and email address.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Usage.</strong> When you use Kaddio we save information about, for instance, what modules you have activated. In our server logs, we save information about your last log in.</LegalLi>
     </LegalUl>
 
     <LegalTitle>
-      Så här används informationen
+      How we use information
     </LegalTitle>
 
 
     <LegalUl>
-      <LegalLi><strong class="font-semibold text-gray-900">Förbättring.</strong> Den information vi samlar in används för att tillhandahålla, förbättra och skydda våra tjänster.</LegalLi>
-      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> kaddio.com (Kaddios egen hemsida) använder <strong>inte</strong> cookies. Applikationen Kaddio använder endast cookies för lastbalansering och säkerhet.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Improvement.</strong> Information that we collect is utilized to provide, improve and protect our services.</LegalLi>
+      <LegalLi><strong class="font-semibold text-gray-900">Cookies.</strong> Our website kaddio.com does <strong>not</strong> use cookies. The Kaddio application only uses cookies for load balancing and security.</LegalLi>
     </LegalUl>
 
 
     <LegalTitle>
-      Valmöjlighet
+      Options
     </LegalTitle>
 
     <LegalParagraph>
-      Det är du som kund till Kaddio som väljer vilken information du vill dela med oss. De enda personuppgifter
-        du måste dela med oss för att starta en organisation är för- och efternamn, e-post samt namnet på din
-        organisation.
+      It is up to you as a customer to choose what information you want to share with us. The only 
+      personal data you need to share with us to create an organization is your given name, last name, email address
+      and the name of your organization.
     </LegalParagraph>
 
 
     <LegalTitle>
-      Var personuppgifter hanteras
+      Where peronal data is handled
     </LegalTitle>
 
     <LegalParagraph>
-      Dataskyddsförordningen (GDPR) gäller i hela EU/ESS och innebär att alla EU:s medlemsstater har ett
-        likvärdigt skydd för personuppgifter och personlig integritet.
+      GDPR is applicable in the entire EU/ESS which implies that all EU member states have equal 
+      protection of peronal data and personal integrity.
     </LegalParagraph>
 
 
@@ -90,10 +92,9 @@
 
 
     <LegalUl>
-      <LegalLi>Personuppgifter kan enligt GDPR behandlas fritt inom EU/EES utan begränsningar.</LegalLi>
+      <LegalLi>Personal data can according to GDPR be processed freely within the EU/ESS without limitations.</LegalLi>
       <LegalLi>
-        Utanför EU/ESS får personuppgifter hanteras förutsatt att databehandlaren följer nödvändiga
-        bestämmelser och har vidtagit lämpliga skyddsåtgärder.
+        Outside of the EU/ESS personal data can only be handled given that the data processor follows the given regulations and has taken appropriate protective measures.
       </LegalLi>
     </LegalUl>
 
