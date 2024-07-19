@@ -42,37 +42,39 @@
 
     <LegalParagraph>
         As a buyer of our products you have a non-exclusive license to use the software in the business that you state. 
-        You do not have the right to use the software for other business or have the right to let anyone else than registered 
+        You do not have the right to use the software for other businesses or have the right to let anyone but registered 
         users use the software.      
     </LegalParagraph>
 
     <LegalParagraph>
         The number of users of the license and the extent of the software included in the license is controlled by you through 
-        registration ongoing throughout the contractual period.
+        ongoing registration throughout the contractual period.
     </LegalParagraph>
 
     <LegalParagraph>
-        Copying of the software may not be performed without a written consent from us.         
+        Copying of the software must not be performed without a written consent from us.         
     </LegalParagraph>
 
 
 
     <LegalTitle>Changes to the software</LegalTitle>
     <LegalParagraph>
-        You do not have permission to change the software. Copyright and all rights regarding changes to the software attributes to Kaddio AB.
+        You do not have permission to change the software. Copyright and all rights regarding changes to the software 
+        attributes to Kaddio AB.
     </LegalParagraph>
 
 
 
-    <LegalTitle>Intrång i annans rätt</LegalTitle>
+    <LegalTitle>Infringement of rights</LegalTitle>
     <LegalParagraph>
-        Kaddio garanterar att programvaran inte gör intrång i annan tillkommande rätt. För det fall någon kontaktar dej och gör gällande intrång åtager du dej att omgående meddela oss.
+        Kaddio guarantees that the software does not infringe anyones property rights. In case anyone contacts you and 
+        claims infringement, you are committed to inform us immediately.
     </LegalParagraph>
 
 
-    <LegalTitle>Operativsystemskrav</LegalTitle>
+    <LegalTitle>Operating system requirements</LegalTitle>
     <LegalParagraph>
-        Du behöver något av följande operativsystem, med angiven eller senare version
+        You need one of the following operating systems, in the stated or a later version
     </LegalParagraph>
 
 
@@ -87,9 +89,9 @@
 
 
 
-    <LegalTitle>Webbläsarkrav</LegalTitle>
+    <LegalTitle>Web browser requirements</LegalTitle>
     <LegalParagraph>
-        Du behöver någon av följande webbläsare, med angiven eller senare version
+        You need one of the following web browsers, in the stated or a later version
     </LegalParagraph>
 
 
@@ -103,56 +105,77 @@
 
 
 
-    <LegalTitle>Försäkran</LegalTitle>
+    <LegalTitle>Declaration</LegalTitle>
     <LegalParagraph>
-        Du försäkrar att de uppgifter du lämnar oss är korrekta.
+        You ensure that the data you state is correct.
     </LegalParagraph>
 
     <LegalParagraph>
-        Om du använder tjänsten för en juridisk persons räkning, garanterar du även att du har behörighet att ingå avtal om tjänsten med oss och accepterar Villkoren för den juridiska personens räkning. Genom att uppge personuppgifter om andra personer bekräftar du även att du har medgivande att uppge dessa uppgifter och att uppgifterna får användas för de ändamål och på de sätt som beskrivs i dessa Villkor.
+        If you use the service on behalf of a legal entity, you guarantee that you are authorized to conclude an agreeement 
+        for the service with us and accept the Terms on behalf of the legal entity. By stating personal data of others you confirm
+        that you hold consent to state this information and that the information may be used for the purposes and in the ways 
+        described in these Terms.
     </LegalParagraph>
 
 
-    <LegalTitle>Missbruk</LegalTitle>
+    <LegalTitle>Misuse</LegalTitle>
     <LegalParagraph>
-        Användning av uppgifter som inte är dina eller som du av annan anledning inte har rätt att använda, samt användning av Kaddio i övrigt på sätt som inte är avsett, kommer att bedömas av Kaddio som missbruk. All information relaterad till misstanke om eller missbruk av Kaddio, exempelvis genom angivande av felaktiga eller vilseledande uppgifter, sparas och används för framtida riskbedömningar och för att skydda inblandade parter. Användaren kan komma att spärras från vidare möjlighet att använda Kaddio. Din efterlevnad av Villkoren och enskilda betalningsvillkor för Kaddios tjänster påverkar också riskbedömningen vid användning av Kaddio och därmed din möjlighet att använda dig av alla betalningsalternativen.
+        Use of information that is not yours or that you for other reasons are not authorized to use, and use of Kaddio 
+        in any other way than the intended use, will be judged by Kaddio as misuse. All information related to suspicion of 
+        or misuse of Kaddio, for example by stating false or misleading information, is saved and used for future risk assessments and 
+        to protect interested parties. The user may be blocked from further use of Kaddio. Your enforcement of the Terms and 
+        separate payment terms for Kaddio services also affect the risk assessment when using Kaddio and therby your possibility 
+        to use all payment alternatives.
     </LegalParagraph>
 
 
 
     <LegalTitle>
-        Personuppgifter
+        Personal data
     </LegalTitle>
 
     <LegalParagraph>
-        Kaddio behandlar personuppgifter i syfte att säkerställa identitet, administrera kundförhållandet, förhindra missbruk eller felaktigt utnyttjande av tjänst, utföra kundanalyser och affärsutveckling samt för att uppfylla tillämpliga lagkrav i övrigt. Följande är exempel på personuppgifter som Kaddio behandlar
+        Kaddio processes personal data for the purpose of ensuring identities, administer the customer relationship, 
+        hinder wrongful use or misuse of the service, perform customer analysis and business development and to fufil
+        applicable legal requirements in general. The following are examples of personal data handled by Kaddio
+
     </LegalParagraph>
 
 
 
     <LegalUl>
-        <LegalLi>Kontaktinformation - namn, adress, e-postadress, telefonnummer m m</LegalLi>
-        <LegalLi>Personnummer</LegalLi>
-        <LegalLi>Betalningsinformation - fakturainformation m m</LegalLi>
-        <LegalLi>Historisk information – uppgift om tidigare köp, hur du tidigare har efterlevt betalningsvillkoren, eventuella avslag m.m.</LegalLi>
-        <LegalLi>Information om din dator/enhet - IP-adress, språkinställningar, webbläsarinställningar m m</LegalLi>
-        <LegalLi>Personnummer används för identifiering och som kundnummer i kundhanteringssyfte i Kaddios system. Om du tidigare har använt Kaddio kan det finnas sparade uppgifter om dig för exempelvis kundhantering, dokumentationskrav eller liknande godkända ändamål. Kaddio kommer att använda eventuell sådan information för att säkerställa din identitet och förenkla din användning av Kaddio. Kaddio kan även komma att använda elektronisk kommunikation (kommunikation via t ex SMS och e-post) i kontakterna med dig. Kaddio värnar om skyddet för personuppgifter och kommer att införa lämpliga skyddsåtgärder för att skydda uppgifterna. Du har rätt att få tillgång till de uppgifter som rör dej. Vi återkommer till dej i normalfallet inom 30 dagar efter begäran därom.</LegalLi>
+        <LegalLi>Contact details - name, address, email, phone, etc.</LegalLi>
+        <LegalLi>Social security number</LegalLi>
+        <LegalLi>Payment information - invoicing information, etc.</LegalLi>
+        <LegalLi>Historical information - detail on previous purchases, you previous enforcement of our payment terms,
+            any denials, etc.</LegalLi>
+        <LegalLi>Information about your computer/entity - IP-address, language settings, web browser settings, etc.</LegalLi>
+        <LegalLi>Social security numbers are used for identification and as account numbers for customer management purposes 
+            for the Kaddio system. If you have used Kaddio previously there may be saved data about you, for example, 
+            due to customer management, documentation requirements or similar approved purposes. Kaddio will use any such information 
+            to ensure you identity och simplify your use of Kaddio. Kaddio may also electronic communication (communication via 
+            e.g. SMS and email) when in contact with you. Kaddio safeguards the protection of personal data and will take
+            appropriate security measures to protect this information. You have the right to acces any information we have on you. 
+            Upon request on that effect, we typically respond within 30 days.</LegalLi>
     </LegalUl>
 
     <LegalParagraph>
-        Du har också rätt att korrigera felaktiga uppgifter samt att välja bort att ta emot ytterligare marknadskommunikation. Kaddio har beträffande de personuppgifter avseende klienter som kund till Kaddio tillför systemet ansvar enligt Personuppgiftsbiträdesavtal. Genom att använda Kaddio godkänner du som kund vår användning av personuppgifter på sätt som har beskrivits här.
+        You also have the right to correct any erroneous information and to choose to remove additional marketing communication.
+        Kaddio has regarding personal data of clients that users of Kaddio add to the system responsibilities according to 
+        our data Protection Agreemenr. By using Kaddio you as a customer approve our use of personal data in the ways described 
+        here.
     </LegalParagraph>
 
 
     <LegalTitle>Cookies</LegalTitle>
 
     <LegalParagraph>
-        Kaddio använder sessioncookies för lastbalansering och säkerhet. Inget annat.
+       Kaddio uses session cookies for load balancing and security. Nothing else.
     </LegalParagraph>
 
 
 
-    <LegalTitle>Ändringar, tillägg och övriga tjänster</LegalTitle>
+    <LegalTitle>Changes, additions and other services</LegalTitle>
 
     <LegalParagraph>
         Kaddio ändrar och förbättrar hela tiden tjänsterna och förbehåller sig rätten att ändra Villkoren för den vidare användningen av Kaddio. För de tjänster som Kaddio tillhandahåller gäller Kaddios vid var tid gällande villkor och prislista. Villkor och prislista finns tillgängliga på Kaddio.com. Läs alltid igenom Villkoren mm. på hemsidan inför varje nytt köp.
