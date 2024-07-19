@@ -161,8 +161,8 @@
 
     <LegalParagraph>
         You also have the right to correct any erroneous information and to choose to remove additional marketing communication.
-        Kaddio has regarding personal data of clients that users of Kaddio add to the system responsibilities according to 
-        our data Protection Agreemenr. By using Kaddio you as a customer approve our use of personal data in the ways described 
+        Regarding personal data of clients that users of Kaddio add to the system, Kaddio has responsibilities according to 
+        our Data Protection Agreement. By using Kaddio, you as a customer approve our use of personal data in the ways described 
         here.
     </LegalParagraph>
 
@@ -178,29 +178,38 @@
     <LegalTitle>Changes, additions and other services</LegalTitle>
 
     <LegalParagraph>
-        Kaddio ändrar och förbättrar hela tiden tjänsterna och förbehåller sig rätten att ändra Villkoren för den vidare användningen av Kaddio. För de tjänster som Kaddio tillhandahåller gäller Kaddios vid var tid gällande villkor och prislista. Villkor och prislista finns tillgängliga på Kaddio.com. Läs alltid igenom Villkoren mm. på hemsidan inför varje nytt köp.
+        Kaddio contiuously changes and improves the services and reserves the rights to change the Terms for future use of Kaddio.
+        For the services that Kaddio provides, the prevailing terms and prices apply. Terms and prices are available on kaddio.com.
+        Make sure to read the Terms, etc., on our website prior to each new purchase.
     </LegalParagraph>
 
 
 
-    <LegalTitle>Länkar till eller från andra webbplatser</LegalTitle>
+    <LegalTitle>Links to or from other websites</LegalTitle>
 
     <LegalParagraph>
-        Kaddio godkänner eller kontrollerar inte någon tredjeparts webbplats eller applikation och vi ansvarar inte och är inte skyldiga på något sätt för deras innehåll. Till den del du använder sådan webbplats eller applikation från tredje part gäller villkoren för den platsen/applikationen.          
+        Kaddio does not approve or control any website or application of any of our third party services and 
+        are not responsible for their contents. To the extent that you use such a website or application from 
+        a third party, the terms of that site/application applies.         
     </LegalParagraph>
 
 
 
 
 
-    <LegalTitle>Ansvarsbegränsning, tillämplig lag och tvister</LegalTitle>
+    <LegalTitle>Disclaimer, applicable law and disputes</LegalTitle>
 
     <LegalParagraph>
-        Utöver vad som följer av Villkoren eller tvingande lagstiftning ansvarar Kaddio inte i något fall för skada som direkt eller indirekt orsakats av användningen av Kaddio. Svensk rätt tillämpas och eventuella tvister ska hanteras av allmän domstol.
+        In addition to the implications by the Terms or by enforcing legislations, Kaddio is not in any case responsible for
+        injuries that are directly or indirectly caused by the use of Kaddio. Swedish law applies and any disputes must be 
+        handled by the general court.
     </LegalParagraph>
 
     <LegalParagraph>
-        Det är den som ansvarar för verksamheten, vårdgivaren respektive verksamhetschefen inom hälso- och sjukvård som ansvarar för att en verksamhet är av god kvalitet och att de beslut som fattas och tillämpas i verksamheten har stöd i gällande författningar. Vårdgivaren ansvarar själv för att systemen uppfyller kraven som ställs på journalföringen i lag och föreskrifter.
+        The operational manager, the caregiver and the operational manager within healthcare, respectively, are responsible 
+        for the quality of the business and that the desicions made and applied within the business comply with current legislations.
+        The caregiver is solely responsible for that the system fulfils requirements for record keeping according to 
+        laws and legislations.
     </LegalParagraph>
 
 
@@ -208,15 +217,19 @@
     <LegalTitle>Support</LegalTitle>
 
     <LegalParagraph>
-        Kaddio erbjuder support via e-post, där svarar vi helgfria vardagar mellan 9-15. Felsökning av akuta ärenden som misstänks påverka drift, tillgänglighet eller säkerhet påbörjas inom 2 timmar under supportens öppettider och inom 8 timmar övrig tid.
+        Kaddio offers support via email, where we answer on business days between 9-15. Troubleshooting of emergency cases that 
+        are suspected to have an impact on operation, accessibility or safety is started within 2 hours during the opening hours 
+        of the support and within 8 hours for all other times.
     </LegalParagraph>
 
 
 
-    <LegalTitle>Felanmälan</LegalTitle>
+    <LegalTitle>Error reports</LegalTitle>
 
     <LegalParagraph>
-        Felanmälan görs till support@kaddio.com. Felsökning av akuta ärenden som misstänks påverka drift, tillgänglighet eller säkerhet påbörjas inom 2 timmar under supportens öppettider och inom 8 timmar övrig tid.          
+        Errors are reported to support@kaddio.com. Troubleshooting of emergency cases that 
+        are suspected to have an impact on operation, accessibility or safety is started within 2 hours during the opening hours 
+        of the support and within 8 hours for all other times.         
     </LegalParagraph>
 
 
