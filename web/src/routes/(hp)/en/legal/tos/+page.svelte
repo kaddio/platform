@@ -217,7 +217,7 @@
     <LegalTitle>Support</LegalTitle>
 
     <LegalParagraph>
-        Kaddio offers support via email, where we answer on business days between 9-15. Troubleshooting of emergency cases that 
+        Kaddio offers support via email, manned on business days between 9-15. Troubleshooting of emergency cases that 
         are suspected to have an impact on operation, accessibility or safety is started within 2 hours during the opening hours 
         of the support and within 8 hours for all other times.
     </LegalParagraph>
@@ -234,18 +234,23 @@
 
 
 
-    <LegalTitle>Avtalstid</LegalTitle>
+    <LegalTitle>Contract period</LegalTitle>
 
     <LegalParagraph>
-        Så snart användaren har beställt tjänsten börjar avtalet att löpa. Avtalstiden är samma period som vald betalningsperiod. Avtalet förlängs automatiskt med samma period om tjänsten inte skriftligen har sagts upp senast en månad före avtalstidens utgång. Om användaren inte skriftligen sagt upp avtalet senast en månad före avtalstidens utgång är användaren skyldig att betala för nästa betalningsperiod.
+        The contract commences immediately upon order of the service. The contract period is the same as the chosen payment period. 
+        The contract is automatically prolonged for the same period if the service is not terminated in writing one month prior 
+        to the end of the contract period, at the latest. If the user has not terminated the contract one month prior 
+        to the end of the contract period, at the latest, the user is obliged to pay for the next payment period.
     </LegalParagraph>
 
 
 
-    <LegalTitle>Uppsägning</LegalTitle>
+    <LegalTitle>Termination</LegalTitle>
 
     <LegalParagraph>
-        Rätten för dig att använda Kaddio kvarstår tills dess att någon av parterna säger upp den. Sådan uppsägning har omedelbar verkan men påverkar inte villkor och skyldigheter för genomförda köp (obetalda fakturor, avgifter m m) eller rätten att behandla personuppgifter på det sätt som framgår ovan.
+        Your right to use Kaddio remains until either part terminates it. Such a termination takes immediate effect but does 
+        not affect terms and commitments for made purchases (unpaid invoices, fees, etc.) or the right to process personal data
+        as described above.
     </LegalParagraph>
 
 </Legal>
