@@ -35,23 +35,23 @@
 		Modulen ingår i abonnemanget.</span>
 
 	<ModuleFeatureWithIcon icon="hand-wave">
-		<span slot="title">Presentera</span>
+		<span slot="title">Presentera.</span>
 		<span slot="body">
-			Kort text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. Ej för detaljerat.
+			Introducera klienter till organisationen och visa lediga tider.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Effektivisera</span>
+	<ModuleFeatureWithIcon icon="globe">
+		<span slot="title">Interagera.</span>
 		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
+			Delta på Kaddios söksida och nå en större publik.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="circle-up">
-		<span slot="title">Optimera</span>
+		<span slot="title">Optimera.</span>
 		<span slot="body">
-			Skapa mallar och spara tid. 
+			Öka organisationens synlighet med inställningar för SEO.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
@@ -65,40 +65,34 @@
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Hemsida</span>
-	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="body">Kort intro till allt denna modul innehåller</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Nyckelverb 1 från första sektionen</span>
+		<span slot="title">Presentera</span>
 		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
 		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Mer detaljerat. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
+		<span slot="title">Interagera</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+	
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Optimera</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 

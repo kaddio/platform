@@ -48,7 +48,7 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Annonsera.</span>
+		<span slot="title">Effektivisera.</span>
 		<span slot="body">
 			Skapa mallar för återkommande händelser i kalendern och spara tid. 
 		</span>
