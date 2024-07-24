@@ -17,6 +17,7 @@
     import StatsSectionPart from "$components/statsSectionPart.svelte";
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSection from "$components/salesSection.svelte";
 </script>
 
 <svelte:head>
@@ -172,6 +173,8 @@
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
+
+<SalesSection></SalesSection>
 
 <!-- <FaqSection>
 	<span slot="title">Detaljer</span>
