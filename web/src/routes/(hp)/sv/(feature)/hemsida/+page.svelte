@@ -27,7 +27,7 @@
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-sv.png" alt="Kaddio hemsida och söksida">
 	<span slot="h1">Hemsida och söksida</span>
 	<span slot="title">Kaddio Hemsida</span>
 	<span slot="sub">
