@@ -13,11 +13,9 @@
     >
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-                <p class="text-3xl font-bold tracking-tight text-gray-900">
-                    <slot name="title" />
+                <p class="text-3xl font-bold tracking-tight text-gray-900">Funderar du på om Kaddio kan passa dig?
                 </p>
-                <p class="mt-6 text-lg leading-8 text-gray-900">
-                    <slot name="intro" />
+                <p class="mt-6 text-lg leading-8 text-gray-900">Kontakta oss så hjälper vi dig. Vi är tillgängliga på vardagar kl 9 - 12.
                 </p>
                 <dl class="mt-10 space-y-4 text-base leading-7 text-gray-900">
                     <div class="flex gap-x-4">
@@ -38,7 +36,7 @@
                                 />
                             </svg>
                         </dt>
-                        <dd><slot name="location" /></dd>
+                        <dd>Göteborg, Sverige</dd>
                     </div>
                     <div class="flex gap-x-4">
                         <dt class="flex-none">
@@ -60,7 +58,7 @@
                         </dt>
                         <dd>
                             <a class="hover:text-gray-900" href="tel:+46313204414">
-                                <slot name="phone" />
+                                +46 (0) 31-320 44 14
                             </a>
                         </dd>
                     </div>
