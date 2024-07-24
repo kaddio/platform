@@ -34,7 +34,7 @@
 		Kaddio Hemsida är en automatiskt genererad hemsida för din organisation och samtidigt en sökfunktion för blivande klienter. 
 		Modulen ingår i abonnemanget.</span>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+	<ModuleFeatureWithIcon icon="hand-wave">
 		<span slot="title">Presentera</span>
 		<span slot="body">
 			Kort text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. Ej för detaljerat.
@@ -48,7 +48,7 @@
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="stopwatch">
+	<ModuleFeatureWithIcon icon="circle-up">
 		<span slot="title">Optimera</span>
 		<span slot="body">
 			Skapa mallar och spara tid. 
