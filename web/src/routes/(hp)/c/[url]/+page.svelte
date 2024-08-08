@@ -76,14 +76,15 @@
         // Use a regular expression to remove style attributes
         return html.replace(/style\s*=\s*["'][^"']*["']/gi, '');
     }
-    let description = organization.homepage?.metaDescription || `${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`;
+    let description =
+        organization.homepage?.metaDescription ||
+        `${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`;
 
-    const titleFromOrg = function(org): string{
+    const titleFromOrg = function (org): string {
         const cityStr = org.city ? `, ${org.city}` : '';
 
         return `${org.name}${cityStr} - Kaddio`;
-    }
-        
+    };
 </script>
 
 <LdTag schema={localBusinessSchema(organization)} />
@@ -92,12 +93,11 @@
     type="business.business"
     keywords={organization.keywords?.join(', ')}
     title={titleFromOrg(organization)}
-    description={description}
+    {description}
     locality={organization.city}
     images={imagesFromImageHandler}
     streetAddress={organization.address}
 />
-
 
 <svelte:head>
     <title>{titleFromOrg(organization)}</title>
@@ -126,7 +126,8 @@
 
                 <KdLinkButton
                     variant="light"
-                    color="default" rel="nofollow" 
+                    color="default"
+                    rel="nofollow"
                     href="https://{organization.url}.kaddio.com/dashboard">Logga in</KdLinkButton
                 >
             </div>
@@ -175,7 +176,9 @@
                                 variant="flat"
                                 color="theme-primary"
                                 size="md"
-                                href="{kaddioOrgUrl(organization.url)}/booking/cal?utm_source={utmSource($page.url)}"
+                                href="{kaddioOrgUrl(
+                                    organization.url
+                                )}/booking/cal?utm_source={utmSource($page.url)}"
                                 >Boka tid</KdLinkButton
                             >
                         </div>
@@ -219,7 +222,9 @@
                 {/if}
                 {#if organization.hasContactForm}
                     <KdLinkButton
-                        href="https://{organization.url}.kaddio.com/contact-us?utm_source={utmSource($page.url)}"
+                        href="https://{organization.url}.kaddio.com/contact-us?utm_source={utmSource(
+                            $page.url
+                        )}"
                         color="theme-primary"
                         class="m-8"
                         variant="flat">Kontakta oss</KdLinkButton
@@ -250,8 +255,9 @@
                                         <KdLinkButton
                                             size="sm"
                                             variant="outline"
-                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1&utm_source={utmSource($page.url)}"
-                                            >Sök tid</KdLinkButton
+                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1&utm_source={utmSource(
+                                                $page.url
+                                            )}">Sök tid</KdLinkButton
                                         >
                                     {/if}
                                 </span>
@@ -269,7 +275,7 @@
                         <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
                 {/if}
-                <Map {addresses} />
+                <Map {addresses} points={organization.geoPoint.coordinates} />
             </Card>
         </div>
     </div>

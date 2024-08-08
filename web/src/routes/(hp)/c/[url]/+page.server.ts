@@ -204,6 +204,9 @@ export async function load({ params, fetch, request, getClientAddress, url }) {
                             answer
                         }
                     }
+                    geoPoint {
+                        coordinates
+                    }
                 }
             }
         `
