@@ -1,20 +1,23 @@
 import type { RequestEvent } from '@sveltejs/kit';
 
-const fingerPrint = function (userAgent: string, acceptLanguage: string, ip: string) {
-    const stringToHash = function (s: string) {
-        return s.split('').reduce((hash, char) => {
+const fingerprint = async function (str: string) {
+    async function digestMessage(message: string) {
+        return message.split('').reduce((hash, char) => {
             return char.charCodeAt(0) + (hash << 6) + (hash << 16) - hash;
         }, 0);
-    };
+    }
 
-    const validityInterval = Math.round(new Date() / 1000 / 3600 / 24 / 4);
-
-    return stringToHash(`${ip};${userAgent};${acceptLanguage};${validityInterval}`);
+    return await digestMessage(str);
 };
 
-export const browserFingerprint = (request: RequestEvent, ip: string) => {
+export const browserFingerprint = async (request: RequestEvent, ip: string) => {
     const userAgent = request.headers.get('user-agent');
     const acceptLanguage = request.headers.get('accept-language');
 
-    return fingerPrint(userAgent, acceptLanguage, ip);
+    // Dev fix to have ip's same
+    if (ip == '::1') {
+        ip = '127.0.0.1';
+    }
+
+    return await fingerprint(`${ip};${userAgent};${acceptLanguage}`);
 };
