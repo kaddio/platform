@@ -113,7 +113,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Journalmodulen       
+        Vad våra kunder säger om Kaddio Journal       
     </span>
 
     <Quote>
