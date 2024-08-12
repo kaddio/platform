@@ -145,7 +145,7 @@
 
 <ProductPricingSection></ProductPricingSection>
 
-<StatsSectionWithText>
+<!--<StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
@@ -176,7 +176,8 @@
 		<span slot="title">video meetings per month</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>
+</StatsSection>-->
+	
 
 <!-- <FaqSection>
 	<span slot="title">Details</span>
