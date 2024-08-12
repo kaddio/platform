@@ -70,7 +70,7 @@
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
+	<!--<span slot="pre">Innehåll</span>-->
 	<span slot="title">Detta är Kaddio Journal</span>
 	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Kaddio sköter datalagringen. Du får tid över till annat.</span>
 
@@ -119,7 +119,19 @@
     <Quote>
         Jag har samma krav på mitt journalföringssystem som mina behandlingar: effektivitet. Därför använder jag Kaddio.
         <span slot="quoted">
-            JOnas Evander <cite>Leg psykolog, Afobia  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+            Jonas Evander <cite>Leg psykolog  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+	<Quote>
+        Kaddio är det journalprogram jag valt pga enkelheten. Programmet är enkelt att navigera och fungerar smidigt att anpassa efter mina behov, både i journalföring och tidsbokning.
+        <span slot="quoted">
+            Amanda Follin <cite>Certifierad massageterapeut  <a href="https://endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+        </span>
+    </Quote>
+	<Quote>
+        Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
+        <span slot="quoted">
+            Kim Olausson <cite>Leg fysioterapeut  <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
         </span>
     </Quote>
     
@@ -144,7 +156,7 @@
     </StatsSectionWithTextPart>
 </StatsSectionWithText>
 
-<StatsSection>
+<!--<StatsSection>
 	<StatsSectionPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -157,7 +169,7 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>
+</StatsSection>-->
 
 <SalesSection></SalesSection>
 
