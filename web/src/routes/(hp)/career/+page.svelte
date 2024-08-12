@@ -24,7 +24,7 @@
       <div class="w-full lg:max-w-lg lg:flex-auto">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We're always looking for awesome people</h2>
         <p class="mt-6 text-xl leading-8 text-gray-600">At Kaddio, we are a small team that works in close collaboration with each other. If you like being involved in the entire development process, being able to influence the end result and at the same time having great freedom with what and how you work, you will enjoy working with us!</p>
-        <p class="mt-6 text-xl leading-8 text-gray-600">To put silverlining on our work days we only work 6 hour per day at our cosy office in central Göteborg, or if we like we can work remotely.  We speak Swedish and English and did I mention the amazing coffee we drink from Kafferäven?</p>
+        <p class="mt-6 text-xl leading-8 text-gray-600">As a silverlining on our offer we only work 6 hour days at our cosy office in central Göteborg, or if we like we can work remotely.  We speak Swedish and English and as a bonus we get amazing coffee from Kafferäven.</p>
         <img src="/img/david-arvid-kaffe.jpg" alt="" class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]">
       </div>
       <div class="w-full lg:max-w-xl lg:flex-auto">
