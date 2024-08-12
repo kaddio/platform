@@ -117,9 +117,9 @@
     </span>
 
     <Quote>
-        Här vill man ha citat som rör just Journal.
+        Jag har samma krav på mitt journalföringssystem som mina behandlingar: effektivitet. Därför använder jag Kaddio.
         <span slot="quoted">
-            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
+            JOnas Evander <cite>Leg psykolog, Afobia  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
         </span>
     </Quote>
     

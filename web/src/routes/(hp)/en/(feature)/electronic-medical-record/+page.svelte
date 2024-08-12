@@ -64,15 +64,22 @@
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
-	<span slot="pre">Inspirerande text</span>
-	<span slot="title">Why X uses Kaddio EMR</span>
-	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
+	<span slot="title">Why Silvia uses Kaddio EMR</span>
+	<span slot="body"><cite> "Kaddio fits our way of working with osteopathic consultations and is easy to use, even if you don't know much about computers. You can start using the system straight away. There are templates for record keeping and I can edit the templates to work for the type of patients that I meet in my work It is very important to me. 
+		<br>
+		<br>I use Kaddio to better organize my medical records and patient visits, and above all to have more time for my hobbies and my family. I can enjoy my free time more."</cite>
+		<br>
+		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">
+			Read more about Silvia's journey to digital record keeping →</a>
+	</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
+	<!--<span slot="pre">Innehåll</span>-->
 	<span slot="title">This is Kaddio EMR</span>
-	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="body">With Kaddio Journal, you keep a safe and smooth journal in the way that suits your business. Kaddio manages the data storage. You get time to do other things.
+ 		.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Document</span>
@@ -115,22 +122,22 @@
     </span>
 
     <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
+        Din Psykolog have had a lot of help from Kaddio in our work in developing the digital care of the future, and they have been very accommodating in the development of specific functions we needed. We can warmly recommend Kaddio!
         <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
+            Ramzi Jelassi <cite>Founder  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
         </span>
     </Quote>
     <Quote>
-        Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
+        The program has everything I need and it is easy to use and adapt to my needs. I can really recommend this journal system.
         <span slot="quoted">
-            Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
+            Sofia Viotti <cite>Psykologist, Compassionfocus <a href="https://www.sofiaviotti.com/" target="_blank" rel="noreferrer">Sofia Viotti</a></cite>
         </span>
     </Quote>
     
     <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
+        Kaddio is user-friendly, functional and fits our business perfectly!
         <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+            Jimmy Lundqvist <cite>Manager IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
     </Quote>
     

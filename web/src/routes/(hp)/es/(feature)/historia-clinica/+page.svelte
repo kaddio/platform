@@ -139,13 +139,13 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Journalmodulen       
+        Lo que dicen nuestros clientes sobre el módulo Histora clinica       
     </span>
 
     <Quote>
-        Här vill man ha citat som rör just Journal.
+        Tengo los mismos requisitos para mi sistema de registro que para mis tratamientos: eficiencia. Por eso uso Kaddio.
         <span slot="quoted">
-            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
+            Jonas Evander <cite>Psicólogo, Afobia  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
         </span>
     </Quote>
     
