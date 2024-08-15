@@ -57,34 +57,34 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	<span slot="h1">Historia clínica</span>
 	<span slot="title">Kaddio Historia clínica</span>
 	<span slot="sub">
-		Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. Ett komplett journalsystem för vård helt enkelt.
+		Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinarias de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
-		<span slot="title">Dokumentera.</span>
+		<span slot="title">Documenta.</span>
 		<span slot="body">
-			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
+			Escribe el historia clinica de manera segura, donde y cuando quieras. Olvídate del manejo de papeles, carpetas y copias de seguridad.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
-		<span slot="title">Anpassa.</span>
+		<span slot="title">Adaptar.</span>
 		<span slot="body">
-			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
+			Diseñar plantillas para asientos de diario basados ​​en las necesidades del negocio. 
 			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="gamepad-modern">
-		<span slot="title">Kontrollera.</span>
+		<span slot="title">Verificar.</span>
 		<span slot="body">
-			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
+			Controlar el acceso a clientes y registros. Tú decides quién obtiene qué.
 			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
+<!--<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
 	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
 	<span slot="title">Därför använder Silvia <br>Kaddio Journal</span>
 	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
@@ -93,27 +93,27 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 		<br>
 		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">Se mer om Silvias resa från analog till digital journalföring →</a>
 	</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft>-->
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Journal</span>
-	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Kaddio sköter datalagringen. Du får tid över till annat.</span>
+	<!--<span slot="pre">Innehåll</span>-->
+	<span slot="title">Esta es la Historia Clínica Kaddio.</span>
+	<span slot="body">Con Kaddio Journal, lleva un diario seguro y fluido de la manera que se adapta a su negocio. Kaddio gestiona el almacenamiento de datos. Tienes tiempo para otras cosas.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Dokumentera</span>
+		<span slot="title">Documenta</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Krypterad journalföring</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bilder med ritfunktion</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Filuppladdning i journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Mantenimiento de registros cifrados</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Imágenes con función de dibujo.</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Carga de archivos</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Export av journal eller enskilda anteckning som PDF</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Anpassa</span>
+		<span slot="title">Adaptar</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
@@ -124,7 +124,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Kontrollera</span>
+		<span slot="title">Verificar</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Behörighetsstyrning för journaler</ModuleOverviewFeature>
