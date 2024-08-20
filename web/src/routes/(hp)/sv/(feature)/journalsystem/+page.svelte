@@ -58,7 +58,7 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
+<!-- <ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
 	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
 	<span slot="title">Därför använder Silvia <br>Kaddio Journal</span>
 	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
@@ -67,7 +67,7 @@
 		<br>
 		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">Se mer om Silvias resa från analog till digital journalföring →</a>
 	</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<!--<span slot="pre">Innehåll</span>-->
@@ -137,7 +137,7 @@
     
 </QuotesSection>
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
 <!--<StatsSectionWithText>
     <StatsSectionWithTextPart>
