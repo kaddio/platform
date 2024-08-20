@@ -156,7 +156,7 @@
     </StatsSectionWithTextPart>
 </StatsSectionWithText>-->
 
-<!--<StatsSection>
+<StatsSection>
 	<StatsSectionPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -169,7 +169,7 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>-->
+</StatsSection>
 
 <SalesSection></SalesSection>
 
