@@ -58,11 +58,11 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text och bild</span>
 	<span slot="title">Därför använder X Kaddio Chat och Video</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
@@ -103,37 +103,55 @@
     </span>
 
     <Quote>
-        Här vill man ha citat som rör just Kommunikation.
-        <span slot="quoted">
-            Förnamn Efternamn <cite>Titel  <a href="https://webadress.se" target="_blank" rel="noreferrer">Webadress</a></cite>
-        </span>
-    </Quote>
-
-    <!-- <Quote>
         Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
         <span slot="quoted">
             Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
         </span>
     </Quote>
-    <Quote>
+    <!-- <Quote>
         Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
         <span slot="quoted">
             Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
         </span>
-    </Quote>
+    </Quote> -->
     
     <Quote>
         Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
         <span slot="quoted">
             Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
-    </Quote> -->
+    </Quote>
+    
+    <Quote>
+        Jag har samma krav på mitt journalföringssystem som mina behandlingar: effektivitet. Därför använder jag Kaddio.
+        <span slot="quoted">
+            Jonas Evander <cite>Leg Psykolog <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+    <Quote>
+        Kaddio är det journalprogram jag valt pga enkelheten. Programmet är enkelt att navigera och fungerar smidigt att anpassa efter mina behov, både i journalföring och tidsbokning.
+        <span slot="quoted">
+            Amanda Follin <cite>Certifierad massageterapeut <a href="https://www.endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+        </span>
+    </Quote>
+    <Quote>
+        Programmet har allt jag behöver och det är lätt att använda och anpassa efter mina behov. Jag kan verkligen rekommendera detta journalsystem.
+        <span slot="quoted">
+            Sofia Viotti <cite>Leg Psykolog Compassionfocus
+        </span>
+    </Quote>
+    <!-- <Quote>
+        Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
+        <span slot="quoted">
+            Kim Olausson <cite>Leg Fysioterapeut <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+        </span>
+    </Quote>     -->
     
 </QuotesSection>
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
-<StatsSectionWithText>
+<!-- <StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -148,7 +166,7 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText> -->
 
 <StatsSection>
 	<StatsSectionPart>
