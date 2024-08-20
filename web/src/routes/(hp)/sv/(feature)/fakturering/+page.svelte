@@ -57,11 +57,11 @@
 	
 </ModuleSectionWithImage>
   
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Förnamn Efternamn, Titel @ Organisation, Stad/Land</span>
 	<span slot="title">Därför använder X Kaddio Fakturering</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
@@ -113,14 +113,20 @@
             Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
         </span>
     </Quote>
-    
+
+	<Quote>
+        Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
+        <span slot="quoted">
+            Kim Olausson <cite>Leg Fysioterapeut <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+        </span>
+    </Quote>   
 
     
 </QuotesSection>
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
-<StatsSectionWithText>
+<!-- <StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -135,7 +141,7 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText> -->
 
 
 <StatsSection>
