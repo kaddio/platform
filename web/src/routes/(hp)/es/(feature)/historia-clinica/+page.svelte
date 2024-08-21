@@ -26,11 +26,11 @@
 	<meta name="description" content="Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades." />
 </svelte:head>
 
-<!-- <ModuleSection>
+<ModuleSection>
 	<span slot="title">Historia clínica</span>
 	<span slot="sub">Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinarias de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades.</span>
 
-	<ModuleFeature>
+	<!-- <ModuleFeature>
 		<span slot="title">Användarvänligt.</span>
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
@@ -50,10 +50,11 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 			Behörighetsstyrning
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
-	</ModuleFeature>
-</ModuleSection> -->
+	</ModuleFeature> -->
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/historia-clinica-es.png" alt="Kaddio Hístoria clinica">
+</ModuleSection>
+
+<!-- <ModuleSectionWithImage src="/img/kaddio-screenshots/historia-clinica-es.png" alt="Kaddio Hístoria clinica">
 	<span slot="h1">Historia clínica</span>
 	<span slot="title">Kaddio Historia clínica</span>
 	<span slot="sub">
@@ -71,7 +72,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 		<span slot="title">Adaptar.</span>
 		<span slot="body">
 			Diseñar plantillas para asientos de diario basados ​​en las necesidades del negocio. 
-			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
+			Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -79,10 +80,10 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 		<span slot="title">Verificar.</span>
 		<span slot="body">
 			Controlar el acceso a clientes y registros. Tú decides quién obtiene qué.
-			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
+			Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad.
 		</span>
 	</ModuleFeatureWithIcon>
-</ModuleSectionWithImage>
+</ModuleSectionWithImage> -->
 
 <!--<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
 	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
@@ -95,14 +96,14 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</span>
 </ProductFeatureImageOnLeft>-->
 
-<ModuleOverviewFeaturesSection>
-	<!--<span slot="pre">Innehåll</span>-->
+<!-- <ModuleOverviewFeaturesSection>
+	<span slot="pre">Innehåll</span>
 	<span slot="title">Esta es la Historia Clínica Kaddio.</span>
 	<span slot="body">Con Kaddio Journal, lleva un diario seguro y fluido de la manera que se adapta a su negocio. Kaddio gestiona el almacenamiento de datos. Tienes tiempo para otras cosas.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Documenta</span>
-		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
 
 		<ModuleOverviewFeature>Mantenimiento de registros cifrados</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Imágenes con función de dibujo.</ModuleOverviewFeature>
@@ -114,7 +115,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Adaptar</span>
-		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
+		<span slot="body">Funktioner för göra samarbetet smidigare</span>
 
 		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Stöd för malltext</ModuleOverviewFeature>
@@ -125,7 +126,7 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Verificar</span>
-		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+		<span slot="body">Funktioner för att spara tid</span>
 
 		<ModuleOverviewFeature>Behörighetsstyrning för journaler</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Signering och redigering av anteckningar med full historik</ModuleOverviewFeature>
@@ -135,9 +136,9 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 
 	</ModuleOverviewFeaturesSegment>
 
-</ModuleOverviewFeaturesSection> 
+</ModuleOverviewFeaturesSection>  -->
 
-<QuotesSection>
+<!-- <QuotesSection>
     <span slot="title">
         Lo que dicen nuestros clientes sobre el módulo Histora clinica       
     </span>
@@ -149,11 +150,11 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
         </span>
     </Quote>
     
-</QuotesSection>
+</QuotesSection> -->
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
-<StatsSectionWithText>
+<!-- <StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -168,9 +169,9 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText> -->
 
-<StatsSection>
+<!-- <StatsSection>
 	<StatsSectionPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -183,11 +184,11 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>
+</StatsSection> -->
 
   
 
-<!-- <FaqSection>
+<FaqSection>
 	<span slot="title">Funciones</span>
 
 	<Qa>
@@ -254,4 +255,4 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 	</Qa>
 
 
-</FaqSection> -->
+</FaqSection>
