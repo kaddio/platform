@@ -13,7 +13,7 @@
     >
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-                <p class="text-3xl font-bold tracking-tight text-gray-900">Is Kaddio something for you?
+                <p class="text-3xl font-bold tracking-tight text-gray-900">Is Kaddio for you?
                 </p>
                 <p class="mt-6 text-lg leading-8 text-gray-900">Contact us and we will help you. We are available on weekdays 9 AM - 12 PM.
                 </p>
