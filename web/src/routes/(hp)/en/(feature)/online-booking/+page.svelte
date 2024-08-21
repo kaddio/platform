@@ -102,32 +102,47 @@
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
-<!-- <QuotesSection>
+<QuotesSection>
     <span slot="title">
         What our customers say about Kaddio Booking      
     </span>
 
     <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
+        At Din Psykolog, we have had great help from Kaddio in our work with developing digital healthcare for the future, and they have been most accommodating with developing specific functions for our needs. We warmly recommend Kaddio!
         <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
-        </span>
-    </Quote>
-    <Quote>
-        Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
-        <span slot="quoted">
-            Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
+            Ramzi Jelassi <cite>Founder  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
         </span>
     </Quote>
     
     <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
+        Kaddio is user friendly, functional and suits our business perfectly!
         <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+            Jimmy Lundqvist <cite>CEO IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
     </Quote>
     
-</QuotesSection> -->
+    <Quote>
+        I have the same demand for my medical records program as for my treatments: Efficiency. That is why I use Kaddio.
+        <span slot="quoted">
+            Jonas Evander <cite>Lic. Psychologist <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+
+    <Quote>
+        Kaddio is my chosen program for medical records due to its ease of use. The program is easy to navigate and adjust to my needs, both for medical records and for time bookings.
+        <span slot="quoted">
+            Amanda Follin <cite>Lic. Massage Therapist <a href="https://www.endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+        </span>
+    </Quote>
+
+    <Quote>
+        The program has everything I need and is easy to adjust to my needs. I can really recommend this program for medical records.
+        <span slot="quoted">
+            Sofia Viotti <cite>Lic. Psychologist Compassionfocus
+        </span>
+    </Quote>
+    
+</QuotesSection>
 
 <!-- <ProductPricingSection></ProductPricingSection> -->
 
