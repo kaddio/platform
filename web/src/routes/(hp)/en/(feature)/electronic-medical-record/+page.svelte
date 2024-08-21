@@ -64,7 +64,7 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
 	<span slot="title">Why Silvia uses Kaddio EMR</span>
 	<span slot="body"><cite> "Kaddio fits our way of working with osteopathic consultations and is easy to use, even if you don't know much about computers. You can start using the system straight away. There are templates for record keeping and I can edit the templates to work for the type of patients that I meet in my work It is very important to me. 
@@ -74,13 +74,14 @@
 		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">
 			Read more about Silvia's journey to digital record keeping →</a>
 	</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<!--<span slot="pre">Innehåll</span>-->
 	<span slot="title">This is Kaddio EMR</span>
-	<span slot="body">With Kaddio Journal, you keep a safe and smooth journal in the way that suits your business. Kaddio manages the data storage. You get time to do other things.
- 		.</span>
+	<span slot="body">With Kaddio EMR you keep records safely and smoothly in a way that suits 
+		your business. Kaddio handles all data storage. You get more free time.
+ 	</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Document</span>
@@ -117,7 +118,7 @@
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
-<QuotesSection>
+<!-- <QuotesSection>
     <span slot="title">
        What our customers say about Kaddio EMR       
     </span>
@@ -142,9 +143,9 @@
         </span>
     </Quote>
     
-</QuotesSection>
+</QuotesSection> -->
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
 <!--<StatsSectionWithText>
     <StatsSectionWithTextPart>
@@ -161,7 +162,7 @@
 		<span slot="title">video meetings per month</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText>-->
 
 
 <StatsSection>
@@ -177,8 +178,9 @@
 		<span slot="title">video meetings per month</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>-->
-<SalesSection></SalesSection>
+</StatsSection>
+
+<!-- <SalesSection></SalesSection> -->
 
 <!-- <FaqSection>
 	<span slot="title">Details</span>
