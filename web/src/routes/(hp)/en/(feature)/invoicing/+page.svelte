@@ -98,27 +98,26 @@
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
-<!-- <QuotesSection>
+<QuotesSection>
     <span slot="title">
         What our customers say about Kaddio Invoicing       
     </span>
 
-
     <Quote>
-        Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
+        It is a pleasure to do invoicing with Kaddio! So smooth and clear. And the neat environment makes a difference too, my other programs have looked like... 😉. Thanks for everything you do, my work day is so much nicer with Kaddio. 
         <span slot="quoted">
-            Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
+            Ulrika Hiscoke <cite>Lic. Psychologist, Medical Doctor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
         </span>
     </Quote>
-	<Quote>
-        Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
+    
+    <Quote>
+        Kaddio is user friendly, functional and suits our business perfectly!
         <span slot="quoted">
-            Kim Olausson <cite>Leg Fysioterapeut <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+            Jimmy Lundqvist <cite>CEO IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
-    </Quote> 
+    </Quote>
 
-
-</QuotesSection> -->
+</QuotesSection>
 
 <!-- <ProductPricingSection></ProductPricingSection> -->
 
