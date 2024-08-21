@@ -120,6 +120,12 @@
             Kim Olausson <cite>Leg Fysioterapeut <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
         </span>
     </Quote>   
+	<Quote>
+        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
+        <span slot="quoted">
+            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+        </span>
+    </Quote>
 
     
 </QuotesSection>

@@ -109,7 +109,12 @@
             Ulrika Hiscoke <cite>Lic. Psychologist, Medical Doctor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
         </span>
     </Quote>
-    
+	<Quote>
+        A functional and easy program for medical records, with a quick and professional support team.
+        <span slot="quoted">
+            Kim Olausson <cite>Lic. Physiotherapist <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+        </span>
+    </Quote>  
     <Quote>
         Kaddio is user friendly, functional and suits our business perfectly!
         <span slot="quoted">
