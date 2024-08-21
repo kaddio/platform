@@ -53,16 +53,18 @@
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text</span>
 	<span slot="title">Why X uses Kaddio Booking</span>
 	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Contents</span>
 	<span slot="title">This is Kaddio Booking</span>
-	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="body">Kaddio Booking helps you plan all activities of the organization in an 
+		efficient and comprehensable way, whether you are self-employed or part of a 
+		big company.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Plan</span>
@@ -100,7 +102,7 @@
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
-<QuotesSection>
+<!-- <QuotesSection>
     <span slot="title">
         What our customers say about Kaddio Booking      
     </span>
@@ -125,11 +127,11 @@
         </span>
     </Quote>
     
-</QuotesSection>
+</QuotesSection> -->
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
-<StatsSectionWithText>
+<!-- <StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
@@ -144,7 +146,7 @@
 		<span slot="title">video meetings per month</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText> -->
 
 <StatsSection>
 	<StatsSectionPart>
