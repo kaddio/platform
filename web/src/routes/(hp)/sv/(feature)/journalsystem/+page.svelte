@@ -116,7 +116,19 @@
         Vad våra kunder säger om Kaddio Journal       
     </span>
 
-    <Quote>
+	<Quote>
+        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
+        <span slot="quoted">
+            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
+        </span>
+    </Quote>
+	<Quote>
+        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
+        <span slot="quoted">
+            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+        </span>
+    </Quote>
+	<Quote>
         Jag har samma krav på mitt journalföringssystem som mina behandlingar: effektivitet. Därför använder jag Kaddio.
         <span slot="quoted">
             Jonas Evander <cite>Leg psykolog  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
@@ -129,11 +141,12 @@
         </span>
     </Quote>
 	<Quote>
-        Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
+        Programmet har allt jag behöver och det är lätt att använda och anpassa efter mina behov. Jag kan verkligen rekommendera detta journalsystem.
         <span slot="quoted">
-            Kim Olausson <cite>Leg fysioterapeut  <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+            Sofia Viotti <cite>Leg Psykolog Compassionfocus
         </span>
     </Quote>
+
     
 </QuotesSection>
 
