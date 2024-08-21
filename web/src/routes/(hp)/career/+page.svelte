@@ -43,13 +43,8 @@
               <dt class="sr-only">Description</dt>
               <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">You will manage and develop our product "Kaddio" that helps 1000+ helath care proffessionals in their daily work. <br><br> Our stack includes Javascript/typescript, Angular.js, Svelte, Tailwind, Meteor, MongoDB. You should like to work both frontend and backend. 
                 <br><br>...and if you have a good sense of rhythm we need a drummer for our office band!   </dd>
-                <dt class="sr-only">Salary</dt>
-                <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">Apply</dd>
                 <dt class="sr-only">Location</dt>
               <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                  <circle cx="1" cy="1" r="1" />
-                </svg>
                 Göteborg, Sweden
               </dd>
             </dl>
