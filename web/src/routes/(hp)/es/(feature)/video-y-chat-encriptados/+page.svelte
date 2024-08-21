@@ -26,7 +26,7 @@
     <meta name="description" content="Vídeo seguro hasta 500 participantes." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-es.png" alt="Kaddio Chat">
+<!-- <ModuleSectionWithImage src="/img/kaddio-screenshots/chat-es.png" alt="Kaddio Chat">
 	<span slot="h1">Vídeo y chat encriptados</span>
 	<span slot="title">Kaddio Vídeo y chat encriptados</span>
 	<span slot="sub">
@@ -71,7 +71,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Säkerhetsanpassa</span>
-		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
         <ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
         <ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inloggning för utländska klienter med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
@@ -80,7 +80,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dela information</span>
-		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
+		<span slot="body">Funktioner för göra samarbetet smidigare</span>
 
 		<ModuleOverviewFeature>Krypterad fildelning i chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
@@ -90,7 +90,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Väx med Kaddio</span>
-		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+		<span slot="body">Funktioner för att spara tid</span>
 
 		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
 
@@ -143,41 +143,20 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>
+</StatsSection> -->
 
 <!-- <svelte:head>
 	<title>Kaddio - Vídeo y chat encriptados</title>
 	<meta name="description" content="Vídeo seguro hasta 500 participantes." />
 </svelte:head> -->
 
-<!-- <ModuleSection>
+<ModuleSection>
 	<span slot="title">Vídeo y chat encriptados</span>
 	<span slot="sub">Vídeo seguro hasta 500 participantes.</span>
 
-	<ModuleFeature>
-		<span slot="title">Automatisera</span>
-		<span slot="body">
-			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Interagera</span>
-		<span slot="body">
-			Det är enkelt att byta till video..
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Och du kan växa med Kaddio</span>
-		<span slot="body">
-			Kaddio Video har stöd för minst 500 deltagare samtidigt.
-		</span>
-	</ModuleFeature>
-</ModuleSection> -->
+</ModuleSection>
   
-
-<!-- <FaqSection>
+<FaqSection>
 	<span slot="title">Funciones</span>
 
 	<Qa>
@@ -239,4 +218,4 @@
 
 
 
-</FaqSection> -->
+</FaqSection>
