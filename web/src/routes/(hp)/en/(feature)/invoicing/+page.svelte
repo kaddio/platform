@@ -54,16 +54,18 @@
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text</span>
 	<span slot="title">Why X uses Kaddio Invoicing</span>
 	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Contents</span>
 	<span slot="title">This is Kaddio Invoicing</span>
-	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="body">With Kaddio Invoicing you send invoices from bookings or medical record in an 
+		easy way. Handle all tasks in the same system and spend more time on your clients.
+	</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Save time</span>
@@ -96,7 +98,7 @@
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
-<QuotesSection>
+<!-- <QuotesSection>
     <span slot="title">
         What our customers say about Kaddio Invoicing       
     </span>
@@ -108,14 +110,19 @@
             Ulrika Hiscoke <cite>Leg Psykolog, medicine doktor <a href="https://arbor.kaddio.com" target="_blank" rel="noreferrer">Arbor Psykologi</a></cite>
         </span>
     </Quote>
-    
+	<Quote>
+        Ett funktionellt och enkelt journalsystem, med snabb och proffsig support. Fungerar perfekt med samlingsräkning.
+        <span slot="quoted">
+            Kim Olausson <cite>Leg Fysioterapeut <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+        </span>
+    </Quote> 
 
-    
-</QuotesSection>
 
-<ProductPricingSection></ProductPricingSection>
+</QuotesSection> -->
 
-<StatsSectionWithText>
+<!-- <ProductPricingSection></ProductPricingSection> -->
+
+<!-- <StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">users</span>
 		<span slot="sub">47 000+</span>
@@ -130,7 +137,7 @@
 		<span slot="title">video calls per month</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText> -->
 
 
 <StatsSection>
