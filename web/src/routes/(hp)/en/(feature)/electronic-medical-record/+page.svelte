@@ -123,41 +123,47 @@
        What our customers say about Kaddio EMR       
     </span>
 
-    <Quote>
-        Din Psykolog have had a lot of help from Kaddio in our work in developing the digital care of the future, and they have been very accommodating in the development of specific functions we needed. We can warmly recommend Kaddio!
+	<Quote>
+        At Din Psykolog, we have had great help from Kaddio in our work with developing digital healthcare for the future, and they have been most accommodating with developing specific functions for our needs. We warmly recommend Kaddio!
         <span slot="quoted">
             Ramzi Jelassi <cite>Founder  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
         </span>
     </Quote>
+    
     <Quote>
-        The program has everything I need and it is easy to use and adapt to my needs. I can really recommend this EMR system.
+        Kaddio is user friendly, functional and suits our business perfectly!
         <span slot="quoted">
-            Sofia Viotti <cite>Lic psychologist, Compassionfocus <a href="https://www.sofiaviotti.com/" target="_blank" rel="noreferrer">Sofia Viotti</a></cite>
+            Jimmy Lundqvist <cite>CEO IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
     </Quote>
     
     <Quote>
-        Kaddio is user-friendly, functional and fits our business perfectly!
+        I have the same demand for my medical records program as for my treatments: Efficiency. That is why I use Kaddio.
         <span slot="quoted">
-            Jimmy Lundqvist <cite>Manager IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+            Jonas Evander <cite>Lic. Psychologist <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
         </span>
     </Quote>
 
-	<Quote>
-        I have the same requirements for my EMR system as for my treatments: efficiency. That is why I use Kaddio.
+    <Quote>
+        Kaddio is my chosen program for medical records due to its ease of use. The program is easy to navigate and adjust to my needs, both for medical records and for time bookings.
         <span slot="quoted">
-            Jonas Evander <cite>Lic psychologist  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
-        </span>
-    </Quote>
-	<Quote>
-        Kaddio is the EMR system I have chosen due to the simplicity. The program is easy to navigate 
-		and smoothly adapts to my needs, for medical records as well as for bookings.
-        <span slot="quoted">
-            Amanda Follin <cite>Certified massage therapist <a href="https://endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+            Amanda Follin <cite>Lic. Massage Therapist <a href="https://www.endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
         </span>
     </Quote>
 
-    
+    <Quote>
+        The program has everything I need and is easy to adjust to my needs. I can really recommend this program for medical records.
+        <span slot="quoted">
+            Sofia Viotti <cite>Lic. Psychologist Compassionfocus
+        </span>
+    </Quote>
+
+    <Quote>
+        A functional and easy program for medical records, with a quick and professional support team.
+        <span slot="quoted">
+            Kim Olausson <cite>Lic. Physiotherapist <a href="https://fysiokompassen.se" target="_blank" rel="noreferrer">Fysiokompassen</a></cite>
+        </span>
+    </Quote>    
 </QuotesSection>
 
 <!-- <ProductPricingSection></ProductPricingSection> -->
