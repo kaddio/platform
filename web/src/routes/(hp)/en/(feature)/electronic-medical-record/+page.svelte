@@ -18,6 +18,7 @@
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 	import SalesSection from "$components/salesSection.svelte";
+	import SalesSectionEn from "$components/salesSectionEn.svelte";
 
 </script>
 
@@ -200,6 +201,8 @@
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
+
+<SalesSectionEn></SalesSectionEn>
 
 <!-- <SalesSection></SalesSection> -->
 
