@@ -118,7 +118,7 @@
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
-<!-- <QuotesSection>
+<QuotesSection>
     <span slot="title">
        What our customers say about Kaddio EMR       
     </span>
@@ -130,9 +130,9 @@
         </span>
     </Quote>
     <Quote>
-        The program has everything I need and it is easy to use and adapt to my needs. I can really recommend this journal system.
+        The program has everything I need and it is easy to use and adapt to my needs. I can really recommend this EMR system.
         <span slot="quoted">
-            Sofia Viotti <cite>Psykologist, Compassionfocus <a href="https://www.sofiaviotti.com/" target="_blank" rel="noreferrer">Sofia Viotti</a></cite>
+            Sofia Viotti <cite>Lic psychologist, Compassionfocus <a href="https://www.sofiaviotti.com/" target="_blank" rel="noreferrer">Sofia Viotti</a></cite>
         </span>
     </Quote>
     
@@ -142,8 +142,23 @@
             Jimmy Lundqvist <cite>Manager IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
         </span>
     </Quote>
+
+	<Quote>
+        I have the same requirements for my EMR system as for my treatments: efficiency. That is why I use Kaddio.
+        <span slot="quoted">
+            Jonas Evander <cite>Lic psychologist  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+	<Quote>
+        Kaddio is the EMR system I have chosen due to the simplicity. The program is easy to navigate 
+		and smoothly adapts to my needs, for medical records as well as for bookings.
+        <span slot="quoted">
+            Amanda Follin <cite>Certified massage therapist <a href="https://endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+        </span>
+    </Quote>
+
     
-</QuotesSection> -->
+</QuotesSection>
 
 <!-- <ProductPricingSection></ProductPricingSection> -->
 
