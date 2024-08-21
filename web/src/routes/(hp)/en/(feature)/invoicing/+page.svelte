@@ -17,6 +17,7 @@
     import StatsSectionPart from "$components/statsSectionPart.svelte";
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSectionEn from "$components/salesSectionEn.svelte";
 </script>
 
 <svelte:head>
@@ -158,6 +159,8 @@
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
+
+<SalesSectionEn></SalesSectionEn>
 
 <!-- <ModuleSection>
 	<span slot="title">Kaddio Invoicing</span>
