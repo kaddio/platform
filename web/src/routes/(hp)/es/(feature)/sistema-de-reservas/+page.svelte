@@ -23,10 +23,17 @@
     <meta name="robots" content="noindex">
 
 	<title>Kaddio - Sistema de reservas</title>
-	<meta name="description" content="Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio." />
+	<meta name="description" content="Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar 
+	a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/calendario-es.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSection>
+	<span slot="title">Sistema de reservas</span>
+	<span slot="sub">Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar 
+		a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio.</span>
+</ModuleSection>
+
+<!-- <ModuleSectionWithImage src="/img/kaddio-screenshots/calendario-es.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Sistema de reservas</span>
 	<span slot="title">Kaddio Sistema de reservas</span>
 	<span slot="sub">
@@ -52,22 +59,22 @@
 			Skapa mallar för återkommande händelser i kalendern och spara tid. 
 		</span>
 	</ModuleFeatureWithIcon>
-</ModuleSectionWithImage>
+</ModuleSectionWithImage> -->
   
-<ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text och bild</span>
 	<span slot="title">Därför använder X Kaddio Bokning</span>
 	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
-<ModuleOverviewFeaturesSection>
+<!-- <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Bokning</span>
 	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är ensam behandlare eller del av ett större företag.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Planera</span>
-		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
 
 		<ModuleOverviewFeature>Kalender och tidsbokning i samma vy</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Obegränsat antal behandlingsformer</ModuleOverviewFeature>
@@ -82,7 +89,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Samarbeta</span>
-		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
+		<span slot="body">Funktioner för göra samarbetet smidigare</span>
 
 		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Stöd för verksamhet online och på flera platser</ModuleOverviewFeature>
@@ -92,7 +99,7 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Effektivisera</span>
-		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+		<span slot="body">Funktioner för att spara tid</span>
 
 		<ModuleOverviewFeature>Mallar för arbetstid</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen tidsbokning på hemsida</ModuleOverviewFeature>
@@ -103,9 +110,9 @@
 		<ModuleOverviewFeature>Automatiska fakturaunderlag ihop med modulen Fakturering</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
-</ModuleOverviewFeaturesSection>  
+</ModuleOverviewFeaturesSection>   -->
 
-<QuotesSection>
+<!-- <QuotesSection>
     <span slot="title">
         Vad våra kunder säger om <br>Kaddio Bokning       
     </span>
@@ -117,11 +124,11 @@
         </span>
     </Quote>
     
-</QuotesSection>
+</QuotesSection> -->
 
-<ProductPricingSection></ProductPricingSection>
+<!-- <ProductPricingSection></ProductPricingSection> -->
 
-<StatsSectionWithText>
+<!-- <StatsSectionWithText>
     <StatsSectionWithTextPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -136,9 +143,9 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
     </StatsSectionWithTextPart>
-</StatsSectionWithText>
+</StatsSectionWithText> -->
 
-<StatsSection>
+<!-- <StatsSection>
 	<StatsSectionPart>
 		<span slot="title">användare</span>
 		<span slot="sub">47 000+</span>
@@ -151,7 +158,7 @@
 		<span slot="title">videomöten per månad</span>
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
-</StatsSection>
+</StatsSection> -->
 
 <!-- <svelte:head>
 	<title>Kaddio - Sistema de reservas</title>
@@ -185,7 +192,7 @@
 </ModuleSection> -->
   
 
-<!-- <FaqSection>
+<FaqSection>
 	<span slot="title">Funciones</span>
 
 	<Qa>
@@ -281,4 +288,4 @@
 
 
 
-</FaqSection> -->
+</FaqSection>
