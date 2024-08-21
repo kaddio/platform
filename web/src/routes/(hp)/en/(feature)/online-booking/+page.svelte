@@ -15,6 +15,7 @@
     import StatsSectionPart from "$components/statsSectionPart.svelte";
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSectionEn from "$components/salesSectionEn.svelte";
 </script>
 
 <svelte:head>
@@ -143,6 +144,8 @@
     </Quote>
     
 </QuotesSection>
+
+<SalesSectionEn></SalesSectionEn>
 
 <!-- <ProductPricingSection></ProductPricingSection> -->
 
