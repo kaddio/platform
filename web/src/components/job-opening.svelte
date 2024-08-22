@@ -3,8 +3,8 @@
     <dl class="relative flex flex-wrap gap-x-3">
         <dt class="sr-only">Role</dt>
         <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-        <a href="mailto:david@kaddio.com?subject=frontend%20dev&body=Hi! I found this job on your website and I'm interested...">
-            Senior frontend developer
+        <a href="mailto:david@kaddio.com?subject=Job opening&body=Hi! I found this job on your website and I'm interested...">
+            <slot name="title" />
             <span class="absolute inset-0" aria-hidden="true"></span>
         </a>
         </dd>
