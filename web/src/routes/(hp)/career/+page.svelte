@@ -57,7 +57,7 @@
               <dt class="sr-only">Role</dt>
               <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
                 <a href="mailto:david@kaddio.com?subject=frontend%20dev&body=Hi! I found this job on your website and I'm interested...">
-                  Frontend developer
+                  Senior Frontend developer
                   <span class="absolute inset-0" aria-hidden="true"></span>
                 </a>
               </dd>
