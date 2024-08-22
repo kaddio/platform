@@ -31,15 +31,16 @@
         <h3 class="sr-only">Job openings</h3>
         <ul class="-my-8 divide-y divide-gray-100">
           <JobOpening>
+            <span slot="title">Senior frontend developer</span>
             <span slot="desc">You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things.</span>
             <span slot="salary">50 000 SEK</span>
             <span slot="place">Göteborg, Sweden</span>
           </JobOpening>
         </ul>
 
-        <!-- <div class="mt-8 flex border-t border-gray-100 pt-8">
-          <a href="#" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings <span aria-hidden="true">&rarr;</span></a>
-        </div> -->
+        <div class="mt-8 flex border-t border-gray-100 pt-8">
+          <a href="https://www.linkedin.com/jobs/kaddio-jobs-worldwide" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings <span aria-hidden="true">&rarr;</span></a>
+        </div>
 
       </div>
     </div>
