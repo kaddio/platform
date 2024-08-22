@@ -39,7 +39,7 @@
 
           <JobOpening>
             <span slot="title">Senior Sales</span>
-            <span slot="desc">Kaddio has grown largely without active sales so there is a vast potential in this job opening. Help us grow and reach an international market. You are a doer with real experience in sales, you know how to sell a mature and complex product to new markets.</span>
+            <span slot="desc">Kaddio has grown largely without active sales so there is a vast potential in this job opening. Help us grow and reach an international market. You are a doer with real experience in sales, you know how to sell a mature and complex product to both an existing market and new markets.</span>
             <span slot="salary">Provision based</span>
             <span slot="place">Göteborg, Sweden or Anywhere</span>
           </JobOpening>
