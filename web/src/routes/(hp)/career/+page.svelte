@@ -4,6 +4,7 @@
   import Footer from '$components/footer.svelte';
   import LdTag from '$lib/components/LDTag.svelte';
   import { jobPostingSchema } from '$lib/json-ld';
+    import JobOpening from '$components/job-opening.svelte';
   setContext('lang', 'en');
   setContext('hideLangBanner', true);
 </script>
@@ -29,29 +30,11 @@
       <div class="w-full lg:max-w-xl lg:flex-auto">
         <h3 class="sr-only">Job openings</h3>
         <ul class="-my-8 divide-y divide-gray-100">
-
-          <li class="py-8">
-            <dl class="relative flex flex-wrap gap-x-3">
-              <dt class="sr-only">Role</dt>
-              <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                <a href="mailto:david@kaddio.com?subject=frontend%20dev&body=Hi! I found this job on your website and I'm interested...">
-                  Senior frontend developer
-                  <span class="absolute inset-0" aria-hidden="true"></span>
-                </a>
-              </dd>
-              <dt class="sr-only">Description</dt>
-              <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things.</dd>
-              <dt class="sr-only">Salary</dt>
-              <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">50 000 SEK</dd>
-              <dt class="sr-only">Location</dt>
-              <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                  <circle cx="1" cy="1" r="1" />
-                </svg>
-                Göteborg, Sweden
-              </dd>
-            </dl>
-          </li>
+          <JobOpening>
+            <span slot="desc">You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things.</span>
+            <span slot="salary">50 000 SEK</span>
+            <span slot="place">Göteborg, Sweden</span>
+          </JobOpening>
         </ul>
 
         <!-- <div class="mt-8 flex border-t border-gray-100 pt-8">
