@@ -64,7 +64,7 @@
               <dt class="sr-only">Description</dt>
               <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things.</dd>
               <dt class="sr-only">Salary</dt>
-              <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">30 000+ SEK</dd>
+              <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">30 000 + SEK</dd>
               <dt class="sr-only">Location</dt>
               <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
                 <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
@@ -84,7 +84,7 @@
                 </a>
               </dd>
               <dt class="sr-only">Description</dt>
-              <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Ansvara för försäljning, hitta nya marknader...</dd>
+              <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Responsible for sales, finding new markets...</dd>
               <dt class="sr-only">Salary</dt>
               <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">40 000 + SEK</dd>
               <dt class="sr-only">Location</dt>
