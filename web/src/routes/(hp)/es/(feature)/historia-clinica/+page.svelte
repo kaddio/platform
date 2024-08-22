@@ -3,10 +3,25 @@
 	import ModuleFeature from "$components/moduleFeature.svelte";
 	import ModuleSection from "$components/moduleSection.svelte";
 	import FaqSection from "$components/faqSection.svelte";
-
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import ProductPricingSection from "$components/productPricingSection.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 </script>
 
 <svelte:head>
+	<meta name="robots" content="noindex">
+
 	<title>Kaddio - Historia clínica</title>
 	<meta name="description" content="Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades." />
 </svelte:head>
@@ -20,16 +35,16 @@
 		<span slot="body">
 			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
 		</span>
-	</ModuleFeature> -->
-<!-- 
+	</ModuleFeature>
+
 	<ModuleFeature>
 		<span slot="title">Flexibelt.</span>
 		<span slot="body">
 			Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.
 Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
-	</ModuleFeature> -->
+	</ModuleFeature>
 
-	<!-- <ModuleFeature>
+	<ModuleFeature>
 		<span slot="title">Säkert.</span>
 		<span slot="body">
 			Behörighetsstyrning
@@ -37,9 +52,140 @@ Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy all
 		</span>
 	</ModuleFeature> -->
 
-
-	
 </ModuleSection>
+
+<!-- <ModuleSectionWithImage src="/img/kaddio-screenshots/historia-clinica-es.png" alt="Kaddio Hístoria clinica">
+	<span slot="h1">Historia clínica</span>
+	<span slot="title">Kaddio Historia clínica</span>
+	<span slot="sub">
+		Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinarias de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades.
+	</span>
+
+	<ModuleFeatureWithIcon icon="pen">
+		<span slot="title">Documenta.</span>
+		<span slot="body">
+			Escribe el historia clinica de manera segura, donde y cuando quieras. Olvídate del manejo de papeles, carpetas y copias de seguridad.
+		</span> 
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="sliders">
+		<span slot="title">Adaptar.</span>
+		<span slot="body">
+			Diseñar plantillas para asientos de diario basados ​​en las necesidades del negocio. 
+			Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="gamepad-modern">
+		<span slot="title">Verificar.</span>
+		<span slot="body">
+			Controlar el acceso a clientes y registros. Tú decides quién obtiene qué.
+			Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad.
+		</span>
+	</ModuleFeatureWithIcon>
+</ModuleSectionWithImage> -->
+
+<!--<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Silvia Triay at desk">
+	<span slot="pre">Silvia Tiray, osteopat @ Osteopatía Mallorca, Spanien</span>
+	<span slot="title">Därför använder Silvia <br>Kaddio Journal</span>
+	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
+		<br> 
+		<br>Jag använder Kaddio för att organisera mina journalanteckningar och patientbesök bättre, och framför allt för att få mer tid till mina hobbies och min familj. Jag kan njuta mer av min fritid."</cite>
+		<br>
+		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">Se mer om Silvias resa från analog till digital journalföring →</a>
+	</span>
+</ProductFeatureImageOnLeft>-->
+
+<!-- <ModuleOverviewFeaturesSection>
+	<span slot="pre">Innehåll</span>
+	<span slot="title">Esta es la Historia Clínica Kaddio.</span>
+	<span slot="body">Con Kaddio Journal, lleva un diario seguro y fluido de la manera que se adapta a su negocio. Kaddio gestiona el almacenamiento de datos. Tienes tiempo para otras cosas.</span>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Documenta</span>
+		<span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span>
+
+		<ModuleOverviewFeature>Mantenimiento de registros cifrados</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Imágenes con función de dibujo.</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Carga de archivos</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export av journal eller enskilda anteckning som PDF</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Adaptar</span>
+		<span slot="body">Funktioner för göra samarbetet smidigare</span>
+
+		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för malltext</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för fraser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Uppladdning av egna bilder att rita på</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fri utformning av egna formulär</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Verificar</span>
+		<span slot="body">Funktioner för att spara tid</span>
+
+		<ModuleOverviewFeature>Behörighetsstyrning för journaler</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signering och redigering av anteckningar med full historik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Listning av osignerade anteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Logg öven läsning och redigering av journaler</ModuleOverviewFeature>
+		
+
+	</ModuleOverviewFeaturesSegment>
+
+</ModuleOverviewFeaturesSection>  -->
+
+<!-- <QuotesSection>
+    <span slot="title">
+        Lo que dicen nuestros clientes sobre el módulo Histora clinica       
+    </span>
+
+    <Quote>
+        Tengo los mismos requisitos para mi sistema de registro que para mis tratamientos: eficiencia. Por eso uso Kaddio.
+        <span slot="quoted">
+            Jonas Evander <cite>Psicólogo, Afobia  <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+    
+</QuotesSection> -->
+
+<!-- <ProductPricingSection></ProductPricingSection> -->
+
+<!-- <StatsSectionWithText>
+    <StatsSectionWithTextPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+    </StatsSectionWithTextPart>
+</StatsSectionWithText> -->
+
+<!-- <StatsSection>
+	<StatsSectionPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+	</StatsSectionPart>
+</StatsSection> -->
+
   
 
 <FaqSection>

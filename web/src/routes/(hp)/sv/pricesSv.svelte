@@ -31,5 +31,6 @@
 
 <Price currency="SEK" {modules}>
     <span slot="title">Betala bara för vad du behöver</span>
-    <span slot="sub">Ingen startkostnad. 1 månad kostnadsfritt.</span>
+    <span slot="sub">Ingen startkostnad. 1 månad kostnadsfritt. </span>
+    
 </Price>

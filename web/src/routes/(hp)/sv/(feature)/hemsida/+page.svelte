@@ -23,87 +23,82 @@
 <svelte:head>
     <meta name="robots" content="noindex">
 
-	<title>Exempel med allt du behöver</title>
+	<title>Kaddio Hemsida</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
-	<span slot="h1">Modulnamn</span>
-	<span slot="title">Kaddio Modulnamn</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-sv.png" alt="Kaddio hemsida och söksida">
+	<span slot="h1">Hemsida och söksida</span>
+	<span slot="title">Kaddio Hemsida</span>
 	<span slot="sub">
-		Superöversiktlig beskrivning av allt modulen gör med peppiga ord som komplett, smidig, effektiv, etc. Riktat till dig som kund.</span>
+		Kaddio Hemsida är en automatiskt genererad hemsida för din organisation och samtidigt en sökfunktion för blivande klienter. 
+		Modulen ingår i abonnemanget.</span>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Nyckeverb 1</span>
+	<ModuleFeatureWithIcon icon="hand-wave">
+		<span slot="title">Presentera.</span>
 		<span slot="body">
-			Kort text som beskriver hur du som användare gör och hur det löser alla dina problem. Starta med verb. Ej för detaljerat.
+			Introducera klienter till organisationen och visa lediga tider.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Samarbeta</span>
+	<ModuleFeatureWithIcon icon="globe">
+		<span slot="title">Interagera.</span>
 		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
+			Delta på Kaddios söksida och nå en större publik.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera</span>
+	<ModuleFeatureWithIcon icon="circle-up">
+		<span slot="title">Optimera.</span>
 		<span slot="body">
-			Skapa mallar och spara tid. 
+			Öka organisationens synlighet med inställningar för SEO.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
 	<span slot="pre">Inspirerande text</span>
-	<span slot="title">Därför använder X Kaddio Modulnamn</span>
+	<span slot="title">Därför använder X Kaddio Hemsida</span>
 	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Onlinebokning</span>
-	<span slot="body">Kort intro till allt denna modul innehållerKaddio kommer fullsmackat med grejer, för att ge dig en härlig överblick så har vi gjort en tabell. Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+	<span slot="title">Detta är Kaddio Hemsida</span>
+	<span slot="body">Kort intro till allt denna modul innehåller</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Nyckelverb 1 från första sektionen</span>
+		<span slot="title">Presentera</span>
 		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
 
 		<ModuleOverviewFeature>Lista funktioner: "Detta har vi". Fakta. Mer detaljerat. Skriv neutralt och på -ing-form</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öppen klientbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>SMS-påminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behandlingsformer</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
+		<span slot="title">Interagera</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
 		<ModuleOverviewFeature>Platser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Loggning</ModuleOverviewFeature>	</ModuleOverviewFeaturesSegment>
+	
+	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Optimera</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Tidsoptimering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fakturering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa bokning på din hemsida</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Exempelmodulen       
+        Vad våra kunder säger om Hemsida       
     </span>
 
     <Quote>

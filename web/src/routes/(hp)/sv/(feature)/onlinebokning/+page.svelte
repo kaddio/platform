@@ -5,44 +5,185 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-
+    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import ProductPricingSection from "$components/productPricingSection.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSection from "$components/salesSection.svelte";
 </script>
 
 <svelte:head>
+    <meta name="robots" content="noindex">
+
 	<title>Onlinebokning med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Onlinebokning</span>
-	<span slot="title">Kaddio Kalender och Tidsbokning</span>
+	<span slot="title">Kaddio Bokning</span>
 	<span slot="sub">
-		Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig. I Kaddio är kalendern även din publika bokning så att du enkelt kan hantera bokningsbara tider, möten och grupppass i samma vy.</span>
+		Kaddio Bokning är kalender och bokningssystem i ett. Hantera bokningar, gruppass och möten i samma vy och få koll på läget.</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Planera</span>
+		<span slot="title">Planera.</span>
 		<span slot="body">
-			Skapa bokningsbara tider direkt från din kalender. Konfigurera dina bokningstyper i detalj. Välj om dina kunder bokar och betalar själva eller om du tar kontroll över varje minut. 
+			Skapa bokningsbara tider direkt från din kalender. Låt kunderna boka och betala på egen hand eller styr allt själv.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Samarbeta</span>
+		<span slot="title">Samarbeta.</span>
 		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
+			Administrera mötesbokning och rumsbokning för hela organisationen.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Effektivisera.</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid. 
+			Skapa mallar för återkommande händelser i kalendern och spara tid. 
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
   
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+	<span slot="pre">Inspirerande text och bild</span>
+	<span slot="title">Därför använder X Kaddio Bokning</span>
+	<span slot="body">Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+</ProductFeatureImageOnLeft> -->
 
-<FaqSection>
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Innehåll</span>
+	<span slot="title">Detta är Kaddio Bokning</span>
+	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är ensam behandlare eller del av ett större företag.</span>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Planera</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+
+		<ModuleOverviewFeature>Kalender och tidsbokning i samma vy</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Obegränsat antal behandlingsformer</ModuleOverviewFeature>
+
+		<ModuleOverviewFeature>Bokning med mobilt BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Påminnelser via e-post och SMS</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Formulär vid bokning</ModuleOverviewFeature>
+		
+		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Samarbeta</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
+
+		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för verksamhet online och på flera platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Personalliggare</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Effektivisera</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+
+		<ModuleOverviewFeature>Mallar för arbetstid</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Öppen tidsbokning på hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Ankomstregistrering</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Dagrapporter</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag ihop med modulen Fakturering</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
+
+<QuotesSection>
+    <span slot="title">
+        Vad våra kunder säger om <br>Kaddio Bokning       
+    </span>
+
+	<Quote>
+        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
+        <span slot="quoted">
+            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
+        </span>
+    </Quote>
+    
+    <Quote>
+        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
+        <span slot="quoted">
+            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+        </span>
+    </Quote>
+    
+    <Quote>
+        Jag har samma krav på mitt journalföringssystem som mina behandlingar: effektivitet. Därför använder jag Kaddio.
+        <span slot="quoted">
+            Jonas Evander <cite>Leg Psykolog <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+    <Quote>
+        Kaddio är det journalprogram jag valt pga enkelheten. Programmet är enkelt att navigera och fungerar smidigt att anpassa efter mina behov, både i journalföring och tidsbokning.
+        <span slot="quoted">
+            Amanda Follin <cite>Certifierad massageterapeut <a href="https://www.endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+        </span>
+    </Quote>
+
+    <Quote>
+        Programmet har allt jag behöver och det är lätt att använda och anpassa efter mina behov. Jag kan verkligen rekommendera detta journalsystem.
+        <span slot="quoted">
+            Sofia Viotti <cite>Leg Psykolog Compassionfocus
+        </span>
+    </Quote>
+    
+</QuotesSection>
+
+<!-- <ProductPricingSection></ProductPricingSection> -->
+
+<!-- <StatsSectionWithText>
+    <StatsSectionWithTextPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+    </StatsSectionWithTextPart>
+</StatsSectionWithText> -->
+
+<StatsSection>
+	<StatsSectionPart>
+		<span slot="title">användare</span>
+		<span slot="sub">47 000+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">bokningar per dygn</span>
+		<span slot="sub">1300+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">videomöten per månad</span>
+		<span slot="sub">8500+</span>
+	</StatsSectionPart>
+</StatsSection>
+
+<SalesSection></SalesSection>
+
+<!-- <FaqSection>
 	<span slot="title">Detaljer</span>
 
 	<Qa>
@@ -155,4 +296,4 @@
 		</span>
 	</Qa>
 
-</FaqSection>
+</FaqSection> -->

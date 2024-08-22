@@ -3,45 +3,185 @@
 	import FaqSection from "$components/faqSection.svelte";
 	import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
 	import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-
+    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import ProductPricingSection from "$components/productPricingSection.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSectionEn from "$components/salesSectionEn.svelte";
 </script>
 
 <svelte:head>
+	<meta name="robots" content="noindex">
+
 	<title>Kaddio - Time booking and calendar</title>
 	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/booking-overview-en.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Online booking</span>
-	<span slot="title">Kaddio calendar and booking</span>
+	<span slot="title">Kaddio Booking</span>
 	<span slot="sub">
-		Easy-to-use time booking and online payment that does everything you expect. In Kaddio, the calendar is also your public booking so that you can easily manage bookable times, meetings and group sessions in the same view.
+		Kaddio Booking is your all-in-one calendar and booking system. Manage bookings, meetings and group sessions in the same view and get sorted.
 	</span>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Plan</span>
+		<span slot="title">Plan.</span>
 		<span slot="body">
-			Create bookable times directly from your calendar. Configure your booking types in detail. Choose whether your customers book and pay themselves or if you take control of every minute.
+			Create bookable times directly from your calendar. Let your clients book and pay themselves or take control of everything.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Collaborate</span>
+		<span slot="title">Collaborate.</span>
 		<span slot="body">
-			Use the calendar to schedule meetings and easily choose who should be involved. Decide for yourself which colleagues should see what.				
+			Schedule meetings and rooms for the entire organization.				
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Streamline</span>
 		<span slot="body">
-			Do you have recurring events in the calendar? Create templates and save time.
+			Create templates for recurring events in your calendar and save time.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
-  
 
-<FaqSection>
+<!-- <ProductFeatureImageOnLeft src="/img/ana-with-skeleton.png" alt="Ana Casanovas is giving a treatment">
+	<span slot="pre">Inspirerande text</span>
+	<span slot="title">Why X uses Kaddio Booking</span>
+	<span slot="body">Beskrivande text med exempel från verklig kund hur denna modul hjälper just dem i sitt arbete. Distinctio et nulla eum soluta et neque labore quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</span>
+</ProductFeatureImageOnLeft> -->
+
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Booking</span>
+	<span slot="body">Kaddio Booking helps you plan all activities of the organization in an 
+		efficient and comprehensable way, whether you are self-employed or part of a 
+		big company.</span>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Plan</span>
+		<!-- <span slot="body">Underrubrik, utkommenterad för nu.</span> -->
+
+		<ModuleOverviewFeature>Calendar and booking in the same view</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Unlimited number of treatment types</ModuleOverviewFeature>
+		
+		<!-- <ModuleOverviewFeature>Booking with e-ID</ModuleOverviewFeature> -->
+		<ModuleOverviewFeature>Reminders via email and texts</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Forms at booking</ModuleOverviewFeature>
+
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Collaborate</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
+
+		<ModuleOverviewFeature>Scheduling of meetings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for online businesses and multiple locations</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Staff register</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Streamline</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+
+		<ModuleOverviewFeature>Templates for working hours</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Public booking for clients</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Payment at booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Arrival registration</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Waiting lists</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Z reports</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automated invoicing information with the module Invoicing</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
+
+<QuotesSection>
+    <span slot="title">
+        What our customers say about Kaddio Booking      
+    </span>
+
+    <Quote>
+        At Din Psykolog, we have had great help from Kaddio in our work with developing digital healthcare for the future, and they have been most accommodating with developing specific functions for our needs. We warmly recommend Kaddio!
+        <span slot="quoted">
+            Ramzi Jelassi <cite>Founder  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
+        </span>
+    </Quote>
+    
+    <Quote>
+        Kaddio is user friendly, functional and suits our business perfectly!
+        <span slot="quoted">
+            Jimmy Lundqvist <cite>CEO IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
+        </span>
+    </Quote>
+    
+    <Quote>
+        I have the same demand for my medical records program as for my treatments: Efficiency. That is why I use Kaddio.
+        <span slot="quoted">
+            Jonas Evander <cite>Lic. Psychologist <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
+        </span>
+    </Quote>
+
+    <Quote>
+        Kaddio is my chosen program for medical records due to its ease of use. The program is easy to navigate and adjust to my needs, both for medical records and for time bookings.
+        <span slot="quoted">
+            Amanda Follin <cite>Lic. Massage Therapist <a href="https://www.endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
+        </span>
+    </Quote>
+
+    <Quote>
+        The program has everything I need and is easy to adjust to my needs. I can really recommend this program for medical records.
+        <span slot="quoted">
+            Sofia Viotti <cite>Lic. Psychologist Compassionfocus
+        </span>
+    </Quote>
+    
+</QuotesSection>
+
+<SalesSectionEn></SalesSectionEn>
+
+<!-- <ProductPricingSection></ProductPricingSection> -->
+
+<!-- <StatsSectionWithText>
+    <StatsSectionWithTextPart>
+		<span slot="title">users</span>
+		<span slot="sub">47 000+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">bookings per day</span>
+		<span slot="sub">1300+</span>
+    </StatsSectionWithTextPart>
+
+    <StatsSectionWithTextPart>
+		<span slot="title">video meetings per month</span>
+		<span slot="sub">8500+</span>
+    </StatsSectionWithTextPart>
+</StatsSectionWithText> -->
+
+<StatsSection>
+	<StatsSectionPart>
+		<span slot="title">users</span>
+		<span slot="sub">47 000+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">bookings per day</span>
+		<span slot="sub">1300+</span>
+	</StatsSectionPart>
+	<StatsSectionPart>
+		<span slot="title">video meetings per month</span>
+		<span slot="sub">8500+</span>
+	</StatsSectionPart>
+</StatsSection>
+
+<!-- <FaqSection>
 	<span slot="title">Details</span>
 
 	<Qa>
@@ -57,14 +197,14 @@
 			Allow clients to book their own appointments on a public web page.
 		</span>
 	</Qa>
-<!--
+
 	<Qa>
 		<span slot="q">Bokning med Mobilt BankID</span>
 		<span slot="a">
 			Klienten loggar in i Kaddio med Mobilt BankID för att kunna boka tid. Passar dig som vill säkerställa identiteten på den som bokar.
 		</span>
 	</Qa>
--->
+
 	<Qa>
 		<span slot="q">Text reminders</span>
 		<span slot="a">
@@ -139,14 +279,14 @@
 			Schedule your rooms. Kaddio ensures that treatments can only be booked if there are available rooms.
 		</span>
 	</Qa>
-<!--
+
 	<Qa>
 		<span slot="q">Personalliggare</span>
 		<span slot="a">
 			Kaddio kan användas som digital personalliggare genom Arbetstid i Kalendern, med hjälp av Loggning uppfylls även Skatteverkets regler kring kontroll.
 		</span>
 	</Qa>
--->
+
 	<Qa>
 		<span slot="q">Logs</span>
 		<span slot="a">
@@ -154,4 +294,4 @@
 		</span>
 	</Qa>
 
-</FaqSection>
+</FaqSection> -->
