@@ -2,6 +2,7 @@
 <script>
 	import Quote from "$components/quote.svelte";
 	import QuotesSection from "$components/quotesSection.svelte";
+    import QuoteSvRamzi from "./quote-sv-ramzi.svelte";
 </script>
 
 
@@ -10,15 +11,8 @@
         Läs vad några av våra 2000 kunder tycker om Kaddio        
     </span>
 
-    <Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
-        <span slot="quoted">
-            Ramzi Jelassi
-        </span>
-        <span slot="author">
-            Grundare, <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a>
-        </span>
-    </Quote>
+    <QuoteSvRamzi />
+
     <Quote>
         Det är ett rent nöje att fakturera med kaddio! Så smidigt och tydligt. Och så gör det ju skillnad att det är en snygg miljö också, mina andra program har sett ut som ... 😉. Tack för allt ni gör, min jobbdag blir så mycket härligare i kaddio!
         <span slot="quoted">
