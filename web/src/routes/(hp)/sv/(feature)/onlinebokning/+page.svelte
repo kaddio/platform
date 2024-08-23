@@ -19,6 +19,11 @@
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 	import SalesSection from "$components/salesSection.svelte";
 	import ContactDanielSv from "../../contactDanielSv.svelte";
+	import QuoteSvAmanda from "../../quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "../../quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "../../quote-sv-jonas.svelte";
+    import QuoteSvSofia from "../../quote-sv-sofia.svelte";
+
 </script>
 
 <svelte:head>
@@ -102,39 +107,13 @@
         Vad våra kunder säger om <br>Kaddio Bokning       
     </span>
 
-	<Quote>
-        Vi på Din Psykolog har haft stor hjälp av Kaddio i vårt arbete i att utveckla framtidens digitala vård, och de har varit väldigt tillmötesgående i utvecklingen av specifika funktioner vi behövt. Vi kan varmt rekommendera Kaddio!
-        <span slot="quoted">
-            Ramzi Jelassi <cite>Grundare  <a href="https://dinpsykolog.se" target="_blank" rel="noreferrer">Din Psykolog</a></cite>
-        </span>
-    </Quote>
+    <QuoteSvJimmy />
     
-    <Quote>
-        Kaddio är användarvänligt, funktionellt och passar vår verksamhet perfekt!
-        <span slot="quoted">
-            Jimmy Lundqvist <cite>Chef IKSU fysio <a href="https://iksu.se" target="_blank" rel="noreferrer">IKSU</a></cite>
-        </span>
-    </Quote>
-    
-    <Quote>
-        Jag har samma krav på mitt journalföringssystem som mina behandlingar: effektivitet. Därför använder jag Kaddio.
-        <span slot="quoted">
-            Jonas Evander <cite>Leg Psykolog <a href="https://afobia.se" target="_blank" rel="noreferrer">Afobia</a></cite>
-        </span>
-    </Quote>
-    <Quote>
-        Kaddio är det journalprogram jag valt pga enkelheten. Programmet är enkelt att navigera och fungerar smidigt att anpassa efter mina behov, både i journalföring och tidsbokning.
-        <span slot="quoted">
-            Amanda Follin <cite>Certifierad massageterapeut <a href="https://www.endorfinkliniken.com" target="_blank" rel="noreferrer">Endorfinkliniken</a></cite>
-        </span>
-    </Quote>
+    <QuoteSvJonas />
 
-    <Quote>
-        Programmet har allt jag behöver och det är lätt att använda och anpassa efter mina behov. Jag kan verkligen rekommendera detta journalsystem.
-        <span slot="quoted">
-            Sofia Viotti <cite>Leg Psykolog Compassionfocus
-        </span>
-    </Quote>
+	<QuoteSvAmanda />
+
+	<QuoteSvSofia />
     
 </QuotesSection>
 
