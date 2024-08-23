@@ -5,6 +5,8 @@
 </script>
 
 
+<!--- UPDATE COMPONENT BEFORE PUBLISHING THIS-->
+
 <QuotesSection>
     <span slot="title">
         Testimonials from some of our 2000 customers        
