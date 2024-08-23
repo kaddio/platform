@@ -54,9 +54,9 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Få kunder.</span>
+		<span slot="title">Förbättra kundflödet.</span>
 		<span slot="body">
-			Skapa bokningsbara tider direkt från din kalender. Låt kunderna boka och betala på egen hand eller styr allt själv.
+			Skapa bokningsbara tider direkt från din kalender. Styr allt själv eller låt kunderna boka och betala på egen hand.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
@@ -64,16 +64,16 @@
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Bokning</span>
-	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är ensam behandlare eller del av ett större företag.</span>
+	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är del av ett stort företag eller egenföretagare.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Samarbeta</span>
 
 		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för flera platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för verksamhet på flera adresser</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Delad kalender</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Delad kalender inom organisationen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Väntelistor för klienter på kö</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -89,7 +89,7 @@
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Få kunder</span>
+		<span slot="title">Förbättra kundflödet</span>
 
 		<ModuleOverviewFeature>Tidsbokning på hemsida</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Integration till Kuralink</ModuleOverviewFeature>
