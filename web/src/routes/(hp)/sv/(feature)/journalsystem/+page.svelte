@@ -25,6 +25,7 @@
 	import QuoteSvSofia from "../../quote-sv-sofia.svelte";
 	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
 	import ContactDanielSv from "../../contactDanielSv.svelte";
+	import PricesSv from "../../pricesSv.svelte";
 </script>
 
 <svelte:head>
@@ -116,6 +117,8 @@
 	<QuoteSvSofia />
 
 </QuotesSection>
+
+<PricesSv></PricesSv>
 
 <StatsSection>
 	<StatsSectionPart>
