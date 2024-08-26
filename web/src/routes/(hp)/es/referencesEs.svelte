@@ -18,7 +18,6 @@
         </div>
       </div>
       <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-        <Customer src={imageHandler("/customer-logos/malmo.png", {format: "auto"})} alt="Malmö Universitet"></Customer>
         <Customer src={imageHandler("/customer-logos/rfsl.png", {format: "auto"})} alt="RFSL"></Customer>
         <Customer src={imageHandler("/customer-logos/Twitch.png", {format: "auto"})} alt="Twitch"></Customer>
         <Customer src={imageHandler("/customer-logos/storasyster_ny.png", {format: "auto"})} alt="Storasyster"></Customer>
