@@ -118,8 +118,6 @@
 
 </QuotesSection>
 
-<PricesSv></PricesSv>
-
 <StatsSection>
 	<StatsSectionPart>
 		<span slot="title">användare</span>
@@ -134,5 +132,8 @@
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
+
+<PricesSv></PricesSv>
+
 
 <ContactDanielSv />
