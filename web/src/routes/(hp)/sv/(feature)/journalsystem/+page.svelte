@@ -39,30 +39,28 @@
 	<span slot="h1">Journalsystem</span>
 	<span slot="title">Kaddio Journal</span>
 	<span slot="sub">
-		Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter. 
+		Kaddio Journal har allt du behöver för att journalföra klienter och dokumentera verksamheten. 
 		Ett komplett journalsystem helt enkelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
 		<span slot="title">Dokumentera.</span>
 		<span slot="body">
-			Journalför på ett säkert sätt, där och när du vill. Slipp pappershantering, pärmar och backup.
+			Journalför på ett säkert sätt, där och när du vill. Utforma mallar för journalanteckningar utifrån verksamhetens behov.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
-		<span slot="title">Anpassa.</span>
+		<span slot="title">Följ upp.</span>
 		<span slot="body">
-			Utforma mallar för journalanteckningar utifrån verksamhetens behov. 
-			<!-- Spara tid genom att sätta upp mallar med malltexter, lägg in egna bilder att rita på samt egna kortkommandon för dina vanliga fraser. -->
+			Skicka brev och remisser. Automatisera utskick och insamling av formulär. Allt finns samlat i journalen.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="gamepad-modern">
-		<span slot="title">Kontrollera.</span>
+	<ModuleFeatureWithIcon icon="lock-keyhole">
+		<span slot="title">Säkerställ.</span>
 		<span slot="body">
-			Styr åtkomst till klienter och journaler. Du bestämmer själv vem som kommer åt vad.
-			<!-- Följ aktivitet i journaler genom Kaddios log för spårbarhet och regelefterlevnad. -->
+			Styr åtkomst till klienter och journaler. Följ aktivitet i journaler genom Kaddios loggar.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -70,36 +68,40 @@
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Journal</span>
-	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Kaddio sköter datalagringen. Du får tid över till annat.</span>
+	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Sköt allt i samma system och få tid över till annat.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dokumentera</span>
 		
-		<ModuleOverviewFeature>Krypterad journalföring</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bilder med ritfunktion</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för malltext och fraser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Uppladdning av egna bilder att rita på</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Filuppladdning i journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Export av journal eller enskilda anteckning som PDF</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bygg egna formulär</ModuleOverviewFeature>
+		
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Anpassa</span>
-		
-		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för malltext</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för fraser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Uppladdning av egna bilder att rita på</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Fri utformning av egna formulär</ModuleOverviewFeature>
+		<span slot="title">Följ upp</span>
+
+		<ModuleOverviewFeature>Automatiserade utskick och insamling av formulär</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Remisser via brev, e-post och chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export av journalanteckningar som PDF</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Översikt över bokningar, fakturor och uppgifter</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Samlingsräkning</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Kontrollera</span>
+		<span slot="title">Säkerställ</span>
 		
+		<ModuleOverviewFeature>Krypterad journalföring</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Behörighetsstyrning för journaler</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Signering och redigering av anteckningar med full historik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signering av anteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Historik för redigering av anteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Listning av osignerade anteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Logg öven läsning och redigering av journaler</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Logg över läsning och redigering av journaler</ModuleOverviewFeature>
 		
 
 	</ModuleOverviewFeaturesSegment>
