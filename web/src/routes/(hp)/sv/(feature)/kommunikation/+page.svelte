@@ -16,6 +16,15 @@
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
     import SalesSection from "$components/salesSection.svelte";
+    import QuoteSvAmanda from "../../quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "../../quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "../../quote-sv-jonas.svelte";
+	import QuoteSvKim from "../../quote-sv-kim.svelte";
+	import QuoteSvRamzi from "../../quote-sv-ramzi.svelte";
+	import QuoteSvSofia from "../../quote-sv-sofia.svelte";
+	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
+	import ContactDanielSv from "../../contactDanielSv.svelte";
+	import PricesSv from "../../pricesSv.svelte";
 </script>
 
 <svelte:head>
@@ -94,7 +103,10 @@
     <span slot="title">
         Vad våra kunder säger om Kaddio Chat och Video       
     </span>
-
+    <QuoteSvJimmy />
+    <QuoteSvJonas />
+    <QuoteSvRamzi />
+    <QuoteSvSofia />
     
 </QuotesSection>
 
@@ -113,4 +125,4 @@
 	</StatsSectionPart>
 </StatsSection>
 
-<SalesSection></SalesSection>
+<ContactDanielSv />
