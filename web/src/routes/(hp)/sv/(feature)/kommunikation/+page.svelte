@@ -42,7 +42,7 @@
 		Kaddio Chat och Video gör att du kan kommunicera och dela information säkert med klienter och kollegor. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
 	</span>
 
-	<ModuleFeatureWithIcon icon="lock">
+	<ModuleFeatureWithIcon icon="lock-keyhole">
 		<span slot="title">Säkerhetsanpassa.</span>
 		<span slot="body">
 			Kräv inloggning till videosamtal och chat med Mobilt BankID eller
@@ -50,18 +50,18 @@
 		</span> 
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="share">
-		<span slot="title">Dela information.</span>
+    <ModuleFeatureWithIcon icon="comment">
+		<span slot="title">Kommunicera.</span>
 		<span slot="body">
-			Skicka känslig information på ett säkert sätt genom krypterad chat och videosamtal.
+			Chatta och prata enskilt eller i grupp. Kaddio Video har stöd för minst 500
+            deltagare.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="seedling">
-		<span slot="title">Väx med Kaddio.</span>
+	<ModuleFeatureWithIcon icon="share">
+		<span slot="title">Dela information.</span>
 		<span slot="body">
-			Håll enskilda samtal eller stora föreläsningar. Kaddio Video har stöd för minst 500
-            deltagare samtidigt.
+			Skicka känslig information på ett säkert sätt genom krypterad chat.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -77,8 +77,17 @@
 		
         <ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
         <ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inloggning för utländska klienter med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Kryptering av all information</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inloggning för klient med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
+        
+	</ModuleOverviewFeaturesSegment>
+
+    <ModuleOverviewFeaturesSegment>
+		<span slot="title">Kommunicera</span>
+		
+		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Chat för klienter och kollegor</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Gruppchat</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -88,16 +97,7 @@
 		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
         <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
-    </ModuleOverviewFeaturesSegment>
-
-	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Väx med Kaddio</span>
-		
-		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
-
-	</ModuleOverviewFeaturesSegment>
-    
-</ModuleOverviewFeaturesSection>  
+    </ModuleOverviewFeaturesSegment></ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
