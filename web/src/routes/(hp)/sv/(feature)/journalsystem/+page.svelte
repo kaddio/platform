@@ -40,7 +40,7 @@
 	<span slot="title">Kaddio Journal</span>
 	<span slot="sub">
 		Kaddio Journal har allt du behöver för att journalföra klienter och dokumentera verksamheten. 
-		Ett komplett journalsystem helt enkelt.
+		Ett komplett journalsystem, helt enkelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
