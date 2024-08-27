@@ -53,7 +53,7 @@
     <ModuleFeatureWithIcon icon="comment">
 		<span slot="title">Kommunicera.</span>
 		<span slot="body">
-			Chatta och prata enskilt eller i grupp. Kaddio Video har stöd för minst 500
+			Samtala enskilt eller i grupp. Kaddio Video har stöd för minst 500
             deltagare.
 		</span>
 	</ModuleFeatureWithIcon>
@@ -87,6 +87,7 @@
 		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
         <ModuleOverviewFeature>Chat för klienter och kollegor</ModuleOverviewFeature>
         <ModuleOverviewFeature>Gruppchat</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
@@ -96,12 +97,12 @@
 		<ModuleOverviewFeature>Krypterad fildelning i chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
+  
     </ModuleOverviewFeaturesSegment></ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Kaddio Chat och Video       
+        Vad våra kunder säger om <br>Kaddio Chat och Video       
     </span>
     <QuoteSvJimmy />
     <QuoteSvJonas />
