@@ -26,6 +26,7 @@
 	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
 	import ContactDanielSv from "../../contactDanielSv.svelte";
 	import PricesSv from "../../pricesSv.svelte";
+	import StatsSectionSv from "../../statsSectionSv.svelte";
 </script>
 
 <svelte:head>
@@ -121,20 +122,7 @@
 
 </QuotesSection>
 
-<StatsSection>
-	<StatsSectionPart>
-		<span slot="title">användare</span>
-		<span slot="sub">47 000+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">bokningar per dygn</span>
-		<span slot="sub">1300+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">videomöten per månad</span>
-		<span slot="sub">8500+</span>
-	</StatsSectionPart>
-</StatsSection>
+<StatsSectionSv />
 
 <PricesSv></PricesSv>
 
