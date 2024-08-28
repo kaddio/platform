@@ -42,19 +42,12 @@
 		Kaddio Chat och Video gör att du kan kommunicera och dela information säkert med klienter och kollegor. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
 	</span>
 
-	<ModuleFeatureWithIcon icon="lock-keyhole">
-		<span slot="title">Säkerhetsanpassa.</span>
-		<span slot="body">
-			Kräv inloggning till videosamtal och chat med Mobilt BankID eller
-            tvåfaktorsautentisering.
-		</span> 
-	</ModuleFeatureWithIcon>
+
 
     <ModuleFeatureWithIcon icon="comment">
 		<span slot="title">Kommunicera.</span>
 		<span slot="body">
-			Samtala enskilt eller i grupp. Kaddio Video har stöd för minst 500
-            deltagare.
+			Videosamtal, chat och kontaktformulär i en krypterad miljö. 
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -65,28 +58,30 @@
 		</span>
 	</ModuleFeatureWithIcon>
 
+	<ModuleFeatureWithIcon icon="lock-keyhole">
+		<span slot="title">Säkerhetsanpassa.</span>
+		<span slot="body">
+			Kräv inloggning till videosamtal och chat med Mobilt BankID eller
+            tvåfaktorsautentisering.
+		</span> 
+	</ModuleFeatureWithIcon>
+
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Innehåll</span>
 	<span slot="title">Detta är Kaddio Chat och Video</span>
-	<span slot="body">Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. <br>Allt i Kaddio är krypterat.</span>
-
-	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Säkerhetsanpassa</span>
-		
-        <ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inloggning för klient med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
-        
-	</ModuleOverviewFeaturesSegment>
-
+	<span slot="body">Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. 
+		<br>Allt i Kaddio är krypterat.</span>
+	
     <ModuleOverviewFeaturesSegment>
 		<span slot="title">Kommunicera</span>
 		
 		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Chat för klienter och kollegor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Chat med klienter och kollegor</ModuleOverviewFeature>
         <ModuleOverviewFeature>Gruppchat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-postmeddelande till klient från chatten</ModuleOverviewFeature>
         <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
@@ -94,11 +89,25 @@
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dela information</span>
 	
-		<ModuleOverviewFeature>Krypterad fildelning i chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Krypterad fildelning i chat: 
+			<br>För journalanteckningar och känsliga uppgifter</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Utskick av brev i chat: 
+			<br>Blanketter med signeringsfunktion för medgivande från klient </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Säkerhetsanpassa</span>
+			
+		<ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inloggning för klient med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
+			
+	</ModuleOverviewFeaturesSegment>
   
-    </ModuleOverviewFeaturesSegment></ModuleOverviewFeaturesSection>  
+</ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
@@ -127,4 +136,5 @@
 </StatsSection>
 
 <PricesSv />
+
 <ContactDanielSv />
