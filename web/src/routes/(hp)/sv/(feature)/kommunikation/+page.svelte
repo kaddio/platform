@@ -93,7 +93,7 @@
 			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Utskick av brev i chat: 
 			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inspelning av videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
