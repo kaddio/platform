@@ -92,7 +92,7 @@
 		<ModuleOverviewFeature>Krypterad fildelning i chat: 
 			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Utskick av brev i chat: 
-			<br>Blanketter med signeringsfunktion för medgivande från klient </ModuleOverviewFeature>
+			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
 		
