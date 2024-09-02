@@ -54,7 +54,7 @@
 	<ModuleFeatureWithIcon icon="share">
 		<span slot="title">Dela information.</span>
 		<span slot="body">
-			Skicka känslig information på ett säkert sätt genom krypterad chat.
+			Skicka känslig information, filer och bilder till klienter och kollegor på ett säkert.
 		</span>
 	</ModuleFeatureWithIcon>
 
