@@ -90,7 +90,7 @@
 		<span slot="title">Dela information</span>
 	
 		<ModuleOverviewFeature>Krypterad fildelning i chat: 
-			<br>För journalanteckningar och känsliga uppgifter</ModuleOverviewFeature>
+			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Utskick av brev i chat: 
 			<br>Blanketter med signeringsfunktion för medgivande från klient </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
