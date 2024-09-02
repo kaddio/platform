@@ -91,7 +91,7 @@
 	
 		<ModuleOverviewFeature>Krypterad fildelning i chat: 
 			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Utskick av brev i chat: 
+		<ModuleOverviewFeature>
 			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
