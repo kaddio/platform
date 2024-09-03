@@ -89,7 +89,7 @@
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dela information</span>
 	
-		<ModuleOverviewFeature>Krypterad fildelning i chat: 
+		<ModuleOverviewFeature>
 			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
 		<ModuleOverviewFeature>
 			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
