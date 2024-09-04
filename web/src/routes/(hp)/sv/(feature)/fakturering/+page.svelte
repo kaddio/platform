@@ -27,7 +27,7 @@
 	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
 	import ContactDanielSv from "../../contactDanielSv.svelte";
 	import PricesSv from "../../pricesSv.svelte";
-	import StatsSectionSv from "../../statsSectionSv.svelte";
+
 </script>
 
 <svelte:head>
@@ -107,12 +107,9 @@
     <span slot="title">
         Vad våra kunder säger om Kaddio Fakturering       
     </span>
-	<QuoteSvAmanda />
-	<QuoteSvJimmy />
-	<QuoteSvJonas />
+
 	<QuoteSvKim />
-	<QuoteSvRamzi />
-	<QuoteSvSofia />
+	
 	<QuoteSvUlrika />
 
 </QuotesSection>
