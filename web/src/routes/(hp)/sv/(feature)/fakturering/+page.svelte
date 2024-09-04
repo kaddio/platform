@@ -18,6 +18,16 @@
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 	import SalesSection from "$components/salesSection.svelte";
+	import QuoteSvAmanda from "../../quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "../../quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "../../quote-sv-jonas.svelte";
+	import QuoteSvKim from "../../quote-sv-kim.svelte";
+	import QuoteSvRamzi from "../../quote-sv-ramzi.svelte";
+	import QuoteSvSofia from "../../quote-sv-sofia.svelte";
+	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
+	import ContactDanielSv from "../../contactDanielSv.svelte";
+	import PricesSv from "../../pricesSv.svelte";
+	import StatsSectionSv from "../../statsSectionSv.svelte";
 </script>
 
 <svelte:head>
@@ -97,24 +107,16 @@
     <span slot="title">
         Vad våra kunder säger om Kaddio Fakturering       
     </span>
+	<QuoteSvAmanda />
+	<QuoteSvJimmy />
+	<QuoteSvJonas />
+	<QuoteSvKim />
+	<QuoteSvRamzi />
+	<QuoteSvSofia />
+	<QuoteSvUlrika />
 
-
-    
 </QuotesSection>
 
-<StatsSection>
-	<StatsSectionPart>
-		<span slot="title">användare</span>
-		<span slot="sub">47 000+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">bokningar per dygn</span>
-		<span slot="sub">1300+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">videomöten per månad</span>
-		<span slot="sub">8500+</span>
-	</StatsSectionPart>
-</StatsSection>
+<StatsSectionSv />
 
-<SalesSection></SalesSection>
+<ContactDanielSv />
