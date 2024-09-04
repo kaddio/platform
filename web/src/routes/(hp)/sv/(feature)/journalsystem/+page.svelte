@@ -128,3 +128,19 @@
 
 
 <ContactDanielSv />
+
+{#if data.pkgs?.length > 0}
+	<FaqSection>
+ 		<span slot="title">Inbyggda formulär i Kaddio</span>
+
+ 		{#each data.pkgs as pkg}
+ 			<Qa>
+ 				<span slot="q">{pkg.name}</span>
+ 				<span slot="a">
+ 					{pkg.desc}
+ 				</span>
+ 			</Qa>
+ 		{/each}
+ 	</FaqSection>
+ {/if} 
+ 
