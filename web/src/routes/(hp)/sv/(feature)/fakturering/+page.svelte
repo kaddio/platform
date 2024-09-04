@@ -117,6 +117,6 @@
 
 </QuotesSection>
 
-<StatsSectionSv />
+<!-- <StatsSectionSv /> -->
 
 <ContactDanielSv />
