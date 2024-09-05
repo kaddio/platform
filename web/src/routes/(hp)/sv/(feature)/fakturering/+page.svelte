@@ -27,7 +27,7 @@
 	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
 	import ContactDanielSv from "../../contactDanielSv.svelte";
 	import PricesSv from "../../pricesSv.svelte";
-	// import StatsSectionSv from "../../statsSectionSv.svelte";
+	import StatsSectionSv from "../../statsSectionSv.svelte";
 
 </script>
 
@@ -115,6 +115,6 @@
 
 </QuotesSection>
 
-<!-- <StatsSectionSv /> -->
+<StatsSectionSv />
 
 <ContactDanielSv />
