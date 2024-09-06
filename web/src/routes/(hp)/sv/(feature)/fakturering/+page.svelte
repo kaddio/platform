@@ -117,4 +117,6 @@
 
 <StatsSectionSv />
 
+<PricesSv />
+
 <ContactDanielSv />
