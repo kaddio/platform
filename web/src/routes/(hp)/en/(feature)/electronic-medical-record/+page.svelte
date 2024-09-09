@@ -18,7 +18,7 @@
 	<meta name="description" content="Kaddio Electronic Medical Record is a complete system for documenting your clients." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/medical-record-en.png" alt="Kaddio Electronic medical record">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/medical-record-overview-en.png" alt="Kaddio Electronic medical record">
 	<span slot="h1">Electronic medical record</span>
 	<span slot="title">Kaddio EMR</span>
 	<span slot="sub">
