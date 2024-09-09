@@ -54,7 +54,7 @@
 	<ModuleFeatureWithIcon icon="share">
 		<span slot="title">Dela information.</span>
 		<span slot="body">
-			Skicka känslig information på ett säkert sätt genom krypterad chat.
+			Skicka känslig information, filer och bilder till klienter och kollegor på ett säkert.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -89,11 +89,11 @@
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dela information</span>
 	
-		<ModuleOverviewFeature>Krypterad fildelning i chat: 
-			<br>För journalanteckningar och känsliga uppgifter</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Utskick av brev i chat: 
-			<br>Blanketter med signeringsfunktion för medgivande från klient </ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inspelning av videosamtal för delning med klient i chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>
+			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
+		<ModuleOverviewFeature>
+			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
+		<ModuleOverviewFeature>Inspelning av videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
