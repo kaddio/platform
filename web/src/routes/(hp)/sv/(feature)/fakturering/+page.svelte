@@ -5,6 +5,29 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import ProductPricingSection from "$components/productPricingSection.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSection from "$components/salesSection.svelte";
+	import QuoteSvAmanda from "../../quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "../../quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "../../quote-sv-jonas.svelte";
+	import QuoteSvKim from "../../quote-sv-kim.svelte";
+	import QuoteSvRamzi from "../../quote-sv-ramzi.svelte";
+	import QuoteSvSofia from "../../quote-sv-sofia.svelte";
+	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
+	import ContactDanielSv from "../../contactDanielSv.svelte";
+	import PricesSv from "../../pricesSv.svelte";
+	import StatsSectionSv from "../../statsSectionSv.svelte";
 
 </script>
 
@@ -17,97 +40,87 @@
 	<span slot="h1">Faktureringssystem</span>
 	<span slot="title">Kaddio Fakturering</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag. Kaddio fakturering tillsammans med Kaddio Onlinebokning och Kaddio Journalsystem gör faktureringen enkel och samtidigt flexibel.
+		Kaddio Fakturering är ett enkelt faktureringssystem för små och medelstora företag. Kombinera med Kaddio Bokning eller Kaddio Journalsystem för att fakturera snabbt och flexibelt.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
-		<span slot="title">Spara tid</span>
+		<span slot="title">Spara tid.</span>
 		<span slot="body">
-			Spara tid med integrerad fakturering. Kaddio föreslår automatiskt underlag utifrån bokade tider eller journalanteckningar. Du skickar en fakturera med tre klick.
+			Generera fakturor automatiskt utifrån bokade tider eller journalanteckningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
-		<span slot="title">Automatisera</span>
+		<span slot="title">Automatisera.</span>
 		<span slot="body">
-			Automatisera utskick av påminnelsefakturor. Håll koll på betalningar genom automatisk avprickning av fakturor betalda via Bankgiro.
+			Låt Kaddio hantera påminnelser och avprickningar av inbetalningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="file-contract">
-		<span slot="title">E-fakturera</span>
+	<ModuleFeatureWithIcon icon="envelope">
+		<span slot="title">Leverera.</span>
 		<span slot="body">
-			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
+			Fakturera via e-post, brev eller i chatten. <br>Skicka e-fakturor till företag i hela världen.
 		</span>
 	</ModuleFeatureWithIcon>
 	
 </ModuleSectionWithImage>
-  
 
-<FaqSection>
-	<span slot="title">Detaljer</span>
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Innehåll</span>
+	<span slot="title">Detta är Kaddio Fakturering</span>
+	<span slot="body">Med Kaddio Fakturering skickar du enkelt fakturor utifrån bokningar eller journalanteckningar. Hantera allt i samma system och få mer tid till dina klienter.</span>
 
-	<Qa>
-		<span slot="q">Fakturaunderlag</span>
-		<span slot="a">
-			Kaddio skapar automatiskt fakturaunderlag utifrån kalender och journal.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Artiklar</span>
-		<span slot="a">
-			Kaddio kan spara dina artiklar och tjänster för att ännu enklare kunna fakturera för dem.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Leverans</span>
-		<span slot="a">
-			Skicka fakturor med post, e-post, via Kaddios säkra kommunikation och e-faktura.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Påminnelsefaktura</span>
-		<span slot="a">
-			Skicka påminnelsefakturor automatiskt och manuellt.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Automatisk avprickning</span>
-		<span slot="a">
-			Kaddio prickar av fakturor automatiskt när kunden betalar via bankgiro.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">E-faktura</span>
-		<span slot="a">
-			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Samfakturering</span>
-		<span slot="a">
-			Fakturera för flera klienter till ett företag, till exempel ett gruppboende eller försäkringsbolag.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Inkassoexport</span>
-		<span slot="a">
-			Exportera ej betalda fakturor som sedan kan importeras till ett inkassoföretag.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Spara tid</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-	<Qa>
-		<span slot="q">Export</span>
-		<span slot="a">
-			Exportera fakturor som SIE-fil eller CSV-fil för uppladdning i ett bokföringsprogram.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Duplicering av fakturor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bokföringsunderlag med export i SIE-4, CSV och för Excel</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kundlista för företagskunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kundreskontra</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rapporter över intänkter</ModuleOverviewFeature>
+				
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Valutor</span>
-		<span slot="a">
-			Skicka fakturor i världens 33 vanligaste valutor, med automatiska växelkurser som uppdateras varje dag från ECB. Kaddio bokför automatiskt valutakursvinster och valutakursförluster i SIE-exporten.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Automatisera</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-</FaqSection>
+		<ModuleOverviewFeature>Fakturor utifrån bokade tider eller journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Avprickning av betalningar mot Bankgirot eller bankkonto</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Betalningspåminnelser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Sortering till inkassoexport</ModuleOverviewFeature>
+				
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Leverera</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+
+		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-fakturering av företag i hela världen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature>
+
+
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
+
+<QuotesSection>
+    <span slot="title">
+        Vad våra kunder säger om Kaddio Fakturering       
+    </span>
+
+	<QuoteSvKim />
+
+	<QuoteSvUlrika />
+
+	<QuoteSvJimmy />
+
+</QuotesSection>
+
+<StatsSectionSv />
+
+<PricesSv />
+
+<ContactDanielSv />
