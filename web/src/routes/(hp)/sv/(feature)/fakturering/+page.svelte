@@ -46,21 +46,21 @@
 	<ModuleFeatureWithIcon icon="timer">
 		<span slot="title">Spara tid.</span>
 		<span slot="body">
-			Skicka en faktura med tre klick. Underlag genereras automatiskt från bokade tider eller journalanteckningar.
+			Generera fakturor automatiskt utifrån bokade tider eller journalanteckningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
 		<span slot="title">Automatisera.</span>
 		<span slot="body">
-			Håll koll på dina fakturor genom automatiska påminnelser och avprickningar av inbetalningar.
+			Låt Kaddio hantera påminnelser och avprickningar av inbetalningar.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="file-contract">
+	<ModuleFeatureWithIcon icon="envelope">
 		<span slot="title">Leverera.</span>
 		<span slot="body">
-			Fakturera via e-post, brev eller i chatten. Skicka e-fakturor till företag med PEPPOL-ID.
+			Fakturera via e-post, brev eller i chatten. <br>Skicka e-fakturor till företag i hela världen.
 		</span>
 	</ModuleFeatureWithIcon>
 	
@@ -75,10 +75,11 @@
 		<span slot="title">Spara tid</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Fakturering från automatiska underlag med tre klick</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Export av fakturainformation som <br>SIE-4, CSV och XLSX</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Duplicering av fakturor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bokföringsunderlag med export i SIE-4, CSV och för Excel</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kundlista för företagskunder</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kundreskontra</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inkassoexport</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rapporter över intänkter</ModuleOverviewFeature>
 				
 	</ModuleOverviewFeaturesSegment>
 
@@ -86,10 +87,11 @@
 		<span slot="title">Automatisera</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Automatiska fakturaunderlag från bokade tider eller journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska betalningspåminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatisk sortering till inkasso</ModuleOverviewFeature>
-		
+		<ModuleOverviewFeature>Fakturor utifrån bokade tider eller journalanteckningar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Avprickning av betalningar mot Bankgirot eller bankkonto</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Betalningspåminnelser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Sortering till inkassoexport</ModuleOverviewFeature>
+				
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -97,7 +99,7 @@
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
 		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>E-fakturering av företag med PEPPOL-ID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-fakturering av företag i hela världen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature>
 
 
@@ -112,6 +114,8 @@
 	<QuoteSvKim />
 
 	<QuoteSvUlrika />
+
+	<QuoteSvJimmy />
 
 </QuotesSection>
 
