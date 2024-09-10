@@ -22,8 +22,8 @@
 	<span slot="h1">Electronic medical record</span>
 	<span slot="title">Kaddio EMR</span>
 	<span slot="sub">
-		Kaddio EMR is an electronic medical record system that has everything you need to keep records of your clients and document your business. 
-		A complete solution for health professionals.
+		Kaddio EMR has everything you need to keep records of your clients and document your business. 
+		Simply a complete electronic medical record system.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
@@ -31,7 +31,7 @@
 			Document.
 		</span>
 		<span slot="body">
-			Keep records safely and securely, wherever you are. 
+			Keep medical records safely and securely, wherever you are. 
 			Design templates for medical records based on your business needs.
 		</span>
 	</ModuleFeatureWithIcon>
@@ -59,7 +59,7 @@
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">This is Kaddio EMR</span>
-	<span slot="body">With Kaddio EMR you keep records safely and smoothly in a way that suits 
+	<span slot="body">With Kaddio EMR you keep medical records safely and smoothly in a way that suits 
 		your business. Handle everything in the same system and get more free time.
  	</span>
 
