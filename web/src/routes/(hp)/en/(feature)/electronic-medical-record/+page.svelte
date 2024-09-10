@@ -1,90 +1,123 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
+
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+	import QuotesSection from "$components/quotesSection.svelte";
+    import StatsSectionEn from "../../statsSectionEn.svelte";
+	import PricesEn from "../../pricesEn.svelte";
+    import ContactDanielEn from "../../contactDanielEn.svelte";
 
 </script>
 
 <svelte:head>
-	<title>Electronic medical record</title>
+	
+	<title>Electronic medical record with everything you need</title>
 	<meta name="description" content="Kaddio Electronic Medical Record is a complete system for documenting your clients." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Electronic medical record">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/medical-record-overview-en.png" alt="Kaddio Electronic medical record">
 	<span slot="h1">Electronic medical record</span>
 	<span slot="title">Kaddio EMR</span>
 	<span slot="sub">
-		Kaddio EMR is an electronic medical record system that has everything you need to document your business and journal your clients. A complete solution for health professionals.
+		Kaddio EMR has everything you need to keep records of your clients and document your business. 
+		Simply a complete electronic medical record system.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
 		<span slot="title">
-			Document it
+			Document.
 		</span>
 		<span slot="body">
-			Keep your notes safe and secure, wherever you are. No paper, binders or backups.
+			Keep medical records safely and securely, wherever you are. 
+			Design templates for medical records based on your business needs.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
 		<span slot="title">
-			Customize
+			Follow up.
 		</span>
 		<span slot="body">
-			Tool up your own templates for journal entries based on your business needs.
+			Send letters and referrals. Automate the dispatch and collection of forms. 
+			All information is gathered in the medical records.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="gamepad-modern">
+	<ModuleFeatureWithIcon icon="lock-keyhole">
 		<span slot="title">
-			Control
+			Ensure.
 		</span>
 		<span slot="body">
-			Control access to clients and journals. You decide who can access what.
-			Follow activity in journals through Kaddio's log for traceability and regulatory compliance.
+			Regulate access to clients and medical records. Use Kaddio Logs to trace activities in medical records. 
 		</span>
 	</ModuleFeatureWithIcon>
 
 </ModuleSectionWithImage>
 
+<ModuleOverviewFeaturesSection>
+	<span slot="title">This is Kaddio EMR</span>
+	<span slot="body">With Kaddio EMR you keep medical records safely and smoothly in a way that suits 
+		your business. Handle everything in the same system and get more free time.
+ 	</span>
 
-<FaqSection>
-	<span slot="title">Details</span>
-
-	<Qa>
-		<span slot="q">Templates</span>
-		<span slot="a">
-			Create medical record templates tailored to your needs. Choose your own search phrases and titles.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Document</span>
 	
-	<Qa>
-		<span slot="q">Medical record forms</span>
-		<span slot="a">
-			Create your own forms or use commonly used standard forms directly from Kaddio. Send assessment forms and health declarations via e-mail and SMS. Journal forms can be sent automatically when you get a new booking, or manually if necessary. The answers are saved in the journal.		</span>
-	</Qa>
+		<ModuleOverviewFeature>Free design of templates for medical records</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for template text and phrases</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Upload images to draw on</ModuleOverviewFeature>
+		<ModuleOverviewFeature>File upload to medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Diagnoses with ICD-10</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Standard forms as entries in medical records</ModuleOverviewFeature> -->
+		<ModuleOverviewFeature>Build your own forms</ModuleOverviewFeature>
 
-	<Qa>
-		<span slot="q">Letters and referrals</span>
-		<span slot="a">
-			Create letters, referrals, referral responses and certificates. Send by post, via Kaddio Communication or download as PDF.		</span>
-	</Qa>
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">ICD-10</span>
-		<span slot="a">
-			Search by code or free text and add diagnoses to each journal entry.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Follow up</span>
+		
+		<ModuleOverviewFeature>Automated dispatch and collection of forms</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Referrals via letter, email and chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Export of medical records as PDF</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Overview of bookings, invoices and tasks</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Samlingsräkning</ModuleOverviewFeature> -->
+		
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Privileges</span>
-		<span slot="a">
-			Choose if everyone within your organization should be able to read a client's medical record or limit access to certain processors.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Ensure</span>
+	
+		<ModuleOverviewFeature>Encrypted record keeping</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Access control of medical records</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Signing of medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>History of editing of medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Listing of unsigned medical record entries</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Log of reading and editing events for medical records</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
 
-</FaqSection>
+<QuotesSection>
+    <span slot="title">
+       What our customers say about Kaddio EMR       
+    </span>
+
+	<!-- 	Fixa när Quotes EN är släppt
+	<QuoteEnRamzi />
+	<QuoteEnJimmy />
+	<QuoteEnJonas />
+	<QuoteEnAmanda />
+	<QuoteEnSofia /> -->
+	
+</QuotesSection>
+
+<StatsSectionEn />
+
+<PricesEn />
+
+<ContactDanielEn />
+
+<!-- Inga listade formulär eftersom dessa är på svenska -->
