@@ -113,6 +113,9 @@
                 <a href="/career" hreflang="en" class="text-sm leading-6 text-gray-600">Career</a>
               </li>
 
+              <li>
+                <a href="/responsible-disclosure" hreflang="en" class="text-sm leading-6 text-gray-600">Responsible Disclosure</a>
+              </li>
               
               
               <!-- <li>
