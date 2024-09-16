@@ -9,95 +9,94 @@
     import StatsSectionEn from "../../statsSectionEn.svelte";
 	import PricesEn from "../../pricesEn.svelte";
     import ContactDanielEn from "../../contactDanielEn.svelte";
+	import QuoteEnAmanda from "../../quote-en-amanda.svelte";
+	import QuoteEnJimmy from "../../quote-en-amanda.svelte";
+	import QuoteEnJonas from "../../quote-en-jonas.svelte";
+	import QuoteEnRamzi from "../../quote-en-ramzi.svelte";
+	import QuoteEnSofia from "../../quote-en-sofia.svelte";
 
 </script>
 
 <svelte:head>
-	
-	<title>Electronic medical record with everything you need</title>
-	<meta name="description" content="Kaddio Electronic Medical Record is a complete system for documenting your clients." />
+
+	<title>Kaddio - Time booking and calendar</title>
+	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/medical-record-overview-en.png" alt="Kaddio Electronic medical record">
-	<span slot="h1">Electronic medical record</span>
-	<span slot="title">Kaddio EMR</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/booking-overview-en.png" alt="Kaddio onlinebokning och kalender">
+	<span slot="h1">Online booking</span>
+	<span slot="title">Kaddio Booking</span>
 	<span slot="sub">
-		Kaddio EMR has everything you need to keep records of your clients and document your business. 
-		Simply a complete electronic medical record system.
+		Kaddio Booking is your all-in-one calendar and booking system. Manage bookings, meetings and group sessions in the same view and get sorted.
 	</span>
 
-	<ModuleFeatureWithIcon icon="pen">
-		<span slot="title">
-			Document.
-		</span>
+	<ModuleFeatureWithIcon icon="people">
+		<span slot="title">Collaborate.</span>
 		<span slot="body">
-			Keep medical records safely and securely, wherever you are. 
-			Design templates for medical records based on your business needs.
+			Schedule meetings and rooms for the entire organization.
+			
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="sliders">
-		<span slot="title">
-			Follow up.
-		</span>
+	<ModuleFeatureWithIcon icon="stopwatch">
+		<span slot="title">Streamline.</span>
 		<span slot="body">
-			Send letters and referrals. Automate the dispatch and collection of forms. 
-			All information is gathered in the medical records.
+			Create templates for recurring events in your calendar and save time.
+						
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="lock-keyhole">
-		<span slot="title">
-			Ensure.
-		</span>
+	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+		<span slot="title">Improve customer flow.</span>
 		<span slot="body">
-			Regulate access to clients and medical records. Use Kaddio Logs to trace activities in medical records. 
+			Create bookable times directly from your calendar. Let your clients book and pay themselves or take control of everything.
 		</span>
 	</ModuleFeatureWithIcon>
 
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="title">This is Kaddio EMR</span>
-	<span slot="body">With Kaddio EMR you keep medical records safely and smoothly in a way that suits 
-		your business. Handle everything in the same system and get more free time.
- 	</span>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Booking</span>
+	<span slot="body">Kaddio Booking helps you plan all activities of the organization in an 
+		efficient and comprehensable way, whether you are self-employed or part of a 
+		big company.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Document</span>
+		<span slot="title">Collaborate</span>
+			
+		<ModuleOverviewFeature>Scheduling of meetings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for online businesses and multiple locations</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Room booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Shared calendar witin the organization</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Waiting lists for queuing clients</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Streamline</span>
+		
+		<ModuleOverviewFeature>Calendar and booking in the same view</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Card payment at booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Check-in functions</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Day reports</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automated invoices</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Template functions</ModuleOverviewFeature>
 	
-		<ModuleOverviewFeature>Free design of templates for medical records</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Support for template text and phrases</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Upload images to draw on</ModuleOverviewFeature>
-		<ModuleOverviewFeature>File upload to medical record entries</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Diagnoses with ICD-10</ModuleOverviewFeature>
-		<!-- <ModuleOverviewFeature>Standard forms as entries in medical records</ModuleOverviewFeature> -->
-		<ModuleOverviewFeature>Build your own forms</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Follow up</span>
+		<span slot="title">Improve customer flow</span>
 		
-		<ModuleOverviewFeature>Automated dispatch and collection of forms</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Referrals via letter, email and chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Export of medical records as PDF</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Overview of bookings, invoices and tasks</ModuleOverviewFeature>
-		<!-- <ModuleOverviewFeature>Samlingsräkning</ModuleOverviewFeature> -->
-		
+		<ModuleOverviewFeature>Booking on website</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Integration with Kuralink - ävne på EN?</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Söktjänst Hitta Klinik - Hur översätta?</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Booking with two-factor authentication</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Reminders via email and texts</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Forms at booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Group bookings</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
-	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Ensure</span>
-	
-		<ModuleOverviewFeature>Encrypted record keeping</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Access control of medical records</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Signing of medical record entries</ModuleOverviewFeature>
-		<ModuleOverviewFeature>History of editing of medical record entries</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Listing of unsigned medical record entries</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Log of reading and editing events for medical records</ModuleOverviewFeature>
-		
-	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
@@ -105,12 +104,11 @@
        What our customers say about Kaddio EMR       
     </span>
 
-	<!-- 	Fixa när Quotes EN är släppt
-	<QuoteEnRamzi />
+	
 	<QuoteEnJimmy />
 	<QuoteEnJonas />
 	<QuoteEnAmanda />
-	<QuoteEnSofia /> -->
+	<QuoteEnSofia />
 	
 </QuotesSection>
 
@@ -120,4 +118,3 @@
 
 <ContactDanielEn />
 
-<!-- Inga listade formulär eftersom dessa är på svenska -->
