@@ -89,8 +89,8 @@
 		<span slot="title">Improve customer flow</span>
 		
 		<ModuleOverviewFeature>Booking on website</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Integration with Kuralink - ävne på EN?</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Söktjänst Hitta Klinik - Hur översätta?</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Integration with Kuralink - ävne på EN?</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Söktjänst Hitta Klinik - Hur översätta?</ModuleOverviewFeature> -->
 		<ModuleOverviewFeature>Booking with two-factor authentication</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Reminders via email and texts</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Forms at booking</ModuleOverviewFeature>
