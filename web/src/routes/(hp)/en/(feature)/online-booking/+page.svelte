@@ -59,8 +59,8 @@
 	<span slot="pre">Contents</span>
 	<span slot="title">This is Kaddio Booking</span>
 	<span slot="body">Kaddio Booking helps you plan all activities of the organization in an 
-		efficient and comprehensable way, whether you are self-employed or part of a 
-		big company.</span>
+		efficient and comprehensable way, whether you are part of a 
+		big company or self-employed.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Collaborate</span>
