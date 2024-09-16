@@ -11,9 +11,9 @@
     import ContactDanielEn from "../../contactDanielEn.svelte";
 	import QuoteEnAmanda from "../../quoteEnAmanda.svelte";
 	import QuoteEnJimmy from "../../quoteEnJimmy.svelte";
-	import QuoteEnRamzi from "../../quoteEnJimmy.svelte";
+	import QuoteEnRamzi from "../../quoteEnRamzi.svelte";
 	import QuoteEnJonas from "../../quoteEnJonas.svelte";
-	import QuoteEnSofia from "../../quoteEnJonas.svelte";
+	import QuoteEnSofia from "../../quoteEnSofia.svelte";
 
 </script>
 
