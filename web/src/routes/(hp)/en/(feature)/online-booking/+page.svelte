@@ -10,10 +10,11 @@
 	import PricesEn from "../../pricesEn.svelte";
     import ContactDanielEn from "../../contactDanielEn.svelte";
 	import QuoteEnAmanda from "../../quote-en-amanda.svelte";
-	import QuoteEnJimmy from "../../quote-en-amanda.svelte";
+	import QuoteEnJimmy from "../../quote-en-jimmy.svelte";
 	import QuoteEnJonas from "../../quote-en-jonas.svelte";
-	import QuoteEnRamzi from "../../quote-en-ramzi.svelte";
+
 	import QuoteEnSofia from "../../quote-en-sofia.svelte";
+
 
 </script>
 
@@ -104,12 +105,12 @@
        What our customers say about Kaddio EMR       
     </span>
 
-	
+	<QuoteEnAmanda />
 	<QuoteEnJimmy />
 	<QuoteEnJonas />
-	<QuoteEnAmanda />
+
 	<QuoteEnSofia />
-	
+
 </QuotesSection>
 
 <StatsSectionEn />
