@@ -9,11 +9,10 @@
     import StatsSectionEn from "../../statsSectionEn.svelte";
 	import PricesEn from "../../pricesEn.svelte";
     import ContactDanielEn from "../../contactDanielEn.svelte";
-	import QuoteEnAmanda from "../../quote-en-amanda.svelte";
-	import QuoteEnJimmy from "../../quote-en-jimmy.svelte";
-	import QuoteEnJonas from "../../quote-en-jonas.svelte";
-
-	import QuoteEnSofia from "../../quote-en-sofia.svelte";
+	import QuoteEnAmanda from "../../quoteEnAmanda.svelte";
+	import QuoteEnJimmy from "../../quoteEnJimmy.svelte";
+	import QuoteEnJonas from "../../quoteEnJonas.svelte";
+	import QuoteEnSofia from "../../quoteEnSofia.svelte";
 
 
 </script>
