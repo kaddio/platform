@@ -153,7 +153,7 @@
         <LegalLi>Social security numbers are used for identification and as account numbers for customer management purposes 
             for the Kaddio system. If you have used Kaddio previously there may be saved data about you, for example, 
             due to customer management, documentation requirements or similar approved purposes. Kaddio will use any such information 
-            to ensure you identity och simplify your use of Kaddio. Kaddio may also electronic communication (communication via 
+            to ensure you identity och simplify your use of Kaddio. Kaddio may also use electronic communication (communication via 
             e.g. SMS and email) when in contact with you. Kaddio safeguards the protection of personal data and will take
             appropriate security measures to protect this information. You have the right to acces any information we have on you. 
             Upon request on that effect, we typically respond within 30 days.</LegalLi>
