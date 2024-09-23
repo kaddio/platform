@@ -178,7 +178,7 @@
     <LegalTitle>Changes, additions and other services</LegalTitle>
 
     <LegalParagraph>
-        Kaddio contiuously changes and improves the services and reserves the rights to change the Terms for future use of Kaddio.
+        Kaddio continuously changes and improves the services and reserves the rights to change the Terms for future use of Kaddio.
         For the services that Kaddio provides, the prevailing terms and prices apply. Terms and prices are available on kaddio.com.
         Make sure to read the Terms, etc., on our website prior to each new purchase.
     </LegalParagraph>
