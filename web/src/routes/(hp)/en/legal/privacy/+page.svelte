@@ -73,7 +73,7 @@
 
     <LegalParagraph>
       It is up to you as a customer to choose what information you want to share with us. The only 
-      personal data you need to share with us to create an organization is your given name, last name, email address, telephone number
+      personal data you need to share with us to create an organization is your given name, last name, email address
       and the name of your organization.
     </LegalParagraph>
 
