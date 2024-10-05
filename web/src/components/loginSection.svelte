@@ -58,6 +58,7 @@
                     <option>.kaddio.com</option>
                     <option>.kaddio.se</option>
                     <option>.kaddio.de</option>
+                    <option>.kaddio.org</option>
                 </select>
             </div>
         </div>
