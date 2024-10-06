@@ -315,6 +315,10 @@ const translations = {
     'Letar du behandling?': {
         en: 'Looking for care?',
         es: '¿Estás buscando tratamiento?'
+    },
+    'Sök här!': {
+        en: 'Search here!',
+        es: '¡Buscar aquí!'
     }
 };
 
