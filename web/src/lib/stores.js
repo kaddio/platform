@@ -238,6 +238,10 @@ const translations = {
         en: 'The organization could not be found',
         es: 'Organización no encontrada'
     },
+    'Inloggning till vald region stöds ej ännu.': {
+        en: 'Login to this region is not yet supported',
+        es: 'Aún no se puede iniciar sesión en esta región'
+    },
     'Kontrollera vilken URL du skrivit in. Du kan hitta din URL i det första mail du fick ifrån Kaddio när du skapat konto':
         {
             en: 'Check the URL you have entered. You can find your URL in the first email you received from Kaddio when you created your account.',
