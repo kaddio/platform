@@ -117,6 +117,9 @@
                 <a href="/responsible-disclosure" hreflang="en" class="text-sm leading-6 text-gray-600">Responsible Disclosure</a>
               </li>
               
+              <li>
+                <a href="/souvereign-cloud" hreflang="en" class="text-sm leading-6 text-gray-600">Souvereign cloud</a>
+              </li>
               
               <!-- <li>
                 <a href="/partners" class="text-sm leading-6 text-gray-600">Partners</a>
