@@ -60,11 +60,6 @@
         </Person>
 
         <Person>
-            <span slot="name">Jesper</span>
-            <span slot="title">Developer</span>
-        </Person>
-
-        <Person>
             <span slot="name">Camilla</span>
             <span slot="title">Market, UX, Customer support</span>
         </Person>
@@ -72,11 +67,6 @@
         <Person>
             <span slot="name">David</span>
             <span slot="title">CEO, Co-founder & Dev</span>
-        </Person>
-
-        <Person>
-            <span slot="name">Marina</span>
-            <span slot="title">Customer Support</span>
         </Person>
 
         <Person>
