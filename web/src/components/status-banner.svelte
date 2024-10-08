@@ -32,7 +32,6 @@
                 class="mx-2 inline h-0.5 w-0.5 fill-current"
                 aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg
             >Kaddio EU is experiencing intermittent outage due to underlying infrastructure with a hosting provider.
-            <a href="https://status.heroku.com/incidents/2684">här</a>.
         </p>
 
         <a href="/{lang}/support" class="whitespace-nowrap text-sm"
