@@ -31,8 +31,7 @@
                 viewBox="0 0 2 2"
                 class="mx-2 inline h-0.5 w-0.5 fill-current"
                 aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg
-            >Kaddio kan för tillfället inte nås på grund av ett fel hos vår driftsleverantör. Mer
-            informationon om incidenten finns
+            >Kaddio EU is experiencing intermittent outage due to underlying infrastructure with a hosting provider.
             <a href="https://status.heroku.com/incidents/2684">här</a>.
         </p>
 
