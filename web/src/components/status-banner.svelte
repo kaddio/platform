@@ -33,7 +33,7 @@
                 aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg
             >Kaddio kan för tillfället inte nås på grund av ett fel hos vår driftsleverantör. Mer
             informationon om incidenten finns
-            <a href="https://status.heroku.com/incidents/2673">här</a>.
+            <a href="https://status.heroku.com/incidents/2684">här</a>.
         </p>
 
         <a href="/{lang}/support" class="whitespace-nowrap text-sm"
