@@ -84,7 +84,7 @@
               </li>
 
               <li>
-                <a href="https://kaddio.statuspage.io" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Status</a>
+                <a href="https://kaddio.betteruptime.com" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Status</a>
               </li>
 
               <li>

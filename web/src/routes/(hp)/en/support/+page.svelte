@@ -61,10 +61,10 @@
 			Status
 		</span>
 		<span slot="body">
-			What is the status on our services? Check statuspage for health.
+			What is the status on our services? Check our statuspage for health.
 		</span>
 		<span slot="link">
-			<a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.statuspage.io <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://kaddio.betteruptime.com" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.betteruptime.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>		
 

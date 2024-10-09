@@ -66,7 +66,7 @@
 			Undrar du hur det går för Kaddio just nu? Kolla vår status-sida för info kring drift och tillgänglighet.
 		</span>
 		<span slot="link">
-			<a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.statuspage.io <span aria-hidden="true">&rarr;</span></a>
+			<a href="https://kaddio.betteruptime.com" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.betteruptime.com <span aria-hidden="true">&rarr;</span></a>
 		</span>
 	</SimpleCenteredPiece>		
 
