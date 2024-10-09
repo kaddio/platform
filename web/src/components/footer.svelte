@@ -14,6 +14,10 @@
 
 </script>
 
+<svelte:head>
+  <script src="https://uptime.betterstack.com/widgets/announcement.js" data-id="198127" async="async" type="text/javascript"></script>
+</svelte:head>
+
 
 <footer class="bg-gray-200" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
