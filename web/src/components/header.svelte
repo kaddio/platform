@@ -71,7 +71,7 @@
     <LangBanner />
     <ReferralBanner />
     <MarketplaceBanner />
-    <StatusBanner />
+    <!-- <StatusBanner /> -->
 
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 gap-x-6 lg:px-8"
