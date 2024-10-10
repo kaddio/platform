@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { getContext, onMount } from "svelte";
 	import { _ } from "$lib/stores";
 	import { countryCodeFromLang, getRegion } from "$lib/regions";
   import { imageHandler } from "$lib/img";
   const lang = getContext('lang');
+  import { page } from '$app/stores';
 
   onMount(() => {
     console.log('%c Work with us?', 'color: #c38f9c; font-size: 30px; font-weight: bold')
@@ -88,7 +89,17 @@
               </li>
 
               <li>
-                <a href="https://kaddio.betteruptime.com" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Status</a>
+                <a href="https://kaddio.betteruptime.com" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">
+                  {#await $page.data.streamed.status}
+                    Status (hämtar..)
+                  {:then value}
+                    {#if value}
+                      Status <i class="fa fa-solid fa-signal-bars text-green-500"></i>
+                    {:else}
+                      Status <i class="fa fa-solid fa-signal-slash"></i>
+                    {/if}
+                  {/await}
+                </a>
               </li>
 
               <li>

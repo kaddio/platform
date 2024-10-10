@@ -1,5 +1,6 @@
 import { browserFingerprint } from '$lib/browser-fingerprint';
 import { countryFromRequest } from '$lib/country-from-request.js';
+import { statusPageState } from '$lib/status.js';
 
 export async function load({ request, url, getClientAddress }) {
     const anonUserId = await browserFingerprint(request, getClientAddress());
@@ -13,6 +14,9 @@ export async function load({ request, url, getClientAddress }) {
 
     return {
         geo,
-        anonUserId
+        anonUserId,
+        streamed: {
+            status: statusPageState()
+        }
     };
 }
