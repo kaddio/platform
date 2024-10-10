@@ -62,6 +62,7 @@
 			Status
 		</span>
 		<span slot="body">
+			<!-- Make this a componend -->
 			{#await $page.data.streamed.status}
 				...
 				{:then value}
