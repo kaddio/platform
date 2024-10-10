@@ -24,3 +24,5 @@ export async function statusPageState() {
 
     return status;
 }
+
+// We could eventually do this and get rid of their js: https://uptime.betterstack.com/widgets/announcement?id=198127
