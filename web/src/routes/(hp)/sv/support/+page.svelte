@@ -7,6 +7,7 @@
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
 	const lang = getContext('lang');
+  import { page } from '$app/stores';
 
 	setContext('lang', 'sv');
 
@@ -22,8 +23,6 @@
 <SimpleCentered>
 	<span slot="title">Support</span>
 	<span slot="sub">Vi finns här för att hjälpa till</span>
-
-
 
 	<SimpleCenteredPiece icon="hands-holding-heart">
 		<span slot="title">Hjälpcenter</span>
@@ -63,7 +62,19 @@
 			Status
 		</span>
 		<span slot="body">
-			Undrar du hur det går för Kaddio just nu? Kolla vår status-sida för info kring drift och tillgänglighet.
+			{#await $page.data.streamed.status}
+				...
+				{:then value}
+				{#if value}
+					<span title="All systems operational">Alla våra system är tillgängliga och uppe <i class="fa fa-solid fa-signal-bars text-green-500"></i></span>
+				{:else}
+					För tillfället har vi driftsproblem <a href="https://kaddio.betteruptime.com" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">Läs mer <span aria-hidden="true">&rarr;</span></a>
+				{/if}
+			{/await}
+
+			<br /><br />
+			På vår status-sida hittar du även info om schemalagda uppdatering etc.
+
 		</span>
 		<span slot="link">
 			<a href="https://kaddio.betteruptime.com" target="_blank" rel="noreferrer" class="text-sm font-semibold leading-6 text-oldpink">kaddio.betteruptime.com <span aria-hidden="true">&rarr;</span></a>
