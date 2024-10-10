@@ -10,6 +10,7 @@
     import ReferralBanner from './referral-banner.svelte';
     import { imageHandler } from '$lib/img';
     import StatusBanner from './status-banner.svelte';
+    import Status from './status.svelte';
     const lang = getContext('lang');
     export let darkHeader: boolean = false;
 
@@ -72,6 +73,7 @@
     <ReferralBanner />
     <MarketplaceBanner />
     <!-- <StatusBanner /> -->
+     <Status />
 
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 gap-x-6 lg:px-8"
