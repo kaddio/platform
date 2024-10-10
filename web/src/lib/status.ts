@@ -16,7 +16,6 @@ export async function statusPageState() {
     }
 
     const json = await resp.json();
-    console.log(json);
 
     const aggregateState = json.data.attributes.aggregate_state;
 
