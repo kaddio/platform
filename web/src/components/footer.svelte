@@ -91,12 +91,12 @@
               <li>
                 <a href="https://kaddio.betteruptime.com" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">
                   {#await $page.data.streamed.status}
-                    Status (hämtar..)
+                    Status
                   {:then value}
                     {#if value}
-                      Status <i class="fa fa-solid fa-signal-bars text-green-500"></i>
+                      <span title="All systems operational">Status <i class="fa fa-solid fa-signal-bars text-green-500"></i></span>
                     {:else}
-                      Status <i class="fa fa-solid fa-signal-slash"></i>
+                      <span title="Some systems degraded">Status <i class="fa fa-solid fa-signal-slash"></i></span>
                     {/if}
                   {/await}
                 </a>
