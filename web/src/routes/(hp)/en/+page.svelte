@@ -2,11 +2,11 @@
 	import { setContext } from 'svelte';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
-	import SecuritySectionEn from './securitySectionEn.svelte';
-	import ModulesEn from './modulesEn.svelte';
-	import PricesEn from './pricesEn.svelte';
+	import SecuritySectionEn from '$components/securitySectionEn.svelte';
+	import ModulesEn from '$components/modulesEn.svelte';
+	import PricesEn from '$components/pricesEn.svelte';
 	import { scroll } from '$lib/scroll';
-	import QuotesEn from './quotesEn.svelte';
+	import QuotesEn from '$components/quotesEn.svelte';
     import { imageHandler } from '$lib/img';
     import Hero from '$lib/components/hero.svelte';
 
