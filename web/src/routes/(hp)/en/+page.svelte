@@ -5,9 +5,6 @@
 	import SecuritySectionEn from '$components/securitySectionEn.svelte';
 	import ModulesEn from '$components/modulesEn.svelte';
 	import PricesEn from '$components/pricesEn.svelte';
-	import { scroll } from '$lib/scroll';
-	import QuotesEn from '$components/quotesEn.svelte';
-    import { imageHandler } from '$lib/img';
     import Hero from '$lib/components/hero.svelte';
 
 	setContext('lang', 'en');
