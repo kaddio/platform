@@ -12,7 +12,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Testimonials from some of our 2000 customers        
+        Testimonials from some of our 2200 customers        
     </span>
 
     <QuoteEnRamzi />
