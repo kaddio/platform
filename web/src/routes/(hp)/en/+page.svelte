@@ -6,6 +6,7 @@
 	import ModulesEn from '$components/modulesEn.svelte';
 	import PricesEn from '$components/pricesEn.svelte';
     import Hero from '$lib/components/hero.svelte';
+    import QuotesEn from '$components/quotesEn.svelte';
 
 	setContext('lang', 'en');
 </script>
@@ -30,7 +31,7 @@
 
 <ModulesEn />
 <!-- <CrmSv /> -->
-<!-- <QuotesEn /> -->
+<QuotesEn />
 <PricesEn />
 <SecuritySectionEn />
 <!-- <ReferencesSv /> -->
