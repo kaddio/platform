@@ -6,14 +6,14 @@
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
 	import QuotesSection from "$components/quotesSection.svelte";
-    import StatsSectionEn from "../../statsSectionEn.svelte";
-	import PricesEn from "../../pricesEn.svelte";
-    import ContactDanielEn from "../../contactDanielEn.svelte";
-	import QuoteEnAmanda from "../../quoteEnAmanda.svelte";
-	import QuoteEnJimmy from "../../quoteEnJimmy.svelte";
-	import QuoteEnRamzi from "../../quoteEnRamzi.svelte";
-	import QuoteEnJonas from "../../quoteEnJonas.svelte";
-	import QuoteEnSofia from "../../quoteEnSofia.svelte";
+    import StatsSectionEn from "$components/statsSectionEn.svelte";
+	import PricesEn from "$components/pricesEn.svelte";
+    import ContactDanielEn from "$components/contactDanielEn.svelte";
+	import QuoteEnAmanda from "$components/quoteEnAmanda.svelte";
+	import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
+	import QuoteEnRamzi from "$components/quoteEnRamzi.svelte";
+	import QuoteEnJonas from "$components/quoteEnJonas.svelte";
+	import QuoteEnSofia from "$components/quoteEnSofia.svelte";
 
 </script>
 
