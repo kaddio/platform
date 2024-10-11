@@ -201,29 +201,29 @@
                     <span slot="label">
                         {#if lang == 'sv'}
                             Jag godkänner
-                            <a href="/sv/legal/tos" class="font-semibold text-oldpink"
+                            <a href="/legal/tos" class="font-semibold text-oldpink"
                                 >Användarvillkor</a
                             >
                             och
-                            <a href="/sv/legal/privacy" class="font-semibold text-oldpink"
+                            <a href="/legal/privacy" class="font-semibold text-oldpink"
                                 >Sekretesspolicy</a
                             >.
                         {:else if lang == 'es'}
                             Acepto los
-                            <a href="/es/legal/tos" class="font-semibold text-oldpink">
+                            <a href="/legal/tos" class="font-semibold text-oldpink">
                                 Términos de Uso</a
                             >
                             y la
-                            <a href="/es/legal/privacy" class="font-semibold text-oldpink"
+                            <a href="/legal/privacy" class="font-semibold text-oldpink"
                                 >Política de Privacidad</a
                             >.
                         {:else if lang == 'en'}
                             I accept the
-                            <a href="/sv/legal/tos" class="font-semibold text-oldpink"
+                            <a href="/legal/tos" class="font-semibold text-oldpink"
                                 >Terms of Use</a
                             >
                             and
-                            <a href="/sv/legal/privacy" class="font-semibold text-oldpink"
+                            <a href="/legal/privacy" class="font-semibold text-oldpink"
                                 >Privacy Policy</a
                             >.
                         {/if}
