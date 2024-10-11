@@ -2,7 +2,7 @@
 	import { setContext } from 'svelte';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
-    import ContactDanielEn from '../contactDanielEn.svelte';
+    import ContactDanielEn from '../../../../components/contactDanielEn.svelte';
 
 	setContext('lang', 'en');
 
