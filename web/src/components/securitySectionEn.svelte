@@ -1,5 +1,5 @@
 <script>
-	import SecuritySection from "$components/securitySection.svelte";
+	import SecuritySection from "./securitySection.svelte";
 
 </script>
 <SecuritySection src="/sv/legal/privacy">
