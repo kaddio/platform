@@ -275,7 +275,9 @@
                         <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
                 {/if}
-                <Map {addresses} points={organization.geoPoint.coordinates} />
+                {#if organization.homepage?.showMap}
+                    <Map {addresses} points={organization.geoPoint.coordinates} />
+                {/if}
             </Card>
         </div>
     </div>
