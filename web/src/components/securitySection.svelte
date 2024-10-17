@@ -2,7 +2,7 @@
     import { imageHandler } from "$lib/img";
 	import { _ } from "$lib/stores";
 
-  export let src = '/sv/legal/privacy';
+  export let src = '/legal/privacy';
 
 </script>
 <div class="relative bg-gray-100">
