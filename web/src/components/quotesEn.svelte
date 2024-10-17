@@ -1,7 +1,7 @@
 
 <script>
 	import QuotesSection from "$components/quotesSection.svelte";
-    import QuoteSvKim from "../routes/(hp)/sv/quote-sv-kim.svelte";
+    import QuoteSvKim from "./quote-sv-kim.svelte";
     import QuoteEnAmanda from "./quoteEnAmanda.svelte";
     import QuoteEnJimmy from "./quoteEnJimmy.svelte";
     import QuoteEnJonas from "./quoteEnJonas.svelte";
