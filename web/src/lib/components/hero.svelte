@@ -6,7 +6,7 @@
     export let manAlt = "Bakgrundsbild för Kaddio, en person som sitter med en kaffekopp i handen";
     export let demoLink: string;
 	import { scroll } from '$lib/scroll';
-    import Testimonial from "../../routes/(hp)/sv/testimonial.svelte";
+    import Testimonial from "$components/testimonial.svelte";
 
     const lang = getContext("lang");
 </script>

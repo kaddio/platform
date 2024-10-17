@@ -12,18 +12,18 @@
     import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
     import Quote from "$components/quote.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
-    import PricesSv from "../../pricesSv.svelte";
+    import PricesSv from "$components/pricesSv.svelte";
     import StatsSection from "$components/statsSection.svelte";
     import StatsSectionPart from "$components/statsSectionPart.svelte";
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
 	import SalesSection from "$components/salesSection.svelte";
-	import ContactDanielSv from "../../contactDanielSv.svelte";
-	import QuoteSvAmanda from "../../quote-sv-amanda.svelte";
-	import QuoteSvJimmy from "../../quote-sv-jimmy.svelte";
-	import QuoteSvJonas from "../../quote-sv-jonas.svelte";
-    import QuoteSvSofia from "../../quote-sv-sofia.svelte";
-	import StatsSectionSv from "../../statsSectionSv.svelte";
+	import ContactDanielSv from "$components/contactDanielSv.svelte";
+	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
+    import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
+	import StatsSectionSv from "$components/statsSectionSv.svelte";
 
 </script>
 

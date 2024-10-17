@@ -1,13 +1,13 @@
 <script lang="ts">
-    import ModulesSv from './modulesSv.svelte';
-    import QuotesSv from './quotesSv.svelte';
-    import PricesSv from './pricesSv.svelte';
-    import ReferencesSv from './referencesSv.svelte';
+    import ModulesSv from '$components/modulesSv.svelte';
+    import QuotesSv from '$components/quotesSv.svelte';
+    import PricesSv from '$components/pricesSv.svelte';
+    import ReferencesSv from '$components/referencesSv.svelte';
     import { setContext } from 'svelte';
     import Footer from '$components/footer.svelte';
-    import SecuritySectionSv from './securitySectionSv.svelte';
+    import SecuritySectionSv from '$components/securitySectionSv.svelte';
     import Nav from '$components/nav.svelte';
-    import ContactDanielSv from './contactDanielSv.svelte';
+    import ContactDanielSv from '$components/contactDanielSv.svelte';
     import Hero from '$lib/components/hero.svelte';
 
     setContext('lang', 'sv');
