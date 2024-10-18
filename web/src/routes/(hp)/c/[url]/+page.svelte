@@ -275,7 +275,11 @@
                         <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
                 {/if}
-                <Map {addresses} points={organization.geoPoint.coordinates} />
+                {#if organization.homepage?.showMap}
+                    <!-- {#if organization.geoPoint.coordinates && organization.geoPoint.coordinates.length > 0 && organization.geoPoint.coordinates[0].length > 0 && organization.geoPoint.coordinates[0][0] > 0} -->
+                    <Map {addresses} points={organization.geoPoint.coordinates} />
+                    <!-- {/if} -->
+                {/if}
             </Card>
         </div>
     </div>

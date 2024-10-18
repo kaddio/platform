@@ -172,6 +172,7 @@ export async function load({ params, fetch, request, getClientAddress, url }) {
                         presentation
                         pics
                         showPlaces
+                        showMap
                         showUs
                         links {
                             type
