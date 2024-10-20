@@ -11,6 +11,7 @@
     import { imageHandler } from '$lib/img';
     import StatusBanner from './status-banner.svelte';
     import Status from './status.svelte';
+    import Intercom from './intercom.svelte';
     const lang = getContext('lang');
     export let darkHeader: boolean = false;
 
@@ -67,6 +68,8 @@
  /> -->
 
 <LdTag schema={kaddioOrgSchema} />
+
+<Intercom />
 
 <header class="relative isolate z-10">
     <LangBanner />
