@@ -16,15 +16,15 @@
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
     import SalesSection from "$components/salesSection.svelte";
-    import QuoteSvAmanda from "../../quote-sv-amanda.svelte";
-	import QuoteSvJimmy from "../../quote-sv-jimmy.svelte";
-	import QuoteSvJonas from "../../quote-sv-jonas.svelte";
-	import QuoteSvKim from "../../quote-sv-kim.svelte";
-	import QuoteSvRamzi from "../../quote-sv-ramzi.svelte";
-	import QuoteSvSofia from "../../quote-sv-sofia.svelte";
-	import QuoteSvUlrika from "../../quote-sv-ulrika.svelte";
-	import ContactDanielSv from "../../contactDanielSv.svelte";
-	import PricesSv from "../../pricesSv.svelte";
+    import QuoteSvAmanda from '$components/quote-sv-amanda.svelte';
+	import QuoteSvJimmy from '$components/quote-sv-jimmy.svelte';
+	import QuoteSvJonas from '$components/quote-sv-jonas.svelte';
+	import QuoteSvKim from '$components/quote-sv-kim.svelte';
+	import QuoteSvRamzi from '$components/quote-sv-ramzi.svelte';
+	import QuoteSvSofia from '$components/quote-sv-sofia.svelte';
+	import QuoteSvUlrika from '$components/quote-sv-ulrika.svelte';
+	import ContactDanielSv from '$components/contactDanielSv.svelte';
+	import PricesSv from '$components/pricesSv.svelte';
 </script>
 
 <svelte:head>
