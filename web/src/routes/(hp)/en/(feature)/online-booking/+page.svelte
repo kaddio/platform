@@ -3,6 +3,7 @@
 	import FaqSection from "$components/faqSection.svelte";
 	import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
 	import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+
 </script>
 
 <svelte:head>

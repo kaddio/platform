@@ -1,6 +1,7 @@
 import { browser } from '$app/environment';
 import { getContext } from 'svelte';
 import { readable, writable } from 'svelte/store';
+import { dev } from '$app/environment';
 
 export let token = writable();
 
@@ -26,6 +27,16 @@ if (browser) {
 }
 
 const translations = {
+    'Tack!': {
+        en: 'Thank you!',
+        es: '¡Gracias!'
+    },
+
+    'Kontot är skapat, kolla din mail för att logga in.': {
+        en: 'The account is created, please check your mail to log in.',
+        es: 'La cuenta ha sido creada, revisa tu correo electrónico para iniciar sesión.'
+    },
+
     'Kontakta oss': {
         en: 'Contact',
         es: 'Contactar'
@@ -227,6 +238,10 @@ const translations = {
         en: 'The organization could not be found',
         es: 'Organización no encontrada'
     },
+    'Inloggning till vald region stöds ej ännu.': {
+        en: 'Login to this region is not yet supported',
+        es: 'Aún no se puede iniciar sesión en esta región'
+    },
     'Kontrollera vilken URL du skrivit in. Du kan hitta din URL i det första mail du fick ifrån Kaddio när du skapat konto':
         {
             en: 'Check the URL you have entered. You can find your URL in the first email you received from Kaddio when you created your account.',
@@ -247,10 +262,6 @@ const translations = {
     'Visa alla tjänster': {
         en: 'View all services',
         es: 'Ver todos los servicios'
-    },
-    Kundberättelser: {
-        en: 'Case studies',
-        es: 'Casos de estudio'
     },
     'Verifiera identitet': {
         en: 'Verify your identity',
@@ -288,44 +299,121 @@ const translations = {
     'Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.': {
         en: 'Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses.',
         es: 'Kaddio Invoicing es un programa de facturación completo para pequeñas y medianas empresas.'
+    },
+
+    'Sidan kunde inte hittas': {
+        en: 'Page not found',
+        es: 'Página no encontrada'
+    },
+
+    'Ursäkta, men vi kunde inte hitta sidan.': {
+        en: 'Sorry, we couldn’t find the page you’re looking for.',
+        es: 'Lo sentimos, no pudimos encontrar la página que buscas.'
+    },
+
+    'Tillbaks hem': {
+        en: 'Back to home',
+        es: 'Volver a inicio'
+    },
+
+    'Letar du behandling?': {
+        en: 'Looking for care?',
+        es: '¿Estás buscando tratamiento?'
+    },
+    'Sök här!': {
+        en: 'Search here!',
+        es: '¡Buscar aquí!'
     }
 };
 
-const links = {
+export const links = {
+    'hitta-klinik': {
+        sv: 'hitta-klinik'
+    },
+
+    'choose-country-region': {
+        default: 'choose-country-region'
+    },
+
+    'about-us': {
+        default: 'about-us'
+    },
+
+    career: {
+        default: 'career'
+    },
+
+    support: {
+        sv: 'support',
+        en: 'support',
+        es: 'support'
+    },
+
+    case: {
+        sv: 'case',
+        en: 'case'
+    },
+
+    'case/afobia': {
+        sv: 'case/afobia',
+        en: 'case/afobia'
+    },
+
+    'case/osteopatia-mallorca': {
+        sv: 'case/osteopatia-mallorca',
+        en: 'case/osteopatia-mallorca'
+    },
+
+    'case/spanda-healthcare': {
+        sv: 'case/spanda-healthcare',
+        en: 'case/spanda-healthcare'
+    },
+
+    'case/majornas-osteopati': {
+        sv: 'case/majornas-osteopati',
+        en: 'case/majornas-osteopati'
+    },
+
+    sales: {
+        sv: 'sales',
+        en: 'sales',
+        es: 'sales'
+    },
+
+    'sign-in': {
+        sv: 'sign-in',
+        en: 'sign-in',
+        es: 'sign-in'
+    },
+
+    create: {
+        sv: 'create',
+        en: 'create',
+        es: 'create'
+    },
+
     journalsystem: {
+        sv: 'journalsystem',
         en: 'electronic-medical-record',
         es: 'historia-clinica'
     },
 
     onlinebokning: {
+        sv: 'onlinebokning',
         en: 'online-booking',
         es: 'sistema-de-reservas'
     },
 
     kommunikation: {
+        sv: 'kommunikation',
         en: 'communication',
         es: 'video-y-chat-encriptados'
     },
 
     fakturering: {
+        sv: 'fakturering',
         en: 'invoicing',
         es: 'sistema-de-facturacion'
-    },
-    formulär: {
-        en: 'forms',
-        es: 'formularios'
-    },
-    uppgifter: {
-        en: 'todos',
-        es: 'tareas'
-    },
-    dokument: {
-        en: 'documents',
-        es: 'documentos'
-    },
-    rapporter: {
-        en: 'reports',
-        es: 'informes'
     }
 };
 

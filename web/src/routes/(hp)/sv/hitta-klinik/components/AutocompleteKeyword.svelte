@@ -31,17 +31,27 @@
             }
         }
         `;
-        const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
-            method: 'POST',
-            body: JSON.stringify({ query }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
+        let data;
 
-        const data = await result.json();
-        console.log(data);
-        loadedItems = data.data.autocompleteSearch;
+        const fetchUrl = `${apiUrl()}/graphqlmarketplace`
+
+        try{
+            const result = await fetch(fetchUrl, {
+                method: 'POST',
+                body: JSON.stringify({ query }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            data = await result.json();
+            loadedItems = data.data.autocompleteSearch;
+        }
+
+        catch(e){
+            console.log(`Could not fetch data for marketplace ${fetchUrl}`);
+        }
+
     }, 200);
 
     async function autocompleteSearch(input: string) {

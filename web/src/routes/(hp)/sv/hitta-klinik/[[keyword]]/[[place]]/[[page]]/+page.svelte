@@ -8,7 +8,9 @@
 
     import AutocompleteKeyword from '../../../components/AutocompleteKeyword.svelte';
     import AutocompletePlace from '../../../components/AutocompletePlace.svelte';
-    import { prevent_default } from 'svelte/internal';
+    import { onMount, prevent_default } from 'svelte/internal';
+    import { descFromKeywordAndPlace } from "$lib/keywords";
+    import Seo from '$components/seo.svelte';
 
     export let data: PageData;
     let page = 0;
@@ -83,14 +85,76 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
-        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
+
         searchForm.submit();
     };
+
+    onMount(() => {
+        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
+    });
+
+    const titleMarketplace = function(keyword: string, place: string): string{
+        if(!keyword || keyword == 'Alla'){
+            keyword = 'Vård och hälsa'
+        }
+
+        if(place == 'Sverige'){
+            place = "hela Sverige";
+        }
+
+        if(keyword && place) return `${keyword} ${place}`;
+
+        return `${keyword} hela Sverige`
+    }
+
+    const addKaddio = function(str: string): string{
+        if(str){
+            return `${str} - Kaddio`;
+        }
+
+        else{
+            return 'Kaddio';
+        }
+    }
+
+    const h1ForMarketplace = (keyword: string, place: string) => {
+        if(!keyword || keyword == 'Alla'){
+            keyword = 'Vård och hälsa'
+        }
+
+        if(place == 'Sverige'){
+            place = "hela Sverige";
+        }
+
+        if(keyword && place) return `${keyword} ${place}`;
+
+        return `${keyword} hela Sverige`
+    }
+
+    $: title = addKaddio(titleMarketplace(data.keyword, data.place));
+
+    const hits = function(count: number){
+        if(count == 1){
+            return `${count} träff`;
+        }
+
+        return `${count} träffar`;
+    }
+
+    // $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
+    // $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
+    
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex" />
-</svelte:head>
+
+<Seo
+    url="https://kaddio.com/sv/hitta-klinik"
+    type="website"
+    keywords="psykolog, terapi, behandlingar, skönhetsbehandling, massage"
+    title={title}
+    description={descFromKeywordAndPlace(data.keyword, data.place)}
+    images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
+/>
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative p-4">
@@ -145,13 +209,11 @@
     <div class="bg-gray-100 p-4 sm:p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
         <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
             <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
-                {#if data.organizations.length}
+                {#if data.organizations?.length}
                     <div class="flex justify-between">
                         <div class="font-semibold mb-2 ml-3">
-                            <h1 class="inline">{data.keyword} {data.place}</h1>
-                            &nbsp;
-                            <span class="font-normal text-gray-500"
-                                >Visar {data.organizations.length} av {data.count}</span
+                            <h1 class="inline">{titleMarketplace(data.keyword, data.place)}</h1> 
+                            <span class="font-normal text-gray-500"> · {hits(data.count)}</span
                             >
                         </div>
                     </div>

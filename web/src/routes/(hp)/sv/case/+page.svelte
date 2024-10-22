@@ -5,6 +5,11 @@
 
 </script>
 
+<svelte:head>
+  <title>Kaddio - kundberättelser</title>
+  <meta name="" content="Läs om hur Kaddio har hjälpt organisationer nå sina mål" />
+</svelte:head>
+
 <BlogPosts>
   <span slot="pretitle">
       Kundberättelser

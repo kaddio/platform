@@ -1,6 +1,7 @@
 import { apiUrl } from '$lib/apiUrl.js';
 
 export async function loadData({
+    trackingData,
     params,
     fetch
 }): Promise<{ organizations: Organization[]; keyword: string; count: number }> {
@@ -14,6 +15,7 @@ export async function loadData({
             // page: 0
         };
     }
+
     const parsedPage = parseInt(page);
     const ORGS_PER_PAGE = 12;
     const query = `
@@ -29,6 +31,7 @@ export async function loadData({
 			url,
 			keywords,
 			hasBooking,
+            useReviews,
             stars,
             showBooking,
 			bookingTypes {
@@ -45,23 +48,31 @@ export async function loadData({
 	}
 }`;
 
-    const result = await fetch(`${apiUrl()}/graphqlmarketplace`, {
-        method: 'POST',
-        body: JSON.stringify({ query }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    });
+    let orgs;
+    const fetchUrl = `${apiUrl()}/graphqlmarketplace`;
 
-    if (!result.ok) {
-        throw result;
+    try {
+        const result = await fetch(fetchUrl, {
+            method: 'POST',
+            body: JSON.stringify({ query }),
+            headers: {
+                'Content-Type': 'application/json',
+                'x-tracking-data': JSON.stringify(trackingData)
+            }
+        });
+
+        if (!result.ok) {
+            throw result;
+        }
+
+        orgs = await result.json();
+    } catch (e) {
+        console.error(`Could not fetch data for marketplace ${fetchUrl}`);
     }
 
-    const orgs = await result.json();
-
     return {
-        organizations: orgs.data.findOrganizations.organizations,
-        count: orgs.data.findOrganizations.count,
+        organizations: orgs?.data.findOrganizations?.organizations,
+        count: orgs?.data.findOrganizations?.count,
         place,
         keyword,
         page: parsedPage

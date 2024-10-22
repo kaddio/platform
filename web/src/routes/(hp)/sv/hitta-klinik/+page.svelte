@@ -5,7 +5,7 @@
     import AutocompletePlace from './components/AutocompletePlace.svelte';
     import FooterMarketplace from '../../../../components/footerMarketplace.svelte';
     import KeywordCard from './components/KeywordCard.svelte';
-    import { keywords, keywordsByCategory } from './keywords';
+    import { keywords, keywordsByCategory } from "$lib/keywords";
     import AutocompleteKeyword from './components/AutocompleteKeyword.svelte';
     import Seo from '$components/seo.svelte';
 
@@ -79,16 +79,11 @@
     const submit = function () {
         if (!searchForm) return;
         searchForm.action = getUrl();
-        window.sessionStorage && window.sessionStorage.setItem('searchUrl', getUrl());
         searchForm.submit();
     };
 
     onMount(() => {
-        const url = window.sessionStorage && window.sessionStorage.getItem('searchUrl');
-        if (url) {
-            window.sessionStorage && window.sessionStorage.removeItem('searchUrl');
-            window.history.replaceState({}, '', url);
-        }
+        window.sessionStorage && window.sessionStorage.removeItem('searchUrl');
     });
 
     beforeNavigate((navigation) => {
@@ -103,10 +98,6 @@
     });
 </script>
 
-<svelte:head>
-    <meta name="robots" content="noindex" />
-</svelte:head>
-<!-- 
 <Seo
     url="https://kaddio.com/sv/hitta-klinik"
     type="website"
@@ -114,7 +105,7 @@
     title="Boka hälsa på Kaddio"
     description="På Kaddio kan du hitta och boka allt inom hälsa över hela Sverige"
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
-/> -->
+/>
 
 <div class="w-sceen flex flex-col">
     <div class="w-full relative md:p-16">

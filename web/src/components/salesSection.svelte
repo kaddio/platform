@@ -1,7 +1,10 @@
 <script>
-    let image = '/img/daniel_sale.jpeg';
-    let hoverImage = '/img/daniel_rufus.jpeg';
+    import { imageHandler } from "$lib/img";
+
+    let image = imageHandler('/img/daniel_sale.jpeg', {format: "auto", width: 640});
+    let hoverImage = imageHandler('/img/daniel_rufus.jpeg', {format: "auto", width: 640});
     let imageSrc = image;
+
 </script>
 
 <div class="relative bg-white">
@@ -80,8 +83,8 @@
                             </svg>
                         </dt>
                         <dd>
-                            <a class="hover:text-gray-900" href="mailto:sales@kaddio.com"
-                                >sales@kaddio.com</a
+                            <a class="hover:text-gray-900" href="mailto:hello@kaddio.com"
+                                >hello@kaddio.com</a
                             >
                         </dd>
                     </div>
@@ -93,8 +96,9 @@
     <div class="lg:absolute lg:inset-0 lg:left-1/2 flex items-center justify-center mb-24 lg:mb-0">
         <img
             class="w-3/4 h-auto rounded-full bg-gray-50 lg:absolute lg:h-3/4 lg:w-auto 2xl:h-4/5"
+            loading="lazy"
             src={imageSrc}
-            alt=""
+            alt="Daniel"
             on:mouseenter={() => {
                 imageSrc = hoverImage;
             }}

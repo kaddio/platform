@@ -23,6 +23,9 @@
     import LdTag from '$lib/components/LDTag.svelte';
     import { localBusinessSchema } from '$lib/json-ld';
     import { redirect } from '@sveltejs/kit';
+    import FooterDiscrete from '../../../../components/footerDiscrete.svelte';
+    import { utmSource } from '$lib/utm-source';
+    import { kaddioOrgUrl } from '$lib/apiUrl';
     export let data;
     dayjs.locale('sv');
     dayjs.extend(relativeTime);
@@ -37,6 +40,12 @@
         }
         window.location = '/sv/hitta-klinik';
     };
+    let hasBackButton = false;
+    onMount(() => {
+        if (window.sessionStorage && window.sessionStorage.getItem('searchUrl')) {
+            hasBackButton = true;
+        }
+    });
     onMount(() => {
         const r = document.querySelector(':root');
         organization.cssVars.forEach((c) => {
@@ -67,30 +76,32 @@
         // Use a regular expression to remove style attributes
         return html.replace(/style\s*=\s*["'][^"']*["']/gi, '');
     }
+    let description =
+        organization.homepage?.metaDescription ||
+        `${organization.name} - ${organization.keywords?.join(', ')} - ${organization.city}`;
+
+    const titleFromOrg = function (org): string {
+        const cityStr = org.city ? `, ${org.city}` : '';
+
+        return `${org.name}${cityStr} - Kaddio`;
+    };
 </script>
 
-{#if organization.redirectToNewHomepage}
-    <LdTag schema={localBusinessSchema} />
-    <Seo
-        url={`https://kaddio.com/c/${organization.url}`}
-        type="business.business"
-        keywords={organization.keywords?.join(', ')}
-        title={`${organization.name}, ${organization.city} - Kaddio`}
-        description={`${organization.name} - ${organization.keywords?.join(', ')} - ${
-            organization.city
-        }`}
-        locality={organization.city}
-        images={imagesFromImageHandler}
-        streetAddress={organization.address}
-    />
-{/if}
+<LdTag schema={localBusinessSchema(organization)} />
+<Seo
+    url={`https://kaddio.com/c/${organization.url}`}
+    type="business.business"
+    keywords={organization.keywords?.join(', ')}
+    title={titleFromOrg(organization)}
+    {description}
+    locality={organization.city}
+    images={imagesFromImageHandler}
+    streetAddress={organization.address}
+/>
 
 <svelte:head>
-    {#if organization.redirectToNewHomepage}
-        <title>{organization.name}, {organization.city} - Kaddio</title>
-    {:else}
-        <meta name="robots" content="noindex" />
-    {/if}
+    <title>{titleFromOrg(organization)}</title>
+    <link rel="canonical" href="https://kaddio.com/c/{organization.url}" />
 </svelte:head>
 
 <div class="w-screen h-full bg-gray-100 pb-8">
@@ -106,7 +117,9 @@
             <div class="flex justify-between w-full">
                 <div class="flex gap-5">
                     <a on:click={() => back()} href class="flex gap-5">
-                        <i class="fa fa-arrow-left text-white text-xl" />
+                        {#if hasBackButton}
+                            <i class="fa fa-arrow-left text-white text-xl" />
+                        {/if}
                         <img src="/img/kaddio-logo.png" alt="Kaddio logotype" class="h-7" />
                     </a>
                 </div>
@@ -114,6 +127,7 @@
                 <KdLinkButton
                     variant="light"
                     color="default"
+                    rel="nofollow"
                     href="https://{organization.url}.kaddio.com/dashboard">Logga in</KdLinkButton
                 >
             </div>
@@ -162,8 +176,10 @@
                                 variant="flat"
                                 color="theme-primary"
                                 size="md"
-                                href="https://{organization.url}.kaddio.com/booking"
-                                >Sök tid</KdLinkButton
+                                href="{kaddioOrgUrl(
+                                    organization.url
+                                )}/booking/cal?utm_source={utmSource($page.url)}"
+                                >Boka tid</KdLinkButton
                             >
                         </div>
                     {/if}
@@ -206,7 +222,9 @@
                 {/if}
                 {#if organization.hasContactForm}
                     <KdLinkButton
-                        href="https://{organization.url}.kaddio.com/contact-us"
+                        href="https://{organization.url}.kaddio.com/contact-us?utm_source={utmSource(
+                            $page.url
+                        )}"
                         color="theme-primary"
                         class="m-8"
                         variant="flat">Kontakta oss</KdLinkButton
@@ -220,7 +238,7 @@
                     </div>
                 {/if} -->
 
-                {#if organization.showBooking && organization.homepage?.showPlaces}
+                {#if organization.homepage?.showPlaces}
                     <div
                         class="flex flex-col gap-4 p-8 md:max-h-screen overflow-scroll"
                         id="places"
@@ -233,12 +251,15 @@
                                 </span>
 
                                 <span slot="action">
-                                    <KdLinkButton
-                                        size="sm"
-                                        variant="outline"
-                                        href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1"
-                                        >Sök tid</KdLinkButton
-                                    >
+                                    {#if organization.showBooking}
+                                        <KdLinkButton
+                                            size="sm"
+                                            variant="outline"
+                                            href="https://{organization.url}.kaddio.com/booking/cal/{place.name.toLowerCase()}?selectonly=1&utm_source={utmSource(
+                                                $page.url
+                                            )}">Sök tid</KdLinkButton
+                                        >
+                                    {/if}
                                 </span>
                             </KdItem>
                         {/each}
@@ -254,7 +275,11 @@
                         <span itemprop="addressLocality">{organization.city || ''}</span>
                     </div>
                 {/if}
-                <Map {addresses} />
+                {#if organization.homepage?.showMap}
+                    <!-- {#if organization.geoPoint.coordinates && organization.geoPoint.coordinates.length > 0 && organization.geoPoint.coordinates[0].length > 0 && organization.geoPoint.coordinates[0][0] > 0} -->
+                    <Map {addresses} points={organization.geoPoint.coordinates} />
+                    <!-- {/if} -->
+                {/if}
             </Card>
         </div>
     </div>
@@ -295,8 +320,11 @@
         {/if}
     </div>
 </div>
-
-<FooterMarketplace />
+{#if hasBackButton}
+    <FooterMarketplace />
+{:else}
+    <FooterDiscrete />
+{/if}
 
 <style>
     .overlay {

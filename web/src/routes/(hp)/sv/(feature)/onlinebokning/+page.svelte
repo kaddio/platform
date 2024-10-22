@@ -5,153 +5,121 @@
 	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import PricesSv from "$components/pricesSv.svelte";
+    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
+    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+	import SalesSection from "$components/salesSection.svelte";
+	import ContactDanielSv from "$components/contactDanielSv.svelte";
+	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
+    import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
+	import StatsSectionSv from "$components/statsSectionSv.svelte";
+
 </script>
 
 <svelte:head>
+    <meta name="robots" content="noindex">
+
 	<title>Onlinebokning med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Onlinebokning</span>
-	<span slot="title">Kaddio Kalender och Tidsbokning</span>
+	<span slot="title">Kaddio Bokning</span>
 	<span slot="sub">
-		Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig. I Kaddio är kalendern även din publika bokning så att du enkelt kan hantera bokningsbara tider, möten och grupppass i samma vy.</span>
+		Kaddio Bokning är kalender och bokningssystem i ett. Hantera bokningar, gruppass och möten i samma vy och få koll på läget.</span>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Planera</span>
+	<ModuleFeatureWithIcon icon="people-pants">
+		<span slot="title">Samarbeta.</span>
 		<span slot="body">
-			Skapa bokningsbara tider direkt från din kalender. Konfigurera dina bokningstyper i detalj. Välj om dina kunder bokar och betalar själva eller om du tar kontroll över varje minut. 
-		</span>
-	</ModuleFeatureWithIcon>
-
-	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Samarbeta</span>
-		<span slot="body">
-			Använd kalendern för att boka möten och välj enkelt vilka som ska vara med. Bestäm själv vilka kollegor som ska se vad.
+			Administrera mötesbokning och rumsbokning för hela organisationen.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera</span>
+		<span slot="title">Effektivisera.</span>
 		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid. 
+			Skapa mallar för återkommande händelser i kalendern och spara tid. 
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+		<span slot="title">Förbättra kundflödet.</span>
+		<span slot="body">
+			Skapa bokningsbara tider direkt från din kalender. Styr allt själv eller låt kunderna boka och betala på egen hand.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
-  
 
-<FaqSection>
-	<span slot="title">Detaljer</span>
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Innehåll</span>
+	<span slot="title">Detta är Kaddio Bokning</span>
+	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är del av ett stort företag eller egenföretagare.</span>
 
-	<Qa>
-		<span slot="q">Kalender</span>
-		<span slot="a">
-			Administrera bokningar i kalendern, till exempel ändra eller avboka tid. I kalendern ser du bokningar sida vid sida med möten och andra aktiviteter.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Samarbeta</span>
 
-	<Qa>
-		<span slot="q">Öppen klientbokning</span>
-		<span slot="a">
-			Klienten bokar tid själv på en publik websida.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Stöd för verksamhet på flera adresser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Delad kalender inom organisationen</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Väntelistor för klienter på kö</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Bokning med Mobilt BankID</span>
-		<span slot="a">
-			Klienten loggar in i Kaddio med Mobilt BankID för att kunna boka tid. Passar dig som vill säkerställa identiteten på den som bokar.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Effektivisera</span>
 
-	<Qa>
-		<span slot="q">SMS-påminnelser</span>
-		<span slot="a">
-			Välj om och när SMS-påminnelser skickas inför och efter bokade tider.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Kalender och tidsbokning i samma vy</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Incheckning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Dagrapporter</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska fakturaunderlag</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Mallfunktion</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Formulär</span>
-		<span slot="a">
-			Skicka formulär automatiskt i samband med bokning, till exempel skattningsformulär och hälsodeklaration.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Förbättra kundflödet</span>
 
-	<Qa>
-		<span slot="q">Behandlingsformer</span>
-		<span slot="a">
-			Erbjud olika typer av behandlingsformer. Koppla behandlingsformer till olika behandlare. Anpassa sms och mailutskick beroende på behandling.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Tidsbokning på hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Integration till Kuralink</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Söktjänsten Hitta Klinik</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bokning med BankID</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Påminnelser via e-post och SMS</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Formulär vid bokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
 
-	<Qa>
-		<span slot="q">Gruppbokning</span>
-		<span slot="a">
-			Lägg upp tider som är bokningsbara för fler än en deltagare.
-		</span>
-	</Qa>
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
 
-	<Qa>
-		<span slot="q">Tidsoptimering</span>
-		<span slot="a">
-			Undvik onödiga hål i schemat. Kaddio optimerar bokningsbara tider utifrån behandlingformernas längd.
-		</span>
-	</Qa>
+<QuotesSection>
+    <span slot="title">
+        Vad våra kunder säger om <br>Kaddio Bokning       
+    </span>
 
-	<Qa>
-		<span slot="q">Väntelistor</span>
-		<span slot="a">
-			Skapa väntelistor med datum, anteckningar och delegeringsfunktion.
-		</span>
-	</Qa>
+    <QuoteSvJimmy />
+    
+    <QuoteSvJonas />
 
-	<Qa>
-		<span slot="q">Kortbetalning vid bokning</span>
-		<span slot="a">
-			Låt klienten betala med kort direkt vid bokning online.
-		</span>
-	</Qa>
+	<QuoteSvAmanda />
 
-	<Qa>
-		<span slot="q">Fakturering</span>
-		<span slot="a">
-			Automatiska faktureringsunderlag skapas utifrån bokningar.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Visa bokning på din hemsida</span>
-		<span slot="a">
-			Integrera bokning direkt på din hemsida.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Platser</span>
-		<span slot="a">
-			Kaddio har stöd för om du har mottagningar på flera platser. Information i mail och sms-påminnelser anpassas beroende på plats.
-		</span>
-	</Qa>
+	<QuoteSvSofia />
+    
+</QuotesSection>
 
-	<Qa>
-		<span slot="q">Rumsbokning</span>
-		<span slot="a">
-			Schemaläggning för dina rum. Kaddio ser till att behandlingar bara bokas in när det finns tillgängliga rum.
-		</span>
-	</Qa>
+<StatsSectionSv />
 
-	<Qa>
-		<span slot="q">Personalliggare</span>
-		<span slot="a">
-			Kaddio kan användas som digital personalliggare genom Arbetstid i Kalendern, med hjälp av Loggning uppfylls även Skatteverkets regler kring kontroll.
-		</span>
-	</Qa>
+<PricesSv></PricesSv>
 
-	<Qa>
-		<span slot="q">Loggning</span>
-		<span slot="a">
-			Läsning och redigering loggas. Loggen visar vad som gjorts med en viss klients journal och av vem, när och från vilken ip-adress.
-		</span>
-	</Qa>
-
-</FaqSection>
+<ContactDanielSv></ContactDanielSv>

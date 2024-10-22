@@ -3,7 +3,7 @@
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
     import ContactDanielEs from '../contactDanielEs.svelte';
-	
+
 	setContext('lang', 'es');
 
 </script>

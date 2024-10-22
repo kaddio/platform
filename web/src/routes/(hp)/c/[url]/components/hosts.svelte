@@ -7,6 +7,8 @@
 
     export let hosts: any[];
     export let bookingFilterOnHost: boolean;
+    export let useReviews: boolean;
+    export let showBooking: boolean;
     const longList = hosts.length > 10;
     let expanded = !longList;
 
@@ -17,7 +19,7 @@
     <KdItem>
         <span slot="avatar">
             {#if host.imgUrl}
-                <img src={host.imgUrl} alt="Bild på {host.firstname} {host.lastname}" />
+                <img src={host.imgUrl} loading="lazy" alt="Bild på {host.firstname} {host.lastname}" />
             {:else}
                 <div class="flex items-center justify-center h-full w-full bg-gray-100">
                     <i class="fa fa-user text-3xl text-gray-300" />
@@ -35,19 +37,19 @@
                     {host.title}
                 </div>
             {/if}
-            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
+            <!-- {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
                 {#if host.nextFreeTime}
                     <span class="text-green-300">{dayjs(host.nextFreeTime).fromNow()}</span>
                 {:else}
                     <span class="text-red-300">Inga lediga tider</span>
                 {/if}
                 &nbsp;
-            {/if}
+            {/if} -->
 
             <HostModal {host} />
         </span>
         <span slot="action">
-            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost}
+            {#if host.hasSomeClientBookableBookingType && bookingFilterOnHost && showBooking}
                 <KdLinkButton href={host.bookingLink} size="sm" variant="flat" color="theme-primary"
                     >Sök tid</KdLinkButton
                 >

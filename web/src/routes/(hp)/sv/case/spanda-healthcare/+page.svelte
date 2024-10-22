@@ -1,7 +1,12 @@
 <script>
   import Legal from "$components/legal.svelte";
 	import LegalParagraph from "$components/legalParagraph.svelte";
+
 </script>
+
+<svelte:head>
+  <title>Kaddio Kundberättelse @ Mallorca, Spanien</title>
+</svelte:head>
 
 <Legal>
     <span slot="pretitle">

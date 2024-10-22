@@ -4,12 +4,14 @@
     import { getContext } from 'svelte';
     import LangBanner from './lang-banner.svelte';
     import MarketplaceBanner from './marketplace-banner.svelte';
-    import Cookie from './cookie.svelte';
     import Seo from './seo.svelte';
     import LdTag from '$lib/components/LDTag.svelte';
     import { kaddioOrgSchema } from '$lib/json-ld';
+    import ReferralBanner from './referral-banner.svelte';
+    import { imageHandler } from '$lib/img';
+    import StatusBanner from './status-banner.svelte';
+    import Status from './status.svelte';
     const lang = getContext('lang');
-
     export let darkHeader: boolean = false;
 
     let navOpen = false;
@@ -49,26 +51,29 @@
     }
 
     $: $page.url && (navOpen = false);
+
+    $: imageSrc = lightText ? '/img/kaddio-logo.png' : '/img/kaddio-black.png';
+    $: src = imageHandler(imageSrc, { format: 'auto' });
 </script>
 
 <svelte:window on:keydown={onKeyDown} />
 
-<Seo 
+<!-- <Seo 
     url="https://kaddio.com" 
-    title="Journalsystem, onlinebokning, kommunikation, fakturering"
     description="Kaddio är journalsystem, onlinebokning, kommunikation, fakturering i samma system, för dig som hjälper andra" 
     images={["https://kaddio.com/img/kaddio-fade.png", "https://kaddio.com/img/logotypes/Kaddio_Logga_Normal.svg"]} 
     type="website" 
     phone="+46313204414"
- />
+ /> -->
 
- <LdTag schema={kaddioOrgSchema} />
-
-<Cookie />
+<LdTag schema={kaddioOrgSchema} />
 
 <header class="relative isolate z-10">
     <LangBanner />
-    <!-- <MarketplaceBanner /> -->
+    <ReferralBanner />
+    <MarketplaceBanner />
+    <!-- <StatusBanner /> -->
+     <Status />
 
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 gap-x-6 lg:px-8"
@@ -77,11 +82,7 @@
         <div class="flex lg:flex-1">
             <a href="/{lang}" class="-m-1.5 p-1.5">
                 <span class="sr-only">Kaddio</span>
-                <img
-                    class="h-8 w-auto"
-                    src={lightText ? '/img/kaddio-logo.png' : '/img/kaddio-black.png'}
-                    alt=""
-                />
+                <img class="h-8 w-auto" {src} alt="" />
             </a>
         </div>
 
@@ -143,7 +144,9 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                {$_('Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter.')}
+                                {$_(
+                                    'Kaddio Journal har allt du behöver för att dokumentera verksamheten och journalföra klienter.'
+                                )}
                             </p>
                         </div>
                         <div
@@ -162,7 +165,9 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                {$_('Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.')}
+                                {$_(
+                                    'Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig.'
+                                )}
                             </p>
                         </div>
                         <div
@@ -181,7 +186,9 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                {$_('Kommunicera krypterat via chat eller video inom och utom organisationen.')}
+                                {$_(
+                                    'Kommunicera krypterat via chat eller video inom och utom organisationen.'
+                                )}
                             </p>
                         </div>
                         <div
@@ -200,7 +207,9 @@
                                 <span class="absolute inset-0" />
                             </a>
                             <p class="mt-1 text-gray-600">
-                                {$_('Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.')}
+                                {$_(
+                                    'Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag.'
+                                )}
                             </p>
                         </div>
                     </div>
@@ -237,7 +246,7 @@
                                     {$_('Kontakta sälj')}
                                 </a>
                                 <a
-                                    href="/{lang}/#functions"
+                                    href="/{lang}#functions"
                                     class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                                 >
                                     <svg
@@ -260,10 +269,14 @@
                 </div>
             </div>
 
-            <a href="/{lang}/case" class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6">{$_('Kundberättelser')}</a>
+            <a
+                href="/{lang}/case"
+                class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"
+                >{$_('Kundberättelser')}</a
+            >
 
             <a
-                href="/{lang}/#price"
+                href="/{lang}#price"
                 class="{lightText ? 'text-white' : 'text-gray-900'} text-sm font-semibold leading-6"
             >
                 {$_('Pris')}
@@ -336,7 +349,11 @@
                 <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Kaddio</span>
-                        <img class="h-8 w-auto" src="/img/kaddio-black.png" alt="Kaddio logotype" />
+                        <img
+                            class="h-8 w-auto"
+                            src={imageHandler('/img/kaddio-black.png', { format: 'auto' })}
+                            alt="Kaddio logotype"
+                        />
                     </a>
                     <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                         <span class="sr-only">Close menu</span>
@@ -399,7 +416,7 @@
                                 {$_('Chat och Video')}
                             </a>
                             <a
-                                href="fakturering"
+                                href={$link('fakturering', lang)}
                                 class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 <div
@@ -412,7 +429,7 @@
                                 {$_('Fakturering')}
                             </a>
                             <a
-                                href="/{lang}/#functions"
+                                href="/{lang}#functions"
                                 class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 <div
@@ -436,7 +453,7 @@
                         </div>
                         <div class="space-y-2 py-6">
                             <a
-                                href="/{lang}/#price"
+                                href="/{lang}#price"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >{$_('Pris')}</a
                             >

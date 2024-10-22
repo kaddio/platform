@@ -1,8 +1,10 @@
-<script>
+<script lang="ts">
 	import { getContext, onMount } from "svelte";
 	import { _ } from "$lib/stores";
 	import { countryCodeFromLang, getRegion } from "$lib/regions";
+  import { imageHandler } from "$lib/img";
   const lang = getContext('lang');
+  import { page } from '$app/stores';
 
   onMount(() => {
     console.log('%c Work with us?', 'color: #c38f9c; font-size: 30px; font-weight: bold')
@@ -13,12 +15,16 @@
 
 </script>
 
+<svelte:head>
+  <script src="https://uptime.betterstack.com/widgets/announcement.js" data-id="198127" async="async" type="text/javascript"></script>
+</svelte:head>
+
 
 <footer class="bg-gray-200" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <img class="h-7" src="/img/kaddio-black.png" alt="Company name">
+      <img class="h-7" src={imageHandler("/img/kaddio-black.png", {format: "auto"})} loading="lazy" alt="Company name">
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
@@ -60,7 +66,7 @@
                 <a href="/{lang}/case" class="text-sm leading-6 text-gray-600">{ $_('Kundberättelser')}</a>
               </li>
               <li>
-                <a href="https://demo.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="{getRegion(countryCodeFromLang(lang)).demoLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
               <li>
                 <a href="/{lang}/sales" class="text-sm leading-6 text-gray-600">{ $_('Kontakta sälj')}</a>
@@ -71,7 +77,7 @@
               </li>
 
               <li>
-                <a href="http://eepurl.com/gsgcG5" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://eepurl.com/gsgcG5" hreflang="en" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
             </ul>
           </div>
@@ -79,19 +85,29 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Support')}</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
+                  <a href="{getRegion(countryCodeFromLang(lang)).helpCenterLink}" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">{ $_('Hjälpcenter')}</a>
               </li>
 
               <li>
-                <a href="https://kaddio.statuspage.io" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Status</a>
+                <a href="https://kaddio.betteruptime.com" target="_blank" hreflang="en" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">
+                  {#await $page.data.streamed.status}
+                    Status
+                  {:then value}
+                    {#if value}
+                      <span title="All systems operational">Status <i class="fa fa-solid fa-signal-bars text-green-500"></i></span>
+                    {:else}
+                      <span title="Some systems degraded">Status <i class="fa fa-solid fa-signal-slash"></i></span>
+                    {/if}
+                  {/await}
+                </a>
               </li>
 
               <li>
-                <a href="https://changelog.kaddio.com" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Changelog</a>
+                <a href="https://changelog.kaddio.com" hreflang="en" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Changelog</a>
               </li>
 
               <li>
-                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
+                <a href="https://github.com/kaddio/documentation/wiki/Kaddio-GraphQL-API" hreflang="en" target="_blank" rel="noreferrer nofollow" class="text-sm leading-6 text-gray-600">Developer API <i class="fal fa-fw fa-external-link"></i></a>
               </li>
 
               <li>
@@ -105,14 +121,20 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">About us</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/about-us" class="text-sm leading-6 text-gray-600">Meet our team</a>
+                <a href="/about-us" hreflang="en" class="text-sm leading-6 text-gray-600">Meet our team</a>
               </li>
 
               <li>
-                <a href="/career" class="text-sm leading-6 text-gray-600">Career</a>
+                <a href="/career" hreflang="en" class="text-sm leading-6 text-gray-600">Career</a>
               </li>
 
+              <li>
+                <a href="/responsible-disclosure" hreflang="en" class="text-sm leading-6 text-gray-600">Responsible Disclosure</a>
+              </li>
               
+              <li>
+                <a href="/souvereign-cloud" hreflang="en" class="text-sm leading-6 text-gray-600">Souvereign cloud</a>
+              </li>
               
               <!-- <li>
                 <a href="/partners" class="text-sm leading-6 text-gray-600">Partners</a>
@@ -128,11 +150,11 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">{ $_('Avtal') }</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/{lang}/legal/tos" class="text-sm leading-6 text-gray-600">{ $_('Användarvillkor')}</a>
+                <a href="/legal/tos" class="text-sm leading-6 text-gray-600">{ $_('Terms of service')}</a>
               </li>
 
               <li>
-                <a href="/{lang}/legal/privacy" class="text-sm leading-6 text-gray-600">{ $_('Sekretesspolicy')}</a>
+                <a href="/legal/privacy" class="text-sm leading-6 text-gray-600">{ $_('Privacy policy')}</a>
               </li>
             </ul>
           </div>

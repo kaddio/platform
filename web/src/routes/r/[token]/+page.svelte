@@ -9,8 +9,10 @@
         $token = data.referrerData;
     }
 
+    const langFromReferrerString = data.referrerData.lang ? `/${data.referrerData.lang}` : '';
+
     if(browser){
-        goto('/sv')
+        goto(langFromReferrerString || '/sv')
     }
 
 </script>

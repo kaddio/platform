@@ -4,7 +4,8 @@
     import dayjs from 'dayjs';
     import KdLinkButton from '../../../../../components/kdLinkButton.svelte';
     import BookingTypeModal from './booking_type_modal.svelte';
-
+    import { utmSource } from '$lib/utm-source';
+    import { page } from '$app/stores';
     export let bookingTypes: any[];
     const groupedDookingTypes = _.groupBy(bookingTypes, 'categoryName');
 </script>
@@ -14,28 +15,28 @@
         >{category == 'null' ? '' : category}</span
     >
     {#each bookingTypesInCategory as bookingType}
-        <div itemscope itemtype="http://schema.org/Product">
+        <div>
             <KdItem>
-                <span slot="title" itemprop="name">
+                <span slot="title">
                     {bookingType.name}
                 </span>
                 <span slot="subtitle">
                     {bookingType.clientVisibleLength} min ·
-                    <span itemprop="offer">{bookingType.price} kr</span>
+                    <span>{bookingType.price} kr</span>
                     <br />
-                    {#if bookingType.nextFreeTime}
+                    <!-- {#if bookingType.nextFreeTime}
                         <span class="text-green-300"
                             >{dayjs(bookingType.nextFreeTime).fromNow()}</span
                         >
                     {:else}
                         <span class="text-red-300">Inga lediga tider</span>
                     {/if}
-                    &nbsp;
+                    &nbsp;-->
                     <BookingTypeModal {bookingType} />
                 </span>
                 <span slot="action">
                     <KdLinkButton
-                        href={bookingType.bookingLink}
+                        href="{bookingType.bookingLink}&utm_source={utmSource($page.url)}"
                         size="sm"
                         color="theme-primary"
                         variant="flat">Sök tid</KdLinkButton

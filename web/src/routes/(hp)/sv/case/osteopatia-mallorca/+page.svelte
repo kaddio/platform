@@ -4,6 +4,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Kaddio Kundberättelse @ Mallorca, Spanien</title>
+</svelte:head>
+
 <Legal>
     <span slot="pretitle">
         Kaddio Case study @ Mallorca, Spain

@@ -31,7 +31,7 @@
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
 			  <p class="flex-auto" lang="sv">Vår svenska sida för svenska och nordiska marknaden. Välj denna site om du är baserad i något av de nordiska länderna.</p>
 			  <p class="mt-6">
-				<a href="/sv" hreflang="sv" lang="sv" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/sv <span aria-hidden="true">→</span></a>
+				<a href="/sv" lang="sv" hreflang="sv" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/sv <span aria-hidden="true">→</span></a>
 			  </p>
 			</dd>
 		  </div>
@@ -40,9 +40,9 @@
 			  España
 			</dt>
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-			  <p class="flex-auto" lang="es">Durante 2023 Kaddio se establece en España. Utiliza este sitio si resides en España o en otra región de habla hispana.</p>
+			  <p class="flex-auto" lang="es">Desde 2023 Kaddio se establece en España. Utiliza este sitio si resides en España o en otra región de habla hispana.</p>
 			  <p class="mt-6">
-				<a href="/es" hreflang="es" lang="es" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/es <span aria-hidden="true">→</span></a>
+				<a href="/es" lang="es" hreflang="es" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/es <span aria-hidden="true">→</span></a>
 			  </p>
 			</dd>
 		  </div>
@@ -53,7 +53,7 @@
 			<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
 			  <p class="flex-auto" lang="en">Our global site is not bound to a region. If you want to start from a region which is "new to us", contact us and we'll set up currency, VAT, timezone etc. specific to your region</p>
 			  <p class="mt-6">
-				<a href="/en" hreflang="en" lang="en" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/en <span aria-hidden="true">→</span></a>
+				<a href="/en" lang="en" hreflang="en" class="text-sm font-semibold leading-6 text-oldpink">kaddio.com/en <span aria-hidden="true">→</span></a>
 			  </p>
 			</dd>
 		  </div>

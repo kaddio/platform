@@ -1,3 +1,6 @@
+<script lang="ts">
+    import { imageHandler } from "$lib/img";
+</script>
 
 <header class="relative inset-x-0 top-0 z-50">
 
@@ -45,7 +48,7 @@
       <div class="flex items-center gap-x-6">
         <a href="/{lang}" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="/img/kaddio-black.png" alt="">
+          <img class="h-8 w-auto" src={imageHandler("/img/kaddio-black.png", {format: "auto"})} alt="">
         </a>
         <a href="/sv/create" class="ml-auto rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{ $_('Skapa konto')}</a>
         <button type="button" on:click={() => (show = false)} class="-m-2.5 rounded-md p-2.5 text-gray-700">

@@ -1,10 +1,11 @@
 export type Region = {
-    lang: string,
-    label: string,
-    href: string,
-    defaultCountryCode: string,
-    helpCenterLink: string
-}
+    lang: string;
+    label: string;
+    href: string;
+    defaultCountryCode: string;
+    helpCenterLink: string;
+    demoLink: string;
+};
 
 export const regions = {
     SE: {
@@ -12,23 +13,26 @@ export const regions = {
         label: 'Sverige',
         href: '/sv',
         defaultCountryCode: 'SE',
-        helpCenterLink: 'https://help.kaddio.com/help'
+        helpCenterLink: 'https://help.kaddio.com/help',
+        demoLink: 'https://demo.kaddio.com'
     },
     ES: {
         lang: 'es',
         label: 'Spanien',
         href: '/es',
         defaultCountryCode: 'ES',
-        helpCenterLink: 'https://ayuda.kaddio.com/help'
+        helpCenterLink: 'https://ayuda.kaddio.com/help',
+        demoLink: 'https://demo-es.kaddio.com'
     },
     EN: {
         lang: 'en',
         label: 'Global',
         href: '/en',
         defaultCountryCode: 'SE',
-        helpCenterLink: 'https://help.kaddio.com/help'
+        helpCenterLink: 'https://help.kaddio.com/help',
+        demoLink: 'https://demo.kaddio.com'
     }
-}
+};
 
 const matchers = {
     SE: 'SE',
@@ -53,13 +57,12 @@ const matchers = {
     EN: 'EN',
     US: 'EN',
     AU: 'EN'
-}
+};
 
-
-export const getRegion = function(geo: string): Region{
+export const getRegion = function (geo: string): Region {
     return regions[matchers[geo]] || regions['EN'];
-}
+};
 
-export const countryCodeFromLang = function(lang: string){
+export const countryCodeFromLang = function (lang: string) {
     return Object.entries(regions).find(([key, value]) => value.lang == lang)[0];
-}
+};

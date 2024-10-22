@@ -8,6 +8,11 @@
 
 </script>
 
+<svelte:head>
+  <title>Kaddio - Case studies</title>
+  <meta name="" content="Learn how Kaddio has helped organizations achieve their business goals." />
+</svelte:head>
+
 <BlogPosts>
   <span slot="pretitle">
       Case studies
