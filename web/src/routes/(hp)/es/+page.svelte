@@ -2,10 +2,10 @@
 	import { setContext } from 'svelte';
 	import Footer from '$components/footer.svelte';
 	import Nav from '$components/nav.svelte';
-	import ModulesEs from './modulesEs.svelte';
-	import PricesEs from './pricesEs.svelte';
-	import SecuritySectionEs from '../es/securitySectionEs.svelte';
-	import ReferencesEs from './referencesEs.svelte';
+	import ModulesEs from '$components/modulesEs.svelte';
+	import PricesEs from '$components/pricesEs.svelte';
+	import SecuritySectionEs from '$components/securitySectionEs.svelte';
+	import ReferencesEs from '$components/referencesEs.svelte';
     import Hero from '$lib/components/hero.svelte';
 
 	setContext('lang', 'es');
