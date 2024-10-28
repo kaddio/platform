@@ -72,7 +72,7 @@
     <LangBanner />
     <ReferralBanner />
     <MarketplaceBanner />
-    <StatusBanner />
+    <!-- <StatusBanner /> -->
     <Status />
 
     <nav
