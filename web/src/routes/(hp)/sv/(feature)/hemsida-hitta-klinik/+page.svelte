@@ -58,11 +58,17 @@
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Söktjänst">
-	<span slot="pre">Söktjänst</span>
+	<span slot="pre">Nå ut till fler</span>
 	<span slot="title">Söktjänst</span>
-	<span slot="body">Text om söksidan
-	<br>	
-	<a href="/sv/hitta-klinik" >Testa Kaddios söktjänst → </a> 
+	<span slot="body">Kaddio har en publik söktjänst för dig som har hemsida via Kaddio. 
+		Din verksamhet kan hittas på plats, verksamhetsområde och nyckelord som du själv bestämmer.<br> 
+		<br>
+		Genom söktjänsten kan du lägga in beskrivningar för sökmotoroptimering, SEO, 
+		så att din verksamhet hittas lättare av sökmotorer. Du kan också be kunder om omdömen som visas publikt på din sida i söktjänsten.<br>
+		<br>
+		Var med på söktjänsten du med och väx med Kaddio!<br>
+		<br>	
+		<a href="/sv/hitta-klinik" class="font-semibold text-oldpink">Testa Kaddios söktjänst → </a> 
 	</span>
 </ProductFeatureImageOnLeft>
 
