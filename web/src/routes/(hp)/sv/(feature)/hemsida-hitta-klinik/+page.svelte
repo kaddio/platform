@@ -33,13 +33,6 @@
 		Kaddio Hemsida gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
 
-	<ModuleFeatureWithIcon icon="pen">
-		<span slot="title">Informera.</span>
-		<span slot="body">
-			Presentera din verksamhet, visa kontaktuppgifter och låt kunder boka tid.
-		</span> 
-	</ModuleFeatureWithIcon>
-
 	<ModuleFeatureWithIcon icon="sliders">
 		<span slot="title">Förenkla.</span>
 		<span slot="body">
@@ -47,10 +40,17 @@
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="lock-keyhole">
-		<span slot="title">Nå ut till fler.</span>
+	<ModuleFeatureWithIcon icon="pen">
+		<span slot="title">Presentera.</span>
 		<span slot="body">
-			Styr åtkomst till klienter och journaler. Följ aktivitet i journaler genom Kaddios loggar.
+			Beskriv din verksamhet, dela kontaktuppgifter och visa lediga tider.
+		</span> 
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="lock-keyhole">
+		<span slot="title">Effektivisera.</span>
+		<span slot="body">
+			Låt kunder boka tid direkt på hemsidan.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -60,13 +60,13 @@
 	<span slot="h1">Söksida</span>
 	<span slot="title">Kaddio Söksida</span>
 	<span slot="sub">
-		Kaddio Söksida är en publik söktjänst där nya kunder kan hitta din verksamhet. Nå ut till fler och väx med Kaddio.
+		Kaddio Söksida är en publik söktjänst där potentiella kunder kan hitta till din Kaddio-hemsida. 
 	</span>
 
 	<ModuleFeatureWithIcon icon="chart-line-up">
 		<span slot="title">Öka omsättningen</span>
 		<span slot="body">
-			Var med på Kaddios söksida och nå ut till fler kunder.
+			Nå ut till fler och väx med Kaddio.
 		</span> 
 	</ModuleFeatureWithIcon>
 
