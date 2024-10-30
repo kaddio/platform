@@ -32,41 +32,43 @@
 	<span slot="sub">
 		Kaddio Hemsida-Modulnamn gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
-
+	
 	<ModuleFeatureWithIcon icon="wand-sparkles">
 		<span slot="title">Förenkla.</span>
 		<span slot="body">
-			Låt Kaddio automatiskt generera en hemsida och slipp tekniskt krångel. 
-			Presentera verksamheten och visa bokningsbara tider.
+			Låt Kaddio generera en hemsida automatiskt och slipp tekniskt krångel. 
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="person-chalkboard">
+		<span slot="title">Presentera.</span>
+		<span slot="body">
+			Visa upp organisationen och bokningsbara tider. Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="chart-line-up">
 		<span slot="title">Öka omsättningen.</span>
 		<span slot="body">
 			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer.
 		</span> 
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Visa omdömen.</span>
-		<span slot="body">
-			Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
-		</span>
-	</ModuleFeatureWithIcon>
+
+	
 
 </ModuleSectionWithImage>
 
 <ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Söktjänst">
-	<span slot="pre">Nå fler kunder</span>
+	<span slot="pre">Väx med Kaddio</span>
 	<span slot="title">Söktjänst</span>
 	<span slot="body">Kaddio har en publik söktjänst där du som har hemsida via Kaddio finns med. 
-		Din verksamhet kan hittas på plats, verksamhetsområde och nyckelord som du själv bestämmer.<br> 
+		Din organisation kan hittas på plats, verksamhetsområde och nyckelord som du själv bestämmer.<br> 
 		<br>
 		Genom söktjänsten kan du lägga in beskrivningar för sökmotoroptimering, SEO, 
-		så att din verksamhet får bättre träffar på sökmotorer. Du kan också be kunder om omdömen som visas publikt på din sida i söktjänsten.<br>
+		så att din organisation får bättre träffar på sökmotorer. Du kan också be kunder om omdömen som visas på din sida i söktjänsten.<br>
 		<br>
-		Var med på söktjänsten du med och väx med Kaddio!<br>
+		Var med på söktjänsten du med och nå ut till fler!<br>
 		<br>	
 		<a href="/sv/hitta-klinik" class="font-semibold text-oldpink">Testa Kaddios söktjänst → </a> 
 	</span>
