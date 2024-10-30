@@ -16,6 +16,7 @@
 	import ContactDanielSv from "$components/contactDanielSv.svelte";
 	import PricesSv from "$components/pricesSv.svelte";
 	import StatsSectionSv from "$components/statsSectionSv.svelte";
+	import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
 </script>
 
 <svelte:head>
@@ -54,6 +55,11 @@
 	</ModuleFeatureWithIcon>
 
 </ModuleSectionWithImage>
+
+<ProductFeatureImageOnLeft>
+
+	
+</ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Hemsida</span>
