@@ -60,7 +60,7 @@
 	<span slot="h1">Söksida</span>
 	<span slot="title">Kaddio Söksida</span>
 	<span slot="sub">
-		Kaddio Söksida
+		Kaddio Söksida är en publik söktjänst där nya kunder kan hitta din verksamhet. Nå ut till fler och väx med Kaddio.
 	</span>
 
 	<ModuleFeatureWithIcon icon="chart-line-up">
