@@ -27,36 +27,37 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Journalsystem">
-	<span slot="h1">Hemsida</span>
-	<span slot="title">Kaddio Hemsida</span>
+	<span slot="h1">Hemsida-Modulnamn</span>
+	<span slot="title">Kaddio Hemsida-Modulnamn</span>
 	<span slot="sub">
-		Kaddio Hemsida gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
+		Kaddio Hemsida-Modulnamn gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
 
 	<ModuleFeatureWithIcon icon="wand-sparkles">
 		<span slot="title">Förenkla.</span>
 		<span slot="body">
-			Låt Kaddio automatiskt generera en hemsida och slipp tekniskt krångel.
+			Låt Kaddio automatiskt generera en hemsida och slipp tekniskt krångel. 
+			Presentera verksamheten och visa bokningsbara tider.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="person-chalkboard">
-		<span slot="title">Presentera.</span>
+		<span slot="title">Öka omsättningen.</span>
 		<span slot="body">
-			Beskriv din verksamhet, dela kontaktuppgifter och visa bokningsbara tider.
+			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera.</span>
+		<span slot="title">Visa omdömen.</span>
 		<span slot="body">
-			Låt kunder boka tid direkt på hemsidan.
+			Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
 		</span>
 	</ModuleFeatureWithIcon>
 
 </ModuleSectionWithImage>
 
-<ModuleSectionWithImage src="/img/silvia-at-desk.png" alt="Söksida">
+<!-- <ModuleSectionWithImage src="/img/silvia-at-desk.png" alt="Söksida">
 	<span slot="h1">Söksida</span>
 	<span slot="title">Kaddio Söksida</span>
 	<span slot="sub">
@@ -64,7 +65,7 @@
 	</span>
 
 	<ModuleFeatureWithIcon icon="chart-line-up">
-		<span slot="title">Öka omsättningen</span>
+		<span slot="title">Öka omsättningen.</span>
 		<span slot="body">
 			Nå ut till fler och väx med Kaddio.
 		</span> 
@@ -84,11 +85,11 @@
 		</span>
 	</ModuleFeatureWithIcon>
 
-</ModuleSectionWithImage>
+</ModuleSectionWithImage> -->
 
 <ModuleOverviewFeaturesSection>
-	<span slot="title">Detta är Kaddio Hemsida</span>
-	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Sköt allt i samma system och få tid över till annat.</span>
+	<span slot="title">Detta är Kaddio Hemsida-Modulnamn</span>
+	<span slot="body">Med Kaddio Hemsida-Modulnamn .</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dokumentera</span>
