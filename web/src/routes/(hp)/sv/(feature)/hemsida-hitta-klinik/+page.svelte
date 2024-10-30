@@ -56,17 +56,35 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Söksida">
-	<span slot="pre">Nå ut till fler</span>
+<ModuleSectionWithImage src="/img/silvia-at-desk.png" alt="Söksida">
+	<span slot="h1">Söksida</span>
 	<span slot="title">Kaddio Söksida</span>
-	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
-		<br> 
-		<br>Jag använder Kaddio för att organisera mina journalanteckningar och patientbesök bättre, och framför allt för att få mer tid till mina hobbies och min familj. Jag kan njuta mer av min fritid."</cite>
-		<br>
-		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">Testa Kaddio Söksida här</a>
+	<span slot="sub">
+		Kaddio Söksida
 	</span>
 
-</ProductFeatureImageOnLeft>
+	<ModuleFeatureWithIcon icon="pen">
+		<span slot="title">Öka omsättningen</span>
+		<span slot="body">
+			Var med på Kaddios söksida och nå ut till fler kunder.
+		</span> 
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="lock-keyhole">
+		<span slot="title">Visa omdömen.</span>
+		<span slot="body">
+			Låt kunder lämna omdömen som visas på Kaddios söksida.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="sliders">
+		<span slot="title">Sökmotoroptimera.</span>
+		<span slot="body">
+			Få bättre träffar på sökmotorer genom att ange nyckelord och beskrivningar.
+		</span>
+	</ModuleFeatureWithIcon>
+
+</ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Hemsida</span>
