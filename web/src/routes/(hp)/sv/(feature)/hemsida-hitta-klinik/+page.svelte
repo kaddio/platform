@@ -57,35 +57,14 @@
 
 </ModuleSectionWithImage>
 
-<!-- <ModuleSectionWithImage src="/img/silvia-at-desk.png" alt="Söksida">
-	<span slot="h1">Söksida</span>
-	<span slot="title">Kaddio Söksida</span>
-	<span slot="sub">
-		Kaddio Söksida är en publik söktjänst där potentiella kunder kan hitta till din Kaddio-hemsida. 
+<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Söktjänst">
+	<span slot="pre">Söktjänst</span>
+	<span slot="title">Söktjänst</span>
+	<span slot="body">Text om söksidan
+	<br>	
+	<a href="/sv/hitta-klinik" >Testa Kaddios söktjänst → </a> 
 	</span>
-
-	<ModuleFeatureWithIcon icon="chart-line-up">
-		<span slot="title">Öka omsättningen.</span>
-		<span slot="body">
-			Nå ut till fler och väx med Kaddio.
-		</span> 
-	</ModuleFeatureWithIcon>
-
-	<ModuleFeatureWithIcon icon="star">
-		<span slot="title">Visa omdömen.</span>
-		<span slot="body">
-			Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
-		</span>
-	</ModuleFeatureWithIcon>
-
-	<ModuleFeatureWithIcon icon="magnifying-glass">
-		<span slot="title">Sökmotoroptimera.</span>
-		<span slot="body">
-			Få bättre träffar på sökmotorer genom att ange nyckelord och beskrivningar.
-		</span>
-	</ModuleFeatureWithIcon>
-
-</ModuleSectionWithImage> -->
+</ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Hemsida-Modulnamn</span>
