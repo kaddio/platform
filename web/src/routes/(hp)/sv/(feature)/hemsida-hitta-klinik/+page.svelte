@@ -73,7 +73,7 @@
 	<ModuleFeatureWithIcon icon="star">
 		<span slot="title">Visa omdömen.</span>
 		<span slot="body">
-			Låt kunder lämna omdömen som visas på Kaddios söksida.
+			Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
 		</span>
 	</ModuleFeatureWithIcon>
 
