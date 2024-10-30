@@ -22,28 +22,28 @@
 <svelte:head>
 
 
-	<title>Hemsida och Söksida</title>
+	<title>Kaddio Hemsida och Söksida</title>
 	<meta name="description" content="Kaddio Hemsida och Söksida." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Journalsystem">
-	<span slot="h1">Hemsida och Söksida</span>
-	<span slot="title">Kaddio Hemsida och Söksida</span>
+	<span slot="h1">Hemsida</span>
+	<span slot="title">Kaddio Hemsida</span>
 	<span slot="sub">
-		Kaddio Hemsida och Söksida gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
+		Kaddio Hemsida gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
 		<span slot="title">Informera.</span>
 		<span slot="body">
-			Journalför på ett säkert sätt, där och när du vill. Utforma mallar för journalanteckningar utifrån verksamhetens behov.
+			Presentera din verksamhet, visa kontaktuppgifter och låt kunder boka tid.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
 		<span slot="title">Förenkla.</span>
 		<span slot="body">
-			Skicka brev och remisser. Automatisera utskick och insamling av formulär. Allt finns samlat i journalen.
+			Låt Kaddio automatiskt generera en hemsida och slipp tekniskt krångel.
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -56,9 +56,16 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft>
+<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Söksida">
+	<span slot="pre">Nå ut till fler</span>
+	<span slot="title">Kaddio Söksida</span>
+	<span slot="body"><cite>"Kaddio passar vårt sätt att arbeta med osteopatiska konsultationer och är enkelt att använda, även om man inte kan så mycket om datorer. Du kan börja använda systemet direkt. Det finns mallar för journalföring och jag kan redigera mallarna så att de fungerar för den typ av patienter som jag möter i mitt arbete. Det är väldigt viktigt för mig. 
+		<br> 
+		<br>Jag använder Kaddio för att organisera mina journalanteckningar och patientbesök bättre, och framför allt för att få mer tid till mina hobbies och min familj. Jag kan njuta mer av min fritid."</cite>
+		<br>
+		<br><a href="/sv/case/osteopatia-mallorca" class="font-semibold text-oldpink">Testa Kaddio Söksida här</a>
+	</span>
 
-	
 </ProductFeatureImageOnLeft>
 
 <ModuleOverviewFeaturesSection>
