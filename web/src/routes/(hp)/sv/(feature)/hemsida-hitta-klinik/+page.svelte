@@ -63,21 +63,21 @@
 		Kaddio Söksida
 	</span>
 
-	<ModuleFeatureWithIcon icon="pen">
+	<ModuleFeatureWithIcon icon="chart-line-up">
 		<span slot="title">Öka omsättningen</span>
 		<span slot="body">
 			Var med på Kaddios söksida och nå ut till fler kunder.
 		</span> 
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="lock-keyhole">
+	<ModuleFeatureWithIcon icon="star">
 		<span slot="title">Visa omdömen.</span>
 		<span slot="body">
 			Låt kunder lämna omdömen som visas på Kaddios söksida.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="sliders">
+	<ModuleFeatureWithIcon icon="magnifying-glass">
 		<span slot="title">Sökmotoroptimera.</span>
 		<span slot="body">
 			Få bättre träffar på sökmotorer genom att ange nyckelord och beskrivningar.
