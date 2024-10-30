@@ -33,21 +33,21 @@
 		Kaddio Hemsida gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
 
-	<ModuleFeatureWithIcon icon="bolt">
+	<ModuleFeatureWithIcon icon="wand-sparkles">
 		<span slot="title">Förenkla.</span>
 		<span slot="body">
 			Låt Kaddio automatiskt generera en hemsida och slipp tekniskt krångel.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="presentation-screen">
+	<ModuleFeatureWithIcon icon="person-chalkboard">
 		<span slot="title">Presentera.</span>
 		<span slot="body">
-			Beskriv din verksamhet, dela kontaktuppgifter och visa lediga tider.
+			Beskriv din verksamhet, dela kontaktuppgifter och visa bokningsbara tider.
 		</span> 
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="gears">
+	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Effektivisera.</span>
 		<span slot="body">
 			Låt kunder boka tid direkt på hemsidan.
