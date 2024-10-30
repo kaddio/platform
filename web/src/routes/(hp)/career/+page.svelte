@@ -34,7 +34,7 @@
             <span slot="title">Senior fullstack developer</span>
             <span slot="desc">Kaddio is built on a solid foundation of Node.JS, Meteor, MongoDB, Angular.JS and Svelte. Depending on your experience you will build integrations, transforming Javascript into Typescript. Migrating Meteor fibers to Node async/await, containerizations, Dev ops etc. </span>
             <span slot="salary">Employment or Freelance</span>
-            <span slot="place">Anywhere</span>
+            <span slot="place">Göteborg, Sweden or Anywhere</span>
           </JobOpening>
 
           <JobOpening>
@@ -48,7 +48,14 @@
             <span slot="title">Senior frontend developer</span>
             <span slot="desc">You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things.</span>
             <span slot="salary">Employment or Freelance</span>
-            <span slot="place">Anywhere</span>
+            <span slot="place">Göteborg, Sweden or Anywhere</span>
+          </JobOpening>
+
+          <JobOpening>
+            <span slot="title">Technical Support Specialist</span>
+            <span slot="desc">We’re looking for someone tech-savvy with excellent problem-solving skills to assist customers with troubleshooting and product inquiries.</span>
+            <span slot="salary">Employment</span>
+            <span slot="place">Göteborg, Sweden</span>
           </JobOpening>
         </ul>
 
