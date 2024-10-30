@@ -21,7 +21,7 @@
 <svelte:head>
 
 
-	<title>Journalsystem med allt du behöver</title>
+	<title>Hemsida och Söksida</title>
 	<meta name="description" content="Kaddio Hemsida och Söksida." />
 </svelte:head>
 
@@ -29,25 +29,25 @@
 	<span slot="h1">Hemsida och Söksida</span>
 	<span slot="title">Kaddio Hemsida och Söksida</span>
 	<span slot="sub">
-		Kaddio Hemsida och Söksida 
+		Kaddio Hemsida och Söksida gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
 
 	<ModuleFeatureWithIcon icon="pen">
-		<span slot="title">Dokumentera.</span>
+		<span slot="title">Informera.</span>
 		<span slot="body">
 			Journalför på ett säkert sätt, där och när du vill. Utforma mallar för journalanteckningar utifrån verksamhetens behov.
 		</span> 
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="sliders">
-		<span slot="title">Följ upp.</span>
+		<span slot="title">Förenkla.</span>
 		<span slot="body">
 			Skicka brev och remisser. Automatisera utskick och insamling av formulär. Allt finns samlat i journalen.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="lock-keyhole">
-		<span slot="title">Säkerställ.</span>
+		<span slot="title">Nå ut till fler.</span>
 		<span slot="body">
 			Styr åtkomst till klienter och journaler. Följ aktivitet i journaler genom Kaddios loggar.
 		</span>
@@ -56,7 +56,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="title">Detta är Kaddio Journal</span>
+	<span slot="title">Detta är Kaddio Hemsida</span>
 	<span slot="body">Med Kaddio Journal journalför du säkert och smidigt på det sätt som passar din verksamhet. Sköt allt i samma system och få tid över till annat.</span>
 
 	<ModuleOverviewFeaturesSegment>
