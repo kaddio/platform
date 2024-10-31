@@ -76,41 +76,36 @@
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Hemsida-Modulnamn</span>
-	<span slot="body">Med Kaddio Hemsida-Modulnamn .</span>
+	<span slot="body">Med Kaddio Hemsida-Modulnamn får du hjälp att presentera din verksamhet <br>och nå ut till fler kunder.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Dokumentera</span>
+		<span slot="title">Förenkla</span>
 		
-		<ModuleOverviewFeature>Fri utformning av anteckningsmallar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för malltext och fraser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Uppladdning av egna bilder att rita på</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Filuppladdning i journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bygg egna formulär</ModuleOverviewFeature>
-		
+		<ModuleOverviewFeature>Automatisk generering av hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visning av lediga tider</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska utskick med förfrågan om omdömen från kund</ModuleOverviewFeature>
+		<ModuleOverviewFeature></ModuleOverviewFeature>
+				
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Följ upp</span>
+		<span slot="title">Presentera</span>
 
-		<ModuleOverviewFeature>Automatiserade utskick och insamling av formulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Remisser via brev, e-post och chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Export av journalanteckningar som PDF</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Översikt över bokningar, fakturor och uppgifter</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Samlingsräkning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Beskrivning av  verksamheten</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Presentation av personal</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bilder och länkar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Mottagningsadresser och karta</ModuleOverviewFeature>
+		<ModuleOverviewFeature></ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Säkerställ</span>
+		<span slot="title">Öka omsättningen</span>
 		
-		<ModuleOverviewFeature>Krypterad journalföring</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Behörighetsstyrning för journaler</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Signering av anteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Historik för redigering av anteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Listning av osignerade anteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Logg över läsning och redigering av journaler</ModuleOverviewFeature>
-		
+		<ModuleOverviewFeature>Publik söksida för blivande kunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Sökmotoroptimering, SEO</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visning av omdömen från kund</ModuleOverviewFeature>
+		<ModuleOverviewFeature></ModuleOverviewFeature>
+				
 
 	</ModuleOverviewFeaturesSegment>
 
