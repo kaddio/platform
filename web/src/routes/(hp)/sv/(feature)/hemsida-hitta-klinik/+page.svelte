@@ -59,7 +59,7 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/silvia-at-desk.png" alt="Söktjänst">
+<ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Söktjänst">
 	<span slot="pre">Väx med Kaddio</span>
 	<span slot="title">Söktjänst</span>
 	<span slot="body">Kaddio har en publik söktjänst där du som har hemsida via Kaddio finns med. 
