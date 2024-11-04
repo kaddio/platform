@@ -53,7 +53,7 @@
 
           <JobOpening>
             <span slot="title">Technical Support Specialist</span>
-            <span slot="desc">We’re looking for someone tech-savvy with excellent problem-solving skills to assist customers with troubleshooting and product inquiries.</span>
+            <span slot="desc">We’re looking for a tech-savvy problem-solver to assist customers with troubleshooting and product inquiries.</span>
             <span slot="salary">Employment</span>
             <span slot="place">Göteborg, Sweden</span>
           </JobOpening>
