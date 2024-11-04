@@ -99,6 +99,7 @@
 		<ModuleOverviewFeature>Påminnelser via e-post och SMS</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Formulär vid bokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>API</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
