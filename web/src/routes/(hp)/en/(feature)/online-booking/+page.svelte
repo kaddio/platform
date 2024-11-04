@@ -49,7 +49,7 @@
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Improve customer flow.</span>
 		<span slot="body">
-			Create bookable times directly from your calendar. Let your clients book and pay themselves or take control of everything.
+			Create bookable times directly from your calendar. Control everything or let your clients book and pay themselves.
 		</span>
 	</ModuleFeatureWithIcon>
 
