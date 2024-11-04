@@ -1,125 +1,129 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
     import Quote from "$components/quote.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
-    import PricesSv from "$components/pricesSv.svelte";
-    import StatsSection from "$components/statsSection.svelte";
-    import StatsSectionPart from "$components/statsSectionPart.svelte";
-    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
-    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
-	import SalesSection from "$components/salesSection.svelte";
-	import ContactDanielSv from "$components/contactDanielSv.svelte";
 	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
 	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
 	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
-    import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
+	import QuoteSvKim from "$components/quote-sv-kim.svelte";
+	import QuoteSvRamzi from "$components/quote-sv-ramzi.svelte";
+	import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
+	import QuoteSvUlrika from "$components/quote-sv-ulrika.svelte";
+	import ContactDanielSv from "$components/contactDanielSv.svelte";
+	import PricesSv from "$components/pricesSv.svelte";
 	import StatsSectionSv from "$components/statsSectionSv.svelte";
-
+	import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
 </script>
 
 <svelte:head>
-    <meta name="robots" content="noindex">
-
-	<title>Onlinebokning med allt du behöver</title>
-	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
+	<title>Kaddio Hemsida och Söksida</title>
+	<meta name="description" content="Kaddio Hemsida och Söksida." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
-	<span slot="h1">Onlinebokning</span>
-	<span slot="title">Kaddio Bokning</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio Journalsystem">
+	<span slot="h1">Hemsida-Modulnamn</span>
+	<span slot="title">Kaddio Hemsida-Modulnamn</span>
 	<span slot="sub">
-		Kaddio Bokning är kalender och bokningssystem i ett. Hantera bokningar, gruppass och möten i samma vy och få koll på läget.</span>
-
-	<ModuleFeatureWithIcon icon="people-pants">
-		<span slot="title">Samarbeta.</span>
+		Kaddio Hemsida-Modulnamn gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
+	</span>
+	
+	<ModuleFeatureWithIcon icon="wand-sparkles">
+		<span slot="title">Förenkla.</span>
 		<span slot="body">
-			Administrera mötesbokning och rumsbokning för hela organisationen.
+			Låt Kaddio generera en hemsida automatiskt och slipp tekniskt krångel. 
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Effektivisera.</span>
+	<ModuleFeatureWithIcon icon="person-chalkboard">
+		<span slot="title">Presentera.</span>
 		<span slot="body">
-			Skapa mallar för återkommande händelser i kalendern och spara tid. 
+			Visa upp organisationen och bokningsbara tider. Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Förbättra kundflödet.</span>
+	<ModuleFeatureWithIcon icon="chart-line-up">
+		<span slot="title">Öka omsättningen.</span>
 		<span slot="body">
-			Skapa bokningsbara tider direkt från din kalender. Styr allt själv eller låt kunderna boka och betala på egen hand.
-		</span>
+			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer.
+		</span> 
 	</ModuleFeatureWithIcon>
+
 </ModuleSectionWithImage>
 
+<ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Söktjänst">
+	<span slot="pre">Väx med Kaddio</span>
+	<span slot="title">Söktjänst</span>
+	<span slot="body">Kaddio har en publik söktjänst där du som har hemsida via Kaddio finns med. 
+		Din organisation kan hittas på plats, verksamhetsområde och nyckelord som du själv bestämmer.<br> 
+		<br>
+		Genom söktjänsten kan du lägga in beskrivningar för sökmotoroptimering, SEO, 
+		så att din organisation får bättre träffar på sökmotorer. Du kan också be kunder om omdömen som visas på din sida i söktjänsten.<br>
+		<br>
+		Var med på söktjänsten du med och nå ut till fler!<br>
+		<br>	
+		<a href="/sv/hitta-klinik" class="font-semibold text-oldpink">Testa Kaddios söktjänst → </a> 
+	</span>
+</ProductFeatureImageOnLeft>
+
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Bokning</span>
-	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är del av ett stort företag eller egenföretagare.</span>
+	<span slot="title">Detta är Kaddio Hemsida-Modulnamn</span>
+	<span slot="body">Med Kaddio Hemsida-Modulnamn får du hjälp att presentera din verksamhet <br>och nå ut till fler kunder.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Samarbeta</span>
-
-		<ModuleOverviewFeature>Mötesbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Stöd för verksamhet på flera adresser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rumsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Delad kalender inom organisationen</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Väntelistor för klienter på kö</ModuleOverviewFeature>
-	</ModuleOverviewFeaturesSegment>
-
-	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Effektivisera</span>
-
-		<ModuleOverviewFeature>Kalender och tidsbokning i samma vy</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kortbetalning vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Incheckning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Dagrapporter</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska fakturaunderlag</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Mallfunktion</ModuleOverviewFeature>
+		<span slot="title">Förenkla</span>
 		
+		<ModuleOverviewFeature>Automatisk generering av hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visning av lediga tider</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska utskick med förfrågan om omdömen från kund</ModuleOverviewFeature>
+		<ModuleOverviewFeature></ModuleOverviewFeature>
+				
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Förbättra kundflödet</span>
+		<span slot="title">Presentera</span>
 
-		<ModuleOverviewFeature>Tidsbokning på hemsida</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Integration till Kuralink</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Söktjänsten Hitta Klinik</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokning med BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Påminnelser via e-post och SMS</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Formulär vid bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Gruppbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Beskrivning av  verksamheten</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Presentation av personal</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bilder och länkar</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Mottagningsadresser och karta</ModuleOverviewFeature>
+		<ModuleOverviewFeature></ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Öka omsättningen</span>
+		
+		<ModuleOverviewFeature>Publik söksida för blivande kunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Sökmotoroptimering, SEO</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visning av omdömen från kund</ModuleOverviewFeature>
+		<ModuleOverviewFeature></ModuleOverviewFeature>
+				
 
 	</ModuleOverviewFeaturesSegment>
-</ModuleOverviewFeaturesSection>  
+
+</ModuleOverviewFeaturesSection> 
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om <br>Kaddio Bokning       
+        Vad våra kunder säger om Kaddio Hemsida       
     </span>
 
-    <QuoteSvJimmy />
-    
-    <QuoteSvJonas />
+	<QuoteSvRamzi />
+	<QuoteSvJimmy />
+	<QuoteSvJonas />
 
 	<QuoteSvAmanda />
 
 	<QuoteSvSofia />
-    
+	<QuoteSvUlrika />
+
 </QuotesSection>
 
 <StatsSectionSv />
 
-<PricesSv></PricesSv>
+<PricesSv />
 
-<ContactDanielSv></ContactDanielSv>
+<ContactDanielSv /> 
