@@ -34,7 +34,7 @@
             <span slot="title">Senior fullstack developer</span>
             <span slot="desc">Kaddio is built on a solid foundation of Node.JS, Meteor, MongoDB, Angular.JS and Svelte. Depending on your experience you will build integrations, transforming Javascript into Typescript. Migrating Meteor fibers to Node async/await, containerizations, Dev ops etc. </span>
             <span slot="salary">Employment or Freelance</span>
-            <span slot="place">Göteborg, Sweden or Anywhere</span>
+            <span slot="place">Anywhere</span>
           </JobOpening>
 
           <JobOpening>
