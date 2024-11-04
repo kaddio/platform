@@ -24,7 +24,7 @@
 	<meta name="description" content="Kaddio Hemsida och Söksida." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio Journalsystem">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio Hemsida">
 	<span slot="h1">Hemsida-Modulnamn</span>
 	<span slot="title">Kaddio Hemsida-Modulnamn</span>
 	<span slot="sub">
@@ -54,7 +54,7 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Söktjänst">
+<ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio Söktjänst">
 	<span slot="pre">Väx med Kaddio</span>
 	<span slot="title">Söktjänst</span>
 	<span slot="body">Kaddio har en publik söktjänst där du som har hemsida via Kaddio finns med. 
