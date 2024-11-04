@@ -86,7 +86,7 @@
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Presentera</span>
 
-		<ModuleOverviewFeature>Beskrivning av  verksamheten</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Beskrivning av verksamheten</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Presentation av personal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bilder och länkar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Mottagningsadresser och karta</ModuleOverviewFeature>
@@ -108,7 +108,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Kaddio Hemsida       
+        Vad våra kunder säger om <br>Kaddio Hemsida-Modulnamn       
     </span>
 
 	<QuoteSvRamzi />
