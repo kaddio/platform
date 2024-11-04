@@ -95,6 +95,7 @@
 		<ModuleOverviewFeature>Reminders via email and texts</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Forms at booking</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Group bookings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>API</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
 
 </ModuleOverviewFeaturesSection>  
