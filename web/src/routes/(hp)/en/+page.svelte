@@ -7,6 +7,7 @@
 	import PricesEn from '$components/pricesEn.svelte';
     import Hero from '$lib/components/hero.svelte';
     import QuotesEn from '$components/quotesEn.svelte';
+	import StatsSectionEn from '$components/statsSectionEn.svelte';
 
 	setContext('lang', 'en');
 </script>
@@ -34,5 +35,5 @@
 <QuotesEn />
 <PricesEn />
 <SecuritySectionEn />
-<!-- <ReferencesSv /> -->
+<StatsSectionEn />
 <Footer />
