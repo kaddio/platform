@@ -66,7 +66,7 @@
 		<span slot="title">Collaborate</span>
 			
 		<ModuleOverviewFeature>Scheduling of meetings</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Support for online businesses and multiple locations</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for multiple locations</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Room booking</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Shared calendar witin the organization</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Waiting lists for queuing clients</ModuleOverviewFeature>
