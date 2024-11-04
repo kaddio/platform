@@ -8,6 +8,7 @@
     import Hero from '$lib/components/hero.svelte';
     import QuotesEn from '$components/quotesEn.svelte';
 	import StatsSectionEn from '$components/statsSectionEn.svelte';
+	import ContactDanielEn from '$components/contactDanielEn.svelte';
 
 	setContext('lang', 'en');
 </script>
@@ -36,4 +37,5 @@
 <PricesEn />
 <SecuritySectionEn />
 <StatsSectionEn />
+<ContactDanielEn />
 <Footer />
