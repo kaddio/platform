@@ -38,7 +38,7 @@
     <ModuleFeatureWithIcon icon="comment">
 		<span slot="title">Communicate.</span>
 		<span slot="body">
-			Video calls, chat and contact form in an encrypted environment. 
+			Video calls, chat and contact forms in an encrypted environment. 
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -59,41 +59,41 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Chat och Video</span>
-	<span slot="body">Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. 
-		<br>Allt i Kaddio är krypterat.</span>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Chat and Video</span>
+	<span slot="body"> WIth Kaddio Chat and Video you communicate securely with clients and colleagues. 
+		<br>Everything in Kaddio is encrypted.
+	</span>
 	
     <ModuleOverviewFeaturesSegment>
-		<span slot="title">Kommunicera</span>
+		<span slot="title">Communicate</span>
 		
-		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Chat med klienter och kollegor</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Gruppchat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>E-postmeddelande till klient från chatten</ModuleOverviewFeature>
-        <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Video calls for 2-500 participants</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Screen sharing in video calls</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Chat with clients and colleagues</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Group chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Email clients from the chat</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Contact forms for clients</ModuleOverviewFeature>
 
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Dela information</span>
+		<span slot="title">Share information</span>
 	
 		<ModuleOverviewFeature>
-			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
+			Attach files, for example, medical records or other sensitive information</ModuleOverviewFeature>
 		<ModuleOverviewFeature>
-			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inspelning av videosamtal</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
+			Consent forms with signing function </ModuleOverviewFeature>
+		<ModuleOverviewFeature>Recording of video calls</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automated dispatches of forms from the contact form</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Säkerhetsanpassa</span>
+		<span slot="title">Secure</span>
 			
-		<ModuleOverviewFeature>Uppfyller Socialstyrelsens krav på stark autentisering</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inloggning för klient med Mobilt BankID</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Inloggning för klient med tvåfaktorsautentisering via SMS</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Fulfils requirements for strong authentication</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Login methods for clients with two-factor authentication via SMS</ModuleOverviewFeature>
 			
 	</ModuleOverviewFeaturesSegment>
   
