@@ -1,157 +1,121 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import FaqSection from "$components/faqSection.svelte";
-	import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
-	import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+	import QuotesSection from "$components/quotesSection.svelte";
+    import StatsSectionEn from "$components/statsSectionEn.svelte";
+	import PricesEn from "$components/pricesEn.svelte";
+    import ContactDanielEn from "$components/contactDanielEn.svelte";
+	import QuoteEnAmanda from "$components/quoteEnAmanda.svelte";
+	import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
+	import QuoteEnJonas from "$components/quoteEnJonas.svelte";
+	import QuoteEnSofia from "$components/quoteEnSofia.svelte";
+
 
 </script>
 
 <svelte:head>
+
 	<title>Kaddio - Time booking and calendar</title>
 	<meta name="description" content="Easy-to-use time booking and online payment that does everything you expect." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-se.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-en.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Online booking</span>
-	<span slot="title">Kaddio calendar and booking</span>
+	<span slot="title">Kaddio Booking</span>
 	<span slot="sub">
-		Easy-to-use time booking and online payment that does everything you expect. In Kaddio, the calendar is also your public booking so that you can easily manage bookable times, meetings and group sessions in the same view.
+		Kaddio Booking is your all-in-one calendar and booking system. Manage bookings, meetings and group sessions in the same view and get sorted.
 	</span>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
-		<span slot="title">Plan</span>
+	<ModuleFeatureWithIcon icon="people">
+		<span slot="title">Collaborate.</span>
 		<span slot="body">
-			Create bookable times directly from your calendar. Configure your booking types in detail. Choose whether your customers book and pay themselves or if you take control of every minute.
-		</span>
-	</ModuleFeatureWithIcon>
-
-	<ModuleFeatureWithIcon icon="people-pulling">
-		<span slot="title">Collaborate</span>
-		<span slot="body">
-			Use the calendar to schedule meetings and easily choose who should be involved. Decide for yourself which colleagues should see what.				
+			Schedule meetings and rooms for the entire organization.
+			
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
-		<span slot="title">Streamline</span>
+		<span slot="title">Streamline.</span>
 		<span slot="body">
-			Do you have recurring events in the calendar? Create templates and save time.
+			Create templates for recurring events in your calendar and save time.
+						
 		</span>
 	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+		<span slot="title">Improve customer flow.</span>
+		<span slot="body">
+			Create bookable times directly from your calendar. Control everything or let your clients book and pay themselves.
+		</span>
+	</ModuleFeatureWithIcon>
+
 </ModuleSectionWithImage>
-  
 
-<FaqSection>
-	<span slot="title">Details</span>
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Booking</span>
+	<span slot="body">Kaddio Booking helps you plan all activities of the organization in an 
+		efficient and comprehensable way, whether you are part of a 
+		big company or self-employed.</span>
 
-	<Qa>
-		<span slot="q">Calendar</span>
-		<span slot="a">
-			Administrate bookings in the calendar, for example, re-schedule or cancel appointments. The calendar shows bookings side by side with meetings and other activities.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Collaborate</span>
+			
+		<ModuleOverviewFeature>Scheduling of meetings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Support for multiple locations</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Room booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Shared calendar witin the organization</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Waiting lists for queuing clients</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Open booking for clients</span>
-		<span slot="a">
-			Allow clients to book their own appointments on a public web page.
-		</span>
-	</Qa>
-<!--
-	<Qa>
-		<span slot="q">Bokning med Mobilt BankID</span>
-		<span slot="a">
-			Klienten loggar in i Kaddio med Mobilt BankID för att kunna boka tid. Passar dig som vill säkerställa identiteten på den som bokar.
-		</span>
-	</Qa>
--->
-	<Qa>
-		<span slot="q">Text reminders</span>
-		<span slot="a">
-			Choose if and when reminders are sent by text messages, before and after booked appointments.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Streamline</span>
+		
+		<ModuleOverviewFeature>Calendar and booking in the same view</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Card payment at booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Check-in functions</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Day reports</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automated invoices</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Template functions</ModuleOverviewFeature>
+	
 
-	<Qa>
-		<span slot="q">Forms</span>
-		<span slot="a">
-			Automatically send forms in connection with bookings, for instance, assessment forms and health declarations.
-		</span>
-	</Qa>
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Treatments</span>
-		<span slot="a">
-			Offer multiple treatments. Connect treatments to different users. Adjust text messages and emails to treatments.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Improve customer flow</span>
+		
+		<ModuleOverviewFeature>Booking on website</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Integration with Kuralink - ävne på EN?</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Söktjänst Hitta Klinik - Hur översätta?</ModuleOverviewFeature> -->
+		<ModuleOverviewFeature>Booking with two-factor authentication</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Reminders via email and texts</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Forms at booking</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Group bookings</ModuleOverviewFeature>
+		<ModuleOverviewFeature>API</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Group sessions</span>
-		<span slot="a">
-			Schedule time slots that are bookable for more than one participant.
-		</span>
-	</Qa>
+</ModuleOverviewFeaturesSection>  
 
-	<Qa>
-		<span slot="q">Time optimization</span>
-		<span slot="a">
-			Avoid unnecessary gaps in your schedule. Kaddio optimizes bookable times to the duration of your offered treatments and your scheduled working hours.
-		</span>
-	</Qa>
+<QuotesSection>
+    <span slot="title">
+       What our customers say about Kaddio EMR       
+    </span>
 
-	<Qa>
-		<span slot="q">Waiting lists</span>
-		<span slot="a">
-			Create waiting lists with dates, notes and functions for delgation.
-		</span>
-	</Qa>
+	<QuoteEnAmanda />
+	<QuoteEnJimmy />
+	<QuoteEnJonas />
 
-	<Qa>
-		<span slot="q">Pay by card at booking</span>
-		<span slot="a">
-			Let your clients pay by card directly when booking online.
-		</span>
-	</Qa>
+	<QuoteEnSofia />
 
-	<Qa>
-		<span slot="q">Invoicing</span>
-		<span slot="a">
-			Invoice bases are created automatically from scheduled bookings.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Show bookable times on your website</span>
-		<span slot="a">
-			Integrate time booking directly on your website.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Places</span>
-		<span slot="a">
-			Kaddio handles if you have multiple offices. Information in emails and reminders by text messages are adjusted to the indicated place.
-		</span>
-	</Qa>
+</QuotesSection>
 
-	<Qa>
-		<span slot="q">Book rooms</span>
-		<span slot="a">
-			Schedule your rooms. Kaddio ensures that treatments can only be booked if there are available rooms.
-		</span>
-	</Qa>
-<!--
-	<Qa>
-		<span slot="q">Personalliggare</span>
-		<span slot="a">
-			Kaddio kan användas som digital personalliggare genom Arbetstid i Kalendern, med hjälp av Loggning uppfylls även Skatteverkets regler kring kontroll.
-		</span>
-	</Qa>
--->
-	<Qa>
-		<span slot="q">Logs</span>
-		<span slot="a">
-			Reading and editing of medical records are logged. The log shows what actions have been performed for the records of a client; by whom, when, and from what IP address.
-		</span>
-	</Qa>
+<StatsSectionEn />
 
-</FaqSection>
+<PricesEn />
+
+<ContactDanielEn />
+
