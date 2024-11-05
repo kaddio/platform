@@ -101,7 +101,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om <br>Kaddio Chat och Video       
+        What our customers say about <br>Kaddio Chat and Video       
     </span>
     <QuoteEnJimmy />
     <QuoteEnJonas />
