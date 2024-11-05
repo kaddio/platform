@@ -81,6 +81,7 @@
 		<ModuleOverviewFeature>Diagnoser enligt ICD-10</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bygg egna formulär</ModuleOverviewFeature>
+		<ModuleOverviewFeature>API</ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
 
@@ -92,6 +93,7 @@
 		<ModuleOverviewFeature>Export av journalanteckningar som PDF</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Översikt över bokningar, fakturor och uppgifter</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Samlingsräkning</ModuleOverviewFeature>
+		
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
