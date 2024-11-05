@@ -48,7 +48,14 @@
             <span slot="title">Senior frontend developer</span>
             <span slot="desc">You have an eye for UI. You will help us move from old Angular and Bootstrap to new Svelte and Tailwind, among many things.</span>
             <span slot="salary">Employment or Freelance</span>
-            <span slot="place">Anywhere</span>
+            <span slot="place">Göteborg, Sweden or Anywhere</span>
+          </JobOpening>
+
+          <JobOpening>
+            <span slot="title">Technical Support Specialist</span>
+            <span slot="desc">We’re looking for a tech-savvy problem-solver to assist customers with troubleshooting and product inquiries.</span>
+            <span slot="salary">Employment</span>
+            <span slot="place">Göteborg, Sweden</span>
           </JobOpening>
         </ul>
         <div class="mt-8 flex border-t border-gray-100 pt-8">
