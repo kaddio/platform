@@ -8,15 +8,13 @@
     import QuotesSection from "$components/quotesSection.svelte";
     import StatsSection from "$components/statsSection.svelte";
     import StatsSectionPart from "$components/statsSectionPart.svelte";
-    import QuoteSvAmanda from '$components/quote-sv-amanda.svelte';
-	import QuoteSvJimmy from '$components/quote-sv-jimmy.svelte';
-	import QuoteSvJonas from '$components/quote-sv-jonas.svelte';
-	import QuoteSvKim from '$components/quote-sv-kim.svelte';
-	import QuoteSvRamzi from '$components/quote-sv-ramzi.svelte';
-	import QuoteSvSofia from '$components/quote-sv-sofia.svelte';
-	import QuoteSvUlrika from '$components/quote-sv-ulrika.svelte';
-	import ContactDanielSv from '$components/contactDanielSv.svelte';
-	import PricesSv from '$components/pricesSv.svelte';
+	import QuoteEnJimmy from '$components/quoteEnJimmy.svelte';
+	import QuoteEnJonas from '$components/quoteEnJonas.svelte';
+	import QuoteEnRamzi from '$components/quoteEnRamzi.svelte';
+	import QuoteEnSofia from '$components/quoteEnSofia.svelte';
+	import QuoteEnUlrika from '$components/quoteEnUlrika.svelte';
+	import ContactDanielEn from '$components/contactDanielEn.svelte';
+	import PricesEn from '$components/pricesEn.svelte';
 </script>
 
 <svelte:head>
@@ -105,10 +103,10 @@
     <span slot="title">
         Vad våra kunder säger om <br>Kaddio Chat och Video       
     </span>
-    <QuoteSvJimmy />
-    <QuoteSvJonas />
-    <QuoteSvRamzi />
-    <QuoteSvSofia />
+    <QuoteEnJimmy />
+    <QuoteEnJonas />
+    <QuoteEnRamzi />
+    <QuoteEnSofia />
     
 </QuotesSection>
 
@@ -127,6 +125,6 @@
 	</StatsSectionPart>
 </StatsSection>
 
-<PricesSv />
+<PricesEn />
 
-<ContactDanielSv />
+<ContactDanielEn />
