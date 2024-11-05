@@ -6,7 +6,7 @@
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
     import Quote from "$components/quote.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
-    import StatsSection from "$components/statsSection.svelte";
+    import StatsSectionEn from '$components/statsSectionEn.svelte';
     import StatsSectionPart from "$components/statsSectionPart.svelte";
 	import QuoteEnJimmy from '$components/quoteEnJimmy.svelte';
 	import QuoteEnJonas from '$components/quoteEnJonas.svelte';
@@ -110,20 +110,7 @@
     
 </QuotesSection>
 
-<StatsSection>
-	<StatsSectionPart>
-		<span slot="title">användare</span>
-		<span slot="sub">47 000+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">bokningar per dygn</span>
-		<span slot="sub">1300+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">videomöten per månad</span>
-		<span slot="sub">8500+</span>
-	</StatsSectionPart>
-</StatsSection>
+<StatsSectionEn />
 
 <PricesEn />
 
