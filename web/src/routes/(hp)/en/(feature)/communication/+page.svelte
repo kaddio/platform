@@ -25,7 +25,7 @@
 </svelte:head>
 
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-sv.png" alt="Kaddio Journalsystem">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-en.png" alt="Kaddio Chat and Video">
 	<span slot="h1">Communication</span>
 	<span slot="title">Kaddio Chat and Video</span>
 	<span slot="sub">
