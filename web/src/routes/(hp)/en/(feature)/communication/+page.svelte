@@ -1,65 +1,117 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from '$components/moduleSectionWithImage.svelte';
+    import ModuleFeatureWithIcon from '$components/moduleFeatureWithIcon.svelte';
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import Quote from "$components/quote.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import StatsSectionEn from '$components/statsSectionEn.svelte';
+    import StatsSectionPart from "$components/statsSectionPart.svelte";
+	import QuoteEnJimmy from '$components/quoteEnJimmy.svelte';
+	import QuoteEnJonas from '$components/quoteEnJonas.svelte';
+	import QuoteEnRamzi from '$components/quoteEnRamzi.svelte';
+	import QuoteEnSofia from '$components/quoteEnSofia.svelte';
+	import QuoteEnUlrika from '$components/quoteEnUlrika.svelte';
+	import ContactDanielEn from '$components/contactDanielEn.svelte';
+	import PricesEn from '$components/pricesEn.svelte';
 </script>
 
 <svelte:head>
-	<title>Kaddio - Communication</title>
-	<meta name="description" content="Communicate securely and encrypted via chat or video. With two or 500 participants." />
+
+
+    <title>Kaddio - Communication</title>
+    <meta name="description" content="Secure chat and video for up to 500 participants" />
 </svelte:head>
 
-<ModuleSection>
-	<span slot="title">Kaddio Communication</span>
-	<span slot="sub">Communicate securely and encrypted via chat or video. With two or 500 participants.</span>
 
-	<!-- <ModuleFeature>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-en.png" alt="Kaddio Chat and Video">
+	<span slot="h1">Communication</span>
+	<span slot="title">Kaddio Chat and Video</span>
+	<span slot="sub">
+		With Kaddio Chat och Video you can communicate and share information securely with 
+		clients and colleagues. Kaddio fulfills requirements for strong authentication.
+	</span>
+
+
+
+    <ModuleFeatureWithIcon icon="comment">
+		<span slot="title">Communicate.</span>
+		<span slot="body">
+			Video calls, chat and contact forms in an encrypted environment. 
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="share">
+		<span slot="title">Share information.</span>
+		<span slot="body">
+			Send sensitive information, files and images securely to clients and colleagues.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="lock-keyhole">
+		<span slot="title">Secure.</span>
+		<span slot="body">
+			Require login to video calls with two-factor authentication.
+		</span> 
+	</ModuleFeatureWithIcon>
+
+</ModuleSectionWithImage>
+
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Chat and Video</span>
+	<span slot="body"> With Kaddio Chat and Video you communicate securely with clients and colleagues. 
+		<br>Everything in Kaddio is encrypted.
+	</span>
+	
+    <ModuleOverviewFeaturesSegment>
+		<span slot="title">Communicate</span>
+		
+		<ModuleOverviewFeature>Video calls for up to 500 participants</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Screen sharing in video calls</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Chat with clients and colleagues</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Group chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Email clients from the chat</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Contact forms for clients</ModuleOverviewFeature>
+
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Share information</span>
+	
+		<ModuleOverviewFeature>
+			Attach files, for example, medical records or other sensitive information</ModuleOverviewFeature>
+		<ModuleOverviewFeature>
+			Consent forms with signing function </ModuleOverviewFeature>
+		<ModuleOverviewFeature>Recording of video calls</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automated dispatches of forms from the contact form</ModuleOverviewFeature>
+		
+	</ModuleOverviewFeaturesSegment>
+
+	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Secure</span>
-		<span slot="body">
-			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Simple</span>
-		<span slot="body">
-			Det är enkelt att byta till video..
-		</span>
-	</ModuleFeature>
-
-	<ModuleFeature>
-		<span slot="title">Integrated</span>
-		<span slot="body">
-			Kaddio Video har stöd för minst 500 deltagare samtidigt.
-		</span>
-	</ModuleFeature> -->
-</ModuleSection>
+			
+		<ModuleOverviewFeature>Fulfils requirements for strong authentication</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Login methods for clients with two-factor authentication via SMS</ModuleOverviewFeature>
+			
+	</ModuleOverviewFeaturesSegment>
   
+</ModuleOverviewFeaturesSection>  
 
-<FaqSection>
-	<span slot="title">Details</span>
+<QuotesSection>
+    <span slot="title">
+        What our customers say about <br>Kaddio Chat and Video       
+    </span>
+    <QuoteEnJimmy />
+    <QuoteEnJonas />
+    <QuoteEnRamzi />
+    <QuoteEnSofia />
+    
+</QuotesSection>
 
-	<Qa>
-		<span slot="q">Screen sharing</span>
-		<span slot="a">
-			Share what you see
-		</span>
-	</Qa>
+<StatsSectionEn />
 
-	<Qa>
-		<span slot="q">Record</span>
-		<span slot="a">
-			Video calls are recordable, the video is uploaded in the conversation and is visible to handlers for 24 hours.
-		</span>
-	</Qa>
+<PricesEn />
 
-	<Qa>
-		<span slot="q">Emojis and reactions</span>
-		<span slot="a">
-			Maybe not the most meaningful, but all the other major video providers have it right?
-		</span>
-	</Qa>
-
-
-</FaqSection>
+<ContactDanielEn />
