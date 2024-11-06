@@ -29,7 +29,7 @@
 	<span slot="h1">Communication</span>
 	<span slot="title">Kaddio Chat and Video</span>
 	<span slot="sub">
-		Kaddio Chat och Video enables you to communicate and share information securely with 
+		With Kaddio Chat och Video you can communicate and share information securely with 
 		clients and colleagues. Kaddio fulfills requirements for strong authentication.
 	</span>
 
