@@ -30,7 +30,7 @@
 	<span slot="title">Kaddio Chat and Video</span>
 	<span slot="sub">
 		Kaddio Chat och Video enables you to communicate and share information securely with 
-		clients and colleagues. Kaddio fulfils requirements for strong authentication.
+		clients and colleagues. Kaddio fulfills requirements for strong authentication.
 	</span>
 
 
