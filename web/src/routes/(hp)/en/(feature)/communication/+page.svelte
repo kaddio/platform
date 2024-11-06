@@ -21,7 +21,7 @@
 
 
     <title>Kaddio - Communication</title>
-    <meta name="description" content="Chat and video for up to 500 participants" />
+    <meta name="description" content="Secure chat and video for up to 500 participants" />
 </svelte:head>
 
 
