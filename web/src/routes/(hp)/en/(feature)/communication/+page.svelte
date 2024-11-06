@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-    <meta name="robots" content="noindex">
+
 
     <title>Kaddio - Communication</title>
     <meta name="description" content="Chat and video for up to 500 participants" />
