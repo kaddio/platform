@@ -68,7 +68,7 @@
     <ModuleOverviewFeaturesSegment>
 		<span slot="title">Communicate</span>
 		
-		<ModuleOverviewFeature>Video calls for 2-500 participants</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Video calls for up to 500 participants</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Screen sharing in video calls</ModuleOverviewFeature>
         <ModuleOverviewFeature>Chat with clients and colleagues</ModuleOverviewFeature>
         <ModuleOverviewFeature>Group chat</ModuleOverviewFeature>
