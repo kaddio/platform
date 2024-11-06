@@ -61,7 +61,7 @@
 <ModuleOverviewFeaturesSection>
 	<span slot="pre">Contents</span>
 	<span slot="title">This is Kaddio Chat and Video</span>
-	<span slot="body"> WIth Kaddio Chat and Video you communicate securely with clients and colleagues. 
+	<span slot="body"> With Kaddio Chat and Video you communicate securely with clients and colleagues. 
 		<br>Everything in Kaddio is encrypted.
 	</span>
 	
