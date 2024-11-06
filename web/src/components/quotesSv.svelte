@@ -9,7 +9,7 @@
 
 <QuotesSection>
     <span slot="title">
-        Läs vad några av våra 2200 kunder tycker om Kaddio        
+        Läs vad några av våra 2300 kunder tycker om Kaddio        
     </span>
 
     <QuoteSvRamzi />
