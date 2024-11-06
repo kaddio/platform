@@ -59,7 +59,7 @@
           </JobOpening>
         </ul>
         <div class="mt-8 flex border-t border-gray-100 pt-8">
-          <a href="https://www.linkedin.com/jobs/kaddio-jobs-worldwide" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings on LinkedIn <span aria-hidden="true">&rarr;</span></a>
+          <a href="https://www.linkedin.com/company/kaddio" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </div>
