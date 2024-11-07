@@ -18,31 +18,32 @@
 	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio fakturering">
-	<span slot="h1">Faktureringssystem</span>
-	<span slot="title">Kaddio Fakturering</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio invoicing">
+	<span slot="h1">Invoicing system</span>
+	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
-		Kaddio Fakturering är ett enkelt faktureringssystem för små och medelstora företag. Kombinera med Kaddio Bokning eller Kaddio Journalsystem för att fakturera snabbt och flexibelt.
+		Kaddio Invoicing is an easy invoicing system for small and medium businesses.
+		Combine with Kaddio Booking or Kaddio EMR for fast and flexible invoicing.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
-		<span slot="title">Spara tid.</span>
+		<span slot="title">Save time.</span>
 		<span slot="body">
-			Generera fakturor automatiskt utifrån bokade tider eller journalanteckningar.
+			Generate invoices automatically from bookings or medical record entries.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="arrows-spin">
-		<span slot="title">Automatisera.</span>
+		<span slot="title">Automate.</span>
 		<span slot="body">
-			Låt Kaddio hantera påminnelser och avprickningar av inbetalningar.
+			Let Kaddio handle reminders and tick off payments.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="envelope">
-		<span slot="title">Leverera.</span>
+		<span slot="title">Deliver.</span>
 		<span slot="body">
-			Fakturera via e-post, brev eller i chatten. <br>Skicka e-fakturor till företag i hela världen.
+			Send invoices via email, letter or chat. <br>Send e-invoices to companies all over the world.
 		</span>
 	</ModuleFeatureWithIcon>
 	
