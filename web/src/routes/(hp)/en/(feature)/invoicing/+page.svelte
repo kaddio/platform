@@ -50,47 +50,49 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
-	<span slot="title">Detta är Kaddio Fakturering</span>
-	<span slot="body">Med Kaddio Fakturering skickar du enkelt fakturor utifrån bokningar eller journalanteckningar. Hantera allt i samma system och få mer tid till dina klienter.</span>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Invoicing</span>
+	<span slot="body">With Kaddio Invoicing you easily send invoices from bookings or medical record entries. 
+		Handle everything in the same system and spend more time on your clients.
+	</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Spara tid</span>
+		<span slot="title">Save time</span>
 		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-		<ModuleOverviewFeature>Duplicering av fakturor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bokföringsunderlag med export i SIE-4, CSV och för Excel</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kundlista för företagskunder</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Kundreskontra</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Rapporter över intänkter</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Duplication of invoices</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Accounting records with exports in SIE-4, CSV and for Excel.</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Clients lists of business customers</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Accounts receivable</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Reports of income</ModuleOverviewFeature>
 				
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Automatisera</span>
+		<span slot="title">Automate</span>
 		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-		<ModuleOverviewFeature>Fakturor utifrån bokade tider eller journalanteckningar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Avprickning av betalningar mot Bankgirot eller bankkonto</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Betalningspåminnelser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Sortering till inkassoexport</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Invoices from bookings or medical record entries</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Avprickning av betalningar mot Bankgirot eller bankkonto</ModuleOverviewFeature> -->
+		<ModuleOverviewFeature>Payment reminders</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Sorting for debt collection</ModuleOverviewFeature>
 				
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Leverera</span>
+		<span slot="title">Deliver</span>
 		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
-		<ModuleOverviewFeature>E-fakturering av företag i hela världen</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Invoicing via email, letters and chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-invoicing to companies world-wide</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature> -->
 
 	</ModuleOverviewFeaturesSegment>
 </ModuleOverviewFeaturesSection>  
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Kaddio Fakturering       
+        What our customers say about Kaddio Invoicing      
     </span>
 	<QuoteEnUlrika />
 	<QuoteEnJimmy />
