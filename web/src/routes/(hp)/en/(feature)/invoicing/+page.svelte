@@ -1,98 +1,105 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+	import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
+	import QuoteEnUlrika from "$components/quoteEnUlrika.svelte";
+	import ContactDanielEn from "$components/contactDanielEn.svelte";
+	import PricesEn from "$components/pricesEn.svelte";
+	import StatsSectionEn from "$components/statsSectionEn.svelte";
+
 </script>
 
 <svelte:head>
-	<title>Kaddio - Invoicing</title>
-	<meta name="description" content="Kaddio Invoicing is a complete invoicing service for small and medium businesses." />
+	<title>Invoicing for small and medium-sized businesses</title>
+	<meta name="description" content="Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses." />
 </svelte:head>
 
-<ModuleSection>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-en.png" alt="Kaddio invoicing">
+	<span slot="h1">Invoicing system</span>
 	<span slot="title">Kaddio Invoicing</span>
-	<span slot="sub">Kaddio Invoicing is a complete invoicing service for small and medium businesses.</span>
+	<span slot="sub">
+		Kaddio Invoicing is an easy invoicing system for small and medium-sized businesses.
+		Combine with Kaddio Booking or <br>Kaddio EMR for fast and flexible invoicing.
+	</span>
 
-	<ModuleFeature>
-		<span slot="title">Save time</span>
+	<ModuleFeatureWithIcon icon="timer">
+		<span slot="title">Save time.</span>
 		<span slot="body">
-			Save time with integrated invoicing. Kaddio automatically makes suggestions for invoicing based on bookings or medical records. 
+			Generate invoices automatically from bookings or medical record entries.
 		</span>
-	</ModuleFeature>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="arrows-spin">
+		<span slot="title">Automate.</span>
+		<span slot="body">
+			Let Kaddio handle reminders and tick off payments.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="envelope">
+		<span slot="title">Deliver.</span>
+		<span slot="body">
+			Send invoices via email, letter or chat. <br>Send e-invoices to companies all over the world.
+		</span>
+	</ModuleFeatureWithIcon>
 	
-</ModuleSection>
-<!--  
-<FaqSection>
-	<span slot="title">Details</span>
+</ModuleSectionWithImage>
 
-	<Qa>
-		<span slot="q">Articles</span>
-		<span slot="a">
-			Kaddio has support for articles.
-		</span>
-	</Qa>
+<ModuleOverviewFeaturesSection>
+	<span slot="pre">Contents</span>
+	<span slot="title">This is Kaddio Invoicing</span>
+	<span slot="body">With Kaddio Invoicing you easily send invoices from bookings or medical record entries. 
+		Handle everything in the same system and spend more time on your clients.
+	</span>
 
-	<Qa>
-		<span slot="q">Invoice bases</span>
-		<span slot="a">
-			Kaddio automatically creates bases for invoices from bookings or medical records.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Save time</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
 
-	<Qa>
-		<span slot="q">Send invoices</span>
-		<span slot="a">
-			Skicka fakturor med post, e-post, via Kaddios säkra kommunikation och e-faktura.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Duplication of invoices</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Accounting records with exports in SIE-4, CSV and for Excel.</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Clients lists of business customers</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Accounts receivable</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Reports of income</ModuleOverviewFeature>
+				
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Reminders for invoices</span>
-		<span slot="a">
-			Send reminders for invoices, automatically or manually.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Automate</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
 
-	<Qa>
-		<span slot="q">Automatisk avprickning</span>
-		<span slot="a">
-			Kaddio prickar av fakturor automatiskt när kunden betalar via bankgiro.
-		</span>
-	</Qa>
-	
-	<Qa>
-		<span slot="q">E-faktura</span>
-		<span slot="a">
-			Skicka e-fakturor med Kaddio enligt EU-standarden PEPPOL.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Samfakturering</span>
-		<span slot="a">
-			Fakturera för flera klienter till ett företag, till exempel ett gruppboende eller försäkringsbolag.
-		</span>
-	</Qa>
-	<Qa>
-		<span slot="q">Inkassoexport</span>
-		<span slot="a">
-			Exportera ej betalda fakturor som sedan kan importeras till ett inkassoföretag.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Invoices from bookings or medical record entries</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Avprickning av betalningar mot Bankgirot eller bankkonto</ModuleOverviewFeature> -->
+		<ModuleOverviewFeature>Payment reminders</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Sorting for debt collection</ModuleOverviewFeature>
+				
+	</ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Export</span>
-		<span slot="a">
-			Exportera invoices as SIE or CSV filer for uploads to bokkeeping programs.
-		</span>
-	</Qa>
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Deliver</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
 
-	<Qa>
-		<span slot="q">Currencies</span>
-		<span slot="a">
-			Send invoices in the world's 33 most common currencies with automated exchange rates, updated each day from ECB. Kaddio automatically posts gains and losses from exchange rates in the exported SIE file.
-		</span>
-	</Qa>
+		<ModuleOverviewFeature>Invoicing via email, letters and chat</ModuleOverviewFeature>
+		<ModuleOverviewFeature>E-invoicing to companies world-wide</ModuleOverviewFeature>
+		<!-- <ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature> -->
 
-</FaqSection>
--->
+	</ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
+
+<QuotesSection>
+    <span slot="title">
+        What our customers say about Kaddio Invoicing      
+    </span>
+	<QuoteEnUlrika />
+	<QuoteEnJimmy />
+</QuotesSection>
+
+<StatsSectionEn />
+
+<PricesEn />
+
+<ContactDanielEn />
