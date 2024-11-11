@@ -18,7 +18,7 @@
 	<meta name="description" content="Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio invoicing">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-en.png" alt="Kaddio invoicing">
 	<span slot="h1">Invoicing system</span>
 	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
