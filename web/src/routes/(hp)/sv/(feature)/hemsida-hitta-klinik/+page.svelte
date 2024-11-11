@@ -4,12 +4,11 @@
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import Quote from "$components/quote.svelte";
+
     import QuotesSection from "$components/quotesSection.svelte";
 	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
 	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
 	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
-	import QuoteSvKim from "$components/quote-sv-kim.svelte";
 	import QuoteSvRamzi from "$components/quote-sv-ramzi.svelte";
 	import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
 	import QuoteSvUlrika from "$components/quote-sv-ulrika.svelte";
@@ -26,7 +25,7 @@
 	<meta name="description" content="Kaddio Hemsida och Söksida." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/log-overview-se.png" alt="Kaddio Journalsystem">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-se.png" alt="Kaddio Journalsystem">
 	<span slot="h1">Hemsida-Modulnamn</span>
 	<span slot="title">Kaddio Hemsida-Modulnamn</span>
 	<span slot="sub">
