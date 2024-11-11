@@ -14,15 +14,15 @@
 </script>
 
 <svelte:head>
-	<title>Invoicing for small and medium sized businesses</title>
-	<meta name="description" content="Kaddio Invoicing is a complete invoicing program for small and medium sized businesses." />
+	<title>Invoicing for small and medium-sized businesses</title>
+	<meta name="description" content="Kaddio Invoicing is a complete invoicing program for small and medium-sized businesses." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio invoicing">
 	<span slot="h1">Invoicing system</span>
 	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
-		Kaddio Invoicing is an easy invoicing system for small and medium sized businesses.
+		Kaddio Invoicing is an easy invoicing system for small and medium-sized businesses.
 		Combine with Kaddio Booking or <br>Kaddio EMR for fast and flexible invoicing.
 	</span>
 
