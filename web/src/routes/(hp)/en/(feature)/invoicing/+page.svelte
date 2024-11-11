@@ -14,16 +14,16 @@
 </script>
 
 <svelte:head>
-	<title>Fakturering för små och medelstora företag</title>
-	<meta name="description" content="Kaddio Fakturering är ett komplett faktureringsprogram för små och medelstora företag." />
+	<title>Invoicing for small and medium sized businesses</title>
+	<meta name="description" content="Kaddio Invoicing is a complete invoicing program for small and medium sized businesses." />
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/invoice-new-se.png" alt="Kaddio invoicing">
 	<span slot="h1">Invoicing system</span>
 	<span slot="title">Kaddio Invoicing</span>
 	<span slot="sub">
-		Kaddio Invoicing is an easy invoicing system for small and medium businesses.
-		Combine with Kaddio Booking or Kaddio EMR for fast and flexible invoicing.
+		Kaddio Invoicing is an easy invoicing system for small and medium sized businesses.
+		Combine with Kaddio Booking or <br>Kaddio EMR for fast and flexible invoicing.
 	</span>
 
 	<ModuleFeatureWithIcon icon="timer">
