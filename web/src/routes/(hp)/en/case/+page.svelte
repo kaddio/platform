@@ -35,7 +35,7 @@
     </BlogPost>
 
     <BlogPost type="Case study" href="/en/case/majornas-osteopati" title="New perspectives" name="Majornas Osteopati" location="Göteborg, Sweden" tags={["Medical record", "Invoicing", "Communication"]} img={imageHandler('/img/petter.jpg', {format: "auto", width: 640})}>
-      Petter runs two osteopathy clinics in Gothenburg, Sweden. In his practice he meets all kinds of patients which gives him new perspectives every day.          
+      Petter runs two osteopathy clinics in Göteborg, Sweden. In his practice he meets all kinds of patients which gives him new perspectives every day.          
     </BlogPost>
 
 </BlogPosts>

@@ -9,6 +9,6 @@
 	<span slot="intro">
 		Contact us and we will help you. We're available on weekdays <br>9 am - 12 pm (CEST).
 	</span>
-	<span slot="location">Gothenburg, Sweden</span>
+	<span slot="location">Göteborg, Sweden</span>
 	<span slot="phone">+46 (0) 31-320 44 14</span>
 </SalesSection>
