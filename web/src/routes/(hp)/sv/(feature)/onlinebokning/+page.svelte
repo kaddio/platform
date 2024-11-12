@@ -1,23 +1,15 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
+	
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+  
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
-    import Quote from "$components/quote.svelte";
+    
     import QuotesSection from "$components/quotesSection.svelte";
     import PricesSv from "$components/pricesSv.svelte";
-    import StatsSection from "$components/statsSection.svelte";
-    import StatsSectionPart from "$components/statsSectionPart.svelte";
-    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
-    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
-	import SalesSection from "$components/salesSection.svelte";
+   
 	import ContactDanielSv from "$components/contactDanielSv.svelte";
 	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
 	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
