@@ -67,7 +67,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
+	
 	<span slot="title">Detta är Kaddio Fakturering</span>
 	<span slot="body">Med Kaddio Fakturering skickar du enkelt fakturor utifrån bokningar eller journalanteckningar. Hantera allt i samma system och få mer tid till dina klienter.</span>
 

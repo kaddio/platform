@@ -63,7 +63,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
+	
 	<span slot="title">Detta är Kaddio Bokning</span>
 	<span slot="body">Med Kaddio Bokning planerar du organisationens verksamhet effektivt och överskådligt, oavsett om du är del av ett stort företag eller egenföretagare.</span>
 

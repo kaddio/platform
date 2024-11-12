@@ -69,7 +69,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
+	
 	<span slot="title">Detta är Kaddio Chat och Video</span>
 	<span slot="body">Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. 
 		<br>Allt i Kaddio är krypterat.</span>
