@@ -4,10 +4,10 @@
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import Quote from "$components/quote.svelte";
-    import QuotesSection from "$components/quotesSection.svelte";
+    
+	import QuotesSection from "$components/quotesSection.svelte";
     import StatsSectionEn from '$components/statsSectionEn.svelte';
-    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    
 	import QuoteEnJimmy from '$components/quoteEnJimmy.svelte';
 	import QuoteEnJonas from '$components/quoteEnJonas.svelte';
 	import QuoteEnRamzi from '$components/quoteEnRamzi.svelte';
