@@ -2,9 +2,9 @@
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
       <div class="col-span-2">
-        <h2 class="text-base/7 font-semibold text-indigo-600">Everything you need</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">All-in-one platform</p>
-        <p class="mt-6 text-base/7 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+        <h2 class="text-base/7 font-semibold text-indigo-600">Innehåll</h2>
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Ingår alltid i Kaddio</p>
+        <p class="mt-6 text-base/7 text-gray-600">Ett abonnemang i Kaddio inkluderar mer än de moduler du väljer. Följande ingår för alla användare.</p>
       </div>
       <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
         <div class="relative pl-9">

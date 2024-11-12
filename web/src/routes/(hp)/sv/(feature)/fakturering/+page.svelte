@@ -28,6 +28,7 @@
 	import ContactDanielSv from "$components/contactDanielSv.svelte";
 	import PricesSv from "$components/pricesSv.svelte";
 	import StatsSectionSv from "$components/statsSectionSv.svelte";
+	import AlwaysIncludedSv from "$components/alwaysIncludedSv.svelte";
 
 </script>
 
@@ -124,3 +125,5 @@
 <PricesSv />
 
 <ContactDanielSv />
+
+<AlwaysIncludedSv />
