@@ -39,7 +39,7 @@
 
           <JobOpening>
             <span slot="title">Sales</span>
-            <span slot="desc">Kaddio has grown largely without active sales so there is a vast potential in this job opening. Help us grow and reach an international market. You are a doer with real experience in sales, you know how to sell a mature and complex product to both an existing market and new markets.</span>
+            <span slot="desc">Kaddio has grown largely without active sales so this opening comes with a vast potential. Help us grow and reach an international market. You are a doer with real experience in sales, you know how to sell a mature and complex product to both an existing market and new markets.</span>
             <span slot="salary">Provision based</span>
             <span slot="place">Göteborg, Sweden or Anywhere</span>
           </JobOpening>
@@ -51,12 +51,6 @@
             <span slot="place">Göteborg, Sweden or Anywhere</span>
           </JobOpening>
 
-          <JobOpening>
-            <span slot="title">Technical Support Specialist</span>
-            <span slot="desc">We’re looking for a tech-savvy problem-solver to assist customers with troubleshooting and product inquiries.</span>
-            <span slot="salary">Employment</span>
-            <span slot="place">Göteborg, Sweden</span>
-          </JobOpening>
         </ul>
         <div class="mt-8 flex border-t border-gray-100 pt-8">
           <a href="https://www.linkedin.com/company/kaddio" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings <span aria-hidden="true">&rarr;</span></a>
