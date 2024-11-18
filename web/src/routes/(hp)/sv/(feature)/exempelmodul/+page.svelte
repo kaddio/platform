@@ -23,6 +23,8 @@
 
 </script>
 
+<Included />
+
 <svelte:head>
     <meta name="robots" content="noindex">
 
