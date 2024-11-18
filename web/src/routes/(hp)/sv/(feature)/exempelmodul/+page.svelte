@@ -17,6 +17,7 @@
     import StatsSectionPart from "$components/statsSectionPart.svelte";
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
+    import AlwaysIncludedSv from "$components/alwaysIncludedSv.svelte";
 </script>
 
 <svelte:head>
@@ -161,6 +162,8 @@
 		<span slot="sub">8500+</span>
 	</StatsSectionPart>
 </StatsSection>
+
+<AlwaysIncludedSv />
 <!-- 
 <FaqSection>
 	<span slot="title">Vanliga frågor</span>
