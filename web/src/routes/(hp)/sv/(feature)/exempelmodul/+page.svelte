@@ -18,12 +18,12 @@
     import StatsSectionWithText from "$components/statsSectionWithText.svelte";
     import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
     import AlwaysIncludedSv from "$components/alwaysIncludedSv.svelte";
-	import Included from "$components/included.svelte";
-	
+
+
 
 </script>
 
-<Included />
+
 
 <svelte:head>
     <meta name="robots" content="noindex">
