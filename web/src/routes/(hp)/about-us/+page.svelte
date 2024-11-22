@@ -60,6 +60,11 @@
         </Person>
 
         <Person>
+            <span slot="name">Ivanna</span>
+            <span slot="title">Customer support</span>
+        </Person>
+
+        <Person>
             <span slot="name">Camilla</span>
             <span slot="title">Market, UX, Customer support</span>
         </Person>
