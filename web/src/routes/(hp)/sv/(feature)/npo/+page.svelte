@@ -1,6 +1,7 @@
 <script>
 import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
 import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+import WithStickyScreenshot from "$components/withStickyScreenshot.svelte";
 import ContentCentered from "$components/contentCentered.svelte";
 import WithImageTitles from "$components/withImageTitles.svelte";
 import Timeline from "$components/timeline.svelte";
@@ -16,7 +17,9 @@ import Timeline from "$components/timeline.svelte";
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/chat-sv.png" alt="Kaddio Journalsystem">
+<WithStickyScreenshot />
+
+<!-- <ModuleSectionWithImage src="/img/kaddio-screenshots/chat-sv.png" alt="Kaddio Journalsystem">
 	<span slot="h1">Kommunikation</span>
 	<span slot="title">Kaddio Chat och Video</span>
 	<span slot="sub">
@@ -45,7 +48,7 @@ import Timeline from "$components/timeline.svelte";
 		</span> 
 	</ModuleFeatureWithIcon>
 
-</ModuleSectionWithImage>
+</ModuleSectionWithImage> -->
 
 <!-- <ContentCentered />
 
