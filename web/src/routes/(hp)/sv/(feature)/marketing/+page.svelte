@@ -38,14 +38,14 @@
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="person-chalkboard">
+	<ModuleFeatureWithIcon icon="magnifying-glass">
 		<span slot="title">Söktjänst.</span>
 		<span slot="body">
 			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer. 
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="chart-line-up">
+	<ModuleFeatureWithIcon icon="star">
 		<span slot="title">Omdömen.</span>
 		<span slot="body">
 			 Låt kunder lämna omdömen som visas på din hemsida och i Kaddios söktjänst.
@@ -107,4 +107,4 @@
 
 <PricesSv />
 
-<ContactDanielSv /> 
+<ContactDanielSv /> up
