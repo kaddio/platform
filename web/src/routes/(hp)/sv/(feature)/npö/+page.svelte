@@ -12,6 +12,7 @@
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
 </svelte:head>
 
+<ContentWithScreenshot />
 
 <StatsSectionSv />
 
