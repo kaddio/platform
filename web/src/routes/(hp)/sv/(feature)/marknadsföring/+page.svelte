@@ -21,35 +21,35 @@
 <svelte:head>
 
 
-	<title>Kaddio Hemsida och Söksida</title>
-	<meta name="description" content="Kaddio Hemsida och Söksida." />
+	<title>Kaddio Marknadsföring</title>
+	<meta name="description" content="Kaddio Marknadsföring." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-se.png" alt="Kaddio Journalsystem">
-	<span slot="h1">Hemsida-Modulnamn</span>
-	<span slot="title">Kaddio Hemsida-Modulnamn</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-se.png" alt="Kaddio Marknadsföring">
+	<span slot="h1">Visa upp ditt företag</span>
+	<span slot="title">Marknadsföring</span>
 	<span slot="sub">
-		Kaddio Hemsida-Modulnamn gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
+		Kaddio Marknadsföring gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
 	</span>
 	
 	<ModuleFeatureWithIcon icon="wand-sparkles">
-		<span slot="title">Förenkla.</span>
+		<span slot="title">Hemsida.</span>
 		<span slot="body">
-			Låt Kaddio generera en hemsida automatiskt och slipp tekniskt krångel. 
+			Skapa en enkel hemsida genom Kaddio och slipp tekniskt krångel. 
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="person-chalkboard">
-		<span slot="title">Presentera.</span>
+		<span slot="title">Söksida.</span>
 		<span slot="body">
-			Visa upp organisationen och bokningsbara tider. Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
+			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer. 
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="chart-line-up">
-		<span slot="title">Öka omsättningen.</span>
+		<span slot="title">Omdömen.</span>
 		<span slot="body">
-			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer.
+			 Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
 		</span> 
 	</ModuleFeatureWithIcon>
 
