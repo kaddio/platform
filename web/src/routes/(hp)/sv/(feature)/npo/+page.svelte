@@ -1,5 +1,6 @@
 <script>
 import ContentCentered from "$components/contentCentered.svelte";
+import WithImageTitles from "$components/withImageTitles.svelte";
 import Timeline from "$components/timeline.svelte";
 // import ContactDanielSv from "$components/contactDanielSv.svelte";
 // import PricesSv from "$components/pricesSv.svelte";
@@ -16,6 +17,8 @@ import Timeline from "$components/timeline.svelte";
 <ContentCentered />
 
 <Timeline />
+
+<WithImageTitles />
 
 <!-- <StatsSectionSv />
 
