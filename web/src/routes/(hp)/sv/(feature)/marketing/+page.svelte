@@ -24,7 +24,7 @@
 	<meta name="description" content="Kaddio Marknadsföring." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-se.png" alt="Kaddio Marknadsföring">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/" alt="Kaddio Marknadsföring">
 	<span slot="h1">Visa upp din verksamhet</span>
 	<span slot="title">Kaddio Marknadsföring</span>
 	<span slot="sub">
