@@ -1,5 +1,6 @@
 <script>
 import ContentCentered from "$components/contentCentered.svelte";
+import Timeline from "$components/timeline.svelte";
 import ContactDanielSv from "$components/contactDanielSv.svelte";
 import PricesSv from "$components/pricesSv.svelte";
 import StatsSectionSv from "$components/statsSectionSv.svelte";
@@ -13,6 +14,8 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 </svelte:head>
 
 <ContentCentered />
+
+<Timeline />
 
 <StatsSectionSv />
 
