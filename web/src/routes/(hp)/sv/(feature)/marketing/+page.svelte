@@ -7,15 +7,14 @@
 
     import QuotesSection from "$components/quotesSection.svelte";
 	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
-	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
+
 	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
-	import QuoteSvRamzi from "$components/quote-sv-ramzi.svelte";
-	import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
+
 	import QuoteSvUlrika from "$components/quote-sv-ulrika.svelte";
 	import ContactDanielSv from "$components/contactDanielSv.svelte";
 	import PricesSv from "$components/pricesSv.svelte";
 	import StatsSectionSv from "$components/statsSectionSv.svelte";
-	import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
+
 </script>
 
 <svelte:head>
@@ -51,27 +50,7 @@
 		<span slot="body">
 			 Låt kunder lämna omdömen som visas på din hemsida och i Kaddios söktjänst.
 		</span> 
-	</ModuleFeatureWithIcon>
-
-
-
-
-</ModuleSectionWithImage>
-
-<!-- <ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Söktjänst">
-	<span slot="pre">Väx med Kaddio</span>
-	<span slot="title">Söktjänst</span>
-	<span slot="body">Kaddio har en publik söktjänst där du som har hemsida via Kaddio finns med. 
-		Din organisation kan hittas på plats, verksamhetsområde och nyckelord som du själv bestämmer.<br> 
-		<br>
-		Genom söktjänsten kan du lägga in beskrivningar för sökmotoroptimering, SEO, 
-		så att din organisation får bättre träffar på sökmotorer. Du kan också be kunder om omdömen som visas på din sida i söktjänsten.<br>
-		<br>
-		Var med på söktjänsten du med och nå ut till fler!<br>
-		<br>	
-		<a href="/sv/hitta-klinik" class="font-semibold text-oldpink">Testa Kaddios söktjänst → </a> 
-	</span>
-</ProductFeatureImageOnLeft> -->
+	</ModuleFeatureWithIcon></ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Marknadsföring</span>
