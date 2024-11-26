@@ -31,7 +31,7 @@
 		Kaddio Marknadsföring gör din verksamhet synlig på nätet och hjälper dig att nå ut till nya kunder.
 	</span>
 	
-	<ModuleFeatureWithIcon icon="wand-sparkles">
+	<ModuleFeatureWithIcon icon="browser">
 		<span slot="title">Hemsida.</span>
 		<span slot="body">
 			Skapa en egen hemsida snabbt och smidigt genom Kaddio. 
