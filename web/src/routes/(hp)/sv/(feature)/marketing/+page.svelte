@@ -63,9 +63,11 @@
 		<ModuleOverviewFeature>Skapa en hemsida med några få klick</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Presentation av verksamheten</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Länk till tidsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Länk till kontaktformulär</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Huvudbild och flera mindre bilder</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Länkar till andra webbsidor</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Adress och karta med stöd för flera platser</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visa omdömen från kunder</ModuleOverviewFeature>
 						
 	</ModuleOverviewFeaturesSegment>
 
