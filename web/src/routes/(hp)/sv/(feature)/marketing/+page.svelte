@@ -27,9 +27,9 @@
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-se.png" alt="Kaddio Marknadsföring">
 	<span slot="h1">Visa upp din verksamhet</span>
-	<span slot="title">Marknadsföring</span>
+	<span slot="title">Kaddio Marknadsföring</span>
 	<span slot="sub">
-		Kaddio Marknadsföring gör din verksamhet synlig på nätet och hjälper dig att nå ut till nya potentiella kunder.
+		Kaddio Marknadsföring gör din verksamhet synlig på nätet och hjälper dig att nå ut till nya kunder.
 	</span>
 	
 	<ModuleFeatureWithIcon icon="wand-sparkles">
@@ -40,7 +40,7 @@
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="person-chalkboard">
-		<span slot="title">Söksida.</span>
+		<span slot="title">Söktjänst.</span>
 		<span slot="body">
 			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer. 
 		</span>
@@ -49,7 +49,7 @@
 	<ModuleFeatureWithIcon icon="chart-line-up">
 		<span slot="title">Omdömen.</span>
 		<span slot="body">
-			 Låt kunder lämna omdömen som visas publikt på Kaddios söksida.
+			 Låt kunder lämna omdömen som visas på din hemsida och i Kaddios söktjänst.
 		</span> 
 	</ModuleFeatureWithIcon>
 
@@ -74,58 +74,58 @@
 </ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
-	<span slot="title">Detta är Kaddio Hemsida-Modulnamn</span>
-	<span slot="body">Med Kaddio Hemsida-Modulnamn får du hjälp att presentera din verksamhet <br>och nå ut till fler kunder.</span>
+	<span slot="title">Detta är Kaddio Marknadsföring</span>
+	<span slot="body">Med Kaddio Marknadsföring får du hjälp att presentera din verksamhet <br>och nå ut till fler potentiella kunder.</span>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Förenkla</span>
+		<span slot="title">Hemsida</span>
 		
-		<ModuleOverviewFeature>Automatisk generering av hemsida</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visning av lediga tider</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska utskick med förfrågan om omdömen från kund</ModuleOverviewFeature>
-		<ModuleOverviewFeature></ModuleOverviewFeature>
-				
+		<ModuleOverviewFeature>Ingår i ditt abonnemang</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skapa en hemsida med några få klick</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Presentation av verksamheten</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Länk till tidsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Huvudbild och flera mindre bilder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Länkar till andra webbsidor</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Adress och karta med stöd för flera platser</ModuleOverviewFeature>
+						
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Presentera</span>
+		<span slot="title">Söktjänst</span>
 
-		<ModuleOverviewFeature>Beskrivning av  verksamheten</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Presentation av personal</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Bilder och länkar</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Mottagningsadresser och karta</ModuleOverviewFeature>
-		<ModuleOverviewFeature></ModuleOverviewFeature>
-	</ModuleOverviewFeaturesSegment>
-
-	<ModuleOverviewFeaturesSegment>
-		<span slot="title">Öka omsättningen</span>
-		
+		<ModuleOverviewFeature>Ingår i ditt abonnemang</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Publik söksida för blivande kunder</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Sökmotoroptimering, SEO</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visning av omdömen från kund</ModuleOverviewFeature>
-		<ModuleOverviewFeature></ModuleOverviewFeature>
-				
+		<ModuleOverviewFeature>Bättre sökträffar på Google med sökmotoroptimering</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Öka trafiken till din hemsida</ModuleOverviewFeature>
+	</ModuleOverviewFeaturesSegment>
 
+	<ModuleOverviewFeaturesSegment>
+		<span slot="title">Omdömen</span>
+		
+		<ModuleOverviewFeature>Tilläggstjänst till Kaddio Bokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska utskick med förfrågan om omdömen från kund</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visa omdömen på din hemsida</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Visa omdömen i Kaddios söktjänst</ModuleOverviewFeature>
+	
 	</ModuleOverviewFeaturesSegment>
 
 </ModuleOverviewFeaturesSection> 
 
 <QuotesSection>
     <span slot="title">
-        Vad våra kunder säger om Kaddio Hemsida       
+        Vad våra kunder säger om <br>Kaddio Marknadsföring       
     </span>
 
-	<QuoteSvRamzi />
-	<QuoteSvJimmy />
+	
 	<QuoteSvJonas />
 	<QuoteSvAmanda />
-	<QuoteSvSofia />
+
 	<QuoteSvUlrika />
 
 </QuotesSection>
 
 <StatsSectionSv />
 
-<PricesSv></PricesSv>
+<PricesSv />
 
 <ContactDanielSv /> 
