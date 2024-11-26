@@ -26,16 +26,16 @@
 </svelte:head>
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/homepage-se.png" alt="Kaddio Marknadsföring">
-	<span slot="h1">Visa upp ditt företag</span>
+	<span slot="h1">Visa upp din verksamhet</span>
 	<span slot="title">Marknadsföring</span>
 	<span slot="sub">
-		Kaddio Marknadsföring gör det enkelt för dina kunder att hitta information och hjälper dig att nå ut till fler.
+		Kaddio Marknadsföring gör din verksamhet synlig på nätet och hjälper dig att nå ut till nya potentiella kunder.
 	</span>
 	
 	<ModuleFeatureWithIcon icon="wand-sparkles">
 		<span slot="title">Hemsida.</span>
 		<span slot="body">
-			Skapa en enkel hemsida genom Kaddio och slipp tekniskt krångel. 
+			Skapa en egen hemsida snabbt och smidigt genom Kaddio. 
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -58,7 +58,7 @@
 
 </ModuleSectionWithImage>
 
-<ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Söktjänst">
+<!-- <ProductFeatureImageOnLeft src="/img/kaddio-screenshots/cal-se.png" alt="Söktjänst">
 	<span slot="pre">Väx med Kaddio</span>
 	<span slot="title">Söktjänst</span>
 	<span slot="body">Kaddio har en publik söktjänst där du som har hemsida via Kaddio finns med. 
@@ -71,7 +71,7 @@
 		<br>	
 		<a href="/sv/hitta-klinik" class="font-semibold text-oldpink">Testa Kaddios söktjänst → </a> 
 	</span>
-</ProductFeatureImageOnLeft>
+</ProductFeatureImageOnLeft> -->
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Hemsida-Modulnamn</span>
