@@ -18,7 +18,14 @@ import NpoTimeline from "$components/npo-timeline.svelte";
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
 </svelte:head>
 
-<WithStickyScreenshot />
+<WithStickyScreenshot>
+	<span slot="pre">På gång i Kaddio</span>
+	<span slot="h1">Integration till <br>Nationell Patientöversikt</span>
+	<span slot="sub">Planerad lansering under 2025.</span>
+	<span slot="p1">Här hamnar brödtexten som vackert beskriver vårt pågående arbete med integration till NPÖ.</span>
+	<span slot="h2">Trevlig underrubrik</span>
+
+</WithStickyScreenshot>
 
 <NpoTimeline>
 	<span slot="date-one">Dec 2024</span>
