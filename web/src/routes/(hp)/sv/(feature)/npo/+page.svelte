@@ -1,7 +1,7 @@
 <script>
-	
+
 import WithStickyScreenshot from "$components/withStickyScreenshot.svelte";
-import ContentCentered from "$components/contentCentered.svelte";
+
 import WithImageTitles from "$components/withImageTitles.svelte";
 
 import NpoTimeline from "$components/npo-timeline.svelte";
