@@ -218,7 +218,7 @@
                             <div
                                 class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                             >
-                                <i class="fal fa-fw fa-xl fa-file-lines group-hover:text-oldpink" />
+                                <i class="fal fa-fw fa-xl fa-megaphone group-hover:text-oldpink" />
                             </div>
                             <a
                                 href={$link('marknadsföring', lang)}
