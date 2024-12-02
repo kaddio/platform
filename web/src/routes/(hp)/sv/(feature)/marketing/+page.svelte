@@ -28,7 +28,7 @@
 	<span slot="h1">Visa upp din verksamhet</span>
 	<span slot="title">Kaddio Marknadsföring</span>
 	<span slot="sub">
-		Kaddio Marknadsföring gör din verksamhet synlig på nätet och hjälper dig att nå ut till nya kunder.
+		Kaddio Marknadsföring gör din verksamhet synlig på nätet och hjälper dig att nå ut till fler potentiella klienter.
 	</span>
 	
 	<ModuleFeatureWithIcon icon="browser">
@@ -41,20 +41,20 @@
 	<ModuleFeatureWithIcon icon="magnifying-glass">
 		<span slot="title">Söktjänst.</span>
 		<span slot="body">
-			Nå ut till fler kunder med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer. 
+			Var med i Kaddios söktjänst och nå ut till blivande klienter. Optimera för bättre träffar i sökmotorer. 
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="star">
 		<span slot="title">Omdömen.</span>
 		<span slot="body">
-			 Låt kunder lämna omdömen som visas på din hemsida och i Kaddios söktjänst.
+			 Låt klienter lämna omdömen som visas på din hemsida och i Kaddios söktjänst.
 		</span> 
 	</ModuleFeatureWithIcon></ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Detta är Kaddio Marknadsföring</span>
-	<span slot="body">Med Kaddio Marknadsföring får du hjälp att presentera din verksamhet <br>och nå ut till fler potentiella kunder.</span>
+	<span slot="body">Med Kaddio Marknadsföring får du hjälp att presentera din verksamhet <br>och nå ut till fler potentiella klienter.</span>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Hemsida</span>
@@ -75,7 +75,7 @@
 		<span slot="title">Söktjänst</span>
 
 		<ModuleOverviewFeature>Ingår i ditt abonnemang</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Publik söksida för blivande kunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Publik söksida för blivande klienter</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bättre sökträffar på Google med sökmotoroptimering</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Öka trafiken till din hemsida</ModuleOverviewFeature>
 	</ModuleOverviewFeaturesSegment>
