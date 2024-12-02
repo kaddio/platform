@@ -50,9 +50,9 @@
               <span><strong class="font-semibold text-gray-900"><slot name="strong3" /></strong> <slot name="li3" /></span>
             </li>
           </ul>
-          <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
+          <p class="mt-8"><slot name="p2"></slot></p>
           <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h2" /></h2>
-          <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
+          <p class="mt-6"><slot name="p3"></slot></p>
         </div>
       </div>
     </div>

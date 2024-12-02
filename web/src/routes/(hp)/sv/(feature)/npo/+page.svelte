@@ -24,7 +24,14 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 	<span slot="sub">Planerad lansering under 2025.</span>
 	<span slot="p1">Här hamnar brödtexten som vackert beskriver vårt pågående arbete med integration till NPÖ.</span>
 	<span slot="h2">Trevlig underrubrik</span>
-
+	<span slot="strong1">Fetstilt 1</span>
+	<span slot="li1">Trevlig lista 1</span>
+	<span slot="strong2">Fetstilt 2</span>
+	<span slot="li2">Trevlig lista 2</span>
+	<span slot="strong3">Fetstilt 3</span>
+	<span slot="li3">Trevlig lista 3</span>
+	<span slot="p2">Trevlig brödtext</span>
+	<span slot="p3">Trevlig brödtext</span>
 </WithStickyScreenshot>
 
 <NpoTimeline>
