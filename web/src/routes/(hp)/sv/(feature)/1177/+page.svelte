@@ -20,7 +20,7 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 
 <WithStickyScreenshot>
 	<span slot="pre">På gång i Kaddio</span>
-	<span slot="h1">Integration till 1177
+	<span slot="h1">Integration till 1177 </span>
 	<span slot="sub">Planerad lansering under 2025.</span>
 	<span slot="p1">Här hamnar brödtexten som vackert beskriver vårt pågående arbete med integration till NPÖ.</span>
 	<span slot="h2">Trevlig underrubrik</span>
