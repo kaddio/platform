@@ -21,7 +21,8 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 <WithStickyScreenshot>
 	<span slot="pre">På gång i Kaddio</span>
 	<span slot="h1">Integration till 1177 </span>
-	<span slot="sub">Planerad lansering under 2025.</span>
+	<span slot="sub">Kaddio bygger integration till 1177 och nationell patientöversikt för journaldata. 
+		Lanseringen beräknas till våren 2025.</span>
 	<span slot="p1">Här hamnar brödtexten som vackert beskriver vårt pågående arbete med integration till NPÖ.</span>
 	<span slot="h2">Trevlig underrubrik</span>
 	<span slot="strong1">Fetstilt 1</span>
@@ -43,12 +44,12 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 	<span slot="title-two">Bygge av integration</span>
 	<span slot="sub-two">Kaddio är godkända som agent. <br>Våra utvecklare bygger integrationen till 1177 och NPÖ.</span>
 
-	<span slot="date-three">Början av Q1 2025</span>
+	<span slot="date-three">Q1 2025</span>
 	<span slot="title-three">Test och validering</span>
 	<span slot="sub-three">Bygget testas och kvalitetssäkras.</span>
 
-	<span slot="date-four">Slutet av Q1 2025</span>
-	<span slot="title-four">Integration i produktion</span>
+	<span slot="date-four">Våren 2025</span>
+	<span slot="title-four">Integrationen i produktion</span>
 	<span slot="sub-four">Integrationen mot 1177 och NPÖ släpps i produktion och blir tillgänglig för våra kunder och deras klienter.</span>
 
 	<!-- <span slot="date-five"></span>
