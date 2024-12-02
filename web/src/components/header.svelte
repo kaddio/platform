@@ -221,7 +221,7 @@
                                 <i class="fal fa-fw fa-xl fa-megaphone group-hover:text-oldpink" />
                             </div>
                             <a
-                                href={$link('marknadsföring', lang)}
+                                href={$link('marketing', lang)}
                                 class="mt-6 block font-semibold text-gray-900"
                             >
                                 {$_('Marknadsföring')}
