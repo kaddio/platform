@@ -49,7 +49,7 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 
 	<span slot="date-four">Slutet av Q1 2025</span>
 	<span slot="title-four">Integration i produktion</span>
-	<span slot="sub-four">Integrationen mot 1177 och NPÖ släpps i produktion.</span>
+	<span slot="sub-four">Integrationen mot 1177 och NPÖ släpps i produktion och blir tillgänglig för våra kunder och deras klienter.</span>
 
 	<!-- <span slot="date-five"></span>
 	<span slot="title-five"></span>
