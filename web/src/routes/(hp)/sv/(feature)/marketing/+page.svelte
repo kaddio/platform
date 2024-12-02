@@ -24,7 +24,7 @@
 	<meta name="description" content="Kaddio Marknadsföring." />
 </svelte:head>
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/" alt="Kaddio Marknadsföring">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/hklinik-se.png" alt="Kaddio Marknadsföring">
 	<span slot="h1">Visa upp din verksamhet</span>
 	<span slot="title">Kaddio Marknadsföring</span>
 	<span slot="sub">
@@ -41,7 +41,7 @@
 	<ModuleFeatureWithIcon icon="magnifying-glass">
 		<span slot="title">Söktjänst.</span>
 		<span slot="body">
-			Nå ut till fler med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer. 
+			Nå ut till fler kunder med Kaddios söktjänst. Optimera för bättre träffar i sökmotorer. 
 		</span>
 	</ModuleFeatureWithIcon>
 
@@ -61,13 +61,13 @@
 		
 		<ModuleOverviewFeature>Ingår i ditt abonnemang</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skapa en hemsida med några få klick</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Presentation av verksamheten</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Länk till tidsbokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Länk till kontaktformulär</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Huvudbild och flera mindre bilder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Presentation av din verksamhet</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Tidsbokning</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Kontaktformulär</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Bilder</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Länkar till andra webbsidor</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Adress och karta med stöd för flera platser</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Visa omdömen från kunder</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Adress och karta</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Omdömen från kunder</ModuleOverviewFeature>
 						
 	</ModuleOverviewFeaturesSegment>
 
@@ -83,8 +83,8 @@
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Omdömen</span>
 		
-		<ModuleOverviewFeature>Tilläggstjänst till Kaddio Bokning</ModuleOverviewFeature>
-		<ModuleOverviewFeature>Automatiska utskick med förfrågan om omdömen från kund</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Skicka omdömesförfrågan via e-post</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Automatiska utskick med förfrågan om omdömen efter bokning</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Visa omdömen på din hemsida</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Visa omdömen i Kaddios söktjänst</ModuleOverviewFeature>
 	
@@ -92,7 +92,7 @@
 
 </ModuleOverviewFeaturesSection> 
 
-<QuotesSection>
+<!-- <QuotesSection>
     <span slot="title">
         Vad våra kunder säger om <br>Kaddio Marknadsföring       
     </span>
@@ -103,10 +103,10 @@
 
 	<QuoteSvUlrika />
 
-</QuotesSection>
+</QuotesSection> -->
 
 <StatsSectionSv />
 
 <PricesSv />
 
-<ContactDanielSv /> up
+<ContactDanielSv />
