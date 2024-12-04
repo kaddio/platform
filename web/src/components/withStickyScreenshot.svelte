@@ -29,7 +29,7 @@
       <div class="lg:pr-4">
         <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
           <p><slot name="p1" /></p>
-          <br>
+          <!-- <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h2" /></h2> -->
           <p><slot name="p2" /></p>
           <ul role="list" class="mt-8 space-y-8 text-gray-600">
             <li class="flex gap-x-3">
@@ -52,7 +52,7 @@
               <span><strong class="font-semibold text-gray-900"><slot name="strong3" /></strong> <slot name="li3" /></span>
             </li>
           </ul>
-          <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h2" /></h2>
+          <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h3" /></h2>
           <p class="mt-8"><slot name="p3"></slot></p>
         </div>
       </div>
