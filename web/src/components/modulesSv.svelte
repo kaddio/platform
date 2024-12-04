@@ -56,6 +56,27 @@
         >
     </ModulePresentation>
 
+    <ModulePresentation href={$link('marknadsföring', lang)}>
+        <span slot="icon">
+            <i class="text-white fa-regular fa-megaphone"></i>
+        </span>
+        <span slot="title">Marknadsföring</span>
+        <span slot="body"
+            >Kaddio Marknadsföring hjälper dig synas där dina kunder finns.</span
+        >
+    </ModulePresentation>
+
+    <ModulePresentation>
+        <span slot="icon">
+            <i class="text-white fa-regular fa-folder-tree" />
+        </span>
+        <span slot="title">Dokument</span>
+        <span slot="body"
+            >Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med
+            avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span
+        >
+    </ModulePresentation>
+
     <ModulePresentation>
         <span slot="icon">
             <i class="text-white fa-regular fa-clipboard-list-check" />
@@ -72,16 +93,6 @@
         <span slot="body">Gör din egen att-göra-lista eller delegera till någon annan.</span>
     </ModulePresentation>
 
-    <ModulePresentation>
-        <span slot="icon">
-            <i class="text-white fa-regular fa-folder-tree" />
-        </span>
-        <span slot="title">Dokument</span>
-        <span slot="body"
-            >Samarbeta i molnet med dina kollegor. Begränsa åtkomst i filhanteringssystemet med
-            avancerad behörighetsstyrning. Versionshantering och backup kommer automatiskt.</span
-        >
-    </ModulePresentation>
 
     <ModulePresentation>
         <span slot="icon">

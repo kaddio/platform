@@ -414,6 +414,12 @@ export const links = {
         sv: 'fakturering',
         en: 'invoicing',
         es: 'sistema-de-facturacion'
+    },
+
+    marknadsföring: {
+        sv: 'marknadsföring',
+        en: 'marketing',
+        es: 'comercialización'
     }
 };
 
