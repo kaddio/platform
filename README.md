@@ -16,7 +16,8 @@ Currently on Render via a Render [Infrastrucure as code configuration](https://r
 
 ## Web
 Kaddio web site built with Svelte and Tailwind
-[next.kaddio.com](https://next.kaddio.com)
+Start with
+> npm run dev
 
 ## Changelog
 Kaddio changelog built with Next and Tailwind
