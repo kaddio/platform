@@ -1,11 +1,11 @@
 <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
   <div class="absolute inset-0 -z-10 overflow-hidden">
     <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
-      <defs>
+      <!-- <defs> -->
         <!-- <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
           <path d="M100 200V.5M.5 .5H200" fill="none" />
         </pattern> -->
-      </defs>
+      <!-- </defs> -->
       <!-- <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
         <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
       </svg> -->
@@ -16,7 +16,7 @@
     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
       <div class="lg:pr-4">
         <div class="lg:max-w-lg">
-          <p class="text-base/7 font-semibold text-indigo-600"><slot name="pre" /></p>
+          <p class="text-base/7 font-semibold text-oldpink"><slot name="pre" /></p>
           <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"><slot name="h1" /></h1>
           <p class="mt-6 text-xl/8 text-gray-700"><slot name="sub" /></p>
         </div>
@@ -29,7 +29,7 @@
       <div class="lg:pr-4">
         <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
           <p><slot name="p1" /></p>
-          <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h2" /></h2>
+          <p><slot name="p2" /></p>
           <ul role="list" class="mt-8 space-y-8 text-gray-600">
             <li class="flex gap-x-3">
               <!-- <svg class="mt-1 size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -51,9 +51,8 @@
               <span><strong class="font-semibold text-gray-900"><slot name="strong3" /></strong> <slot name="li3" /></span>
             </li>
           </ul>
-          <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h3" /></h2>
-          <p class="mt-8"><slot name="p2"></slot></p>
-          <p class="mt-6"><slot name="p3"></slot></p>
+          <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900"><slot name="h2" /></h2>
+          <p class="mt-8"><slot name="p3"></slot></p>
         </div>
       </div>
     </div>
