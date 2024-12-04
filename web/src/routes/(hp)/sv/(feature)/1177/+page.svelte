@@ -20,19 +20,23 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 
 <WithStickyScreenshot>
 	<span slot="pre">På gång i Kaddio</span>
-	<span slot="h1">Integration till 1177 </span>
+	<span slot="h1">Integration till <br>NPÖ och 1177 </span>
 	<span slot="sub">Kaddio bygger integration till 1177 och nationell patientöversikt för journaldata. 
 		Lanseringen beräknas till våren 2025.</span>
-	<span slot="p1">Här hamnar brödtexten som vackert beskriver vårt pågående arbete med integration till NPÖ.</span>
-	<span slot="h2">Trevlig underrubrik</span>
-	<span slot="strong1">Fetstilt 1</span>
-	<span slot="li1">Trevlig lista 1</span>
-	<span slot="strong2">Fetstilt 2</span>
-	<span slot="li2">Trevlig lista 2</span>
-	<span slot="strong3">Fetstilt 3</span>
-	<span slot="li3">Trevlig lista 3</span>
-	<span slot="p2">Trevlig brödtext</span>
-	<span slot="p3">Trevlig brödtext</span>
+	<span slot="p1">Nationell patientöversikt, NPÖ, är ett verktyg för sammanhållen journalföring inom vården. 
+		Genom NPÖ kan vårdpersonal få en samlad bild av en klients journaler hos samtliga vårdgivare. 
+		De uppgifter som vårdpersonal kan se i NPÖ kan också klienten själv ta del av genom att logga in på 1177.se.</span>
+	<span slot="h2">Vad integrationen betyder för dig som kund</span>
+	<span slot="strong1">Lagkrav </span>
+	<span slot="li1">Uppfyll de krav som ställs för att kunna arbeta mot region och kommun.</span>
+	<span slot="strong2">Access </span>
+	<span slot="li2">Behandlare får tillgång till journalinformation för klienten från andra system på ett smidigt och säkert sätt. 
+		Klienter når sin journal själva via 1177.</span>
+	<span slot="strong3">Flexibilitet </span>
+	<span slot="li3">Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.</span>
+	<span slot="h3">Vad händer nu?</span>
+	<span slot="p2">Kaddio har godkänts som agent av Inera, det bolag som utvecklar och förvaltar digitala tjänster för invånare genom 1177. 
+		Kodbygget är i full gång och lanseringen av integrationen kommer preliminärt att ska under våren 2025.</span>
 </WithStickyScreenshot>
 
 <NpoTimeline>
