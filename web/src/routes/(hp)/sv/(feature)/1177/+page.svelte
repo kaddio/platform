@@ -30,7 +30,7 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 	<span slot="strong1">Lagkrav &nbsp;</span>
 	<span slot="li1"> Uppfyll de krav som ställs för att kunna arbeta mot region och kommun.</span>
 	<span slot="strong2">Access &nbsp;</span>
-	<span slot="li2"> Behandlare får tillgång till journalinformation för klienten från andra system på ett smidigt och säkert sätt. 
+	<span slot="li2"> Behandlare får tillgång till journalinformation för klienten från andra system med identifiering via SITHS. 
 		Klienter når sin journal själva via 1177.</span>
 	<span slot="strong3">Flexibilitet &nbsp;</span>
 	<span slot="li3">Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.</span>
