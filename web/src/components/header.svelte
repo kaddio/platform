@@ -212,27 +212,6 @@
                                 )}
                             </p>
                         </div>
-                        <div
-                            class="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50"
-                        >
-                            <div
-                                class="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                            >
-                                <i class="fal fa-fw fa-xl fa-megaphone group-hover:text-oldpink" />
-                            </div>
-                            <a
-                                href={$link('marketing', lang)}
-                                class="mt-6 block font-semibold text-gray-900"
-                            >
-                                {$_('Marknadsföring')}
-                                <span class="absolute inset-0" />
-                            </a>
-                            <p class="mt-1 text-gray-600">
-                                {$_(
-                                    'Kaddio Marknadsföring hjälper dig att visa upp din verksamhet.'
-                                )}
-                            </p>
-                        </div>
                     </div>
                     <div class="bg-gray-50">
                         <div class="mx-auto max-w-7xl px-6 lg:px-8">
