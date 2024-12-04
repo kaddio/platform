@@ -36,7 +36,7 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 	<span slot="li3">Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.</span>
 	<span slot="h3">Vad händer nu?</span>
 	<span slot="p2">Kaddio har godkänts som agent av Inera, det bolag som utvecklar och förvaltar digitala tjänster för invånare genom 1177. 
-		Kodbygget är i full gång och lanseringen av integrationen kommer preliminärt att ska under våren 2025.</span>
+		Kodbygget är i full gång och lanseringen av integrationen kommer preliminärt att ske under våren 2025.</span>
 </WithStickyScreenshot>
 
 <NpoTimeline>
