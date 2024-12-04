@@ -56,7 +56,7 @@
         >
     </ModulePresentation>
 
-    <ModulePresentation href={$link('marketing', lang)}>
+    <ModulePresentation href={$link('marknadsföring', lang)}>
         <span slot="icon">
             <i class="text-white fa-regular fa-megaphone"></i>
         </span>
