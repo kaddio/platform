@@ -26,7 +26,7 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 	<span slot="p1">Nationell patientöversikt, NPÖ, är ett verktyg för sammanhållen journalföring inom vården. 
 		Genom NPÖ kan vårdpersonal få en samlad bild av en klients journaler hos samtliga vårdgivare. 
 		De uppgifter som vårdpersonal kan se i NPÖ kan också klienten själv ta del av genom att logga in på 1177.se.</span>
-	<span slot="p2">För dig som kund i Kaddio betyder...</span>
+	<span slot="p2">För dig som journalför i Kaddio medför integrationen nya möjligheter: </span>
 		<span slot="strong1">Lagkrav &nbsp;</span>
 	<span slot="li1"> Uppfyll de krav som ställs för att kunna arbeta mot region och kommun.</span>
 	<span slot="strong2">Access &nbsp;</span>
@@ -36,7 +36,9 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 	<span slot="li3">Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.</span>
 	<span slot="h2">Vad händer nu?</span>
 	<span slot="p3">Kaddio har godkänts som agent av Inera, det bolag som utvecklar och förvaltar digitala tjänster för invånare genom 1177. 
-		Kodbygget är i full gång och lanseringen av integrationen kommer preliminärt att ske under våren 2025.</span>
+		Kodbygget är i full gång och lanseringen av integrationen kommer preliminärt att ske under våren 2025.<br>
+		<br>
+	Är du nyfiken eller har frågor? Kontakta oss på support@kaddio.com.</span>
 </WithStickyScreenshot>
 
 <NpoTimeline>

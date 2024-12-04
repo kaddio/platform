@@ -29,6 +29,7 @@
       <div class="lg:pr-4">
         <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
           <p><slot name="p1" /></p>
+          <br>
           <p><slot name="p2" /></p>
           <ul role="list" class="mt-8 space-y-8 text-gray-600">
             <li class="flex gap-x-3">
