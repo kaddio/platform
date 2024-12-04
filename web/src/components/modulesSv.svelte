@@ -62,7 +62,7 @@
         </span>
         <span slot="title">Marknadsföring</span>
         <span slot="body"
-            >Kaddio Marknadsföring hjälper dig att visa upp din verksamhet.</span
+            >Kaddio Marknadsföring hjälper dig synas där dina kunder finns.</span
         >
     </ModulePresentation>
 
