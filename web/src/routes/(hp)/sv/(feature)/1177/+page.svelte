@@ -47,12 +47,12 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 	<span slot="sub-one">Projektet klubbas igenom internt och Kaddio ansöker om att bli agent för NPÖ.</span>
 
 	<span slot="date-two">Q4 2024</span>
-	<span slot="title-two">Bygge av integration</span>
+	<span slot="title-two">Integrationen byggs</span>
 	<span slot="sub-two">Kaddio är godkända som agent. <br>Våra utvecklare bygger integrationen till 1177 och NPÖ.</span>
 
 	<span slot="date-three">Q1 2025</span>
 	<span slot="title-three">Test och validering</span>
-	<span slot="sub-three">Bygget testas och kvalitetssäkras.</span>
+	<span slot="sub-three">Bygget av integrationen testas och kvalitetssäkras.</span>
 
 	<span slot="date-four">Våren 2025</span>
 	<span slot="title-four">Integrationen i produktion</span>
