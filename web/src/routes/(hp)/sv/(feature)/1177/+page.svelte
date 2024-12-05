@@ -4,7 +4,8 @@ import WithStickyScreenshot from "$components/withStickyScreenshot.svelte";
 
 import WithImageTitles from "$components/withImageTitles.svelte";
 
-import NpoTimeline from "$components/npo-timeline.svelte";
+import Timeline from "$components/timeline.svelte";
+import TimelinePart from "$components/timeline-part.svelte";
 
 import ContactDanielSv from "$components/contactDanielSv.svelte";
 import PricesSv from "$components/pricesSv.svelte";
@@ -12,10 +13,8 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 </script>
 
 <svelte:head>
-
-
-    <title>Kaddio - Kommunikation</title>
-    <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
+    <title>Kaddio - 1177</title>
+    <meta name="description" content="Kaddio bygger integration till 1177 och NPÖ" />
 </svelte:head>
 
 <WithStickyScreenshot>
@@ -42,27 +41,32 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 	Är du nyfiken eller har frågor? Kontakta oss på support@kaddio.com.</span>
 </WithStickyScreenshot>
 
-<NpoTimeline>
-	<span slot="date-one">Q2 2024</span>
-	<span slot="title-one">Projektstart</span>
-	<span slot="sub-one">Kaddio ansöker om att bli agent för 1177 och NPÖ.</span>
+<Timeline>
+	<TimelinePart>
+		<span slot="date">Q2 2024</span>
+		<span slot="title">Projektstart</span>
+		<span slot="sub">Kaddio ansöker om att bli agent för 1177 och NPÖ.</span>
+	</TimelinePart>
 
-	<span slot="date-two">Q3-Q4 2024</span>
-	<span slot="title-two">Utveckling</span>
-	<span slot="sub-two">Kaddio har agentavtal och integration byggs till 1177 och NPÖ.</span>
+	<TimelinePart>
+		<span slot="date">Q3-Q4 2024</span>
+		<span slot="title">Utveckling</span>
+		<span slot="sub">Kaddio har agentavtal och integration byggs till 1177 och NPÖ.</span>
+	</TimelinePart>
 
-	<span slot="date-three">Q1 2025</span>
-	<span slot="title-three">Test och validering</span>
-	<span slot="sub-three">Kaddio testar och validerar integration tillsammans med pilotkunder.</span>
+	<TimelinePart>
+		<span slot="date">Q1 2025</span>
+		<span slot="title">Test och validering</span>
+		<span slot="sub">Kaddio testar och validerar integration tillsammans med pilotkunder.</span>
+	</TimelinePart>
 
-	<span slot="date-four">Q2 2025</span>
-	<span slot="title-four">Lansering</span>
-	<span slot="sub-four">Integrationen mot 1177 och NPÖ beräknas finnas i produktion som en modul.</span>
+	<TimelinePart>
+		<span slot="date">Q2 2025</span>
+		<span slot="title">Lansering</span>
+		<span slot="sub">Integrationen mot 1177 och NPÖ beräknas finnas i produktion som en modul.</span>
+	</TimelinePart>
 
-	<!-- <span slot="date-five"></span>
-	<span slot="title-five"></span>
-	<span slot="sub-five"></span> -->
-</NpoTimeline>
+</Timeline>
 
 <!-- <WithImageTitles />  -->
 
