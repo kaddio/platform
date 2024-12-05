@@ -1,6 +1,9 @@
 <script>
 
 import WithStickyScreenshot from "$components/withStickyScreenshot.svelte";
+import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
 
 import WithImageTitles from "$components/withImageTitles.svelte";
 
@@ -17,29 +20,49 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
     <meta name="description" content="Kaddio bygger integration till 1177 och NPÖ" />
 </svelte:head>
 
-<WithStickyScreenshot>
-	<span slot="pre">På gång i Kaddio</span>
-	<span slot="h1">Integration till <br>NPÖ och 1177 </span>
-	<span slot="sub">Kaddio bygger integration till 1177 och nationell patientöversikt för journaldata som en tilläggstjänst till modulen Journal. 
-		Lanseringen beräknas till våren 2025.</span>
-	<span slot="p1">Nationell patientöversikt, NPÖ, är ett verktyg som gör att vårdpersonal kan få en samlad bild av 
+
+<ModuleSectionWithImage src="/img/kaddio-screenshots/1177.png" alt="Kaddio onlinebokning och kalender">
+	<span slot="h1">På gång i Kaddio</span>
+	<span slot="title">Integration med 1177</span>
+	<span slot="sub">
+		Kaddio bygger integration till 1177 och nationell patientöversikt för journaldata som en tilläggstjänst till modulen Journal. 
+		Lanseringen beräknas till våren 2025.
+	</span>
+
+	<ModuleFeatureWithIcon icon="people-pants">
+		<span slot="title">Lagkrav.</span>
+		<span slot="body">
+			Uppfyll de krav som ställs för att kunna arbeta mot region och kommun.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="stopwatch">
+		<span slot="title">Access.</span>
+		<span slot="body">
+			Behandlare får tillgång till journalinformation för klienten från andra system med identifiering via SITHS. Patienter når sin journal via 1177.
+		</span>
+	</ModuleFeatureWithIcon>
+
+	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+		<span slot="title">Effektivitet.</span>
+		<span slot="body">
+			Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.
+		</span>
+	</ModuleFeatureWithIcon>
+</ModuleSectionWithImage>
+
+<ModuleOverviewFeaturesSection>
+	<span slot="title">Vad händer nu?</span>
+	<span slot="body">Nationell patientöversikt, NPÖ, är ett verktyg som gör att vårdpersonal kan få en samlad bild av 
 		en klients journaler hos samtliga vårdgivare. De uppgifter som vårdpersonal kan se i NPÖ kan också klienten 
-		själv ta del av genom att logga in på 1177.se.</span>
-	<span slot="p2"><br>Kaddio bygger nu en integration till NPÖ och 1177 vilket innebär nya möjligheter för dig som 
-		journalför i Kaddio: </span>
-	<span slot="strong1">Lagkrav &nbsp;</span>
-	<span slot="li1"> Uppfyll de krav som ställs för att kunna arbeta mot region och kommun.</span>
-	<span slot="strong2">Access &nbsp;</span>
-	<span slot="li2"> Behandlare får tillgång till journalinformation för klienten från andra system med identifiering via SITHS. 
-		Klienter når sin journal själva via 1177.</span>
-	<span slot="strong3">Flexibilitet &nbsp;</span>
-	<span slot="li3">Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.</span>
-	<span slot="h3">Vad händer nu?</span>
-	<span slot="p3">Kaddio har godkänts som agent av Inera, det bolag som utvecklar och förvaltar digitala tjänster för invånare genom 1177. 
-		Kodbygget är i full gång och lanseringen av integrationen kommer preliminärt att ske under våren 2025. Integrationen blir en tillägstjänst till modulen Journal.<br>
+		själv ta del av genom att logga in på 1177.se. </span>
+</ModuleOverviewFeaturesSection>
+
+	<span ><br>
 		<br>
 	Är du nyfiken eller har frågor? Kontakta oss på support@kaddio.com.</span>
-</WithStickyScreenshot>
+
+
 
 <Timeline>
 	<TimelinePart>
