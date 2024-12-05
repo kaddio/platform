@@ -6,9 +6,9 @@ import WithImageTitles from "$components/withImageTitles.svelte";
 
 import NpoTimeline from "$components/npo-timeline.svelte";
 
-// import ContactDanielSv from "$components/contactDanielSv.svelte";
-// import PricesSv from "$components/pricesSv.svelte";
-// import StatsSectionSv from "$components/statsSectionSv.svelte";
+import ContactDanielSv from "$components/contactDanielSv.svelte";
+import PricesSv from "$components/pricesSv.svelte";
+import StatsSectionSv from "$components/statsSectionSv.svelte";
 </script>
 
 <svelte:head>
@@ -68,6 +68,6 @@ import NpoTimeline from "$components/npo-timeline.svelte";
 
 <!-- <StatsSectionSv />
 
-<PricesSv />
+<PricesSv /> -->
 
-<ContactDanielSv /> -->
+<ContactDanielSv />
