@@ -198,6 +198,12 @@ const pathsRedirectMap = {
         d: '/sv'
     },
 
+    '/1177': {
+        c: 301,
+        d: '/sv/1177'
+    },
+
+
     // TODO edit redirect when a page about packages exists.
     '/packages': {
         c: 301,
