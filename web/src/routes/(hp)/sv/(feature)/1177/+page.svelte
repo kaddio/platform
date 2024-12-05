@@ -42,21 +42,21 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 </WithStickyScreenshot>
 
 <NpoTimeline>
-	<span slot="date-one">Q1 2024</span>
+	<span slot="date-one">maj 2024</span>
 	<span slot="title-one">Projektstart</span>
-	<span slot="sub-one">Projektet klubbas igenom internt och Kaddio ansöker om att bli agent för NPÖ.</span>
+	<span slot="sub-one">Kaddio ansöker om att bli agent för 1177 och NPÖ.</span>
 
-	<span slot="date-two">Q4 2024</span>
-	<span slot="title-two">Integrationen byggs</span>
-	<span slot="sub-two">Kaddio är godkända som agent. <br>Våra utvecklare bygger integrationen till 1177 och NPÖ.</span>
+	<span slot="date-two">aug-dec 2024</span>
+	<span slot="title-two">Integration byggs</span>
+	<span slot="sub-two">Kaddio har agentavtal och integration byggs till 1177 och NPÖ.</span>
 
-	<span slot="date-three">Q1 2025</span>
+	<span slot="date-three">jan-feb 2025</span>
 	<span slot="title-three">Test och validering</span>
-	<span slot="sub-three">Bygget av integrationen testas och kvalitetssäkras.</span>
+	<span slot="sub-three">Kaddio testar och validerar integration tillsammans med pilotkunder.</span>
 
-	<span slot="date-four">Våren 2025</span>
-	<span slot="title-four">Integrationen i produktion</span>
-	<span slot="sub-four">Integrationen mot 1177 och NPÖ släpps i produktion och blir tillgänglig för våra kunder och deras klienter.</span>
+	<span slot="date-four">mars 2025</span>
+	<span slot="title-four">Lansering</span>
+	<span slot="sub-four">Integrationen mot 1177 och NPÖ beräknas finnas i produktion som en modul.</span>
 
 	<!-- <span slot="date-five"></span>
 	<span slot="title-five"></span>
