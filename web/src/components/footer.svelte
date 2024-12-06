@@ -79,6 +79,10 @@
               <li>
                 <a href="https://eepurl.com/gsgcG5" hreflang="en" target="_blank" rel="noreferrer" class="text-sm leading-6 text-gray-600">{ $_('Nyhetsbrev')} <i class="fal fa-fw fa-external-link"></i></a>
               </li>
+
+              <li>
+                <a href="/sv/1177" hreflang="sv" class="text-sm leading-6 text-gray-600">{ $_('1177 / NPÖ')}</a>
+              </li>
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
