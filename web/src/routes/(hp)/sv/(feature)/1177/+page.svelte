@@ -17,50 +17,51 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 
 <svelte:head>
     <title>Kaddio - 1177</title>
-    <meta name="description" content="Kaddio bygger integration till 1177 och NPÖ" />
+    <meta name="description" content="Kaddio bygger integration med 1177 och NPÖ" />
 </svelte:head>
 
 
 <ModuleSectionWithImage src="/img/kaddio-screenshots/1177.png" alt="Kaddio onlinebokning och kalender">
-	<span slot="h1">På gång i Kaddio</span>
+	<span slot="h1">Nyhet i Kaddio</span>
 	<span slot="title">Integration med 1177</span>
 	<span slot="sub">
-		Kaddio bygger integration till 1177 och nationell patientöversikt för journaldata som en tilläggstjänst till modulen Journal. 
-		Lanseringen beräknas till våren 2025.
+		Kaddio bygger integration med 1177 och NPÖ, integrationen kommer att erbjudas som en tilläggstjänst våren 2025.
 	</span>
 
 	<ModuleFeatureWithIcon icon="people-pants">
 		<span slot="title">Lagkrav.</span>
 		<span slot="body">
-			Uppfyll de krav som ställs för att kunna arbeta mot region och kommun.
+			Uppfyll de krav som ställs för att arbeta mot svenska regioner.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Access.</span>
 		<span slot="body">
-			Behandlare får tillgång till journalinformation för klienten från andra system med identifiering via SITHS. Patienter når sin journal via 1177.
+			Vårdgivaren får tillgång till journalinformation för patienten från andra system med identifiering via SITHS. Patienter når själva sin journal på 1177.
 		</span>
 	</ModuleFeatureWithIcon>
 
 	<ModuleFeatureWithIcon icon="calendar-lines-pen">
 		<span slot="title">Effektivitet.</span>
 		<span slot="body">
-			Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett användarvänligt och webbaserat system.
+			Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett modernt journalsystem.
 		</span>
 	</ModuleFeatureWithIcon>
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
 	<span slot="title">Vad händer nu?</span>
-	<span slot="body">Nationell patientöversikt, NPÖ, är ett verktyg som gör att vårdpersonal kan få en samlad bild av 
-		en klients journaler hos samtliga vårdgivare. De uppgifter som vårdpersonal kan se i NPÖ kan också klienten 
-		själv ta del av genom att logga in på 1177.se. </span>
-</ModuleOverviewFeaturesSection>
+	<span slot="body">Kaddio bygger just nu integration mot 1177 och Nationell patientöversikt (NPÖ). Nedan kan du se vår tidslinje över projektet.
 
-	<span ><br>
-		<br>
-	Är du nyfiken eller har frågor? Kontakta oss på support@kaddio.com.</span>
+		<div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="/sv/sales" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kontakta sälj</a>
+          <a target="_blank" href="https://eepurl.com/gsgcG5" class="text-sm/6 font-semibold text-black">Prenumerera på nyhetsbrev <span aria-hidden="true">→</span></a>
+        </div>	
+
+	</span>
+
+</ModuleOverviewFeaturesSection>
 
 
 
@@ -74,7 +75,7 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 	<TimelinePart>
 		<span slot="date">Q3-Q4 2024</span>
 		<span slot="title">Utveckling</span>
-		<span slot="sub">Kaddio har agentavtal och integration byggs till 1177 och NPÖ.</span>
+		<span slot="sub">Kaddio har agentavtal och integration byggs med 1177 och NPÖ.</span>
 	</TimelinePart>
 
 	<TimelinePart>
@@ -86,16 +87,9 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 	<TimelinePart>
 		<span slot="date">Q2 2025</span>
 		<span slot="title">Lansering</span>
-		<span slot="sub">Integrationen mot 1177 och NPÖ beräknas finnas i produktion som en modul.</span>
+		<span slot="sub">Integrationen med 1177 och NPÖ lanseras som tilläggstjänst i Kaddio.</span>
 	</TimelinePart>
 
 </Timeline>
-
-<!-- <WithImageTitles />  -->
-
-
-<!-- <StatsSectionSv />
-
-<PricesSv /> -->
 
 <ContactDanielSv />
