@@ -55,8 +55,8 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 	<span slot="body">Kaddio bygger just nu integration mot 1177 och Nationell patientöversikt (NPÖ). Nedan kan du se vår tidslinje över projektet.
 
 		<div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="/sv/sales" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kontakta sälj</a>
-          <a target="_blank" href="https://eepurl.com/gsgcG5" class="text-sm/6 font-semibold text-black">Kaddio nyhetsbrev <span aria-hidden="true">→</span></a>
+          <a target="_blank" href="https://eepurl.com/gsgcG5" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Nyhetsbrev</a>
+          <a href="/sv/sales" class="text-sm/6 font-semibold text-black">Kontakta sälj <span aria-hidden="true">→</span></a>
         </div>	
 
 	</span>
