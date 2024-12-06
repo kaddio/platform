@@ -56,7 +56,7 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 
 		<div class="mt-10 flex items-center justify-center gap-x-6">
           <a href="/sv/sales" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kontakta sälj</a>
-          <a target="_blank" href="https://eepurl.com/gsgcG5" class="text-sm/6 font-semibold text-black">Prenumerera på nyhetsbrev <span aria-hidden="true">→</span></a>
+          <a target="_blank" href="https://eepurl.com/gsgcG5" class="text-sm/6 font-semibold text-black">Kaddio nyhetsbrev <span aria-hidden="true">→</span></a>
         </div>	
 
 	</span>
