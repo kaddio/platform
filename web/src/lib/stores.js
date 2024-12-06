@@ -339,6 +339,10 @@ export const links = {
         default: 'about-us'
     },
 
+    1177: {
+        sv: '1177'
+    },
+
     career: {
         default: 'career'
     },

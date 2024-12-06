@@ -82,6 +82,7 @@
 		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bygg egna formulär</ModuleOverviewFeature>
 		<ModuleOverviewFeature>API</ModuleOverviewFeature>
+		<ModuleOverviewFeature><a href="/sv/1177" class="text-sm leading-6 text-oldpink">1177 (våren 2025) <span aria-hidden="true">&rarr;</span></a></ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
 
