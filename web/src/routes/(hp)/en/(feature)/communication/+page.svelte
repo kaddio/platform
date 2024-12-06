@@ -4,10 +4,10 @@
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import Quote from "$components/quote.svelte";
-    import QuotesSection from "$components/quotesSection.svelte";
+    
+	import QuotesSection from "$components/quotesSection.svelte";
     import StatsSectionEn from '$components/statsSectionEn.svelte';
-    import StatsSectionPart from "$components/statsSectionPart.svelte";
+    
 	import QuoteEnJimmy from '$components/quoteEnJimmy.svelte';
 	import QuoteEnJonas from '$components/quoteEnJonas.svelte';
 	import QuoteEnRamzi from '$components/quoteEnRamzi.svelte';
@@ -59,7 +59,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Contents</span>
+	
 	<span slot="title">This is Kaddio Chat and Video</span>
 	<span slot="body"> With Kaddio Chat and Video you communicate securely with clients and colleagues. 
 		<br>Everything in Kaddio is encrypted.
