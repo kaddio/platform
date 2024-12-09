@@ -21,7 +21,7 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 </svelte:head>
 
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/1177.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/1177-kaddio.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Nyhet i Kaddio</span>
 	<span slot="title">Integration med 1177</span>
 	<span slot="sub">
