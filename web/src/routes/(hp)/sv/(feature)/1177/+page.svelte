@@ -21,28 +21,28 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 </svelte:head>
 
 
-<ModuleSectionWithImage src="/img/kaddio-screenshots/1177.png" alt="Kaddio onlinebokning och kalender">
+<ModuleSectionWithImage src="/img/kaddio-screenshots/journal-1177.png" alt="Kaddio onlinebokning och kalender">
 	<span slot="h1">Nyhet i Kaddio</span>
 	<span slot="title">Integration med 1177</span>
 	<span slot="sub">
 		Kaddio bygger integration med 1177 och NPÖ, integrationen kommer att erbjudas som en tilläggstjänst våren 2025.
 	</span>
 
-	<ModuleFeatureWithIcon icon="people-pants">
+	<ModuleFeatureWithIcon icon="gavel">
 		<span slot="title">Lagkrav.</span>
 		<span slot="body">
 			Uppfyll de krav som ställs för att arbeta mot svenska regioner.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="stopwatch">
+	<ModuleFeatureWithIcon icon="key">
 		<span slot="title">Access.</span>
 		<span slot="body">
 			Vårdgivaren får tillgång till journalinformation för patienten från andra system med identifiering via SITHS. Patienter når själva sin journal på 1177.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Effektivitet.</span>
 		<span slot="body">
 			Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett modernt journalsystem.
