@@ -28,21 +28,21 @@ import StatsSectionSv from "$components/statsSectionSv.svelte";
 		Kaddio bygger integration med 1177 och NPÖ, integrationen kommer att erbjudas som en tilläggstjänst våren 2025.
 	</span>
 
-	<ModuleFeatureWithIcon icon="people-pants">
+	<ModuleFeatureWithIcon icon="gavel">
 		<span slot="title">Lagkrav.</span>
 		<span slot="body">
 			Uppfyll de krav som ställs för att arbeta mot svenska regioner.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="stopwatch">
+	<ModuleFeatureWithIcon icon="key">
 		<span slot="title">Access.</span>
 		<span slot="body">
 			Vårdgivaren får tillgång till journalinformation för patienten från andra system med identifiering via SITHS. Patienter når själva sin journal på 1177.
 		</span>
 	</ModuleFeatureWithIcon>
 
-	<ModuleFeatureWithIcon icon="calendar-lines-pen">
+	<ModuleFeatureWithIcon icon="stopwatch">
 		<span slot="title">Effektivitet.</span>
 		<span slot="body">
 			Få fördelarna med sammanhållen journalföring samtidigt som du jobbar i ett modernt journalsystem.
