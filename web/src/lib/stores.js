@@ -130,6 +130,14 @@ const translations = {
         en: 'Video',
         es: 'Vídeo'
     },
+    "Jag godkänner": {
+        en: 'I accept',
+        es: 'Acepto'
+    },
+    "och": {
+        en: 'and',
+        es: 'y'
+    },
     Användarvillkor: {
         en: 'Terms of service',
         es: 'Condiciones de uso'
