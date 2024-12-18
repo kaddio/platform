@@ -50,7 +50,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Contents</span>
+	
 	<span slot="title">This is Kaddio Invoicing</span>
 	<span slot="body">With Kaddio Invoicing you easily send invoices from bookings or medical record entries. 
 		Handle everything in the same system and spend more time on your clients.

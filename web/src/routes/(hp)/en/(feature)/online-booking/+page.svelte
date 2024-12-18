@@ -56,7 +56,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Contents</span>
+	
 	<span slot="title">This is Kaddio Booking</span>
 	<span slot="body">Kaddio Booking helps you plan all activities of the organization in an 
 		efficient and comprehensable way, whether you are part of a 
