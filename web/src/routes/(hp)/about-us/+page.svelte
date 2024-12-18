@@ -55,11 +55,6 @@
         </Person>
 
         <Person>
-            <span slot="name">Lena</span>
-            <span slot="title">CISO & Customer support</span>
-        </Person>
-
-        <Person>
             <span slot="name">Ivanna</span>
             <span slot="title">Customer support</span>
         </Person>
