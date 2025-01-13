@@ -14,7 +14,7 @@
             selected: true
         },
         {
-            name: 'Tidsbokning & Kalender',
+            name: 'Bokning & Kalender',
             price: 119,
             selected: true
         },
