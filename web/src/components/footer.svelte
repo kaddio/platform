@@ -163,11 +163,12 @@
       
     </div>
 
-  
 
     <div class="mt-8 border-t border-gray/10 pt-8 md:flex md:items-center md:justify-between">
       <div class="flex space-x-6 md:order-2">
 
+          <img class="h-7 mx-20" src={imageHandler("/img/ce-logo/ce-mark.png", {format: "auto"})} loading="lazy" alt="CE-markering">
+     
       <a href="/choose-country-region" class="text-gray-600 text-sm">
         Choose country or region
       </a>
