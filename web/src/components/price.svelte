@@ -25,7 +25,7 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900"><slot name="title" /></h2>
         <p class="mt-6 text-lg leading-8 text-gray-600"><slot name="sub" /></p>
         <div class="mt-8 flex items-center gap-x-6">
-          <a href="/{lang}/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{$_('Skapa konto')}</a>
+          <!-- <a href="/{lang}/create" class="rounded-md bg-oldpink px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">{$_('Skapa konto')}</a> -->
           <a href="/{lang}/sales" class="text-sm font-semibold text-gray-900">{$_('Kontakta sälj')} <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
