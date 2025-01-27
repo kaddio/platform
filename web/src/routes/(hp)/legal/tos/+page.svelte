@@ -8,7 +8,8 @@
 
 <svelte:head>
 	<title>Kaddio - Terms of service</title>
-	<meta name="description" content="Användarvillkor" />
+	<meta name="description" content="Welcome to Kaddio! When you create an account with us, you consent to these terms of service 
+        and our processing of personal data as established on our website" />
 </svelte:head>
 
 
