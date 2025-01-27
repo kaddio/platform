@@ -8,7 +8,8 @@
 
 <svelte:head>
 	<title>Kaddio - Privacy policy</title>
-	<meta name="description" content="Privacy policy" />
+	<meta name="description" content="Kaddio is responsible for the processing of personal data collected in Kaddio. We process personal data according to 
+        the GDPR." />
 </svelte:head>
 
 
