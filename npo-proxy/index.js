@@ -4,6 +4,7 @@ import https from 'https';
 import fs from 'fs';
 
 const port = process.env.PORT || 3900;
+const target = process.env.TARGET;
 
 const verifyClientCertificate = (req) => {
     const cert = req.client.getPeerCertificate();
@@ -24,28 +25,49 @@ const options = {
 
 const proxyRequest = async (req, res, targetUrl) => {
   try {
-    verifyClientCertificate(req);
-    const url = targetUrl + req.url;
+    const url = targetUrl;
     console.log(`url ${url}`);
 
     // Add a bogus header, this is our secret.
     const headers = {
-      ...req.headers,
+      // ...req.headers,
       'x-secret': 'mb'
     };
 
     const response = await fetch(url, { headers });
-    res.writeHead(response.status, response.headers.raw());
+
+    if(!response.ok) {
+      console.log('bad response');
+      return;
+    }
+
+    // res.writeHead(response.status, response.headers.raw());
     response.body.pipe(res);
   } catch (error) {
     console.log(error);
-    res.status(500).send('Internal Server Error');
+    res.status(400).send('Error');
   }
 };
 
 const server = https.createServer(options, (req, res) => {
+  try{
+      verifyClientCertificate(req);
+      console.log('Client certificate valid');
+  }
+
+  catch(error) {
+      console.log('Client certificate invalid');
+
+      if(res){
+        res.writeHead(401, { 'Content-Type': 'text/plain' });
+        res.end('Unauthorized');  
+      }
+
+      return;
+  }
+
     if (req.url.startsWith('/api1/')) {
-      proxyRequest(req, res, 'http://host.docker.internal:3000/api/npo/proxied');
+      proxyRequest(req, res, target + '/api/npo/proxied');
     } else if (req.url.startsWith('/api2/')) {
       proxyRequest(req, res, 'http://example2.com');
     } else if (req.url.startsWith('/api3/')) {
