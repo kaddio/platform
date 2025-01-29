@@ -1,12 +1,11 @@
 name: npo-proxy
 services:
   - name: web
-  source_dir: npo-proxy
+    source_dir: ./npo-proxy
     github:
       repo: kaddio/platform
       branch: master
       deploy_on_push: true
-      subdirectory: npo-proxy
     dockerfile_path: Dockerfile
     envs:
       - key: PORT
