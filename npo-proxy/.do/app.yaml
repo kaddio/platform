@@ -6,8 +6,7 @@ services:
       repo: kaddio/platform
       branch: master
       deploy_on_push: true
-    dockerfile_path: npo-proxy/Dockerfile
-    source_dir: npo-proxy
+    dockerfile_path: Dockerfile
     envs: 
       - key: PORT
         value: "3900"
