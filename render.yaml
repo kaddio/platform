@@ -34,13 +34,13 @@ services:
       - key: NEXT_PUBLIC_SITE_URL
         value: changelog.kaddio.com
 
-  - type: web
-    name: npo-proxy
-    env: docker
-    plan: free
-    branch: master
-    rootDir: npo-proxy
-    region: frankfurt
+  # - type: web
+  #   name: npo-proxy
+  #   env: docker
+  #   plan: free
+  #   branch: master
+  #   rootDir: npo-proxy
+  #   region: frankfurt
 
   - type: web
     name: jitsi
