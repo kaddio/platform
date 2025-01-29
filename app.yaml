@@ -1,6 +1,7 @@
 name: npo-proxy
 services:
   - name: web
+  source_dir: npo-proxy
     github:
       repo: kaddio/platform
       branch: master
