@@ -35,11 +35,11 @@ services:
         value: changelog.kaddio.com
 
   - type: web
-    name: proxy
+    name: npo-proxy
     env: docker
     plan: free
     branch: master
-    rootDir: proxy
+    rootDir: npo-proxy
     region: frankfurt
 
   - type: web
