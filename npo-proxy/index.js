@@ -1,0 +1,62 @@
+import fetch from 'node-fetch';
+import https from 'https';
+
+import fs from 'fs';
+
+const port = process.env.PORT || 3900;
+
+const verifyClientCertificate = (req) => {
+    const cert = req.client.getPeerCertificate();
+    console.log(cert.serialNumber)
+}
+
+const currentPath = process.cwd();
+
+// Error: mac verify failure = Wrong password!
+const options = {
+    // ca: fs.readFileSync(`${currentPath}/test/certs/ca-cert.pem`),
+    pfx: fs.readFileSync(`${currentPath}/test/certs/server-cert.p12`),
+    passphrase: 'kaddio',
+    rejectUnauthorized: false,
+    requestCert: true
+  };
+  
+
+const proxyRequest = async (req, res, targetUrl) => {
+  try {
+    verifyClientCertificate(req);
+    const url = targetUrl + req.url;
+    console.log(`url ${url}`);
+
+    // Add a bogus header, this is our secret.
+    const headers = {
+      ...req.headers,
+      'x-secret': 'mb'
+    };
+
+    const response = await fetch(url, { headers });
+    res.writeHead(response.status, response.headers.raw());
+    response.body.pipe(res);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+const server = https.createServer(options, (req, res) => {
+    if (req.url.startsWith('/api1/')) {
+      proxyRequest(req, res, 'http://host.docker.internal:3000/api/npo/proxied');
+    } else if (req.url.startsWith('/api2/')) {
+      proxyRequest(req, res, 'http://example2.com');
+    } else if (req.url.startsWith('/api3/')) {
+      proxyRequest(req, res, 'http://example3.com');
+    } else {
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.end('Not Found');
+    }
+  });
+  
+
+server.listen(port, () => {
+  console.log(`Proxy server is running on http://localhost:${port}`);
+});

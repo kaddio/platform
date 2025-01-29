@@ -1,0 +1,21 @@
+{
+  "name": "npo-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "mocha": "^11.1.0",
+    "node-fetch": "^3.3.2",
+    "tls": "^0.0.1"
+  },
+  "type": "module"
+}
