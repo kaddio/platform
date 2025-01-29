@@ -1,14 +1,11 @@
 name: npo-proxy
 services:
   - name: web
-    git:
-      repo_clone_url: https://github.com/kaddio/platform.git
-      branch: master
     github:
       repo: kaddio/platform
       branch: master
       deploy_on_push: true
-    dockerfile_path: ./npo-proxy/Dockerfile
+    dockerfile_path: ./Dockerfile
     source_dir: ./npo-proxy
     envs: 
       - key: PORT
@@ -17,4 +14,4 @@ services:
     instance_count: 1
     instance_size_slug: basic-xxs
     routes:
-      - path: /
+      - path: /npo-proxy
