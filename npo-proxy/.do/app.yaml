@@ -6,7 +6,7 @@ services:
       repo: kaddio/platform
       branch: master
       deploy_on_push: true
-    dockerfile_path: Dockerfile
+    dockerfile_path: ./Dockerfile
     envs: 
       - key: PORT
         value: "3900"
