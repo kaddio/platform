@@ -1,0 +1,17 @@
+name: npo-proxy
+services:
+  - name: web
+    github:
+      repo: kaddio/platform
+      branch: master
+      deploy_on_push: true
+      subdirectory: npo-proxy
+    dockerfile_path: Dockerfile
+    envs:
+      - key: PORT
+        value: "3900"
+    http_port: 3900
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /
