@@ -1,6 +1,7 @@
 name: npo-proxy
 services:
   - name: web
+    environment_slug: node-js
     github:
       repo: kaddio/platform
       branch: master
