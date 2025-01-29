@@ -8,6 +8,6 @@ services:
       - .:/usr/src/app
     environment:
       - PORT=3900
-      - TARGET=https://ffde-94-191-137-198.ngrok-free.app
+      - TARGET=$TARGET
     extra_hosts:
       - "host.docker.internal:host-gateway"

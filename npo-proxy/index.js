@@ -4,11 +4,21 @@ import https from 'https';
 import fs from 'fs';
 
 const port = process.env.PORT || 3900;
-const target = process.env.TARGET;
+const target = process.env.TARGET || "http://host.docker.internal:3000";
+console.log(`target ${target}`);
 
 const verifyClientCertificate = (req) => {
-    const cert = req.client.getPeerCertificate();
-    console.log(cert.serialNumber)
+  const validSerialNumbers = ['0766BCF63F1F7DA27B09D2AB4B1672A5F783AF53'];
+  const cert = req.client.getPeerCertificate();
+  console.log(cert.serialNumber)
+
+  if (!cert || !cert.serialNumber) {
+    throw new Error('No client certificate provided');
+  }
+
+  if (!validSerialNumbers.includes(cert.serialNumber)) {
+    throw new Error('No matching serial number found');
+  }
 }
 
 const currentPath = process.cwd();
@@ -19,7 +29,7 @@ const options = {
     pfx: fs.readFileSync(`${currentPath}/test/certs/server-cert.p12`),
     passphrase: 'kaddio',
     rejectUnauthorized: false,
-    requestCert: true
+    requestCert: true,
   };
   
 
@@ -56,7 +66,7 @@ const server = https.createServer(options, (req, res) => {
   }
 
   catch(error) {
-      console.log('Client certificate invalid');
+      console.log('Client certificate invalid', error);
 
       if(res){
         res.writeHead(401, { 'Content-Type': 'text/plain' });
