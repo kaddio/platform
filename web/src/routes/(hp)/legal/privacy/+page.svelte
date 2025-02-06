@@ -122,9 +122,9 @@
             <strong class="font-semibold text-gray-900">SMS.</strong> System to deliver SMS via Twilio.
       </LegalLi>
 
-      <LegalLi>
+      <!-- <LegalLi>
             <strong class="font-semibold text-gray-900">BankID.</strong> System to connect to BankID. <!--Add other eID methods when we have them-->
-      </LegalLi>
+      <!-- </LegalLi> --> 
 
       <LegalLi>
         <strong class="font-semibold text-gray-900">Payment at booking.</strong> System to handle payment by card online at bookings.
