@@ -1,23 +1,14 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
+	
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-    import ModuleFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import ProductFeatureImageOnLeft from "$components/productFeatureImageOnLeft.svelte";
-    import Quote from "$components/quote.svelte";
+    
     import QuotesSection from "$components/quotesSection.svelte";
-    import ProductPricingSection from "$components/productPricingSection.svelte";
-    import StatsSection from "$components/statsSection.svelte";
-    import StatsSectionPart from "$components/statsSectionPart.svelte";
-    import StatsSectionWithText from "$components/statsSectionWithText.svelte";
-    import StatsSectionWithTextPart from "$components/statsSectionWithTextPart.svelte";
-	import SalesSection from "$components/salesSection.svelte";
+    
 	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
 	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
 	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
@@ -67,7 +58,7 @@
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	<span slot="pre">Innehåll</span>
+	
 	<span slot="title">Detta är Kaddio Fakturering</span>
 	<span slot="body">Med Kaddio Fakturering skickar du enkelt fakturor utifrån bokningar eller journalanteckningar. Hantera allt i samma system och få mer tid till dina klienter.</span>
 
