@@ -65,6 +65,11 @@
         </Person>
 
         <Person>
+          <span slot="name">Malin</span>
+          <span slot="title">Sales</span>
+        </Person>
+
+        <Person>
             <span slot="name">David</span>
             <span slot="title">CEO, Co-founder & Dev</span>
         </Person>
@@ -73,7 +78,6 @@
             <span slot="name">Claes</span>
             <span slot="title">General Counsel</span>
         </Person>
-
     </ul>
     </div>
   </div>
