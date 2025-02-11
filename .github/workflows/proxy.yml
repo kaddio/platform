@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - master
-    # paths:
-    #   - 'proxy/**'
+    paths:
+      - 'proxy/**'
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./proxy
         push: true
         tags: kaddio/kaddio:proxy-latest
 
