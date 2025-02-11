@@ -1,13 +1,16 @@
 {
-  "dependencies": {
-    "http-proxy": "^1.18.1"
-  },
-  "name": "proxy",
+  "name": "js-proxy",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "author": "",
-  "description": ""
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "https": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  }
 }

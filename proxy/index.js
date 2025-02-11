@@ -1,28 +1,62 @@
-const http = require('http');
-const httpProxy = require('http-proxy');
+import http from 'http';
+import https from 'https';
+import fs from 'fs';
+import fetch from 'node-fetch';
 
-const proxy = httpProxy.createProxyServer({});
+const portProxy = 443;
+const portHello = 80;
+const target = process.env.TARGET || 'https://kaddio-pr-6668.herokuapp.com';
 
-const port = process.env.PORT || 10000;
+// Load SSL certificates
+const options = {
+  key: fs.readFileSync('certs/server-key.pem'),
+  cert: fs.readFileSync('certs/server-cert.pem'),
+  ca: fs.readFileSync('certs/ca-cert.pem'),
+  passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
+  requestCert: true,
+  rejectUnauthorized: false
+};
 
-proxy.on('error', function (err, req, res) {
-  res.writeHead(500, {
-    'Content-Type': 'text/plain'
-  });
- 
-  console.log('ojoj');
-  res.end('Something went wrong. And we are reporting a custom error message.');
+// Create HTTP server
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello, world!');
+}).listen(portHello, () => {
+  console.log(`HTTP server running at ${portHello}/`);
 });
 
-http.createServer(function(req, res) {
-  console.log('Request', req.method, req.url);
+// Create HTTPS server
+https.createServer(options, async (req, res) => {
+  // Make sure client is either providing client certs or has lowered their guard (curl -k) to get here.
 
-  try{
-    proxy.web(req, res, { target: `${req.url}` });
+  if(!req.client.authorized){
+    console.log('Client not authorized');
+
+    res.writeHead(401, { 'Content-Type': 'text/plain' });
+    res.end('Client certificate required');
+
+    return;
   }
 
-  catch(e){
-    console.log(e);
+  if(req.client.authorized){
+    console.log('Client authorized! Will try to proxy request...');
   }
+  console.log(req.url);
 
-}).listen(port);
+  try {
+    const backendResponse = await fetch(target + req.url, {
+      method: "GET",
+      headers: {
+        "x-secret": "mb",
+      }
+    });
+
+    res.writeHead(backendResponse.status, backendResponse.headers.raw());
+    backendResponse.body.pipe(res);
+  } catch (error) {
+    res.writeHead(500, { 'Content-Type': 'text/plain' });
+    res.end('Internal Server Error');
+  }
+}).listen(portProxy, () => {
+  console.log(`Proxy server running at ${portProxy}/`);
+});
