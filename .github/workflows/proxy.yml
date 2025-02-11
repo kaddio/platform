@@ -38,6 +38,7 @@ jobs:
       uses: appleboy/ssh-action@v0.1.5
       with:
         host: kaddiotestarnpo.kaddio.net
-        username: ${{ secrets.VPS_USERNAME }}
-        password: ${{ secrets.VPS_PASSWORD }}
+        key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+        # username: ${{ secrets.VPS_USERNAME }}
+        # password: ${{ secrets.VPS_PASSWORD }}
         script: sh /var/lib/cloud/scripts/per-boot/update.sh
