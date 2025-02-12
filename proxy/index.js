@@ -37,6 +37,12 @@ https.createServer(options, async (req, res) => {
 
   if(!req.client.authorized){
     console.log('Client not authorized');
+    console.log(req.client.headers);
+    console.log(req.socket.getPeerCertificate());
+
+    const cert = req.client.getPeerCertificate();
+
+    console.log(`Fingerprint: ${cert.fingerprint}`);
 
     res.writeHead(401, { 'Content-Type': 'text/plain' });
     res.end('Client certificate required');
