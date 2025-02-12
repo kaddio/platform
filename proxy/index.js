@@ -38,8 +38,6 @@ https.createServer(options, async (req, res) => {
     console.log('Client not authorized');
     console.log(req.headers);
     console.log(`Origin IP: ${req.socket.remoteAddress}`);
-    console.log(req.socket);
-
     const cert = req.client.getPeerCertificate();
 
     console.log(`Fingerprint: ${cert.fingerprint}`);
