@@ -39,7 +39,7 @@ https.createServer(options, async (req, res) => {
   }
 
   if(req.client.authorized){
-    console.log('Client authorized! Will try to proxy request...');
+    console.log(`Client authorized! Will try to proxy request to ${target + req.url}`);
   }
   console.log(req.url);
 
