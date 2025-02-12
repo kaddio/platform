@@ -16,7 +16,7 @@ const options = {
 
   key: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key'),
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
-  // ca: fs.readFileSync('certs/ca-cert.pem'),
+  ca: [fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem')],
   // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
 
   requestCert: true,
