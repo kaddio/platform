@@ -9,10 +9,16 @@ const target = process.env.TARGET || 'https://4bda-94-191-137-161.ngrok-free.app
 
 // Load SSL certificates
 const options = {
-  key: fs.readFileSync('certs/server-key.pem'),
-  cert: fs.readFileSync('certs/server-cert.pem'),
-  ca: fs.readFileSync('certs/ca-cert.pem'),
-  passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
+  // key: fs.readFileSync('certs/server-key.pem'),
+  // cert: fs.readFileSync('certs/server-cert.pem'),
+  // ca: fs.readFileSync('certs/ca-cert.pem'),
+  // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
+
+  key: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key'),
+  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.der'),
+  // ca: fs.readFileSync('certs/ca-cert.pem'),
+  // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
+
   requestCert: true,
   rejectUnauthorized: false
 };
