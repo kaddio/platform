@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 
 const portProxy = 443;
 const portHello = 80;
-const target = process.env.TARGET || 'https://4bda-94-191-137-161.ngrok-free.app';
+const target = process.env.TARGET || 'https://ce7d-185-157-171-190.ngrok-free.app';
 
 // Load SSL certificates
 const options = {
