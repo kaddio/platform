@@ -42,10 +42,14 @@ https.createServer(options, async (req, res) => {
 
     console.log(`Fingerprint: ${cert.fingerprint}`);
 
-    res.writeHead(401, { 'Content-Type': 'text/plain' });
-    res.end('Client certificate required');
+    // Don't care at the moment, just proxy the request !!!
 
-    return;
+    // res.writeHead(401, { 'Content-Type': 'text/plain' });
+    // res.end('Client certificate required');
+
+    // return;
+
+    console.log('Will proxy anyway 😎');
   }
 
   if(req.client.authorized){
