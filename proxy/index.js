@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 
 const portProxy = 443;
 const portHello = 80;
-const target = process.env.TARGET || 'https://npo-soap-b201cf9baec1.herokuapp.com';
+const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
 
 // Load SSL certificates
 const options = {
