@@ -49,7 +49,7 @@ https.createServer(options, async (req, res) => {
 
     // return;
 
-    console.log('Will proxy anyway 😎. Target: ${target + req.url}');
+    console.log(`Will proxy anyway 😎. Target: ${target + req.url}`);
   }
 
   if(req.client.authorized){
