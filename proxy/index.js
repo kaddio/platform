@@ -78,7 +78,7 @@ https.createServer(options, async (req, res) => {
       method: "GET",
       headers: {
         'x-secret': 'mb',
-        "x-hmac-signature": hmacSignature,
+        "x-base64-hmac-signature": hmacSignature,
         "x-nonce": nonce,
       }
     });
