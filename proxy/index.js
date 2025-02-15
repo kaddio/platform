@@ -2,13 +2,10 @@ import http from 'http';
 import https from 'https';
 import fs from 'fs';
 import fetch from 'node-fetch';
-import crypto from 'crypto';
 
 const portProxy = 443;
 const portHello = 80;
 const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
-
-const decryptedKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key');
 
 // Load SSL certificates
 const options = {
@@ -17,23 +14,13 @@ const options = {
   // ca: fs.readFileSync('certs/ca-cert.pem'),
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
-  key: decryptedKey,
+  key: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key'),
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')+fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem'),
   // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
 
   requestCert: true,
   rejectUnauthorized: false
 };
-
-const createHmacSignature = (secret, nonce) => {
-  const hmac = crypto.createHmac('sha256', secret);
-  hmac.update(nonce);
-  return hmac.digest('base64');
-}
-
-const createNonce = () => {
-  return crypto.randomBytes(16).toString('base64');
-}
 
 // Create HTTP server
 http.createServer((req, res) => {
@@ -70,16 +57,11 @@ https.createServer(options, async (req, res) => {
   }
   console.log(req.url);
 
-  const nonce = createNonce();
-  const hmacSignature = createHmacSignature(decryptedKey, nonce);
-
   try {
     const backendResponse = await fetch(target + req.url, {
       method: "GET",
       headers: {
-        'x-secret': 'mb',
-        "x-base64-hmac-signature": hmacSignature,
-        "x-nonce": nonce,
+        "x-secret": "mb",
       }
     });
 
