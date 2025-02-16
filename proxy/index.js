@@ -61,6 +61,7 @@ https.createServer(options, async (req, res) => {
   console.log(req.url);
 
   const secret = crypto.createHash('sha256').update(privateKey).digest('hex');
+  
 
   try {
     const backendResponse = await fetch(target + req.url, {
