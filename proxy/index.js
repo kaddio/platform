@@ -2,10 +2,13 @@ import http from 'http';
 import https from 'https';
 import fs from 'fs';
 import fetch from 'node-fetch';
+import crypto from 'crypto';
 
 const portProxy = 443;
 const portHello = 80;
 const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
+
+const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key', 'utf8').trim()
 
 // Load SSL certificates
 const options = {
@@ -14,7 +17,7 @@ const options = {
   // ca: fs.readFileSync('certs/ca-cert.pem'),
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
-  key: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key'),
+  key: privateKey,
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')+fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem'),
   // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
 
@@ -57,11 +60,14 @@ https.createServer(options, async (req, res) => {
   }
   console.log(req.url);
 
+  const secret = crypto.createHash('sha256').update(privateKey).digest('hex');
+
   try {
     const backendResponse = await fetch(target + req.url, {
       method: "GET",
       headers: {
-        "x-secret": "mb",
+        "x-secret": 'mb',
+        'x-secret2': secret,
       }
     });
 
