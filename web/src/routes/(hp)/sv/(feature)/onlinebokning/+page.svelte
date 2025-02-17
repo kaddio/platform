@@ -20,8 +20,6 @@
 </script>
 
 <svelte:head>
-    <meta name="robots" content="noindex">
-
 	<title>Onlinebokning med allt du behöver</title>
 	<meta name="description" content="Komplett bokningssystem och betalning som gör onlinebokningen för dina klienter supersmidig, Kaddio gör även allt annat du förväntar dig." />
 </svelte:head>

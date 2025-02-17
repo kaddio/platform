@@ -23,8 +23,6 @@
 </script>
 
 <svelte:head>
-    <meta name="robots" content="noindex">
-
     <title>Kaddio - Kommunikation</title>
     <meta name="description" content="Chat och video för upp till 500 samtidiga deltagare" />
 </svelte:head>
