@@ -429,9 +429,7 @@ export const links = {
     },
 
     marknadsföring: {
-        sv: 'marknadsföring',
-        en: 'marketing',
-        es: 'comercialización'
+        sv: 'marknadsföring'
     }
 };
 
