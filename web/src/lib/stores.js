@@ -430,6 +430,10 @@ export const links = {
 
     marknadsföring: {
         sv: 'marknadsföring'
+    },
+
+    "all-homepages": {
+        default: 'all-homepages',
     }
 };
 
