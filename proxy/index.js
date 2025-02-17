@@ -6,7 +6,14 @@ import crypto from 'crypto';
 
 const portProxy = 443;
 const portHello = 80;
-const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
+
+{
+  if (process.env.TARGET) {
+    console.log(`Target is ${process.env.TARGET}`);
+  } else {
+    console.error('WARNING - No npö proxy target specified!');
+  }
+}
 
 const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key', 'utf8').trim()
 
