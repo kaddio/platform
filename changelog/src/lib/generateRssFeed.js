@@ -11,7 +11,7 @@ export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
     name: 'Kaddio',
-    email: 'sales@kaddio.com',
+    email: 'hello@kaddio.com',
   }
 
   let feed = new Feed({

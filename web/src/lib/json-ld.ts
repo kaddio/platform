@@ -68,7 +68,7 @@ export const kaddioOrgSchema: WithContext<Organization> = {
     logo: 'https://kaddio.com/img/kaddio-black.png',
     contactPoint: {
         '@type': 'ContactPoint',
-        email: 'sales@kaddio.com',
+        email: 'hello@kaddio.com',
         availableLanguage: [
             {
                 '@type': 'Language',
