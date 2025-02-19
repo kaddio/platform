@@ -37,6 +37,10 @@ export const createOrg = async function ({ request }) {
         });
     } else if (r.status == 'fail' && r.msg == 'URL är upptagen, prova med en annan') {
         return fail(400, {
+            urlTaken: true
+        });
+    } else if (r.status == 'fail' && r.msg == 'URL är inte tillgänglig, prova med en annan') {
+        return fail(400, {
             urlUnavailable: true
         });
     }
