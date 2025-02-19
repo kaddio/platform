@@ -77,7 +77,7 @@ https.createServer(options, async (req, res) => {
   req.on('end', async () => {
     try {
       const backendResponse = await fetch(target + req.url, {
-      method: "GET",
+      method: "POST",
       headers: {
         "x-secret": 'mb',
         'x-secret2': secret,
@@ -88,6 +88,7 @@ https.createServer(options, async (req, res) => {
     res.writeHead(backendResponse.status, backendResponse.headers.raw());
     backendResponse.body.pipe(res);
   } catch (error) {
+      console.log(error)
       res.writeHead(500, { 'Content-Type': 'text/plain' });
       res.end('Internal Server Error');
     }
