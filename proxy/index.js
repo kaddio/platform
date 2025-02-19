@@ -7,9 +7,11 @@ import crypto from 'crypto';
 const portProxy = 443;
 const portHello = 80;
 
+const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
+
 {
-  if (process.env.TARGET) {
-    console.log(`Target is ${process.env.TARGET}`);
+  if (target) {
+    console.log(`Target is ${target}`);
   } else {
     console.error('WARNING - No npö proxy target specified!');
   }
