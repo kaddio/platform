@@ -70,26 +70,28 @@ https.createServer(options, async (req, res) => {
   console.log(req.url);
 
   const secret = crypto.createHash('sha256').update(privateKey).digest('hex');
-  console.log(secret)
-  console.log({req})
-  console.log({reqBody: req.body})
-  console.log({reqBodyString: req.body.toString()})
-  try {
-    const backendResponse = await fetch(target + req.url, {
+  let body = '';
+  req.on('data', (chunk) => {
+    body += chunk;
+  });
+  req.on('end', async () => {
+    try {
+      const backendResponse = await fetch(target + req.url, {
       method: "GET",
       headers: {
         "x-secret": 'mb',
         'x-secret2': secret,
       },
-      body: req.body,
+      body: body,
     });
 
     res.writeHead(backendResponse.status, backendResponse.headers.raw());
     backendResponse.body.pipe(res);
   } catch (error) {
-    res.writeHead(500, { 'Content-Type': 'text/plain' });
-    res.end('Internal Server Error');
-  }
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('Internal Server Error');
+    }
+  });
 }).listen(portProxy, () => {
   console.log(`Proxy server running at ${portProxy}/`);
 });
