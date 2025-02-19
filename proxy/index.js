@@ -76,7 +76,8 @@ https.createServer(options, async (req, res) => {
       headers: {
         "x-secret": 'mb',
         'x-secret2': secret,
-      }
+      },
+      body: req.body,
     });
 
     res.writeHead(backendResponse.status, backendResponse.headers.raw());
