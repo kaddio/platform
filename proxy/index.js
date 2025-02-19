@@ -76,6 +76,7 @@ https.createServer(options, async (req, res) => {
   });
   req.on('end', async () => {
     try {
+      console.log({body})
       const backendResponse = await fetch(target + req.url, {
       method: "POST",
       headers: {
@@ -84,6 +85,7 @@ https.createServer(options, async (req, res) => {
       },
       body: body,
     });
+    
 
     res.writeHead(backendResponse.status, backendResponse.headers.raw());
     backendResponse.body.pipe(res);
