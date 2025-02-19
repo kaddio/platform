@@ -80,6 +80,7 @@ https.createServer(options, async (req, res) => {
       const backendResponse = await fetch(target + req.url, {
       method: "POST",
       headers: {
+        "Content-Type": "application/xml",
         "x-secret": 'mb',
         'x-secret2': secret,
       },
