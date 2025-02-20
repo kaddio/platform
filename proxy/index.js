@@ -34,6 +34,37 @@ const options = {
   rejectUnauthorized: false
 };
 
+const verifyRequest = (req) => {
+  const certIsValid = req.client.authorized;
+  const cert = req.client.getPeerCertificate();
+  const hasCert = Object.keys(cert).length > 0;
+  const fingerprint = cert.fingerprint;
+  const originIP = req.socket.remoteAddress;
+  const serialNumber = cert.serialNumber;
+
+  const ok = hasCert && !!serialNumber; // Add certIsValid and validateSerialNumbers here later
+
+  const validSerialNumbers = [
+    '79A21A91ABB506C605A5143B1425A0DC4A69A9E9' // Self signed test cert
+  ];
+
+  if(ok){
+    console.log(`Origin IP: ${originIP}`);
+    console.log(cert);
+    console.log(req.headers);
+    console.log(`Fingerprint: ${fingerprint}`);
+    console.log(`Serial number: ${serialNumber}`);
+
+    if(!certIsValid){
+      console.log(`Found client cert but could not validate it. Will proxy anyway 😎. Target: ${target + req.url}`);
+    }
+
+    return true;
+  }
+
+  throw new Error();
+}
+
 // Create HTTP server
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -42,32 +73,18 @@ http.createServer((req, res) => {
   console.log(`HTTP server running at ${portHello}/`);
 });
 
-// Create HTTPS server
 https.createServer(options, async (req, res) => {
-  // Make sure client is either providing client certs or has lowered their guard (curl -k) to get here.
 
-  if(!req.client.authorized){
+  try{
+    verifyRequest(req);
+  }
+
+  catch(err){
     console.log('Client not authorized');
-    console.log(req.headers);
-    console.log(`Origin IP: ${req.socket.remoteAddress}`);
-    const cert = req.client.getPeerCertificate();
-
-    console.log(`Fingerprint: ${cert.fingerprint}`);
-
-    // Don't care at the moment, just proxy the request !!!
-
-    // res.writeHead(401, { 'Content-Type': 'text/plain' });
-    // res.end('Client certificate required');
-
-    // return;
-
-    console.log(`Will proxy anyway 😎. Target: ${target + req.url}`);
+    res.writeHead(401);
+    res.end();
+    return;
   }
-
-  if(req.client.authorized){
-    console.log(`Client authorized! Will try to proxy request to ${target + req.url}`);
-  }
-  console.log(req.url);
 
   const secret = crypto.createHash('sha256').update(privateKey).digest('hex');
   let body = '';
