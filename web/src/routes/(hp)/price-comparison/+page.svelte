@@ -187,7 +187,7 @@
             <ul role="list" class="space-y-4">
               <li class="flex gap-x-3">
                 <Yes2 />
-                <span> Profiling and branding </span>
+                <span> Branding </span>
               </li>
             </ul>
           </li>		  
@@ -425,7 +425,7 @@
 			
           <tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Electronic Medical record <Tag>Module</Tag>
+                Electronic Medical record <Tag>Add-on module</Tag>
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
           </tr>
@@ -510,7 +510,7 @@
 
             <tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Communication <Tag>Module</Tag>
+                Communication <Tag>Add-on module</Tag>
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
@@ -611,7 +611,7 @@
 
             <tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Online booking and Calendar <Tag>Module</Tag>
+                Online booking and Calendar <Tag>Add-on module</Tag>
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
@@ -696,7 +696,7 @@
 
             <tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Documents <Tag>Module</Tag>
+                Documents <Tag>Add-on module</Tag>
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
@@ -741,7 +741,7 @@
 
             <tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Invoicing <Tag>Module</Tag>
+                Invoicing <Tag>Add-on module</Tag>
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
@@ -848,7 +848,7 @@
 
     			<tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Profiling and branding
+                Branding
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
@@ -872,7 +872,7 @@
             </tr>
             <tr>
               <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
-                Company name in SMS sender
+                SMS sender customization
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
               </th>
               <td class="px-6 py-4 xl:px-8">
@@ -890,7 +890,7 @@
             </tr>
             <tr>
               <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
-                Company name in eID apps
+                eID apps branding
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
               </th>
               <td class="px-6 py-4 xl:px-8">
@@ -909,7 +909,7 @@
 
             <tr>
               <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
-                Company colors in video
+                Video branding
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
               </th>
               <td class="px-6 py-4 xl:px-8">
@@ -1140,7 +1140,7 @@
 
           <tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
-                Marketplace <Tag>Module</Tag>
+                Marketplace <Tag>Add-on module</Tag>
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
@@ -1261,14 +1261,13 @@
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
               </th>
               <td class="px-6 py-4 xl:px-8">
-                <No />
-                <span class="sr-only">Not included in Free</span>
-              </td>
-              <td class="px-6 py-4 xl:px-8">
-                <div class="text-center text-sm leading-6 text-gray-500">6 months</div>
+                <div class="text-center text-sm leading-6 text-gray-500">90-day history</div>
               </td>
               <td class="px-6 py-4 xl:px-8">
                 <div class="text-center text-sm leading-6 text-gray-500">1 year</div>
+              </td>
+              <td class="px-6 py-4 xl:px-8">
+                <div class="text-center text-sm leading-6 text-gray-500">♾️</div>
               </td>
             </tr>		
 	
