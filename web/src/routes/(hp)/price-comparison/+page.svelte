@@ -934,28 +934,18 @@
                 <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
               </th>
             </tr>
-            <tr>
-              <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
-                Labportalen
-                <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
-              </th>
-              <td class="px-6 py-4 xl:px-8">
-                <No />
-                <span class="sr-only">Not included in Free</span>
-              </td>
-              <td class="px-6 py-4 xl:px-8">
-                <No />
-                <span class="sr-only">Not included in Pro</span>
-              </td>
-              <td class="px-6 py-4 xl:px-8">
-                <div class="text-center text-sm leading-6 text-gray-500">Paid add-on</div>
-              </td>
-            </tr>
+
+          <FeatureRow>
+            <span slot="title">1177 / NPÖ</span>
+          </FeatureRow>
 
           <FeatureRow>
             <span slot="title">Kuralink</span>
           </FeatureRow>
 
+          <FeatureRow>
+            <span slot="title">Labportalen</span>
+          </FeatureRow>
 
     			<tr>
               <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-gray-900 pt-16">
