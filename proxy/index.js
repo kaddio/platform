@@ -7,9 +7,7 @@ import crypto from 'crypto';
 const portProxy = 443;
 const portHello = 80;
 
-console.log("process.env.TARGET", process.env.TARGET)
-
-const target = 'https://kaddiotestarnpo-app.kaddio.com';
+const target = process.env.TARGET;
 const targetBase = new URL(target);
 {
   if (target) {
