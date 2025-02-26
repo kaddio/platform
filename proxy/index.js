@@ -7,7 +7,7 @@ import crypto from 'crypto';
 const portProxy = 443;
 const portHello = 80;
 
-const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
+const target = 'https://kaddiotestarnpo-app.kaddio.com';
 const targetBase = new URL(target);
 
 {
