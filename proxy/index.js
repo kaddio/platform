@@ -8,10 +8,11 @@ const portProxy = 443;
 const portHello = 80;
 
 const target = process.env.TARGET || 'https://kaddiotestarnpo-app.kaddio.com';
+const targetBase = new URL(target);
 
 {
   if (target) {
-    console.log(`Target is ${target}`);
+    console.log(`Target is ${targetBase}`);
   } else {
     console.error('WARNING - No npö proxy target specified!');
   }
@@ -56,7 +57,7 @@ const verifyRequest = (req) => {
     console.log(`Serial number: ${serialNumber}`);
 
     if(!certIsValid){
-      console.log(`Found client cert but could not validate it. Will proxy anyway 😎. Target: ${target + req.url}`);
+      console.log(`Found client cert but could not validate it. Will proxy anyway 😎. Target: ${new URL(req.url, targetBase)}`);
     }
 
     return true;
@@ -94,7 +95,7 @@ https.createServer(options, async (req, res) => {
   req.on('end', async () => {
     try {
       console.log({body})
-      const backendResponse = await fetch(target + req.url, {
+      const backendResponse = await fetch(new URL(req.url, targetBase), {
       method: "POST",
       headers: {
         "content-type": "text/xml;charset=UTF-8",
