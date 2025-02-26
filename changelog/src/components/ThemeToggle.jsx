@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
@@ -29,7 +31,7 @@ export function ThemeToggle() {
   return (
     <button
       type="button"
-      className="group absolute right-4 top-4 z-50 -m-2.5 p-2.5"
+      className="group absolute top-4 right-4 z-50 -m-2.5 p-2.5"
       onClick={() => setTheme(otherTheme)}
     >
       <span className="sr-only">Switch to {otherTheme} theme</span>

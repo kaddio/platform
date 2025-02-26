@@ -1,10 +1,10 @@
+import { toString } from 'mdast-util-to-string'
 import { mdxAnnotations } from 'mdx-annotations'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import { remarkRehypeWrap } from 'remark-rehype-wrap'
 import shiki from 'shiki'
 import { visit } from 'unist-util-visit'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import { toString } from 'mdast-util-to-string'
 
 let highlighter
 
@@ -23,7 +23,7 @@ function rehypeShiki() {
 
         let tokens = highlighter.codeToThemedTokens(
           node.children[0].value,
-          language
+          language,
         )
 
         node.children = []

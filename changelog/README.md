@@ -1,8 +1,3 @@
-# Kaddio changelog
-A simple changelog to communicate all public changes we do. Inspiration can come from: https://github.blog/changelog/
-
-Deployed here for now: https://changelog.kaddio.com
-
 # Commit
 
 Commit is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
@@ -39,11 +34,11 @@ We'll cover a lot of the fundamentals here to help you get going quickly, but at
 
 ### Project structure
 
-The template is built as a pretty standard Next.js website, but using the `src` folder so things like the `pages` directory are located at `./src/pages` instead of being top-level.
+The template is built as a pretty standard Next.js website, but using the `src` folder so things like the `app` directory are located at `./src/app` instead of being top-level.
 
 ### Title and metadata
 
-You can update your site's `<title>` and metadata in `./src/pages/_app.jsx`.
+You can update your site's metadata in `./src/app/layout.jsx`.
 
 ### Hero content
 
@@ -51,7 +46,7 @@ The main hero section for the site that includes your logo, headline, descriptio
 
 ### Adding changelog entries
 
-All of the changelog entries are stored in one big `./src/pages/index.mdx` file. We were inspired to set it up this way by how projects commonly maintain plaintext `CHANGELOG` files, and thought it would be cool to parse this sort of format and turn it into a nicely designed site.
+All of the changelog entries are stored in one big `./src/app/page.mdx` file. We were inspired to set it up this way by how projects commonly maintain plaintext `CHANGELOG` files, and thought it would be cool to parse this sort of format and turn it into a nicely designed site.
 
 Each changelog entry should be separated by a horizontal rule (`---`) and should include an `<h2>` with a date, specified as an [MDX annotation](https://github.com/bradlc/mdx-annotations):
 
@@ -71,9 +66,9 @@ You can find the newsletter sign up form in `./src/components/SignUpForm.jsx` â€
 
 ### RSS feed
 
-The site will automatically generate an RSS feed at build time based on the content of `./src/pages/index.mdx`.
+The site uses a [route handler](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) to automatically generate an RSS feed at run time based on the rendered home page.
 
-You can edit the metadata for the feed (like the title and description) in `./src/lib/generateRssFeed.js`.
+You can edit the metadata for the feed (like the title and description) in `./src/app/feed.xml/route.js`.
 
 Make sure to set your `NEXT_PUBLIC_SITE_URL` environment variable as the RSS feed needs this to generate the correct links for each entry.
 

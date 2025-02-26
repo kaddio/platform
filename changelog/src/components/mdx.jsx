@@ -1,52 +1,38 @@
+'use client'
+
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { useFeed } from '@/components/FeedProvider'
 import { FormattedDate } from '@/components/FormattedDate'
 
 export const a = Link
 
-export const wrapper = function Wrapper({ children }) {
-  return children
-}
-
-export const h2 = function H2(props) {
-  let { isFeed } = useFeed()
-
-  if (isFeed) {
-    return null
-  }
-
-  return <h2 {...props} />
-}
-
 export const img = function Img(props) {
   return (
-    <div className="relative mt-8 overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-900 [&+*]:mt-8">
+    <div className="relative overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-900">
       <Image
         alt=""
         sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 45vw, (min-width: 640px) 32rem, 95vw"
         {...props}
       />
-      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10" />
+      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset dark:ring-white/10" />
     </div>
   )
 }
 
-function ContentWrapper({ className, children }) {
+function ContentWrapper({ className, ...props }) {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
       <div className="lg:ml-96 lg:flex lg:w-full lg:justify-end lg:pl-32">
         <div
           className={clsx(
             'mx-auto max-w-lg lg:mx-0 lg:w-0 lg:max-w-xl lg:flex-auto',
-            className
+            className,
           )}
-        >
-          {children}
-        </div>
+          {...props}
+        />
       </div>
     </div>
   )
@@ -55,7 +41,7 @@ function ContentWrapper({ className, children }) {
 function ArticleHeader({ id, date }) {
   return (
     <header className="relative mb-10 xl:mb-0">
-      <div className="pointer-events-none absolute left-[max(-0.5rem,calc(50%-18.625rem))] top-0 z-50 flex h-4 items-center justify-end gap-x-2 lg:left-0 lg:right-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem] xl:h-8">
+      <div className="pointer-events-none absolute top-0 left-[max(-0.5rem,calc(50%-18.625rem))] z-50 flex h-4 items-center justify-end gap-x-2 lg:right-[calc(max(2rem,50%-38rem)+40rem)] lg:left-0 lg:min-w-[32rem] xl:h-8">
         <Link href={`#${id}`} className="inline-flex">
           <FormattedDate
             date={date}
@@ -69,7 +55,7 @@ function ArticleHeader({ id, date }) {
           <Link href={`#${id}`} className="inline-flex">
             <FormattedDate
               date={date}
-              className="text-2xs/4 font-medium text-gray-500 dark:text-white/50 xl:hidden"
+              className="text-2xs/4 font-medium text-gray-500 xl:hidden dark:text-white/50"
             />
           </Link>
         </div>
@@ -78,13 +64,19 @@ function ArticleHeader({ id, date }) {
   )
 }
 
-export const article = function Article({ id, title, date, children }) {
-  let { isFeed } = useFeed()
-  let heightRef = useRef()
+export const article = function Article({ id, date, children }) {
+  let heightRef = useRef(null)
   let [heightAdjustment, setHeightAdjustment] = useState(0)
 
   useEffect(() => {
+    if (!heightRef.current) {
+      return
+    }
+
     let observer = new window.ResizeObserver(() => {
+      if (!heightRef.current) {
+        return
+      }
       let { height } = heightRef.current.getBoundingClientRect()
       let nextMultipleOf8 = 8 * Math.ceil(height / 8)
       setHeightAdjustment(nextMultipleOf8 - height)
@@ -97,20 +89,6 @@ export const article = function Article({ id, title, date, children }) {
     }
   }, [])
 
-  if (isFeed) {
-    return (
-      <article>
-        <script
-          type="text/metadata"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({ id, title, date }),
-          }}
-        />
-        {children}
-      </article>
-    )
-  }
-
   return (
     <article
       id={id}
@@ -119,7 +97,9 @@ export const article = function Article({ id, title, date, children }) {
     >
       <div ref={heightRef}>
         <ArticleHeader id={id} date={date} />
-        <ContentWrapper className="typography">{children}</ContentWrapper>
+        <ContentWrapper className="typography" data-mdx-content>
+          {children}
+        </ContentWrapper>
       </div>
     </article>
   )

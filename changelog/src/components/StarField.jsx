@@ -1,8 +1,10 @@
+'use client'
+
 import { useEffect, useId, useRef } from 'react'
+import clsx from 'clsx'
 import { animate, timeline } from 'motion'
 
 const stars = [
-  // [cx, cy, dim, blur]
   [4, 4, true, true],
   [4, 44, true],
   [36, 22],
@@ -64,10 +66,14 @@ const constellations = [
 ]
 
 function Star({ blurId, point: [cx, cy, dim, blur] }) {
-  let groupRef = useRef()
-  let ref = useRef()
+  let groupRef = useRef(null)
+  let ref = useRef(null)
 
   useEffect(() => {
+    if (!groupRef.current || !ref.current) {
+      return
+    }
+
     let delay = Math.random() * 2
 
     let animations = [
@@ -83,7 +89,7 @@ function Star({ blurId, point: [cx, cy, dim, blur] }) {
           duration: Math.random() * 2 + 2,
           direction: 'alternate',
           repeat: Infinity,
-        }
+        },
       ),
     ]
 
@@ -112,28 +118,39 @@ function Star({ blurId, point: [cx, cy, dim, blur] }) {
   )
 }
 
-function Constellation({ points }) {
-  let ref = useRef()
+function Constellation({ points, blurId }) {
+  let ref = useRef(null)
   let uniquePoints = points.filter(
     (point, pointIndex) =>
-      points.findIndex((p) => String(p) === String(point)) === pointIndex
+      points.findIndex((p) => String(p) === String(point)) === pointIndex,
   )
   let isFilled = uniquePoints.length !== points.length
 
   useEffect(() => {
-    let sequence = timeline([
+    if (!ref.current) {
+      return
+    }
+
+    let sequence = [
       [
         ref.current,
         { strokeDashoffset: 0, visibility: 'visible' },
         { duration: 5, delay: Math.random() * 3 + 2 },
       ],
-      ...(isFilled
-        ? [[ref.current, { fill: 'rgb(255 255 255 / 0.02)' }, { duration: 1 }]]
-        : []),
-    ])
+    ]
+
+    if (isFilled) {
+      sequence.push([
+        ref.current,
+        { fill: 'rgb(255 255 255 / 0.02)' },
+        { duration: 1 },
+      ])
+    }
+
+    let animation = timeline(sequence)
 
     return () => {
-      sequence.cancel()
+      animation.cancel()
     }
   }, [isFilled])
 
@@ -151,13 +168,13 @@ function Constellation({ points }) {
         className="invisible"
       />
       {uniquePoints.map((point, pointIndex) => (
-        <Star key={pointIndex} point={point} />
+        <Star key={pointIndex} point={point} blurId={blurId} />
       ))}
     </>
   )
 }
 
-export function StarField() {
+export function StarField({ className }) {
   let blurId = useId()
 
   return (
@@ -165,7 +182,10 @@ export function StarField() {
       viewBox="0 0 881 211"
       fill="white"
       aria-hidden="true"
-      className="pointer-events-none absolute -right-44 top-14 w-[55.0625rem] origin-top-right rotate-[30deg] overflow-visible opacity-70"
+      className={clsx(
+        'pointer-events-none absolute w-[55.0625rem] origin-top-right rotate-[30deg] overflow-visible opacity-70',
+        className,
+      )}
     >
       <defs>
         <filter id={blurId}>
@@ -173,7 +193,11 @@ export function StarField() {
         </filter>
       </defs>
       {constellations.map((points, constellationIndex) => (
-        <Constellation key={constellationIndex} points={points} />
+        <Constellation
+          key={constellationIndex}
+          points={points}
+          blurId={blurId}
+        />
       ))}
       {stars.map((point, pointIndex) => (
         <Star key={pointIndex} point={point} blurId={blurId} />
