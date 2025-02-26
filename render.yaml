@@ -33,6 +33,8 @@ services:
     envVars:
       - key: NEXT_PUBLIC_SITE_URL
         value: changelog.kaddio.com
+      - key: NODE_VERSION
+        value: lts
 
   - type: web
     name: jitsi
