@@ -12,7 +12,6 @@
         setContext('lang', possibleLangFromPath);
       }
       else{
-        console.log('inget språk... Använd engelska');
         setContext('lang', 'en');
       }
     } catch (e) {
