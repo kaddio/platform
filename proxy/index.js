@@ -10,6 +10,7 @@ const portHello = 80;
 const target = 'https://kaddiotestarnpo-app.kaddio.com';
 const targetBase = new URL(target);
 
+console.log("process.env.TARGET", process.env.TARGET)
 {
   if (target) {
     console.log(`Target is ${targetBase}`);
