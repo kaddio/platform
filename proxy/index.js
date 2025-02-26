@@ -116,3 +116,13 @@ https.createServer(options, async (req, res) => {
 }).listen(portProxy, () => {
   console.log(`Proxy server running at ${portProxy}/`);
 });
+
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  // Optionally, you can log the error to a file or monitoring service
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  // Optionally, you can log the error to a file or monitoring service
+});
