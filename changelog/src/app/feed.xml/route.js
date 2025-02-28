@@ -10,13 +10,13 @@
 //   }
 
 //   let author = {
-//     name: 'Joe Davola',
-//     email: 'crazy.joe@example.com',
+//     name: 'David J',
+//     email: 'hello@kaddio.com',
 //   }
 
 //   let feed = new Feed({
-//     title: 'Commit',
-//     description: 'Open-source Git client for macOS minimalists',
+//     title: 'Kaddio Changelog',
+//     description: 'Kaddio is an all-in-one platform for health professionals',
 //     author,
 //     id: siteUrl,
 //     link: siteUrl,

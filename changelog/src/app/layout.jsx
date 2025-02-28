@@ -20,7 +20,7 @@ const monaSans = localFont({
 })
 
 export const metadata = {
-  title: 'Kaddio - all-in-one platform for health professionals',
+  title: 'Kaddio - Changelog',
   description:
     'Kaddio is a complete all-in-one platform for health professionals with booking, medical records, video, invoicing and everything else you would expect',
   alternates: {
