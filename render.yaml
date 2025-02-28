@@ -40,8 +40,8 @@ services:
     name: changelog_node
     env: node
     buildCommand: npm install && npm run build
-    #  startCommand: npm run start
-    #  plan: free
+    startCommand: npm run start
+    plan: free
     branch: master
     rootDir: changelog
     envVars:
