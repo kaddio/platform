@@ -44,11 +44,11 @@ function FeedIcon(props) {
 export function Intro() {
   return (
     <>
-      <div>
+      {/* <div>
         <Link href="/">
           <Logo className="inline-block h-8 w-auto" />
         </Link>
-      </div>
+      </div> */}
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
       Kaddio Changelog{' '}
         <span className="text-sky-300">is everything we build for you</span>
