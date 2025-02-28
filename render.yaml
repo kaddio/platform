@@ -40,7 +40,6 @@ services:
     name: changelog_node
     env: node
     buildCommand: npm install && npm run build
-    staticPublishPath: ./out
     #  startCommand: npm run start
     #  plan: free
     branch: master
