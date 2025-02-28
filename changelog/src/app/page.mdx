@@ -3,57 +3,128 @@ import { SparkleIcon } from '@/components/SparkleIcon'
 export { Layout as default } from '@/components/Layout'
 
 ---
+## News {{ date: '2023-10-17T00:00Z' }}
 
-![](@/images/commit-suggestions.png)
+### <SparkleIcon /> New features
+- Added alternative to turn off booking confirmations to users by email at bookings by clients or other users. 
 
-## Commit message suggestions {{ date: '2023-04-06T00:00Z' }}
+---
+## News {{ date: '2023-10-02T00:00Z' }}
 
-In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+### <SparkleIcon /> New features
+- Forms that are sent to clients now have delivery information. You can see when the form was sent out and by whom, and when the form was filled out by the client.
+- Phone numbers are searchable in client lists.
 
-It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+---
+## News {{ date: '2023-09-11T00:00Z' }}
 
-### <SparkleIcon /> Improvements
+### <SparkleIcon /> New features
+- Users receive booking confirmations via email regardless of who performs the booking: the user, a colleague, a client or an administrator.
+- Day reports have a selection for showing or hiding client data in the report. 
 
-- Added commit message and description suggestions powered by OpenAI
-- Fixed race condition that could sometimes leave you in a broken rebase state
-- Improved active project detection to try and ignore file changes triggered by the system instead of the user
-- Fixed bug that sometimes reported the wrong number of changed files
+
+---
+## Try Kaddio for free for one month {{ date: '2023-07-06T00:00Z' }}
+
+For new Kaddio users, fixed costs are now free of charge for one month. (Optional functions may generate variable costs, for example, text messages and posted letters.)
+
+### <SparkleIcon /> New features
+- Choose what url to redirect customers to when a contact form has been posted.
+
+### <SparkleIcon /> Fixes
+- Added fields show in PDF exports.
+- Page numbers added in letters.
+- Line breaks show correctly in emails.
+- Brand colors show in Booking when customers are logged in to Kaddio.
 
 ---
 
-![](@/images/configuration-files.png)
+## Kaddio Status page {{ date: '2023-05-31T00:00Z' }}
 
-## Project configuration files {{ date: '2023-03-17T00:00Z' }}
-
-I've added support for creating per-project `.commitrc` files that override your global settings for that particular project. Went with YAML for these because personally I'm sick of quoting keys in JSON all the time, or accidentally leaving in a trailing comma.
-
-### <SparkleIcon /> Improvements
-
-- Added per-project `.commitrc` configuration files
-- Improved performance when working with projects with large binary files
-- Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch
+In an ambition be more transparent, we are now reflecting statuses for several parts of our services in a "Status page". The Status page is reachable via our website. The Status page is hosted in an environment separated from all of our other services, it's also served on a separate domain for resilience.
 
 ---
 
-![](@/images/dark-mode.png)
+## Video updates {{ date: '2023-05-21T00:00Z' }}
 
-## Dark mode support {{ date: '2023-03-06T00:00Z' }}
-
-I released this thing last week hoping a couple of people would say "awesome job" and make me feel good about what I'd built but instead I just got a ton of people shaming me on X for being such a horrible person for only shipping a light UI.
 
 ### <SparkleIcon /> Improvements
+- Enables peer-to-peer for Safari
+- Prevents screen lock / turn off while in a conference
+- Fixes an issue seen in p2p connections where sources of the initiator are not signaled to the remote since the tracks are added while the initiator is waiting for a session-accept from the peer
+- Fixes an issue where media gets sent on jvb connection even when the connection is suspended
+- Fixes an edge case where the main room is locked and everyone leaves it to a breakout room and then coming back breaks the meeting
+- Fixes audio output device for notifications
+---
 
-- Added dark mode support
-- Improved input field responsiveness when writing a commit message in a project with a large number of changed files
-- Made keyboard shortcut for opening the Commit window customizable
-- Deleted my X account
+## Kaddio introduces "Complaints management" {{ date: '2023-05-14T00:00Z' }}
+
+Kaddio improves Kaddio Documents - it can now be used to handle your "Complaints management".
+
+
+### <SparkleIcon /> More improvements
+- Google Analytics 4 - As Google is sunsetting Google Analytics Universal, we are now releasing support for their new version of GA, called Google Analytics 4.
+- More fields (data) are now exported in Kaddio JSON exports.
+- Host names (care givers) are now exported in csv invoices export.
+- Clarify copy in settings for booking.
+- Better IRPF handling for Spain.
+
 
 ---
 
-![](@/images/first-release.png)
+## More drawable images {{ date: '2023-05-07T00:00Z' }}
 
-## Commit v0.1.0 {{  date: '2023-03-03T00:00Z' }}
+In Kaddio Documentation, you can now upload your own images to draw on, plus you can have multiple drawable images in one journal entry
 
-Commit is a command palette-style Git client you can pull up from anywhere with a keyboard shortcut that makes it really easy to commit your work. It uses the "last modified" timestamp of the files in all of your projects to automatically know which project you're in the middle of working on, so any time you pull up the UI it's already got the right project selected — you just have to type your commit message, hit <kbd>Cmd</kbd> + <kbd>Enter</kbd> and your changes are captured.
 
-I'd be lying if I really thought this was that useful but I was looking for an excuse to learn macOS development and here we are. It's open source at least so maybe you can find something interesting in the code even if the app itself is a total waste of hard drive space.
+---
+
+
+## Star your conversations {{ date: '2023-05-07T00:00Z' }}
+
+A conversation in Kaddio Communication can now be ⭐️ to stick them to the top of your conversations
+
+
+---
+
+## More drawable images {{ date: '2023-05-06T00:00Z' }}
+
+In Kaddio Documentation, you can now upload your own images to draw on, plus you can have multiple drawable images in one journal entry
+
+
+---
+
+
+## Waiting lists visibility {{ date: '2023-05-05T00:00Z' }}
+
+Waiting lists in Kaddio now have basic privileges settings under Settings > Secrecy.
+
+### <SparkleIcon /> More improvements
+- Selectable invoice rows
+- Better default VAT values for more countries
+- Kaddio Hibernate accepts more values
+- Calendar hook check to avoid bad formatted events
+- Translations for Español
+
+---
+
+## Kaddio On-premise End Of Life {{ date: '2023-05-01T00:00Z' }}
+
+Kaddio is sunsetting the On-premise version of Kaddio during 2024, no new customers will be joining this product. This means we will put much more energy and focus on Kaddio Cloud!
+
+All existing customers are informed and we will be providing a LTS version of Kaddio for the remainder of the time.
+
+### <SparkleIcon /> What do I need to do?
+- There is nothing you need to do.
+
+
+---
+
+## Kaddio Changelog birthday {{ date: '2023-04-28T00:00Z' }}
+
+Today is the first day of this brand new site where we will communicate releases in Kaddio.
+
+### <SparkleIcon /> More improvements
+- Better card payment tests
+- Reduce logging to improve secrecy
+- demo.kaddio.com test user fixes
