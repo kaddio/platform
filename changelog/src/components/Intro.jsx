@@ -12,6 +12,15 @@ function BookIcon(props) {
   )
 }
 
+function BlueskyIcon(props) {
+  return (
+    <svg width="100%" height="100%" viewBox="0 0 600 530" version="1.1" xmlns="http://www.w3.org/2000/svg" class="size-4">
+      <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"
+      fill="currentColor"/>
+    </svg>
+  )
+}
+
 function GitHubIcon(props) {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
@@ -32,14 +41,6 @@ function FeedIcon(props) {
   )
 }
 
-function XIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M9.51762 6.77491L15.3459 0H13.9648L8.90409 5.88256L4.86212 0H0.200195L6.31244 8.89547L0.200195 16H1.58139L6.92562 9.78782L11.1942 16H15.8562L9.51728 6.77491H9.51762ZM7.62588 8.97384L7.00658 8.08805L2.07905 1.03974H4.20049L8.17706 6.72795L8.79636 7.61374L13.9654 15.0075H11.844L7.62588 8.97418V8.97384Z" />
-    </svg>
-  )
-}
-
 export function Intro() {
   return (
     <>
@@ -49,24 +50,25 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        Open-source Git client{' '}
-        <span className="text-sky-300">for macOS minimalists</span>
+      Kaddio Changelog{' '}
+        <span className="text-sky-300">is everything we build for you</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Commit is a lightweight Git client you can open from anywhere any time
-        you’re ready to commit your work with a single keyboard shortcut. It’s
-        fast, beautiful, and completely unnecessary.
+      Kaddio is an all-in-one platform for health professionals. Electronic Medical Record, Booking, Video, Chat, Invoicing etc. Kaddio is fast and very easy to use.
       </p>
-      <SignUpForm />
+      {/* <SignUpForm /> */}
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
-          Documentation
+        <IconLink href="https://github.com/kaddio/documentation" icon={GitHubIcon} className="flex-none">
+          Technical docs
         </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
-          GitHub
+        <IconLink href="https://help.kaddio.com" icon={BookIcon} className="flex-none">
+          Help Center
         </IconLink>
-        <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
+        {/* <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
           RSS
+        </IconLink> */}
+        <IconLink href="https://kaddio.com" icon={BookIcon} className="flex-none">
+          Website
         </IconLink>
       </div>
     </>
@@ -77,8 +79,8 @@ export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       Brought to you by{' '}
-      <IconLink href="#" icon={XIcon} compact>
-        Joe Davola
+      <IconLink href="https://bsky.app/profile/kaddio.bsky.social" icon={BlueskyIcon} compact>
+        Kaddio
       </IconLink>
     </p>
   )
