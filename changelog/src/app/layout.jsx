@@ -20,9 +20,9 @@ const monaSans = localFont({
 })
 
 export const metadata = {
-  title: 'Commit - Open-source Git client for macOS minimalists',
+  title: 'Kaddio - all-in-one platform for health professionals',
   description:
-    'Commit is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary.',
+    'Kaddio is a complete all-in-one platform for health professionals with booking, medical records, video, invoicing and everything else you would expect',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
