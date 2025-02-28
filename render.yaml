@@ -37,6 +37,21 @@ services:
         value: lts
 
   - type: web
+    name: changelog_node
+    env: node
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./out
+    #  startCommand: npm run start
+    #  plan: free
+    branch: master
+    rootDir: changelog
+    envVars:
+      - key: NEXT_PUBLIC_SITE_URL
+        value: changelog.kaddio.com
+      - key: NODE_VERSION
+        value: lts
+
+  - type: web
     name: jitsi
     env: static
     staticPublishPath: ./
