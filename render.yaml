@@ -46,7 +46,7 @@ services:
     rootDir: changelog
     envVars:
       - key: NEXT_PUBLIC_SITE_URL
-        value: changelog-node.onrender.com
+        value: https://changelog-node.onrender.com
       - key: NODE_VERSION
         value: lts
 
