@@ -48,7 +48,7 @@ services:
       - key: NEXT_PUBLIC_SITE_URL
         value: http://changelog-node.onrender.com
       - key: NODE_VERSION
-        value: lts
+        value: 22.12.0
 
   - type: web
     name: jitsi
