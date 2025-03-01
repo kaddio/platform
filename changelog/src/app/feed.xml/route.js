@@ -1,6 +1,7 @@
 import assert from 'assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
+import https from 'https'
 
 export async function GET(req) {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
@@ -28,7 +29,11 @@ export async function GET(req) {
     },
   })
 
-  let html = await (await fetch(new URL('/', req.url))).text()
+  const agent = new https.Agent({
+    rejectUnauthorized: false,
+  });
+
+  let html = await (await fetch(new URL('/', req.url), {agent})).text()
   let $ = cheerio.load(html)
 
   $('article').each(function () {
