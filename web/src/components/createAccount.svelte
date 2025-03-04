@@ -1,3 +1,4 @@
+
 <script lang="ts">
     import { getContext } from 'svelte';
     import { countryCodeFromLang, getRegion } from '$lib/regions';
@@ -22,6 +23,8 @@
     $: url = slugify(orgName || '');
 
     import { token } from '$lib/stores';
+    import Notification from './feedback/notification.svelte';
+    import ContainterCenter from './containers/containterCenter.svelte';
 
     const countries = [
         ['Sverige', 'SE'],
@@ -46,6 +49,10 @@
         });
     }
 </script>
+
+<ContainterCenter>
+    <Notification content="Klienter/patienter? Skapa ej konto här, vänligen kontakta din vårdgivare för rätt adress"/> 
+</ContainterCenter>
 
 <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
     <!-- <Cloud /> -->
@@ -238,7 +245,6 @@
                                 />
                             </svg>
                         </div>
-
                         <div class="ml-3">
                             {#if $page.form?.urlUnavailable}
                                 <h3 class="text-sm font-medium text-red-800">
