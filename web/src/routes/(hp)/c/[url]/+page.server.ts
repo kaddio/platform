@@ -1,5 +1,5 @@
-import { apiUrl } from '$lib/apiUrl.js';
-import { browserFingerprint } from '$lib/browser-fingerprint.js';
+import { apiUrl } from '$lib/apiUrl';
+import { browserFingerprint } from '$lib/browser-fingerprint';
 import { redirect } from '@sveltejs/kit';
 import { countryFromRequest } from '$lib/country-from-request';
 
