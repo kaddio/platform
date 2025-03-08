@@ -1,4 +1,4 @@
-import { apiUrl } from '$lib/apiUrl.js';
+import { apiUrl } from '$lib/apiUrl';
 
 export async function loadData({
     trackingData,
