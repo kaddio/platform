@@ -28,7 +28,7 @@
         <span slot="icon">
             <i class="text-white fa-regular fa-stopwatch" />
         </span>
-        <span slot="title">Tidsbokning och kalender</span>
+        <span slot="title">Bokning och kalender</span>
         <span slot="body"
             >Komplett bokningssystem och onlinebetalning som gör allt du förväntar dig. I Kaddio är
             kalendern även din publika bokning.</span
