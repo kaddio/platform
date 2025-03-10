@@ -1,13 +1,15 @@
 <script lang="ts">
   export let content: string;
   let visible = true;
+  export let width: string;
+
 
 function dismiss() {
   visible = false;
 }
 </script>
 {#if visible}
-<div class="rounded-md bg-yellow-800 p-4">
+<div class="rounded-md bg-yellow-800 p-4" style="width: {width}px;" >
   <div class="flex">
     <div class="shrink-0">
       <svg class="h-5 w-5 text-yellow-200" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

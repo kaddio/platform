@@ -51,7 +51,7 @@
 </script>
 
 <ContainterCenter>
-    <Notification content="Klienter/patienter? Skapa ej konto här, vänligen kontakta din vårdgivare för rätt adress"/> 
+    <Notification width=602 content="Klienter/patienter? Skapa ej konto här, vänligen kontakta din vårdgivare för rätt adress"/> 
 </ContainterCenter>
 
 <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
