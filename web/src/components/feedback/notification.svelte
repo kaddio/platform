@@ -1,7 +1,7 @@
 <script lang="ts">
   export let content: string;
   let visible = true;
-  export let width: string;
+  export let width: string | undefined = undefined;
 
 
 function dismiss() {
@@ -9,7 +9,7 @@ function dismiss() {
 }
 </script>
 {#if visible}
-<div class="rounded-md bg-yellow-800 p-4" style="width: {width}px;" >
+<div class="rounded-md bg-yellow-800 p-4" style="width: {width ? `${width}px` : 'auto'};" >
   <div class="flex">
     <div class="shrink-0">
       <svg class="h-5 w-5 text-yellow-200" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
