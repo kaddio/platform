@@ -62,7 +62,7 @@
       <span slot="title">Market, UX, Customer support</span>
   </Person>
 
-  <Person emoji="👩🏼‍💼">
+  <Person emoji="💁‍♀️">
     <span slot="name">Malin</span>
     <span slot="title">Sales</span>
   </Person>
