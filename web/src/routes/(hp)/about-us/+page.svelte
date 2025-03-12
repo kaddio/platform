@@ -103,33 +103,33 @@
           <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
             <circle cx="2" cy="2" r="2" fill="currentColor" />
           </svg>
-          Dec 2016
+          2017
           <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></div>
         </time>
-        <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">3rd employee</p>
-        <p class="mt-1 text-base leading-7 text-gray-600">Ylva joins our team.</p>
+        <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">3rd employee and 1st paying customer</p>
+        <p class="mt-1 text-base leading-7 text-gray-600">Ylva joins our team. Until now, Kaddio was free. We wanted to start charging our users 6 months earlier but it took longer than we expected to "automate" the billing process :)</p>
       </div>
       <div>
         <time datetime="2022-02" class="flex items-center text-sm font-semibold leading-6 text-oldpink">
           <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
             <circle cx="2" cy="2" r="2" fill="currentColor" />
           </svg>
-          Nov 2017
+          Dec 2020
           <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></div>
         </time>
-        <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">1st paying customer</p>
-        <p class="mt-1 text-base leading-7 text-gray-600">Until now, Kaddio was freeware. We wanted to start charging our users 6 months earlier but it took longer than we expected to "automate" the billing process :)</p>
+        <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Black numbers</p>
+        <p class="mt-1 text-base leading-7 text-gray-600">Kaddio has been independent from external investors since the beginning, since dec 2020 we are also economically independent from our parent company.</p>
       </div>
       <div>
         <time datetime="2022-12" class="flex items-center text-sm font-semibold leading-6 text-oldpink">
           <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
             <circle cx="2" cy="2" r="2" fill="currentColor" />
           </svg>
-          Dec 2020
+          2024
           <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></div>
         </time>
-        <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Black numbers!</p>
-        <p class="mt-1 text-base leading-7 text-gray-600">Kaddio has been independent from external investors since the beginning, now we are also economically independent from our parent company.</p>
+        <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">$1M ARR</p>
+        <p class="mt-1 text-base leading-7 text-gray-600">2024 revenue was > $1M in Annual Recurring Revenue.</p>
       </div>
     </div>
   </div>
