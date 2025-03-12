@@ -100,6 +100,7 @@ https.createServer(options, async (req, res) => {
         "content-type": "text/xml;charset=UTF-8",
         "x-secret": 'mb',
         'x-secret2': secret,
+        ...req.headers,
       },
       body: body,
     });
