@@ -6,6 +6,7 @@
 	import Footer from '$components/footer.svelte';
 	import { getContext, setContext } from 'svelte';
     import Seo from '$components/seo.svelte';
+    import TeamComponent from '$components/team-component.svelte';
 
     setContext('lang', 'en');
     setContext('hideLangBanner', true);
@@ -36,59 +37,51 @@
 
 <Nav />
 
-<div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">We're a tight group of people, passionate and dedicated to delivering the best possible experience to our customers.</p>
-      </div>
-      <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
-        <Person emoji="👩🏻‍🎤">
-            <span slot="name">Arvid</span>
-            <span slot="title">CTO, Co-founder, & Dev</span>
-        </Person>
+<TeamComponent>
+  <span slot="title">Meet our team</span>
+  <span slot="subtitle">We're a tight group of people, passionate and dedicated to delivering the best possible experience to our customers.</span>
 
-        <Person emoji="👩🏼‍🌾">
-            <span slot="name">Karolina</span>
-            <span slot="title">CFO, Strategy, Customer Support</span>
-        </Person>
+  <Person emoji="👩🏻‍🎤">
+      <span slot="name">Arvid</span>
+      <span slot="title">CTO, Co-founder, & Dev</span>
+  </Person>
 
-        <Person emoji="👾">
-            <span slot="name">Ivanna</span>
-            <span slot="title">Customer support</span>
-        </Person>
+  <Person emoji="👩🏼‍🌾">
+      <span slot="name">Karolina</span>
+      <span slot="title">CFO, Strategy, Customer Support</span>
+  </Person>
 
-        <Person emoji="🧑🏻‍🌾">
-            <span slot="name">Camilla</span>
-            <span slot="title">Market, UX, Customer support</span>
-        </Person>
+  <Person emoji="👾">
+      <span slot="name">Ivanna</span>
+      <span slot="title">Customer support</span>
+  </Person>
 
-        <Person emoji="👩🏼‍💼">
-          <span slot="name">Malin</span>
-          <span slot="title">Sales</span>
-        </Person>
+  <Person emoji="🧑🏻‍🌾">
+      <span slot="name">Camilla</span>
+      <span slot="title">Market, UX, Customer support</span>
+  </Person>
 
-        <Person emoji="🤷">
-          <span slot="name">David</span>
-          <span slot="title">CEO, Dev</span>
-        </Person>
+  <Person emoji="👩🏼‍💼">
+    <span slot="name">Malin</span>
+    <span slot="title">Sales</span>
+  </Person>
 
-        <Person emoji="👨🏼‍💻">
-          <span slot="name">Sebastian</span>
-          <span slot="title">Dev</span>
-        </Person>
+  <Person emoji="🤷">
+    <span slot="name">David</span>
+    <span slot="title">CEO, Dev</span>
+  </Person>
 
-        <Person emoji="👨🏼‍⚖️">
-          <span slot="name">Claes</span>
-          <span slot="title">General Counsel</span>
-      </Person>
-    </ul>
-    </div>
-  </div>
+  <Person emoji="👨🏼‍💻">
+    <span slot="name">Sebastian</span>
+    <span slot="title">Dev</span>
+  </Person>
 
-
-
+  <Person emoji="👨🏼‍⚖️">
+    <span slot="name">Claes</span>
+    <span slot="title">General Counsel</span>
+  </Person>  
+</TeamComponent>
 
 
 <div class="bg-white py-24 sm:py-32">
