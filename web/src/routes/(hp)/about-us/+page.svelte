@@ -78,6 +78,11 @@
             <span slot="name">Claes</span>
             <span slot="title">General Counsel</span>
         </Person>
+
+        <Person>
+          <span slot="name">Sebastian</span>
+          <span slot="title">Dev</span>
+      </Person>
     </ul>
     </div>
   </div>
