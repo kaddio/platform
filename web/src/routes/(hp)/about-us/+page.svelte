@@ -44,44 +44,44 @@
       </div>
       <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
-        <Person>
+        <Person emoji="👩🏻‍🎤">
             <span slot="name">Arvid</span>
             <span slot="title">CTO, Co-founder, & Dev</span>
         </Person>
 
-        <Person>
+        <Person emoji="👩🏼‍🌾">
             <span slot="name">Karolina</span>
             <span slot="title">CFO, Strategy, Customer Support</span>
         </Person>
 
-        <Person>
+        <Person emoji="👾">
             <span slot="name">Ivanna</span>
             <span slot="title">Customer support</span>
         </Person>
 
-        <Person>
+        <Person emoji="🧑🏻‍🌾">
             <span slot="name">Camilla</span>
             <span slot="title">Market, UX, Customer support</span>
         </Person>
 
-        <Person>
+        <Person emoji="👩🏼‍💼">
           <span slot="name">Malin</span>
           <span slot="title">Sales</span>
         </Person>
 
-        <Person>
-            <span slot="name">David</span>
-            <span slot="title">CEO, Co-founder & Dev</span>
+        <Person emoji="🤷">
+          <span slot="name">David</span>
+          <span slot="title">CEO, Dev</span>
         </Person>
 
-        <Person>
-            <span slot="name">Claes</span>
-            <span slot="title">General Counsel</span>
-        </Person>
-
-        <Person>
+        <Person emoji="👨🏼‍💻">
           <span slot="name">Sebastian</span>
           <span slot="title">Dev</span>
+        </Person>
+
+        <Person emoji="👨🏼‍⚖️">
+          <span slot="name">Claes</span>
+          <span slot="title">General Counsel</span>
       </Person>
     </ul>
     </div>
