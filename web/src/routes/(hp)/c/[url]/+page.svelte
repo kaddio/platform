@@ -212,14 +212,14 @@
                     <h2 class="text-bold text-lg px-8 mt-8">{organization.name}</h2>
                 {/if}
 
-                {#if organization.homepage?.links.length}
-                    <div class="flex flex-col gap-4 my-8 mx-8">
-                        <Links links={organization.homepage} />
+                <div class="flex flex-col gap-4 my-8 mx-8">
+                    <Links links={organization.homepage} />
+                    {#if organization.homepage?.links.length}
                         {#each organization.homepage?.links as link}
                             <Link href={link.url} type={link.type} label={link.label} />
                         {/each}
-                    </div>
-                {/if}
+                    {/if}
+                </div>
                 {#if organization.hasContactForm}
                     <KdLinkButton
                         href="https://{organization.url}.kaddio.com/contact-us?utm_source={utmSource(
