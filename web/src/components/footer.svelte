@@ -125,7 +125,7 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">About us</h3>
             <ul class="mt-6 space-y-4">
               <li>
-                <a href="/about-us" hreflang="en" class="text-sm leading-6 text-gray-600">Meet our team</a>
+                <a href="/about-us" hreflang="en" class="text-sm leading-6 text-gray-600">Team & ambassadors</a>
               </li>
 
               <li>
