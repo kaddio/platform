@@ -84,6 +84,36 @@
 </TeamComponent>
 
 
+
+<TeamComponent>
+  <span slot="title">Ambassadors</span>
+  <span slot="subtitle">Our ambassadors are health professionals who help us develop our product and spread the word about Kaddio. We're proud to have them on our team.</span>
+
+  <Person emoji="👩🏻‍🎤" >
+      <span slot="name">Daniel</span>
+      <span slot="title">Osteopath</span>
+  </Person>
+
+  <Person emoji="🧘‍♀️" href="https://www.endorfinkliniken.com">
+    <span slot="name">Amanda</span>
+    <span slot="title">D.o. Bsc. Health</span>
+  </Person>
+
+  <Person emoji="🤚🏽">
+    <span slot="name">Mikael</span>
+    <span slot="title">Lic. Chiropractor</span>
+  </Person>
+
+  <Person emoji="👨🏻‍⚕️">
+    <span slot="name">Janne</span>
+    <span slot="title">Medical Doctor</span>
+  </Person>
+
+</TeamComponent>
+
+
+
+
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
