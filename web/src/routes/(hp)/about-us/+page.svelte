@@ -67,7 +67,7 @@
     <span slot="title">Sales</span>
   </Person>
 
-  <Person emojis={["🤷","🚴🏼","🏃🏼‍♂️‍➡️","⛷️","🎸", "🪗", "🏄🏼‍♂️"]}>
+  <Person emojis={["🚴🏼","🏃🏼‍♂️‍➡️","⛷️", "🏄🏼‍♂️"]}>
     <span slot="name">David</span>
     <span slot="title">CEO, Dev</span>
   </Person>
