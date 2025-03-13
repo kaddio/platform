@@ -1,6 +1,9 @@
 <script lang="ts">
   export let color: string = 'bg-white';
-  export let emoji: string = '👩‍💻';
+  export let emojis: string[] = ['👩‍💻'];
+
+  const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+
 </script>
 
 <li>

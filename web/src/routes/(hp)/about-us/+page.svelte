@@ -42,42 +42,42 @@
   <span slot="title">Meet our team</span>
   <span slot="subtitle">We're a tight group of people, passionate and dedicated to delivering the best possible experience to our customers.</span>
 
-  <Person emoji="👩🏻‍🎤">
+  <Person emojis={["👩🏻‍🎤"]}>
       <span slot="name">Arvid</span>
       <span slot="title">CTO, Co-founder, & Dev</span>
   </Person>
 
-  <Person emoji="👩🏼‍🌾">
+  <Person emojis={["👩🏼‍🌾"]}>
       <span slot="name">Karolina</span>
       <span slot="title">CFO, Strategy, Customer Support</span>
   </Person>
 
-  <Person emoji="👾">
+  <Person emojis={["👾"]}>
       <span slot="name">Ivanna</span>
       <span slot="title">Customer support</span>
   </Person>
 
-  <Person emoji="🧑🏻‍🌾">
+  <Person emojis={['🧗🏻‍♀️', '💃🏼', '🏃🏼‍♀️']}>
       <span slot="name">Camilla</span>
       <span slot="title">Market, UX, Customer support</span>
   </Person>
 
-  <Person emoji="💁‍♀️">
+  <Person emojis={["💁‍♀️"]}>
     <span slot="name">Malin</span>
     <span slot="title">Sales</span>
   </Person>
 
-  <Person emoji="🤷">
+  <Person emojis={["🤷","🚴🏼","🏃🏼‍♂️‍➡️","⛷️","🎸", "🪗", "🏄🏼‍♂️"]}>
     <span slot="name">David</span>
     <span slot="title">CEO, Dev</span>
   </Person>
 
-  <Person emoji="👨🏼‍💻">
+  <Person emojis={["👨🏼‍💻"]}>
     <span slot="name">Sebastian</span>
     <span slot="title">Dev</span>
   </Person>
 
-  <Person emoji="👨🏼‍⚖️">
+  <Person emojis={["👨🏼‍⚖️"]}>
     <span slot="name">Claes</span>
     <span slot="title">General Counsel</span>
   </Person>  
