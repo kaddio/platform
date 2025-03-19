@@ -28,12 +28,16 @@ const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.k
 // Load SSL certificates
 const options = {
   // key: fs.readFileSync('certs/server-key.pem'),
+
   // cert: fs.readFileSync('certs/server-cert.pem'),
   // ca: fs.readFileSync('certs/ca-cert.pem'),
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
   key: privateKey,
-  cert: [fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')],
+  cert: [
+    fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
+    fs.readFileSync('certs/server-cert.pem')
+  ],
 
   // Order of root and function cert does NOT matter.
   // .cer format does not seem to work. Use .pem
