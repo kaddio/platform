@@ -9,7 +9,7 @@ const portHello = 80;
 const rejectUnauthorized = true;
 
 console.log('###      ###')
-console.log('###  V2  ###')
+console.log('###  V3  ###')
 console.log('###      ###')
 console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
@@ -136,6 +136,7 @@ process.on('unhandledRejection', (reason, promise) => {
 
 httpsServer.on('clientError', (err, socket) => {
   console.error('Client error:', err);
+  console.log(socket.getPeerCertificate())
   console.log(`Protocol: ${socket.getProtocol()}`)
   socket.end();
 });
