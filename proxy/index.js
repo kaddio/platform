@@ -34,10 +34,7 @@ const options = {
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
   key: privateKey,
-  cert: [
-    fs.readFileSync('certs/server-cert.pem'),
-    fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
-  ],
+  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
 
   // Order of root and function cert does NOT matter.
   // .cer format does not seem to work. Use .pem
