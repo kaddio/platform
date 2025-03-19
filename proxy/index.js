@@ -8,6 +8,9 @@ const portProxy = 443;
 const portHello = 80;
 const rejectUnauthorized = true;
 
+console.log('###      ###')
+console.log('###  V1  ###')
+console.log('###      ###')
 console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
 const target = process.env.TARGET;
