@@ -28,10 +28,11 @@ const options = {
 
   key: privateKey,
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')+fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem'),
+  ca: fs.readFileSync('certs/qa.esb.ntjp.sjunet.org_Legitimering[1].cer'),
   // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
 
   requestCert: true,
-  rejectUnauthorized: false
+  rejectUnauthorized: true
 };
 
 const verifyRequest = (req) => {
