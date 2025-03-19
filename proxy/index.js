@@ -33,8 +33,9 @@ const options = {
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
   key: privateKey,
-  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')+fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem')+fs.readFileSync('certs/qa.esb.ntjp.sjunet.org_Legitimering[1].pem'),
+  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')+fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem'),
   // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
+  ca: fs.readFileSync('certs/qa.esb.ntjp.sjunet.org_Legitimering[1].pem'),
 
   requestCert: true,
   rejectUnauthorized
