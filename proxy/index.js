@@ -50,6 +50,7 @@ const verifyRequest = (req) => {
   const hasCert = Object.keys(cert).length > 0;
   const fingerprint = cert.fingerprint;
   const originIP = req.socket.remoteAddress;
+  const protocol = req.socket.getProtocol();
   const serialNumber = cert.serialNumber;
 
   const ok = hasCert && !!serialNumber; // Add certIsValid and validateSerialNumbers here later
@@ -60,6 +61,7 @@ const verifyRequest = (req) => {
 
   if(ok){
     console.log(`Origin IP: ${originIP}`);
+    console.log(`Protocol: ${protocol}`);
     console.log(cert);
     console.log(req.headers);
     console.log(`Fingerprint: ${fingerprint}`);
