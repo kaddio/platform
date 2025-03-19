@@ -9,7 +9,7 @@ const portHello = 80;
 const rejectUnauthorized = true;
 
 console.log('###      ###')
-console.log('###  V9  ###')
+console.log('###  V1  ###')
 console.log('###      ###')
 console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
@@ -33,13 +33,14 @@ const options = {
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
   key: privateKey,
-  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
+  cert: [fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')],
 
   // Order of root and function cert does NOT matter.
   // .cer format does not seem to work. Use .pem
   ca: [
     fs.readFileSync('certs/testsithseidfunctioncav1.pem'), 
     fs.readFileSync('certs/testsithseidrootcav2.pem'),
+    fs.readFileSync('certs/ca-cert.pem') // Self signed
   ],
 
   requestCert: true,
