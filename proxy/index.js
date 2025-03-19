@@ -35,8 +35,8 @@ const options = {
 
   key: privateKey,
   cert: [
+    fs.readFileSync('certs/server-cert.pem'),
     fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
-    fs.readFileSync('certs/server-cert.pem')
   ],
 
   // Order of root and function cert does NOT matter.
