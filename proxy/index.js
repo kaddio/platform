@@ -133,5 +133,6 @@ process.on('unhandledRejection', (reason, promise) => {
 
 httpsServer.on('clientError', (err, socket) => {
   console.error('Client error:', err);
+  console.log(`Protocol: ${socket.getProtocol()}`)
   socket.end();
 });
