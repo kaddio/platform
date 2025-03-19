@@ -37,7 +37,7 @@ console.log("Creating the self-signed certificate for the CA...");
 await $`openssl req -new -x509 -key ${caKey} -passin pass:${password} -out ${caCert} -days 365 -subj "/CN=CA"`;
 
 console.log("Creating a Certificate Signing Request (CSR) for the server...");
-await $`openssl req -new -key ${serverKey} -passin pass:${password} -out ${serverCsr} -subj "/CN=localhost"`;
+await $`openssl req -new -key ${serverKey} -passin pass:${password} -out ${serverCsr} -subj "/CN=kaddiotestarnpo.kaddio.com"`;
 
 console.log("Signing the server CSR with the CA to generate the server certificate...");
 await $`openssl x509 -req -in ${serverCsr} -CA ${caCert} -CAkey ${caKey} -passin pass:${password} -CAcreateserial -out ${serverCert} -days 365`;
