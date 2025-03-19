@@ -9,7 +9,7 @@ const portHello = 80;
 const rejectUnauthorized = true;
 
 console.log('###      ###')
-console.log('###  V3  ###')
+console.log('###  V4  ###')
 console.log('###      ###')
 console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
@@ -33,9 +33,8 @@ const options = {
   // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
   key: privateKey,
-  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem')+fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.ca.pem'),
-  // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
-  ca: fs.readFileSync('certs/qa.esb.ntjp.sjunet.org_Legitimering[1].pem'),
+  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
+  ca: [fs.readFileSync('certs/testsithseidfunctioncav1.cer'), fs.readFileSync('certs/testsithseidrootcav2.cer')],
 
   requestCert: true,
   rejectUnauthorized
