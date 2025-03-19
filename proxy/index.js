@@ -34,6 +34,9 @@ const options = {
 
   key: privateKey,
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
+
+  // Order of root and function cert does NOT matter.
+  // .cer format does not seem to work. Use .pem
   ca: [
     fs.readFileSync('certs/testsithseidfunctioncav1.pem'), 
     fs.readFileSync('certs/testsithseidrootcav2.pem'),
