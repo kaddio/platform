@@ -131,12 +131,6 @@ process.on('unhandledRejection', (reason, promise) => {
   // Optionally, you can log the error to a file or monitoring service
 });
 
-
-httpsServer.on('tlsClientError', (err, socket) => {
-  console.error('TLS client error:', err);
-  socket.end();
-});
-
 httpsServer.on('clientError', (err, socket) => {
   console.error('Client error:', err);
   socket.end();
