@@ -28,10 +28,8 @@ const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.k
 // Load SSL certificates
 const options = {
   // key: fs.readFileSync('certs/server-key.pem'),
-
   // cert: fs.readFileSync('certs/server-cert.pem'),
   // ca: fs.readFileSync('certs/ca-cert.pem'),
-  // passphrase: fs.readFileSync('certs/passphrase.txt', 'utf8').trim(),
 
   key: privateKey,
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
@@ -40,8 +38,7 @@ const options = {
   // .cer format does not seem to work. Use .pem
   ca: [
     fs.readFileSync('certs/testsithseidfunctioncav1.pem'), 
-    fs.readFileSync('certs/testsithseidrootcav2.pem'),
-    fs.readFileSync('certs/ca-cert.pem') // Self signed
+    fs.readFileSync('certs/testsithseidrootcav2.pem')
   ],
 
   requestCert: true,
