@@ -73,7 +73,7 @@ http.createServer((req, res) => {
   console.log(`HTTP server running at ${portHello}/`);
 });
 
-https.createServer(options, async (req, res) => {
+const httpsServer = https.createServer(options, async (req, res) => {
 
   try{
     verifyRequest(req);
@@ -125,4 +125,15 @@ process.on('uncaughtException', (err) => {
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
   // Optionally, you can log the error to a file or monitoring service
+});
+
+
+httpsServer.on('tlsClientError', (err, socket) => {
+  console.error('TLS client error:', err);
+  socket.end();
+});
+
+httpsServer.on('clientError', (err, socket) => {
+  console.error('Client error:', err);
+  socket.end();
 });
