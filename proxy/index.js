@@ -6,6 +6,9 @@ import crypto from 'crypto';
 
 const portProxy = 443;
 const portHello = 80;
+const rejectUnauthorized = true;
+
+console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
 const target = process.env.TARGET;
 const targetBase = new URL(target);
@@ -32,7 +35,7 @@ const options = {
   // passphrase: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.passphrase.txt', 'utf8').trim(),
 
   requestCert: true,
-  rejectUnauthorized: true
+  rejectUnauthorized
 };
 
 const verifyRequest = (req) => {
