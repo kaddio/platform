@@ -9,7 +9,7 @@ const portHello = 80;
 const rejectUnauthorized = true;
 
 console.log('###      ###')
-console.log('###  V10  ###')
+console.log('###  V9  ###')
 console.log('###      ###')
 console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
@@ -23,7 +23,7 @@ const targetBase = new URL(target);
   }
 }
 
-const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.key', 'utf8').trim()
+const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key', 'utf8').trim()
 
 // Load SSL certificates
 const options = {
@@ -34,7 +34,7 @@ const options = {
 
   key: privateKey,
   cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
-  passphrase: 'kaddio',
+
   // Order of root and function cert does NOT matter.
   // .cer format does not seem to work. Use .pem
   ca: [
