@@ -1,4 +1,4 @@
-import { apiUrl } from '$lib/apiUrl.js'
+import { apiUrl } from '$lib/apiUrl'
 import { redirect } from '@sveltejs/kit';
 import { promises } from 'node:fs';
 import { Agent } from 'node:https'
