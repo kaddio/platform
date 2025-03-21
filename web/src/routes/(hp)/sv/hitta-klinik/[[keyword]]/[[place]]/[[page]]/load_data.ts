@@ -42,6 +42,7 @@ export async function loadData({
 			homepage {
 				headerImg,
                 mainActivity,
+                metaDescription
 			}
 		},
 		count
