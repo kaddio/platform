@@ -111,9 +111,10 @@ const httpsServer = https.createServer(options, async (req, res) => {
       const backendResponse = await fetch(new URL(req.url, targetBase), {
       method: "POST",
       headers: {
-        "content-type": "text/xml;charset=UTF-8",
+        "Content-Type": "text/xml;charset=UTF-8",
         "x-secret": 'mb',
-        'x-secret2': secret
+        'x-secret2': secret,
+        'Accept-Encoding': 'identity'
       },
       body: body,
     });
