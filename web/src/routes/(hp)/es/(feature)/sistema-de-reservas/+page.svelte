@@ -1,136 +1,112 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
-	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import QuoteEnAmanda from "$components/quoteEnAmanda.svelte";
+    import QuoteEnJonas from "$components/quoteEnJonas.svelte";
+    import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
+    import QuoteEnSofia from "$components/quoteEnSofia.svelte";
+    import StatsSectionEn from "$components/statsSectionEn.svelte";
+    import ContactDanielEs from "$components/contactDanielEs.svelte";
+    import PricesEs from "$components/pricesEs.svelte";
+
 </script>
 
 <svelte:head>
-	<title>Kaddio - Sistema de reservas</title>
-	<meta name="description" content="Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio." />
+    <title>Reservas en línea con todo lo que necesitas</title>
+    <meta name="description" content="Sistema completo de reservas y pagos que hace que las reservas en línea para tus clientes sean súper fáciles. Kaddio también hace todo lo demás que esperas." />
 </svelte:head>
 
-<ModuleSection>
-	<span slot="title">Sistema de reservas</span>
-	<span slot="sub">Kaddio tiene un servicio de reservas en el que tus clientes pueden reservar a través de una web accesible al público. También puedes optar por administrar las reservas tu mismo dentro de Kaddio.</span>
-<!-- 
-	<ModuleFeature>
-		<span slot="title">Automatisera</span>
-		<span slot="body">
-			Automatisera ditt schema och låt dina kunder boka och betala själva eller ta kontroll över varje minut. Bokningstyper kan konfigureras i detalj och detta hjälper dig sen i bokningen så att det blir lätt där. Automatiskta påminnelser
-		</span>
-	</ModuleFeature>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/cal-en.png" alt="Reservas en línea y calendario de Kaddio">
+    <span slot="h1">Reservas en línea</span>
+    <span slot="title">Kaddio Reservas</span>
+    <span slot="sub">
+        Kaddio Reservas es un sistema de calendario y reservas en uno. Gestiona reservas, clases grupales y reuniones en la misma vista y mantén todo bajo control.</span>
 
-	<ModuleFeature>
-		<span slot="title">Samarbeta</span>
-		<span slot="body">
-			Använd kalendern för att boka möten.
-		</span>
-	</ModuleFeature>
+    <ModuleFeatureWithIcon icon="people-pants">
+        <span slot="title">Colabora.</span>
+        <span slot="body">
+            Administra reservas de reuniones y salas para toda la organización.
+        </span>
+    </ModuleFeatureWithIcon>
 
-	<ModuleFeature>
-		<span slot="title">Effektivisera</span>
-		<span slot="body">
-			Har du återkommande händelser i kalendern? Skapa mallar och spara tid
-		</span>
-	</ModuleFeature> -->
-</ModuleSection>
-  
+    <ModuleFeatureWithIcon icon="stopwatch">
+        <span slot="title">Optimiza.</span>
+        <span slot="body">
+            Crea plantillas para eventos recurrentes en el calendario y ahorra tiempo.
+        </span>
+    </ModuleFeatureWithIcon>
 
-<FaqSection>
-	<span slot="title">Funciones</span>
+    <ModuleFeatureWithIcon icon="calendar-lines-pen">
+        <span slot="title">Mejora el flujo de clientes.</span>
+        <span slot="body">
+            Crea horarios disponibles directamente desde tu calendario. Controla todo tú mismo o permite que los clientes reserven y paguen por su cuenta.
+        </span>
+    </ModuleFeatureWithIcon>
+</ModuleSectionWithImage>
 
-	<Qa>
-		<span slot="q">Calendario</span>
-		<span slot="a">
-			Administra las reservas en el calendario. Por ejemplo, cambia o cancela una cita. En el calendario, verás las reservas junto con las reuniones y otras actividades.
-		</span>
-	</Qa>
+<ModuleOverviewFeaturesSection>
+    
+    <span slot="title">Esto es Kaddio Reservas</span>
+    <span slot="body">Con Kaddio Reservas planificas las actividades de tu organización de manera eficiente y clara, ya sea que formes parte de una gran empresa o seas autónomo.</span>
 
-	<Qa>
-		<span slot="q">Sistema de reservas accesible</span>
-		<span slot="a">
-			El cliente puede hacer reservas él mismo a través de un sitio web accesible al público.
-		</span>
-	</Qa>
+    <ModuleOverviewFeaturesSegment>
+        <span slot="title">Colabora</span>
 
-	<Qa>
-		<span slot="q">Reservas con Mobilt BankID</span>
-		<span slot="a">
-			El cliente inicia sesión en Kaddio con Mobilt BankID para poder reservar una cita. Adecuado para aquellos que quieren asegurar la identidad de la persona que reserva.
-		</span>
-	</Qa>
+        <ModuleOverviewFeature>Reservas de reuniones</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Soporte para operaciones en varias direcciones</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Reservas de salas</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Calendario compartido dentro de la organización</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Listas de espera para clientes en cola</ModuleOverviewFeature>
+    </ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Recordatorios SMS</span>
-		<span slot="a">
-			Elige si y cuándo se envían recordatorios por SMS antes de una cita reservada.
-		</span>
-	</Qa>
+    <ModuleOverviewFeaturesSegment>
+        <span slot="title">Optimiza</span>
 
-	<Qa>
-		<span slot="q">Formularios</span>
-		<span slot="a">
-			Envía formularios automáticamente cuando se realiza una reserva. Por ejemplo, formularios de evaluación y declaraciones de salud.
-		</span>
-	</Qa>
+        <ModuleOverviewFeature>Calendario y reservas en la misma vista</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Pago con tarjeta al reservar</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Check-in</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Informes diarios</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Base de facturación automática</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Función de plantillas</ModuleOverviewFeature>
+        
+    </ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Formas de tratamiento</span>
-		<span slot="a">
-			Ofrece tipos de tratamientos diferentes. Vincula formas de tratamiento a diferentes terapeutas. Personaliza los mensajes de texto y correos electrónicos según el tratamiento.
-		</span>
-	</Qa>
+    <ModuleOverviewFeaturesSegment>
+        <span slot="title">Mejora el flujo de clientes</span>
 
-	<Qa>
-		<span slot="q">Reservas de grupo</span>
-		<span slot="a">
-			Publica horarios que se puedan reservar para más de un paciente.
-		</span>
-	</Qa>
+        <ModuleOverviewFeature>Reservas en el sitio web</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Integración con Kuralink</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Servicio de búsqueda Encuentra Clínica</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Reservas con BankID</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Recordatorios por correo electrónico y SMS</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Formularios al reservar</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Reservas grupales</ModuleOverviewFeature>
+        <ModuleOverviewFeature>API</ModuleOverviewFeature>
 
-	<Qa>
-		<span slot="q">Optimización del tiempo</span>
-		<span slot="a">
-			Evita huecos innecesarios en el calendario. Kaddio optimiza los tiempos de reserva en función de la duración del tratamiento.
-		</span>
-	</Qa>
+    </ModuleOverviewFeaturesSegment>
+</ModuleOverviewFeaturesSection>  
 
-	<Qa>
-		<span slot="q">Pago con tarjeta al reservar</span>
-		<span slot="a">
-			El cliente puede pagar directamente con tarjeta al reservar online.
-		</span>
-	</Qa>
+<QuotesSection>
+    <span slot="title">
+        Lo que nuestros clientes dicen sobre <br>Kaddio Reservas       
+    </span>
 
-	<Qa>
-		<span slot="q">Facturación</span>
-		<span slot="a">
-			Se crean documentos de facturación de forma automática en función de las reservas.
-		</span>
-	</Qa>
+    <QuoteEnJimmy />
+    
+    <QuoteEnJonas />
 
-	<Qa>
-		<span slot="q">Sistema de reservas en tu página web</span>
-		<span slot="a">
-			Integra el sistema de reservas directamente en tu página web.
-		</span>
-	</Qa>
+    <QuoteEnAmanda />
 
-	<Qa>
-		<span slot="q">Múltiples localizaciones</span>
-		<span slot="a">
-			Kaddio soporta múltiples localizaciones. La información de los recordatorios por correo electrónico y SMS se adapta según la ubicación.
-		</span>
-	</Qa>
+    <QuoteEnSofia />
+    
+</QuotesSection>
 
-	<Qa>
-		<span slot="q">Reserva inteligente de consultorios</span>
-		<span slot="a">
-			Programación planificada. Kaddio asegura que los tratamientos solo se reservan cuando hay consultorios disponibles.
-		</span>
-	</Qa>
+<StatsSectionEn />
 
+<PricesEs></PricesEs>
 
-
-</FaqSection>
+<ContactDanielEs></ContactDanielEs>
