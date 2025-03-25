@@ -1,25 +1,17 @@
 <script>
-    
     import ModuleSectionWithImage from '$components/moduleSectionWithImage.svelte';
     import ModuleFeatureWithIcon from '$components/moduleFeatureWithIcon.svelte';
-    
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-  
-    import QuotesSection from "$components/quotesSection.svelte";
-   
-    import StatsSection from "$components/statsSection.svelte";
-    import StatsSectionPart from "$components/statsSectionPart.svelte";
-   
+    import QuotesSection from "$components/quotesSection.svelte";   
 	import QuoteSvJimmy from '$components/quote-sv-jimmy.svelte';
 	import QuoteSvJonas from '$components/quote-sv-jonas.svelte';
-	
 	import QuoteSvRamzi from '$components/quote-sv-ramzi.svelte';
 	import QuoteSvSofia from '$components/quote-sv-sofia.svelte';
-	
 	import ContactDanielSv from '$components/contactDanielSv.svelte';
 	import PricesSv from '$components/pricesSv.svelte';
+    import StatsSectionSv from '$components/statsSectionSv.svelte';
 </script>
 
 <svelte:head>
@@ -34,9 +26,7 @@
 	<span slot="sub">
 		Kaddio Chat och Video gör att du kan kommunicera och dela information säkert med klienter och kollegor. Kaddio uppfyller Socialstyrelsens krav på stark autentisering.
 	</span>
-
-
-
+	
     <ModuleFeatureWithIcon icon="comment">
 		<span slot="title">Kommunicera.</span>
 		<span slot="body">
@@ -58,37 +48,31 @@
             tvåfaktorsautentisering.
 		</span> 
 	</ModuleFeatureWithIcon>
-
 </ModuleSectionWithImage>
 
 <ModuleOverviewFeaturesSection>
-	
 	<span slot="title">Detta är Kaddio Chat och Video</span>
 	<span slot="body">Med Kaddio Chat och Video kommunicerar du säkert med klienter och kollegor. 
 		<br>Allt i Kaddio är krypterat.</span>
 	
     <ModuleOverviewFeaturesSegment>
 		<span slot="title">Kommunicera</span>
-		
 		<ModuleOverviewFeature>Videosamtal för 2-500 deltagare</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Skärmdelning i videosamtal</ModuleOverviewFeature>
         <ModuleOverviewFeature>Chat med klienter och kollegor</ModuleOverviewFeature>
         <ModuleOverviewFeature>Gruppchat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>E-postmeddelande till klient från chatten</ModuleOverviewFeature>
         <ModuleOverviewFeature>Kontaktformulär för klient</ModuleOverviewFeature>
-
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Dela information</span>
-	
 		<ModuleOverviewFeature>
 			Bifoga filer, till exempel journalanteckningar eller annan känslig information.</ModuleOverviewFeature>
 		<ModuleOverviewFeature>
 			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
-		
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
@@ -113,20 +97,7 @@
     
 </QuotesSection>
 
-<StatsSection>
-	<StatsSectionPart>
-		<span slot="title">användare</span>
-		<span slot="sub">47 000+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">bokningar per dygn</span>
-		<span slot="sub">1300+</span>
-	</StatsSectionPart>
-	<StatsSectionPart>
-		<span slot="title">videomöten per månad</span>
-		<span slot="sub">8500+</span>
-	</StatsSectionPart>
-</StatsSection>
+<StatsSectionSv />
 
 <PricesSv />
 
