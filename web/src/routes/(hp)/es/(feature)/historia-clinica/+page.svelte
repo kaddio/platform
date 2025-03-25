@@ -1,112 +1,125 @@
 <script>
-	import Qa from "$components/qa.svelte";
-	import ModuleFeature from "$components/moduleFeature.svelte";
-	import ModuleSection from "$components/moduleSection.svelte";
+
+import Qa from "$components/qa.svelte";
 	import FaqSection from "$components/faqSection.svelte";
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+	export let data;
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+	import StatsSectionSv from "$components/statsSectionSv.svelte";
+    import QuoteEnRamzi from "$components/quoteEnRamzi.svelte";
+    import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
+    import QuoteEnJonas from "$components/quoteEnJonas.svelte";
+    import QuoteEnSofia from "$components/quoteEnSofia.svelte";
+    import PricesEs from "$components/pricesEs.svelte";
+    import ContactDanielEs from "$components/contactDanielEs.svelte";
+    import QuoteEnAmanda from "$components/quoteEnAmanda.svelte";
+    import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
 
 </script>
-
 <svelte:head>
-	<title>Kaddio - Historia clínica</title>
-	<meta name="description" content="Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinares de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades." />
+    <title>Sistema de registros con todo lo que necesitas</title>
+    <meta name="description" content="Kaddio Journal tiene todo lo que necesitas para documentar tu negocio y registrar clientes. Un sistema de registros completo para el cuidado de la salud." />
 </svelte:head>
 
-<ModuleSection>
-	<span slot="title">Historia clínica</span>
-	<span slot="sub">Kaddio es un software de gestión online adaptable a cualquier volumen de clínica. Desde los centros pequeños hasta las clínicas interdisciplinarias de mayor tamaño, está diseñado para ser fácil de usar. Adapta tanto el contenido como la funcionalidad a tus necesidades.</span>
+<ModuleSectionWithImage src="/img/kaddio-screenshots/medical-record-overview-en.png" alt="Sistema de registros Kaddio">
+    <span slot="h1">Sistema de registros</span>
+    <span slot="title">Kaddio Journal</span>
+    <span slot="sub">
+        Kaddio Journal tiene todo lo que necesitas para registrar clientes y documentar tu negocio. 
+        Un sistema de registros completo, simplemente.
+    </span>
 
-	<!-- <ModuleFeature>
-		<span slot="title">Användarvänligt.</span>
-		<span slot="body">
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-		</span>
-	</ModuleFeature> -->
-<!-- 
-	<ModuleFeature>
-		<span slot="title">Flexibelt.</span>
-		<span slot="body">
-			Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov.
-Använd Kaddios egna mallar för anteckningar och rubriker eller skräddarsy allt efter verksamhetens behov. Skapa egna mallar för journalanteckningar utifrån dina behov och din verksamhet. Välj egna sökord/rubriker. Använd malltext, fraser, filuppladdning och mer</span>
-	</ModuleFeature> -->
+    <ModuleFeatureWithIcon icon="pen">
+        <span slot="title">Documenta.</span>
+        <span slot="body">
+            Registra de manera segura, donde y cuando quieras. Diseña plantillas para notas de registro según las necesidades de tu negocio.
+        </span> 
+    </ModuleFeatureWithIcon>
 
-	<!-- <ModuleFeature>
-		<span slot="title">Säkert.</span>
-		<span slot="body">
-			Behörighetsstyrning
-			Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
-		</span>
-	</ModuleFeature> -->
+    <ModuleFeatureWithIcon icon="sliders">
+        <span slot="title">Haz seguimiento.</span>
+        <span slot="body">
+            Envía cartas y remisiones. Automatiza el envío y la recopilación de formularios. Todo está almacenado en el registro.
+        </span>
+    </ModuleFeatureWithIcon>
+</ModuleSectionWithImage>
 
+<ModuleOverviewFeaturesSection>
+	<span slot="title">Este es Kaddio Journal</span>
+	<span slot="body">Con Kaddio Journal registras de manera segura y eficiente de la forma que mejor se adapte a tu negocio. Gestiona todo en el mismo sistema y gana tiempo para otras cosas.</span>
 
-	
-</ModuleSection>
-  
+	<ModuleOverviewFeaturesSegment>
+        <span slot="title">Documenta</span>
+        
+        <ModuleOverviewFeature>Diseño libre de plantillas de notas</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Soporte para texto de plantilla y frases</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Subida de imágenes propias para dibujar</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Subida de archivos en notas de registro</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Diagnósticos según ICD-10</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Formularios estándar directamente en el registro</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Construye tus propios formularios</ModuleOverviewFeature>
+        <ModuleOverviewFeature>API</ModuleOverviewFeature>
+        <ModuleOverviewFeature><a href="/sv/1177" class="text-sm leading-6 text-oldpink">1177 (primavera 2025) <span aria-hidden="true">&rarr;</span></a></ModuleOverviewFeature>
+        
+    </ModuleOverviewFeaturesSegment>
 
-<FaqSection>
-	<span slot="title">Funciones</span>
+    <ModuleOverviewFeaturesSegment>
+        <span slot="title">Haz seguimiento</span>
 
-	<Qa>
-		<span slot="q">Plantillas de notas</span>
-		<span slot="a">
-			Crea tus propias plantillas para que las historias clínicas se adapten a tu negocio. Elige tus propias palabras clave/títulos. Usa plantillas de texto, frases, carga de archivos y más.
-		</span>
-	</Qa>
-	
-	<Qa>
-		<span slot="q">Formularios</span>
-		<span slot="a">
-			Crea tus propios formularios o utiliza formularios estándar de uso común directamente desde Kaddio. Envía formularios de valoración y declaraciones de salud correo electrónico y SMS. Los formularios se pueden enviar automáticamente en relación con la reserva o manualmente si es necesario. Las respuestas se guardan en la historia clínica.
-		</span>
-	</Qa>
+        <ModuleOverviewFeature>Envío y recopilación automatizada de formularios</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Remisiones por correo, correo electrónico y chat</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Exportación de notas de registro como PDF</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Resumen de reservas, facturas y tareas</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Facturación consolidada</ModuleOverviewFeature>
+        
+    </ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">Cartas y remisiones</span>
-		<span slot="a">
-			Crea cartas, remisiones y certificados. Envíalos por correo postal, a través del chat de Kaddio o como PDF.
-		</span>
-	</Qa>
+    <ModuleOverviewFeaturesSegment>
+        <span slot="title">Garantiza</span>
+        
+        <ModuleOverviewFeature>Registro encriptado</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Control de acceso a los registros</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Firma de notas</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Historial de edición de notas</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Listado de notas no firmadas</ModuleOverviewFeature>
+        <ModuleOverviewFeature>Registro de lectura y edición de registros</ModuleOverviewFeature>
+    </ModuleOverviewFeaturesSegment>
 
-	<Qa>
-		<span slot="q">ICD-10</span>
-		<span slot="a">
-			Busca por código o texto libre y agrega diagnósticos a cada historia clínica.
-		</span>
-	</Qa>
+</ModuleOverviewFeaturesSection> 
 
-	<Qa>
-		<span slot="q">Control en la seguridad de las historias clínicas</span>
-		<span slot="a">
-			Elige quiénes pueden leer el historial médico del paciente.
-		</span>
-	</Qa>
+<QuotesSection>
+    <span slot="title">
+        Lo que nuestros clientes dicen sobre Kaddio Journal      
+    </span>
 
-	<Qa>
-		<span slot="q">Gráficas del cuerpo humano</span>
-		<span slot="a">
-			Haz dibujos en las gráficas corporales para documentar, por ejemplo, dónde experimenta dolor el paciente.
-		</span>
-	</Qa>
+	<QuoteEnRamzi lang="es"/>
+	<QuoteEnJimmy />
+	<QuoteEnJonas />
+	<QuoteEnAmanda />
+	<QuoteEnSofia />
+</QuotesSection>
 
-	<Qa>
-		<span slot="q">Mantenimiento de registros</span>
-		<span slot="a">
-			Mantén un registro de las notas que esperan ser firmadas.
-		</span>
-	</Qa>
+<StatsSectionSv lang="es" />
 
-	<Qa>
-		<span slot="q">Exportación de historias clínicas</span>
-		<span slot="a">
-			Exporta partes individuales o una historia clínica completa a PDF.
-		</span>
-	</Qa>
-
-	<Qa>
-		<span slot="q">Registro de eventos</span>
-		<span slot="a">
-			Se registran la lectura, escritura y edición de las historias clínicas. El registro muestra lo que se hizo con una historia clínica en particular y por quién, cuándo y desde qué dirección IP.
-		</span>
-	</Qa>
+<PricesEs></PricesEs>
 
 
-</FaqSection>
+<ContactDanielEs />
+
+{#if data.pkgs?.length > 0}
+	<FaqSection>
+ 		<span slot="title">Inbyggda formulär i Kaddio</span>
+
+ 		{#each data.pkgs as pkg}
+ 			<Qa>
+ 				<span slot="q">{pkg.name}</span>
+ 				<span slot="a">
+ 					{pkg.desc}
+ 				</span>
+ 			</Qa>
+ 		{/each}
+ 	</FaqSection>
+ {/if} 
