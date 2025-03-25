@@ -2,10 +2,9 @@
     import StatsSection from "$components/statsSection.svelte";
     import StatsSectionPart from "$components/statsSectionPart.svelte";
 
-    // Begränsa `lang` till att endast acceptera "sv", "eng" eller "es"
-    export let lang: "sv" | "eng" | "es" = "sv"; // Standardvärde är svenska
+    export let lang: "sv" | "eng" | "es" = "sv"; 
 
-    // Typ för texts-objektet
+
     const texts: Record<"sv" | "eng" | "es", { users: string; bookings: string; meetings: string }> = {
         sv: {
             users: "användare",
