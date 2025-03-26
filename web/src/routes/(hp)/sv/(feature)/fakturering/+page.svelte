@@ -1,16 +1,25 @@
 <script>
+	
     import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
     import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+    
     import QuotesSection from "$components/quotesSection.svelte";
-    import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
+    
+	import QuoteSvAmanda from "$components/quote-sv-amanda.svelte";
+	import QuoteSvJimmy from "$components/quote-sv-jimmy.svelte";
+	import QuoteSvJonas from "$components/quote-sv-jonas.svelte";
 	import QuoteSvKim from "$components/quote-sv-kim.svelte";
+	import QuoteSvRamzi from "$components/quote-sv-ramzi.svelte";
+	import QuoteSvSofia from "$components/quote-sv-sofia.svelte";
 	import QuoteSvUlrika from "$components/quote-sv-ulrika.svelte";
 	import ContactDanielSv from "$components/contactDanielSv.svelte";
 	import PricesSv from "$components/pricesSv.svelte";
 	import StatsSectionSv from "$components/statsSectionSv.svelte";
+
 </script>
 
 <svelte:head>
@@ -55,6 +64,8 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Spara tid</span>
+		<!-- <span slot="body">Funktioner för att ge dig en smärtfri upplevelse</span> -->
+
 		<ModuleOverviewFeature>Duplicering av fakturor</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bokföringsunderlag med export i SIE-4, CSV och för Excel</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Kundlista för företagskunder</ModuleOverviewFeature>
@@ -65,6 +76,8 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Automatisera</span>
+		<!-- <span slot="body">Funktioner för göra samarbetet smidigare</span> -->
+
 		<ModuleOverviewFeature>Fakturor utifrån bokade tider eller journalanteckningar</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Avprickning av betalningar mot Bankgirot eller bankkonto</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Betalningspåminnelser</ModuleOverviewFeature>
@@ -74,6 +87,8 @@
 
 	<ModuleOverviewFeaturesSegment>
 		<span slot="title">Leverera</span>
+		<!-- <span slot="body">Funktioner för att spara tid</span> -->
+
 		<ModuleOverviewFeature>Fakturering via e-post, brev och chat</ModuleOverviewFeature>
 		<ModuleOverviewFeature>E-fakturering av företag i hela världen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Samlingsfaktura till företagskund</ModuleOverviewFeature>
@@ -88,7 +103,9 @@
     </span>
 
 	<QuoteSvKim />
+
 	<QuoteSvUlrika />
+
 	<QuoteSvJimmy />
 
 </QuotesSection>

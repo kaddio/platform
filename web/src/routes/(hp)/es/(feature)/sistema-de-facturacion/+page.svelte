@@ -6,12 +6,13 @@
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
     import PricesEs from "$components/pricesEs.svelte";
-    import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
-    import QuoteEnJonas from "$components/quoteEnJonas.svelte";
-    import QuoteEnRamzi from "$components/quoteEnRamzi.svelte";
-    import QuoteEnSofia from "$components/quoteEnSofia.svelte";
-    import StatsSectionEn from "$components/statsSectionEn.svelte";
+    import QuoteEsJimmy from "$components/quote-es-jimmy.svelte";
+    import QuoteEsRamzi from "$components/quote-es-ramzi.svelte";
+    import QuoteEsSofia from "$components/quote-es-sofia.svelte";
+    import QuoteEsJonas from "$components/quote-es-jonas.svelte";
     import ContactDanielEs from "$components/contactDanielEs.svelte";
+    import StatsSectionEs from "$components/stats-section-es.svelte";
+
 
 </script>
 
@@ -90,14 +91,13 @@
         Lo que nuestros clientes dicen sobre Kaddio Facturación       
     </span>
 
-    <QuoteEnJimmy />
-    <QuoteEnJonas/>
-    <QuoteEnRamzi />
-    <QuoteEnSofia />
-
+    <QuoteEsJimmy  />
+    <QuoteEsJonas />
+    <QuoteEsRamzi />
+    <QuoteEsSofia />
 </QuotesSection>
 
-<StatsSectionEn />
+<StatsSectionEs />
 
 <PricesEs />
 
