@@ -1,1 +1,1 @@
-subjectAltName=DNS:localhost
+subjectAltName=DNS:kaddiotestarnpo.kaddio.com,DNS:localhost,DNS:kaddiotestarnpo-selfsigned.kaddio.com
