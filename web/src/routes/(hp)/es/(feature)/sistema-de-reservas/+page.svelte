@@ -5,13 +5,14 @@
     import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
     import QuotesSection from "$components/quotesSection.svelte";
-    import QuoteEnAmanda from "$components/quoteEnAmanda.svelte";
-    import QuoteEnJonas from "$components/quoteEnJonas.svelte";
-    import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
-    import QuoteEnSofia from "$components/quoteEnSofia.svelte";
+    import QuoteEsAmanda from "$components/quote-es-amanda.svelte";
+    import QuoteEsJonas from "$components/quote-es-jonas.svelte";
+    import QuoteEsJimmy from "$components/quote-es-jimmy.svelte";
+    import QuoteEsSofia from "$components/quote-es-sofia.svelte";
     import StatsSectionEn from "$components/statsSectionEn.svelte";
     import ContactDanielEs from "$components/contactDanielEs.svelte";
     import PricesEs from "$components/pricesEs.svelte";
+    import StatsSectionEs from "$components/stats-section-es.svelte";
 
 </script>
 
@@ -95,17 +96,17 @@
         Lo que nuestros clientes dicen sobre <br>Kaddio Reservas       
     </span>
 
-    <QuoteEnJimmy />
+    <QuoteEsJimmy />
     
-    <QuoteEnJonas />
+    <QuoteEsJonas />
 
-    <QuoteEnAmanda />
+    <QuoteEsAmanda />
 
-    <QuoteEnSofia />
+    <QuoteEsSofia />
     
 </QuotesSection>
 
-<StatsSectionEn />
+<StatsSectionEs />
 
 <PricesEs></PricesEs>
 
