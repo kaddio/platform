@@ -1,29 +1,22 @@
 <script>
-
-import Qa from "$components/qa.svelte";
-	import FaqSection from "$components/faqSection.svelte";
-    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
-    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
-	export let data;
-    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
-    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
-    import QuotesSection from "$components/quotesSection.svelte";
-	import StatsSectionSv from "$components/statsSectionSv.svelte";
-    import QuoteEnRamzi from "$components/quoteEnRamzi.svelte";
-    import QuoteEnJimmy from "$components/quoteEnJimmy.svelte";
-    import QuoteEnJonas from "$components/quoteEnJonas.svelte";
-    import QuoteEnSofia from "$components/quoteEnSofia.svelte";
-    import PricesEs from "$components/pricesEs.svelte";
     import ContactDanielEs from "$components/contactDanielEs.svelte";
-    import QuoteEnAmanda from "$components/quoteEnAmanda.svelte";
+    import ModuleFeatureWithIcon from "$components/moduleFeatureWithIcon.svelte";
+    import ModuleOverviewFeature from "$components/moduleOverviewFeature.svelte";
     import ModuleOverviewFeaturesSection from "$components/moduleOverviewFeaturesSection.svelte";
+    import ModuleOverviewFeaturesSegment from "$components/moduleOverviewFeaturesSegment.svelte";
+
+
+    import ModuleSectionWithImage from "$components/moduleSectionWithImage.svelte";
+    import PricesEs from "$components/pricesEs.svelte";
+    import QuoteEsAmanda from "$components/quote-es-amanda.svelte";
+    import QuoteEsJimmy from "$components/quote-es-jimmy.svelte";
+    import QuoteEsJonas from "$components/quote-es-jonas.svelte";
+    import QuoteEsRamzi from "$components/quote-es-ramzi.svelte";
+    import QuoteEsSofia from "$components/quote-es-sofia.svelte";
+    import QuotesSection from "$components/quotesSection.svelte";
+    import StatsSectionEs from "$components/stats-section-es.svelte";
 
 </script>
-<svelte:head>
-    <title>Sistema de registros con todo lo que necesitas</title>
-    <meta name="description" content="Kaddio Journal tiene todo lo que necesitas para documentar tu negocio y registrar clientes. Un sistema de registros completo para el cuidado de la salud." />
-</svelte:head>
-
 <ModuleSectionWithImage src="/img/kaddio-screenshots/medical-record-overview-en.png" alt="Sistema de registros Kaddio">
     <span slot="h1">Sistema de registros</span>
     <span slot="title">Kaddio Journal</span>
@@ -95,31 +88,16 @@ import Qa from "$components/qa.svelte";
         Lo que nuestros clientes dicen sobre Kaddio Journal      
     </span>
 
-	<QuoteEnRamzi lang="es"/>
-	<QuoteEnJimmy />
-	<QuoteEnJonas />
-	<QuoteEnAmanda />
-	<QuoteEnSofia />
+	<QuoteEsRamzi />
+	<QuoteEsJimmy />
+	<QuoteEsJonas />
+	<QuoteEsAmanda />
+	<QuoteEsSofia />
 </QuotesSection>
 
-<StatsSectionSv lang="es" />
+<StatsSectionEs />
 
-<PricesEs></PricesEs>
+<PricesEs />
 
 
 <ContactDanielEs />
-
-{#if data.pkgs?.length > 0}
-	<FaqSection>
- 		<span slot="title">Inbyggda formulär i Kaddio</span>
-
- 		{#each data.pkgs as pkg}
- 			<Qa>
- 				<span slot="q">{pkg.name}</span>
- 				<span slot="a">
- 					{pkg.desc}
- 				</span>
- 			</Qa>
- 		{/each}
- 	</FaqSection>
- {/if} 
