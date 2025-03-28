@@ -37,7 +37,7 @@ jobs:
     - name: SSH to VPS and run update script
       uses: appleboy/ssh-action@v0.1.5
       with:
-        host: kaddiotestarnpo.kaddio.net
+        host: kaddiotestarnpo.kaddio.com
         username: root
         key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
         script: sh /var/lib/cloud/scripts/per-boot/update.sh
