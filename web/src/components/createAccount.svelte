@@ -1,3 +1,4 @@
+
 <script lang="ts">
     import { getContext } from 'svelte';
     import { countryCodeFromLang, getRegion } from '$lib/regions';
@@ -23,6 +24,7 @@
 
     import { token } from '$lib/stores';
 
+
     const countries = [
         ['Sverige', 'SE'],
         ['Finland', 'FI'],
@@ -47,6 +49,7 @@
     }
 </script>
 
+
 <div class="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
     <!-- <Cloud /> -->
     {#if $page.form?.success}
@@ -61,11 +64,14 @@
     {:else}
         <div class="mx-auto max-w-2xl text-center">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                {$_('Skapa konto')}
+                {$_('Skapa konto - för företagare inom vård och hälsa')}
             </h2>
             <p class="mt-2 text-lg leading-8 text-gray-600">
                 {$_('Det tar bara några minuter att komma igång.')}
                 {$_('Kostnadsfritt i 1 månad.')}
+            </p>
+            <p class="mt-2 text-lg leading-8 text-gray-600">
+                {$_('Privatkund? Se gärna:')}  <a href="https://kaddio.com/sv/hitta-klinik/Alla">Hitta klinik</a>
             </p>
         </div>
 
@@ -238,7 +244,6 @@
                                 />
                             </svg>
                         </div>
-
                         <div class="ml-3">
                             {#if $page.form?.urlUnavailable}
                                 <h3 class="text-sm font-medium text-red-800">
