@@ -1,5 +1,6 @@
 import http from 'http';
 import https from 'https';
+import tls from 'tls';
 import fs from 'fs';
 import fetch from 'node-fetch';
 import crypto from 'crypto';
@@ -9,7 +10,7 @@ const portHello = 80;
 const rejectUnauthorized = true;
 
 console.log('###      ###')
-console.log('###  V1  ###')
+console.log('###  V2  ###')
 console.log('###      ###')
 console.log(`Setting for Reject unauthorized: ${rejectUnauthorized}`);
 
@@ -25,25 +26,51 @@ const targetBase = new URL(target);
 
 const privateKey = fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.decrypted.key', 'utf8').trim()
 
+const certificates = {
+  'kaddiotestarnpo.kaddio.com': {
+    key: privateKey,
+    cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
+    ca: [
+      fs.readFileSync('certs/testsithseidfunctioncav1.pem'), 
+      fs.readFileSync('certs/testsithseidrootcav2.pem'),
+    ],
+  },
+
+  'npo-production.kaddio.com': {
+    key: privateKey,
+    // cert: fs.readFileSync('certs/server-cert.pem'),
+    // ca: [
+    //   fs.readFileSync('certs/ca-cert.pem'),
+    // ],
+  },
+};
+
+const defaultCert = {
+    key: privateKey,
+    cert: fs.readFileSync('certs/server-cert.pem'),
+    ca: [
+      fs.readFileSync('certs/ca-cert.pem'),
+    ],
+}
+
 // Load SSL certificates
 const options = {
-  // key: fs.readFileSync('certs/server-key.pem'),
-  // cert: fs.readFileSync('certs/server-cert.pem'),
-  // ca: fs.readFileSync('certs/ca-cert.pem'),
-
-  key: privateKey,
-  cert: fs.readFileSync('certs/kaddiotestarnpo.kaddio.com.pem'),
-
-  // Order of root and function cert does NOT matter.
-  // .cer format does not seem to work. Use .pem
-  ca: [
-    fs.readFileSync('certs/testsithseidfunctioncav1.pem'), 
-    fs.readFileSync('certs/testsithseidrootcav2.pem')
-  ],
+  key: defaultCert.key,
+  cert: defaultCert.cert,
+  ca: defaultCert.ca,
 
   requestCert: true,
   rejectUnauthorized,
   // minVersion: 'TLSv1.3',
+  SNICallback: (servername, callback) => {
+    console.log(`SNICallback: ${servername}`);
+    const cert = certificates[servername];
+    if (cert) {
+      callback(null, tls.createSecureContext(cert));
+    } else {
+      callback(null, tls.createSecureContext(defaultCert));
+    }
+  },
 };
 
 const verifyRequest = (req) => {
@@ -108,7 +135,8 @@ const httpsServer = https.createServer(options, async (req, res) => {
   req.on('end', async () => {
     try {
       console.log({body})
-      const backendResponse = await fetch(new URL(req.url, targetBase), {
+    
+    const backendResponse = await fetch(new URL(req.url, targetBase), {
       method: "POST",
       headers: {
         "Content-Type": "text/xml;charset=UTF-8",
@@ -118,14 +146,15 @@ const httpsServer = https.createServer(options, async (req, res) => {
       },
       body: body,
     });
-    
+
+    console.log(`Backend response status: ${backendResponse.status}`);
 
     res.writeHead(backendResponse.status, backendResponse.headers.raw());
     backendResponse.body.pipe(res);
   } catch (error) {
-      console.log(error)
-      res.writeHead(500, { 'Content-Type': 'text/plain' });
-      res.end('Internal Server Error');
+      console.log(`Error code: ${error.code}`);
+      res.writeHead(502);
+      res.end();
     }
   });
 }).listen(portProxy, () => {
