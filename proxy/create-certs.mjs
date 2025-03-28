@@ -32,15 +32,19 @@ const serverCert = `${path}/server-cert.pem`;
 const clientKey = `${path}/client-key.pem`;
 const clientCsr = `${path}/client-csr.pem`;
 const clientCert = `${path}/client-cert.pem`;
+const serverExtFile = `${path}/server-ext.cnf`;
+
+// Create the SAN extension file for multiple domains
+await $`echo "subjectAltName=DNS:localhost" > ${serverExtFile}`;
 
 console.log("Creating the self-signed certificate for the CA...");
 await $`openssl req -new -x509 -key ${caKey} -passin pass:${password} -out ${caCert} -days 365 -subj "/CN=CA"`;
 
 console.log("Creating a Certificate Signing Request (CSR) for the server...");
-await $`openssl req -new -key ${serverKey} -passin pass:${password} -out ${serverCsr} -subj "/CN=kaddiotestarnpo.kaddio.com"`;
+await $`openssl req -new -key ${serverKey} -passin pass:${password} -out ${serverCsr} -subj "/CN=kaddiotestarnpo-selfsigned.kaddio.com"`;
 
 console.log("Signing the server CSR with the CA to generate the server certificate...");
-await $`openssl x509 -req -in ${serverCsr} -CA ${caCert} -CAkey ${caKey} -passin pass:${password} -CAcreateserial -out ${serverCert} -days 365`;
+await $`openssl x509 -req -in ${serverCsr} -CA ${caCert} -CAkey ${caKey} -passin pass:${password} -CAcreateserial -out ${serverCert} -days 365 -extfile ${serverExtFile}`;
 
 console.log("Generating the private key for the client...");
 await $`openssl genrsa -out ${clientKey} 2048`;
