@@ -9,7 +9,6 @@
     import QuoteEsJonas from "$components/quote-es-jonas.svelte";
     import QuoteEsJimmy from "$components/quote-es-jimmy.svelte";
     import QuoteEsSofia from "$components/quote-es-sofia.svelte";
-    import StatsSectionEn from "$components/statsSectionEn.svelte";
     import ContactDanielEs from "$components/contactDanielEs.svelte";
     import PricesEs from "$components/pricesEs.svelte";
     import StatsSectionEs from "$components/stats-section-es.svelte";
