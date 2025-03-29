@@ -28,7 +28,7 @@
                         target="_blank"
                         rel="noreferrer"
                         class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-oldpink shadow-sm hover:bg-oldpink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400"
-                        >{$_('Prova demo')}</a
+                        >{$_('Prova demo')} <i class="fal fa-fw fa-external-link"></i></a
                     >
                     <slot name="demo-button" />
                     <button
