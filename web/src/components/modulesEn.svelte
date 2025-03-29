@@ -70,4 +70,15 @@
         <span slot="body">Get an overview of the business with Kaddio's statistics tool. Visualize data in Kaddio or export for your own analysis.</span>
     </ModulePresentation>
 
+
+    <ModulePresentation>
+      <span slot="icon">
+          <i class="text-white fa-regular fa-sparkles" />
+      </span>
+      <span slot="title">Kaddio AI</span>
+      <span slot="body"
+          >Transcribe with Kaddio AI, after or during the client meeting. Get a summary of a client's current status. Get a summary of chat etc.
+  </ModulePresentation>
+
+
 </ModulesSection>   

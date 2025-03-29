@@ -104,4 +104,15 @@
             exportera för egen analys.
         </span>
     </ModulePresentation>
+
+
+    <ModulePresentation>
+        <span slot="icon">
+            <i class="text-white fa-regular fa-sparkles" />
+        </span>
+        <span slot="title">Kaddio AI</span>
+        <span slot="body"
+            >Diktera med Kaddio AI, efter eller under klientmötet. Få sammanfattning av en klients aktuella status. Få sammanfattnig av chat mm.
+        </span>
+    </ModulePresentation>
 </ModulesSection>

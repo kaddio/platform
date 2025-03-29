@@ -70,4 +70,15 @@
         <span slot="body">Mantén el control con las herramientas de estadísticas de Kaddio. Visualiza o exporta los datos para realizar tu propio análisis.</span>
     </ModulePresentation>
 
+    <ModulePresentation>
+      <span slot="icon">
+          <i class="text-white fa-regular fa-sparkles" />
+      </span>
+      <span slot="title">Kaddio AI</span>
+      <span slot="body"
+          >Dicte con Kaddio AI, después o durante la reunión con el cliente. Obtenga un resumen del estado actual de un cliente. Obtenga un resumen del chat, etc.
+      </span>
+  </ModulePresentation>
+
+
 </ModulesSection>   
