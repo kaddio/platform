@@ -7,6 +7,7 @@
 	import SecuritySectionEs from '$components/securitySectionEs.svelte';
 	import ReferencesEs from '$components/referencesEs.svelte';
     import Hero from '$lib/components/hero.svelte';
+    import ContactDanielEs from '$components/contactDanielEs.svelte';
 
 	setContext('lang', 'es');
 </script>
@@ -37,4 +38,5 @@
 <SecuritySectionEs />
 
 <ReferencesEs />
+<ContactDanielEs />
 <Footer />
