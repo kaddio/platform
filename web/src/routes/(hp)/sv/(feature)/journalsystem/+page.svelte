@@ -76,6 +76,7 @@
 		<ModuleOverviewFeature>Standardformulär direkt i journalen</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Bygg egna formulär</ModuleOverviewFeature>
 		<ModuleOverviewFeature>API</ModuleOverviewFeature>
+		<ModuleOverviewFeature>Diktering med AI (våren 2025)</ModuleOverviewFeature>
 		<ModuleOverviewFeature><a href="/sv/1177" class="text-sm leading-6 text-oldpink">1177 (våren 2025) <span aria-hidden="true">&rarr;</span></a></ModuleOverviewFeature>
 		
 	</ModuleOverviewFeaturesSegment>
@@ -88,7 +89,8 @@
 		<ModuleOverviewFeature>Export av journalanteckningar som PDF</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Översikt över bokningar, fakturor och uppgifter</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Samlingsräkning</ModuleOverviewFeature>
-		
+		<ModuleOverviewFeature>Sammanfattning med AI (våren 2025)</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
