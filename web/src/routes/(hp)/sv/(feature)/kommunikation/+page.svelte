@@ -88,7 +88,8 @@
 			Medgivandeblankett med signeringsfunktion </ModuleOverviewFeature>
 		<ModuleOverviewFeature>Inspelning av videosamtal</ModuleOverviewFeature>
 		<ModuleOverviewFeature>Automatiska utskick av formulär från kontaktformuläret</ModuleOverviewFeature>
-		
+		<ModuleOverviewFeature>Sammanfatta med Kaddio AI</ModuleOverviewFeature>
+
 	</ModuleOverviewFeaturesSegment>
 
 	<ModuleOverviewFeaturesSegment>
