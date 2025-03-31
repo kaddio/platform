@@ -45,7 +45,7 @@
 
         <p class="mt-2 text-center text-sm text-gray-600">
           { $_('Eller')}
-          <a href="/{lang}/create" class="font-medium text-oldpink hover:text-oldpinkdarker">{ $_('skapa konto')}</a>
+          <a href="/{lang}/create" class="font-medium text-oldpink hover:text-oldpinkdarker">{ $_('anslut ditt företag')}</a>
         </p>
       </div>
       <form on:submit|preventDefault={submit} class="mt-8 space-y-6" action="#" method="POST">
