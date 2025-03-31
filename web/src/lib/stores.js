@@ -41,17 +41,21 @@ const translations = {
         en: 'Contact',
         es: 'Contactar'
     },
-    'Skapa konto': {
-        en: 'Create account',
-        es: 'Crear una cuenta'
+    'Skapa företagskonto': {
+        en: 'Create business account',
+        es: 'Crear cuenta de empresa'
+    },
+    'Anslut ditt företag': {
+        en: 'Connect your business',
+        es: 'Conecta tu negocio'
+    },
+    'anslut ditt företag': {
+        en: 'connect your business',
+        es: 'conecta tu negocio'
     },
     Nyhetsbrev: {
         en: 'Newsletter',
         es: 'Boletín de noticias'
-    },
-    'skapa konto': {
-        en: 'create account',
-        es: 'crear una cuenta'
     },
     Pris: {
         en: 'Price',
