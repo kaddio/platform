@@ -73,7 +73,7 @@
               </li>
 
               <li>
-                <a href="/{lang}/create" class="text-sm leading-6 text-gray-600">{ $_('Skapa konto')}</a>
+                <a href="/{lang}/create" class="text-sm leading-6 text-gray-600">{ $_('Anslut ditt företag')}</a>
               </li>
 
               <li>

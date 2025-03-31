@@ -293,7 +293,7 @@
             <a
                 href="/{lang}/create"
                 class="rounded-md bg-oldpink py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-oldpinkdarker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
-                >{$_('Skapa konto')}</a
+                >{$_('Anslut ditt företag')}</a
             >
         </div>
 
@@ -465,7 +465,7 @@
                             <a
                                 href="/{lang}/create"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >{$_('Skapa konto')}</a
+                                >{$_('Anslut ditt företag')}</a
                             >
                         </div>
                     </div>
