@@ -33,10 +33,20 @@
             <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
                 <div class="mx-auto w-full max-w-xl lg:mx-0">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-                        {$token.name} recommends Kaddio
+                        {#if $token.title}
+                            {$token.title}
+                        {:else}
+                            {$token.name} recommends Kaddio
+                        {/if}
                     </h2>
                     <p class="mt-6 text-lg leading-8 text-gray-600">
-                        With this coupon from {$token.name}, you can use Kaddio for free for {$token.credits} months.
+                        {#if $token.desc}
+                            {$token.desc}
+                        {:else if $token.name}
+                            With this coupon from {$token.name}, you can use Kaddio for free for {$token.credits +1} months.
+                        {:else}
+                            With this coupon ({$token.token}), you can use Kaddio for free for {$token.credits +1} months.
+                        {/if}
                     </p>
                     <div class="mt-8 flex items-center gap-x-6">
                         <a
@@ -49,13 +59,14 @@
                         >
                     </div>
                 </div>
+                
 
                 {#if $token.img}
                     <div
                         class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8"
                     >
                         <img
-                            class="max-h-24 w-full object-contain object-left"
+                            class="max-h-24 w-full object-contain object-left {$token.bg ? 'bg-['+$token.bg+']' : ''}"
                             src={imageHandler($token.img, {
                                 format: 'auto',
                                 fit: 'scale-down',
