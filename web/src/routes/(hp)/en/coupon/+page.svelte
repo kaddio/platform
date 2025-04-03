@@ -33,14 +33,16 @@
             <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
                 <div class="mx-auto w-full max-w-xl lg:mx-0">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-                        {#if $token.name}
-                            {$token.name} recommends Kaddio
+                        {#if $token.title}
+                            {$token.title}
                         {:else}
-                            Use Kaddio for free
+                            {$token.name} recommends Kaddio
                         {/if}
                     </h2>
                     <p class="mt-6 text-lg leading-8 text-gray-600">
-                        {#if $token.name}
+                        {#if $token.desc}
+                            {$token.desc}
+                        {:else if $token.name}
                             With this coupon from {$token.name}, you can use Kaddio for free for {$token.credits +1} months.
                         {:else}
                             With this coupon ({$token.token}), you can use Kaddio for free for {$token.credits +1} months.
