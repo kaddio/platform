@@ -39,6 +39,10 @@ const certificates = {
   'npo-prod.kaddio.com': {
     pfx: fs.readFileSync('certs/prod/npo-prod.kaddio.com.p12'),
     passphrase: process.env.NPO_PROD_CERT_PASSPHRASE,
+    ca: [
+      fs.readFileSync('certs/prod/sithseidfunctioncav1.pem'),
+      fs.readFileSync('certs/prod/sithseidrootcav2.pem'),
+    ],
   },
 };
 
