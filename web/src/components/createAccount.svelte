@@ -16,11 +16,13 @@
     $: submitIsEnabled = state;
 
     let url: string = '';
+    let urlToOrg: string;
 
     let orgName: string;
 
     $: url = slugify(orgName || '');
 
+    $: urlToOrg = url ? `${url}.kaddio.com` : '';
     import { token } from '$lib/stores';
 
     const countries = [
@@ -225,38 +227,56 @@
             </div>
 
             {#if $page.status !== 200}
-                <div class="rounded-md bg-red-50 p-4 mt-10">
+
+                <div class="rounded-md bg-yellow-900 p-4 mt-10">
                     <div class="flex">
                         <div class="flex-shrink-0">
-                            <svg
-                                class="h-5 w-5 text-red-400"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
-                                    clip-rule="evenodd"
-                                />
+                            <svg class="h-5 w-5 text-yellow-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
                             </svg>
                         </div>
 
                         <div class="ml-3">
+                            <h3 class="text-sm font-medium text-yellow-300">Kunde inte skapa konto</h3>
+
                             {#if $page.form?.urlUnavailable}
-                                <h3 class="text-sm font-medium text-red-800">
-                                    URL är upptagen, prova med en annan.
-                                </h3>
+                                <div class="mt-2 text-sm text-yellow-300">
+                                    <p>
+                                        URL:en är upptagen, prova med en annan. 
+                                    </p>
+                                </div>                                           
+                            {:else if $page.form?.urlTaken}
+                                <div class="mt-2 text-sm text-yellow-300">
+                                    <p>
+                                        URL:en är upptagen och används av en befintlig organisation i Kaddio. 
+                                    </p>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="-mx-2 -my-1.5 flex">
+                                        <a href="{urlToOrg ? 'https://'+urlToOrg : ''}" type="button" class="rounded-md bg-yellow-900 px-2 py-1.5 text-sm font-medium text-yellow-300 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">Besök {urlToOrg} &nbsp;<i class="fa fa-external-link"></i></a>
+                                        <button on:click={() => document.getElementById('orgurl')?.focus()} type="button" class="ml-3 rounded-md bg-yellow-900 px-2 py-1.5 text-sm font-medium text-yellow-300 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">Prova med annan URL</button>
+                                    </div>
+                                </div>                                                        
                             {:else if $page.form?.missingFields}
-                                <h3 class="text-sm font-medium text-red-800">Fyll i alla fält</h3>
+                                <div class="mt-2 text-sm text-yellow-300">
+                                    <p>
+                                        Fyll i alla fält och försök igen.
+                                    </p>
+                                </div>
+   
                             {:else}
-                                <h3 class="text-sm font-medium text-red-800">
-                                    Kontrollera formuläret
-                                </h3>
+                                <div class="mt-2 text-sm text-yellow-300">
+                                    <p>
+                                        Kontrollera formuläret och försök igen. 
+                                    </p>
+                                </div>
                             {/if}
+
                         </div>
                     </div>
                 </div>
+
             {/if}
         </form>
     {/if}
