@@ -36,12 +36,9 @@ const certificates = {
     ],
   },
 
-  'npo-production.kaddio.com': {
-    key: privateKey,
-    // cert: fs.readFileSync('certs/server-cert.pem'),
-    // ca: [
-    //   fs.readFileSync('certs/ca-cert.pem'),
-    // ],
+  'npo-prod.kaddio.com': {
+    pfx: fs.readFileSync('certs/npo-prod.kaddio.com.p12'),
+    passphrase: process.env.NPO_PROD_CERT_PASSPHRASE,
   },
 };
 
