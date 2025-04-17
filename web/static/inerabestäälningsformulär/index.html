@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inera beställningsformulär</title>
+</head>
+<body bgcolor="#cccccc" text="blue" link="red" alink="lime" vlink="purple">
+    <marquee behavior="alternate" bgcolor="yellow" scrollamount="10" width="80%" style="margin-top: 20px;">
+        OBS vi har precis bytt system och ligger därför efter med våra beställnnignar, vi menar dina beställningar. Du måste därför ringa oss efter att du fyllt i formuläret och påminna oss om att du fyllt i formuläret. För vi har inget notissystem. Du kommer att erhålla svar inom 4 veckor, vi skickar då svaret i vårt ärendehanteringsystem. Saknar du access dit? (Det gör du förmodligen) så då kan du beställa access till det <a href="">här</a>. Observera att du måste fylla i detta formuläret först. 
+      </marquee>
+  
+  <center>
+    <font face="Comic Sans MS" size="7" color="orange">Kladdio beställningsformulär</font>
+    <hr width="80%" color="pink">
+    <table border="5" cellpadding="15" bgcolor="#ffff99" style="border-collapse: collapse;">
+      <tr>
+        <td><b>Full Name:</b></td>
+        <td><input type="text" name="fullname" size="50" style="background-color: #00ff00; color: purple;"></td>
+      </tr>
+      <tr>
+        <td><b>HSA-id:</b></td>
+        <td><input type="password" name="password" size="30" style="font-family: Courier; background: pink;"></td>
+      </tr>
+      <tr>
+        <td><b>Kaddio-id:</b></td>
+        <td><input type="password" name="password" size="30" style="font-family: Courier; background: pink;"></td>
+      </tr>
+      <tr>
+        <td><b>Favorite Food:</b></td>
+        <td>
+          <select id="mat" name="food" style="font-size: 16px;">
+            <option value="pizza">Pizza</option>
+            <option value="mosbricka">Mosbricka</option>
+            <option value="pickladlök">picklad lök</option>
+            <option value="sand">Sand</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Ladda upp en bild på sten:</b></td>
+        <td><input type="file" name="rockPic"></td>
+      </tr>
+      <tr>
+        <td><b>Pick a Date:</b></td>
+        <td><input type="date" name="datePicker"></td>
+      </tr>
+      <tr>
+        <td><b>Choose a Number (1-100):</b></td>
+        <td><input type="number" min="101" max="200" value="101" required></td>
+      </tr>
+      <tr>
+        <td><b>Color Picker:</b></td>
+        <td><input type="color" value="#ff00ff"></td>
+      </tr>
+      <tr>
+        <td><b>Lite olika checkboxar:</b></td>
+        <td>
+          <input id="1" type="checkbox" name="thing1"><label for="2">Thing 1</label><br>
+          <input id="2" type="checkbox" name="thing2"><label for="mat">Thing 1</label><br>
+          <input type="checkbox" name="thing3">
+        </td>
+      </tr>
+      <tr>
+        <td><b>Beskriv din beställning på Haikuform:</b></td>
+        <td><textarea name="haiku" rows="5" cols="40" style="background: #ffcccc; font-family: Comic Sans MS;"></textarea></td>
+      </tr>
+    </table>
+
+    <br><br>
+    <input type="submit" value="Klicka för fan inte här" style="background-color: red; font-size: 24px;">
+    <input type="reset" value="Undo All" style="background-color: black; color: white;">
+
+    <marquee behavior="alternate" bgcolor="yellow" scrollamount="10" width="80%" style="margin-top: 20px;">
+      OBS attesteras! Saknas attesteringbehörighet? Beställ <a href="">här</a>
+    </marquee>
+  </center>
+
+</body>
+</html>
