@@ -11,6 +11,8 @@
     import { onMount, prevent_default } from 'svelte/internal';
     import { descFromKeywordAndPlace } from "$lib/keywords";
     import Seo from '$components/seo.svelte';
+    import OrganizationCard2 from '../../../components/organizationCard2.svelte';
+    import { browser } from '$app/environment';
 
     export let data: PageData;
     let page = 0;
@@ -143,6 +145,10 @@
 
     // $: console.log(`keyword "${data.keyword}" exists: ${keywordExists(data.keyword)}. Should show meta: ${shouldShowMetaForPage(data.keyword, data.organizations.length)} Matches: ${data.organizations?.length}`);
     // $: console.log("desc: ", descFromKeywordAndPlace(data.keyword, data.place));
+
+    const possibleResultView = (browser && window.localStorage.getItem('resultView'));
+    const resultView = possibleResultView || 'v1';
+
     
 </script>
 
@@ -205,53 +211,104 @@
             </form>
         </div>
     </div>
+</div>
 
-    <div class="bg-gray-100 p-4 sm:p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
-        <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
-            <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
-                {#if data.organizations?.length}
-                    <div class="flex justify-between">
-                        <div class="font-semibold mb-2 ml-3">
-                            <h1 class="inline">{titleMarketplace(data.keyword, data.place)}</h1> 
-                            <span class="font-normal text-gray-500"> · {hits(data.count)}</span
-                            >
-                        </div>
-                    </div>
-                    <div class="lg:mt-0">
-                        <div class="grid grid-cols-6 gap-12">
-                            {#each data.organizations as organization}
-                                <div class="col-span-6 sm:col-span-3 xl:col-span-2">
-                                    <OrganizationCard {organization} />
-                                </div>
-                            {/each}
-                        </div>
-                    </div>
 
-                    <div class="flex flex-row justify-center gap-8 mt-12 relative">
-                        {#if data.organizations.length < data.count}
+{#if resultView == 'v2'}
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+                {#if data.organizations.length}
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{titleMarketplace(data.keyword, data.place)}</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">{hits(data.count)}</p>
+
+                {:else}
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Inga resultat</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">Prova att söka på något annat</p>
+                {/if}
+
+            </div>
+
+            <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                {#each data.organizations as organization}
+                    <OrganizationCard2 {organization} />
+                {/each}
+
+            </div>
+
+            {#if data.organizations.length < data.count}
+
+
+
+
+            <div class="mt-16 text-center">
+                    <a
+                        href=""
+                        class="text-gray-500"
+                        on:click|preventDefault={() => loadMore()}>Ladda in fler</a
+                    >
+                </div>
+            {/if}
+
+
+        </div>
+    </div>
+
+{:else}
+    <div class="w-sceen flex flex-col">
+
+        <div class="bg-gray-100 p-4 sm:p-8 lg:p-12 pt-4 lg:pt-20 flex grow">
+            <div class="flex flex-col gap-10 lg:w-full lg:flex-row container mx-auto">
+                <div class="flex flex-col h-full grow max-w-screen-lg mx-auto">
+                    {#if data.organizations.length}
+                        <div class="flex justify-between">
+                            <div class="font-semibold mb-2 ml-3">
+                                <h1 class="inline">{titleMarketplace(data.keyword, data.place)}</h1>
+                                &nbsp;
+                                <span class="font-normal text-gray-500"
+                                    > · {hits(data.count)}</span
+                                >
+                            </div>
+                        </div>
+                        <div class="lg:mt-0">
+                            <div class="grid grid-cols-6 gap-12">
+                                {#each data.organizations as organization}
+                                    <div class="col-span-6 sm:col-span-3 xl:col-span-2">
+                                        <OrganizationCard {organization} />
+                                    </div>
+                                {/each}
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row justify-center gap-8 mt-12 relative">
+                            {#if data.organizations.length < data.count}
+                                <a
+                                    href=""
+                                    class="text-gray-500 font-semibold mt-2 ml-3"
+                                    on:click|preventDefault={() => loadMore()}>Ladda fler</a
+                                >
+                            {/if}
+
                             <a
                                 href=""
-                                class="text-gray-500 font-semibold mt-2 ml-3"
-                                on:click|preventDefault={() => loadMore()}>Ladda fler</a
+                                class="text-gray-500 mt-2 ml-3 absolute bottom-0 right-0"
+                                on:click={() => scrollTo({ top: 0, behavior: 'smooth' })}>Till toppen</a
                             >
-                        {/if}
-
-                        <a
-                            href=""
-                            class="text-gray-500 mt-2 ml-3 absolute bottom-0 right-0"
-                            on:click={() => scrollTo({ top: 0, behavior: 'smooth' })}>Till toppen</a
-                        >
-                    </div>
-                {:else}
-                    <div class="flex items-center justify-center flex-col gap-7 text-gray-400 h-96">
-                        <i class="fa fa-magnifying-glass fa-3x" />
-                        <h2 class="text-2xl font-semibold">Inga resultat</h2>
-                    </div>
-                {/if}
+                        </div>
+                    {:else}
+                        <div class="flex items-center justify-center flex-col gap-7 text-gray-400 h-96">
+                            <i class="fa fa-magnifying-glass fa-3x" />
+                            <h2 class="text-2xl font-semibold">Inga resultat</h2>
+                        </div>
+                    {/if}
+                </div>
             </div>
         </div>
     </div>
-</div>
+    
+{/if}
+
+
 
 <FooterMarketplace />
 
